@@ -1,0 +1,155 @@
+---
+sidebar: sidebar 
+permalink: br-start-licensing.html 
+keywords: license, licensing, updating license, paygo license, byol license, nlf, license generator, backup license, add backup license, update backup license, annual, netapp intelligent services 
+summary: '클라우드 공급업체에서 사용량에 따른 지불 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring Your Own License)을 구매하여 NetApp Backup and Recovery에 대한 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery를 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.' 
+---
+= NetApp 백업 및 복구에 대한 라이선싱 설정
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+클라우드 공급업체에서 * NetApp Intelligent Services*에 대한 PAYGO(Pay-as-you-go) 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring-Your-Own-License)을 구매하여 NetApp Backup and Recovery에 대한 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery를 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.
+
+계속 읽기 전에 몇 가지 참고 사항을 알려드립니다.
+
+* 클라우드 공급업체의 마켓플레이스에서 Cloud Volumes ONTAP 시스템에 대한 사용량 기반 지불(PAYGO) 구독을 이미 구독한 경우 NetApp Backup and Recovery에도 자동으로 구독됩니다. 다시 구독할 필요는 없습니다.
+* NetApp Backup and Recovery BYOL(Bring Your Own License)은 NetApp Console 조직이나 계정과 연결된 모든 시스템에서 사용할 수 있는 플로팅 라이선스입니다.  따라서 기존 BYOL 라이선스에서 충분한 백업 용량을 사용할 수 있는 경우 다른 BYOL 라이선스를 구매할 필요가 없습니다.
+* BYOL 라이선스를 사용하는 경우 PAYGO 구독도 함께 구독하는 것이 좋습니다.  BYOL 라이선스에서 허용하는 것보다 많은 데이터를 백업하거나 라이선스 기간이 만료된 경우, 백업은 사용량에 따라 지불하는 구독을 통해 계속 진행되므로 서비스가 중단되지 않습니다.
+* 온프레미스 ONTAP 데이터를 StorageGRID 에 백업할 때는 BYOL 라이선스가 필요하지만 클라우드 공급자 스토리지 공간에는 비용이 들지 않습니다.
+
+
+link:concept-backup-to-cloud.html["NetApp 백업 및 복구 사용과 관련된 비용에 대해 자세히 알아보세요."]
+
+
+
+== 30일 무료 체험
+
+클라우드 공급업체의 마켓플레이스에서 * NetApp Intelligent Services*에 대한 종량제 구독에 가입하면 NetApp Backup and Recovery의 30일 무료 평가판을 이용할 수 있습니다.  무료 체험판은 마켓플레이스 목록에 가입하는 시점부터 시작됩니다.  Cloud Volumes ONTAP 시스템을 배포할 때 마켓플레이스 구독료를 지불한 후 10일 후에 NetApp Backup and Recovery 무료 평가판을 시작하면 무료 평가판을 사용할 수 있는 기간이 20일 남습니다.
+
+무료 체험 기간이 종료되면 중단 없이 자동으로 PAYGO 구독으로 전환됩니다.  NetApp Backup and Recovery를 계속 사용하지 않기로 결정한 경우link:prev-ontap-backup-manage.html["시스템에서 NetApp Backup and Recovery 등록 취소"] 체험판이 종료되기 전에 신청하시면 요금이 청구되지 않습니다.
+
+
+
+=== 무료 체험 종료
+
+무료 평가판이 종료된 후에도 NetApp Backup and Recovery를 계속 사용하려면 유료 구독을 설정해야 합니다.  NetApp 콘솔 인터페이스에서 청구 섹션으로 이동하여 요구 사항에 맞는 구독 플랜을 선택하면 됩니다.  NetApp Backup and Recovery를 계속 사용하고 싶지 않으시면 무료 평가판을 종료하실 수 있습니다.
+
+유료 플랜에 가입하지 않고 무료 체험 기간을 종료하는 경우, 무료 체험 기간이 종료된 후 60일이 지나면 데이터가 자동으로 삭제됩니다. 선택적으로 시스템에서 귀하의 데이터를 즉시 삭제할 수 있습니다.
+
+.단계
+. NetApp 백업 및 복구 랜딩 페이지에서 *무료 평가판 보기*를 선택합니다.
+. *무료 체험 종료*를 선택하세요.
+. *무료 체험 종료 후 즉시 데이터 삭제*를 선택하면 데이터가 즉시 삭제됩니다.
+. 상자에 *체험판 종료*를 입력하세요.
+. 확인하려면 *끝*을 선택하세요.
+
+
+
+
+== NetApp Backup and Recovery PAYGO 구독을 사용하세요
+
+사용량에 따른 요금 지불의 경우, 단일 구독으로 시간당 객체 스토리지 비용과 NetApp 백업 라이선스 비용을 클라우드 제공업체에 지불합니다.  무료 평가판이 있거나 자체 라이선스를 가져오는 경우(BYOL)에도 Marketplace에서 * NetApp Intelligent Services*를 구독해야 합니다.
+
+* 구독하면 무료 체험 기간이 종료된 후에도 서비스가 중단되지 않습니다. 체험 기간이 종료되면 백업한 데이터 양에 따라 시간당 요금이 청구됩니다.
+* BYOL 라이선스에서 허용하는 것보다 많은 데이터를 백업하는 경우, 데이터 백업 및 복원 작업은 사용량에 따른 요금제 구독을 통해 계속 진행됩니다.  예를 들어, 10TiB BYOL 라이선스가 있는 경우 10TiB를 초과하는 모든 용량은 PAYGO 구독을 통해 요금이 청구됩니다.
+
+
+무료 체험 기간 동안 또는 BYOL 라이선스를 초과하지 않은 경우, 선불 구독 요금이 청구되지 않습니다.
+
+NetApp 백업 및 복구에는 몇 가지 PAYGO 플랜이 있습니다.
+
+* Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 패키지입니다.
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공할 수 있는 "CVO Professional" 패키지입니다.  여기에는 라이선스를 사용하여 Cloud Volumes ONTAP 시스템에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스 용량에 포함되지 않습니다).  이 옵션을 사용하면 온프레미스 ONTAP 데이터를 백업할 수 없습니다.
++
+이 옵션을 사용하려면 백업 및 복구 PAYGO 구독도 필요하지만, 적격 Cloud Volumes ONTAP 시스템에는 요금이 부과되지 않습니다.
+
+
+
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["이러한 용량 기반 라이선스 패키지에 대해 자세히 알아보세요."] .
+
+다음 링크를 사용하여 클라우드 공급업체 마켓플레이스에서 NetApp Backup and Recovery를 구독하세요.
+
+ifdef::aws[]
+
+* AWS: https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["NetApp Intelligent Services의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^] . endif::aws[]
+
+
+ifdef::azure[]
+
+* 하늘빛: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["NetApp Intelligent Services의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^] . endif::azure[]
+
+
+ifdef::gcp[]
+
+* 구글 클라우드: https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["NetApp Intelligent Services의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^] . endif::gcp[]
+
+
+
+
+== 연간 계약을 사용하세요
+
+연간 계약을 구매하면 NetApp 백업 및 복구 비용을 매년 지불할 수 있습니다.  1년, 2년, 3년 단위로 이용 가능합니다.
+
+마켓플레이스와 연간 계약을 맺은 경우 모든 NetApp 백업 및 복구 비용은 해당 계약에서 청구됩니다.  연간 마켓플레이스 계약과 BYOL을 섞어서 사용할 수는 없습니다.
+
+ifdef::aws[]
+
+AWS를 사용하면 연간 계약이 두 개 제공됩니다. https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS Marketplace 페이지"^] Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 경우:
+
+* Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
++
+이 옵션을 사용하려면 Marketplace 페이지에서 구독을 설정한 다음 https://docs.netapp.com/us-en/console-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["구독을 AWS 자격 증명과 연결합니다."^] . AWS 자격 증명에 활성 구독을 하나만 할당할 수 있으므로 콘솔에서 연간 계약 구독을 사용하여 Cloud Volumes ONTAP 시스템에 대한 비용도 지불해야 합니다.
+
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 라이선스를 사용하여 Cloud Volumes ONTAP 시스템에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스 용량에 포함되지 않습니다).  이 옵션을 사용하면 온프레미스 ONTAP 데이터를 백업할 수 없습니다.
++
+를 참조하십시오 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이선싱 주제"^] 이 라이선싱 옵션에 대해 자세히 알아보세요.
+
++
+이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정할 수 있으며 콘솔에서 AWS Marketplace를 구독하라는 메시지가 표시됩니다. endif::aws[]
+
+
+
+ifdef::azure[]
+
+Azure를 사용하면 연간 계약 두 가지를 이용할 수 있습니다. https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["Azure Marketplace 페이지"^] Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 경우:
+
+* Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
++
+이 옵션을 사용하려면 Marketplace 페이지에서 구독을 설정한 다음 https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html#subscribe["구독을 Azure 자격 증명과 연결합니다."^] . 콘솔에서 Azure 자격 증명에 활성 구독을 하나만 할당할 수 있으므로 이 연간 계약 구독을 사용하여 Cloud Volumes ONTAP 시스템에 대한 비용도 지불해야 합니다.
+
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 라이선스를 사용하여 Cloud Volumes ONTAP 시스템에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스 용량에 포함되지 않습니다).  이 옵션을 사용하면 온프레미스 ONTAP 데이터를 백업할 수 없습니다.
++
+를 참조하십시오 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이선싱 주제"^] 이 라이선싱 옵션에 대해 자세히 알아보세요.
+
++
+이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정할 수 있으며 콘솔에서 Azure Marketplace를 구독하라는 메시지가 표시됩니다. endif::azure[]
+
+
+
+ifdef::gcp[]
+
+GCP를 사용하는 경우 NetApp 영업 담당자에게 문의하여 연간 계약을 구매하세요.  해당 계약은 Google Cloud Marketplace에서 비공개 제안으로 제공됩니다.
+
+NetApp 에서 비공개 제안을 공유한 후 NetApp Backup and Recovery 활성화 중에 Google Cloud Marketplace에서 구독할 때 연간 플랜을 선택할 수 있습니다. endif::gcp[]
+
+
+
+== NetApp 백업 및 복구 BYOL 라이선스 사용
+
+NetApp 의 BYOL(Bring Your Own License)은 1년, 2년 또는 3년 기간을 제공합니다. 백업되는 소스 ONTAP 볼륨의 논리적 사용 용량(효율성 고려 전)을 기준으로 계산된, 보호하는 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.
+
+BYOL NetApp 백업 및 복구 라이선스는 NetApp 콘솔 조직 또는 계정과 연결된 모든 시스템에서 총 용량이 공유되는 플로팅 라이선스입니다.  ONTAP 시스템의 경우 CLI 명령을 실행하여 필요한 용량을 대략적으로 추정할 수 있습니다. `volume show -fields logical-used-by-afs` 백업하려는 볼륨에 대해서.
+
+NetApp Backup and Recovery BYOL 라이선스가 없는 경우 콘솔 오른쪽 하단에 있는 채팅 아이콘을 클릭하여 라이선스를 구매하세요.
+
+선택적으로, 사용하지 않을 Cloud Volumes ONTAP 용 노드 기반 라이선스가 할당되지 않은 경우 동일한 달러 환산 가치와 동일한 만료 날짜를 갖는 NetApp Backup and Recovery 라이선스로 전환할 수 있습니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["자세한 내용은 여기를 참조하세요"^] .
+
+NetApp 콘솔을 사용하여 BYOL 라이선스를 관리합니다.  콘솔에서 새로운 라이선스를 추가하고, 기존 라이선스를 업데이트하고, 라이선스 상태를 볼 수 있습니다.
+
+https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html["라이선스 추가에 대해 알아보세요"^] .

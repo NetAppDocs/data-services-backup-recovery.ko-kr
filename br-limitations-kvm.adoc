@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: br-limitations-kvm.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, KVM, SAP HANA database, virtual machine, vm 
+summary: NetApp Backup and Recovery의 이 릴리스에는 다음과 같은 알려진 제한 사항이 있습니다. 
+---
+= KVM 워크로드에 대한 NetApp 백업 및 복구의 알려진 제한 사항
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.
+
+NetApp Backup and Recovery의 KVM 워크로드 비공개 미리 보기 버전에서는 다음 작업 및 구성이 지원되지 않습니다.
+
+
+
+== 지원되지 않는 작업
+
+다음 작업은 비공개 미리보기 릴리스에서 지원되지 않습니다.
+
+* VM 복제, 마운트 또는 마운트 해제
+* VM을 대체 위치로 복원
+* SAN에 저장된 VM 보호
+* 애플리케이션 보호
+* 개체 저장소에서 백업 또는 복원
+* 보호 그룹 편집
+* 여러 KVM 호스트의 VM을 사용하여 보호 그룹 만들기
+* 사용자 정의 백업 생성( NetApp 콘솔에서 시작된 백업만 지원됨)
+
+
+
+
+== 지원되지 않는 구성
+
+다음 구성은 지원되지 않습니다.
+
+* 역할 기반 접근 제어(RBAC)
+* KVM 호스트에 직접 연결된 디스크
+* 여러 NFS 마운트 지점 또는 공유에 걸쳐 있는 디스크
+* RAW 디스크 포맷
+* NetFS 이외의 스토리지 풀 유형(NetFS만 지원됨)
+

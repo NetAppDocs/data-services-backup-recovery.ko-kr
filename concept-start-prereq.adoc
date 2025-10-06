@@ -1,0 +1,280 @@
+---
+sidebar: sidebar 
+permalink: concept-start-prereq.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, backup and recovery 
+summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp 백업 및 복구를 시작하세요.  NetApp 백업 및 복구를 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
+---
+= NetApp 백업 및 복구 필수 구성 요소
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+운영 환경, NetApp 콘솔 에이전트, NetApp 콘솔 계정의 준비 상태를 확인하여 NetApp 백업 및 복구를 시작하세요.  NetApp 백업 및 복구를 사용하려면 다음과 같은 필수 구성 요소가 필요합니다.
+
+
+
+== ONTAP 9.8 이상 필수 조건
+
+온프레미스 ONTAP 인스턴스에서 ONTAP One 라이선스를 활성화해야 합니다.
+
+
+
+== 개체 스토리지 백업을 위한 필수 조건
+
+백업 대상으로 개체 스토리지를 사용하려면 AWS S3, Microsoft Azure Blob, StorageGRID 또는 ONTAP 계정과 적절한 액세스 권한이 구성되어 있어야 합니다.
+
+* link:prev-ontap-protect-overview.html["ONTAP 볼륨 데이터 보호"]
+
+
+
+
+== Microsoft SQL Server 워크로드 보호를 위한 요구 사항
+
+Microsoft SQL Server 워크로드에 NetApp Backup and Recovery를 사용하려면 다음과 같은 호스트 시스템, 공간 및 크기 조정 전제 조건이 필요합니다.
+
+[cols="33,66a"]
+|===
+| 목 | 요구 사항 
+
+
+| 운영 체제  a| 
+Microsoft Windows 지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT#welcome["NetApp 상호 운용성 매트릭스 도구"^] .
+
+
+
+| Microsoft SQL Server 버전  a| 
+2012 이상 버전은 VMware Virtual Machine File System(VMFS) 및 VMware Virtual Machine Disk(VMDK) NFS를 지원합니다.
+
+
+
+| SnapCenter 서버 버전  a| 
+SnapCenter 에서 NetApp Backup and Recovery로 기존 데이터를 가져오려면 SnapCenter Server 버전 5.0 이상이 필요합니다.
+
+
+NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 먼저 확인하세요. 보다 link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
+
+
+
+| SQL Server 호스트의 플러그인에 대한 최소 RAM  a| 
+1GB
+
+
+
+| SQL Server 호스트의 플러그인에 대한 최소 설치 및 로그 공간  a| 
+5GB
+
+충분한 디스크 공간을 할당하고 로그 폴더의 저장 공간 소비량을 모니터링합니다.  필요한 로그 공간은 수행된 백업 횟수와 데이터 보호 작업 빈도에 따라 달라집니다.  충분한 공간이 없으면 작업에 대한 로그가 생성되지 않습니다.
+
+
+
+| 필수 소프트웨어 패키지  a| 
+* ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)
+* 파워셸 7.4.2
+
+
+지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT#welcome["NetApp 상호 운용성 매트릭스 도구"^] .
+
+|===
+
+
+== VMware 워크로드 보호를 위한 요구 사항
+
+VMware 워크로드를 검색하고 보호하려면 특정 요구 사항이 필요합니다.
+
+*소프트웨어 지원*
+
+* NFS 및 VMFS 데이터 저장소가 지원됩니다. vVols 지원되지 않습니다.
+* 지원되는 NFS 버전: NFS 3 및 NFS 4.1
+* 지원되는 VMware ESXi Server 버전: 7.0U1 이상
+* 지원되는 VMware vCenter vSphere 버전: 7.0U1 이상
+* IP 주소: IPv4 및 IPv6
+* VMware TLS: 1.2, 1.3
+
+
+*VMware 워크로드 보호를 위한 연결 및 포트 요구 사항*
+
+[cols="33,66a"]
+|===
+| 포트 유형 | 사전 구성된 포트 
+
+
+| VMware ESXi 서버 포트  a| 
+443(HTTPS), 양방향. 게스트 파일 복원 기능은 이 포트를 사용합니다.
+
+
+
+| VMware vSphere vCenter Server 포트  a| 
+vVol VM을 보호하는 경우 포트 443을 사용해야 합니다.
+
+
+
+| 스토리지 클러스터 또는 스토리지 VM 포트  a| 
+443(HTTPS), 양방향. 80(HTTP), 양방향. 이 포트는 가상 어플라이언스와 스토리지 VM 또는 스토리지 VM이 포함된 클러스터 간의 통신에 사용됩니다.
+
+|===
+*VMware 워크로드 보호를 위한 역할 기반 액세스 제어(RBAC) 요구 사항*
+
+vCenter 관리자 계정에는 필요한 vCenter 권한이 있어야 합니다.
+
+필요한 vCenter 권한 목록은 다음을 참조하세요. https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deployment_planning_and_requirements.html#rbac-privileges-required["SnapCenter Plug-in for VMware vSphere 필요한 권한"^] .
+
+
+
+== KVM 워크로드 보호를 위한 요구 사항
+
+KVM 가상 머신을 검색하고 보호하려면 특정 요구 사항이 필요합니다.
+
+* 커널 버전 5.14.0-503.22.1.el9_5.x86_64(장기) 이상을 실행하는 최신 Linux 배포판
+* 콘솔 에이전트에서 KVM 호스트로의 포트 22에 대한 인바운드 트래픽이 허용되는지 확인하십시오.
+* QEMU 게스트 에이전트 버전 9.0.0 이상
+* libvirt 버전 10.5.0 이상
+
+
+
+
+== Oracle 워크로드 보호를 위한 요구 사항
+
+Oracle 리소스를 검색하고 보호하기 위해 환경이 특정 요구 사항을 충족하는지 확인하세요.
+
+* 오라클 데이터베이스:
++
+** Oracle 19C 및 21C는 독립 실행형 배포에서 지원됩니다.
+** Oracle Database는 기본 또는 보조 NetApp ONTAP 스토리지에 배포되어야 합니다.
+
+
+* 개체 스토리지 지원:
++
+** Azure 개체 스토리지
+** 아마존 AWS
+** NetApp StorageGRID
+** ONTAP S3
+
+
+
+
+
+
+== Kubernetes 애플리케이션 보호를 위한 요구 사항
+
+Kubernetes 리소스를 검색하고 Kubernetes 애플리케이션을 보호하려면 특정 요구 사항이 필요합니다.
+
+NetApp 콘솔 요구 사항은 다음을 참조하세요.<<NetApp 콘솔에서>> .
+
+* 기본 ONTAP 시스템(ONTAP 9.16.1 이상)
+* Kubernetes 클러스터 - 지원되는 Kubernetes 배포판과 버전은 다음과 같습니다.
++
+** Anthos On-Prem(VMware) 및 Anthos on bare metal 1.16
+** 쿠버네티스 1.27 - 1.33
+** 오픈시프트 4.10 - 4.18
+** Rancher Kubernetes Engine 2(RKE2) v1.26.7+rke2r1, v1.28.5+rke2r1
+** 수세 랜처
+
+
+* NetApp Trident 24.10 이상
+* NetApp Trident Protect 25.07 이상(Kubernetes 워크로드 검색 중 설치됨)
+* NetApp Trident Protect Connector 25.07 이상(Kubernetes 워크로드 검색 중 설치됨)
++
+** Kubernetes 클러스터, Trident Protect Connector 및 Trident Protect 프록시 간의 아웃바운드 방향에서 TCP 포트 443이 필터링되지 않았는지 확인하세요.
+
+
+
+
+
+
+== Hyper-V 워크로드 보호를 위한 요구 사항
+
+Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정 요구 사항을 충족하는지 확인하세요.
+
+* Hyper-V 호스트에 대한 소프트웨어 요구 사항:
++
+** Microsoft Hyper-V 2019, 2022 및 2025 버전
+** ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)
+** 파워셸 7.4.2
+
+
+* Hyper-V 호스트에 대한 하드웨어 요구 사항:
++
+** 독립형 및 FCI 클러스터 호스트가 지원됩니다.
+** Hyper-V 호스트의 NetApp Hyper-V 플러그인에 최소 1GB RAM 필요
+** Hyper-V 호스트의 플러그인을 위한 최소 5GB 설치 및 로그 공간
++
+
+NOTE: Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당하고 사용량을 정기적으로 모니터링하세요.  필요한 공간은 백업 및 데이터 보호 작업이 얼마나 자주 발생하는지에 따라 달라집니다.  공간이 충분하지 않으면 로그가 생성되지 않습니다.
+
+
+
+* NetApp ONTAP 구성 요구 사항:
++
+** 기본 ONTAP 시스템(ONTAP 9.15.1 이상)
+** CIFS 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하세요.  를 참조하세요 https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/configure-shares-continuous-availability-task.html["ONTAP 문서"^] 지침을 보려면.
+
+
+
+
+
+
+== NetApp 콘솔에서
+
+NetApp 콘솔이 다음 요구 사항을 충족하는지 확인하세요.
+
+* 콘솔 사용자는 Microsoft SQL Server 및 Kubernetes 워크로드에서 작업을 수행하는 데 필요한 역할과 권한이 있어야 합니다.  리소스를 검색하려면 NetApp 백업 및 복구에 대한 슈퍼 관리자 역할이 있어야 합니다.  보다link:reference-roles.html["NetApp 백업 및 복구 역할 기반 기능 액세스"] NetApp Backup and Recovery에서 작업을 수행하는 데 필요한 역할과 권한에 대한 자세한 내용은 다음을 참조하세요.
+* 온프레미스 ONTAP 클러스터 또는 Cloud Volumes ONTAP 에 연결되는 하나 이상의 활성 콘솔 에이전트가 있는 콘솔 조직입니다.
+* NetApp 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 클러스터가 있는 콘솔 시스템이 하나 이상 있어야 합니다.
+* 콘솔 에이전트
++
+참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트를 구성하는 방법을 알아보세요"] 그리고 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["표준 NetApp 콘솔 요구 사항"^] .
+
++
+** 미리보기 버전에는 콘솔 에이전트를 위한 Ubuntu 22.04 LTS 운영 체제가 필요합니다.
+
+
+
+
+
+
+=== NetApp 콘솔 설정
+
+다음 단계는 콘솔과 NetApp 백업 및 복구를 설정하는 것입니다.
+
+검토 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["표준 NetApp 콘솔 요구 사항"^] .
+
+
+
+=== 콘솔 에이전트 만들기
+
+이 서비스를 체험해 보려면 NetApp 제품 팀에 문의하세요.  그런 다음 콘솔 에이전트를 사용하면 서비스에 적합한 기능이 포함됩니다.
+
+서비스를 사용하기 전에 NetApp 콘솔에서 콘솔 에이전트를 생성하려면 해당 내용을 설명하는 콘솔 설명서를 참조하십시오. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["콘솔 에이전트를 만드는 방법"^] .
+
+.콘솔 에이전트를 설치할 위치
+복원 작업을 완료하려면 다음 위치에 콘솔 에이전트를 설치할 수 있습니다.
+
+ifdef::aws[]
+
+* Amazon S3의 경우 콘솔 에이전트를 사내에 배포할 수 있습니다.
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure Blob의 경우 콘솔 에이전트를 온프레미스에 배포할 수 있습니다.
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+endif::gcp[]
+
+* StorageGRID 의 경우, 인터넷 접속 여부와 관계없이 콘솔 에이전트를 사내에 배포해야 합니다.
+* ONTAP S3의 ​​경우 콘솔 에이전트는 인터넷 접속 여부와 관계없이 사내 또는 클라우드 공급자 환경에 배포될 수 있습니다.
+
+
+
+NOTE: "온프레미스 ONTAP 시스템"에 대한 참조에는 FAS 및 AFF 시스템이 포함됩니다.

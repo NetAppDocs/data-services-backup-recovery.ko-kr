@@ -1,0 +1,236 @@
+---
+settings:
+  name: NetApp Backup and Recovery
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  filter:
+    label: 클라우드 제공업체
+    default: 모든 클라우드 제공업체
+    options:
+    - name: 아마존 웹 서비스
+      alias: AWS
+      id: aws
+    - name: 구글 클라우드
+      alias: 구글 클라우드
+      id: gcp
+    - name: 마이크로소프트 애저
+      alias: 하늘빛
+      id: azure
+  langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: NetApp 백업 및 복구 문서
+    url: "/index.html"
+  - title: 릴리스 노트
+    entries:
+    - title: 새로운 소식
+      url: "/whats-new.html"
+    - title: ONTAP 볼륨 워크로드에 대한 알려진 제한 사항
+      url: "/br-reference-limitations.html"
+    - title: Microsoft SQL Server 워크로드에 대한 알려진 제한 사항
+      url: "/br-limitations.html"
+    - title: VMware 워크로드에 대한 알려진 제한 사항
+      url: "/br-limitations-vmware.html"
+    - title: Hyper-V 워크로드에 대한 알려진 제한 사항
+      url: "/br-limitations-hyperv.html"
+    - title: KVM 워크로드에 대한 알려진 제한 사항
+      url: "/br-limitations-kvm.html"
+    - title: Oracle 워크로드에 대한 알려진 제한 사항
+      url: "/br-limitations-oracle.html"
+  - title: 시작하기
+    entries:
+    - title: NetApp 백업 및 복구에 대해 알아보세요
+      url: "/concept-backup-to-cloud.html"
+    - title: NetApp 백업 및 복구를 위한 필수 구성 요소
+      url: "/concept-start-prereq.html"
+    - title: NetApp 백업 및 복구에 대한 라이선싱 설정
+      url: "/br-start-licensing.html"
+    - title: NetApp Backup and Recovery를 사용하기 전에 백업 대상을 설정하세요.
+      url: "/br-start-setup.html"
+    - title: NetApp 백업 및 복구에 로그인하세요
+      url: "/br-start-login.html"
+    - title: 백업 대상 검색
+      url: "/br-start-discover-backup-targets.html"
+    - title: 다양한 NetApp 백업 및 복구 워크로드로 전환
+      url: "/br-start-switch-ui.html"
+    - title: NetApp 백업 및 복구 일반 설정 구성
+      url: "/br-start-configure.html"
+  - title: NetApp 백업 및 복구 사용
+    entries:
+    - title: 대시보드에서 보호 상태 보기
+      url: "/br-use-dashboard.html"
+    - title: 백업 및 복원을 관리하는 정책 만들기
+      url: "/br-use-policies-create.html"
+    - title: ONTAP 볼륨 워크로드 보호
+      entries:
+      - title: ONTAP 볼륨 워크로드 개요 보호
+        url: "/prev-ontap-protect-overview.html"
+      - title: ONTAP 볼륨에 대한 보호 여정을 계획하세요
+        url: "/prev-ontap-protect-journey.html"
+      - title: ONTAP 볼륨에 대한 정책 관리
+        url: "/prev-ontap-policy-manage.html"
+      - title: ONTAP 볼륨에 대한 객체 백업 정책 옵션
+        url: "/prev-ontap-policy-object-options.html"
+      - title: 백업-객체 정책 관리 고급 설정 옵션
+        url: "/prev-ontap-policy-object-advanced-settings.html"
+      - title: Cloud Volumes ONTAP Amazon S3에 백업
+        url: "/prev-ontap-backup-cvo-aws.html"
+      - title: Cloud Volumes ONTAP Azure Blob에 백업
+        url: "/prev-ontap-backup-cvo-azure.html"
+      - title: Google Cloud에 Cloud Volumes ONTAP 백업
+        url: "/prev-ontap-backup-cvo-gcp.html"
+      - title: 온프레미스 ONTAP Amazon S3에 백업
+        url: "/prev-ontap-backup-onprem-aws.html"
+      - title: 온-프레미스 ONTAP Azure Blob에 백업
+        url: "/prev-ontap-backup-onprem-azure.html"
+      - title: 온프레미스 ONTAP Google Cloud에 백업
+        url: "/prev-ontap-backup-onprem-gcp.html"
+      - title: 온프레미스 ONTAP ONTAP S3로 백업
+        url: "/prev-ontap-backup-onprem-ontaps3.html"
+      - title: 온프레미스 ONTAP StorageGRID 에 백업
+        url: "/prev-ontap-backup-onprem-storagegrid.html"
+      - title: SnapMirror 사용하여 볼륨을 Cloud Resync로 마이그레이션
+        url: "/prev-ontap-migrate-resync.html"
+      - title: 다크 사이트에서 구성 데이터 복원
+        url: "/reference-backup-cbs-db-in-dark-site.html"
+      - title: ONTAP 백업 관리
+        url: "/prev-ontap-backup-manage.html"
+      - title: ONTAP 백업에서 복원
+        url: "/prev-ontap-restore.html"
+    - title: Microsoft SQL Server 워크로드 보호
+      entries:
+      - title: Microsoft SQL Server 워크로드 보호 개요
+        url: "/br-use-mssql-protect-overview.html"
+      - title: SnapCenter 에서 가져오는 경우 추가 항목 구성
+        url: "/concept-start-prereq-snapcenter-import.html"
+      - title: Microsoft SQL Server 워크로드 알아보기
+        url: "/br-start-discover.html"
+      - title: Microsoft SQL Server 워크로드 백업
+        url: "/br-use-mssql-backup.html"
+      - title: Microsoft SQL Server 작업 부하 복원
+        url: "/br-use-mssql-restore.html"
+      - title: Microsoft SQL Server 워크로드 복제
+        url: "/br-use-mssql-clone.html"
+      - title: Microsoft SQL Server 인벤토리 관리
+        url: "/br-use-manage-inventory.html"
+      - title: Microsoft SQL Server 스냅샷 관리
+        url: "/br-use-manage-snapshots.html"
+      - title: Microsoft SQL Server 보고서 만들기
+        url: "/br-use-reports.html"
+    - title: VMware 워크로드 보호(VMware용 SnapCenter 플러그인 없이 미리 보기)
+      entries:
+      - title: VMware 워크로드 보호 개요
+        url: "/br-use-vmware-protect-overview.html"
+      - title: VMware 워크로드 알아보기
+        url: "/br-use-vmware-discovery.html"
+      - title: VMware 워크로드에 대한 보호 그룹 생성 및 관리
+        url: "/br-use-vmware-protection-groups.html"
+      - title: VMware 워크로드 백업
+        url: "/br-use-vmware-backup.html"
+      - title: VMware 워크로드 복원
+        url: "/br-use-vmware-restore.html"
+    - title: VMware 워크로드 보호(VMware용 SnapCenter 플러그인 사용)
+      entries:
+      - title: 가상 머신 워크로드 보호 개요
+        url: "/prev-vmware-protect-overview.html"
+      - title: 가상 머신 워크로드 보호를 위한 전제 조건
+        url: "/prev-vmware-prereqs.html"
+      - title: SnapCenter Plug-in for VMware vSphere 등록
+        url: "/prev-vmware-register-snapcenter.html"
+      - title: 가상 머신 데이터를 백업하기 위한 정책 생성
+        url: "/prev-vmware-policy-create.html"
+      - title: Amazon Web Services에 데이터 저장소 백업
+        url: "/prev-vmware-backup-aws.html"
+      - title: Microsoft Azure에 데이터 저장소 백업
+        url: "/prev-vmware-backup-azure.html"
+      - title: Google Cloud Platform에 데이터 저장소 백업
+        url: "/prev-vmware-backup-gcp.html"
+      - title: StorageGRID 에 데이터 저장소 백업
+        url: "/prev-vmware-backup-storagegrid.html"
+      - title: 데이터스토어 및 가상 머신 데이터 보호 관리
+        url: "/prev-vmware-manage.html"
+      - title: 가상 머신 데이터 및 데이터 저장소 복원
+        url: "/prev-vmware-restore.html"
+    - title: KVM 워크로드 보호(미리 보기)
+      entries:
+      - title: KVM 워크로드 보호 개요
+        url: "/br-use-kvm-protect-overview.html"
+      - title: KVM 워크로드 검색
+        url: "/br-start-discover-kvm.html"
+      - title: KVM 워크로드에 대한 보호 그룹 생성 및 관리
+        url: "/br-use-kvm-protection-groups.html"
+      - title: KVM 워크로드 백업
+        url: "/br-use-kvm-backup.html"
+      - title: KVM 워크로드 복원
+        url: "/br-use-kvm-restore.html"
+    - title: Hyper-V 워크로드 보호(미리 보기)
+      entries:
+      - title: Hyper-V 워크로드 보호 개요
+        url: "/br-use-hyperv-protect-overview.html"
+      - title: Hyper-V 워크로드 검색
+        url: "/br-start-discover-hyperv.html"
+      - title: Hyper-V 워크로드에 대한 보호 그룹 생성 및 관리
+        url: "/br-use-hyperv-protection-groups.html"
+      - title: Hyper-V 워크로드 백업
+        url: "/br-use-hyperv-backup.html"
+      - title: Hyper-V 워크로드 복원
+        url: "/br-use-hyperv-restore.html"
+    - title: Oracle 워크로드 보호(미리 보기)
+      entries:
+      - title: Oracle 워크로드 보호 개요
+        url: "/br-use-oracle-protect-overview.html"
+      - title: Oracle 워크로드 검색
+        url: "/br-start-discover-oracle.html"
+      - title: Oracle 워크로드에 대한 보호 그룹 생성 및 관리
+        url: "/br-use-oracle-protection-groups.html"
+      - title: Oracle 워크로드 백업
+        url: "/br-use-oracle-backup.html"
+      - title: Oracle 워크로드 복원
+        url: "/br-use-oracle-restore.html"
+      - title: 복구 지점 마운트 및 마운트 해제
+        url: "/br-use-oracle-mount-unmount.html"
+    - title: Kubernetes 워크로드 보호(미리 보기)
+      entries:
+      - title: Kubernetes 워크로드 보호 개요
+        url: "/br-use-kubernetes-protect-overview.html"
+      - title: Kubernetes 워크로드를 알아보세요
+        url: "/br-start-discover-kubernetes.html"
+      - title: Kubernetes 애플리케이션 추가 및 보호
+        url: "/br-use-protect-kubernetes-applications.html"
+      - title: Kubernetes 애플리케이션 복원
+        url: "/br-use-restore-kubernetes-applications.html"
+      - title: Kubernetes 클러스터 관리
+        url: "/br-use-manage-kubernetes-clusters.html"
+      - title: Kubernetes 애플리케이션 관리
+        url: "/br-use-manage-kubernetes-applications.html"
+      - title: Kubernetes 워크로드에 대한 실행 후크 템플릿 관리
+        url: "/br-use-manage-execution-hook-templates.html"
+    - title: 작업 모니터링
+      url: "/br-use-monitor-tasks.html"
+    - title: NetApp 백업 및 복구를 다시 시작하세요
+      url: "/reference-restart-backup.html"
+  - title: REST API로 자동화
+    url: "/br-api-backup-restore.html"
+  - title: 참조
+    entries:
+    - title: SnapCenter 의 정책과 NetApp 백업 및 복구의 비교
+      url: "/reference-policy-differences-snapcenter.html"
+    - title: NetApp 백업 및 복구 역할 및 권한
+      url: "/reference-roles.html"
+    - title: 다크 사이트에서 NetApp 백업 및 복구 데이터 복원
+      url: "/reference-backup-cbs-db-in-dark-site.html"
+    - title: 지원되는 AWS 아카이브 스토리지 계층
+      url: "/prev-reference-aws-archive-storage-tiers.html"
+    - title: 지원되는 Azure 보관 저장소 계층
+      url: "/prev-reference-azure-archive-storage-tiers.html"
+    - title: 지원되는 Google Cloud 보관 스토리지 계층
+      url: "/prev-reference-gcp-archive-storage-tiers.html"
+  - title: 법적 고지 사항
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Data Services
+  repo: data-services-family

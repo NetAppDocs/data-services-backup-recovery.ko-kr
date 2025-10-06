@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: prev-reference-aws-archive-storage-tiers.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: NetApp Backup and Recovery는 두 가지 S3 보관 스토리지 클래스와 대부분의 지역을 지원합니다. 
+---
+= NetApp Backup and Recovery를 통해 지원되는 AWS 아카이브 스토리지 계층
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery는 두 가지 S3 보관 스토리지 클래스와 대부분의 지역을 지원합니다.
+
+[]
+====
+*참고* NetApp 백업 및 복구 UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp 백업 및 복구 UI로 전환"] .
+
+====
+
+
+== NetApp 백업 및 복구에 지원되는 S3 보관 스토리지 클래스
+
+백업 파일이 처음 생성되면 S3 표준 스토리지에 저장됩니다.  이 계층은 자주 액세스하지 않는 데이터를 저장하는 데 최적화되어 있지만, 즉시 액세스할 수도 있습니다.  30일 후에는 백업이 S3 _Standard-Infrequent Access_ 스토리지 클래스로 전환되어 비용을 절감할 수 있습니다.
+
+소스 클러스터가 ONTAP 9.10.1 이상을 실행하는 경우 특정 일수(일반적으로 30일 이상)가 지나면 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 백업을 계층화하여 비용을 더욱 최적화할 수 있습니다.  이 값을 "0" 또는 1~999일로 설정할 수 있습니다.  "0"일로 설정하면 나중에 1~999일로 변경할 수 없습니다.
+
+이러한 계층의 데이터는 필요할 때 즉시 액세스할 수 없으며 검색 비용이 더 많이 들기 때문에 보관된 백업 파일에서 데이터를 복원해야 하는 빈도를 고려해야 합니다.  이 페이지에서 보관 저장소에서 데이터를 복원하는 방법에 대한 섹션을 참조하세요.
+
+* NetApp 백업 및 복구를 활성화할 때 첫 번째 백업 정책에서 보관 계층을 선택하지 않으면 _S3 Glacier_가 향후 정책에 대한 유일한 보관 옵션이 됩니다.
+* 첫 번째 백업 정책에서 _S3 Glacier_를 선택하면 해당 클러스터의 향후 백업 정책에 대해 _S3 Glacier Deep Archive_ 계층으로 변경할 수 있습니다.
+* 첫 번째 백업 정책에서 _S3 Glacier Deep Archive_를 선택하면 해당 계층은 해당 클러스터의 향후 백업 정책에 사용할 수 있는 유일한 아카이브 계층이 됩니다.
+
+
+이러한 유형의 수명 주기 규칙으로 NetApp Backup and Recovery를 구성하는 경우 AWS 계정에서 버킷을 설정할 때 어떤 수명 주기 규칙도 구성해서는 안 됩니다.
+
+https://aws.amazon.com/s3/storage-classes/["S3 스토리지 클래스에 대해 알아보세요"^] .
+
+
+
+== 보관 저장소에서 데이터 복원
+
+오래된 백업 파일을 보관 저장소에 저장하는 것이 표준 또는 표준 IA 저장소에 저장하는 것보다 비용이 훨씬 저렴하지만, 복원 작업을 위해 보관 저장소에 있는 백업 파일의 데이터에 액세스하는 데는 더 오랜 시간이 걸리고 비용도 더 많이 듭니다.
+
+Amazon S3 Glacier 및 Amazon S3 Glacier Deep Archive에서 데이터를 복원하는 데 드는 비용은 얼마입니까?:: Amazon S3 Glacier에서 데이터를 검색할 때 선택할 수 있는 복원 우선순위는 3가지이고, Amazon S3 Glacier Deep Archive에서 데이터를 검색할 때는 2가지 복원 우선순위가 있습니다.  S3 Glacier Deep Archive는 S3 Glacier보다 비용이 저렴합니다.
++
+--
+[cols="25,25,25,25"]
+|===
+| 보관 계층 3+| 우선순위 및 비용 복원 
+
+
+|  | *높은* | *기준* | *낮은* 
+
+
+| *S3 빙하* | 가장 빠른 검색, 가장 높은 비용 | 검색 속도가 느리고 비용이 저렴합니다. | 가장 느린 검색, 가장 낮은 비용 
+
+
+| *S3 빙하 심부 기록 보관소* |  | 검색 속도가 빠르고 비용이 더 많이 듭니다. | 검색 속도가 느리고 비용이 가장 낮습니다. 
+|===
+각 방법에는 GB당 검색 수수료와 요청당 수수료가 다릅니다.  AWS 지역별 S3 Glacier 가격에 대한 자세한 내용은 다음을 방문하세요. https://aws.amazon.com/s3/pricing/["Amazon S3 가격 페이지"^] .
+
+--
+Amazon S3 Glacier에 보관된 객체를 복원하는 데 얼마나 걸리나요?:: 전체 복구 시간은 2가지 부분으로 구성됩니다.
++
+--
+* *검색 시간*: 보관소에서 백업 파일을 검색하여 표준 저장소에 넣는 데 걸리는 시간입니다.  이 시기를 '보수화' 시기라고도 합니다.  검색 시간은 선택한 복구 우선순위에 따라 다릅니다.
++
+[cols="25,20,20,20"]
+|===
+| 보관 계층 3+| 복원 우선 순위 및 검색 시간 
+
+
+|  | *높은* | *기준* | *낮은* 
+
+
+| *S3 빙하* | 3~5분 | 3~5시간 | 5~12시간 
+
+
+| *S3 빙하 심부 기록 보관소* |  | 12시간 | 48시간 
+|===
+* *복원 시간*: 표준 저장소의 백업 파일에서 데이터를 복원하는 데 걸리는 시간입니다.  이 시간은 보관 계층을 사용하지 않을 때 표준 저장소에서 직접 수행하는 일반적인 복원 작업과 다르지 않습니다.
+
+
+Amazon S3 Glacier 및 S3 Glacier Deep Archive 검색 옵션에 대한 자세한 내용은 다음을 참조하세요. https://aws.amazon.com/s3/faqs/#Amazon_S3_Glacier["이러한 스토리지 클래스에 대한 Amazon FAQ"^] .
+
+--
+

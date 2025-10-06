@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: br-use-vmware-protect-overview.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+---
+= NetApp 백업 및 복구 개요를 사용하여 VMware 워크로드 보호
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery를 사용하여 VMware VM과 데이터 저장소를 보호하세요.  NetApp 백업 및 복구는 빠르고 공간 효율적이며, 충돌 대비 및 VM 대비 일관된 백업 및 복원 작업을 제공합니다. VMware 워크로드를 Amazon Web Services S3 또는 StorageGRID 에 백업하고 온프레미스 VMware 호스트로 VMware 워크로드를 복원할 수 있습니다.
+
+
+NOTE: 이 버전의 NetApp Backup and Recovery는 VMware vCenter만 지원하며 vVols 이나 vVols 의 VM을 검색하지 않습니다.
+
+NetApp 백업 및 복구를 사용하여 3-2-1 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
+
+* 여러 개의 데이터 사본은 내부자 및 외부 사이버 보안 위협으로부터 다중 계층의 보호를 제공합니다.
+* 여러 미디어 유형을 사용하면 하나의 미디어 유형에 물리적 또는 논리적 오류가 발생하는 경우에도 장애 조치를 실행할 수 있습니다.
+* 현장 사본은 빠른 복원을 용이하게 하며, 현장 사본이 손상된 경우를 대비해 오프사이트 사본을 사용할 수 있습니다.
+
+
+[]
+====
+*참고* NetApp 백업 및 복구 UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp 백업 및 복구 UI로 전환"] .
+
+====
+NetApp Backup and Recovery를 사용하면 VMware 워크로드와 관련된 다음 작업을 수행할 수 있습니다.
+
+* link:br-use-vmware-discovery.html["VMware 워크로드 알아보기"]
+* link:br-use-vmware-protection-groups.html["VMware 워크로드에 대한 보호 그룹 생성 및 관리"]
+* link:br-use-vmware-backup.html["VMware 워크로드 백업"]
+* link:br-use-vmware-restore.html["VMware 워크로드 복원"]
+

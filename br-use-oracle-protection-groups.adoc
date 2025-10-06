@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: br-use-oracle-protection-groups.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle, database, workloads, volumes, snapshots 
+summary: NetApp Backup and Recovery에서 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다. 
+---
+= NetApp Backup and Recovery를 사용하여 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Oracle Database 리소스 세트에 대한 백업 작업을 관리하기 위해 보호 그룹을 만듭니다.  보호 그룹은 함께 보호하려는 데이터베이스와 같은 리소스의 논리적 그룹입니다.  Oracle 데이터베이스를 백업하려면 보호 그룹을 만들어야 합니다.
+
+보호 그룹과 관련된 다음 작업을 수행할 수 있습니다.
+
+* 보호 그룹을 만듭니다.
+* 보호 세부 정보를 확인하세요.
+* 지금 보호 그룹을 백업하세요. 보다 link:br-use-kvm-backup.html["지금 Oracle 워크로드를 백업하세요"] .
+* 보호 그룹을 삭제합니다.
+
+
+
+
+== 보호 그룹 생성
+
+보호하려는 VM과 스토리지 풀을 보호 그룹으로 그룹화합니다.
+
+*필수 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+.단계
+. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. 보호 세부 정보를 보려면 작업 부하를 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
+. *보호 그룹* 탭을 선택하세요.
+. *보호 그룹 만들기*를 선택합니다.
+. 보호 그룹의 이름을 입력하세요.
+. 보호 그룹에 포함할 VM 또는 스토리지 풀을 선택합니다.
+. *다음*을 선택하세요.
+. 보호 그룹에 적용할 *백업 정책*을 선택합니다.
++
+정책을 만들려면 *새 정책 만들기*를 선택하고 메시지에 따라 정책을 만드세요. 보다 link:br-use-policies-create.html["정책 생성"] 자세한 내용은.
+
+. *다음*을 선택하세요.
+. 구성을 검토하세요.
+. 보호 그룹을 생성하려면 *생성*을 선택하세요.
+
+
+
+
+== 보호 그룹 삭제
+
+보호 그룹을 삭제하면 해당 보호 그룹과 관련된 모든 백업 일정이 제거됩니다. 더 이상 필요하지 않은 경우 보호 그룹을 삭제할 수 있습니다.
+
+.단계
+. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. 보호 세부 정보를 보려면 작업 부하를 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
+. *보호 그룹* 탭을 선택하세요.
+. 삭제할 보호 그룹을 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *보호 기능을 제거합니다*.
+. 연관된 백업을 삭제한다는 확인 메시지를 검토하고 삭제를 확인하세요.
+

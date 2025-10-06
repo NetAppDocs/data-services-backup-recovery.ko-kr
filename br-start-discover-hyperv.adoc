@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: br-start-discover-hyperv.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Hyper-V, workloads, protect 
+summary: NetApp 백업 및 복구는 워크로드를 보호하기 위해 먼저 워크로드를 검색해야 합니다. 
+---
+= NetApp 백업 및 복구에서 Hyper-V 워크로드를 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 백업 및 복구는 Hyper-V 가상 머신을 먼저 검색하여 보호해야 합니다.
+
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+
+
+== Hyper-V 호스트를 추가하고 리소스를 검색합니다.
+
+Hyper-V 호스트 정보를 추가하고 NetApp Backup and Recovery에서 가상 머신을 검색하도록 합니다.  각 콘솔 에이전트 내에서 리소스를 검색할 시스템을 선택합니다.
+
+
+NOTE: Hyper-V 호스트를 추가하고 리소스를 검색하면 NetApp Backup and Recovery가 NetApp Hyper-V 플러그인과 NetApp SnapCenter Windows FileSystem 플러그인을 Hyper-V 호스트에 설치하여 가상 머신을 관리하고 보호하는 데 도움을 줍니다.
+
+.단계
+. NetApp 콘솔 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
++
+NetApp Backup and Recovery에 처음 로그인하는 경우 콘솔에 이미 시스템이 있지만 리소스를 검색하지 못한 경우 "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 랜딩 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.
+
+. *리소스 검색*을 선택하세요.
+. 다음 정보를 입력하세요:
++
+.. *작업 유형*: *Hyper-V*를 선택하세요.
+.. 아직 이 Hyper-V 호스트에 대한 자격 증명을 저장하지 않은 경우 *자격 증명 추가*를 선택합니다.
++
+... 이 호스트와 함께 사용할 콘솔 에이전트를 선택하세요.
+... 이 자격증의 이름을 입력하세요.
+... 계정의 사용자 이름과 비밀번호를 입력하세요.
+... *완료*를 선택하세요.
+
+
+.. *호스트 등록*: 새로운 Hyper-V 호스트를 추가합니다.  호스트의 FQDN 또는 IP 주소, 자격 증명, 콘솔 에이전트 및 포트 번호를 입력하세요.
+
+
+. *발견*을 선택하세요.
++
+
+TIP: 이 과정은 몇 분 정도 걸릴 수 있습니다.
+
+
+
+.결과
+NetApp Backup and Recovery가 리소스를 검색한 후 Hyper-V 워크로드가 인벤토리 페이지의 워크로드 목록에 표시됩니다.
+
+
+
+== NetApp 백업 및 복구 대시보드로 계속
+
+. NetApp 백업 및 복구 대시보드를 표시하려면 NetApp 콘솔 메뉴에서 *대시보드*를 선택합니다.
+. 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
+

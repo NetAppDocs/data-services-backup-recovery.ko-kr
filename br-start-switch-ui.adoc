@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: br-start-switch-ui.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: 다양한 NetApp 백업 및 복구 워크로드 간에 전환할 수 있습니다.  일부 워크로드는 다른 UI를 사용합니다. 
+---
+= 다양한 NetApp 백업 및 복구 워크로드로 전환
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+다양한 NetApp 백업 및 복구 워크로드 간에 전환할 수 있습니다.
+
+
+
+== 다른 작업으로 전환
+
+NetApp 백업 및 복구 UI에서 다른 워크로드로 전환할 수 있습니다.
+
+.단계
+. 콘솔 왼쪽 탐색에서 *보호* > *백업 및 복구*를 선택합니다.
+. 페이지 오른쪽 상단에서 *작업량 전환* 드롭다운 목록을 선택합니다.
+. 전환하려는 작업 부하를 선택하세요.
++
+페이지가 새로 고쳐지고 선택한 작업 부하가 표시됩니다.
+
+

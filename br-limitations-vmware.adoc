@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: br-limitations-vmware.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, vmware, vcenter 
+summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery는 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
+---
+= VMware 워크로드용 NetApp 백업 및 복구의 알려진 제한 사항
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+알려진 제한 사항은 이 제품 릴리스에서 지원하지 않거나 올바르게 상호 운용되지 않는 플랫폼, 장치 또는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.
+
+NetApp Backup and Recovery의 VMware 워크로드 미리보기 버전에서는 다음 작업이 지원되지 않습니다.
+
+* 산
+* 마운트 해제
+* 대체 위치로 복원
+* VMDK 복원
+* VMDK 첨부
+* VMDK 분리
+* vVol 지원
+* NVMe 지원
+* 이메일 통합
+* 정책 편집
+* 보호 그룹 편집
+* 역할 기반 액세스 제어(RBAC) 지원
+

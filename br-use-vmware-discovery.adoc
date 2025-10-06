@@ -1,0 +1,158 @@
+---
+sidebar: sidebar 
+permalink: br-use-vmware-discovery.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+---
+= NetApp 백업 및 복구를 통해 VMware 워크로드를 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 백업 및 복구 서비스를 사용하려면 먼저 ONTAP 시스템에서 실행 중인 VMware 데이터 저장소와 VM을 검색해야 합니다. 이미 SnapCenter Plug-in for VMware vSphere 설치되어 있는 경우 선택적으로 백업 데이터와 정책을 가져올 수 있습니다.
+
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+
+
+== VMware 워크로드를 검색하고 선택적으로 SnapCenter 리소스를 가져옵니다.
+
+검색 중에 NetApp Backup and Recovery는 조직 내의 VMware 워크로드를 분석하고 기존 보호 정책, 스냅샷 사본, 백업 및 복원 옵션을 평가하고 가져옵니다.
+
+온프레미스 SnapCenter Plug-in for VMware vSphere 에서 NetApp Backup and Recovery 인벤토리로 VMware NFS 및 VMFS 데이터스토어와 VM을 가져올 수 있습니다.
+
+
+NOTE: 이 버전의 NetApp Backup and Recovery는 VMware vCenter만 지원하며 vVols 이나 vVols 의 VM을 검색하지 않습니다.
+
+가져오기 프로세스 동안 NetApp Backup and Recovery는 다음 작업을 수행합니다.
+
+* vCenter 서버에 대한 안전한 SSH 액세스를 활성화합니다.
+* vCenter Server의 모든 리소스 그룹에서 유지 관리 모드를 활성화합니다.
+* vCenter의 메타데이터를 준비하고 NetApp 콘솔에서 관리되지 않는 것으로 표시합니다.
+* 데이터베이스 액세스를 구성합니다.
+* VMware vCenter, 데이터 저장소 및 VM을 검색합니다.
+* SnapCenter Plug-in for VMware vSphere 에서 기존 보호 정책, 스냅샷 복사본, 백업 및 복원 옵션을 가져옵니다.
+* NetApp 백업 및 복구 인벤토리 페이지에서 검색된 리소스를 표시합니다.
+
+
+발견은 다음과 같은 방식으로 이루어집니다.
+
+* SnapCenter Plug-in for VMware vSphere 이미 있는 경우 NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and Recovery로 가져오세요.
++
+
+NOTE: SnapCenter 플러그인이 이미 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 확인하세요. 예를 들어, SnapCenter 에서 가져오기 전에 먼저 NetApp 콘솔에서 모든 온프레미스 SnapCenter 클러스터 스토리지에 대한 시스템을 만들어야 합니다. 보다 link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
+
+* SnapCenter 플러그인이 없는 경우에도 vCenter를 수동으로 추가하고 검색을 수행하여 시스템 내에서 워크로드를 검색할 수 있습니다.
+
+
+
+
+=== SnapCenter 플러그인이 아직 설치되지 않은 경우 vCenter를 추가하고 리소스를 검색합니다.
+
+VMware용 SnapCenter 플러그인이 아직 설치되어 있지 않으면 vCenter 정보를 추가하고 NetApp Backup and Recovery에서 워크로드를 검색하도록 하세요.  각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.
+
+.단계
+. NetApp 콘솔 왼쪽 탐색에서 *보호* > *백업 및 복구*를 선택합니다.
++
+이 서비스에 처음 로그인하는 경우 콘솔에 이미 시스템이 있지만 리소스를 검색하지 못한 경우 "새로운 NetApp 백업 및 복구에 오신 것을 환영합니다" 랜딩 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.
+
+. *리소스 검색*을 선택하세요.
+. 다음 정보를 입력하세요:
++
+.. *작업 유형*: *VMware*를 선택하세요.
+.. *vCenter 설정*: 새로운 vCenter를 추가합니다. 새로운 vCenter를 추가하려면 vCenter FQDN 또는 IP 주소, 사용자 이름, 비밀번호, 포트 및 프로토콜을 입력하세요.
++
+
+TIP: vCenter 정보를 입력하는 경우 vCenter 설정과 호스트 등록에 대한 정보를 모두 입력합니다.  여기에 vCenter 정보를 추가하거나 입력한 경우 다음으로 고급 설정에서 플러그인 정보도 추가해야 합니다.
+
+.. *호스트 등록*: VMware에서는 필요하지 않습니다.
+
+
+. *발견*을 선택하세요.
++
+
+TIP: 이 과정은 몇 분 정도 걸릴 수 있습니다.
+
+. 고급 설정을 계속합니다.
+
+
+
+
+=== SnapCenter 플러그인이 이미 설치되어 있는 경우 VMware 리소스용 SnapCenter 플러그인을 NetApp Backup and Recovery로 가져옵니다.
+
+VMware용 SnapCenter 플러그인이 이미 설치되어 있는 경우 다음 단계에 따라 SnapCenter 플러그인 리소스를 NetApp Backup and Recovery로 가져오세요.  콘솔은 vCenter에서 ESXi 호스트, 데이터 저장소, VM을 검색하고 플러그인에서 일정을 예약합니다. 모든 정보를 다시 만들 필요가 없습니다.
+
+다음과 같은 방법으로 이 작업을 수행할 수 있습니다.
+
+* 검색 중에 SnapCenter 플러그인에서 리소스를 가져오는 옵션을 선택하세요.
+* 검색 후 인벤토리 페이지에서 SnapCenter 플러그인 리소스를 가져오기 위한 옵션을 선택합니다.
+* 검색 후 설정 메뉴에서 SnapCenter 플러그인 리소스를 가져오는 옵션을 선택합니다. 자세한 내용은 다음을 참조하십시오. link:br-start-configure.html["NetApp 백업 및 복구 구성"] . VMware에서는 지원되지 않습니다.
+
+
+이 섹션에서는 두 부분으로 구성된 프로세스를 설명합니다.
+
+. SnapCenter 플러그인에서 vCenter 메타데이터를 가져옵니다. 가져온 vCenter 리소스는 아직 NetApp Backup and Recovery에서 관리되지 않습니다.
+. NetApp 백업 및 복구에서 선택한 vCenter, VM 및 데이터 저장소 관리를 시작합니다.  관리를 시작하면 NetApp Backup and Recovery가 인벤토리 페이지에서 vCenter를 "관리됨"으로 표시하고 가져온 리소스를 백업하고 복구할 수 있습니다.  NetApp Backup and Recovery에서 관리를 시작한 후에는 SnapCenter 플러그인에서 해당 리소스를 더 이상 관리할 수 없습니다.
+
+
+
+
+==== SnapCenter 플러그인에서 vCenter 메타데이터 가져오기
+
+첫 번째 단계에서는 SnapCenter 플러그인에서 vCenter 메타데이터를 가져옵니다. 이 시점에서는 리소스가 아직 NetApp Backup and Recovery에서 관리되지 않습니다.
+
+
+TIP: SnapCenter 플러그인에서 vCenter 메타데이터를 가져온 후에는 NetApp Backup and Recovery가 자동으로 보호 관리를 수행하지 않습니다.  이렇게 하려면 NetApp Backup and Recovery에서 가져온 리소스를 관리하도록 명시적으로 선택해야 합니다.  이렇게 하면 NetApp Backup and Recovery를 통해 해당 리소스를 백업할 준비가 됩니다.
+
+.단계
+. 콘솔 왼쪽 탐색에서 *보호* > *백업 및 복구*를 선택합니다.
+. *재고*를 선택하세요.
+. NetApp 백업 및 복구 Discover 워크로드 리소스 페이지에서 * SnapCenter 에서 가져오기*를 선택합니다.
+. 가져오기 필드에서 *VMware용 SnapCenter 플러그인*을 선택합니다.
+. *VMware vCenter 자격 증명*을 입력하세요:
++
+.. *vCenter IP/호스트 이름*: NetApp Backup and Recovery로 가져오려는 vCenter의 FQDN 또는 IP 주소를 입력합니다.
+.. *vCenter 포트 번호*: vCenter의 포트 번호를 입력하세요.
+.. *vCenter 사용자 이름* 및 *비밀번호*: vCenter의 사용자 이름과 비밀번호를 입력하세요.
+.. *커넥터*: vCenter에 대한 콘솔 에이전트를 선택합니다.
+
+
+. * SnapCenter 플러그인 호스트 자격 증명*을 입력하세요:
++
+.. *기존 자격 증명*: 이 옵션을 선택하면 이미 추가한 기존 자격 증명을 사용할 수 있습니다.  자격 증명 이름을 선택하세요.
+.. *새로운 자격 증명 추가*: 기존 SnapCenter 플러그인 호스트 자격 증명이 없으면 새 자격 증명을 추가할 수 있습니다. 자격 증명 이름, 인증 모드, 사용자 이름 및 비밀번호를 입력하세요.
+
+
+. *가져오기*를 선택하여 항목을 검증하고 SnapCenter 플러그인을 등록하세요.
++
+
+NOTE: SnapCenter 플러그인이 이미 등록되어 있는 경우 기존 등록 세부 정보를 업데이트할 수 있습니다.
+
+
+
+.결과
+인벤토리 페이지에서는 NetApp Backup and Recovery에서 vCenter를 관리되지 않는 것으로 표시하지만, 명시적으로 관리하도록 선택할 때까지는 표시되지 않습니다.
+
+
+
+==== SnapCenter 플러그인에서 가져온 리소스 관리
+
+VMware용 SnapCenter 플러그인에서 vCenter 메타데이터를 가져온 후 NetApp Backup and Recovery에서 리소스를 관리합니다.  해당 리소스를 관리하도록 선택하면 NetApp Backup and Recovery에서 가져온 리소스를 백업하고 복구할 수 있습니다.  NetApp Backup and Recovery에서 관리를 시작한 후에는 SnapCenter 플러그인에서 해당 리소스를 더 이상 관리할 수 없습니다.
+
+리소스 관리를 선택하면 리소스, VM 및 정책이 VMware용 SnapCenter 플러그인에서 가져옵니다. 리소스 그룹, 정책 및 스냅샷은 플러그인에서 마이그레이션되어 NetApp Backup and Recovery에서 관리됩니다.
+
+.단계
+. SnapCenter 플러그인에서 VMware 리소스를 가져온 후 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. 인벤토리 페이지에서 NetApp Backup and Recovery에서 앞으로 관리하려는 가져온 vCenter를 선택합니다.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *세부정보 보기*를 클릭하면 작업 부하 세부 정보가 표시됩니다.
+. 인벤토리 > 작업량 페이지에서 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *관리*를 클릭하면 vCenter 관리 페이지가 표시됩니다.
+. "마이그레이션을 계속하시겠습니까?" 상자를 선택하고 *마이그레이션*을 선택합니다.
+
+
+.결과
+인벤토리 페이지에는 새로 관리되는 vCenter 리소스가 표시됩니다.

@@ -1,0 +1,186 @@
+---
+sidebar: sidebar 
+permalink: api-backup-restore.html 
+keywords: api, apis, rest, restful, authorization, getting started, body, header, token, reference, expired token, expires, expired, token expired, list apis 
+summary: 웹 UI를 통해 제공되는 NetApp 백업 및 복구 기능은 RESTful API를 통해서도 사용할 수 있습니다. 
+---
+= NetApp 백업 및 복구 API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+웹 UI를 통해 제공되는 NetApp 백업 및 복구 기능은 RESTful API를 통해서도 사용할 수 있습니다.
+
+NetApp 백업 및 복구에는 10가지 범주의 엔드포인트가 정의되어 있습니다.
+
+* 백업 - 클라우드 및 온프레미스 리소스의 백업 작업을 관리하고 백업 데이터의 세부 정보를 검색합니다.
+* 카탈로그 - 쿼리(검색 및 복원)를 기반으로 파일의 색인된 카탈로그 검색을 관리합니다.
+* 클라우드 - NetApp 콘솔에서 다양한 클라우드 공급자 리소스에 대한 정보를 검색합니다.
+* job - NetApp 콘솔 데이터베이스에서 작업 세부 정보 항목을 관리합니다.
+* license - NetApp 콘솔에서 시스템의 라이센스 유효성을 검색합니다.
+* 랜섬웨어 검사 - 특정 백업 파일에 대한 랜섬웨어 검사를 시작합니다.
+* 복원 - 볼륨, 파일 및 폴더 수준 복원 작업을 수행할 수 있습니다.
+* sfr - 단일 파일 수준 복원 작업(찾아보기 및 복원)을 위해 백업 파일에서 파일을 검색합니다.
+* storagegrid - StorageGRID 서버에 대한 세부 정보를 검색하고 StorageGRID 서버를 검색할 수 있도록 합니다.
+
+
+
+
+== 시작하기
+
+NetApp 백업 및 복구 API를 시작하려면 사용자 토큰, NetApp 콘솔 계정 ID, 콘솔 에이전트 ID를 얻어야 합니다.
+
+API 호출을 할 때 Authorization 헤더에 사용자 토큰을 추가하고 x-agent-id 헤더에 콘솔 에이전트 ID를 추가합니다.  API에서는 NetApp 콘솔 계정 ID를 사용해야 합니다.
+
+.단계
+. NetApp NetApp 콘솔 웹 사이트에서 사용자 토큰을 얻습니다.
++
+다음 링크에서 새로 고침 토큰을 생성하세요: https://services.cloud.netapp.com/refresh-token/.  새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.
+
++
+[source, http]
+----
+curl --location --request POST 'https://netapp-cloud-account.auth0.com/oauth/token?=' \
+--header 'Content-Type: application/json' \
+-d '{
+    "grant_type": "refresh_token",
+    "refresh_token": "JxaVHn9cGkX92aPVCkhat3zxxxxxwsC9qMl_pLHkZtsVA",
+    "client_id": "Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC"
+}'
+----
++
+
+NOTE: NetApp 콘솔 웹 사이트의 사용자 토큰에는 만료 날짜가 있습니다.  API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필드가 포함되어 있습니다.  토큰을 새로 고치려면 이 API를 다시 호출해야 합니다.
+
+. NetApp 콘솔 계정 ID를 얻으세요.
++
+[source, http]
+----
+GET 'https://api.bluexp.netapp.com/tenancy/account' -H 'authority: api.bluexp.netapp.com'
+Header:
+-H 'accept: application/json'
+-H 'accept-language: en-GB,en;q=0.9'
+-H 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR………
+----
++
+이 API는 다음과 같은 응답을 반환합니다. *[0].[ accountPublicId]*의 출력을 구문 분석하여 계정 ID를 검색할 수 있습니다.
+
++
+ [{"accountPublicId":"account-i6vJXvZW","accountName":"rashidn","isSaas":true,"isGov":false,"isPrivatePreviewEnabled":false,"is3rdPartyServicesEnabled":false,"accountSerial":"96064469711530003565","userRole":"Role-1"}………
+. 콘솔 에이전트 ID가 포함된 x-agent-id를 가져옵니다.
++
+[source, http]
+----
+GET curl 'https://api.services.cloud.netapp.com/occm/list-occms/account-OOnAR4ZS?excludeStandalone=true&source=saas' \
+Header:
+  -H 'authority: api.services.cloud.netapp.com' \
+  -H 'accept: application/json' \
+  -H 'accept-language: en-GB,en;q=0.9' \
+  -H 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5…………
+----
++
+이 API는 다음과 같은 응답을 반환합니다. *occm.[0].[agent].[agentId]*의 출력을 구문 분석하여 에이전트 ID를 검색할 수 있습니다.
+
++
+ {"occms":[{"account":"account-OOnAR4ZS","accountName":"cbs","occm":"imEdsEW4HyYTFbt8ZcNKTKDF05jMIe6Z","agentId":"imEdsEW4HyYTFbt8ZcNKTKDF05jMIe6Z","status":"ready","occmName":"cbsgcpdevcntsg-asia","primaryCallbackUri":"http://34.93.197.21","manualOverrideUris":[],"automaticCallbackUris":["http://34.93.197.21","http://34.93.197.21/occmui","https://34.93.197.21","https://34.93.197.21/occmui","http://10.138.0.16","http://10.138.0.16/occmui","https://10.138.0.16","https://10.138.0.16/occmui","http://localhost","http://localhost/occmui","http://localhost:1337","http://localhost:1337/occmui","https://localhost","https://localhost/occmui","https://localhost:1337","https://localhost:1337/occmui"],"createDate":"1652120369286","agent":{"useDockerInfra":true,"network":"default","name":"cbsgcpdevcntsg-asia","agentId":"imEdsEW4HyYTFbt8ZcNKTKDF05jMIe6Zclients","provider":"gcp","systemId":"a3aa3578-bfee-4d16-9e10-
+
+
+
+
+== API를 사용한 예
+
+다음 예제에서는 Azure 클라우드의 East-US-2 지역에서 일일, 시간별, 주별 레이블이 설정되고, 보관 기간이 180일로 설정된 새 정책이 있는 시스템에서 NetApp 백업 및 복구를 활성화하기 위한 API 호출을 보여줍니다.  이렇게 하면 시스템 백업만 가능하고 볼륨은 백업되지 않습니다.
+
+.API 요청
+NetApp 콘솔 계정 ID를 사용하는 것을 볼 수 있습니다. `account-DpTFcxN3` , 콘솔 에이전트 ID `iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients` , 및 사용자 토큰 `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…y6nyhBjwkeMwHc4ValobjUmju2x0xUH48g` 이 명령에서.
+
+[source, http]
+----
+curl --location --request POST 'https://api.bluexp.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v3/backup/working-environment/VsaWorkingEnvironment-99hPYEgk' \
+--header 'x-agent-id: iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…y6nyhBjwkeMwHc4ValobjUmju2x0xUH48g' \
+--data-raw '{
+    "provider":"AZURE",
+    "backup-policy": {
+      "archive-after-days": 180,
+      "rule": [
+        {
+          "label": "hourly",
+          "retention": "2"
+        },
+        {
+          "label": "daily",
+          "retention": "30"
+        },
+        {
+          "label": "weekly",
+          "retention": "52"
+        }
+      ]
+    },
+    "ip-space": "Default",
+    "region": "eastus2",
+    "azure": {
+      "resource-group": "rn-test-backup-rg",
+      "subscription": "3beb4dd0-25d4-464f-9bb0-303d7cf5c0c2"
+    }
+  }'
+----
+.응답은 모니터링할 수 있는 작업 ID입니다.
+[source, text]
+----
+{
+ "job-id": "1b34b6f6-8f43-40fb-9a52-485b0dfe893a"
+}
+----
+.응답을 모니터링합니다.
+[source, http]
+----
+curl --location --request GET 'https://api.bluexp.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v1/job/1b34b6f6-8f43-40fb-9a52-485b0dfe893a' \
+--header 'x-agent-id: iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…hE9ss2NubK6wZRHUdSaORI7JvcOorUhJ8srqdiUiW6MvuGIFAQIh668of2M3dLbhVDBe8BBMtsa939UGnJx7Qz6Eg'
+----
+.응답.
+[source, text]
+----
+{
+    "job": [
+        {
+            "id": "1b34b6f6-8f43-40fb-9a52-485b0dfe893a",
+            "type": "backup-working-environment",
+            "status": "PENDING",
+            "error": "",
+            "time": 1651852160000
+        }
+    ]
+}
+----
+."상태"가 "완료"가 될 때까지 모니터링합니다.
+[source, text]
+----
+{
+    "job": [
+        {
+            "id": "1b34b6f6-8f43-40fb-9a52-485b0dfe893a",
+            "type": "backup-working-environment",
+            "status": "COMPLETED",
+            "error": "",
+            "time": 1651852160000
+        }
+    ]
+}
+----
+
+
+== API 참조
+
+각 NetApp 백업 및 복구 API에 대한 설명서는 다음에서 제공됩니다. https://docs.netapp.com/us-en/console-automation/cbs/overview.html["NetApp 콘솔 자동화"^] .

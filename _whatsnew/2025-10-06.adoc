@@ -1,0 +1,90 @@
+= NetApp Backup and Recovery는 이제 NetApp Backup and Recovery입니다.
+:allow-uri-read: 
+
+
+
+
+=== NetApp Backup and Recovery는 이제 NetApp Backup and Recovery입니다.
+
+NetApp Backup and Recovery의 이름이 NetApp Backup and Recovery로 변경되었습니다.
+
+
+
+=== BlueXP 는 이제 NetApp 콘솔입니다.
+
+강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.
+
+변경된 내용에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp 콘솔 릴리스 노트."]
+
+
+
+=== Hyper-V 워크로드 지원(개인 미리 보기)
+
+NetApp Backup and Recovery의 이번 릴리스에서는 Hyper-V 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
+
+* 독립 실행형 인스턴스와 장애 조치 클러스터 인스턴스(FCI)에서 VM 백업 및 복원
+* SMB3 공유에 저장된 VM 보호
+* 가상 머신 수준에서의 대량 보호
+* VM 및 충돌 시 일관된 백업
+* 기본, 보조 및 개체 스토리지에서 VM 복원
+* VM 백업 검색 및 복원
+
+
+Hyper-V 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["Hyper-V 워크로드 보호 개요"] .
+
+
+
+=== 비공개 미리보기로 제공되는 KVM 워크로드 지원
+
+NetApp Backup and Recovery의 이번 릴리스에서는 KVM 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
+
+* NFS 공유에 저장된 qcow2 VM 이미지를 백업하고 복원합니다.
+* 백업 스토리지 풀
+* 보호 그룹을 사용한 대량 VM 및 스토리지 풀 보호
+* VM 일관성 및 충돌 일관성 VM 백업
+* VM 백업 검색 및 복원
+* KVM 기반 VM 및 VM 데이터를 백업하고 복원하는 가이드 프로세스
+
+
+KVM 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["KVM 워크로드 보호 개요"] .
+
+
+
+=== Kubernetes 미리보기 개선 사항
+
+Kubernetes 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 기능이 도입되었습니다.
+
+* 3-2-1 팬아웃 백업 아키텍처 지원
+* 백업 대상으로 ONTAP S3 지원
+* 더 쉬운 관리를 위한 새로운 Kubernetes 대시보드
+* 향상된 역할 기반 액세스 제어(RBAC) 구성에는 다음 역할에 대한 지원이 포함됩니다.
++
+** 백업 및 복구 슈퍼 관리자
+** 백업 및 복구 백업 관리자
+** 백업 및 복구 복원 관리자
+** 백업 및 복구 뷰어
+
+
+* SUSE Rancher Kubernetes 배포판 지원
+* 다중 버킷 지원: 이제 다양한 클라우드 공급자의 시스템당 여러 버킷을 사용하여 시스템 내의 볼륨을 보호할 수 있습니다.
+
+
+Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
+
+
+
+=== Oracle Database 워크로드 지원을 개인 미리보기로 제공
+
+NetApp Backup and Recovery의 이번 릴리스에서는 Oracle Database 워크로드를 검색하고 관리하는 데 대한 지원이 도입되었습니다.
+
+* 독립형 Oracle 데이터베이스를 찾아보세요
+* 데이터 전용 또는 데이터 및 로그 백업에 대한 보호 정책을 만듭니다.
+* 3-2-1 백업 체계로 Oracle 데이터베이스 보호
+* 백업 보존 구성
+* ARCHIVELOG 백업 마운트 및 마운트 해제
+* 가상화된 데이터베이스
+* 데이터베이스 백업 검색 및 복원
+* Oracle 대시보드 지원
+
+
+Oracle Database 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle 워크로드 보호 개요"] .

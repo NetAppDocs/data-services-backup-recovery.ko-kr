@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: br-use-vmware-backup.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+---
+= NetApp Backup and Recovery를 사용하여 VMware 워크로드 백업
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+온프레미스 ONTAP 시스템의 VMware VM과 데이터 저장소를 Amazon Web Services, Azure NetApp Files 또는 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.
+
+* 일정에 따라 작업 부하를 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다. 보다link:br-use-policies-create.html["정책 생성"] 지침을 보려면.
+* 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다 link:br-use-vmware-protection-groups.html["NetApp Backup and Recovery를 사용하여 VMware 워크로드에 대한 보호 그룹을 만들고 관리합니다."] 자세한 내용은.
+* 지금 워크로드를 백업하세요(지금 주문형 백업을 생성하세요).
+
+
+
+
+== 지금 온디맨드 백업으로 워크로드를 백업하세요
+
+즉시 주문형 백업을 생성합니다.  시스템을 변경하려는 경우, 변경을 시작하기 전에 백업이 있는지 확인하려면 주문형 백업을 실행하는 것이 좋습니다.
+
+*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+.단계
+. 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. 보호 세부 정보를 보려면 작업 부하를 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
+. *보호 그룹*, *데이터 저장소* 또는 *가상 머신* 탭을 선택합니다.
+. 백업할 보호 그룹, 데이터 저장소 또는 가상 머신을 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *지금 뒤로 물러나세요*.
++
+
+NOTE: 백업에 적용되는 정책은 보호 그룹, 데이터 저장소 또는 가상 머신에 할당된 정책과 동일합니다.
+
+. 일정 단계를 선택하세요.
+. *지금 백업*을 선택하세요.
+

@@ -1,0 +1,318 @@
+---
+sidebar: sidebar 
+permalink: concept-backup-to-cloud.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
+summary: NetApp Backup and Recovery는 볼륨, 데이터베이스, 가상 머신, Kubernetes 워크로드를 포함한 모든 ONTAP 워크로드에 대해 효율적이고 안전하며 비용 효율적인 데이터 보호를 제공하는 데이터 서비스입니다. 
+---
+= NetApp 백업 및 복구에 대해 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery는 볼륨, 데이터베이스, 가상 머신, Kubernetes 워크로드를 포함한 모든 ONTAP 워크로드에 대해 효율적이고 안전하며 비용 효율적인 데이터 보호를 제공하는 데이터 서비스입니다.
+
+백업 및 복구 지원 기능은 모든 ONTAP 시스템에 이미 내장되어 있으므로 추가 하드웨어, 소프트웨어 라이선스 또는 미디어 게이트웨이가 필요하지 않습니다.  이를 통해 백업 작업이 간편하고 비용 효율적이 됩니다.  NetApp 콘솔은 여러 리소스 관리자나 전문 인력이 필요 없이 3-2-1 백업 변형의 전체 스펙트럼을 포함하여 모든 백업 전략의 구현을 간소화합니다.
+
+
+NOTE: VMware, KVM, Hyper-V 및 Kubernetes 워크로드를 보호하는 방법에 대한 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.
+
+
+
+== NetApp 백업 및 복구로 할 수 있는 일
+
+NetApp 백업 및 복구를 사용하면 다음 목표를 달성할 수 있습니다.
+
+* * ONTAP 볼륨 워크로드*:
++
+** 로컬 스냅샷을 생성하고, 보조 저장소에 복제하고, 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템에서 ONTAP 볼륨을 백업하여 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장합니다.
+** 다른 ONTAP 클러스터와 클라우드의 개체 스토리지에 저장되는 블록 수준의 증분 영구 백업을 만듭니다.
+** SnapCenter 와 함께 NetApp Backup and Recovery를 사용하세요.
+** link:prev-ontap-protect-overview.html["ONTAP 볼륨 보호"] .
+
+
+* *Microsoft SQL Server 워크로드*:
++
+** 온프레미스 ONTAP, Cloud Volumes ONTAP 또는 Amazon FSx for NetApp ONTAP 에서 Microsoft SQL Server 인스턴스와 데이터베이스를 백업합니다.
+** Microsoft SQL Server 데이터베이스를 복원합니다.
+** Microsoft SQL Server 데이터베이스를 복제합니다.
+** SnapCenter 없이 NetApp 백업 및 복구를 사용하세요.
+** link:br-use-mssql-protect-overview.html["Microsoft SQL Server 워크로드 보호"] .
+
+
+* *VMware 워크로드( SnapCenter Plug-in for VMware vSphere 없이 새 UI로 미리 보기)*:
++
+** NetApp Backup and Recovery를 사용하여 VMware VM과 데이터 저장소를 보호하세요.
+** VMware 워크로드를 Amazon Web Services S3 또는 StorageGRID (Preview용)에 백업합니다.
+** 클라우드에서 온프레미스 vCenter로 VMware 데이터를 복원합니다.
+** SnapCenter Plug-in for VMware vSphere 없이 NetApp 백업 및 복구를 사용하세요.
+** link:br-use-vmware-protect-overview.html["VMware 워크로드 보호"] .
+
+
+* *VMware 워크로드( SnapCenter Plug-in for VMware vSphere 포함)*:
++
+** VM과 데이터 저장소를 Amazon Web Services S3, Microsoft Azure Blob, Google Cloud Platform 및 StorageGRID 에 백업하고 VM을 온프레미스 SnapCenter Plug-in for VMware vSphere 으로 복원합니다.
+** NetApp Backup and Recovery를 사용하여 클라우드에서 온프레미스 vCenter로 VM 데이터를 복원하세요. 백업이 수행된 정확한 위치나 대체 위치로 VM을 복원할 수 있습니다.
+** SnapCenter Plug-in for VMware vSphere 과 함께 NetApp Backup and Recovery를 사용하세요.
+** link:prev-vmware-protect-overview.html["VMware 워크로드 보호"] .
+
+
+* *KVM 워크로드(미리 보기)*:
++
+** 가상 머신 백업 및 복원
+** KVM 스토리지 풀 백업
+** 보호 그룹을 사용하여 백업 작업 관리
+** link:br-use-kvm-protect-overview.html["KVM 워크로드 보호"] .
+
+
+* *Hyper-V 워크로드(미리 보기)*:
++
+** 가상 머신 백업 및 복원
+** 보호 그룹을 사용하여 백업 작업 관리
+** link:br-use-hyperv-protect-overview.html["Hyper-V 워크로드 보호"] .
+
+
+* *Oracle 워크로드(미리 보기)*:
++
+** 데이터베이스와 로그 백업 및 복원
+** 보호 그룹을 사용하여 백업 작업 관리
+** 데이터베이스 및 로그 백업을 관리하기 위한 정책 생성
+** 3-2-1 백업 아키텍처로 데이터베이스 보호
+** 백업 보존 구성
+** ARCHIVELOG 백업 마운트 및 마운트 해제
+** link:br-use-oracle-protect-overview.html["Oracle 워크로드 보호"] .
+
+
+* *Kubernetes 워크로드(미리 보기)*:
++
+** Kubernetes 애플리케이션과 리소스를 한 곳에서 관리하고 보호하세요.
+** 보호 정책을 사용하여 증분 백업을 구성합니다.
+** 동일하거나 다른 클러스터와 네임스페이스에 애플리케이션과 리소스를 복원합니다.
+** SnapCenter 없이 NetApp 백업 및 복구를 사용하세요.
+** link:br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호"] .
+
+
+
+
+
+
+== NetApp 백업 및 복구 사용의 이점
+
+NetApp 백업 및 복구는 다음과 같은 이점을 제공합니다.
+
+* **효율성**: NetApp Backup and Recovery는 블록 수준의 증분적 영구 복제를 수행하므로 복제되고 저장되는 데이터 양이 크게 줄어듭니다.  이는 네트워크 트래픽과 저장 비용을 최소화하는 데 도움이 됩니다.
+* **안전**: NetApp Backup and Recovery는 전송 중인 데이터와 저장 중인 데이터를 암호화하고, 안전한 통신 프로토콜을 사용하여 데이터를 보호합니다.
+* **비용 효율성**: NetApp Backup and Recovery는 클라우드 계정에서 사용 가능한 가장 저렴한 스토리지 계층을 사용하므로 비용을 절감하는 데 도움이 됩니다.
+* **자동화**: NetApp Backup and Recovery는 미리 정의된 일정에 따라 자동으로 백업을 생성하여 데이터 보호를 보장합니다.
+* **유연성**: NetApp Backup and Recovery를 사용하면 동일한 시스템이나 다른 시스템으로 데이터를 복원할 수 있어 데이터 복구에 유연성이 제공됩니다.
+
+
+
+
+== 비용
+
+NetApp 평가판 사용에 대해 요금을 청구하지 않습니다.  하지만 저장 및 데이터 전송 비용 등 사용하는 클라우드 리소스와 관련된 비용은 귀하가 책임져야 합니다.
+
+ONTAP 시스템과 함께 NetApp Backup and Recovery의 객체 백업 기능을 사용하는 데에는 두 가지 유형의 비용이 발생합니다.
+
+* 자원 요금
+* 서비스 요금
+
+
+스냅샷 복사본이나 복제 볼륨을 생성하는 데는 비용이 들지 않습니다. 스냅샷 복사본과 복제 볼륨을 저장하는 데 필요한 디스크 공간 외에는 비용이 들지 않습니다.
+
+*자원 요금*
+
+리소스 요금은 객체 저장 용량과 클라우드에 백업 파일을 쓰고 읽는 데 대한 비용으로 클라우드 제공자에게 지불됩니다.
+
+* 개체 스토리지에 백업하는 경우 클라우드 공급자에게 개체 스토리지 비용을 지불합니다.
++
+NetApp Backup and Recovery는 소스 볼륨의 스토리지 효율성을 보존하므로 ONTAP 효율성 이후의 데이터(중복 제거 및 압축이 적용된 후의 더 적은 양의 데이터)에 대해 클라우드 공급자 개체 스토리지 비용을 지불합니다.
+
+* 검색 및 복원을 사용하여 데이터를 복원하는 경우 클라우드 공급자가 특정 리소스를 제공하며, 검색 요청으로 스캔된 데이터 양에 따라 TiB당 비용이 발생합니다.  (이러한 리소스는 찾아보기 및 복원에 필요하지 않습니다.)
++
+ifdef::aws[]
+
++
+** AWS에서 https://aws.amazon.com/athena/faqs/["아마존 아테나"^] 그리고 https://aws.amazon.com/glue/faqs/["AWS 글루"^] 리소스는 새로운 S3 버킷에 배포됩니다.
++
+endif::aws[]
+
+
+
++
+ifdef::azure[]
+
++
+** Azure에서는 https://azure.microsoft.com/en-us/services/synapse-analytics/?&ef_id=EAIaIQobChMI46_bxcWZ-QIVjtiGCh2CfwCsEAAYASAAEgKwjvD_BwE:G:s&OCID=AIDcmm5edswduu_SEM_EAIaIQobChMI46_bxcWZ-QIVjtiGCh2CfwCsEAAYASAAEgKwjvD_BwE:G:s&gclid=EAIaIQobChMI46_bxcWZ-QIVjtiGCh2CfwCsEAAYASAAEgKwjvD_BwE["Azure Synapse 작업 영역"^] 그리고 https://azure.microsoft.com/en-us/services/storage/data-lake-storage/?&ef_id=EAIaIQobChMIuYz0qsaZ-QIVUDizAB1EmACvEAAYASAAEgJH5fD_BwE:G:s&OCID=AIDcmm5edswduu_SEM_EAIaIQobChMIuYz0qsaZ-QIVUDizAB1EmACvEAAYASAAEgJH5fD_BwE:G:s&gclid=EAIaIQobChMIuYz0qsaZ-QIVUDizAB1EmACvEAAYASAAEgJH5fD_BwE["Azure 데이터 레이크 스토리지"^] 귀하의 데이터를 저장하고 분석하기 위해 귀하의 스토리지 계정에 프로비저닝됩니다.
++
+endif::azure[]
+
+
+
+
+
+ifdef::gcp[]
+
+* Google에서는 새로운 버킷이 배포되고 https://cloud.google.com/bigquery["Google Cloud BigQuery 서비스"^] 계정/프로젝트 수준에서 프로비저닝됩니다. endif::gcp[]
++
+** 보관 개체 스토리지로 이동된 백업 파일에서 볼륨 데이터를 복원하려는 경우 클라우드 공급자로부터 추가 GiB당 검색 요금과 요청당 요금이 부과됩니다.
+** 볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 보호를 활성화한 경우), 클라우드 제공업체로부터 추가적인 퇴출 비용도 발생합니다.
+
+
+
+
+*서비스 요금*
+
+서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지에 대한 백업을 _생성_하는 비용과 해당 백업에서 볼륨이나 파일을 _복원_하는 비용이 모두 포함됩니다.  ONTAP 효율성 이전(_before_ ONTAP )에 백업된 ONTAP 볼륨의 소스 논리적 사용 용량을 기준으로 계산된, 개체 스토리지에서 보호하는 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.
+
+
+NOTE: Microsoft SQL Server의 경우 보조 ONTAP 대상이나 개체 스토리지에 스냅샷 복제를 시작하면 요금이 부과됩니다.
+
+백업 서비스 비용은 세 가지 방법으로 지불할 수 있습니다.
+
+* 첫 번째 옵션은 월 단위로 요금을 지불하고 클라우드 제공업체에 가입하는 것입니다.
+* 두 번째 옵션은 연간 계약을 맺는 것입니다.
+* 세 번째 옵션은 NetApp 에서 직접 라이선스를 구매하는 것입니다.  읽어보세요<<라이센스,라이센스>> 자세한 내용은 섹션을 참조하세요.
+
+
+
+
+== 라이센스
+
+NetApp Backup and Recovery는 무료 평가판으로 제공됩니다.  제한된 기간 동안 라이센스 키 없이도 서비스를 이용할 수 있습니다.
+
+NetApp 백업 및 복구는 다음과 같은 소비 모델로 제공됩니다.
+
+* *Bring Your Own License (BYOL)*: NetApp 에서 구매한 라이선스로 모든 클라우드 제공업체에서 사용할 수 있습니다.
+* *Pay as you go (PAYGO)*: 클라우드 공급업체의 마켓플레이스에서 시간당 구독을 제공합니다.
+* *연간*: 클라우드 공급업체의 마켓플레이스와 맺은 연간 계약입니다.
+
+
+백업 라이선스는 개체 스토리지에서 백업하고 복원하는 데만 필요합니다.  스냅샷 복사본과 복제 볼륨을 만드는 데는 라이선스가 필요하지 않습니다.
+
+*면허증은 직접 지참하세요*
+
+BYOL은 기간 기반(1년, 2년 또는 3년)이며 1TiB 단위로 용량을 결정합니다.  예를 들어 1년 동안 일정 기간 동안 NetApp 에 ​​서비스를 사용하고 최대 용량(예: 10TiB)을 지불합니다.
+
+서비스를 활성화하려면 NetApp 콘솔에 입력하는 일련 번호를 받게 됩니다.  두 가지 제한 중 하나에 도달하면 라이센스를 갱신해야 합니다.  백업 BYOL 라이선스는 NetApp 콘솔 조직 또는 계정과 연결된 모든 소스 시스템에 적용됩니다.
+
+link:br-start-licensing.html["라이센스 설정 방법 알아보기"] .
+
+*선불 구독*
+
+NetApp Backup and Recovery는 사용량 기반 라이선스를 사용량에 따라 지불하는 모델로 제공합니다.  클라우드 공급업체의 마켓플레이스를 통해 구독한 후, 백업된 데이터에 대해 GiB당 요금을 지불합니다. 선불금은 없습니다. 귀하는 월별 청구서를 통해 클라우드 제공자로부터 요금을 청구받습니다.
+
+PAYGO 구독에 처음 가입하면 30일 무료 체험판을 이용할 수 있습니다.
+
+*연간 계약*
+
+ifdef::aws[]
+
+AWS를 사용하면 1년, 2년 또는 3년의 연간 계약 두 가지를 이용할 수 있습니다.
+
+* Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 대해 청구된 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않음). endif::aws[]
+
+
+ifdef::azure[]
+
+Azure를 사용하면 1년, 2년 또는 3년의 연간 계약 두 가지를 선택할 수 있습니다.
+
+* Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 대해 청구된 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않음). endif::azure[]
+
+
+ifdef::gcp[]
+
+GCP를 사용하면 NetApp 에서 비공개 제안을 요청한 다음 NetApp Backup and Recovery 활성화 중에 Google Cloud Marketplace에서 구독할 때 플랜을 선택할 수 있습니다. endif::gcp[]
+
+
+
+== 지원되는 데이터 소스, 시스템 및 백업 대상
+
+.지원되는 워크로드 데이터 소스
+NetApp 백업 및 복구는 다음 워크로드를 보호합니다.
+
+* ONTAP 볼륨
+* 물리적, VMware Virtual Machine File System(VMFS) 및 VMware Virtual Machine Disk(VMDK) NFS용 Microsoft SQL Server 인스턴스 및 데이터베이스
+* VMware VM 및 데이터 저장소
+* KVM 워크로드(미리 보기)
+* Hyper-V 워크로드(미리 보기)
+* Kubernetes 워크로드(미리 보기)
+
+
+.지원되는 시스템
+* ONTAP 버전 9.8 이상을 사용하는 온프레미스 ONTAP SAN(iSCSI 프로토콜) 및 NAS(NFS 및 CIFS 프로토콜 사용)
+* AWS용 Cloud Volumes ONTAP 9.8 이상(SAN 및 NAS 사용)
+
+
+* Microsoft Azure(SAN 및 NAS 사용)용 Cloud Volumes ONTAP 9.8 이상
+* Amazon FSx for NetApp ONTAP
+
+
+.지원되는 백업 대상
+* 아마존 웹 서비스(AWS) S3
+* Microsoft Azure Blob(Preview의 VMware 워크로드에서는 사용할 수 없음)
+* StorageGRID
+* ONTAP S3(Preview의 VMware 워크로드에는 사용할 수 없음)
+
+
+
+
+== NetApp 백업 및 복구 작동 방식
+
+NetApp 백업 및 복구를 활성화하면 해당 서비스가 데이터의 전체 백업을 수행합니다.  최초 백업 이후의 모든 추가 백업은 증분식입니다.  이렇게 하면 네트워크 트래픽이 최소화됩니다.
+
+다음 이미지는 구성 요소 간의 관계를 보여줍니다.
+
+image:diagram-br-321-aff-a.png["NetApp Backup and Recovery가 3-2-1 보호 전략을 사용하는 방식을 보여주는 다이어그램"]
+
+
+NOTE: 보조 스토리지에서 객체 스토리지로의 변환뿐 아니라 기본 스토리지에서 객체 스토리지로의 변환도 지원됩니다.
+
+
+
+=== 백업이 개체 저장소 위치에 있는 위치
+
+백업 사본은 NetApp 콘솔이 클라우드 계정에 만드는 개체 저장소에 저장됩니다.  클러스터 또는 시스템당 하나의 개체 저장소가 있으며 콘솔은 다음과 같이 개체 저장소의 이름을 지정합니다. `netapp-backup-clusteruuid` .  이 개체 저장소를 삭제하지 마십시오.
+
+ifdef::aws[]
+
+* AWS에서는 NetApp 콘솔을 사용하여 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에. endif::aws[]
+
+
+ifdef::azure[]
+
+* Azure에서 NetApp 콘솔은 Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹이나 기존 리소스 그룹을 사용합니다. https://docs.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent["Blob 데이터에 대한 공개 액세스를 차단합니다."] 기본적으로. endif::azure[]
+
+
+ifdef::gcp[]
+
+endif::gcp[]
+
+* StorageGRID 에서 콘솔은 객체 저장소 버킷에 대한 기존 저장소 계정을 사용합니다.
+* ONTAP S3에서 콘솔은 S3 버킷에 대한 기존 사용자 계정을 사용합니다.
+
+
+
+
+=== 백업 사본은 NetApp 콘솔 조직과 연결됩니다.
+
+백업 사본은 콘솔 에이전트가 있는 NetApp 콘솔 조직과 연결됩니다. https://docs.netapp.com/us-en/console-setup-admin/concept-identity-and-access-management.html["NetApp 콘솔 ID 및 액세스에 대해 알아보세요"^] .
+
+동일한 NetApp 콘솔 조직에 여러 콘솔 에이전트가 있는 경우 각 콘솔 에이전트는 동일한 백업 목록을 표시합니다.
+
+
+
+== NetApp 백업 및 복구에 도움이 될 수 있는 용어
+
+보호와 관련된 용어를 이해하는 것이 도움이 될 수 있습니다.
+
+* *보호*: NetApp 백업 및 복구의 보호란 보호 정책을 사용하여 스냅샷과 변경 불가능한 백업이 다른 보안 도메인에 정기적으로 발생하도록 보장하는 것을 의미합니다.
+* *워크로드*: NetApp 백업 및 복구의 워크로드에는 ONTAP 볼륨, Microsoft SQL Server 인스턴스 및 데이터베이스, VMware VM 및 데이터 저장소, Kubernetes 클러스터 및 애플리케이션이 포함될 수 있습니다.
+

@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: br-use-oracle-mount-unmount.html 
+keywords: restore, vm, oracle, databases, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세요. 
+---
+= NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 복구 지점을 마운트 및 마운트 해제합니다.
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+복구 작업을 수행하기 위해 제어된 상태에서 데이터베이스에 액세스해야 하는 경우 Oracle 데이터베이스 복구 지점을 마운트할 수 있습니다.
+
+
+
+== Oracle 데이터베이스 복원 지점 마운트
+
+데이터베이스에 대한 보호 정책을 구성하여 보관 로그를 보관하면 데이터베이스의 복구 지점을 마운트하여 데이터베이스에 적용된 모든 변경 사항의 기록을 볼 수 있습니다.
+
+.단계
+. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. Oracle 타일을 선택하세요.
+. 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. 목록에서 Oracle Database 워크로드에 대해 *보기*를 선택합니다.
+. *데이터베이스* 메뉴를 선택하세요.
+. 목록에서 데이터베이스를 선택하고 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *보호 세부 정보 보기*.
++
+해당 데이터베이스에 대한 복구 지점 목록이 나타납니다.
+
+. 목록에서 복구 지점을 선택하고 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *탑승*.
+. 나타나는 대화 상자에서 다음을 수행합니다.
++
+.. 목록에서 복구 지점을 마운트해야 하는 호스트를 선택합니다.
+.. 백업 및 복구에서 복구 지점을 마운트하는 데 사용할 위치를 선택합니다.  미리보기 릴리스의 경우 개체 저장소에서 마운트하는 기능이 지원되지 않습니다.
++
+백업 및 복구에 사용해야 하는 마운트 경로가 표시됩니다.
+
+
+
+. *마운트*를 선택하세요.
++
+복구 지점은 Oracle 호스트에 마운트됩니다.
+
+
+
+
+
+== Oracle 데이터베이스 복원 지점 마운트 해제
+
+더 이상 해당 데이터베이스에 대한 변경 사항을 볼 필요가 없으면 복구 지점을 마운트 해제합니다.
+
+.단계
+. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. Oracle 타일을 선택하세요.
+. 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. 목록에서 Oracle 워크로드에 대해 *보기*를 선택합니다.
+. *데이터베이스* 메뉴를 선택하세요.
+. 목록에서 데이터베이스를 선택하고 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *보호 세부 정보 보기*.
++
+해당 데이터베이스에 대한 복구 지점 목록이 나타납니다.
+
+. 목록에서 복구 지점을 선택하고 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *마운트 해제*.
+. *마운트 해제*를 선택하여 작업을 확인합니다.
+

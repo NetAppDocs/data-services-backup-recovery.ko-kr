@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: prev-vmware-protect-overview.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+---
+= NetApp 백업 및 복구 개요에서 가상 머신 워크로드 보호
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 백업 및 복구를 통해 가상 머신 워크로드를 보호하세요.  NetApp 백업 및 복구는 VM, 데이터 저장소 및 VMDK에 대해 빠르고 공간 효율적이며 충돌 일관성이 뛰어나고 VM 일관성이 있는 백업 및 복원 작업을 제공합니다.
+
+Amazon Web Services S3, Microsoft Azure Blob, Google Cloud Platform 및 StorageGRID 에 데이터 저장소를 백업하고 가상 머신을 온프레미스 SnapCenter Plug-in for VMware vSphere 으로 복원할 수 있습니다.
+
+[]
+====
+*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+
+====
+가상 머신 워크로드를 보호하는 방법에 대한 지침은 다음 항목을 참조하세요.
+
+* link:prev-vmware-policy-create.html["VMware 워크로드에 대한 정책 만들기"]
+* link:prev-vmware-backup-aws.html["Amazon Web Services에 VMware 데이터스토어 백업"]
+* link:prev-vmware-backup-azure.html["VMware 데이터 저장소를 Microsoft Azure에 백업"]
+* link:prev-vmware-backup-gcp.html["VMware 데이터 저장소를 Google Cloud Platform에 백업"]
+* link:prev-vmware-backup-storagegrid.html["VMware 데이터스토어를 StorageGRID 에 백업"]
+* link:prev-vmware-restore.html["VMware 워크로드 복원"]
+* link:prev-vmware-manage.html["VMware 워크로드에 대한 보호 관리"]
+

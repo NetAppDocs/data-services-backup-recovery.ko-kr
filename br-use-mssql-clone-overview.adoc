@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: br-use-mssql-clone-overview.html 
+keywords: backing up, restoring, back up, backup, clone, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
+summary: 개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션을 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다. 
+---
+= NetApp 백업 및 복구를 사용하여 Microsoft SQL 서버 워크로드 개요 복제
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 애플리케이션 데이터를 개발, 테스트 또는 보호 목적으로 동일하거나 다른 VM에 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.
+
+* 클론을 생성하세요
+* 클론 새로 고침
+* 클론 분할
+* 클론 삭제
+

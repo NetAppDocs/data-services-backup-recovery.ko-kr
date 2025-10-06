@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: br-use-kvm-backup.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp backup and recovery, Oracle database, Microsoft SQL Server database, SAP HANA database, protection group 
+summary: NetApp 백업 및 복구를 통해 KVM 워크로드를 보호하세요. 
+---
+= NetApp Backup and Recovery를 사용하여 KVM 워크로드 백업
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+온프레미스 ONTAP 시스템의 KVM 보호 그룹을 Amazon Web Services, Azure NetApp Files 또는 StorageGRID 로 백업하여 데이터가 보호되도록 하세요.  보호 그룹을 백업하면 NetApp 콘솔은 보호 그룹에 포함된 VM과 스토리지 풀을 백업합니다. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.
+
+
+NOTE: 일정에 따라 보호 그룹을 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다. 보다link:br-use-policies-create.html["정책 생성"] 지침을 보려면.
+
+* 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다 link:br-use-kvm-protection-groups.html["NetApp Backup and Recovery를 사용하여 KVM 워크로드에 대한 보호 그룹을 만들고 관리합니다."] 자세한 내용은.
+
+
+
+
+== 이제 온디맨드 백업으로 보호 그룹을 백업하세요.
+
+즉시 주문형 백업을 실행할 수 있습니다.  이 기능은 시스템을 변경하려고 할 때 변경 전에 백업을 해두려는 경우에 유용합니다.
+
+*필수 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+.단계
+. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. KVM 타일에서 *검색 및 관리*를 선택합니다.
+. *재고*를 선택하세요.
+. 보호 세부 정보를 보려면 작업 부하를 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
+. *보호 그룹*, *데이터 저장소* 또는 *가상 머신* 탭을 선택합니다.
+. 백업할 보호 그룹을 선택하세요.
+. 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *지금 뒤로 물러나세요*.
++
+
+NOTE: 백업에 적용되는 정책은 보호 그룹에 할당된 정책과 동일합니다.
+
+. 일정 단계를 선택하세요.
+. *백업*을 선택하세요.
+

@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: br-start-discover-kubernetes.html 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Kubernetes 
+summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
+---
+= NetApp 백업 및 복구에서 Kubernetes 워크로드를 알아보세요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery는 서비스를 사용하려면 먼저 Kubernetes 워크로드를 검색해야 합니다.
+
+*필수 NetApp 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+
+
+== Kubernetes 워크로드를 알아보세요
+
+백업 및 복구 인벤토리에서 사용자 환경에서 실행 중인 Kubernetes 워크로드를 검색할 수 있습니다. 워크로드를 검색하면 NetApp Backup and Recovery에 Kubernetes 클러스터가 추가되어 클러스터에 애플리케이션을 추가하고 클러스터에서 호스팅되는 리소스를 보호할 수 있습니다.
+
+.단계
+. 다음 중 하나를 수행하세요.
++
+** 처음으로 Kubernetes 워크로드를 검색하는 경우 NetApp Backup and Recovery에서 Kubernetes 워크로드 유형 아래에서 *검색 및 관리*를 선택합니다.
+** 이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery에서 *인벤토리* > *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.
+
+
+. *Kubernetes* 워크로드 유형을 선택하세요.
+. 클러스터 이름을 입력하고 클러스터와 함께 사용할 커넥터를 선택하세요.
+. 표시되는 명령줄 지침을 따르세요.
++
+** Trident 보호 네임스페이스 만들기
+** 쿠버네티스 비밀을 생성하세요
+** Helm 저장소 추가
+** Trident Protect 및 Trident Protect 커넥터 설치
++
+이러한 단계를 거치면 NetApp Backup and Recovery가 클러스터와 상호 작용할 수 있습니다.
+
+
+
+. 모든 단계를 완료한 후 *검색*을 선택하세요.
++
+클러스터가 인벤토리에 추가됩니다.
+
+. 연관된 Kubernetes 워크로드에서 *보기*를 선택하면 해당 워크로드에 대한 애플리케이션, 클러스터 및 네임스페이스 목록을 볼 수 있습니다.
+
+
+
+
+== NetApp 백업 및 복구 대시보드로 계속
+
+NetApp 백업 및 복구 대시보드를 표시하려면 다음 단계를 따르세요.
+
+. 상단 메뉴에서 *대시보드*를 선택하세요.
+. 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
++
+link:br-use-dashboard.html["대시보드에서 무엇을 볼 수 있는지 알아보세요"] .
+
+

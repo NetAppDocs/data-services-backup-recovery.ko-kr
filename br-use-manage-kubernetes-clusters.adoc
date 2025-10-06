@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: br-use-manage-kubernetes-clusters.html 
+keywords: discover, backup and recovery, snapcenter, kubernetes, k8s, clusters, applications, inventory 
+summary: NetApp Backup and Recovery를 사용하면 Kubernetes 클러스터를 검색하고 관리하여 클러스터에서 호스팅되는 리소스를 보호할 수 있습니다. 
+---
+= Kubernetes 클러스터 관리
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery를 사용하면 Kubernetes 클러스터를 검색하고 관리하여 클러스터에서 호스팅되는 리소스를 보호할 수 있습니다.
+
+.필수 NetApp 콘솔 역할
+조직 관리자 또는 SnapCenter 관리자. link:reference-roles.html["NetApp 백업 및 복구 액세스 역할에 대해 알아보세요"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+
+NOTE: Kubernetes 클러스터를 검색하려면 다음을 참조하세요. link:br-start-discover.html["Kubernetes 워크로드를 알아보세요"] .
+
+
+
+== Kubernetes 클러스터 정보 편집
+
+클러스터의 이름을 변경해야 하는 경우 클러스터를 편집할 수 있습니다.
+
+.단계
+. NetApp 백업 및 복구에서 *인벤토리* > *클러스터*를 선택합니다.
+. 클러스터 목록에서 편집하려는 클러스터를 선택하고 연관된 작업 메뉴를 선택합니다.
+. *클러스터 편집*을 선택하세요.
+. 클러스터 이름을 필요에 따라 변경하세요. 클러스터 이름은 검색 과정에서 Helm 명령에 사용한 이름과 일치해야 합니다.
+. *완료*를 선택하세요.
+
+
+
+
+== Kubernetes 클러스터 제거
+
+Kubernetes 클러스터에서 호스팅되는 리소스를 더 이상 보호할 필요가 없는 경우 NetApp Backup and Recovery에서 제거할 수 있습니다.  클러스터를 제거해도 클러스터나 리소스는 삭제되지 않습니다. NetApp 콘솔 인벤토리에서만 클러스터가 제거됩니다.  클러스터를 제거하려면 먼저 보호를 비활성화하고 NetApp Backup and Recovery에서 관련 애플리케이션을 삭제해야 합니다.
+
+.단계
+. NetApp 백업 및 복구에서 *인벤토리* > *클러스터*를 선택합니다.
+. 클러스터 목록에서 편집하려는 클러스터를 선택하고 연관된 작업 메뉴를 선택합니다.
+. *클러스터 제거*를 선택합니다.
+. 확인 대화 상자에서 정보를 검토하고 *제거*를 선택하세요.
+

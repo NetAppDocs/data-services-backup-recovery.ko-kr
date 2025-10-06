@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: concept-start-prereq-snapcenter-import.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, backup and recovery, snapcenter, import, migration, migrate 
+summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp 백업 및 복구를 시작하세요.  NetApp 백업 및 복구를 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
+---
+= 플러그인 서비스에서 NetApp Backup and Recovery로 가져오기 위한 전제 조건
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft SQL Server용 SnapCenter 플러그인 서비스에서 NetApp Backup and Recovery로 리소스를 가져오려면 몇 가지 항목을 더 구성해야 합니다.
+
+
+
+== 먼저 NetApp 콘솔에서 시스템을 만드세요
+
+SnapCenter 에서 리소스를 가져오려면 SnapCenter 에서 가져오기 전에 먼저 온프레미스 SnapCenter 클러스터 스토리지를 모두 콘솔의 시스템 페이지에 추가해야 합니다.  이렇게 하면 호스트 리소스를 올바르게 검색하고 가져올 수 있습니다.
+
+
+
+== SnapCenter 플러그인을 설치하기 위한 호스트 요구 사항을 확인하세요.
+
+Microsoft SQL Server용 SnapCenter 플러그인에서 리소스를 가져오려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하기 위한 호스트 요구 사항이 충족되는지 확인하세요.
+
+SnapCenter 요구 사항을 특별히 확인하세요.link:concept-start-prereq.html["NetApp 백업 및 복구 필수 구성 요소"] .
+
+
+
+== 사용자 계정 컨트롤 원격 제한 비활성화
+
+SnapCenter 에서 리소스를 가져오기 전에 SnapCenter Windows 호스트에서 UAC(사용자 계정 컨트롤) 원격 제한을 비활성화하세요.  로컬 관리 계정을 사용하여 SnapCenter 서버 호스트나 SQL 호스트에 원격으로 연결하는 경우 UAC를 비활성화합니다.
+
+*보안 고려 사항*
+
+UAC 원격 제한을 비활성화하기 전에 다음 문제를 고려하세요.
+
+* 보안 위험: 토큰 필터링을 비활성화하면 시스템이 보안 취약점에 노출될 수 있습니다. 특히 로컬 관리 계정이 악의적인 행위자에 의해 손상된 경우 더욱 그렇습니다.
+* 주의해서 사용하세요:
++
+** 관리 업무에 꼭 필요한 경우에만 이 설정을 수정하세요.
+** 강력한 비밀번호와 기타 보안 조치를 마련해 관리 계정을 보호하세요.
+
+
+
+
+*대안적 해결책*
+
+* 원격 관리 액세스가 필요한 경우 적절한 권한이 있는 도메인 계정을 사용하는 것을 고려하세요.
+* 최상의 보안 관행을 준수하는 안전한 원격 관리 도구를 사용하여 위험을 최소화하세요.
+
+
+.사용자 계정 컨트롤 원격 제한을 비활성화하는 단계
+. 수정하다 `LocalAccountTokenFilterPolicy` SnapCenter Windows 호스트의 레지스트리 키.
++
+다음 중 하나를 사용하여 이를 수행하세요. 지침은 다음과 같습니다.
+
++
+** 방법 1: 레지스트리 편집기
+** 방법 2: PowerShell 스크립트
+
+
+
+
+
+
+=== 방법 1: 레지스트리 편집기를 사용하여 사용자 계정 컨트롤 비활성화
+
+이는 사용자 계정 컨트롤을 비활성화하는 데 사용할 수 있는 방법 중 하나입니다.
+
+.단계
+. 다음을 수행하여 SnapCenter Windows 호스트에서 레지스트리 편집기를 엽니다.
++
+.. 누르다 `Windows+R` 실행 대화 상자를 엽니다.
+.. 유형 `regedit` 그리고 누르세요 `Enter` .
+
+
+. 정책 키로 이동합니다.
++
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
+
+. 생성 또는 수정 `DWORD` 값:
++
+.. 위치하고 있다: `LocalAccountTokenFilterPolicy`
+.. 존재하지 않으면 새로 만드세요 `DWORD` (32비트) 값 지정됨 `LocalAccountTokenFilterPolicy` .
+
+
+. 지원되는 값은 다음과 같습니다.  이 시나리오에서는 값을 다음과 같이 설정합니다. `1` :
++
+** `0`(기본값): UAC 원격 제한이 활성화되어 있습니다.  로컬 계정에는 원격으로 액세스할 때 토큰이 필터링됩니다.
+** `1`: UAC 원격 제한이 비활성화되었습니다.  로컬 계정은 토큰 필터링을 우회하고 원격으로 액세스할 때 모든 관리 권한을 갖습니다.
+
+
+. *확인*을 클릭합니다.
+. 레지스트리 편집기를 닫습니다.
+. SnapCenter Windows 호스트를 다시 시작합니다.
+
+
+.레지스트리 수정 예시
+이 예제에서는 LocalAccountTokenFilterPolicy를 "1"로 설정하여 UAC 원격 제한을 비활성화합니다.
+
+[listing]
+----
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+
+"LocalAccountTokenFilterPolicy"=dword:00000001
+----
+
+
+=== 방법 2: PowerShell 스크립트를 사용하여 사용자 계정 컨트롤 비활성화
+
+이는 사용자 계정 컨트롤을 비활성화하는 데 사용할 수 있는 또 다른 방법입니다.
+
+
+CAUTION: 상승된 권한으로 PowerShell 명령을 실행하면 시스템 설정에 영향을 미칠 수 있습니다.  명령을 실행하기 전에 명령과 그 의미를 이해했는지 확인하세요.
+
+.단계
+. SnapCenter Windows 호스트에서 관리자 권한으로 PowerShell 창을 엽니다.
++
+.. *시작* 메뉴를 클릭하세요.
+.. *PowerShell 7* 또는 *Windows Powershell*을 검색하세요.
+.. 해당 옵션을 마우스 오른쪽 버튼으로 클릭하고 *관리자 권한으로 실행*을 선택하세요.
+
+
+. PowerShell이 시스템에 설치되어 있는지 확인하세요.  설치가 완료되면 *시작* 메뉴에 나타납니다.
++
+
+TIP: PowerShell은 Windows 7 이상 버전에 기본적으로 포함되어 있습니다.
+
+. UAC 원격 제한을 비활성화하려면 다음 명령을 실행하여 LocalAccountTokenFilterPolicy를 "1"로 설정합니다.
++
+[listing]
+----
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy" -Value 1 -Type DWord
+----
+. 현재 값이 "1"로 설정되어 있는지 확인하십시오. `LocalAccountTokenFilterPolicy`` 다음을 실행하여:
++
+[listing]
+----
+Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy"
+----
++
+** 값이 1이면 UAC 원격 제한이 비활성화됩니다.
+** 값이 0이면 UAC 원격 제한이 활성화됩니다.
+
+
+. 변경 사항을 적용하려면 컴퓨터를 다시 시작하세요.
+
+
+.UAC 원격 제한을 비활성화하는 PowerShell 7 명령 예:
+값이 "1"로 설정된 이 예는 UAC 원격 제한이 비활성화되었음을 나타냅니다.
+
+[listing]
+----
+# Disable UAC remote restrictions
+
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy" -Value 1 -Type DWord
+
+# Verify the change
+
+Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "LocalAccountTokenFilterPolicy"
+
+# Output
+
+LocalAccountTokenFilterPolicy : 1
+----

@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: br-use-reports.html 
+keywords: backing up, back up, backup, backup on-prem ontap, policy, policies, backup policies, cloud backup, aws, aws s3, azure, google cloud 
+summary: NetApp 백업 및 복구에서 백업 수, 성공적인 백업 수, 실패한 백업 수를 포함하여 백업 상태를 볼 수 있는 보고서를 만듭니다.  백업 유형, 백업에 사용된 저장 시스템, 백업 시간 등 각 백업의 세부 정보를 볼 수도 있습니다. 
+---
+= NetApp 백업 및 복구에서 Microsoft SQL Server 워크로드에 대한 보고서 만들기
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 백업 및 복구에서 Microsoft SQL Server 워크로드에 대한 보고서를 만들어 백업 수, 성공적인 백업 수, 실패한 백업 수를 포함한 백업 상태를 확인합니다.  백업 유형, 백업에 사용된 저장 시스템, 백업 시간 등 각 백업의 세부 정보를 볼 수도 있습니다.
+
+
+
+== 보고서 만들기
+
+*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 복제 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+
+. NetApp 백업 및 복구 메뉴에서 *보고서* 옵션을 선택합니다.
+. *보고서 만들기*를 선택하세요.
+. 보고서 범위 세부 정보를 입력하세요.
++
+** *보고서 이름*: 보고서에 대한 고유한 이름을 입력하세요.
+** *보고서 유형*: 계정별 보고서인지, 작업 부하별 보고서(Microsoft SQL Server) 보고서인지 선택합니다.
+** *호스트 선택*: 작업 부하를 기준으로 선택한 경우, 보고서를 생성할 호스트를 선택합니다.
+** *내용 선택*: 보고서에 모든 백업의 요약을 포함할지, 아니면 각 백업의 세부 정보를 포함할지 선택합니다.  (계정별로 선택한 경우)
+
+
+. 보고 범위 입력: 보고서에 지난 하루, 지난 7일, 지난 30일, 지난 분기 또는 작년의 데이터를 포함할지 선택합니다.
+. 보고서 전달 세부 정보 입력: 보고서를 이메일로 전달받으려면 *이메일을 사용하여 보고서 보내기*를 선택하세요.  보고서를 받을 이메일 주소를 입력하세요.
++
+설정 페이지에서 이메일 알림을 구성하세요.  이메일 알림 구성에 대한 자세한 내용은 다음을 참조하세요.link:br-use-settings-advanced.html["설정 구성"] .
+
+

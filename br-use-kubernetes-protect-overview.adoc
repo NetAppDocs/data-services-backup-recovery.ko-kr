@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: br-use-kubernetes-protect-overview.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
+summary: 온프레미스 ONTAP 시스템에서 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 이르기까지 Kubernetes 애플리케이션과 애플리케이션 데이터를 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다. 
+---
+= Kubernetes 워크로드 관리 개요
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery에서 Kubernetes 워크로드를 관리하면 Kubernetes 클러스터와 애플리케이션을 한곳에서 검색, 관리 및 보호할 수 있습니다. 쿠버네티스 클러스터에 호스팅된 리소스와 애플리케이션을 관리할 수 있습니다. 또한, 단일 인터페이스를 사용하여 쿠버네티스 워크로드에 대한 보호 정책을 생성하고 연결할 수 있습니다.
+
+다음 다이어그램은 Kubernetes 워크로드에 대한 백업 및 복구의 구성 요소와 기본 아키텍처를 보여주며, 다양한 데이터 복사본을 어떻게 다양한 위치에 저장할 수 있는지 보여줍니다.
+
+image:../media/backup-recovery-architecture-diagram.png["Kubernetes 워크로드에 대한 백업 및 복구 아키텍처 다이어그램"]
+
+NetApp Backup and Recovery는 Kubernetes 워크로드 관리에 다음과 같은 이점을 제공합니다.
+
+* 여러 쿠버네티스 클러스터에서 실행되는 애플리케이션을 보호하기 위한 단일 제어 평면입니다. 이러한 애플리케이션에는 쿠버네티스 클러스터에서 실행되는 컨테이너 또는 가상 머신이 포함될 수 있습니다.
+* NetApp SnapMirror 와의 기본 통합을 통해 모든 백업 및 복구 워크플로에 대한 스토리지 오프로드 기능을 제공합니다.
+* Kubernetes 애플리케이션에 대한 증분적 영구 백업은 복구 지점 목표(RPO)와 복구 시간 목표(RTO)를 낮추는 데 도움이 됩니다.
+
+
+
+NOTE: 이 문서는 기술 미리보기로 제공됩니다.  미리보기 기간 동안 Kubernetes 기능은 프로덕션 워크로드에 권장되지 않습니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.
+
+Kubernetes 워크로드 관리와 관련된 다음 작업을 수행할 수 있습니다.
+
+* link:br-start-discover-kubernetes.html["Kubernetes 워크로드를 알아보세요"] .
+* link:br-use-manage-kubernetes-clusters.html["Kubernetes 클러스터 관리"] .
+* link:br-use-protect-kubernetes-applications.html["Kubernetes 애플리케이션 추가 및 보호"] .
+* link:br-use-manage-kubernetes-applications.html["Kubernetes 애플리케이션 관리"] .
+* link:br-use-restore-kubernetes-applications.html["Kubernetes 애플리케이션 복원"] .
+
