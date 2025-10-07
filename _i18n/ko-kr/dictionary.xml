@@ -1101,7 +1101,6 @@
   <block id="6e32536aeb87365f67ba5a96c664e861" category="paragraph-title">이 지점으로 복원</block>
   <block id="4acf582ba1791858c42c901e8d64f664" category="paragraph">원래 위치로 데이터를 복원할 수 있지만, 이 비공개 미리보기 릴리스에서는 대체 위치로 복원하는 기능을 사용할 수 없습니다.</block>
   <block id="485775104c27dcbdf8d49f22f897f823" category="paragraph-title">개체 저장소 고려 사항에서 복원</block>
-  <block id="6f558593ad91ef445cb81ae10b4fb10a" category="paragraph">개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 보호가 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 보호를 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 무결성 검사를 실행하라는 메시지가 표시됩니다.  검사를 실시해 보시기 바랍니다.</block>
   <block id="fb1b557500e8d14608e76a0b93711e4c" category="admonition">백업 파일의 내용에 액세스하려면 클라우드 제공업체로부터 추가적인 퇴장 비용이 발생합니다.</block>
   <block id="10f4565a78ebd1822c60902cbb077e98" category="section-title">워크로드 복원 작동 방식</block>
   <block id="68976f4a60a7e436e5b5aff0b5dabf41" category="paragraph">작업 부하를 복원하면 다음이 발생합니다.</block>
@@ -2242,7 +2241,6 @@
   <block id="9fece9ac1c7d50fbf1a1498b93cbeb15" category="inline-link">Google Cloud BigQuery 서비스</block>
   <block id="a9e0f848e6e51d1ca02fdbb4bf91773a" category="list-text">Google에서는 새로운 버킷이 배포되고<block ref="7c8e47e4f5e61b3b1d7f7769baa8100f" category="inline-link-rx"></block> 계정/프로젝트 수준에서 프로비저닝됩니다. endif::gcp[]</block>
   <block id="705d7d5204c001ada8d7869c065a6a70" category="list-text">보관 개체 스토리지로 이동된 백업 파일에서 볼륨 데이터를 복원하려는 경우 클라우드 공급자로부터 추가 GiB당 검색 요금과 요청당 요금이 부과됩니다.</block>
-  <block id="36dc906951fe63e88433bc318e4fccd5" category="list-text">볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 보호를 활성화한 경우), 클라우드 제공업체로부터 추가적인 퇴출 비용도 발생합니다.</block>
   <block id="e1b4a0ddcd3124f71fd5c65649282433" category="paragraph">*서비스 요금*</block>
   <block id="40ff88020bcb9f0e42545b8535db30db" category="paragraph">서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지에 대한 백업을 _생성_하는 비용과 해당 백업에서 볼륨이나 파일을 _복원_하는 비용이 모두 포함됩니다.  ONTAP 효율성 이전(_before_ ONTAP )에 백업된 ONTAP 볼륨의 소스 논리적 사용 용량을 기준으로 계산된, 개체 스토리지에서 보호하는 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
   <block id="9b84371e23a14f93e2d9314a2599ac9a" category="admonition">Microsoft SQL Server의 경우 보조 ONTAP 대상이나 개체 스토리지에 스냅샷 복제를 시작하면 요금이 부과됩니다.</block>
@@ -2647,7 +2645,6 @@
   <block id="ec32f8eb7058323c02b13f59dd447a40" category="admonition">기존 버킷을 선택한 경우 암호화 정보가 이미 제공되므로 지금 입력할 필요가 없습니다.</block>
   <block id="2283ed1c2d2204e889a93d07486e3a8b" category="list-text">*백업 정책*: 기존의 백업-객체 스토리지 정책을 선택하거나 새로 만듭니다.</block>
   <block id="37c981be270bef0d7503a46e3ee55d35" category="admonition">백업을 활성화하기 전에 사용자 정의 정책을 생성하려면 다음을 참조하세요.<block ref="d9904d3bd7927987056edc09c02007e9" category="inline-link-macro-rx"></block> .</block>
-  <block id="9f933f8dd9e00607a2c65e19d903a5f0" category="list-text">개체 백업 정책의 경우 DataLock 및 랜섬웨어 보호 설정을 지정합니다.  DataLock 및 랜섬웨어 보호에 대한 자세한 내용은 다음을 참조하세요.<block ref="7a234b4add653baca92b7b8d8c25d2af" category="inline-link-macro-rx"></block> .</block>
   <block id="cd6dcf8587329d56e9a684f1fcc33d0e" category="list-text">*기존 스냅샷 복사본을 백업 복사본으로 개체 스토리지로 내보내기*: 이 시스템에 방금 선택한 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 볼륨의 로컬 스냅샷 복사본이 있는 경우 이 추가 메시지가 표시됩니다.  볼륨에 대한 가장 완벽한 보호를 보장하기 위해 모든 이전 스냅샷을 백업 파일로 개체 스토리지에 복사하려면 이 상자를 선택하세요.</block>
   <block id="1637762bf8b62862e92c5779dd292872" category="section-title">선택 사항을 검토하세요</block>
   <block id="6ff9dd41947ac05f6484a120fb4310b2" category="paragraph">이는 귀하의 선택 사항을 검토하고 필요한 경우 조정할 수 있는 기회입니다.</block>
@@ -2870,7 +2867,6 @@
   <block id="6c143468a72ae48b392ccaf6bfdab3dd" category="section-title">단일 볼륨의 백업 설정 편집</block>
   <block id="6783230016acdea3f2efff067c9f0ae2" category="list-text">*볼륨* 탭에서 정책을 변경하려는 볼륨을 식별하고 작업 메뉴를 선택합니다.<block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 행의 끝에서 *백업 전략 편집*을 선택하세요.</block>
   <block id="6ec852eec1715258286ed981ae615b37" category="list-text">_백업 전략 편집_ 페이지에서 로컬 스냅샷 복사본, 복제된 볼륨 및 백업 파일에 대한 기존 백업 정책을 변경하고 *다음*을 선택합니다.</block>
-  <block id="430e2fadb00ad3942d5507e8f1031301" category="paragraph">이 클러스터에 대해 NetApp Backup and Recovery를 활성화할 때 초기 백업 정책에서 클라우드 백업에 대해 _DataLock 및 랜섬웨어 보호_를 활성화한 경우 DataLock으로 구성된 다른 정책만 표시됩니다.  NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 보호_를 활성화하지 않은 경우 DataLock이 구성되지 않은 다른 클라우드 백업 정책만 표시됩니다.</block>
   <block id="ed3685aa06ca7db640e77339c669a75e" category="section-title">여러 볼륨의 백업 설정 편집</block>
   <block id="90d35772fb2c0d1903fd5cb179fca792" category="paragraph">여러 볼륨에서 동일한 백업 설정을 사용하려면 여러 볼륨에서 동시에 백업 설정을 활성화하거나 편집할 수 있습니다.  백업 설정이 없는 볼륨, 스냅샷 설정만 있는 볼륨, 클라우드 백업 설정만 있는 볼륨 등을 선택하고 다양한 백업 설정으로 모든 볼륨에 대량 변경을 적용할 수 있습니다.</block>
   <block id="254b8ee80daf8cdfb1e85c4784ce11e4" category="paragraph">여러 볼륨으로 작업할 때 모든 볼륨은 다음과 같은 공통적인 특성을 가져야 합니다.</block>
@@ -2897,7 +2893,6 @@
   <block id="9097ffd4045af3a3ae322b0f719b20c9" category="paragraph">볼륨의 개체에 임시 스냅샷 복사본이나 백업을 만들 수 있습니다.  임시 복제 볼륨을 생성할 수 없습니다.</block>
   <block id="75f0ab2aa06321fc5a92c205273b43b6" category="paragraph">백업 이름에는 타임스탬프가 포함되어 있으므로 다른 예약된 백업과 주문형 백업을 구별할 수 있습니다.</block>
   <block id="6ee3062ac668cf28f71bf489fd741bcd" category="inline-link-macro">DataLock 및 랜섬웨어 보호에 대해 자세히 알아보세요</block>
-  <block id="d54659a6758be0221155c241b9d69600" category="paragraph">이 클러스터에 대해 NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 보호_를 활성화한 경우, 주문형 백업도 DataLock으로 구성되고 보존 기간은 30일이 됩니다.  임시 백업에는 랜섬웨어 검사가 지원되지 않습니다. <block ref="17481ecd9087b2947e2c31f934c4a716" category="inline-link-macro-rx"></block> .</block>
   <block id="34654042ecfc4226d89a0eec5901d43e" category="inline-link">ONTAP CLI를 사용하여 스냅샷을 삭제하는 방법을 알아보세요.</block>
   <block id="4786401e865ef261720869019898fa6c" category="paragraph">임시 백업을 생성하면 소스 볼륨에 스냅샷이 생성됩니다.  이 스냅샷은 일반 스냅샷 일정에 포함되지 않으므로 회전하지 않습니다.  백업이 완료되면 소스 볼륨에서 이 스냅샷을 수동으로 삭제할 수 있습니다.  이를 통해 이 스냅샷과 관련된 블록을 해제할 수 있습니다.  스냅샷의 이름은 다음으로 시작합니다.<block ref="3fbd2a9ee3863b8841029b21d6bf8e89" prefix=" " category="inline-code"></block> .<block ref="7e565776b86561f26a3208af24c76dc9" category="inline-link-rx"></block> .</block>
   <block id="a7ddc69bf51887dfb9d3f72e57328bff" category="admonition">데이터 보호 볼륨에서는 주문형 볼륨 백업이 지원되지 않습니다.</block>
@@ -2910,11 +2905,9 @@
   <block id="b1cb92c2a23b4cbaa76face717d899cf" category="list-text">각 백업 유형에 대한 모든 백업 파일 목록을 보려면 *스냅샷*, *복제* 또는 *백업*을 선택하세요.</block>
   <block id="c3da5f4c5e9e366bce0761355a7a32b9" category="section-title">개체 스토리지의 볼륨 백업에 대한 랜섬웨어 검사 실행</block>
   <block id="76d4ec74983530f8007b9dfb9961f585" category="paragraph">NetApp Backup and Recovery는 백업을 개체 파일로 생성할 때와 백업 파일의 데이터를 복원할 때 랜섬웨어 공격의 증거를 찾기 위해 백업 파일을 검사합니다.  언제든지 주문형 검사를 실행하여 개체 스토리지에서 특정 백업 파일의 사용 가능성을 확인할 수도 있습니다.  특정 볼륨에서 랜섬웨어 문제가 발생했고 해당 볼륨의 백업이 영향을 받지 않았는지 확인하려는 경우 이 기능이 유용할 수 있습니다.</block>
-  <block id="64cd9938ff73165ac39f233fdf80919a" category="paragraph">이 기능은 볼륨 백업이 ONTAP 9.11.1 이상이 설치된 시스템에서 생성되고, 백업-개체 정책에서 _DataLock 및 랜섬웨어 보호_를 활성화한 경우에만 사용할 수 있습니다.</block>
   <block id="5f10de94b506d8ff164c981c019bd24a" category="paragraph">해당 볼륨에 대한 세부 정보가 표시됩니다.</block>
   <block id="aa132131d3096dd036d6592cccc8f815" category="list-text">*백업*을 선택하면 개체 스토리지에 있는 백업 파일 목록을 볼 수 있습니다.</block>
   <block id="faaa44db37f803e5f9607b2a2e619de9" category="list-text">선택하다<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 랜섬웨어를 검사하려는 볼륨 백업 파일에 대해 *랜섬웨어 검사*를 클릭합니다.</block>
-  <block id="6a70c24614f677351a22938d3dc908b6" category="paragraph">랜섬웨어 보호 열에 검사가 진행 중이라는 것이 표시됩니다.</block>
   <block id="7ce389d951938726d9655f7501c33bfb" category="section-title">소스 볼륨과의 복제 관계 관리</block>
   <block id="b75f2bb92b2f898b4d1052fdc12c5b0d" category="paragraph">두 시스템 간에 데이터 복제를 설정한 후에는 데이터 복제 관계를 관리할 수 있습니다.</block>
   <block id="552d9d27b17eb9bf973d8bf7569a67d7" category="list-text">*볼륨* 탭에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 소스 볼륨에 대해 *복제* 옵션을 선택합니다.  사용 가능한 모든 옵션을 볼 수 있습니다.</block>
@@ -2940,7 +2933,6 @@
   <block id="333d93ae30f96072d9533be9257871fc" category="paragraph">작업을 선택하면 콘솔에서 관계가 업데이트됩니다.</block>
   <block id="e5c31b44cc452f945aec38b328ab97da" category="section-title">기존 클라우드 백업 정책 편집</block>
   <block id="27adbc6c374272e79f9592a18fa6b31c" category="paragraph">현재 시스템의 볼륨에 적용된 백업 정책의 속성을 변경할 수 있습니다.  백업 정책을 변경하면 해당 정책을 사용하는 모든 기존 볼륨에 영향을 미칩니다.</block>
-  <block id="9b7e554d688d20c7e30bb0f27e58f6d9" category="list-text">이 클러스터에 대해 NetApp 백업 및 복구를 활성화할 때 초기 정책에서 _DataLock 및 랜섬웨어 보호_를 활성화한 경우, 편집하는 모든 정책은 동일한 DataLock 설정(거버넌스 또는 규정 준수)으로 구성되어야 합니다.  NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 보호_를 활성화하지 않은 경우 지금은 DataLock을 활성화할 수 없습니다.</block>
   <block id="393cdac7e3ba811fae25e3e3bbfa2f9e" category="list-text">AWS에서 백업을 생성할 때 NetApp Backup and Recovery를 활성화할 때 첫 번째 백업 정책에서 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_를 선택한 경우, 백업 정책을 편집할 때 해당 계층은 사용 가능한 유일한 아카이브 계층이 됩니다.  첫 번째 백업 정책에서 보관 계층을 선택하지 않은 경우 정책을 편집할 때 _S3 Glacier_가 유일한 보관 옵션이 됩니다.</block>
   <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">*볼륨* 탭에서 *백업 설정*을 선택합니다.</block>
   <block id="03e9f860a103616b43466e85b0aa6489" category="list-text">_백업 설정_ 페이지에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 정책 설정을 변경하려는 시스템의 경우 *정책 관리*를 선택합니다.</block>
@@ -2958,7 +2950,6 @@
   <block id="704cbb6a4b98702a1ff1e784b08e0bc1" category="paragraph">시스템에 대해 NetApp 백업 및 복구를 활성화하면 처음에 선택한 모든 볼륨이 정의한 기본 백업 정책을 사용하여 백업됩니다.  서로 다른 복구 지점 목표(RPO)를 가진 특정 볼륨에 서로 다른 백업 정책을 할당하려는 경우 해당 클러스터에 대한 추가 정책을 만들고 해당 정책을 다른 볼륨에 할당할 수 있습니다.</block>
   <block id="ebef09b04d71dbdf490084193f232a2f" category="inline-xref">해당 시스템의 볼륨에 정책을 적용합니다.</block>
   <block id="49411695d7d9015ad07ddd38f74e331d" category="paragraph">시스템의 특정 볼륨에 새로운 백업 정책을 적용하려면 먼저 시스템에 백업 정책을 추가해야 합니다.  그럼 당신은 할 수 있습니다<block ref="e642665ab169685987c0c09bf6eca490" category="inline-xref-macro-rx"></block> .</block>
-  <block id="a2377b859451aa0b34ec6b71f9de4e4b" category="list-text">이 클러스터에 대해 NetApp 백업 및 복구를 활성화할 때 초기 정책에서 _DataLock 및 랜섬웨어 보호_를 활성화한 경우, 추가로 생성하는 모든 정책은 동일한 DataLock 설정(거버넌스 또는 규정 준수)으로 구성되어야 합니다.  NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 보호_를 활성화하지 않은 경우 DataLock을 사용하는 새 정책을 만들 수 없습니다.</block>
   <block id="33728a43a58c6c49f30ad0f6afe6cb1a" category="list-text">AWS에서 백업을 생성할 때 NetApp Backup and Recovery를 활성화할 때 첫 번째 백업 정책에서 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_를 선택한 경우, 해당 계층은 해당 클러스터의 향후 백업 정책에 사용할 수 있는 유일한 아카이브 계층이 됩니다.  첫 번째 백업 정책에서 보관 계층을 선택하지 않은 경우, _S3 Glacier_가 향후 정책에 대한 유일한 보관 옵션이 됩니다.</block>
   <block id="32c508c6d8137a2e6d45fe3a47abfd20" category="list-text">_백업 설정_ 페이지에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 새 정책을 추가하려는 시스템에 대해 *정책 관리*를 선택합니다.</block>
   <block id="424f2e0883bc9947bd7d3e3b3a3981a1" category="list-text">_정책 관리_ 페이지에서 *새 정책 추가*를 선택합니다.</block>
@@ -3322,10 +3313,8 @@
   <block id="08cdeb7ce64fda06111111c8fea66510" category="section-title">StorageGRID 백업 대상으로 준비하세요</block>
   <block id="ef58a6d55100435043d388bfdf72c624" category="paragraph">StorageGRID 다음 요구 사항을 충족해야 합니다. 를 참조하십시오<block ref="babf3072d9403ab5e1ffb9e4bb9a27cb" category="inline-link-rx"></block> 자세한 내용은.</block>
   <block id="45167bc71bd7fe459b6a35c45730024a" category="inline-link-macro">개체 백업 정책 옵션</block>
-  <block id="0532a83813f81bdfa46c4f259d1e347e" category="paragraph">StorageGRID 에 대한 DataLock 및 랜섬웨어 보호 요구 사항에 대한 자세한 내용은 다음을 참조하세요.<block ref="bbc9f622da531392bbcdbdc340d647a2" category="inline-link-macro-rx"></block> .</block>
   <block id="793640ee72b7150dff71a288a821c67c" category="list-text">지원되는 StorageGRID 버전</block>
   <block id="8a456872aea50fd247449bd552854586" category="list-text">StorageGRID 10.3 이상이 지원됩니다.</block>
-  <block id="22c37949858e0a6877e1770be16db62b" category="paragraph">백업에 DataLock 및 랜섬웨어 보호를 사용하려면 StorageGRID 시스템에서 11.6.0.3 이상 버전을 실행해야 합니다.</block>
   <block id="a3c3d46eb7dece1ea66293e26e27c747" category="paragraph">이전 백업을 클라우드 보관 스토리지로 계층화하려면 StorageGRID 시스템에서 11.3 이상 버전을 실행해야 합니다.  또한, StorageGRID 시스템은 콘솔의 *시스템* 페이지에서 검색되어야 합니다.</block>
   <block id="de84af939f41492b1264ce8c3df573a9" category="paragraph">사용자 보관 저장소를 사용하려면 관리자 노드 IP 액세스가 필요합니다.</block>
   <block id="a99287c7990930f58a55c1e2dba88d64" category="paragraph">게이트웨이 IP 액세스는 항상 필요합니다.</block>
@@ -3374,7 +3363,6 @@
   <block id="cde236f353f324c0446bb3b8cfb426fc" category="list-text">*네트워킹*: 백업하려는 볼륨이 있는 ONTAP 클러스터의 IP 공간을 선택합니다.  이 IP공간의 클러스터 간 LIF에는 아웃바운드 인터넷 액세스가 있어야 합니다(콘솔 에이전트가 "다크" 사이트에 설치된 경우에는 필요하지 않음).</block>
   <block id="7f62bdecf08bb9ff2fd358b915cc37e0" category="admonition">올바른 IP 공간을 선택하면 NetApp Backup and Recovery가 ONTAP 에서 StorageGRID 개체 스토리지로의 연결을 설정할 수 있습니다.</block>
   <block id="29ec9eea05a4e021ec0af54e27e66224" category="list-text">*백업 정책*: 기존의 개체 스토리지 백업 정책을 선택하거나 새로 만듭니다.</block>
-  <block id="6c08aad63d31acac8bc5248c2bfd34f2" category="paragraph">클러스터에서 ONTAP 9.11.1 이상을 사용하는 경우 _DataLock 및 랜섬웨어 보호_를 구성하여 백업을 삭제 및 랜섬웨어 공격으로부터 보호할 수 있습니다.  _DataLock_은 백업 파일이 수정되거나 삭제되는 것을 방지하고, _Ransomware Protection_은 백업 파일을 검사하여 백업 파일에서 랜섬웨어 공격의 증거를 찾습니다.</block>
   <block id="b1e78dfdd8adc3005cff56ffd24b2af1" category="inline-xref">이 기능을 위해 시스템을 구성하는 방법을 확인하세요.</block>
   <block id="43f4c1811765abf291168aea7f16a205" category="paragraph">클러스터에서 ONTAP 9.12.1 이상을 사용하고 StorageGRID 시스템에서 11.4 이상을 사용하는 경우, 특정 일수가 지난 후 이전 백업을 퍼블릭 클라우드 보관 계층으로 계층화하도록 선택할 수 있습니다.  현재 지원되는 스토리지 계층은 AWS S3 Glacier/S3 Glacier Deep Archive 또는 Azure Archive 스토리지 계층입니다. <block ref="bf8884094e353a761ed88341de6eaf54" category="inline-xref-macro-rx"></block> .</block>
   <block id="1f56b8f69150cdfb9829cf942c51a8d3" category="list-text">*퍼블릭 클라우드에 대한 계층형 백업*: 계층형 백업을 수행할 클라우드 공급자를 선택하고 공급자 세부 정보를 입력합니다.</block>
@@ -3576,8 +3564,6 @@
   <block id="906f0c83e11579cff84ef8bb2602e8ee" category="list-text">소스 시스템에서 연간 스냅샷을 유지하려면 *비활성화*를 선택합니다.</block>
   <block id="32a5c26baa0363b9a3a4a05896b16fd9" category="section-title">랜섬웨어 검사 활성화 또는 비활성화</block>
   <block id="c8677ee89c299128bf83f5ed7ce0b535" category="paragraph">랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다.  검사 빈도의 기본 설정은 7일입니다.  스캔은 최신 스냅샷 복사본에서만 수행됩니다.  고급 설정 페이지의 옵션을 사용하여 최신 스냅샷 복사본에 대한 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다.  이 기능을 활성화하면 기본적으로 7일마다 검사가 수행됩니다.</block>
-  <block id="645f12199dae2b82a1985743cbc3e647" category="inline-link-macro">DataLock 및 랜섬웨어 보호 옵션</block>
-  <block id="e3cb94b1267b7b2d68735e1f6faa1a1c" category="paragraph">DataLock 및 랜섬웨어 보호 옵션에 대한 자세한 내용은 다음을 참조하세요.<block ref="454da2f6f509194a0a53a67aea76cc4c" category="inline-link-macro-rx"></block> .</block>
   <block id="823af9cc6541e49164fb4b1c88f90a63" category="paragraph">일정을 며칠이나 몇 주로 변경하거나 비활성화하여 비용을 절감할 수 있습니다.</block>
   <block id="c000460328529e6cc52a2a89e3a697dc" category="admonition">랜섬웨어 검사를 활성화하면 클라우드 제공업체에 따라 추가 요금이 부과됩니다.</block>
   <block id="564c5feaa7f154c02296acfa87cd72f2" category="paragraph">예약된 랜섬웨어 검사는 최신 스냅샷 사본에서만 실행됩니다.</block>
@@ -3608,7 +3594,6 @@
   <block id="182fb5e3aa2936674fedf15788f2264b" category="paragraph">연간 백업은 개체 스토리지로 전송된 후 소스 시스템에서 자동으로 삭제됩니다.  이러한 기본 동작은 시스템의 고급 설정 페이지에서 변경할 수 있습니다.</block>
   <block id="051658be4ba182ab30138c3d0fa07f2b" category="section-title">DataLock 및 랜섬웨어 보호 옵션</block>
   <block id="7dc66b1cfd01d4c00dc9fb5720da9bd7" category="paragraph">NetApp Backup and Recovery는 볼륨 백업에 대한 DataLock 및 랜섬웨어 보호를 지원합니다.  이러한 기능을 사용하면 백업 파일을 잠그고 검사하여 백업 파일에 랜섬웨어가 있는지 감지할 수 있습니다.  이는 클러스터의 볼륨 백업에 대한 추가 보호가 필요할 때 백업 정책에서 정의할 수 있는 선택적 설정입니다.</block>
-  <block id="27305cd8e776fa36eb96839c9e5d9bc9" category="paragraph">이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다.  백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다.  DataLock 및 랜섬웨어 보호 옵션이 활성화되면 NetApp 백업 및 복구 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.</block>
   <block id="f45d40d2c3943b450f3c1c0ff3ac37f4" category="inline-link">자세한 내용은 DataLock 및 랜섬웨어 보호 블로그를 참조하세요.</block>
   <block id="9119c5c13d4a250d1b7c806e437d4713" category="paragraph"><block ref="340a0b0e8509133a13996f4ac0d4f8c7" category="inline-link-rx"></block> .</block>
   <block id="86fef274eb09e789513af0922e579b5a" category="inline-link">ONTAP 에서 제공하는 랜섬웨어 방지 보호</block>
@@ -3639,7 +3624,6 @@
   <block id="b31b5b22923a2871f33f5a4b77d6be83" category="paragraph">DataLock 보존 설정은 백업 정책의 정책 보존 설정을 재정의합니다.  백업 파일이 더 오랜 기간 동안 개체 저장소에 저장되므로 저장 비용에 영향을 미칠 수 있습니다.</block>
   <block id="010f0e105bcb6f73ab6c815fef84dd1c" category="section-title">DataLock 및 랜섬웨어 보호 활성화</block>
   <block id="9f2f26447f0350dee8acbf4adae7b4e0" category="paragraph">정책을 생성할 때 DataLock 및 랜섬웨어 보호 기능을 활성화할 수 있습니다.  정책이 생성된 후에는 이 기능을 활성화, 수정 또는 비활성화할 수 없습니다.</block>
-  <block id="5a97c9e0493d72ea10717d6f4f552f9d" category="list-text">정책을 생성할 때 *DataLock 및 랜섬웨어 보호* 섹션을 확장합니다.</block>
   <block id="a7a08622ee5c8019b57354b99b7693b2" category="list-text">다음 중 하나를 선택하세요.</block>
   <block id="3f15918939b0d7ada1ed6774a4499a87" category="list-text">*없음*: DataLock 보호 및 랜섬웨어 복원력이 비활성화되었습니다.</block>
   <block id="7acb96413bf2eea8adc563517b923bc2" category="list-text">*잠금 해제*: DataLock 보호 및 랜섬웨어 복원력이 활성화되었습니다.  특정 권한이 있는 사용자는 보존 기간 동안 보호된 백업 파일을 덮어쓰거나 삭제할 수 있습니다.</block>
@@ -3660,11 +3644,8 @@
   <block id="988f2ccf804886f5ab1cf1cc72917abe" category="list-text">랜섬웨어 검사가 시작되면 두 개체 버전에 대한 체크섬이 검증되고 비교됩니다.  체크섬이 일치하지 않으면 잠재적인 랜섬웨어가 감지된 것입니다.</block>
   <block id="1364637fafeabf3ff1cd69cc9cda6bcf" category="list-text">복구 과정에는 마지막으로 알려진 양호한 사본으로 되돌리는 작업이 포함됩니다.</block>
   <block id="b3f1b65a3c7ad581029671863ce84f3e" category="section-title">지원되는 시스템 및 개체 스토리지 공급자</block>
-  <block id="334396ea69bb97b48449e4120f07c04a" category="paragraph">다음 퍼블릭 및 프라이빗 클라우드 공급자의 개체 스토리지를 사용하는 경우 다음 시스템의 ONTAP 볼륨에서 DataLock 및 랜섬웨어 보호를 활성화할 수 있습니다.  향후 릴리스에서는 추가적인 클라우드 공급자가 추가될 예정입니다.</block>
   <block id="49930e1d4376887999c072bd91775525" category="cell">백업 파일 대상 ifdef::aws[]</block>
   <block id="8889077573d45691231050324d93b6a9" category="cell">아마존 S3 endif::aws[] ifdef::azure[]</block>
-  <block id="a7333071b8d492fc2184540602ce3b9e" category="cell">Azure Blob endif::azure[] ifdef::gcp[] endif::gcp[]</block>
-  <block id="da3a611050815415e3372ad88f95d3e7" category="cell">ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] endif::gcp[] NetApp StorageGRID</block>
   <block id="f3ec603ab9c35660f371c0fc057b7fd1" category="list-text">클러스터는 ONTAP 9.11.1 이상을 실행해야 합니다.</block>
   <block id="6eccb1b4300ae9587c674c0708c7ee79" category="list-text">콘솔 에이전트는 클라우드나 사내에 배포될 수 있습니다.</block>
   <block id="685a143757efe250c8c69c08616cbe33" category="list-text">다음 S3 권한은 콘솔 에이전트에 권한을 제공하는 IAM 역할의 일부여야 합니다.  이들은 리소스 "arn:aws:s3:::netapp-backup-*"의 "backupS3Policy" 섹션에 있습니다.</block>
@@ -3771,7 +3752,6 @@
   <block id="72d6d7225fde1dafbc05317df9f5b442" category="paragraph">*다양한 백업 방법 비교*</block>
   <block id="8d4622541c56b47641b741cdbe4f8ddf" category="paragraph">다음 표는 세 가지 백업 방법을 일반적으로 비교한 것입니다.  일반적으로 개체 스토리지 공간은 온프레미스 디스크 스토리지보다 비용이 저렴하지만, 클라우드에서 데이터를 자주 복원할 것으로 생각된다면 클라우드 공급업체의 이탈 수수료로 인해 절감액이 일부 줄어들 수 있습니다.  클라우드에 있는 백업 파일에서 데이터를 얼마나 자주 복원해야 하는지 파악해야 합니다.</block>
   <block id="15d3cc7c4c3352d19d2b3b84f9c0fc46" category="inline-link-macro">DataLock 및 랜섬웨어 보호와 보관 스토리지 설정에 대해 자세히 알아보세요.</block>
-  <block id="f5b750ba82fcc6a40a03973f83147ff8" category="paragraph">이러한 기준 외에도 클라우드 스토리지는 DataLock 및 랜섬웨어 보호 기능을 사용하면 추가 보안 옵션을 제공하고, 오래된 백업 파일에 대한 보관 스토리지 클래스를 선택하면 추가적으로 비용을 절감할 수 있습니다. <block ref="0c861116d28daa1fe6085df5c3fb8bde" category="inline-link-macro-rx"></block> .</block>
   <block id="ddb99ca7cced831bad7ef70c4a866fbf" category="cell">백업 속도</block>
   <block id="e1cc17541eaf2c504e414ddff25f2eab" category="cell">백업 비용</block>
   <block id="ffe53eb9663918ea5038c796f2cb2f26" category="cell">속도 복원</block>
@@ -3973,7 +3953,6 @@
   <block id="1854bdaf3ded217ffdff52794b6c84fc" category="paragraph">스냅샷 복사본이나 복제 볼륨을 생성하는 데는 비용이 들지 않습니다. 스냅샷 복사본과 복제 볼륨을 저장하는 데 필요한 디스크 공간 외에는 비용이 들지 않습니다.</block>
   <block id="dd49bc28723be22ffdd3f04630c122df" category="paragraph">NetApp Backup and Recovery는 소스 볼륨의 스토리지 효율성을 보존하므로 ONTAP 효율성 이후의 데이터(중복 제거 및 압축이 적용된 후의 더 적은 양의 데이터)에 대해 클라우드 공급자 개체 스토리지 비용을 지불합니다.</block>
   <block id="fedaab8c05c476a14c09d3ad41bf9a22" category="list-text">Google에서는 새로운 버킷이 배포되고<block ref="7c8e47e4f5e61b3b1d7f7769baa8100f" category="inline-link-rx"></block> 계정/프로젝트 수준에서 제공됩니다.</block>
-  <block id="832fd1c3441239683a98428c909ca909" category="list-text">볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 검사할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 보호를 활성화한 경우), 클라우드 제공업체로부터 추가적인 퇴출 비용도 발생합니다.</block>
   <block id="060b6e252a88502e803f6fdc3115b5d9" category="paragraph">서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지에 대한 백업을 _생성_하는 비용과 해당 백업에서 볼륨이나 파일을 _복원_하는 비용이 모두 포함됩니다.  ONTAP 볼륨의 소스 논리적 사용 용량( ONTAP 효율성 이전)을 기준으로 개체 스토리지에 백업된 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
   <block id="e71616090dfab7da8f9d13556cae146a" category="paragraph">백업 서비스 비용은 세 가지 방법으로 지불할 수 있습니다.  첫 번째 옵션은 월 단위로 요금을 지불하고 클라우드 제공업체에 가입하는 것입니다.  두 번째 옵션은 연간 계약을 맺는 것입니다.  세 번째 옵션은 NetApp 에서 직접 라이선스를 구매하는 것입니다.</block>
   <block id="38692e39e588de5b1294ee4cca656080" category="list-text">*BYOL*: NetApp 에서 구매한 라이선스로 모든 클라우드 공급자와 함께 사용할 수 있습니다.</block>
@@ -4017,7 +3996,6 @@
   <block id="27f4e7945442348457ec28cf1aa6eefd" category="paragraph">카테고리 또는 간격에 대한 최대 백업 수에 도달하면 이전 백업이 제거되어 항상 최신 백업을 보유할 수 있습니다(따라서 오래된 백업이 더 이상 공간을 차지하지 않습니다).</block>
   <block id="c1855e2778d4090a158417283de29dbc" category="admonition">데이터 보호 볼륨의 백업 보존 기간은 소스 SnapMirror 관계에서 정의된 기간과 동일합니다.  원하시면 API를 사용하여 이를 변경할 수 있습니다.</block>
   <block id="01ec9d3adb6b85775aeeda0d6d533e54" category="section-title">백업 파일 보호 설정</block>
-  <block id="84a5e2f266b193f6638a8ba2e9333a1b" category="paragraph">클러스터에서 ONTAP 9.11.1 이상을 사용하는 경우 개체 스토리지의 백업을 삭제 및 랜섬웨어 공격으로부터 보호할 수 있습니다.  각 백업 정책은 특정 기간(보존 기간) 동안 백업 파일에 적용할 수 있는 _DataLock 및 랜섬웨어 보호_ 섹션을 제공합니다.</block>
   <block id="8756c7c925830c8c39d9804961d7d40b" category="list-text">_DataLock_은 백업 파일이 수정되거나 삭제되는 것을 방지합니다.</block>
   <block id="c73b2d161daabc3a9a53d6dd0c4df263" category="list-text">_랜섬웨어 보호_ 기능은 백업 파일을 생성할 때와 백업 파일의 데이터를 복원할 때 랜섬웨어 공격의 증거를 찾기 위해 백업 파일을 검사합니다.</block>
   <block id="e3414eaea3759c338f18072fbecaa19f" category="paragraph">예약된 랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다.  검사 빈도의 기본 설정은 7일입니다.  스캔은 최신 스냅샷 사본에서만 수행됩니다.  예약된 검사는 비용을 절감하기 위해 비활성화할 수 있습니다.  고급 설정 페이지의 옵션을 사용하여 최신 스냅샷 복사본에 대한 예약된 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다.  이 기능을 활성화하면 기본적으로 매주 검사가 수행됩니다.  일정을 며칠이나 몇 주로 변경하거나 비활성화하여 비용을 절감할 수 있습니다.</block>
@@ -4128,7 +4106,6 @@
   <block id="00e49e17372cc54391186a012dcec566" category="list-text">_찾아보기 및 복원_ 섹션에서 *볼륨 복원*을 선택합니다.</block>
   <block id="7eccde2a14cd84f78dde1af09cf04af9" category="list-text">_소스 선택_ 페이지에서 복원하려는 볼륨의 백업 파일로 이동합니다.  복원하려는 날짜/시간 스탬프가 있는 *시스템*, *볼륨*, *백업* 파일을 선택합니다.</block>
   <block id="c884a3e70e8bce1d15f993ac9cb50a73" category="paragraph">*위치* 열은 백업 파일(스냅샷)이 *로컬*(소스 시스템의 스냅샷 복사본), *보조*(보조 ONTAP 시스템의 복제된 볼륨), 또는 *개체 스토리지*(개체 스토리지의 백업 파일)인지 여부를 보여줍니다.  복원할 파일을 선택하세요.</block>
-  <block id="e924abd4626456c317eb17ea931d146d" category="paragraph">개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 복원력이 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 보호를 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다.  랜섬웨어가 있는지 백업 파일을 검사하는 것이 좋습니다.  (백업 파일의 내용에 접근하려면 클라우드 제공업체로부터 추가 퇴장 비용이 발생합니다.)</block>
   <block id="ec4f513ca338429ab9e381b2d0283d04" category="list-text">_대상 선택_ 페이지에서 볼륨을 복원할 *시스템*을 선택합니다.</block>
   <block id="4f77ec7cb4d938e815d515d86daf431e" category="list-text">개체 스토리지에서 백업 파일을 복원할 때 온프레미스 ONTAP 시스템을 선택하고 개체 스토리지에 대한 클러스터 연결을 아직 구성하지 않은 경우 추가 정보를 입력하라는 메시지가 표시됩니다.</block>
   <block id="8e494bd03a27f49a3a42559fa89f035a" category="list-text">Amazon S3에서 복원할 때 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택하고, ONTAP 클러스터에 S3 버킷에 대한 액세스 권한을 부여하기 위해 생성한 사용자의 액세스 키와 비밀 키를 입력하고, 선택적으로 안전한 데이터 전송을 위해 개인 VPC 엔드포인트를 선택합니다.</block>
@@ -4178,7 +4155,6 @@
   <block id="a4d28c95dc9a398dc52d0e10b7e6526a" category="list-text">*다음*을 선택하면 볼륨 백업의 폴더와 파일 목록이 표시됩니다.</block>
   <block id="cbb08f72335795850ccfc691c171d12b" category="paragraph">보관 저장소 계층에 있는 백업 파일에서 폴더나 파일을 복원하는 경우 복원 우선순위를 선택할 수 있습니다.</block>
   <block id="85a7bc53afc77150588eb7e96fff336f" category="paragraph"><block ref="ee2d4c64a4d42f71a3357c6cd2b7b94b" category="inline-link-macro-rx"></block> . <block ref="bf09a0f29ffa1dc0ee63da51e58f16ef" category="inline-link-macro-rx"></block> . <block ref="9220ac6939e2eccbf843225c6d0eb5f6" category="inline-link-macro-rx"></block> . Google 보관함 저장 계층의 백업 파일은 거의 즉시 복원되며 복원 우선 순위가 필요하지 않습니다.</block>
-  <block id="7a0b16fb94c5a9c41aa35fd38d0fe618" category="paragraph">백업 파일에 대해 랜섬웨어 복원력이 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 보호를 활성화한 경우) 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다.  랜섬웨어가 있는지 백업 파일을 검사하는 것이 좋습니다.  (백업 파일의 내용에 접근하려면 클라우드 제공업체로부터 추가 퇴장 비용이 발생합니다.)</block>
   <block id="fa7edcf4876f70f9cdbd4ded39683873" category="list-text">_항목 선택_ 페이지에서 복원하려는 폴더나 파일을 선택하고 *계속*을 선택합니다.  해당 항목을 찾는 데 도움이 되는 내용:</block>
   <block id="7a08363d26933e1e3210eaeb8dcd46e6" category="list-text">폴더나 파일 이름이 보이면 선택할 수 있습니다.</block>
   <block id="660646010d4764a96991255190b6923f" category="list-text">검색 아이콘을 선택하고 폴더나 파일 이름을 입력하면 해당 항목으로 바로 이동할 수 있습니다.</block>
@@ -4991,4 +4967,32 @@
   <block id="74443ec40597d5044894672e880e4cb8" category="summary">NetApp Backup and Recovery는 IAM 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스 권한을 관리합니다.</block>
   <block id="d8242f460ba07545cc4fc280abc24dfd" category="inline-link">NetApp 콘솔의 NetApp 백업 및 복구 역할</block>
   <block id="b7ce2fa7e7dfbfcf006c177bd9507fe6" category="paragraph">NetApp Backup and Recovery에 특정한 IAM 역할에 대해 알아보려면 다음을 참조하세요.<block ref="00765778411880d6fabcf7f493ef0db6" category="inline-link-rx"></block> .</block>
+  <block id="88e3d91fca73ce1aaac6067b9552277d" category="paragraph">개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 보호가 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 무결성 검사를 실행하라는 메시지가 표시됩니다. 검사를 실시해 보시기 바랍니다.</block>
+  <block id="e44d61516574d94ce56af3468723e18a" category="list-text">볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 클라우드 공급업체로부터 추가적인 퇴장 비용이 발생합니다.</block>
+  <block id="72c9277e73379a7669bea5aea529fe2e" category="list-text">개체 백업 정책의 경우 DataLock 및 랜섬웨어 복원력 설정을 지정합니다.  DataLock 및 랜섬웨어 복원력에 대한 자세한 내용은 다음을 참조하세요.<block ref="7a234b4add653baca92b7b8d8c25d2af" category="inline-link-macro-rx"></block> .</block>
+  <block id="87a6427c4107d7090d449e6c8d7aa59e" category="list-text">백업-객체 정책의 경우 Datalock 및 랜섬웨어 복원력을 구성합니다.  Datalock 및 Ransomware Resilience에 대한 자세한 내용은 다음을 참조하세요.<block ref="7a234b4add653baca92b7b8d8c25d2af" category="inline-link-macro-rx"></block> .</block>
+  <block id="28d4180de7948c969ad2c178ab5ac2ba" category="paragraph">이 클러스터에 대해 NetApp Backup and Recovery를 활성화할 때 초기 백업 정책에서 클라우드 백업에 대해 _DataLock 및 랜섬웨어 복원력_을 활성화한 경우 DataLock으로 구성된 다른 정책만 표시됩니다.  NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 복원력_을 활성화하지 않은 경우 DataLock이 구성되지 않은 다른 클라우드 백업 정책만 표시됩니다.</block>
+  <block id="b6488996839d3ef81eaf4ab204a7cf5a" category="paragraph">이 클러스터에 대해 NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 복원력_을 활성화한 경우, 주문형 백업도 DataLock으로 구성되고 보존 기간은 30일이 됩니다. 임시 백업에는 랜섬웨어 검사가 지원되지 않습니다. <block ref="17481ecd9087b2947e2c31f934c4a716" category="inline-link-macro-rx"></block> .</block>
+  <block id="cf2a8b330499d1a7ec5ed6bef1f8ed38" category="paragraph">이 기능은 볼륨 백업이 ONTAP 9.11.1 이상이 설치된 시스템에서 생성되고, 백업-개체 정책에서 _DataLock 및 랜섬웨어 복원력_을 활성화한 경우에만 사용할 수 있습니다.</block>
+  <block id="7fc99b18054450dcbf8338f8ee8c67db" category="paragraph">랜섬웨어 복원력 열은 검사가 진행 중임을 보여줍니다.</block>
+  <block id="f84b10497d58e1c905bec8056b6bd2f3" category="list-text">이 클러스터에 대해 NetApp 백업 및 복구를 활성화할 때 초기 정책에서 _DataLock 및 랜섬웨어 복원력_을 활성화한 경우, 편집하는 모든 정책은 동일한 DataLock 설정(거버넌스 또는 규정 준수)으로 구성되어야 합니다.  NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 복원력_을 활성화하지 않은 경우 지금 DataLock을 활성화할 수 없습니다.</block>
+  <block id="fce77d9eed9f09cf06c385de40bc0a13" category="list-text">이 클러스터에 대해 NetApp 백업 및 복구를 활성화할 때 초기 정책에서 _DataLock 및 랜섬웨어 복원력_을 활성화한 경우, 추가로 생성하는 모든 정책은 동일한 DataLock 설정(거버넌스 또는 규정 준수)으로 구성되어야 합니다.  NetApp 백업 및 복구를 활성화할 때 _DataLock 및 랜섬웨어 복원력_을 활성화하지 않은 경우 DataLock을 사용하는 새 정책을 만들 수 없습니다.</block>
+  <block id="dc4fb298a2d915a967ad75e9e4604270" category="paragraph">StorageGRID 의 DataLock 및 Ransomware Resilience 요구 사항에 대한 자세한 내용은 다음을 참조하세요.<block ref="bbc9f622da531392bbcdbdc340d647a2" category="inline-link-macro-rx"></block> .</block>
+  <block id="fa622700003f81750a23f422e28a7076" category="paragraph">백업에 DataLock 및 Ransomware Resilience를 사용하려면 StorageGRID 시스템에서 11.6.0.3 이상 버전을 실행해야 합니다.</block>
+  <block id="8c306f494c349b42fe04266c23f46cd1" category="paragraph">클러스터에서 ONTAP 9.11.1 이상을 사용하는 경우 _DataLock 및 랜섬웨어 복원력_을 구성하여 백업을 삭제 및 랜섬웨어 공격으로부터 보호할 수 있습니다.  _DataLock_은 백업 파일이 수정되거나 삭제되는 것을 방지하고, _Ransomware Resilience_는 백업 파일을 검사하여 백업 파일에서 랜섬웨어 공격의 증거를 찾습니다.</block>
+  <block id="4451065c28f2079aa69e4b099c64d39a" category="inline-link-macro">DataLock 및 랜섬웨어 복원력 옵션</block>
+  <block id="653a7bec9106146215db26707b6bc097" category="paragraph">DataLock 및 랜섬웨어 복원력 옵션에 대한 자세한 내용은 다음을 참조하세요.<block ref="9598f959fcd7486a6e0c3ffa9bbb6de9" category="inline-link-macro-rx"></block> .</block>
+  <block id="9e66cd34efdf210b196fd63e7561d89b" category="paragraph">이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다. 백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다. DataLock 및 랜섬웨어 복원력 옵션이 활성화되면 NetApp 백업 및 복구 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.</block>
+  <block id="96c619118e08abc143b6b640fdb4e7f2" category="list-text">정책을 생성할 때 *DataLock 및 랜섬웨어 복원력* 섹션을 확장합니다.</block>
+  <block id="04caa6fde87b21be8738fc7aac2130d5" category="paragraph">다음 퍼블릭 및 프라이빗 클라우드 공급자의 개체 스토리지를 사용하는 경우 다음 시스템의 ONTAP 볼륨에서 DataLock 및 랜섬웨어 보호를 활성화할 수 있습니다.</block>
+  <block id="155ec659cc4e13b84e26ac8a60d0983e" category="cell">Google Cloud의 Cloud Volumes ONTAP</block>
+  <block id="a9a9ab6f27a7c96f41b3ea91feb1ef02" category="cell">구글 클라우드 endif::gcp[]</block>
+  <block id="4e592a9288f7e548ef70784305002a5e" category="cell">ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] Google Cloud endif::gcp[] NetApp StorageGRID</block>
+  <block id="8dcc4563f1d723683eb1d9c883e3a1eb" category="list-text">Google Cloud의 경우:</block>
+  <block id="f17f73c90517746e41e59ce4e6a2072f" category="list-text">클러스터는 ONTAP 9.17.1 이상을 실행해야 합니다.</block>
+  <block id="e69519c6174a5664192ef13628b25053" category="paragraph">이러한 기준 외에도 클라우드 스토리지는 DataLock 및 랜섬웨어 복원력 기능을 사용하면 추가적인 보안 옵션을 제공하고, 오래된 백업 파일에 대한 보관 스토리지 클래스를 선택하면 추가적으로 비용을 절감할 수 있습니다. <block ref="0c861116d28daa1fe6085df5c3fb8bde" category="inline-link-macro-rx"></block> .</block>
+  <block id="1cd41d0d05820bca7b344cb3376a61e1" category="list-text">볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 클라우드 공급업체로부터 추가적인 퇴출 비용도 발생합니다.</block>
+  <block id="03159d4daf48846363441f62acc89b17" category="paragraph">클러스터에서 ONTAP 9.11.1 이상을 사용하는 경우 개체 스토리지의 백업을 삭제 및 랜섬웨어 공격으로부터 보호할 수 있습니다. 각 백업 정책은 특정 기간(보존 기간) 동안 백업 파일에 적용할 수 있는 _데이터 잠금 및 랜섬웨어 복원력_ 섹션을 제공합니다.</block>
+  <block id="2dbe24936b99777ea029c253c6887625" category="paragraph">개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 복원력이 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다. 랜섬웨어가 있는지 백업 파일을 검사하는 것이 좋습니다. (백업 파일의 내용에 접근하려면 클라우드 제공업체로부터 추가 퇴장 비용이 발생합니다.)</block>
+  <block id="f6c5eba49b66c3e5c7068b19b8b149fe" category="paragraph">백업 파일에 대해 랜섬웨어 복원력이 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 복원력을 활성화한 경우) 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다. 랜섬웨어가 있는지 백업 파일을 검사하는 것이 좋습니다. (백업 파일의 내용에 접근하려면 클라우드 제공업체로부터 추가 퇴장 비용이 발생합니다.)</block>
 </blocks>

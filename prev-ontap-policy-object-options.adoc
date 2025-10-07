@@ -59,7 +59,7 @@ NetApp Backup and Recovery를 사용하면 각 시스템(클러스터)에 대해
 
 NetApp Backup and Recovery는 볼륨 백업에 대한 DataLock 및 랜섬웨어 보호를 지원합니다.  이러한 기능을 사용하면 백업 파일을 잠그고 검사하여 백업 파일에 랜섬웨어가 있는지 감지할 수 있습니다.  이는 클러스터의 볼륨 백업에 대한 추가 보호가 필요할 때 백업 정책에서 정의할 수 있는 선택적 설정입니다.
 
-이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다.  백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다.  DataLock 및 랜섬웨어 보호 옵션이 활성화되면 NetApp 백업 및 복구 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.
+이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다. 백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다. DataLock 및 랜섬웨어 복원력 옵션이 활성화되면 NetApp 백업 및 복구 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.
 
 https://bluexp.netapp.com/blog/cbs-blg-the-bluexp-feature-that-protects-backups-from-ransomware["자세한 내용은 DataLock 및 랜섬웨어 보호 블로그를 참조하세요."^] .
 
@@ -124,7 +124,7 @@ DataLock 보존 설정은 백업 정책의 정책 보존 설정을 재정의합�
 
 정책을 생성할 때 DataLock 및 랜섬웨어 보호 기능을 활성화할 수 있습니다.  정책이 생성된 후에는 이 기능을 활성화, 수정 또는 비활성화할 수 없습니다.
 
-. 정책을 생성할 때 *DataLock 및 랜섬웨어 보호* 섹션을 확장합니다.
+. 정책을 생성할 때 *DataLock 및 랜섬웨어 복원력* 섹션을 확장합니다.
 . 다음 중 하나를 선택하세요.
 +
 ** *없음*: DataLock 보호 및 랜섬웨어 복원력이 비활성화되었습니다.
@@ -165,7 +165,7 @@ link:prev-ontap-policy-object-advanced-settings.html["고급 설정 페이지에
 
 === 지원되는 시스템 및 개체 스토리지 공급자
 
-다음 퍼블릭 및 프라이빗 클라우드 공급자의 개체 스토리지를 사용하는 경우 다음 시스템의 ONTAP 볼륨에서 DataLock 및 랜섬웨어 보호를 활성화할 수 있습니다.  향후 릴리스에서는 추가적인 클라우드 공급자가 추가될 예정입니다.
+다음 퍼블릭 및 프라이빗 클라우드 공급자의 개체 스토리지를 사용하는 경우 다음 시스템의 ONTAP 볼륨에서 DataLock 및 랜섬웨어 보호를 활성화할 수 있습니다.
 
 [cols="55,45"]
 |===
@@ -175,10 +175,13 @@ link:prev-ontap-policy-object-advanced-settings.html["고급 설정 페이지에
 | AWS의 Cloud Volumes ONTAP | 아마존 S3 endif::aws[] ifdef::azure[] 
 
 
-| Azure의 Cloud Volumes ONTAP | Azure Blob endif::azure[] ifdef::gcp[] endif::gcp[] 
+| Azure의 Cloud Volumes ONTAP | Azure Blob endif::azure[] ifdef::gcp[] 
 
 
-| 온프레미스 ONTAP 시스템 | ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] endif::gcp[] NetApp StorageGRID 
+| Google Cloud의 Cloud Volumes ONTAP | 구글 클라우드 endif::gcp[] 
+
+
+| 온프레미스 ONTAP 시스템 | ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] Google Cloud endif::gcp[] NetApp StorageGRID 
 |===
 
 
@@ -244,6 +247,18 @@ ifdef::azure[]
 
 
 endif::azure[]
+
+ifdef::gcp[]
+
+* Google Cloud의 경우:
++
+** 클러스터는 ONTAP 9.17.1 이상을 실행해야 합니다.
+** 콘솔 에이전트는 클라우드나 사내에 배포될 수 있습니다.
+
+
+
+
+endif::gcp[]
 
 * StorageGRID 의 경우:
 +

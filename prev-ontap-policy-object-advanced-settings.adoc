@@ -116,7 +116,7 @@ image:screenshot_backup_edit_yearly_snap_delete.png["고급 설정 페이지의 
 
 랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다.  검사 빈도의 기본 설정은 7일입니다.  스캔은 최신 스냅샷 복사본에서만 수행됩니다.  고급 설정 페이지의 옵션을 사용하여 최신 스냅샷 복사본에 대한 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다.  이 기능을 활성화하면 기본적으로 7일마다 검사가 수행됩니다.
 
-DataLock 및 랜섬웨어 보호 옵션에 대한 자세한 내용은 다음을 참조하세요.link:prev-ontap-policy-object-options.html["DataLock 및 랜섬웨어 보호 옵션"] .
+DataLock 및 랜섬웨어 복원력 옵션에 대한 자세한 내용은 다음을 참조하세요.link:prev-ontap-policy-object-options.html["DataLock 및 랜섬웨어 복원력 옵션"] .
 
 일정을 며칠이나 몇 주로 변경하거나 비활성화하여 비용을 절감할 수 있습니다.
 

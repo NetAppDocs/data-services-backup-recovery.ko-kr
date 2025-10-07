@@ -474,7 +474,7 @@ TIP: 백업을 활성화하기 전에 사용자 정의 정책을 생성하려면
 +
 *** 정책의 이름을 입력하세요.
 *** 일반적으로 서로 다른 빈도로 최대 5개의 일정을 선택하세요.
-*** 개체 백업 정책의 경우 DataLock 및 랜섬웨어 보호 설정을 지정합니다.  DataLock 및 랜섬웨어 보호에 대한 자세한 내용은 다음을 참조하세요.link:prev-ontap-policy-object-options.html["개체 백업 정책 설정"] .
+*** 개체 백업 정책의 경우 DataLock 및 랜섬웨어 복원력 설정을 지정합니다.  DataLock 및 랜섬웨어 복원력에 대한 자세한 내용은 다음을 참조하세요.link:prev-ontap-policy-object-options.html["개체 백업 정책 설정"] .
 *** *만들기*를 선택하세요.
 
 
