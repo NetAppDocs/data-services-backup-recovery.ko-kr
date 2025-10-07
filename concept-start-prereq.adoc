@@ -194,7 +194,13 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 +
 ** Microsoft Hyper-V 2019, 2022 및 2025 버전
 ** ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)
-** 파워셸 7.4.2
+** PowerShell 7.4.2 이상
+** Windows 방화벽 설정에서 다음 포트에 대해 양방향 HTTPS 트래픽이 허용되는지 확인하세요.
++
+*** 8144(Hyper-V용 NetApp 플러그인)
+*** 8145(Windows용 NetApp 플러그인)
+
+
 
 
 * Hyper-V 호스트에 대한 하드웨어 요구 사항:
@@ -210,7 +216,7 @@ NOTE: Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당
 
 * NetApp ONTAP 구성 요구 사항:
 +
-** 기본 ONTAP 시스템(ONTAP 9.15.1 이상)
+** 기본 ONTAP 시스템(ONTAP 9.14.1 이상)
 ** CIFS 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하세요.  를 참조하세요 https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/configure-shares-continuous-availability-task.html["ONTAP 문서"^] 지침을 보려면.
 
 

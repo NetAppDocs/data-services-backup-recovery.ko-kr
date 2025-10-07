@@ -22,7 +22,7 @@ NetApp 백업 및 복구는 ID 및 액세스 관리를 사용하여 각 사용�
 
 NetApp 콘솔에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일과 비밀번호를 사용하여 NetApp 콘솔 로그인에 가입할 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/task-logging-in.html["로그인에 대해 자세히 알아보세요"^] .
 
-*필수 NetApp 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 백업 및 복구 슈퍼 관리자, 백업 및 복구 복원 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
 
 콘솔 에이전트를 추가하려면 조직 관리자 또는 백업 및 복구 슈퍼 관리자 역할이 있어야 합니다.
 

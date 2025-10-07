@@ -27,7 +27,7 @@ summary: NetApp 백업 및 복구를 통해 Hyper-V 워크로드를 보호하세
 
 즉시 주문형 백업을 실행할 수 있습니다.  이 기능은 시스템을 변경하려고 할 때 변경 전에 백업을 해두려는 경우에 유용합니다.
 
-*필수 콘솔 역할* 조직 관리자, 폴더 또는 프로젝트 관리자, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
 
 .단계
 . 메뉴에서 *인벤토리*를 선택하세요.
