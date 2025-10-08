@@ -14,7 +14,7 @@ summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 워크로�
 
 
 [role="lead"]
-NetApp Backup and Recovery는 서비스를 사용하려면 먼저 Kubernetes 워크로드를 검색해야 합니다.
+NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를 검색해야 합니다.
 
 *필수 NetApp 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
 
@@ -22,7 +22,7 @@ NetApp Backup and Recovery는 서비스를 사용하려면 먼저 Kubernetes 워
 
 == Kubernetes 워크로드를 알아보세요
 
-백업 및 복구 인벤토리에서 사용자 환경에서 실행 중인 Kubernetes 워크로드를 검색할 수 있습니다. 워크로드를 검색하면 NetApp Backup and Recovery에 Kubernetes 클러스터가 추가되어 클러스터에 애플리케이션을 추가하고 클러스터에서 호스팅되는 리소스를 보호할 수 있습니다.
+백업 및 복구 인벤토리에서 사용자 환경의 Kubernetes 워크로드를 검색합니다.  워크로드를 추가하면 NetApp Backup and Recovery 에 Kubernetes 클러스터가 추가됩니다.  그런 다음 애플리케이션을 추가하고 클러스터 리소스를 보호할 수 있습니다.
 
 .단계
 . 다음 중 하나를 수행하세요.
@@ -55,7 +55,7 @@ NetApp Backup and Recovery는 서비스를 사용하려면 먼저 Kubernetes 워
 
 == NetApp 백업 및 복구 대시보드로 계속
 
-NetApp 백업 및 복구 대시보드를 표시하려면 다음 단계를 따르세요.
+NetApp Backup and Recovery 보드를 보려면 다음 단계를 따르세요.
 
 . 상단 메뉴에서 *대시보드*를 선택하세요.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.

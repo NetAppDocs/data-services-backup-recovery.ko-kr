@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-discover-hyperv.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Hyper-V, workloads, protect 
-summary: NetApp 백업 및 복구는 워크로드를 보호하기 위해 먼저 워크로드를 검색해야 합니다. 
+summary: NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에 먼저 검색해야 합니다. 
 ---
 = NetApp 백업 및 복구에서 Hyper-V 워크로드를 알아보세요
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp 백업 및 복구는 워크로드를 보호하기 위해 먼저 
 
 
 [role="lead"]
-NetApp 백업 및 복구는 Hyper-V 가상 머신을 먼저 검색하여 보호해야 합니다.
+NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에 먼저 검색해야 합니다.
 
 *필수 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
 
@@ -55,12 +55,13 @@ TIP: 이 과정은 몇 분 정도 걸릴 수 있습니다.
 
 
 .결과
-NetApp Backup and Recovery가 리소스를 검색한 후 Hyper-V 워크로드가 인벤토리 페이지의 워크로드 목록에 표시됩니다.
+NetApp Backup and Recovery 리소스를 검색한 후 인벤토리 페이지에는 워크로드 목록에 Hyper-V 워크로드가 표시됩니다.
 
 
 
 == NetApp 백업 및 복구 대시보드로 계속
 
+.단계
 . NetApp 백업 및 복구 대시보드를 표시하려면 NetApp 콘솔 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 

@@ -44,7 +44,7 @@ indexpage:
       url: br-use-mssql-restore.html
     - title: Microsoft SQL Server 워크로드 복제
       url: br-use-mssql-clone.html
-  - title: VMware 워크로드 보호(비공개 미리보기)
+  - title: VMware 워크로드 보호(미리 보기)
     links:
     - title: VMware 워크로드 보호 개요
       url: br-use-vmware-protect-overview.html
