@@ -4,7 +4,7 @@ permalink: br-use-manage-snapshots.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure, Google Cloud Platform 및 StorageGRID 로 백업하여 데이터가 보호되도록 할 수 있습니다. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다. 
 ---
-= NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 스냅샷 관리
+= NetApp Backup and Recovery 사용하여 Microsoft SQL Server 스냅샷 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이
 
 
 [role="lead"]
-NetApp Backup and Recovery에서 Microsoft SQL Server 스냅샷을 삭제하여 관리할 수 있습니다.
+NetApp Backup and Recovery 에서 Microsoft SQL Server 스냅샷을 삭제하여 관리할 수 있습니다.
 
 
 
@@ -22,10 +22,10 @@ NetApp Backup and Recovery에서 Microsoft SQL Server 스냅샷을 삭제하여 
 
 로컬 스냅샷만 삭제할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 백업 및 복구에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 에서 *인벤토리*를 선택합니다.
 . 작업량을 선택하고 *보기*를 선택하세요.
 . *데이터베이스* 탭을 선택합니다.
 . 스냅샷을 삭제할 데이터베이스를 선택하세요.
@@ -33,7 +33,7 @@ NetApp Backup and Recovery에서 Microsoft SQL Server 스냅샷을 삭제하여 
 . 삭제할 로컬 스냅샷을 선택하세요.
 +
 
-TIP: 해당 행의 *위치* 열에 있는 로컬 스냅샷 아이콘은 파란색으로 표시되어야 합니다.
+TIP: 해당 행의 *위치* 열에 있는 로컬 스냅샷 아이콘은 파란색으로 나타나야 합니다.
 
 . *작업*을 선택하세요image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *로컬 스냅샷 삭제*를 선택하세요.
 . 확인 대화 상자에서 *제거*를 선택합니다.

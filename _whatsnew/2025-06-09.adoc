@@ -6,37 +6,37 @@
 
 === 색인된 카탈로그 지원 업데이트
 
-2025년 2월, 데이터를 복원하는 검색 및 복원 방법에서 사용할 수 있는 업데이트된 인덱싱 기능(인덱싱된 카탈로그 v2)을 출시했습니다.  이전 릴리스에서는 온프레미스 환경에서 데이터 인덱싱 성능이 크게 향상되었습니다.  이 릴리스를 통해 인덱싱 카탈로그를 이제 Amazon Web Services, Microsoft Azure, Google Cloud Platform(GCP) 환경에서 사용할 수 있습니다.
+2025년 2월, 데이터를 복원하는 검색 및 복원 방법에서 사용할 수 있는 업데이트된 인덱싱 기능(인덱싱된 카탈로그 v2)을 출시했습니다. 이전 릴리스에서는 온프레미스 환경에서 데이터 인덱싱 성능이 크게 향상되었습니다. 이 릴리스를 통해 인덱싱 카탈로그를 이제 Amazon Web Services, Microsoft Azure, Google Cloud Platform(GCP) 환경에서 사용할 수 있습니다.
 
-신규 고객의 경우 모든 신규 환경에서 Indexed Catalog v2가 기본적으로 활성화됩니다.  기존 고객인 경우 Indexed Catalog v2를 활용하기 위해 환경을 다시 인덱싱할 수 있습니다.
+신규 고객의 경우 모든 신규 환경에서 Indexed Catalog v2가 기본적으로 활성화됩니다. 기존 고객인 경우 Indexed Catalog v2를 활용하기 위해 환경을 다시 인덱싱할 수 있습니다.
 
 .인덱싱을 어떻게 활성화하나요?
-검색 및 복원 방법을 사용하여 데이터를 복원하려면 먼저 볼륨이나 파일을 복원할 각 원본 작업 환경에서 "인덱싱"을 활성화해야 합니다.  검색 및 복원을 수행할 때 *인덱싱 사용* 옵션을 선택하세요.
+검색 및 복원 방법을 사용하여 데이터를 복원하려면 먼저 볼륨이나 파일을 복원할 각 원본 작업 환경에서 "인덱싱"을 활성화해야 합니다. 검색 및 복원을 수행할 때 *인덱싱 사용* 옵션을 선택하세요.
 
 색인된 카탈로그는 모든 볼륨과 백업 파일을 추적하여 검색을 빠르고 효율적으로 수행할 수 있도록 해줍니다.
 
-자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["검색 및 복원에 대한 인덱싱 활성화"] .
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["검색 및 복원에 대한 인덱싱 활성화"] .
 
 
 
 === Azure 개인 링크 엔드포인트 및 서비스 엔드포인트
 
-일반적으로 NetApp Backup and Recovery는 클라우드 공급자와 개인 엔드포인트를 설정하여 보호 작업을 처리합니다.  이 릴리스에서는 NetApp Backup and Recovery가 자동으로 개인 엔드포인트를 생성하거나 비활성화할 수 있는 선택적 설정이 도입되었습니다.  개인 엔드포인트 생성 프로세스를 더 많이 제어하고 싶은 경우 이 기능이 유용할 수 있습니다.
+일반적으로 NetApp Backup and Recovery 클라우드 공급자와 개인 엔드포인트를 설정하여 보호 작업을 처리합니다. 이 릴리스에서는 NetApp Backup and Recovery 자동으로 개인 엔드포인트를 생성하거나 비활성화할 수 있는 선택적 설정이 도입되었습니다. 개인 엔드포인트 생성 프로세스를 더 많이 제어하고 싶은 경우 이 기능이 유용할 수 있습니다.
 
 보호 기능을 활성화하거나 복원 프로세스를 시작할 때 이 옵션을 활성화하거나 비활성화할 수 있습니다.
 
-이 설정을 비활성화하면 NetApp Backup and Recovery가 제대로 작동하도록 개인 엔드포인트를 수동으로 만들어야 합니다.  적절한 연결 없이는 백업 및 복구 작업을 성공적으로 수행하지 못할 수 있습니다.
+이 설정을 비활성화하면 NetApp Backup and Recovery 제대로 작동하도록 개인 엔드포인트를 수동으로 만들어야 합니다. 적절한 연결 없이는 백업 및 복구 작업을 성공적으로 수행하지 못할 수 있습니다.
 
 
 
 === ONTAP S3에서 SnapMirror to Cloud Resync 지원
 
-이전 릴리스에서는 SnapMirror to Cloud Resync(SM-C Resync)에 대한 지원이 도입되었습니다.  이 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호를 간소화합니다.  이 릴리스에서는 ONTAP S3의 ​​SM-C Resync 지원은 물론 Wasabi, MinIO와 같은 다른 S3 호환 공급자에 대한 지원도 추가되었습니다.
+이전 릴리스에서는 SnapMirror to Cloud Resync(SM-C Resync)에 대한 지원이 도입되었습니다. 이 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호를 간소화합니다. 이 릴리스에서는 ONTAP S3의 ​​SM-C Resync 지원은 물론 Wasabi, MinIO와 같은 다른 S3 호환 공급자에 대한 지원도 추가되었습니다.
 
 
 
 === StorageGRID 용 자체 버킷 가져오기
 
-작업 환경의 개체 스토리지에 백업 파일을 만들면 기본적으로 NetApp Backup and Recovery는 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다.  이전에는 이를 재정의하여 Amazon S3, Azure Blob Storage, Google Cloud Storage에 대한 자체 컨테이너를 지정할 수 있었습니다.  이 릴리스를 사용하면 이제 자체 StorageGRID 개체 스토리지 컨테이너를 가져올 수 있습니다.
+작업 환경의 개체 스토리지에 백업 파일을 만들면 기본적으로 NetApp Backup and Recovery 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다. 이전에는 이를 재정의하여 Amazon S3, Azure Blob Storage, Google Cloud Storage에 대한 자체 컨테이너를 지정할 수 있었습니다. 이 릴리스를 사용하면 이제 자체 StorageGRID 개체 스토리지 컨테이너를 가져올 수 있습니다.
 
 보다 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html["나만의 객체 스토리지 컨테이너를 만드세요"] .

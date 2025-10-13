@@ -6,11 +6,11 @@
 
 === RHEL 8 또는 9에서 탐색 및 복원을 통한 Podman 지원
 
-NetApp Backup and Recovery는 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다.  이는 NetApp 백업 및 복구 찾아보기 및 복원 방법에 적용됩니다.
+NetApp Backup and Recovery 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다.  이는 NetApp Backup and Recovery 찾아보기 및 복원 방법에 적용됩니다.
 
-콘솔 에이전트 버전 3.9.40은 RHEL 8 또는 9 호스트에서 콘솔 에이전트 소프트웨어를 수동으로 설치하는 경우 해당 위치에 관계 없이 Red Hat Enterprise Linux 버전 8 및 9의 특정 버전을 지원합니다. https://docs.netapp.com/us-en/console-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["호스트 요구 사항"^] .  최신 RHEL 버전에는 Docker 엔진 대신 Podman 엔진이 필요합니다.  이전에는 NetApp Backup and Recovery에서 Podman 엔진을 사용할 때 두 가지 제한이 있었습니다.  이러한 제한은 제거되었습니다.
+콘솔 에이전트 버전 3.9.40은 RHEL 8 또는 9 호스트에서 콘솔 에이전트 소프트웨어를 수동으로 설치하는 경우 해당 위치에 관계 없이 Red Hat Enterprise Linux 버전 8 및 9의 특정 버전을 지원합니다. https://docs.netapp.com/us-en/console-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["호스트 요구 사항"^] .  최신 RHEL 버전에는 Docker 엔진 대신 Podman 엔진이 필요합니다.  이전에는 NetApp Backup and Recovery Podman 엔진을 사용할 때 두 가지 제한이 있었습니다.  이러한 제한은 제거되었습니다.
 
-https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."] .
+https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."].
 
 
 
@@ -18,4 +18,4 @@ https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.h
 
 이번 릴리스에는 기준 색인 작업을 훨씬 더 빠르게 완료하는 개선된 카탈로그 색인이 포함되어 있습니다.  더 빠른 인덱싱을 통해 검색 및 복원 기능을 더욱 빠르게 사용할 수 있습니다.
 
-https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."] .
+https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."].

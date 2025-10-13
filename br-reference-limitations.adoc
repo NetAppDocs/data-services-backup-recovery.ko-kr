@@ -4,7 +4,7 @@ permalink: br-reference-limitations.html
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
 summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않는 기능이나 이 릴리스와 올바르게 상호 운용되지 않는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요. 
 ---
-= ONTAP 볼륨에 대한 NetApp Backup and Recovery의 알려진 제한 사항
+= ONTAP 볼륨에 대한 NetApp Backup and Recovery 의 알려진 제한 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,18 +16,18 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 [role="lead"]
 이 버전에서 작동하지 않거나 제대로 작동하지 않는 플랫폼, 장치 또는 기능은 다음과 같습니다.  이러한 제한 사항을 주의 깊게 읽으십시오.
 
-* NetApp Backup and Recovery는 Cloud Volumes ONTAP AWS 중국 지역(베이징 및 닝샤 포함)의 개체 저장소에 백업할 수 있습니다. 하지만 먼저 ID 및 액세스 정책을 수동으로 수정해야 할 수도 있습니다.
+* NetApp Backup and Recovery Cloud Volumes ONTAP AWS 중국 지역(베이징 및 닝샤 포함)의 개체 저장소에 백업할 수 있습니다. 하지만 먼저 ID 및 액세스 정책을 수동으로 수정해야 할 수도 있습니다.
 +
 AWS에서 콘솔 에이전트를 만드는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-aws-bluexp.html["AWS에 콘솔 에이전트 설치"^] .
 
 +
-자세한 내용은 블로그 게시물을 참조하세요. https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-May-23-Updates/ba-p/444052["NetApp 백업 및 복구 기능 블로그 2023년 5월"^] .
+자세한 내용은 블로그 게시물을 참조하세요. https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-May-23-Updates/ba-p/444052["NetApp Backup and Recovery 기능 블로그 2023년 5월"^] .
 
-* NetApp Backup and Recovery는 Microsoft Azure 중국 지역을 지원하지 않습니다.
+* NetApp Backup and Recovery Microsoft Azure 중국 지역을 지원하지 않습니다.
 +
 Azure에서 콘솔 에이전트를 만드는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-azure-bluexp.html["Azure에 콘솔 에이전트 설치"^] .
 
-* NetApp Backup and Recovery는 FlexCache 볼륨의 백업을 지원하지 않습니다.
+* NetApp Backup and Recovery FlexCache 볼륨의 백업을 지원하지 않습니다.
 
 
 
@@ -38,7 +38,7 @@ Azure에서 콘솔 에이전트를 만드는 방법에 대한 자세한 내용�
 +
 FlexVol 볼륨에는 제한이 없습니다. 시스템의 모든 FlexVol 볼륨을 선택하고 동일한 백업 정책을 할당할 수 있습니다.
 
-* 다음 기능이 지원됩니다. https://docs.netapp.com/us-en/data-services-replication/index.html["NetApp 복제"] 하지만 NetApp Backup and Recovery의 복제 기능을 사용하는 경우는 그렇지 않습니다.
+* 다음 기능이 지원됩니다. https://docs.netapp.com/us-en/data-services-replication/index.html["NetApp Replication"] 하지만 NetApp Backup and Recovery 의 복제 기능을 사용하는 경우는 그렇지 않습니다.
 +
 ** 볼륨 A에서 볼륨 B로, 볼륨 B에서 볼륨 C로 복제가 발생하는 계단식 구성은 지원되지 않습니다. 볼륨 A에서 볼륨 B로의 복제는 지원됩니다.
 ** FSx for ONTAP 시스템에서 데이터를 복제하는 기능은 지원되지 않습니다.
@@ -52,25 +52,25 @@ FlexVol 볼륨에는 제한이 없습니다. 시스템의 모든 FlexVol 볼륨�
 
 == ONTAP 볼륨에 대한 객체 백업 제한 사항
 
-* 데이터를 백업할 때 NetApp Backup and Recovery는 NetApp Volume Encryption(NVE)을 유지하지 않습니다.  즉, NVE 볼륨의 암호화된 데이터는 목적지로 전송되는 동안 암호 해독되고 암호화는 유지되지 않습니다.
+* 데이터를 백업할 때 NetApp Backup and Recovery NetApp Volume Encryption(NVE)을 유지하지 않습니다.  즉, NVE 볼륨의 암호화된 데이터는 목적지로 전송되는 동안 암호 해독되고 암호화는 유지되지 않습니다.
 +
 이러한 암호화 유형에 대한 설명은 다음을 참조하세요.https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp 볼륨 암호화 구성 개요"^] .
 
 
 
-* SnapMirror 정책의 일정을 사용하여 SnapMirror 대상 볼륨에서 장기 보존 스냅샷이 활성화된 경우 스냅샷은 대상 볼륨에 직접 생성됩니다.  이 경우 NetApp Backup and Recovery를 사용하여 해당 볼륨을 백업하면 안 됩니다. 해당 스냅샷은 개체 스토리지로 이동되지 않습니다.
-* 데이터를 백업할 때 NetApp Backup and Recovery는 NetApp Volume Encryption(NVE)을 유지하지 않습니다.  즉, NVE 볼륨의 암호화된 데이터는 목적지로 전송되는 동안 암호 해독되고 암호화는 유지되지 않습니다.
+* SnapMirror 정책의 일정을 사용하여 SnapMirror 대상 볼륨에서 장기 보존 스냅샷이 활성화된 경우 스냅샷은 대상 볼륨에 직접 생성됩니다.  이 경우 NetApp Backup and Recovery 사용하여 해당 볼륨을 백업하면 안 됩니다. 해당 스냅샷은 개체 스토리지로 이동되지 않습니다.
+* 데이터를 백업할 때 NetApp Backup and Recovery NetApp Volume Encryption(NVE)을 유지하지 않습니다.  즉, NVE 볼륨의 암호화된 데이터는 목적지로 전송되는 동안 암호 해독되고 암호화는 유지되지 않습니다.
 +
 이러한 암호화 유형에 대한 설명은 다음을 참조하세요.https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-netapp-volume-encryption-concept.html["NetApp 볼륨 암호화 구성 개요"^] .
 
 
 
-* SnapMirror 정책의 일정을 사용하여 SnapMirror 대상 볼륨에서 장기 보존 스냅샷이 활성화된 경우 스냅샷은 대상 볼륨에 직접 생성됩니다.  이 경우 NetApp Backup and Recovery를 사용하여 해당 볼륨을 백업하면 안 됩니다. 해당 스냅샷은 개체 스토리지로 이동되지 않습니다.
+* SnapMirror 정책의 일정을 사용하여 SnapMirror 대상 볼륨에서 장기 보존 스냅샷이 활성화된 경우 스냅샷은 대상 볼륨에 직접 생성됩니다.  이 경우 NetApp Backup and Recovery 사용하여 해당 볼륨을 백업하면 안 됩니다. 해당 스냅샷은 개체 스토리지로 이동되지 않습니다.
 * 볼륨이 정책에 할당되지 않은 상태에서 백업 정책을 생성하거나 편집하는 경우 보관되는 백업 수는 최대 1018개입니다.  정책에 볼륨을 할당한 후 정책을 편집하여 최대 4000개의 백업을 만들 수 있습니다.
 * 데이터 보호(DP) 볼륨을 백업할 때:
 +
 ** SnapMirror 레이블과의 관계 `app_consistent` 그리고 `all_source_snapshot` 클라우드에 백업되지 않습니다.
-** SnapMirror 대상 볼륨에 스냅샷의 로컬 복사본을 생성하는 경우(사용된 SnapMirror 레이블과 관계 없이) 이러한 스냅샷은 백업으로 클라우드로 이동되지 않습니다.  이때 NetApp Backup and Recovery에서 백업할 수 있도록 소스 DP 볼륨에 대한 원하는 레이블이 포함된 스냅샷 정책을 만들어야 합니다.
+** SnapMirror 대상 볼륨에 스냅샷의 로컬 복사본을 생성하는 경우(사용된 SnapMirror 레이블과 관계 없이) 이러한 스냅샷은 백업으로 클라우드로 이동되지 않습니다.  이때 NetApp Backup and Recovery 백업할 수 있도록 소스 DP 볼륨에 대한 원하는 레이블이 포함된 스냅샷 정책을 만들어야 합니다.
 
 
 * FlexGroup 볼륨 백업은 보관 저장소로 이동할 수 없습니다.
@@ -78,7 +78,7 @@ FlexVol 볼륨에는 제한이 없습니다. 시스템의 모든 FlexVol 볼륨�
 * SVM-DR 볼륨 백업은 다음과 같은 제한 사항과 함께 지원됩니다.
 +
 ** 백업은 ONTAP 보조에서만 지원됩니다.
-** 볼륨에 적용되는 스냅샷 정책은 NetApp Backup and Recovery에서 인식하는 일일, 주간, 월간 등의 정책 중 하나여야 합니다. 기본 "sm_created" 정책(*모든 스냅샷 미러링*에 사용됨)은 인식되지 않으며 DP 볼륨은 백업 가능한 볼륨 목록에 표시되지 않습니다.
+** 볼륨에 적용되는 스냅샷 정책은 NetApp Backup and Recovery 에서 인식하는 일일, 주간, 월간 등의 정책 중 하나여야 합니다. 기본 "sm_created" 정책(*모든 스냅샷 미러링*에 사용됨)은 인식되지 않으며 DP 볼륨은 백업 가능한 볼륨 목록에 표시되지 않습니다.
 ** 백업이 소스나 대상에서 수행되는 경우 SVM-DR과 볼륨 백업 및 복구는 완전히 독립적으로 작동합니다.  유일한 제한 사항은 SVM-DR이 SnapMirror 클라우드 관계를 복제하지 않는다는 것입니다.  DR 시나리오에서 SVM이 보조 위치에서 온라인 상태가 되면 SnapMirror 클라우드 관계를 수동으로 업데이트해야 합니다.
 
 
@@ -93,8 +93,8 @@ FlexVol 볼륨에는 제한이 없습니다. 시스템의 모든 FlexVol 볼륨�
 
 * 데이터 보호 볼륨에서는 *지금 백업* 버튼을 사용한 임시 볼륨 백업이 지원되지 않습니다.
 * SM-BC 구성은 지원되지 않습니다.
-* ONTAP 단일 볼륨에서 여러 개체 저장소로의 SnapMirror 관계 팬아웃을 지원하지 않습니다. 따라서 이 구성은 NetApp Backup and Recovery에서 지원되지 않습니다.
-* 현재 Amazon S3, Azure 및 StorageGRID 에서는 객체 저장소의 WORM/규정 준수 모드가 지원됩니다.  이는 DataLock 기능으로 알려져 있으며, 클라우드 공급자 인터페이스가 아닌 NetApp 백업 및 복구 설정을 사용하여 관리해야 합니다.
+* ONTAP 단일 볼륨에서 여러 개체 저장소로의 SnapMirror 관계 팬아웃을 지원하지 않습니다. 따라서 이 구성은 NetApp Backup and Recovery 에서 지원되지 않습니다.
+* 현재 Amazon S3, Azure 및 StorageGRID 에서는 객체 저장소의 WORM/규정 준수 모드가 지원됩니다.  이는 DataLock 기능으로 알려져 있으며, 클라우드 공급자 인터페이스가 아닌 NetApp Backup and Recovery 설정을 사용하여 관리해야 합니다.
 
 
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-start-discover.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
+summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
 ---
-= Microsoft SQL Server 워크로드를 검색하고 NetApp 백업 및 복구에서 SnapCenter 에서 선택적으로 가져오기
+= Microsoft SQL Server 워크로드를 검색하고 NetApp Backup and Recovery 에서 SnapCenter 에서 선택적으로 가져오기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,39 +14,39 @@ summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 워크로�
 
 
 [role="lead"]
-NetApp 백업 및 복구 서비스를 사용하려면 먼저 Microsoft SQL Server 워크로드를 검색해야 합니다.  이미 SnapCenter 설치되어 있는 경우 SnapCenter 에서 백업 데이터와 정책을 가져올 수도 있습니다.
+NetApp Backup and Recovery 서비스를 사용하려면 먼저 Microsoft SQL Server 워크로드를 검색해야 합니다.  이미 SnapCenter 설치되어 있는 경우 SnapCenter 에서 백업 데이터와 정책을 가져올 수도 있습니다.
 
-*필수 NetApp 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 
 
 == Microsoft SQL Server 워크로드를 검색하고 선택적으로 SnapCenter 리소스를 가져옵니다.
 
-검색 중에 NetApp Backup and Recovery는 조직 내 시스템의 Microsoft SQL Server 인스턴스와 데이터베이스를 분석합니다.
+검색 중에 NetApp Backup and Recovery 조직 내 시스템의 Microsoft SQL Server 인스턴스와 데이터베이스를 분석합니다.
 
-NetApp Backup and Recovery는 Microsoft SQL Server 애플리케이션을 평가합니다.  이 서비스는 현재 백업 보호 정책, 스냅샷 사본, 백업 및 복구 옵션을 포함한 기존 보호 수준을 평가합니다.
+NetApp Backup and Recovery Microsoft SQL Server 애플리케이션을 평가합니다.  이 서비스는 현재 백업 보호 정책, 스냅샷 사본, 백업 및 복구 옵션을 포함한 기존 보호 수준을 평가합니다.
 
 발견은 다음과 같은 방식으로 이루어집니다.
 
-* 이미 SnapCenter 가 있는 경우 NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and Recovery로 가져옵니다.
+* 이미 SnapCenter 가 있는 경우 NetApp Backup and NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and NetApp Backup and Recovery 로 가져옵니다.
 +
 
-NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 먼저 확인하세요.  예를 들어 SnapCenter 에서 가져오기 전에 먼저 NetApp 콘솔에 온프레미스 SnapCenter 클러스터 스토리지 시스템을 추가해야 합니다. 보다 link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
+NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 먼저 확인하세요.  예를 들어 SnapCenter 에서 가져오기 전에 먼저 NetApp Console 에 온프레미스 SnapCenter 클러스터 스토리지 시스템을 추가해야 합니다.  보다link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
 
 * 아직 SnapCenter 없더라도 vCenter를 수동으로 추가하고 검색을 수행하여 워크로드를 검색할 수 있습니다.
 
 
 
 
-=== SnapCenter 이미 설치되어 있는 경우 SnapCenter 리소스를 NetApp Backup and Recovery로 가져옵니다.
+=== SnapCenter 이미 설치되어 있는 경우 SnapCenter 리소스를 NetApp Backup and Recovery 로 가져옵니다.
 
-SnapCenter 이미 설치되어 있는 경우 다음 단계에 따라 SnapCenter 리소스를 NetApp Backup and Recovery로 가져오세요.  NetApp 콘솔은 SnapCenter 에서 리소스, 호스트, 자격 증명 및 일정을 검색하므로 모든 정보를 다시 만들 필요가 없습니다.
+SnapCenter 이미 설치되어 있는 경우 다음 단계에 따라 SnapCenter 리소스를 NetApp Backup and Recovery 로 가져오세요.  NetApp Console SnapCenter 에서 리소스, 호스트, 자격 증명 및 일정을 검색하므로 모든 정보를 다시 만들 필요가 없습니다.
 
 다음과 같은 방법으로 이 작업을 수행할 수 있습니다.
 
 * 검색 중에 SnapCenter 에서 리소스를 가져오는 옵션을 선택합니다.
 * 검색 후 인벤토리 페이지에서 SnapCenter 리소스를 가져오는 옵션을 선택합니다.
-* 검색 후 설정 메뉴에서 SnapCenter 리소스를 가져오는 옵션을 선택합니다. 자세한 내용은 다음을 참조하십시오. link:br-start-configure.html["NetApp 백업 및 복구 구성"] .
+* 검색 후 설정 메뉴에서 SnapCenter 리소스를 가져오는 옵션을 선택합니다.  자세한 내용은 다음을 참조하세요.link:br-start-configure.html["NetApp Backup and Recovery 구성"] .
 
 
 이는 두 부분으로 구성된 프로세스입니다.
@@ -59,16 +59,16 @@ SnapCenter 이미 설치되어 있는 경우 다음 단계에 따라 SnapCenter 
 
 ==== SnapCenter 서버 애플리케이션 및 호스트 리소스 가져오기
 
-첫 번째 단계에서는 SnapCenter 에서 호스트 리소스를 가져와 NetApp 백업 및 복구 인벤토리 페이지에 해당 리소스를 표시합니다.  그 시점에서는 리소스가 아직 NetApp Backup and Recovery에서 관리되지 않습니다.
+첫 번째 단계에서는 SnapCenter 에서 호스트 리소스를 가져와 NetApp Backup and Recovery 인벤토리 페이지에 해당 리소스를 표시합니다.  그 시점에서는 리소스가 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.
 
 
-TIP: SnapCenter 호스트 리소스를 가져온 후에는 NetApp Backup and Recovery가 자동으로 보호 관리를 수행하지 않습니다.  이렇게 하려면 NetApp Backup and Recovery에서 가져온 리소스를 관리하도록 명시적으로 선택해야 합니다.  이렇게 하면 NetApp Backup and Recovery를 통해 해당 리소스를 백업할 준비가 됩니다.
+TIP: SnapCenter 호스트 리소스를 가져온 후에는 NetApp Backup and Recovery 자동으로 보호 관리를 수행하지 않습니다.  이렇게 하려면 NetApp Backup and Recovery 에서 가져온 리소스를 관리하도록 명시적으로 선택해야 합니다.  이렇게 하면 NetApp Backup and Recovery 통해 해당 리소스를 백업할 준비가 됩니다.
 
 .단계
-. NetApp 콘솔 왼쪽 탐색에서 *보호* > *백업 및 복구*를 선택합니다.
+. NetApp Console 왼쪽 탐색에서 *보호* > *백업 및 복구*를 선택합니다.
 . *재고*를 선택하세요.
 . *리소스 검색*을 선택하세요.
-. NetApp 백업 및 복구 Discover 워크로드 리소스 페이지에서 * SnapCenter 에서 가져오기*를 선택합니다.
+. NetApp Backup and Recovery Discover 워크로드 리소스 페이지에서 * SnapCenter 에서 가져오기*를 선택합니다.
 . * SnapCenter 애플리케이션 자격 증명*을 입력하세요:
 +
 .. * SnapCenter FQDN 또는 IP 주소*: SnapCenter 애플리케이션 자체의 FQDN 또는 IP 주소를 입력하세요.
@@ -99,11 +99,11 @@ NOTE: SnapCenter 서버가 이미 등록된 경우 기존 등록 세부 정보�
 
 ==== SnapCenter 호스트 리소스 관리
 
-SnapCenter 리소스를 가져온 후 NetApp Backup and Recovery에서 해당 호스트 리소스를 관리합니다.  해당 리소스를 관리하도록 선택하면 NetApp Backup and Recovery에서 SnapCenter 에서 가져온 리소스를 백업하고 복구할 수 있습니다.  더 이상 SnapCenter Server에서 해당 리소스를 관리하지 않습니다.
+SnapCenter 리소스를 가져온 후 NetApp Backup and Recovery 에서 해당 호스트 리소스를 관리합니다.  해당 리소스를 관리하도록 선택하면 NetApp Backup and Recovery SnapCenter 에서 가져온 리소스를 백업하고 복구할 수 있습니다.  더 이상 SnapCenter Server에서 해당 리소스를 관리하지 않습니다.
 
 .단계
 . SnapCenter 리소스를 가져온 후 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
-. 인벤토리 페이지에서 NetApp Backup and Recovery에서 앞으로 관리하려는 가져온 SnapCenter 호스트를 선택합니다.
+. 인벤토리 페이지에서 NetApp Backup and Recovery 앞으로 관리하려는 가져온 SnapCenter 호스트를 선택합니다.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *세부정보 보기*를 클릭하면 작업 부하 세부 정보가 표시됩니다.
 . 인벤토리 > 작업량 페이지에서 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *관리*를 클릭하면 호스트 관리 페이지가 표시됩니다.
 . *관리*를 선택하세요.
@@ -133,7 +133,7 @@ SnapCenter 리소스를 가져온 후 NetApp Backup and Recovery에서 해당 �
 
 === SnapCenter 설치되어 있지 않으면 vCenter를 추가하고 리소스를 검색하세요.
 
-SnapCenter 아직 설치되어 있지 않으면 vCenter 정보를 추가하고 NetApp 백업 및 복구에서 워크로드를 검색할 수 있습니다.  각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.
+SnapCenter 아직 설치되어 있지 않으면 vCenter 정보를 추가하고 NetApp 백업 및 복구에서 워크로드를 검색할 수 있습니다. 각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.
 
 VMware 환경이 있는 경우에는 선택 사항입니다.
 
@@ -170,7 +170,7 @@ TIP: 이 과정은 몇 분 정도 걸릴 수 있습니다.
 
 ==== 검색 중 고급 설정 옵션을 설정하고 플러그인을 설치합니다.
 
-고급 설정을 사용하면 등록된 모든 서버에 플러그인 에이전트를 수동으로 설치할 수 있습니다.  이를 통해 모든 SnapCenter 워크로드를 NetApp Backup and Recovery로 가져와서 백업과 복원을 관리할 수 있습니다.  NetApp Backup and Recovery에서는 플러그인을 설치하는 데 필요한 단계를 보여줍니다.
+고급 설정을 사용하면 등록된 모든 서버에 플러그인 에이전트를 수동으로 설치할 수 있습니다.  이를 통해 모든 SnapCenter 워크로드를 NetApp Backup and Recovery 로 가져와서 백업과 복원을 관리할 수 있습니다.  NetApp Backup and Recovery 플러그인을 설치하는 데 필요한 단계를 보여줍니다.
 
 .단계
 . Discover 리소스 페이지에서 오른쪽에 있는 아래쪽 화살표를 클릭하여 고급 설정으로 이동합니다.
@@ -183,7 +183,7 @@ TIP: 이 과정은 몇 분 정도 걸릴 수 있습니다.
 . SnapCenter 에이전트를 수동으로 설치하려면 다음 옵션의 상자를 선택하세요.
 +
 ** *수동 설치 사용*: 플러그인을 수동으로 설치하려면 이 상자를 선택하세요.
-** *클러스터의 모든 호스트 추가*: 검색 중에 클러스터의 모든 호스트를 NetApp Backup and Recovery에 추가하려면 이 상자를 선택합니다.
+** *클러스터의 모든 호스트 추가*: 검색 중에 클러스터의 모든 호스트를 NetApp Backup and Recovery 에 추가하려면 이 상자를 선택합니다.
 ** *선택적 사전 설치 검사 건너뛰기*: 선택적 사전 설치 검사를 건너뛰려면 이 상자를 선택하세요.  예를 들어, 가까운 미래에 메모리나 공간 고려사항이 변경될 예정이고 지금 플러그인을 설치하려는 경우 이 작업을 수행할 수 있습니다.
 
 
@@ -192,11 +192,11 @@ TIP: 이 과정은 몇 분 정도 걸릴 수 있습니다.
 
 
 
-==== NetApp 백업 및 복구 대시보드로 계속
+==== NetApp Backup and Recovery 보드로 계속
 
-. NetApp 백업 및 복구 대시보드를 표시하려면 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
+. NetApp Backup and Recovery 보드를 표시하려면 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 +
-link:br-use-dashboard.html["대시보드에서 무엇을 볼 수 있는지 알아보세요"] .
+link:br-use-dashboard.html["대시보드에서 무엇을 볼 수 있는지 알아보세요"].
 
 

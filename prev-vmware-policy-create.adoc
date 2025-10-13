@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-vmware-policy-create.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery에서 데이터 저장소를 백업하는 정책 만들기
+= NetApp Backup and Recovery 에서 데이터 저장소를 백업하는 정책 만들기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp Backup and Recovery에서 제공되는 다음 사전 정의된 정책 중 하나를 사용하거나 정책을 만들 수 있습니다.
+NetApp Backup and Recovery 에서 제공되는 다음 사전 정의된 정책 중 하나를 사용하거나 정책을 만들 수 있습니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 .시작하기 전에
@@ -28,7 +28,7 @@ NetApp Backup and Recovery에서 제공되는 다음 사전 정의된 정책 중
 
 
 .이 작업에 관하여
-NetApp 콘솔에서 사용할 수 있는 미리 정의된 정책은 다음과 같습니다.
+NetApp Console 에서 사용할 수 있는 미리 정의된 정책은 다음과 같습니다.
 
 |===
 | 정책 이름 | 상표 | 유지 가치 

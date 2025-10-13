@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-vmware-restore.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용하여 가상 머신 데이터 복원
+= NetApp Backup and Recovery 사용하여 가상 머신 데이터 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,22 +14,22 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하면 클라우드에서 온프레미스 vCenter로 가상 머신 데이터를 복원할 수 있습니다.  백업이 수행된 위치와 정확히 동일한 위치 또는 대체 위치로 가상 머신을 복원할 수 있습니다.  가상 머신이 보관 정책을 사용하여 백업된 경우 보관 복원 우선 순위를 설정할 수 있습니다.
+NetApp Backup and Recovery 사용하면 클라우드에서 온프레미스 vCenter로 가상 머신 데이터를 복원할 수 있습니다.  백업이 수행된 위치와 정확히 동일한 위치 또는 대체 위치로 가상 머신을 복원할 수 있습니다.  가상 머신이 보관 정책을 사용하여 백업된 경우 보관 복원 우선 순위를 설정할 수 있습니다.
 
 
 NOTE: 여러 데이터 저장소에 걸쳐 있는 가상 머신은 복원할 수 없습니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 .시작하기 전에
-* 모든 사항을 충족했는지 확인하세요.link:prev-vmware-prereqs.html["가상 머신 보호 요구 사항"] 데이터 저장소를 클라우드에 백업하기 전에.
+* 모든 사항을 충족했는지 확인하세요.link:prev-vmware-prereqs.html["가상 머신 보호 요구 사항"] 클라우드에 데이터 저장소를 백업하기 전에.
 * 대체 위치로 복원하는 경우:
 +
 ** 소스 및 대상 vCenter가 연결 모드인지 확인하세요.
-** NetApp 콘솔의 *시스템* 페이지와 SnapCenter Plug-in for VMware vSphere 의 연결 모드 vCenter에 소스 및 대상 클러스터 세부 정보가 추가되었는지 확인하세요.
+** NetApp Console 의 *시스템* 페이지와 SnapCenter Plug-in for VMware vSphere 의 연결 모드 vCenter에 소스 및 대상 클러스터 세부 정보가 추가되었는지 확인하세요.
 ** 콘솔 *시스템* 페이지에서 대체 위치에 해당하는 시스템이 추가되었는지 확인하세요.
 
 

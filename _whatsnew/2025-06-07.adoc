@@ -8,17 +8,17 @@
 
 2025년 4월, 훨씬 더 빠르고 효율적인 향상된 ONTAP 볼륨 대시보드의 미리보기를 출시했습니다.
 
-이 대시보드는 작업 부하가 많은 기업 고객을 돕기 위해 설계되었습니다.  볼륨이 20,000개에 달하는 고객의 경우에도 새로운 대시보드는 10초 이내에 로드됩니다.
+이 대시보드는 작업 부하가 많은 기업 고객을 돕기 위해 설계되었습니다. 볼륨이 20,000개에 달하는 고객의 경우에도 새로운 대시보드는 10초 이내에 로드됩니다.
 
-성공적인 미리보기와 미리보기 고객으로부터의 좋은 피드백을 바탕으로, 이제 모든 고객에게 기본 환경으로 제공하기로 했습니다.  눈부시게 빠른 대시보드에 대비하세요.
+성공적인 미리보기와 미리보기 고객으로부터의 좋은 피드백을 바탕으로, 이제 모든 고객에게 기본 환경으로 제공하기로 했습니다. 눈부시게 빠른 대시보드에 대비하세요.
 
-자세한 내용은 다음을 참조하십시오. link:br-use-dashboard.html["대시보드에서 보호 상태 보기"] .
+자세한 내용은 다음을 참조하세요.link:br-use-dashboard.html["대시보드에서 보호 상태 보기"] .
 
 
 
 === 공개 기술 미리 보기로서 Microsoft SQL Server 워크로드 지원
 
-NetApp Backup and Recovery의 이번 릴리스에서는 NetApp Backup and Recovery에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다.  이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
 
 이것을 완료하면 미리보기에 가입할 수 있습니다. https://forms.office.com/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOojtBW63mDRDv3ZK50MaTlJUNjdENllaVTRTVFJGSDQ2MFJIREcxN0EwQi4u&route=shorturl["미리보기 가입 양식"^] .
 
@@ -27,11 +27,11 @@ NOTE: Microsoft SQL Server 워크로드 보호에 대한 이 문서는 기술 �
 
 이 NetApp Backup and Recovery 버전에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-* *3-2-1 백업 기능*: 이 버전에서는 SnapCenter 기능이 통합되어 NetApp 백업 및 복구 사용자 인터페이스에서 3-2-1 데이터 보호 전략을 사용하여 SnapCenter 리소스를 관리하고 보호할 수 있습니다.
-* * SnapCenter 에서 가져오기*: SnapCenter 백업 데이터와 정책을 NetApp Backup and Recovery로 가져올 수 있습니다.
+* *3-2-1 백업 기능*: 이 버전에서는 SnapCenter 기능이 통합되어 NetApp Backup and Recovery 사용자 인터페이스에서 3-2-1 데이터 보호 전략을 사용하여 SnapCenter 리소스를 관리하고 보호할 수 있습니다.
+* * SnapCenter 에서 가져오기*: SnapCenter 백업 데이터와 정책을 NetApp Backup and Recovery 로 가져올 수 있습니다.
 * *재설계된 사용자 인터페이스*는 백업 및 복구 작업을 관리하는 데 있어 보다 직관적인 환경을 제공합니다.
 * *백업 대상*: Amazon Web Services(AWS), Microsoft Azure Blob Storage, StorageGRID 및 ONTAP S3 환경에 버킷을 추가하여 Microsoft SQL Server 워크로드의 백업 대상으로 사용할 수 있습니다.
-* *작업 부하 지원*: 이 버전을 사용하면 Microsoft SQL Server 데이터베이스와 가용성 그룹을 백업, 복원, 확인 및 복제할 수 있습니다.  (다른 워크로드에 대한 지원은 향후 릴리스에서 추가될 예정입니다.)
+* *작업 부하 지원*: 이 버전을 사용하면 Microsoft SQL Server 데이터베이스와 가용성 그룹을 백업, 복원, 확인 및 복제할 수 있습니다. (다른 워크로드에 대한 지원은 향후 릴리스에서 추가될 예정입니다.)
 * *유연한 복원 옵션*: 이 버전을 사용하면 데이터가 손상되거나 실수로 데이터가 손실된 경우 원래 위치와 대체 위치 모두로 데이터베이스를 복원할 수 있습니다.
 * *즉각적인 프로덕션 사본*: 몇 시간 또는 며칠이 아닌 몇 분 만에 개발, 테스트 또는 분석을 위한 공간 효율적인 프로덕션 사본을 생성합니다.
 * 이 버전에는 자세한 보고서를 만드는 기능이 포함되어 있습니다.

@@ -4,7 +4,7 @@ permalink: br-use-mssql-restore.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 스냅샷 복사본, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 데이터베이스 워크로드를 복원합니다. 
 ---
-= NetApp 백업 및 복구를 사용하여 Microsoft SQL Server 워크로드 복원
+= NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 스냅샷 복사본, 보조 스토리지에 복제된 워크로드 백�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 Microsoft SQL Server 워크로드를 복원합니다.  작업 부하를 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
+NetApp Backup and Recovery 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 Microsoft SQL Server 워크로드를 복원합니다.  작업 부하를 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
 
 .이 위치에서 복원
 다양한 시작 위치에서 작업 부하를 복원할 수 있습니다.
@@ -44,7 +44,7 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 
 작업 부하를 복원하면 다음이 발생합니다.
 
-* 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery는 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
+* 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
 * 복제된 워크로드에서 복원하는 경우 워크로드를 원래 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
 +
 image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐름을 보여주는 다이어그램"]
@@ -62,7 +62,7 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 * *인벤토리 페이지에서*: 지난주 또는 지난 달의 특정 리소스를 복원해야 하는 경우 이 기능을 사용하세요. 리소스의 이름과 위치, 마지막으로 좋은 상태였던 날짜를 알고 있어야 합니다.  복원하려는 리소스를 찾으려면 리소스 목록을 탐색합니다.
 
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 
 
@@ -71,7 +71,7 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 복원 옵션을 사용하여 데이터베이스 작업 부하를 복원합니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *복원*을 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.
 . 복원하려는 데이터베이스를 선택하세요.  필터를 사용하여 검색하세요.
 . 복원 옵션을 선택하세요:
 +
@@ -123,7 +123,7 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 
 === 특정 시점으로 복원
 
-NetApp 백업 및 복구는 로그와 최신 스냅샷을 사용하여 데이터의 특정 시점 복원을 생성합니다.
+NetApp Backup and Recovery 로그와 최신 스냅샷을 사용하여 데이터의 특정 시점 복원을 생성합니다.
 
 . 복원 옵션 페이지에서 *특정 시점으로 복원*을 선택합니다.
 . *다음*을 선택하세요.
@@ -162,11 +162,11 @@ NetApp 백업 및 복구는 로그와 최신 스냅샷을 사용하여 데이터
 
 === 최신 백업으로 복원
 
-이 옵션은 최신 전체 백업과 로그 백업을 사용하여 데이터를 마지막 양호한 상태로 복원합니다.  시스템은 마지막 스냅샷부터 현재까지의 로그를 스캔합니다.  이 프로세스는 변경 사항과 활동을 추적하여 데이터의 가장 최신 및 정확한 버전을 복원합니다.
+이 옵션은 최신 전체 백업과 로그 백업을 사용하여 데이터를 마지막 양호한 상태로 복원합니다.  시스템은 마지막 스냅샷부터 현재까지의 로그를 스캔합니다.  이 프로세스는 변경 사항과 활동을 추적하여 데이터의 가장 최신이고 정확한 버전을 복원합니다.
 
-. 복원 옵션 페이지에서 *최신 백업으로 복원*을 선택합니다.
+. 복원 옵션 페이지에서 계속해서 *최신 백업으로 복원*을 선택합니다.
 +
-NetApp 백업 및 복구는 복원 작업에 사용할 수 있는 스냅샷을 보여줍니다.
+NetApp Backup and Recovery 복원 작업에 사용할 수 있는 스냅샷을 보여줍니다.
 
 . 최신 상태로 복원 페이지에서 로컬, 보조 저장소 또는 개체 저장소의 스냅샷 위치를 선택합니다.
 . *다음*을 선택하세요.
@@ -178,7 +178,7 @@ NetApp 백업 및 복구는 복원 작업에 사용할 수 있는 스냅샷을 �
 *** *복원 중 동일한 이름으로 데이터베이스 덮어쓰기*: 복원하는 동안 원래 데이터베이스 이름이 보존됩니다.
 *** *SQL 데이터베이스 복제 설정 유지*: 복원 작업 후에도 SQL 데이터베이스의 복제 설정을 유지합니다.
 *** *복원 전 트랜잭션 로그 백업 생성*: 복원 작업 전에 트랜잭션 로그 백업을 생성합니다.
-*** *트랜잭션 로그 백업이 실패한 경우 복원 중지*: 트랜잭션 로그 백업이 실패하면 복원 작업을 중지합니다.
+*** *복원 전 트랜잭션 로그 백업이 실패하면 복원 중지*: 트랜잭션 로그 백업이 실패하면 복원 작업을 중지합니다.
 *** *사전 스크립트*: 복원 작업 전에 실행해야 하는 스크립트의 전체 경로, 스크립트에 필요한 인수, 스크립트가 완료될 때까지 기다려야 하는 시간을 입력합니다.
 
 
@@ -202,7 +202,7 @@ NetApp 백업 및 복구는 복원 작업에 사용할 수 있는 스냅샷을 �
 인벤토리 페이지에서 데이터베이스 작업 부하를 복원합니다.  인벤토리 옵션을 사용하면 인스턴스가 아닌 데이터베이스만 복원할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 복원하려는 리소스가 있는 호스트를 선택하세요.
 . *작업*을 선택하세요image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *세부정보 보기*를 선택하세요.
 . Microsoft SQL Server 페이지에서 *데이터베이스* 탭을 선택합니다.

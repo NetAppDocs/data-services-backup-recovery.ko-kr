@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-api-backup-restore.html 
 keywords: api, apis, rest, restful, authorization, getting started, body, header, token, reference, expired token, expires, expired, token expired, list apis 
-summary: 웹 UI를 통해 제공되는 NetApp 백업 및 복구 기능은 RESTful API를 통해서도 사용할 수 있습니다. 
+summary: 웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 RESTful API를 통해서도 사용할 수 있습니다. 
 ---
-= NetApp 백업 및 복구 REST API를 사용하여 자동화
+= NetApp Backup and Recovery REST API를 사용하여 자동화
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: 웹 UI를 통해 제공되는 NetApp 백업 및 복구 기능은 RESTfu
 [role="lead"]
 웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 백업 및 복구 REST API를 통해서도 사용할 수 있습니다.
 
-NetApp 백업 및 복구에는 10가지 범주의 엔드포인트가 정의되어 있습니다.
+NetApp Backup and Recovery 에는 10가지 범주의 엔드포인트가 정의되어 있습니다.
 
 * `backup`- 클라우드 및 온프레미스 리소스의 백업 작업을 관리하고 백업 데이터의 세부 정보를 검색합니다.
 * `catalog`- 쿼리(검색 및 복원)를 기반으로 파일의 색인된 카탈로그 검색을 관리합니다.
@@ -34,21 +34,21 @@ NetApp 백업 및 복구에는 10가지 범주의 엔드포인트가 정의되�
 
 == API 참조
 
-각 NetApp 백업 및 복구 API에 대한 설명서는 다음에서 제공됩니다. https://docs.netapp.com/us-en/console-automation/cbs/overview.html["NetApp 백업 및 복구를 위한 NetApp 콘솔 자동화"^] .
+각 NetApp Backup and Recovery API에 대한 설명서는 다음에서 제공됩니다. https://docs.netapp.com/us-en/console-automation/cbs/overview.html["NetApp Backup and Recovery 위한 NetApp Console 자동화"^] .
 
 
 
 == 시작하기
 
-NetApp 백업 및 복구 API를 시작하려면 사용자 토큰, NetApp 콘솔 계정 ID, 콘솔 에이전트 ID를 얻어야 합니다.
+NetApp Backup and Recovery API를 시작하려면 사용자 토큰, NetApp Console 계정 ID, 콘솔 에이전트 ID를 얻어야 합니다.
 
-API 호출을 할 때 Authorization 헤더에 사용자 토큰을 추가하고 x-agent-id 헤더에 콘솔 에이전트 ID를 추가합니다.  API에서는 NetApp 콘솔 계정 ID를 사용해야 합니다.
+API 호출을 할 때 Authorization 헤더에 사용자 토큰을 추가하고 x-agent-id 헤더에 콘솔 에이전트 ID를 추가합니다.  API에서는 NetApp Console 계정 ID를 사용해야 합니다.
 
 
-NOTE: 서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 액세스 토큰을 사용해야 합니다. "client_id" 값("Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC")은 고정된 값이므로 변경할 수 없습니다. 이 경우에는 다음 지침을 따르세요. https://docs.netapp.com/us-en/console-automation/platform/create_service_token.html["서비스 액세스 토큰 생성"^] .
+NOTE: 서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 액세스 토큰을 사용해야 합니다. "client_id" 값("Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC")은 고정된 값이므로 변경할 수 없습니다. 이 경우 다음 지침을 따르세요. https://docs.netapp.com/us-en/console-automation/platform/create_service_token.html["서비스 액세스 토큰 생성"^] .
 
 .단계
-. NetApp NetApp 콘솔 웹 사이트에서 사용자 토큰을 얻습니다.
+. NetApp NetApp Console 웹 사이트에서 사용자 토큰을 얻습니다.
 +
 다음 링크에서 새로 고침 토큰을 생성하세요: https://services.cloud.netapp.com/refresh-token/.  새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.
 
@@ -65,9 +65,9 @@ curl --location --request POST 'https://netapp-cloud-account.auth0.com/oauth/tok
 ----
 +
 
-NOTE: NetApp 콘솔 웹 사이트의 사용자 토큰에는 만료 날짜가 있습니다.  API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필드가 포함되어 있습니다.  토큰을 새로 고치려면 이 API를 다시 호출해야 합니다.
+NOTE: NetApp Console 웹 사이트의 사용자 토큰에는 만료 날짜가 있습니다. API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필드가 포함되어 있습니다.  토큰을 새로 고치려면 이 API를 다시 호출해야 합니다.
 
-. NetApp 콘솔 계정 ID를 얻으세요.
+. NetApp Console 계정 ID를 얻으세요.
 +
 [source, console]
 ----
@@ -114,10 +114,10 @@ Header:
 
 == API를 사용한 예
 
-다음 예제에서는 Azure 클라우드의 East-US-2 지역에서 일일, 시간별, 주별 레이블이 설정되고, 보관 기간이 180일로 설정된 새 정책이 있는 시스템에서 NetApp 백업 및 복구를 활성화하기 위한 API 호출을 보여줍니다.  이렇게 하면 시스템 백업만 가능하고 볼륨은 백업되지 않습니다.
+다음 예제에서는 Azure 클라우드의 East-US-2 지역에서 일일, 시간별, 주별 레이블이 설정되고, 보관 기간이 180일로 설정된 새 정책이 있는 시스템에서 NetApp Backup and Recovery 활성화하기 위한 API 호출을 보여줍니다.  이렇게 하면 시스템 백업만 가능하고 볼륨은 백업되지 않습니다.
 
 .API 요청
-NetApp 콘솔 계정 ID를 사용하는 것을 볼 수 있습니다. `account-DpTFcxN3` , 콘솔 에이전트 ID `iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients` , 및 사용자 토큰 `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…y6nyhBjwkeMwHc4ValobjUmju2x0xUH48g` 이 명령에서.
+NetApp Console 계정 ID를 사용하는 것을 볼 수 있습니다. `account-DpTFcxN3` , 콘솔 에이전트 ID `iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients` , 및 사용자 토큰 `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…y6nyhBjwkeMwHc4ValobjUmju2x0xUH48g` 이 명령에서.
 
 [source, console]
 ----

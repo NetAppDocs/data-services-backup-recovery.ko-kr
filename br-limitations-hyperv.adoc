@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-limitations-hyperv.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Hyper-V, SAP HANA database, virtual machine, vm 
-summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery는 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
+summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
 ---
-= Hyper-V 워크로드에 대한 NetApp 백업 및 복구의 알려진 제한 사항
+= Hyper-V 워크로드에 대한 NetApp Backup and Recovery 의 알려진 제한 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 데이터�
 
 == 지원되지 않는 작업
 
-NetApp Backup and Recovery의 Hyper-V 워크로드 비공개 미리 보기 버전에서는 다음 작업이 지원되지 않습니다.
+NetApp Backup and Recovery 의 Hyper-V 워크로드에 대한 비공개 미리 보기 버전에서는 다음 작업이 지원되지 않습니다.
 
 * 리소스 그룹 생성
 * 디스크 스패닝(여러 CIFS 공유에 걸쳐)

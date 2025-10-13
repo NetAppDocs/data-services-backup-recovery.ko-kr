@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-vmware-prereqs.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp 백업 및 복구의 가상 머신 워크로드에 대한 필수 구성 요소
+= NetApp Backup and Recovery 의 가상 머신 워크로드에 대한 필수 구성 요소
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 가상 머신 워크로드를 보호하기 전에 다음 필수 구성 요소를 충족하는지 확인하세요.
+NetApp Backup and Recovery 사용하여 가상 머신 워크로드를 보호하기 전에 다음 필수 구성 요소를 충족하는지 확인하세요.
 
 * SnapCenter Plug-in for VMware vSphere
 +
@@ -22,7 +22,7 @@ NetApp Backup and Recovery를 사용하여 가상 머신 워크로드를 보호�
 
 
 * ONTAP 9.8 이상
-* NetApp 콘솔
+* NetApp Console
 * NFS 및 VMFS 데이터 저장소가 지원됩니다. vVols 지원되지 않습니다.
 * VMFS 지원을 위해 SnapCenter Plug-in for VMware vSphere 4.9 이상에서 실행되어야 합니다.  SnapCenter Plug-in for VMware vSphere 이전 버전에서 4.9 릴리스로 업그레이드한 경우 VMFS 데이터 저장소를 백업해야 합니다.
 * SnapCenter Plug-in for VMware vSphere 에서 최소한 하나의 백업이 수행되어야 합니다.
@@ -33,7 +33,7 @@ NetApp Backup and Recovery를 사용하여 가상 머신 워크로드를 보호�
 * 가상 머신이 복원될 대상 데이터 저장소에 VMDK, VMX, VMSD 등 모든 가상 머신 파일의 복사본을 수용할 수 있는 충분한 공간이 있는지 확인하세요.
 * 이전 복원 작업 실패로 인해 대상 데이터 저장소에 restore_xxx_xxxxxx_filename 형식의 오래된 가상 머신 파일이 없는지 확인하세요.  복원 작업을 시작하기 전에 오래된 파일을 삭제해야 합니다.
 * 프록시가 구성된 커넥터를 배포하려면 모든 발신 커넥터 호출이 프록시 서버를 통해 라우팅되는지 확인하세요.
-* 데이터 저장소를 백업하는 볼륨이 볼륨 탭(NetApp 백업 및 복구 -> 볼륨)에서 이미 보호된 경우, 동일한 데이터 저장소를 가상 머신 탭(NetApp 백업 및 복구 -> 가상 머신)에서 다시 보호할 수 없습니다.
+* 데이터 저장소를 백업하는 볼륨이 볼륨 탭(NetApp Backup and Recovery -> 볼륨)에서 이미 보호된 경우, 동일한 데이터 저장소를 가상 머신 탭(NetApp Backup and Recovery -> 가상 머신)에서 다시 보호할 수 없습니다.
 
 
 다음 이미지는 각 구성 요소와 구성 요소 간에 준비해야 하는 연결을 보여줍니다.

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-onprem-ontaps3.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 데이터를 ONTAP S3에 백업
+= NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 데이터를 ONTAP S3에 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp 백업 및 복구에서 몇 가지 단계를 완료하여 기본 온프레미스 ONTAP 시스템에서 볼륨 데이터 백업을 시작하세요.  백업을 보조 ONTAP 스토리지 시스템(복제된 볼륨)이나 S3 서버로 구성된 ONTAP 시스템의 버킷(백업 파일) 또는 둘 다에 보낼 수 있습니다.
+NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 기본 온프레미스 ONTAP 시스템에서 볼륨 데이터 백업을 시작하세요.  백업을 보조 ONTAP 스토리지 시스템(복제된 볼륨)이나 S3 서버로 구성된 ONTAP 시스템의 버킷(백업 파일) 또는 둘 다에 보낼 수 있습니다.
 
-기본 온프레미스 ONTAP 시스템은 FAS, AFF 또는 ONTAP Select 시스템이 될 수 있습니다.  2차 ONTAP 시스템은 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템이 될 수 있습니다.  개체 저장소는 온프레미스 ONTAP 시스템이나 S3(Simple Storage Service) 개체 저장소 서버를 활성화한 Cloud Volumes ONTAP 시스템에 있을 수 있습니다.
+기본 온프레미스 ONTAP 시스템은 FAS, AFF 또는 ONTAP Select 시스템이 될 수 있습니다.  보조 ONTAP 시스템은 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템이 될 수 있습니다.  개체 저장소는 온프레미스 ONTAP 시스템이나 S3(Simple Storage Service) 개체 저장소 서버를 활성화한 Cloud Volumes ONTAP 시스템에 있을 수 있습니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 
@@ -31,13 +31,13 @@ ONTAP 시스템의 S3 버킷에 백업을 생성할 수 있는 구성은 다양�
 
 다음 이미지는 S3에 대해 구성된 온프레미스 ONTAP 시스템에 기본 온프레미스 ONTAP 시스템을 백업할 때의 각 구성 요소와 이들 간에 준비해야 하는 연결을 보여줍니다.  또한 볼륨을 복제하기 위해 동일한 온프레미스 위치에 있는 보조 ONTAP 시스템에 대한 연결을 보여줍니다.
 
-image:diagram_cloud_backup_onprem_ontap_s3.png["NetApp Backup and Recovery가 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
+image:diagram_cloud_backup_onprem_ontap_s3.png["NetApp Backup and Recovery 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
 
-콘솔 에이전트와 기본 온프레미스 ONTAP 시스템이 인터넷 접속이 불가능한 온프레미스 위치에 설치된 경우(개인 모드 배포), ONTAP S3 시스템은 동일한 온프레미스 데이터 센터에 위치해야 합니다.
+콘솔 에이전트와 기본 온프레미스 ONTAP 시스템이 인터넷 접속이 불가능한 온프레미스 위치에 설치된 경우("개인" 모드 배포), ONTAP S3 시스템은 동일한 온프레미스 데이터 센터에 있어야 합니다.
 
 다음 이미지는 S3에 대해 구성된 Cloud Volumes ONTAP 시스템에 기본 온프레미스 ONTAP 시스템을 백업할 때의 각 구성 요소와 이들 간에 준비해야 하는 연결을 보여줍니다.  또한 동일한 클라우드 공급자 환경의 보조 Cloud Volumes ONTAP 시스템에 연결하여 볼륨을 복제하는 모습도 보여줍니다.
 
-image:diagram_cloud_backup_onprem_ontap_s3_cloud.png["NetApp Backup and Recovery가 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
+image:diagram_cloud_backup_onprem_ontap_s3_cloud.png["NetApp Backup and Recovery 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
 
 이 시나리오에서는 콘솔 에이전트는 Cloud Volumes ONTAP 시스템이 배포된 동일한 클라우드 공급자 환경에 배포되어야 합니다.
 
@@ -68,24 +68,24 @@ ONTAP S3에 데이터를 백업하는 경우, 사내 또는 클라우드에서 �
 
 * ONTAP S3 서버에 대한 포트 443을 통한 HTTPS 연결
 * 포트 443을 통한 소스 ONTAP 클러스터 관리 LIF에 대한 HTTPS 연결
-* 포트 443을 통한 NetApp Backup and Recovery로의 아웃바운드 인터넷 연결(콘솔 에이전트가 "다크" 사이트에 설치된 경우 필요하지 않음)
+* 포트 443을 통한 NetApp Backup and Recovery 로의 아웃바운드 인터넷 연결(콘솔 에이전트가 "다크" 사이트에 설치된 경우 필요하지 않음)
 
 
 
 
 ==== 개인 모드(다크 사이트) 고려 사항
 
-NetApp 백업 및 복구 기능은 콘솔 에이전트에 내장되어 있습니다.  개인 모드로 설치하는 경우 새로운 기능을 사용하려면 콘솔 에이전트 소프트웨어를 주기적으로 업데이트해야 합니다.  확인하다link:whats-new.html["NetApp 백업 및 복구의 새로운 기능"] NetApp 백업 및 복구의 각 릴리스에서 새로운 기능을 확인하세요.  새로운 기능을 사용하려면 다음 단계를 따르세요. https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["콘솔 에이전트 소프트웨어 업그레이드"^] .
+NetApp Backup and Recovery 기능은 콘솔 에이전트에 내장되어 있습니다.  개인 모드로 설치하는 경우 새로운 기능을 사용하려면 콘솔 에이전트 소프트웨어를 주기적으로 업데이트해야 합니다.  확인하다link:whats-new.html["NetApp Backup and Recovery 의 새로운 기능"] NetApp Backup and Recovery 각 릴리스에서 새로운 기능을 확인하세요.  새로운 기능을 사용하려면 다음 단계를 따르세요. https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["콘솔 에이전트 소프트웨어 업그레이드"^] .
 
-표준 SaaS 환경에서 NetApp Backup and Recovery를 사용하면 NetApp Backup and Recovery 구성 데이터가 클라우드에 백업됩니다.  인터넷 접속이 없는 사이트에서 NetApp Backup and Recovery를 사용하는 경우 NetApp Backup and Recovery 구성 데이터는 백업이 저장되는 ONTAP S3 버킷에 백업됩니다.
+표준 SaaS 환경에서 NetApp Backup and Recovery 사용하면 NetApp Backup and Recovery 구성 데이터가 클라우드에 백업됩니다.  인터넷 접속이 없는 사이트에서 NetApp Backup and Recovery 사용하는 경우 NetApp Backup and Recovery 구성 데이터는 백업이 저장되는 ONTAP S3 버킷에 백업됩니다.
 
 
 
 == 라이센스 요구 사항 확인
 
-클러스터에 대한 NetApp 백업 및 복구를 활성화하려면 먼저 NetApp 에서 NetApp 백업 및 복구 BYOL 라이선스를 구매하고 활성화해야 합니다.  라이선스는 개체 스토리지에 대한 백업 및 복원을 위한 것입니다. 스냅샷 복사본이나 복제 볼륨을 만드는 데는 라이선스가 필요하지 않습니다.  이 라이선스는 해당 계정에 대한 것이며 여러 시스템에서 사용할 수 있습니다.
+클러스터에 대한 NetApp Backup and Recovery 활성화하려면 먼저 NetApp 에서 NetApp Backup and Recovery BYOL 라이선스를 구매하고 활성화해야 합니다.  라이선스는 개체 스토리지에 대한 백업 및 복원을 위한 것입니다. 스냅샷 복사본이나 복제 볼륨을 만드는 데는 라이선스가 필요하지 않습니다.  이 라이선스는 해당 계정에 대한 것이며 여러 시스템에서 사용할 수 있습니다.
 
-라이선스 기간과 용량에 맞춰 서비스를 사용하려면 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"] .
+라이선스 기간과 용량에 맞춰 서비스를 사용하려면 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"].
 
 
 TIP: ONTAP S3에 파일을 백업하는 경우 PAYGO 라이선싱이 지원되지 않습니다.
@@ -98,7 +98,7 @@ TIP: ONTAP S3에 파일을 백업하는 경우 PAYGO 라이선싱이 지원되�
 
 ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
-* NetApp 콘솔에서 ONTAP 시스템을 찾아보세요
+* NetApp Console 에서 ONTAP 시스템을 찾아보세요
 * ONTAP 시스템 요구 사항 확인
 * 개체 스토리지에 데이터를 백업하기 위한 ONTAP 네트워킹 요구 사항 확인
 * 볼륨 복제를 위한 ONTAP 네트워킹 요구 사항 확인
@@ -106,11 +106,11 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
 
 
-=== NetApp 콘솔에서 ONTAP 시스템을 찾아보세요
+=== NetApp Console 에서 ONTAP 시스템을 찾아보세요
 
-소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템 모두 NetApp 콘솔 *시스템* 페이지에서 사용할 수 있어야 합니다.
+소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템 모두 NetApp Console *시스템* 페이지에서 사용할 수 있어야 합니다.
 
-클러스터를 추가하려면 클러스터 관리 IP 주소와 관리자 사용자 계정의 비밀번호를 알아야 합니다. https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법을 알아보세요"^] .
+클러스터를 추가하려면 클러스터 관리 IP 주소와 관리자 사용자 계정의 비밀번호를 알아야 합니다. https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법을 알아보세요"^].
 
 
 
@@ -121,7 +121,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 * 최소 ONTAP 9.8; ONTAP 9.8P13 이상을 권장합니다.
 * SnapMirror 라이선스(프리미엄 번들 또는 데이터 보호 번들의 일부로 포함됨).
 +
-*참고:* NetApp Backup and Recovery를 사용하는 경우 "하이브리드 클라우드 번들"은 필요하지 않습니다.
+*참고:* NetApp Backup and Recovery 사용하는 경우 "하이브리드 클라우드 번들"은 필요하지 않습니다.
 
 +
 방법을 배우십시오 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["클러스터 라이선스 관리"^] .
@@ -129,7 +129,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 * 시간과 시간대가 올바르게 설정되었습니다.  방법을 배우십시오 https://docs.netapp.com/us-en/ontap/system-admin/manage-cluster-time-concept.html["클러스터 시간 구성"^] .
 * 데이터를 복제하려는 경우 데이터를 복제하기 전에 소스 및 대상 시스템에서 호환되는 ONTAP 버전이 실행되고 있는지 확인해야 합니다.
 +
-https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-snapmirror-concept.html["SnapMirror 관계에 대한 호환 ONTAP 버전 보기"^] .
+https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-snapmirror-concept.html["SnapMirror 관계에 대한 호환 ONTAP 버전 보기"^].
 
 
 
@@ -144,7 +144,7 @@ https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-sn
 * 팬아웃 백업 아키텍처를 사용하는 경우 설정은 _기본_ 스토리지 시스템에서 구성해야 합니다.
 * 계단식 백업 아키텍처를 사용하는 경우 설정은 _보조_ 스토리지 시스템에서 구성해야 합니다.
 +
-link:prev-ontap-protect-journey.html["백업 아키텍처 유형에 대해 자세히 알아보세요"] .
+link:prev-ontap-protect-journey.html["백업 아키텍처 유형에 대해 자세히 알아보세요"].
 
 
 
@@ -158,25 +158,25 @@ ONTAP 객체 스토리지에서 데이터를 읽고 씁니다. 객체 스토리�
 * ONTAP 콘솔 에이전트에서 클러스터 관리 LIF로의 인바운드 연결이 필요합니다.
 * 백업하려는 볼륨을 호스팅하는 각 ONTAP 노드에는 클러스터 간 LIF가 필요합니다.  LIF는 ONTAP 개체 스토리지에 연결하는 데 사용해야 하는 _IPspace_와 연결되어야 합니다. https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspaces에 대해 자세히 알아보세요"^] .
 +
-NetApp 백업 및 복구를 설정하면 사용할 IP 공간을 입력하라는 메시지가 표시됩니다. 각 LIF가 연결된 IP 공간을 선택해야 합니다. 이는 "기본" IP 공간일 수도 있고 사용자가 만든 사용자 지정 IP 공간일 수도 있습니다.
+NetApp Backup and Recovery 설정하면 사용할 IP 공간을 입력하라는 메시지가 표시됩니다. 각 LIF가 연결된 IP 공간을 선택해야 합니다. 이는 "기본" IP 공간일 수도 있고 사용자가 만든 사용자 지정 IP 공간일 수도 있습니다.
 
 * 노드의 클러스터 간 LIF는 개체 저장소에 액세스할 수 있습니다(콘솔 에이전트가 "다크" 사이트에 설치된 경우에는 필요하지 않음).
 * 볼륨이 위치한 스토리지 VM에 대한 DNS 서버가 구성되었습니다.  방법을 확인하세요 https://docs.netapp.com/us-en/ontap/networking/configure_dns_services_auto.html["SVM에 대한 DNS 서비스 구성"^] .
 * 기본 IP 공간과 다른 IP 공간을 사용하는 경우 개체 스토리지에 액세스하려면 정적 경로를 만들어야 할 수도 있습니다.
-* 필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 개체 스토리지로의 NetApp 백업 및 복구 서비스 연결을 지정한 포트(일반적으로 포트 443)를 통해 허용하고, 스토리지 VM에서 DNS 서버로의 이름 확인 트래픽을 포트 53(TCP/UDP)을 통해 허용합니다.
+* 필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 개체 스토리지로의 NetApp Backup and Recovery 서비스 연결을 지정한 포트(일반적으로 포트 443)를 통해 허용하고, 스토리지 VM에서 DNS 서버로의 이름 확인 트래픽을 포트 53(TCP/UDP)을 통해 허용합니다.
 
 
 
 
 === 볼륨 복제를 위한 ONTAP 네트워킹 요구 사항 확인
 
-NetApp Backup and Recovery를 사용하여 보조 ONTAP 시스템에 복제된 볼륨을 생성하려는 경우 소스 및 대상 시스템이 다음 네트워킹 요구 사항을 충족하는지 확인하세요.
+NetApp Backup and Recovery 사용하여 보조 ONTAP 시스템에 복제된 볼륨을 생성하려는 경우 소스 및 대상 시스템이 다음 네트워킹 요구 사항을 충족하는지 확인하세요.
 
 
 
 ==== 온프레미스 ONTAP 네트워킹 요구 사항
 
-* 클러스터가 사내에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다.  이는 일반적으로 VPN 연결입니다.
+* 클러스터가 사내에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다. 이는 일반적으로 VPN 연결입니다.
 * ONTAP 클러스터는 추가적인 서브넷, 포트, 방화벽 및 클러스터 요구 사항을 충족해야 합니다.
 +
 Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하세요. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^] .
@@ -187,7 +187,7 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 
 ==== Cloud Volumes ONTAP 네트워킹 요구 사항
 
-* 인스턴스의 보안 그룹에는 필수 인바운드 및 아웃바운드 규칙이 포함되어야 합니다. 구체적으로는 ICMP 및 포트 11104와 11105에 대한 규칙이 포함됩니다.  이러한 규칙은 미리 정의된 보안 그룹에 포함됩니다.
+* 인스턴스의 보안 그룹에는 필수 인바운드 및 아웃바운드 규칙이 포함되어야 합니다. 구체적으로는 ICMP 및 포트 11104와 11105에 대한 규칙이 포함됩니다. 이러한 규칙은 미리 정의된 보안 그룹에 포함됩니다.
 
 
 
@@ -204,7 +204,7 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 S3 자격 증명:: ONTAP S3 스토리지에 대한 액세스를 제어하려면 S3 사용자를 생성해야 합니다. https://docs.netapp.com/us-en/ontap/s3-config/create-s3-user-task.html["자세한 내용은 ONTAP S3 문서를 참조하세요."^] .
 +
 --
-ONTAP S3에 대한 백업을 설정하면 백업 마법사가 사용자 계정에 대한 S3 액세스 키와 비밀 키를 입력하라는 메시지를 표시합니다.  사용자 계정을 통해 NetApp Backup and Recovery는 ONTAP S3 버킷을 인증하고 백업을 저장하는 데 사용되는 버킷에 액세스할 수 있습니다.  ONTAP S3에서 누가 요청하는지 알 수 있도록 키가 필요합니다.
+ONTAP S3에 대한 백업을 설정하면 백업 마법사가 사용자 계정에 대한 S3 액세스 키와 비밀 키를 입력하라는 메시지를 표시합니다.  사용자 계정을 통해 NetApp Backup and Recovery ONTAP S3 버킷을 인증하고 백업을 저장하는 데 사용되는 버킷에 액세스할 수 있습니다.  ONTAP S3에서 누가 요청하는지 알 수 있도록 키가 필요합니다.
 
 이러한 액세스 키는 다음 권한이 있는 사용자와 연결되어야 합니다.
 
@@ -252,7 +252,7 @@ ONTAP S3에 대한 백업을 설정하면 백업 마법사가 사용자 계정�
 . 다음 옵션을 계속 진행하세요.
 +
 ** 이미 콘솔 에이전트가 있다면 준비가 완료된 것입니다.  *다음*을 선택하세요.
-** 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다. <<콘솔 에이전트를 준비하세요>> .
+** 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다.  참조하다<<콘솔 에이전트를 준비하세요>> .
 
 
 
@@ -318,7 +318,7 @@ FlexVol 또는 FlexGroup 볼륨을 보호하도록 선택할 수 있습니다. �
 . *로컬 스냅샷*: 기존 스냅샷 정책을 선택하거나 새 정책을 만듭니다.
 +
 
-TIP: 스냅샷을 활성화하기 전에 사용자 정의 정책을 만들려면 시스템 관리자 또는 ONTAP CLI를 사용할 수 있습니다. `snapmirror policy create` 명령. 참조하다 .
+TIP: 스냅샷을 활성화하기 전에 사용자 정의 정책을 만들려면 시스템 관리자 또는 ONTAP CLI를 사용할 수 있습니다. `snapmirror policy create` 명령.  참조하다 .
 
 +
 
@@ -358,7 +358,7 @@ TIP: 백업 및 복구를 사용하여 사용자 지정 정책을 만들려면 �
 ** *네트워킹*: 백업하려는 볼륨이 있는 소스 ONTAP 클러스터의 IP 공간을 선택합니다.  이 IP공간의 클러스터 간 LIF에는 아웃바운드 인터넷 액세스가 있어야 합니다(콘솔 에이전트가 "다크" 사이트에 설치된 경우에는 필요하지 않음).
 +
 
-TIP: 올바른 IP 공간을 선택하면 NetApp Backup and Recovery가 ONTAP 에서 ONTAP S3 개체 스토리지로의 연결을 설정할 수 있습니다.
+TIP: 올바른 IP 공간을 선택하면 NetApp Backup and Recovery ONTAP 에서 ONTAP S3 개체 스토리지로의 연결을 설정할 수 있습니다.
 
 ** *백업 정책*: 기존 백업 정책을 선택하거나 새 백업 정책을 만듭니다.
 +
@@ -401,7 +401,7 @@ TIP: 백업 및 복구를 사용하여 사용자 지정 정책을 만들려면 �
 
 
 .결과
-NetApp Backup and Recovery는 볼륨의 초기 백업을 시작합니다.  복제된 볼륨과 백업 파일의 기준선 전송에는 소스 데이터의 전체 사본이 포함됩니다.  이후 전송에는 스냅샷 복사본에 포함된 기본 저장소 데이터의 차등 복사본이 포함됩니다.
+NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다.  복제된 볼륨과 백업 파일의 기준선 전송에는 소스 데이터의 전체 사본이 포함됩니다.  이후 전송에는 스냅샷 복사본에 포함된 기본 저장소 데이터의 차등 복사본이 포함됩니다.
 
 대상 클러스터에 복제된 볼륨이 생성되어 기본 저장소 볼륨과 동기화됩니다.
 

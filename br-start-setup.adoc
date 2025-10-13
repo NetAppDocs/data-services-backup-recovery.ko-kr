@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-start-setup.html 
 keywords: backup, back up, restore, recovery, aws, azure 
-summary: NetApp Backup and Recovery를 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요. 
+summary: NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요. 
 ---
-= NetApp Backup and Recovery를 사용하기 전에 백업 대상을 설정하세요.
+= NetApp Backup and Recovery 사용하기 전에 백업 대상을 설정하세요.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Backup and Recovery를 사용하기 전에 몇 가지 단계를 
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.
+NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.
 
 시작하기 전에 검토하세요link:concept-start-prereq.html["전제 조건"] 귀하의 환경이 준비되었는지 확인하세요.
 
@@ -29,7 +29,7 @@ NetApp Backup and Recovery를 사용하기 전에 몇 가지 단계를 수행하
 +
 참조하다 https://docs.netapp.com/us-en/storagegrid/index.html["StorageGRID 문서"^] StorageGRID 에 대한 자세한 내용은 다음을 참조하세요.
 
-* 아마존 웹 서비스. 참조하다 https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Amazon S3 문서"^] .
+* 아마존 웹 서비스.  참조하다 https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Amazon S3 문서"^] .
 +
 AWS를 백업 대상으로 준비하려면 다음을 수행하세요.
 
@@ -51,7 +51,7 @@ AWS를 백업 대상으로 준비하려면 다음을 수행하세요.
 
 
 
-백업 대상지 자체에서 옵션을 구성한 후 나중에 NetApp Backup and Recovery에서 백업 대상으로 구성하게 됩니다.  NetApp Backup and Recovery에서 백업 대상을 구성하는 방법에 대한 자세한 내용은 다음을 참조하세요.link:br-start-discover-backup-targets.html["백업 대상 검색"] .
+백업 대상지 자체에서 옵션을 구성한 후 나중에 NetApp Backup and Recovery 에서 백업 대상으로 구성하게 됩니다.  NetApp Backup and Recovery 에서 백업 대상을 구성하는 방법에 대한 자세한 내용은 다음을 참조하세요.link:br-start-discover-backup-targets.html["백업 대상 검색"] .
 
 
 
@@ -64,7 +64,7 @@ AWS S3 권한 두 세트를 구성해야 합니다.
 
 
 .단계
-. 콘솔 에이전트에 필요한 권한이 있는지 확인하세요. 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-aws.html["NetApp 콘솔 정책 권한"] .
+. 콘솔 에이전트에 필요한 권한이 있는지 확인하세요.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-aws.html["NetApp Console 정책 권한"] .
 +
 
 NOTE: AWS 중국 리전에서 백업을 생성할 때 IAM 정책의 모든 _Resource_ 섹션 아래에 있는 AWS 리소스 이름 "arn"을 "aws"에서 "aws-cn"으로 변경해야 합니다. 예를 들어, `arn:aws-cn:s3:::netapp-backup-*` .

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-manage-inventory.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, snapcenter 
-summary: NetApp 백업 및 복구를 사용하면 워크로드 호스트 정보, 데이터베이스 정보, 인스턴스 정보를 관리할 수 있습니다.  인벤토리에 대한 보호 설정을 보고, 편집하고, 삭제할 수 있습니다. 
+summary: NetApp Backup and Recovery 사용하면 워크로드 호스트 정보, 데이터베이스 정보, 인스턴스 정보를 관리할 수 있습니다.  인벤토리에 대한 보호 설정을 보고, 편집하고, 삭제할 수 있습니다. 
 ---
-= NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 인벤토리 관리
+= NetApp Backup and Recovery 사용하여 Microsoft SQL Server 인벤토리 관리
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 백업 및 복구를 사용하면 워크로드 호스트 정보,
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하면 Microsoft SQL Server 워크로드 호스트 정보, 데이터베이스 정보 및 인스턴스 정보를 관리할 수 있습니다.  인벤토리의 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.
+NetApp Backup and Recovery 사용하면 Microsoft SQL Server 워크로드 호스트 정보, 데이터베이스 정보 및 인스턴스 정보를 관리할 수 있습니다.  인벤토리의 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.
 
 재고 관리와 관련하여 다음 작업을 수행할 수 있습니다.
 
@@ -27,7 +27,7 @@ NetApp Backup and Recovery를 사용하면 Microsoft SQL Server 워크로드 호
 * 인스턴스 정보 관리
 +
 ** 자격 증명을 리소스와 연결
-** 지금 주문형 백업을 시작하여 백업하세요
+** 지금 주문형 백업을 시작하여 백업하세요.
 ** 보호 설정 편집
 
 
@@ -36,10 +36,10 @@ NetApp Backup and Recovery를 사용하면 Microsoft SQL Server 워크로드 호
 ** 데이터베이스 보호
 ** 데이터베이스 복원
 ** 보호 설정 편집
-** 지금 주문형 백업을 시작하여 백업하세요
+** 지금 주문형 백업을 시작하여 백업하세요.
 
 
-* 로그 디렉토리를 구성합니다(인벤토리 > 호스트).  스냅샷에서 데이터베이스 호스트의 로그를 백업하려면 먼저 NetApp Backup and Recovery에서 로그를 구성하세요. 자세한 내용은 다음을 참조하세요.link:br-start-setup.html["NetApp 백업 및 복구 설정 구성"] .
+* 로그 디렉토리를 구성합니다(인벤토리 > 호스트).  스냅샷에서 데이터베이스 호스트의 로그를 백업하려면 먼저 NetApp Backup and Recovery 에서 로그를 구성하세요.  자세한 내용은 다음을 참조하세요.link:br-start-setup.html["NetApp Backup and Recovery 설정 구성"] .
 
 
 
@@ -48,9 +48,9 @@ NetApp Backup and Recovery를 사용하면 Microsoft SQL Server 워크로드 호
 
 호스트 정보를 관리하여 올바른 호스트가 보호되도록 할 수 있습니다.  호스트 정보를 보고, 편집하고, 삭제할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자 또는 백업 및 복구 복제 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자 또는 백업 및 복구 복제 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
-* 로그 디렉토리를 구성합니다. 자세한 내용은 다음을 참조하세요.link:br-start-setup.html["NetApp 백업 및 복구 설정 구성"] .
+* 로그 디렉토리를 구성합니다.  자세한 내용은 다음을 참조하세요.link:br-start-setup.html["NetApp Backup and Recovery 설정 구성"] .
 * 일정을 중단하다
 * 호스트 편집
 * 호스트 삭제
@@ -63,11 +63,11 @@ NetApp Backup and Recovery를 사용하면 Microsoft SQL Server 워크로드 호
 시스템에서 검색된 호스트를 관리할 수 있습니다.  개별적으로 또는 그룹으로 관리할 수 있습니다.
 
 
-TIP: 호스트 열에 "관리되지 않음" 상태가 표시된 호스트만 관리할 수 있습니다.  상태가 "관리됨"인 경우 해당 호스트가 이미 NetApp Backup and Recovery에서 관리되고 있음을 의미합니다.
+TIP: 호스트 열에 "관리되지 않음" 상태가 표시된 호스트만 관리할 수 있습니다.  상태가 "관리됨"인 경우 호스트가 이미 NetApp Backup and Recovery 에서 관리되고 있음을 의미합니다.
 
-NetApp Backup and Recovery에서 호스트를 관리한 후에는 SnapCenter 해당 호스트의 리소스를 더 이상 관리하지 않습니다.
+NetApp Backup and Recovery 에서 호스트를 관리한 후에는 SnapCenter 해당 호스트의 리소스를 더 이상 관리하지 않습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어 또는 백업 및 복구 슈퍼 관리자. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어 또는 백업 및 복구 슈퍼 관리자. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
 . 메뉴에서 *인벤토리*를 선택하세요.
@@ -93,7 +93,7 @@ NetApp Backup and Recovery에서 호스트를 관리한 후에는 SnapCenter 해
 호스트의 백업 및 복원 작업을 중지하기 위해 일정을 일시 중단할 수 있습니다.  호스트에서 유지 관리 활동을 수행해야 하는 경우 이 작업을 수행하는 것이 좋습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 일정을 일시 중단할 호스트를 선택하세요.
 . *작업*을 선택하세요image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *일정 일시 중지*를 선택하세요.
 . 확인 대화 상자에서 *일시 중단*을 선택합니다.
@@ -106,7 +106,7 @@ NetApp Backup and Recovery에서 호스트를 관리한 후에는 SnapCenter 해
 vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션을 변경할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 편집하려는 호스트를 선택하세요.
 . *작업*을 선택하세요image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *호스트 편집*을 선택하세요.
 . 호스트 정보를 편집합니다.
@@ -120,7 +120,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 서비스 요금 청구를 중단하려면 호스트 정보를 삭제하세요.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 삭제할 호스트를 선택하세요.
 . *작업*을 선택하세요image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *호스트 삭제*를 선택하세요.
 . 확인 정보를 검토하고 *삭제*를 선택하세요.
@@ -139,7 +139,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 * 지금 백업하세요
 
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 
 
@@ -148,7 +148,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 리소스 보호의 일정과 보존을 관리하는 정책을 사용하여 데이터베이스 인스턴스에 정책을 할당할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *인스턴스* 탭을 선택합니다.
 . 인스턴스를 선택하세요.
@@ -178,10 +178,10 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 
 자격 증명을 리소스와 연결하여 보호가 이루어질 수 있습니다.
 
-자세한 내용은 다음을 참조하십시오. link:br-start-configure.html["자격 증명을 포함한 NetApp 백업 및 복구 설정 구성"] .
+자세한 내용은 다음을 참조하세요.link:br-start-configure.html["자격 증명을 포함한 NetApp Backup and Recovery 설정 구성"] .
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *인스턴스* 탭을 선택합니다.
 . 인스턴스를 선택하세요.
@@ -196,7 +196,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 정책을 변경하고, 새로운 정책을 만들고, 일정을 설정하고, 보존 설정을 지정할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *인스턴스* 탭을 선택합니다.
 . 인스턴스를 선택하세요.
@@ -213,7 +213,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 지금 데이터를 백업하면 데이터가 즉시 보호됩니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *인스턴스* 탭을 선택합니다.
 . 인스턴스를 선택하세요.
@@ -243,10 +243,10 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 
 정책을 변경하고, 새로운 정책을 만들고, 일정을 설정하고, 보존 설정을 지정할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *데이터베이스* 탭을 선택합니다.
 . 데이터베이스를 선택하세요.
@@ -262,7 +262,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 
 데이터를 보호하기 위해 데이터베이스를 복원할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 . *데이터베이스* 탭을 선택합니다.
 . 데이터베이스를 선택하세요.
@@ -278,10 +278,10 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 
 정책을 변경하고, 새로운 정책을 만들고, 일정을 설정하고, 보존 설정을 지정할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *데이터베이스* 탭을 선택합니다.
 . 데이터베이스를 선택하세요.
@@ -297,10 +297,10 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정 옵션�
 
 지금 Microsoft SQL Server 인스턴스와 데이터베이스를 백업하여 데이터를 즉시 보호할 수 있습니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.
 . *인스턴스* 또는 *데이터베이스* 탭을 선택합니다.
 . 인스턴스나 데이터베이스를 선택하세요.

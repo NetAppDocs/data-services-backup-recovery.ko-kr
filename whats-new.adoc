@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, backup, restore, NetApp Backup and Recovery, protection, sql server, workloads, volumes, snapshots' 
-summary: NetApp 백업 및 복구의 새로운 기능을 알아보세요. 
+summary: NetApp Backup and Recovery 의 새로운 기능을 알아보세요. 
 ---
-= NetApp 백업 및 복구의 새로운 기능
+= NetApp Backup and Recovery 의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,33 +14,33 @@ summary: NetApp 백업 및 복구의 새로운 기능을 알아보세요.
 
 
 [role="lead"]
-NetApp 백업 및 복구의 새로운 기능을 알아보세요.
+NetApp Backup and Recovery 의 새로운 기능을 알아보세요.
 
 
 
 == 2025년 10월 6일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
-=== BlueXP backup and recovery 이제 NetApp 백업 및 복구입니다.
+=== BlueXP backup and recovery 이제 NetApp Backup and Recovery 입니다.
 
-BlueXP backup and recovery NetApp 백업 및 복구로 이름이 변경되었습니다.
+BlueXP backup and recovery NetApp Backup and Recovery 로 이름이 변경되었습니다.
 
 
 
-=== BlueXP 는 이제 NetApp 콘솔입니다.
+=== BlueXP 는 이제 NetApp Console 입니다.
 
-강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 높은 보안성과 규정 준수를 갖춘 간소화된 관리를 제공합니다.
+강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp Data Services 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 높은 보안성과 규정 준수를 갖춘 간소화된 관리를 제공합니다.
 
-변경된 내용에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp 콘솔 릴리스 노트."]
+변경된 내용에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console 릴리스 노트."]
 
 
 
 === Hyper-V 워크로드 지원(개인 미리 보기)
 
-NetApp Backup and Recovery의 이번 릴리스에서는 Hyper-V 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 Hyper-V 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
 
 * 독립 실행형 인스턴스와 장애 조치 클러스터 인스턴스(FCI)에서 VM 백업 및 복원
 * SMB3 공유에 저장된 VM 보호
@@ -56,7 +56,7 @@ Hyper-V 작업 부하 보호에 대한 자세한 내용은 다음을 참조하�
 
 === 비공개 미리보기로 제공되는 KVM 워크로드 지원
 
-NetApp Backup and Recovery의 이번 릴리스에서는 KVM 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 KVM 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
 
 * NFS 공유에 저장된 qcow2 VM 이미지를 백업하고 복원합니다.
 * 백업 스토리지 풀
@@ -89,7 +89,7 @@ Kubernetes 워크로드의 미리보기 릴리스에서는 다음과 같은 향�
 * 다중 버킷 지원: 이제 다양한 클라우드 공급자의 시스템당 여러 버킷을 사용하여 시스템 내의 볼륨을 보호할 수 있습니다.
 
 
-Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
+Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
 
 
@@ -113,7 +113,7 @@ VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세�
 
 === Oracle Database 워크로드 지원을 개인 미리보기로 제공
 
-NetApp Backup and Recovery의 이번 릴리스에서는 Oracle Database 워크로드를 검색하고 관리하는 데 대한 지원이 도입되었습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크로드를 검색하고 관리하는 데 대한 지원이 도입되었습니다.
 
 * 독립형 Oracle 데이터베이스를 찾아보세요
 * 데이터 전용 또는 데이터 및 로그 백업에 대한 보호 정책을 만듭니다.
@@ -131,7 +131,7 @@ Oracle Database 작업 부하 보호에 대한 자세한 내용은 다음을 참
 
 == 2025년 8월 25일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
@@ -142,7 +142,7 @@ Oracle Database 작업 부하 보호에 대한 자세한 내용은 다음을 참
 
 NOTE: VMware 워크로드 보호에 대한 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.
 
-link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하는 방법에 대해 자세히 알아보세요."] .
+link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하는 방법에 대해 자세히 알아보세요."].
 
 
 
@@ -160,17 +160,17 @@ link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery를 사용�
 
 == 2025년 8월 12일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === 일반 공급(GA)에서 지원되는 Microsoft SQL Server 워크로드
 
-Microsoft SQL Server 워크로드 지원이 이제 NetApp Backup and Recovery에서 일반적으로 사용 가능(GA)되었습니다. ONTAP, Cloud Volumes ONTAP 및 Amazon FSx for NetApp ONTAP 스토리지에서 MSSQL 환경을 사용하는 조직은 이제 이 새로운 백업 및 복구 서비스를 활용하여 데이터를 보호할 수 있습니다.
+Microsoft SQL Server 워크로드 지원이 이제 NetApp Backup and Recovery 에서 일반적으로 사용 가능(GA)되었습니다. ONTAP, Cloud Volumes ONTAP 및 Amazon FSx for NetApp ONTAP 스토리지에서 MSSQL 환경을 사용하는 조직은 이제 이 새로운 백업 및 복구 서비스를 활용하여 데이터를 보호할 수 있습니다.
 
 이 릴리스에는 이전 미리 보기 버전에서 Microsoft SQL Server 워크로드 지원에 대한 다음과 같은 개선 사항이 포함되어 있습니다.
 
-* * SnapMirror 활성 동기화*: 이 버전은 이제 SnapMirror 활성 동기화( SnapMirror Business Continuity[SM-BC]라고도 함)를 지원하여 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영되도록 하고, 보조 복사본을 사용하여 애플리케이션이 투명하게 장애 조치되도록 지원합니다. NetApp Backup and Recovery는 이제 SnapMirror Active Sync 및 Metrocluster 구성에서 Microsoft SQL Server 데이터베이스의 보호를 지원합니다. 해당 정보는 보호 세부 정보 페이지의 *저장 및 관계 상태* 섹션에 표시됩니다. 관계 정보는 정책 페이지의 업데이트된 *보조 설정* 섹션에 표시됩니다.
+* * SnapMirror 활성 동기화*: 이 버전은 이제 SnapMirror 활성 동기화( SnapMirror Business Continuity[SM-BC]라고도 함)를 지원하여 사이트 전체에 장애가 발생하더라도 비즈니스 서비스가 계속 운영되도록 하고, 보조 복사본을 사용하여 애플리케이션이 투명하게 장애 조치되도록 지원합니다. NetApp Backup and Recovery 이제 SnapMirror Active Sync 및 Metrocluster 구성에서 Microsoft SQL Server 데이터베이스의 보호를 지원합니다. 해당 정보는 보호 세부 정보 페이지의 *저장 및 관계 상태* 섹션에 표시됩니다. 관계 정보는 정책 페이지의 업데이트된 *보조 설정* 섹션에 표시됩니다.
 +
 참조하다 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-policies-create.html["정책을 사용하여 작업 부하를 보호하세요"] .
 
@@ -178,13 +178,13 @@ Microsoft SQL Server 워크로드 지원이 이제 NetApp Backup and Recovery에
 image:../media/screen-br-sql-protection-details.png["Microsoft SQL Server 워크로드에 대한 보호 세부 정보 페이지"]
 
 * *다중 버킷 지원*: 이제 다양한 클라우드 공급자의 작업 환경당 최대 6개의 버킷을 사용하여 작업 환경 내의 볼륨을 보호할 수 있습니다.
-* SQL Server 워크로드에 대한 *라이선스 및 무료 평가판 업데이트*: 이제 기존 NetApp 백업 및 복구 라이선스 모델을 사용하여 SQL Server 워크로드를 보호할 수 있습니다. SQL Server 워크로드에는 별도의 라이선스 요구 사항이 없습니다.
+* SQL Server 워크로드에 대한 *라이선스 및 무료 평가판 업데이트*: 이제 기존 NetApp Backup and Recovery 라이선스 모델을 사용하여 SQL Server 워크로드를 보호할 수 있습니다. SQL Server 워크로드에는 별도의 라이선스 요구 사항이 없습니다.
 +
-자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html["NetApp 백업 및 복구에 대한 라이선싱 설정"] .
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html["NetApp Backup and Recovery 에 대한 라이선싱 설정"] .
 
 * *사용자 지정 스냅샷 이름*: 이제 Microsoft SQL Server 워크로드에 대한 백업을 관리하는 정책에서 사용자 지정 스냅샷 이름을 사용할 수 있습니다. 정책 페이지의 *고급 설정* 섹션에 이 정보를 입력하세요.
 +
-image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["NetApp 백업 및 복구 정책에 대한 SnapMirror 및 스냅샷 형식 설정 스크린샷"]
+image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["NetApp Backup and Recovery 정책에 대한 SnapMirror 및 스냅샷 형식 설정 스크린샷"]
 
 +
 참조하다 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-policies-create.html["정책을 사용하여 작업 부하를 보호하세요"] .
@@ -192,13 +192,13 @@ image:../media/screen-br-sql-policy-create-advanced-snapmirror.png["NetApp 백�
 * *보조 볼륨 접두사 및 접미사*: 정책 페이지의 *고급 설정* 섹션에서 사용자 지정 접두사 및 접미사를 입력할 수 있습니다.
 * *신원 및 액세스*: 이제 기능에 대한 사용자 액세스를 제어할 수 있습니다.
 +
-참조하다 https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html["NetApp 백업 및 복구에 로그인하세요"] 그리고 https://docs.netapp.com/us-en/data-services-backup-recovery/reference-roles.html["NetApp 백업 및 복구 기능에 대한 액세스"] .
+참조하다 https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html["NetApp Backup and Recovery 에 로그인하세요"] 그리고 https://docs.netapp.com/us-en/data-services-backup-recovery/reference-roles.html["NetApp Backup and Recovery 기능에 대한 액세스"] .
 
 * *개체 스토리지에서 대체 호스트로 복원*: 이제 기본 스토리지가 다운된 경우에도 개체 스토리지에서 대체 호스트로 복원할 수 있습니다.
 * *로그 백업 데이터*: 데이터베이스 보호 세부 정보 페이지에 이제 로그 백업이 표시됩니다. 백업 유형 열을 보면 전체 백업인지 로그 백업인지 알 수 있습니다.
 * *향상된 대시보드*: 대시보드에 이제 저장소 및 복제본 절약 내용이 표시됩니다.
 +
-image:../media/screen-br-dashboard3.png["NetApp 백업 및 복구 대시보드"]
+image:../media/screen-br-dashboard3.png["NetApp Backup and Recovery 보드"]
 
 
 
@@ -206,13 +206,13 @@ image:../media/screen-br-dashboard3.png["NetApp 백업 및 복구 대시보드"]
 
 === ONTAP 볼륨 워크로드 향상
 
-* * ONTAP 볼륨에 대한 다중 폴더 복원*: 지금까지는 찾아보기 및 복원 기능을 통해 한 번에 하나의 폴더나 여러 파일을 복원할 수 있었습니다. NetApp Backup and Recovery는 이제 찾아보기 및 복원 기능을 사용하여 여러 폴더를 한 번에 선택할 수 있는 기능을 제공합니다.
-* *삭제된 볼륨의 백업 보기 및 관리*: NetApp 백업 및 복구 대시보드는 이제 ONTAP 에서 삭제된 볼륨을 표시하고 관리하는 옵션을 제공합니다. 이를 통해 ONTAP 에 더 이상 존재하지 않는 볼륨의 백업을 보고 삭제할 수 있습니다.
-* *백업 강제 삭제*: 극단적인 경우에는 NetApp Backup and Recovery가 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 서비스가 더 이상 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 작업 환경 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.
+* * ONTAP 볼륨에 대한 다중 폴더 복원*: 지금까지는 찾아보기 및 복원 기능을 통해 한 번에 하나의 폴더나 여러 파일을 복원할 수 있었습니다. NetApp Backup and Recovery 이제 찾아보기 및 복원 기능을 사용하여 여러 폴더를 한 번에 선택할 수 있는 기능을 제공합니다.
+* *삭제된 볼륨의 백업 보기 및 관리*: NetApp Backup and Recovery 보드는 이제 ONTAP 에서 삭제된 볼륨을 표시하고 관리하는 옵션을 제공합니다. 이를 통해 ONTAP 에 더 이상 존재하지 않는 볼륨의 백업을 보고 삭제할 수 있습니다.
+* *백업 강제 삭제*: 극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 서비스가 더 이상 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 작업 환경 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.
 
 
 
-CAUTION: 이 옵션은 신중하게 사용하고 극단적인 정리가 필요한 경우에만 사용하세요. NetApp Backup and Recovery는 개체 스토리지에서 백업이 삭제되지 않더라도 더 이상 이러한 백업에 액세스할 수 없습니다. 클라우드 제공업체에 가서 수동으로 백업을 삭제해야 합니다.
+CAUTION: 이 옵션은 신중하게 사용하고 극단적인 정리가 필요한 경우에만 사용하세요. NetApp Backup and Recovery 개체 스토리지에서 백업이 삭제되지 않더라도 더 이상 이러한 백업에 액세스할 수 없습니다. 클라우드 제공업체에 가서 수동으로 백업을 삭제해야 합니다.
 
 참조하다 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 워크로드 보호"] .
 
@@ -220,13 +220,13 @@ CAUTION: 이 옵션은 신중하게 사용하고 극단적인 정리가 필요�
 
 == 2025년 7월 28일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === 미리 보기로 Kubernetes 워크로드 지원
 
-NetApp Backup and Recovery의 이번 릴리스에서는 Kubernetes 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 Kubernetes 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
 
 * kubeconfig 파일을 공유하지 않고도 NetApp ONTAP 지원하는 Red Hat OpenShift와 오픈 소스 Kubernetes 클러스터를 살펴보세요.
 * 통합 제어 평면을 사용하여 여러 Kubernetes 클러스터에서 애플리케이션을 검색, 관리 및 보호합니다.
@@ -237,13 +237,13 @@ NetApp Backup and Recovery의 이번 릴리스에서는 Kubernetes 워크로드 
 * 실행 후크와 템플릿을 사용하여 애플리케이션과 일관된 백업을 만듭니다.
 
 
-Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
+Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
 
 
 == 2025년 7월 14일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
@@ -251,17 +251,17 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 2025년 4월, 훨씬 더 빠르고 효율적인 향상된 ONTAP 볼륨 대시보드의 미리보기를 출시했습니다.
 
-이 대시보드는 작업 부하가 많은 기업 고객을 돕기 위해 설계되었습니다.  볼륨이 20,000개에 달하는 고객의 경우에도 새로운 대시보드는 10초 이내에 로드됩니다.
+이 대시보드는 작업 부하가 많은 기업 고객을 돕기 위해 설계되었습니다. 볼륨이 20,000개에 달하는 고객의 경우에도 새로운 대시보드는 10초 이내에 로드됩니다.
 
-성공적인 미리보기와 미리보기 고객으로부터의 좋은 피드백을 바탕으로, 이제 모든 고객에게 기본 환경으로 제공하기로 했습니다.  눈부시게 빠른 대시보드에 대비하세요.
+성공적인 미리보기와 미리보기 고객으로부터의 좋은 피드백을 바탕으로, 이제 모든 고객에게 기본 환경으로 제공하기로 했습니다. 눈부시게 빠른 대시보드에 대비하세요.
 
-자세한 내용은 다음을 참조하십시오. link:br-use-dashboard.html["대시보드에서 보호 상태 보기"] .
+자세한 내용은 다음을 참조하세요.link:br-use-dashboard.html["대시보드에서 보호 상태 보기"] .
 
 
 
 === 공개 기술 미리 보기로서 Microsoft SQL Server 워크로드 지원
 
-NetApp Backup and Recovery의 이번 릴리스에서는 NetApp Backup and Recovery에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다.  이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
 
 이것을 완료하면 미리보기에 가입할 수 있습니다. https://forms.office.com/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOojtBW63mDRDv3ZK50MaTlJUNjdENllaVTRTVFJGSDQ2MFJIREcxN0EwQi4u&route=shorturl["미리보기 가입 양식"^] .
 
@@ -270,11 +270,11 @@ NOTE: Microsoft SQL Server 워크로드 보호에 대한 이 문서는 기술 �
 
 이 NetApp Backup and Recovery 버전에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-* *3-2-1 백업 기능*: 이 버전에서는 SnapCenter 기능이 통합되어 NetApp 백업 및 복구 사용자 인터페이스에서 3-2-1 데이터 보호 전략을 사용하여 SnapCenter 리소스를 관리하고 보호할 수 있습니다.
-* * SnapCenter 에서 가져오기*: SnapCenter 백업 데이터와 정책을 NetApp Backup and Recovery로 가져올 수 있습니다.
+* *3-2-1 백업 기능*: 이 버전에서는 SnapCenter 기능이 통합되어 NetApp Backup and Recovery 사용자 인터페이스에서 3-2-1 데이터 보호 전략을 사용하여 SnapCenter 리소스를 관리하고 보호할 수 있습니다.
+* * SnapCenter 에서 가져오기*: SnapCenter 백업 데이터와 정책을 NetApp Backup and Recovery 로 가져올 수 있습니다.
 * *재설계된 사용자 인터페이스*는 백업 및 복구 작업을 관리하는 데 있어 보다 직관적인 환경을 제공합니다.
 * *백업 대상*: Amazon Web Services(AWS), Microsoft Azure Blob Storage, StorageGRID 및 ONTAP S3 환경에 버킷을 추가하여 Microsoft SQL Server 워크로드의 백업 대상으로 사용할 수 있습니다.
-* *작업 부하 지원*: 이 버전을 사용하면 Microsoft SQL Server 데이터베이스와 가용성 그룹을 백업, 복원, 확인 및 복제할 수 있습니다.  (다른 워크로드에 대한 지원은 향후 릴리스에서 추가될 예정입니다.)
+* *작업 부하 지원*: 이 버전을 사용하면 Microsoft SQL Server 데이터베이스와 가용성 그룹을 백업, 복원, 확인 및 복제할 수 있습니다. (다른 워크로드에 대한 지원은 향후 릴리스에서 추가될 예정입니다.)
 * *유연한 복원 옵션*: 이 버전을 사용하면 데이터가 손상되거나 실수로 데이터가 손실된 경우 원래 위치와 대체 위치 모두로 데이터베이스를 복원할 수 있습니다.
 * *즉각적인 프로덕션 사본*: 몇 시간 또는 며칠이 아닌 몇 분 만에 개발, 테스트 또는 분석을 위한 공간 효율적인 프로덕션 사본을 생성합니다.
 * 이 버전에는 자세한 보고서를 만드는 기능이 포함되어 있습니다.
@@ -286,44 +286,44 @@ Microsoft SQL Server 작업 부하 보호에 대한 자세한 내용은 다음�
 
 == 2025년 6월 9일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === 색인된 카탈로그 지원 업데이트
 
-2025년 2월, 데이터를 복원하는 검색 및 복원 방법에서 사용할 수 있는 업데이트된 인덱싱 기능(인덱싱된 카탈로그 v2)을 출시했습니다.  이전 릴리스에서는 온프레미스 환경에서 데이터 인덱싱 성능이 크게 향상되었습니다.  이 릴리스를 통해 인덱싱 카탈로그를 이제 Amazon Web Services, Microsoft Azure, Google Cloud Platform(GCP) 환경에서 사용할 수 있습니다.
+2025년 2월, 데이터를 복원하는 검색 및 복원 방법에서 사용할 수 있는 업데이트된 인덱싱 기능(인덱싱된 카탈로그 v2)을 출시했습니다. 이전 릴리스에서는 온프레미스 환경에서 데이터 인덱싱 성능이 크게 향상되었습니다. 이 릴리스를 통해 인덱싱 카탈로그를 이제 Amazon Web Services, Microsoft Azure, Google Cloud Platform(GCP) 환경에서 사용할 수 있습니다.
 
-신규 고객의 경우 모든 신규 환경에서 Indexed Catalog v2가 기본적으로 활성화됩니다.  기존 고객인 경우 Indexed Catalog v2를 활용하기 위해 환경을 다시 인덱싱할 수 있습니다.
+신규 고객의 경우 모든 신규 환경에서 Indexed Catalog v2가 기본적으로 활성화됩니다. 기존 고객인 경우 Indexed Catalog v2를 활용하기 위해 환경을 다시 인덱싱할 수 있습니다.
 
 .인덱싱을 어떻게 활성화하나요?
-검색 및 복원 방법을 사용하여 데이터를 복원하려면 먼저 볼륨이나 파일을 복원할 각 원본 작업 환경에서 "인덱싱"을 활성화해야 합니다.  검색 및 복원을 수행할 때 *인덱싱 사용* 옵션을 선택하세요.
+검색 및 복원 방법을 사용하여 데이터를 복원하려면 먼저 볼륨이나 파일을 복원할 각 원본 작업 환경에서 "인덱싱"을 활성화해야 합니다. 검색 및 복원을 수행할 때 *인덱싱 사용* 옵션을 선택하세요.
 
 색인된 카탈로그는 모든 볼륨과 백업 파일을 추적하여 검색을 빠르고 효율적으로 수행할 수 있도록 해줍니다.
 
-자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["검색 및 복원에 대한 인덱싱 활성화"] .
+자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["검색 및 복원에 대한 인덱싱 활성화"] .
 
 
 
 === Azure 개인 링크 엔드포인트 및 서비스 엔드포인트
 
-일반적으로 NetApp Backup and Recovery는 클라우드 공급자와 개인 엔드포인트를 설정하여 보호 작업을 처리합니다.  이 릴리스에서는 NetApp Backup and Recovery가 자동으로 개인 엔드포인트를 생성하거나 비활성화할 수 있는 선택적 설정이 도입되었습니다.  개인 엔드포인트 생성 프로세스를 더 많이 제어하고 싶은 경우 이 기능이 유용할 수 있습니다.
+일반적으로 NetApp Backup and Recovery 클라우드 공급자와 개인 엔드포인트를 설정하여 보호 작업을 처리합니다. 이 릴리스에서는 NetApp Backup and Recovery 자동으로 개인 엔드포인트를 생성하거나 비활성화할 수 있는 선택적 설정이 도입되었습니다. 개인 엔드포인트 생성 프로세스를 더 많이 제어하고 싶은 경우 이 기능이 유용할 수 있습니다.
 
 보호 기능을 활성화하거나 복원 프로세스를 시작할 때 이 옵션을 활성화하거나 비활성화할 수 있습니다.
 
-이 설정을 비활성화하면 NetApp Backup and Recovery가 제대로 작동하도록 개인 엔드포인트를 수동으로 만들어야 합니다.  적절한 연결 없이는 백업 및 복구 작업을 성공적으로 수행하지 못할 수 있습니다.
+이 설정을 비활성화하면 NetApp Backup and Recovery 제대로 작동하도록 개인 엔드포인트를 수동으로 만들어야 합니다. 적절한 연결 없이는 백업 및 복구 작업을 성공적으로 수행하지 못할 수 있습니다.
 
 
 
 === ONTAP S3에서 SnapMirror to Cloud Resync 지원
 
-이전 릴리스에서는 SnapMirror to Cloud Resync(SM-C Resync)에 대한 지원이 도입되었습니다.  이 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호를 간소화합니다.  이 릴리스에서는 ONTAP S3의 ​​SM-C Resync 지원은 물론 Wasabi, MinIO와 같은 다른 S3 호환 공급자에 대한 지원도 추가되었습니다.
+이전 릴리스에서는 SnapMirror to Cloud Resync(SM-C Resync)에 대한 지원이 도입되었습니다. 이 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호를 간소화합니다. 이 릴리스에서는 ONTAP S3의 ​​SM-C Resync 지원은 물론 Wasabi, MinIO와 같은 다른 S3 호환 공급자에 대한 지원도 추가되었습니다.
 
 
 
 === StorageGRID 용 자체 버킷 가져오기
 
-작업 환경의 개체 스토리지에 백업 파일을 만들면 기본적으로 NetApp Backup and Recovery는 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다.  이전에는 이를 재정의하여 Amazon S3, Azure Blob Storage, Google Cloud Storage에 대한 자체 컨테이너를 지정할 수 있었습니다.  이 릴리스를 사용하면 이제 자체 StorageGRID 개체 스토리지 컨테이너를 가져올 수 있습니다.
+작업 환경의 개체 스토리지에 백업 파일을 만들면 기본적으로 NetApp Backup and Recovery 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다. 이전에는 이를 재정의하여 Amazon S3, Azure Blob Storage, Google Cloud Storage에 대한 자체 컨테이너를 지정할 수 있었습니다. 이 릴리스를 사용하면 이제 자체 StorageGRID 개체 스토리지 컨테이너를 가져올 수 있습니다.
 
 보다 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html["나만의 객체 스토리지 컨테이너를 만드세요"] .
 
@@ -331,7 +331,7 @@ Microsoft SQL Server 작업 부하 보호에 대한 자세한 내용은 다음�
 
 == 2025년 5월 13일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
@@ -349,7 +349,7 @@ SnapMirror to Cloud Resync는 여러 환경 간에 백업 연속성을 유지함
 
 === 타사 MinIO 객체 저장소 지원(미리 보기)
 
-NetApp Backup and Recovery는 이제 MinIO에 중점을 두고 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.
+NetApp Backup and Recovery 이제 MinIO에 중점을 두고 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.
 
 이 미리보기 버전을 통해 전체 기능이 출시되기 전에 타사 개체 저장소와의 강력한 통합을 보장하고자 합니다.  여러분은 이 새로운 기능을 살펴보고 서비스 개선에 도움이 되는 피드백을 제공해 주시기 바랍니다.
 
@@ -376,7 +376,7 @@ IMPORTANT: 이 기능은 실제 운영 환경에서는 사용하면 안 됩니�
 
 == 2025년 4월 16일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
@@ -385,7 +385,7 @@ IMPORTANT: 이 기능은 실제 운영 환경에서는 사용하면 안 됩니�
 이번 릴리스에서는 인터페이스를 단순화하여 사용자 경험을 향상시킵니다.
 
 * V2 대시보드의 볼륨 테이블에서 집계 열과 스냅샷 정책, 백업 정책, 복제 정책 열이 제거되어 레이아웃이 더욱 간소화되었습니다.
-* 활성화되지 않은 작업 환경을 드롭다운 목록에서 제외하면 인터페이스가 간결해지고, 탐색 효율성이 높아지며, 로딩 속도도 빨라집니다.
+* 활성화되지 않은 작업 환경을 드롭다운 목록에서 제외하면 인터페이스가 간결해지고, 탐색 효율성이 높아지며, 로딩 속도가 빨라집니다.
 * 태그 열의 정렬 기능이 비활성화되어 있어도 태그를 계속 볼 수 있으므로 중요한 정보에 쉽게 접근할 수 있습니다.
 * 보호 아이콘의 라벨을 제거하면 모양이 더 깔끔해지고 로딩 시간도 단축됩니다.
 * 작업 환경 활성화 프로세스 동안 대화 상자에 로딩 아이콘이 표시되어 검색 프로세스가 완료될 때까지 피드백을 제공하여 시스템 운영의 투명성과 신뢰도를 높입니다.
@@ -401,7 +401,7 @@ IMPORTANT: 이 기능은 실제 운영 환경에서는 사용하면 안 됩니�
 
 === 타사 Wasabi 객체 저장소 지원(미리 보기)
 
-NetApp Backup and Recovery는 이제 Wasabi를 중심으로 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.
+NetApp Backup and Recovery 이제 Wasabi를 중심으로 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.
 
 
 
@@ -426,11 +426,11 @@ vi default.json
 . 수정하다 `allow-s3-compatible` : 거짓 `allow-s3-compatible` : 진실.
 . 변경 사항을 저장합니다.
 . 컨테이너에서 나오세요.
-. NetApp 백업 및 복구 CBS 서버 컨테이너를 다시 시작합니다.
+. NetApp Backup and Recovery CBS 서버 컨테이너를 다시 시작합니다.
 
 
 .결과
-컨테이너가 다시 켜지면 NetApp 백업 및 복구 UI를 엽니다.  백업을 시작하거나 백업 전략을 편집하면 AWS, Microsoft Azure, Google Cloud, StorageGRID, ONTAP S3의 ​​다른 백업 공급자와 함께 새로운 공급자 "S3 호환"이 나열됩니다.
+컨테이너가 다시 켜지면 NetApp Backup and Recovery UI를 엽니다.  백업을 시작하거나 백업 전략을 편집하면 AWS, Microsoft Azure, Google Cloud, StorageGRID, ONTAP S3의 ​​다른 백업 공급자와 함께 새로운 공급자 "S3 호환"이 나열됩니다.
 
 
 
@@ -452,13 +452,13 @@ vi default.json
 
 == 2025년 3월 17일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === SMB 스냅샷 검색
 
-이 NetApp 백업 및 복구 업데이트는 SMB 환경에서 고객이 로컬 스냅샷을 탐색하지 못하는 문제를 해결했습니다.
+이 NetApp Backup and Recovery 업데이트는 SMB 환경에서 고객이 로컬 스냅샷을 탐색하지 못하는 문제를 해결했습니다.
 
 
 
@@ -470,25 +470,25 @@ vi default.json
 
 === 백업 정책 보존 한도
 
-이전에는 NetApp 백업 및 복구 UI가 백업을 999개 사본으로 제한했지만 CLI에서는 더 많은 사본을 허용했습니다.  이제 백업 정책에 최대 4,000개의 볼륨을 첨부하고 백업 정책에 첨부되지 않은 볼륨을 1,018개까지 포함할 수 있습니다.  이 업데이트에는 이러한 제한을 초과하지 않도록 하는 추가 검증이 포함되어 있습니다.
+이전에는 NetApp Backup and Recovery UI가 백업을 999개 사본으로 제한했지만 CLI에서는 더 많은 사본을 허용했습니다.  이제 백업 정책에 최대 4,000개의 볼륨을 첨부하고 백업 정책에 첨부되지 않은 볼륨을 1,018개까지 포함할 수 있습니다.  이 업데이트에는 이러한 제한을 초과하지 않도록 하는 추가 검증이 포함되어 있습니다.
 
 
 
 === SnapMirror 클라우드 재동기화
 
-이 업데이트는 SnapMirror 관계가 삭제된 후 지원되지 않는 ONTAP 버전에 대해 NetApp Backup and Recovery에서 SnapMirror Cloud 재동기화를 시작할 수 없도록 보장합니다.
+이 업데이트는 SnapMirror 관계가 삭제된 후 지원되지 않는 ONTAP 버전에 대해 NetApp Backup and Recovery 에서 SnapMirror Cloud 재동기화를 시작할 수 없도록 보장합니다.
 
 
 
 == 2025년 2월 21일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === 고성능 인덱싱
 
-NetApp Backup and Recovery는 소스 시스템의 데이터 인덱싱을 보다 효율적으로 만들어 주는 업데이트된 인덱싱 기능을 도입했습니다.  새로운 인덱싱 기능에는 UI 업데이트, 데이터 복원을 위한 검색 및 복원 방법의 성능 개선, 글로벌 검색 기능 업그레이드, 확장성 향상 등이 포함됩니다.
+NetApp Backup and Recovery 소스 시스템의 데이터 인덱싱을 보다 효율적으로 만들어 주는 업데이트된 인덱싱 기능을 도입했습니다.  새로운 인덱싱 기능에는 UI 업데이트, 데이터 복원을 위한 검색 및 복원 방법의 성능 개선, 글로벌 검색 기능 업그레이드, 확장성 향상 등이 포함됩니다.
 
 개선 사항에 대한 세부 내용은 다음과 같습니다.
 
@@ -536,13 +536,13 @@ NetApp Backup and Recovery는 소스 시스템의 데이터 인덱싱을 보다 
 
 == 2025년 2월 13일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
-=== NetApp 백업 및 복구 미리보기 릴리스
+=== NetApp Backup and Recovery 미리보기 릴리스
 
-NetApp Backup and Recovery의 이 Preview 릴리스에서는 NetApp Backup and Recovery에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다.  이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
+NetApp Backup and Recovery 의 이 Preview 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
 
 
 NOTE: 이 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.
@@ -550,24 +550,24 @@ NOTE: 이 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제
 NetApp Backup and Recovery Preview 2025 버전에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 * 백업 및 복구 작업을 관리하는 데 있어 보다 직관적인 환경을 제공하는 재설계된 사용자 인터페이스입니다.
-* 미리 보기 버전을 사용하면 Microsoft SQL Server 데이터베이스를 백업하고 복원할 수 있습니다.  (다른 워크로드에 대한 지원은 향후 릴리스에서 추가될 예정입니다.)
-* 이 버전에서는 SnapCenter 기능이 통합되어 NetApp 백업 및 복구 사용자 인터페이스에서 3-2-1 데이터 보호 전략을 사용하여 SnapCenter 리소스를 관리하고 보호할 수 있습니다.
-* 이 버전을 사용하면 SnapCenter 워크로드를 NetApp Backup and Recovery로 가져올 수 있습니다.
+* 미리 보기 버전을 사용하면 Microsoft SQL Server 데이터베이스를 백업하고 복원할 수 있습니다. (다른 워크로드에 대한 지원은 향후 릴리스에서 추가될 예정입니다.)
+* 이 버전에서는 SnapCenter 기능이 통합되어 NetApp Backup and Recovery 사용자 인터페이스에서 3-2-1 데이터 보호 전략을 사용하여 SnapCenter 리소스를 관리하고 보호할 수 있습니다.
+* 이 버전을 사용하면 SnapCenter 워크로드를 NetApp Backup and Recovery 로 가져올 수 있습니다.
 
 
 
 
 == 2024년 11월 22일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === SnapLock Compliance 및 SnapLock Enterprise 보호 모드
 
-NetApp Backup and Recovery는 이제 SnapLock Compliance 또는 SnapLock Enterprise 보호 모드를 사용하여 구성된 FlexVol 및 FlexGroup 온프레미스 볼륨을 모두 백업할 수 있습니다. 이 지원을 받으려면 클러스터에서 ONTAP 9.14 이상을 실행해야 합니다. ONTAP 버전 9.11.1부터 SnapLock Enterprise 모드를 사용하여 FlexVol 볼륨을 백업하는 기능이 지원되었습니다. 이전 ONTAP 릴리스에서는 SnapLock 보호 볼륨 백업을 지원하지 않습니다.
+NetApp Backup and Recovery 이제 SnapLock Compliance 또는 SnapLock Enterprise 보호 모드를 사용하여 구성된 FlexVol 및 FlexGroup 온프레미스 볼륨을 모두 백업할 수 있습니다. 이 지원을 받으려면 클러스터에서 ONTAP 9.14 이상을 실행해야 합니다. ONTAP 버전 9.11.1부터 SnapLock Enterprise 모드를 사용하여 FlexVol 볼륨을 백업하는 기능이 지원되었습니다. 이전 ONTAP 릴리스에서는 SnapLock 보호 볼륨 백업을 지원하지 않습니다.
 
-지원되는 볼륨의 전체 목록을 확인하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/concept-backup-to-cloud.html["NetApp 백업 및 복구에 대해 알아보세요"] .
+지원되는 볼륨의 전체 목록을 확인하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/concept-backup-to-cloud.html["NetApp Backup and Recovery 에 대해 알아보세요"] .
 
 
 
@@ -587,17 +587,17 @@ NetApp Backup and Recovery는 이제 SnapLock Compliance 또는 SnapLock Enterpr
 
 == 2024년 9월 27일
 
-이 NetApp 백업 및 복구 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
 
 
 === RHEL 8 또는 9에서 탐색 및 복원을 통한 Podman 지원
 
-NetApp Backup and Recovery는 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다.  이는 NetApp 백업 및 복구 찾아보기 및 복원 방법에 적용됩니다.
+NetApp Backup and Recovery 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다.  이는 NetApp Backup and Recovery 찾아보기 및 복원 방법에 적용됩니다.
 
-콘솔 에이전트 버전 3.9.40은 RHEL 8 또는 9 호스트에서 콘솔 에이전트 소프트웨어를 수동으로 설치하는 경우 해당 위치에 관계 없이 Red Hat Enterprise Linux 버전 8 및 9의 특정 버전을 지원합니다. https://docs.netapp.com/us-en/console-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["호스트 요구 사항"^] .  최신 RHEL 버전에는 Docker 엔진 대신 Podman 엔진이 필요합니다.  이전에는 NetApp Backup and Recovery에서 Podman 엔진을 사용할 때 두 가지 제한이 있었습니다.  이러한 제한은 제거되었습니다.
+콘솔 에이전트 버전 3.9.40은 RHEL 8 또는 9 호스트에서 콘솔 에이전트 소프트웨어를 수동으로 설치하는 경우 해당 위치에 관계 없이 Red Hat Enterprise Linux 버전 8 및 9의 특정 버전을 지원합니다. https://docs.netapp.com/us-en/console-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["호스트 요구 사항"^] .  최신 RHEL 버전에는 Docker 엔진 대신 Podman 엔진이 필요합니다.  이전에는 NetApp Backup and Recovery Podman 엔진을 사용할 때 두 가지 제한이 있었습니다.  이러한 제한은 제거되었습니다.
 
-https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."] .
+https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."].
 
 
 
@@ -605,4 +605,4 @@ https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.h
 
 이번 릴리스에는 기준 색인 작업을 훨씬 더 빠르게 완료하는 개선된 카탈로그 색인이 포함되어 있습니다.  더 빠른 인덱싱을 통해 검색 및 복원 기능을 더욱 빠르게 사용할 수 있습니다.
 
-https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."] .
+https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."].

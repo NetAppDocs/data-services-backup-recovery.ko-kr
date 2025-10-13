@@ -1,4 +1,4 @@
-= NetApp 콘솔에서 ONTAP 시스템을 찾아보세요
+= NetApp Console 에서 ONTAP 시스템을 찾아보세요
 :allow-uri-read: 
 
 
@@ -6,7 +6,7 @@
 
 ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
-* NetApp 콘솔에서 ONTAP 시스템을 찾아보세요
+* NetApp Console 에서 ONTAP 시스템을 찾아보세요
 * ONTAP 시스템 요구 사항 확인
 * 개체 스토리지에 데이터를 백업하기 위한 ONTAP 네트워킹 요구 사항 확인
 * 볼륨 복제를 위한 ONTAP 네트워킹 요구 사항 확인
@@ -14,11 +14,11 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
 
 
-=== NetApp 콘솔에서 ONTAP 시스템을 찾아보세요
+=== NetApp Console 에서 ONTAP 시스템을 찾아보세요
 
-소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템 모두 NetApp 콘솔 *시스템* 페이지에서 사용할 수 있어야 합니다.
+소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템 모두 NetApp Console *시스템* 페이지에서 사용할 수 있어야 합니다.
 
-클러스터를 추가하려면 클러스터 관리 IP 주소와 관리자 사용자 계정의 비밀번호를 알아야 합니다. https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법을 알아보세요"^] .
+클러스터를 추가하려면 클러스터 관리 IP 주소와 관리자 사용자 계정의 비밀번호를 알아야 합니다. https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-ontap.html["클러스터를 검색하는 방법을 알아보세요"^].
 
 
 
@@ -29,7 +29,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 * 최소 ONTAP 9.8; ONTAP 9.8P13 이상을 권장합니다.
 * SnapMirror 라이선스(프리미엄 번들 또는 데이터 보호 번들의 일부로 포함됨).
 +
-*참고:* NetApp Backup and Recovery를 사용하는 경우 "하이브리드 클라우드 번들"은 필요하지 않습니다.
+*참고:* NetApp Backup and Recovery 사용하는 경우 "하이브리드 클라우드 번들"은 필요하지 않습니다.
 
 +
 방법을 배우십시오 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["클러스터 라이선스 관리"^] .
@@ -37,6 +37,6 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 * 시간과 시간대가 올바르게 설정되었습니다.  방법을 배우십시오 https://docs.netapp.com/us-en/ontap/system-admin/manage-cluster-time-concept.html["클러스터 시간 구성"^] .
 * 데이터를 복제하려는 경우 데이터를 복제하기 전에 소스 및 대상 시스템에서 호환되는 ONTAP 버전이 실행되고 있는지 확인해야 합니다.
 +
-https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-snapmirror-concept.html["SnapMirror 관계에 대한 호환 ONTAP 버전 보기"^] .
+https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-snapmirror-concept.html["SnapMirror 관계에 대한 호환 ONTAP 버전 보기"^].
 
 

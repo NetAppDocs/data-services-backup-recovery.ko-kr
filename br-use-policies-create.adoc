@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-policies-create.html 
 keywords: backing up, back up, backup, backup on-prem ontap, policy, policies, backup policies, cloud backup, aws, aws s3, azure, google cloud 
-summary: NetApp 백업 및 복구에서 백업 빈도, 백업 수행 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다. 
+summary: NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다. 
 ---
-= NetApp Backup and Recovery에서 백업을 관리하기 위한 정책을 만들고 관리합니다.
+= NetApp Backup and Recovery 에서 백업을 관리하기 위한 정책을 만들고 관리합니다.
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,12 +12,12 @@ summary: NetApp 백업 및 복구에서 백업 빈도, 백업 수행 시간, 보
 
 
 [role="lead"]
-NetApp 백업 및 복구에서 백업 빈도, 백업 수행 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다.
+NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다.
 
 
 NOTE: 이러한 옵션과 구성 섹션 중 일부는 모든 워크로드에 사용할 수 없습니다.
 
-SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되는 정책과 NetApp 백업 및 복구에서 사용되는 정책 사이에 약간의 차이가 발생할 수 있습니다. 보다 link:reference-policy-differences-snapcenter.html["SnapCenter 와 NetApp 백업 및 복구 간의 정책 차이점"] .
+SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에 약간의 차이가 발생할 수 있습니다.  보다link:reference-policy-differences-snapcenter.html["SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점"] .
 
 정책과 관련하여 다음과 같은 목표를 달성할 수 있습니다.
 
@@ -33,7 +33,7 @@ SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되�
 
 == 정책 보기
 
-. NetApp 백업 및 복구 메뉴에서 *정책*을 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *정책*을 선택합니다.
 . 이 정책 세부 사항을 검토하세요.
 +
 ** *작업 부하*: 예로는 Microsoft SQL Server, Volumes, VMware, KVM, Hyper-V 또는 Kubernetes가 있습니다.
@@ -51,7 +51,7 @@ SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되�
 
 로컬 스냅샷, 보조 스토리지로의 복제, 개체 스토리지로의 백업을 관리하는 정책을 만들 수 있습니다.  3-2-1 전략의 일부에는 *기본* 스토리지 시스템의 인스턴스, 데이터베이스, 애플리케이션 또는 VM의 스냅샷 복사본을 만드는 것이 포함됩니다.
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .시작하기 전에
 보조 저장소에 복제하고 로컬 스냅샷이나 원격 ONTAP 보조 저장소에서 스냅샷 잠금을 사용하려는 경우 먼저 클러스터 수준에서 ONTAP 규정 준수 클록을 초기화해야 합니다.  이는 정책에서 스냅샷 잠금을 활성화하기 위한 요구 사항입니다.
@@ -61,7 +61,7 @@ SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되�
 스냅샷 잠금에 대한 일반적인 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/ontap/snaplock/snapshot-lock-concept.html["ONTAP 의 스냅샷 잠금"^] .
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *정책*을 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *정책*을 선택합니다.
 . 정책 페이지에서 *새 정책 만들기*를 선택합니다.
 . 정책 페이지에서 다음 정보를 제공하세요.
 +
@@ -129,7 +129,7 @@ VMware 워크로드의 경우 이는 기본 스토리지 시스템의 데이터�
 * 스냅샷 일정을 선택하려면 *일정 추가* 옵션을 선택하세요.  최대 5개의 일정을 가질 수 있습니다.
 * *스냅샷 빈도*: 매시간, 매일, 매주, 매월 또는 매년 빈도를 선택하세요.  Kubernetes 워크로드에는 연간 빈도를 사용할 수 없습니다.
 * *스냅샷 보존*: 보관할 스냅샷 수를 입력합니다.
-* *로그 백업 활성화*: (Microsoft SQL Server 워크로드 및 Oracle Database 워크로드에만 적용됩니다.)  이 옵션을 활성화하면 로그를 백업하고 로그 백업 빈도와 보존 기간을 설정할 수 있습니다. 이렇게 하려면 로그 백업을 이미 구성해야 합니다. 보다 link:br-start-configure.html["로그 디렉토리 구성"] .
+* *로그 백업 활성화*: (Microsoft SQL Server 워크로드 및 Oracle Database 워크로드에만 적용됩니다.)  이 옵션을 활성화하면 로그를 백업하고 로그 백업 빈도와 보존 기간을 설정할 수 있습니다. 이렇게 하려면 로그 백업을 이미 구성해야 합니다.  보다link:br-start-configure.html["로그 디렉토리 구성"] .
 +
 ** *백업 후 아카이브 로그 정리*: (Oracle Database 워크로드에만 해당) 로그 백업이 활성화된 경우, 선택적으로 이 기능을 활성화하여 백업 및 복구에서 Oracle 아카이브 로그를 보관하는 기간을 제한할 수 있습니다.  보존 기간을 선택할 수 있으며, 백업 및 복구에서 보관 로그를 삭제할 위치도 선택할 수 있습니다.
 
@@ -225,7 +225,7 @@ NOTE: 표시되는 필드는 선택한 공급자와 아키텍처에 따라 달�
 선택적으로 정책에서 고급 설정을 구성할 수 있습니다.  이러한 설정은 로컬 스냅샷, 보조 스토리지로의 복제, 개체 스토리지로의 백업을 포함한 모든 백업 아키텍처에서 사용할 수 있습니다. 이러한 설정은 Kubernetes 워크로드에는 사용할 수 없습니다.  사용 가능한 고급 설정은 페이지 상단에서 선택한 작업 부하에 따라 다르므로 여기에 설명된 고급 설정이 모든 작업 부하에 적용되지 않을 수 있습니다.  Kubernetes 워크로드에 대한 정책을 구성할 때 고급 설정을 사용할 수 없습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *정책*을 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *정책*을 선택합니다.
 . 정책 페이지에서 *새 정책 만들기*를 선택합니다.
 . *정책 > 고급* 설정 섹션에서 *고급 작업 선택* 메뉴를 선택하여 고급 설정 목록에서 선택합니다.
 . 보고 싶거나 변경하고 싶은 설정을 활성화한 다음 *수락*을 선택하세요.
@@ -278,13 +278,13 @@ NOTE: 이 기능은 VMware Preview 워크로드에서는 사용할 수 없습니
 
 개체 스토리지에 백업하는 정책을 편집하는 경우 보관을 활성화할 수 있습니다.
 
-SnapCenter 에서 리소스를 가져온 경우 SnapCenter 에서 사용되는 정책과 NetApp 백업 및 복구에서 사용되는 정책 사이에 차이가 있을 수 있습니다. 보다 link:reference-policy-differences-snapcenter.html["SnapCenter 와 NetApp 백업 및 복구 간의 정책 차이점"] .
+SnapCenter 에서 리소스를 가져온 경우 SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에 차이가 있을 수 있습니다.  보다link:reference-policy-differences-snapcenter.html["SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점"] .
 
-.필수 NetApp 콘솔 역할
-백업 및 복구의 최고 관리자. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+.필수 NetApp Console 역할
+백업 및 복구의 최고 관리자. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 콘솔에서 *보호* > *백업 및 복구*로 이동합니다.
+. NetApp Console 에서 *보호* > *백업 및 복구*로 이동합니다.
 . *정책* 옵션을 선택하세요.
 . 편집할 정책을 선택하세요.
 . *작업*을 선택하세요image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *편집*을 선택하세요.

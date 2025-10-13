@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-reference-gcp-archive-storage-tiers.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery는 하나의 Google 보관 스토리지 클래스와 대부분의 지역을 지원합니다. 
+summary: NetApp Backup and Recovery 하나의 Google 보관 스토리지 클래스와 대부분의 지역을 지원합니다. 
 ---
-= NetApp Backup and Recovery를 통해 지원되는 Google 아카이브 스토리지 계층
+= NetApp Backup and Recovery 통해 지원되는 Google 아카이브 스토리지 계층
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,24 +14,24 @@ summary: NetApp Backup and Recovery는 하나의 Google 보관 스토리지 클�
 
 
 [role="lead"]
-NetApp Backup and Recovery는 하나의 Google 보관 스토리지 클래스와 대부분의 지역을 지원합니다.
+NetApp Backup and Recovery 하나의 Google 보관 스토리지 클래스와 대부분의 지역을 지원합니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp 백업 및 복구 UI로 전환"] .
+*참고* NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
 
 ====
 
 
-== NetApp 백업 및 복구에 지원되는 Google 보관 스토리지 클래스
+== NetApp Backup and Recovery 에 지원되는 Google 보관 스토리지 클래스
 
 백업 파일이 처음 생성되면 _표준_ 저장소에 저장됩니다.  이 계층은 자주 액세스하지 않는 데이터를 저장하는 데 최적화되어 있지만, 즉시 액세스할 수도 있습니다.
 
-온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우, 특정 기간(일반적으로 30일 이상)이 지나면 NetApp 백업 및 복구 UI에서 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다.  이 계층의 데이터는 검색 비용이 더 높으므로 보관된 백업 파일에서 데이터를 복원해야 하는 빈도를 고려해야 합니다.  이 페이지에서 보관 저장소에서 데이터를 복원하는 방법에 대한 섹션을 참조하세요.
+온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우, 특정 기간(일반적으로 30일 이상)이 지나면 NetApp Backup and Recovery UI에서 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다.  이 계층의 데이터는 검색 비용이 더 높으므로 보관된 백업 파일에서 데이터를 복원해야 하는 빈도를 고려해야 합니다.  이 페이지에서 보관 저장소에서 데이터를 복원하는 방법에 대한 섹션을 참조하세요.
 
-이러한 유형의 수명 주기 규칙으로 NetApp Backup and Recovery를 구성하는 경우 Google 계정에서 버킷을 설정할 때 어떤 수명 주기 규칙도 구성해서는 안 됩니다.
+이러한 유형의 수명 주기 규칙으로 NetApp Backup and Recovery 구성하는 경우 Google 계정에서 버킷을 설정할 때 어떤 수명 주기 규칙도 구성해서는 안 됩니다.
 
-https://cloud.google.com/storage/docs/storage-classes["Google 스토리지 클래스에 대해 알아보세요"^] .
+https://cloud.google.com/storage/docs/storage-classes["Google 스토리지 클래스에 대해 알아보세요"^].
 
 
 
@@ -43,7 +43,7 @@ Google 보관함에서 데이터를 복원하는 데 비용이 얼마나 드나�
 Google 보관소에 보관된 항목을 복원하는 데 얼마나 걸리나요?:: 전체 복구 시간은 2가지 부분으로 구성됩니다.
 +
 --
-* *검색 시간*: 보관소에서 백업 파일을 검색하여 표준 저장소에 넣는 데 걸리는 시간입니다.  이 시기를 '보수화' 시기라고도 합니다.  다른 클라우드 공급업체가 제공하는 "가장 차가운" 저장 솔루션과 달리, 밀리초 단위로 데이터에 액세스할 수 있습니다.
+* *검색 시간*: 보관소에서 백업 파일을 검색하여 표준 저장소에 넣는 데 걸리는 시간입니다.  이 시기를 "보습" 시기라고도 합니다.  다른 클라우드 공급업체가 제공하는 "가장 차가운" 저장 솔루션과 달리, 밀리초 단위로 데이터에 액세스할 수 있습니다.
 * *복원 시간*: 표준 저장소의 백업 파일에서 데이터를 복원하는 데 걸리는 시간입니다.  이 시간은 보관 계층을 사용하지 않을 때 표준 저장소에서 직접 수행하는 일반적인 복원 작업과 다르지 않습니다.
 
 

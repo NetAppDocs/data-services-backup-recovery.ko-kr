@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-kvm-restore.html 
 keywords: restore, vm, kvm, virtual machine, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp 백업 및 복구를 통해 KVM 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery 통해 KVM 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용하여 KVM 가상 머신 복원
+= NetApp Backup and Recovery 사용하여 KVM 가상 머신 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 백업 및 복구를 통해 KVM 워크로드를 보호하세요.
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 보호 그룹 백업 또는 개체 스토리지에 저장된 백업에서 KVM 가상 머신을 복원합니다.
+NetApp Backup and Recovery 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 보호 그룹 백업 또는 개체 스토리지에 저장된 백업에서 KVM 가상 머신을 복원합니다.
 
 .이 위치에서 복원
 다양한 시작 위치에서 가상 머신을 복원할 수 있습니다.
@@ -31,7 +31,7 @@ NetApp Backup and Recovery를 사용하여 스냅샷 복사본, 보조 스토리
 
 
 .개체 저장소 고려 사항에서 복원
-개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 보호가 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 무결성 검사를 실행하라는 메시지가 표시됩니다. 검사를 실시해 보시기 바랍니다.
+개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 보호가 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 무결성 검사를 실행하라는 메시지가 표시됩니다.  검사를 실시해 보시기 바랍니다.
 
 
 TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로부터 추가적인 퇴장 비용이 발생합니다.
@@ -42,7 +42,7 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 
 가상 머신을 복원하면 다음이 발생합니다.
 
-* 로컬 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery는 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
+* 로컬 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
 * 복제된 VM에서 복원하는 경우 원본 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
 * 개체 스토리지에서 백업을 복원하면 데이터를 원래 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
 
@@ -55,11 +55,11 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 
 복원 옵션을 사용하여 KVM 가상 머신을 복원합니다. 스냅샷을 이름이나 필터를 사용하여 검색할 수 있습니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
-. NetApp 백업 및 복구 메뉴에서 *복원*을 선택합니다.
+. NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.
 . 이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *KVM*을 선택합니다.
 . 복원하려는 VM의 이름을 입력하거나 복원하려는 리소스가 있는 VM 호스트 또는 스토리지 풀을 필터링합니다.
 +

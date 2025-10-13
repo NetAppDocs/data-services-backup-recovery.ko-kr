@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-protect-overview.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp 백업 및 복구를 사용하여 ONTAP 볼륨 데이터를 보호하세요
+= NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 보호하세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp Backup and Recovery는 ONTAP 볼륨 데이터의 보호 및 장기 보관을 위한 백업 및 복원 기능을 제공합니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.
+NetApp Backup and Recovery ONTAP 볼륨 데이터의 보호 및 장기 보관을 위한 백업 및 복원 기능을 제공합니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 활성화 후 백업 및 복구를 통해 블록 수준의 증분적 영구 백업이 생성되어 다른 ONTAP 클러스터와 클라우드의 개체 스토리지에 저장됩니다.  소스 볼륨 외에도 다음이 제공됩니다.
@@ -30,7 +30,7 @@ NetApp Backup and Recovery는 ONTAP 볼륨 데이터의 보호 및 장기 보관
 
 image:diagram-321-overview-unified.png["백업 파일이 소스 시스템에 스냅샷 복사본으로, 보조 스토리지 시스템에 복제된 볼륨으로, 개체 스토리지에 백업 파일로 존재하는 방식을 보여주는 다이어그램입니다."]
 
-NetApp 백업 및 복구는 NetApp의 SnapMirror 데이터 복제 기술을 활용하여 스냅샷 사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.
+NetApp Backup and Recovery NetApp의 SnapMirror 데이터 복제 기술을 활용하여 스냅샷 사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.
 
 3-2-1 접근 방식의 이점은 다음과 같습니다.
 
@@ -52,7 +52,7 @@ NetApp 백업 및 복구는 NetApp의 SnapMirror 데이터 복제 기술을 활�
 * 두 시스템 간의 사전 공유 키(PSK)를 통해 기본 ONTAP 전송 중 암호화가 설정됩니다.
 * 복사된 데이터는 쓰기 가능하고 사용할 준비가 될 때까지 변경할 수 없습니다.
 * 전송에 실패하면 복제가 자체적으로 복구됩니다.
-* 와 비교했을 때 https://docs.netapp.com/us-en/data-services-replication/index.html["NetApp 복제"^] NetApp Backup and Recovery의 복제에는 다음과 같은 기능이 포함됩니다.
+* 와 비교했을 때 https://docs.netapp.com/us-en/data-services-replication/index.html["NetApp Replication"^] NetApp Backup and Recovery 의 복제에는 다음과 같은 기능이 포함됩니다.
 +
 ** 한 번에 여러 개의 FlexVol 볼륨을 보조 시스템에 복제합니다.
 ** UI를 사용하여 복제된 볼륨을 소스 시스템이나 다른 시스템으로 복원합니다.
@@ -91,13 +91,13 @@ NetApp 백업 및 복구는 NetApp의 SnapMirror 데이터 복제 기술을 활�
 
 == 백업 및 복원 작업을 위한 지원 시스템
 
-NetApp Backup and Recovery는 ONTAP 시스템과 퍼블릭 및 프라이빗 클라우드 공급업체를 지원합니다.
+NetApp Backup and Recovery ONTAP 시스템과 퍼블릭 및 프라이빗 클라우드 공급업체를 지원합니다.
 
 
 
 === 지원되는 지역
 
-NetApp 백업 및 복구는 많은 Amazon Web Services, Microsoft Azure 및 Google Cloud 지역에서 Cloud Volumes ONTAP 통해 지원됩니다.
+NetApp Backup and Recovery 많은 Amazon Web Services, Microsoft Azure 및 Google Cloud 지역에서 Cloud Volumes ONTAP 통해 지원됩니다.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions?__hstc=177456119.0da05194dc19e7d38fcb4a4d94f105bc.1583956311718.1592507347473.1592829225079.52&__hssc=177456119.1.1592838591096&__hsfp=76784061&hsCtaTracking=c082a886-e2e2-4ef0-8ef2-89061b2b1955%7Cd07def13-e88c-40a0-b2a1-23b3b4e7a6e7#cvo["글로벌 지역 지도를 사용하여 자세히 알아보세요"^]
 
@@ -105,7 +105,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions?__hstc=177456119.0da05194
 
 === 지원되는 백업 대상
 
-NetApp Backup and Recovery를 사용하면 다음 소스 시스템의 ONTAP 볼륨을 퍼블릭 및 프라이빗 클라우드 공급자의 다음 보조 시스템과 개체 스토리지로 백업할 수 있습니다.  스냅샷 사본은 소스 시스템에 저장됩니다.
+NetApp Backup and Recovery 사용하면 다음 소스 시스템의 ONTAP 볼륨을 퍼블릭 및 프라이빗 클라우드 공급자의 다음 보조 시스템과 개체 스토리지로 백업할 수 있습니다.  스냅샷 사본은 소스 시스템에 저장됩니다.
 
 [cols="33,33,33"]
 |===
@@ -157,7 +157,7 @@ NetApp Backup and Recovery를 사용하면 다음 소스 시스템의 ONTAP 볼�
 
 == 지원되는 볼륨
 
-NetApp Backup and Recovery는 다음 유형의 볼륨을 지원합니다.
+NetApp Backup and Recovery 다음 유형의 볼륨을 지원합니다.
 
 * FlexVol 읽기-쓰기 볼륨
 * FlexGroup 볼륨( ONTAP 9.12.1 이상 필요)
@@ -167,7 +167,7 @@ NetApp Backup and Recovery는 다음 유형의 볼륨을 지원합니다.
 
 
 
-NOTE: NetApp Backup and Recovery는 FlexCache 볼륨의 백업을 지원하지 않습니다.
+NOTE: NetApp Backup and Recovery FlexCache 볼륨의 백업을 지원하지 않습니다.
 
 섹션을 참조하세요link:br-reference-limitations.html["ONTAP 볼륨에 대한 백업 및 복원 제한 사항"] 추가 요구 사항 및 제한 사항에 대해서는.
 
@@ -175,7 +175,7 @@ NOTE: NetApp Backup and Recovery는 FlexCache 볼륨의 백업을 지원하지 �
 
 == 비용
 
-ONTAP 시스템과 함께 NetApp 백업 및 복구를 사용하는 경우 리소스 요금과 서비스 요금이라는 두 가지 유형의 비용이 발생합니다.  두 요금 모두 서비스의 객체 백업 부분에 대한 요금입니다.
+ONTAP 시스템과 함께 NetApp Backup and Recovery 사용하는 경우 리소스 요금과 서비스 요금이라는 두 가지 유형의 비용이 발생합니다.  두 요금 모두 서비스의 객체 백업 부분에 대한 요금입니다.
 
 스냅샷 복사본이나 복제 볼륨을 생성하는 데는 비용이 들지 않습니다. 스냅샷 복사본과 복제 볼륨을 저장하는 데 필요한 디스크 공간 외에는 비용이 들지 않습니다.
 
@@ -185,7 +185,7 @@ ONTAP 시스템과 함께 NetApp 백업 및 복구를 사용하는 경우 리소
 
 * 개체 스토리지에 백업하는 경우 클라우드 공급자에게 개체 스토리지 비용을 지불합니다.
 +
-NetApp Backup and Recovery는 소스 볼륨의 스토리지 효율성을 보존하므로 ONTAP 효율성 이후의 데이터(중복 제거 및 압축이 적용된 후의 더 적은 양의 데이터)에 대해 클라우드 공급자 개체 스토리지 비용을 지불합니다.
+NetApp Backup and Recovery 소스 볼륨의 스토리지 효율성을 보존하므로 ONTAP 효율성 이후의 데이터(중복 제거 및 압축이 적용된 후의 더 적은 양의 데이터)에 대해 클라우드 공급자 개체 스토리지 비용을 지불합니다.
 
 * 검색 및 복원을 사용하여 데이터를 복원하는 경우 클라우드 공급자가 특정 리소스를 제공하며, 검색 요청으로 스캔된 데이터 양에 따라 TiB당 비용이 발생합니다.  (이러한 리소스는 찾아보기 및 복원에 필요하지 않습니다.)
 +
@@ -217,7 +217,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-* 보관 개체 스토리지로 이동된 백업 파일에서 볼륨 데이터를 복원하려는 경우 클라우드 공급자로부터 추가 GiB당 검색 요금과 요청당 요금이 부과됩니다.
+* 보관 개체 스토리지로 이동된 백업 파일에서 볼륨 데이터를 복원하려는 경우 클라우드 공급자가 GiB당 추가 검색 요금과 요청당 요금을 부과합니다.
 * 볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 클라우드 공급업체로부터 추가적인 퇴출 비용도 발생합니다.
 
 
@@ -231,7 +231,7 @@ endif::gcp[]
 
 == 라이센스
 
-NetApp 백업 및 복구는 다음과 같은 소비 모델로 제공됩니다.
+NetApp Backup and Recovery 다음과 같은 소비 모델로 제공됩니다.
 
 * *BYOL*: NetApp 에서 구매한 라이선스로 모든 클라우드 공급자와 함께 사용할 수 있습니다.
 * *PAYGO*: 클라우드 공급업체의 마켓플레이스에서 제공하는 시간당 구독입니다.
@@ -246,17 +246,17 @@ NetApp 백업 및 복구는 다음과 같은 소비 모델로 제공됩니다.
 
 BYOL은 기간 기반(1년, 2년 또는 3년)이며 1TiB 단위로 용량을 결정합니다.  예를 들어 1년 동안 일정 기간 동안 NetApp 에 ​​서비스를 사용하고 최대 용량(예: 10TiB)을 지불합니다.
 
-서비스를 활성화하려면 NetApp 콘솔에 입력하는 일련 번호를 받게 됩니다.  두 가지 제한 중 하나에 도달하면 라이센스를 갱신해야 합니다.  백업 BYOL 라이선스는 NetApp 콘솔 조직 또는 계정과 연결된 모든 소스 시스템에 적용됩니다.
+서비스를 활성화하려면 NetApp Console 에 입력하는 일련 번호를 받게 됩니다.  두 가지 제한 중 하나에 도달하면 라이센스를 갱신해야 합니다.  백업 BYOL 라이선스는 NetApp Console 조직 또는 계정과 연결된 모든 소스 시스템에 적용됩니다.
 
-link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"] .
+link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"].
 
 
 
 === 사용량에 따라 지불하는 구독
 
-NetApp Backup and Recovery는 사용량 기반 라이선스를 사용량에 따라 지불하는 모델로 제공합니다.  클라우드 공급업체의 마켓플레이스를 통해 구독한 후, 백업된 데이터에 대해 GiB당 요금을 지불합니다. 선불금은 없습니다. 귀하는 월별 청구서를 통해 클라우드 제공자로부터 요금을 청구받습니다.
+NetApp Backup and Recovery 사용량 기반 라이선스를 사용량에 따라 지불하는 모델로 제공합니다.  클라우드 공급업체의 마켓플레이스를 통해 구독한 후, 백업된 데이터에 대해 GiB당 요금을 지불합니다. 선불금은 없습니다. 귀하는 월별 청구서를 통해 클라우드 제공자로부터 요금을 청구받습니다.
 
-link:br-start-licensing.html["사용량에 따른 요금제 구독을 설정하는 방법을 알아보세요"] .
+link:br-start-licensing.html["사용량에 따른 요금제 구독을 설정하는 방법을 알아보세요"].
 
 PAYGO 구독에 처음 가입하면 30일 무료 체험판을 이용할 수 있습니다.
 
@@ -269,7 +269,7 @@ ifdef::aws[]
 AWS를 사용하면 1년, 2년 또는 3년 기간의 연간 계약 두 가지를 이용할 수 있습니다.
 
 * Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
-* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 따라 청구되는 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않습니다).
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 따라 청구되는 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않습니다).
 
 
 endif::aws[]
@@ -279,31 +279,31 @@ ifdef::azure[]
 Azure를 사용하면 1년, 2년 또는 3년 기간의 연간 계약 두 가지를 이용할 수 있습니다.
 
 * Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
-* Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 따라 청구되는 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않습니다).
+* Cloud Volumes ONTAP 과 NetApp Backup and Recovery 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 따라 청구되는 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않습니다).
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-GCP를 사용하면 NetApp 에서 비공개 제안을 요청한 다음 NetApp 백업 및 복구 활성화 중에 Google Cloud Marketplace에서 구독할 때 플랜을 선택할 수 있습니다.
+GCP를 사용하면 NetApp 에서 비공개 제안을 요청한 다음 NetApp Backup and Recovery 활성화 중에 Google Cloud Marketplace에서 구독할 때 플랜을 선택할 수 있습니다.
 
 endif::gcp[]
 
-link:br-start-licensing.html["연간 계약을 설정하는 방법을 알아보세요"] .
+link:br-start-licensing.html["연간 계약을 설정하는 방법을 알아보세요"].
 
 
 
-== NetApp 백업 및 복구 작동 방식
+== NetApp Backup and Recovery 작동 방식
 
-Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템에서 NetApp 백업 및 복구를 활성화하면 해당 서비스가 데이터의 전체 백업을 수행합니다.  최초 백업 이후 모든 추가 백업은 증분식으로, 변경된 블록과 새 블록만 백업됩니다.  이렇게 하면 네트워크 트래픽이 최소화됩니다.  개체 스토리지에 대한 백업은 다음 위에 구축됩니다. https://docs.netapp.com/us-en/ontap/concepts/snapmirror-cloud-backups-object-store-concept.html["NetApp SnapMirror 클라우드 기술"^] .
+Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템에서 NetApp Backup and Recovery 활성화하면 해당 서비스가 데이터의 전체 백업을 수행합니다.  최초 백업 이후 모든 추가 백업은 증분식으로, 변경된 블록과 새 블록만 백업됩니다.  이렇게 하면 네트워크 트래픽이 최소화됩니다.  개체 스토리지에 대한 백업은 다음을 기반으로 구축됩니다. https://docs.netapp.com/us-en/ontap/concepts/snapmirror-cloud-backups-object-store-concept.html["NetApp SnapMirror 클라우드 기술"^] .
 
 
 CAUTION: 클라우드 백업 파일을 관리하거나 변경하기 위해 클라우드 공급자 환경에서 직접 수행한 모든 작업은 파일을 손상시킬 수 있으며 지원되지 않는 구성으로 이어질 수 있습니다.
 
 다음 이미지는 각 구성 요소 간의 관계를 보여줍니다.
 
-image:diagram-backup-recovery-general.png["NetApp Backup and Recovery가 복제된 볼륨과 백업 파일이 있는 소스 시스템, 보조 스토리지 시스템 및 대상 개체 스토리지의 볼륨과 통신하는 방식을 보여주는 다이어그램입니다."]
+image:diagram-backup-recovery-general.png["NetApp Backup and Recovery 복제된 볼륨과 백업 파일이 있는 소스 시스템, 보조 스토리지 시스템 및 대상 개체 스토리지의 볼륨과 통신하는 방식을 보여주는 다이어그램입니다."]
 
 이 다이어그램은 볼륨이 Cloud Volumes ONTAP 시스템에 복제되는 것을 보여주지만, 볼륨은 온프레미스 ONTAP 시스템에도 복제될 수 있습니다.
 
@@ -320,7 +320,7 @@ image:diagram-backup-recovery-general.png["NetApp Backup and Recovery가 복제�
 
 ifdef::aws[]
 
-+ ** AWS에서는 콘솔을 사용하여 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에.
++ ** AWS에서는 콘솔을 통해 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에.
 
 endif::aws[]
 
@@ -340,13 +340,13 @@ endif::gcp[]
 
 + ** ONTAP S3에서 콘솔은 S3 버킷에 대한 기존 사용자 계정을 사용합니다.
 
-나중에 클러스터의 대상 개체 저장소를 변경하려면 다음이 필요합니다.link:prev-ontap-backup-manage.html["시스템에 대한 NetApp Backup and Recovery 등록 취소"] 그런 다음 새로운 클라우드 공급자 정보를 사용하여 NetApp 백업 및 복구를 활성화합니다.
+나중에 클러스터의 대상 개체 저장소를 변경하려면 다음이 필요합니다.link:prev-ontap-backup-manage.html["시스템에 대한 NetApp Backup and Recovery 등록 취소"] 그런 다음 새로운 클라우드 공급자 정보를 사용하여 NetApp Backup and Recovery 활성화합니다.
 
 
 
 === 사용자 정의 가능한 백업 일정 및 보존 설정
 
-시스템에 대해 NetApp 백업 및 복구를 활성화하면 처음에 선택한 모든 볼륨이 선택한 정책을 사용하여 백업됩니다.  스냅샷 복사본, 복제된 볼륨 및 백업 파일에 대해 별도의 정책을 선택할 수 있습니다.  서로 다른 복구 지점 목표(RPO)를 가진 특정 볼륨에 서로 다른 백업 정책을 할당하려는 경우 해당 클러스터에 대한 추가 정책을 만들고 NetApp Backup and Recovery가 활성화된 후 해당 정책을 다른 볼륨에 할당할 수 있습니다.
+시스템에 대해 NetApp Backup and Recovery 활성화하면 처음에 선택한 모든 볼륨이 선택한 정책을 사용하여 백업됩니다.  스냅샷 복사본, 복제된 볼륨 및 백업 파일에 대해 별도의 정책을 선택할 수 있습니다.  서로 다른 복구 지점 목표(RPO)를 가진 특정 볼륨에 서로 다른 백업 정책을 할당하려는 경우 해당 클러스터에 대한 추가 정책을 만들고 NetApp Backup and Recovery 활성화된 후 해당 정책을 다른 볼륨에 할당할 수 있습니다.
 
 모든 볼륨에 대해 시간별, 일별, 주별, 월별, 연간 백업을 조합하여 선택할 수 있습니다.  개체에 대한 백업의 경우 3개월, 1년, 7년 동안 백업 및 보존을 제공하는 시스템 정의 정책 중 하나를 선택할 수도 있습니다.  ONTAP System Manager나 ONTAP CLI를 사용하여 클러스터에서 생성한 백업 보호 정책도 선택 항목으로 나타납니다.  여기에는 사용자 정의 SnapMirror 레이블을 사용하여 생성된 정책이 포함됩니다.
 
@@ -362,7 +362,7 @@ TIP: 데이터 보호 볼륨의 백업 보존 기간은 소스 SnapMirror 관계
 
 === 백업 파일 보호 설정
 
-클러스터에서 ONTAP 9.11.1 이상을 사용하는 경우 개체 스토리지의 백업을 삭제 및 랜섬웨어 공격으로부터 보호할 수 있습니다. 각 백업 정책은 특정 기간(보존 기간) 동안 백업 파일에 적용할 수 있는 _데이터 잠금 및 랜섬웨어 복원력_ 섹션을 제공합니다.
+클러스터에서 ONTAP 9.11.1 이상을 사용하는 경우 개체 스토리지의 백업을 삭제 및 랜섬웨어 공격으로부터 보호할 수 있습니다.  각 백업 정책은 특정 기간(보존 기간) 동안 백업 파일에 적용할 수 있는 _데이터 잠금 및 랜섬웨어 복원력_ 섹션을 제공합니다.
 
 * _DataLock_은 백업 파일이 수정되거나 삭제되는 것을 방지합니다.
 * _랜섬웨어 보호_ 기능은 백업 파일을 생성할 때와 백업 파일의 데이터를 복원할 때 랜섬웨어 공격의 증거를 찾기 위해 백업 파일을 검사합니다.
@@ -376,8 +376,8 @@ TIP: 데이터 보호 볼륨의 백업 보존 기간은 소스 SnapMirror 관계
 
 자세한 내용은 다음 정보를 참조하세요.
 
-* link:prev-ontap-policy-object-options.html["DataLock 및 랜섬웨어 보호 작동 방식"] .
-* link:prev-ontap-policy-object-advanced-settings.html["고급 설정 페이지에서 랜섬웨어 보호 옵션을 업데이트하는 방법"] .
+* link:prev-ontap-policy-object-options.html["DataLock 및 랜섬웨어 보호 작동 방식"].
+* link:prev-ontap-policy-object-advanced-settings.html["고급 설정 페이지에서 랜섬웨어 보호 옵션을 업데이트하는 방법"].
 
 
 
@@ -393,7 +393,7 @@ ifdef::aws[]
 
 * AWS에서 백업은 _Standard_ 스토리지 클래스에서 시작하여 30일 후에 _Standard-Infrequent Access_ 스토리지 클래스로 전환됩니다.
 +
-클러스터에서 ONTAP 9.10.1 이상을 사용하는 경우 NetApp 백업 및 복구 UI에서 특정 일수 후에 이전 백업을 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"] .
+클러스터에서 ONTAP 9.10.1 이상을 사용하는 경우 NetApp Backup and Recovery UI에서 특정 일수 후에 이전 백업을 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"].
 
 
 
@@ -403,7 +403,7 @@ ifdef::azure[]
 
 * Azure에서 백업은 _Cool_ 액세스 계층과 연결됩니다.
 +
-클러스터에서 ONTAP 9.10.1 이상을 사용하는 경우 NetApp 백업 및 복구 UI에서 특정 일수 후에 이전 백업을 _Azure Archive_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"] .
+클러스터에서 ONTAP 9.10.1 이상을 사용하는 경우 NetApp Backup and Recovery UI에서 특정 일수 후에 이전 백업을 _Azure Archive_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"].
 
 
 
@@ -413,7 +413,7 @@ ifdef::gcp[]
 
 * GCP에서 백업은 _Standard_ 스토리지 클래스와 연결됩니다.
 +
-클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우 NetApp 백업 및 복구 UI에서 특정 기간 후에 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에 대해 자세히 알아보세요"] .
+클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우 NetApp Backup and Recovery UI에서 특정 기간 후에 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에 대해 자세히 알아보세요"].
 
 
 
@@ -421,7 +421,7 @@ endif::gcp[]
 
 * StorageGRID 에서 백업은 _Standard_ 스토리지 클래스와 연결됩니다.
 +
-온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하고 StorageGRID 시스템에서 11.4 이상을 사용하는 경우, 특정 일수가 지난 후 이전 백업 파일을 퍼블릭 클라우드 보관 스토리지에 보관할 수 있습니다.  현재 지원되는 스토리지 계층은 AWS S3 Glacier/S3 Glacier Deep Archive 또는 Azure Archive 스토리지 계층입니다. link:prev-ontap-backup-onprem-storagegrid.html["StorageGRID 에서 백업 파일을 보관하는 방법에 대해 자세히 알아보세요."] .
+온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하고 StorageGRID 시스템에서 11.4 이상을 사용하는 경우, 특정 일수가 지난 후 이전 백업 파일을 퍼블릭 클라우드 보관 스토리지에 보관할 수 있습니다.  현재 지원되는 스토리지 계층은 AWS S3 Glacier/S3 Glacier Deep Archive 또는 Azure Archive 스토리지 계층입니다. link:prev-ontap-backup-onprem-storagegrid.html["StorageGRID 에서 백업 파일을 보관하는 방법에 대해 자세히 알아보세요."].
 
 
 
@@ -442,5 +442,5 @@ endif::gcp[]
 ** 볼륨을 처음 생성할 때 계층화 정책이 볼륨에 할당된 경우 이 문제가 발생하지 않습니다.
 
 
-* 백업을 할당하기 전에 백업의 영향을 고려하십시오. `all` 볼륨에 대한 계층화 정책.  데이터가 즉시 계층화되므로 NetApp Backup and Recovery는 로컬 계층이 아닌 클라우드 계층에서 데이터를 읽습니다.  동시 백업 작업은 클라우드 객체 저장소에 대한 네트워크 링크를 공유하므로 네트워크 리소스가 포화 상태가 되면 성능 저하가 발생할 수 있습니다.  이 경우 네트워크 포화 상태를 줄이기 위해 여러 네트워크 인터페이스(LIF)를 사전에 구성하는 것이 좋습니다.
+* 백업을 할당하기 전에 백업의 영향을 고려하십시오. `all` 볼륨에 대한 계층화 정책.  데이터가 즉시 계층화되므로 NetApp Backup and Recovery 로컬 계층이 아닌 클라우드 계층에서 데이터를 읽습니다.  동시 백업 작업은 클라우드 객체 저장소에 대한 네트워크 링크를 공유하므로 네트워크 리소스가 포화 상태가 되면 성능 저하가 발생할 수 있습니다.  이 경우 네트워크 포화 상태를 줄이기 위해 여러 네트워크 인터페이스(LIF)를 사전에 구성하는 것이 좋습니다.
 

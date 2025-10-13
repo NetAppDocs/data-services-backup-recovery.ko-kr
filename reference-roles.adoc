@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-roles.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, roles, permissions, access control, role-based access control, rbac, IAM, identity, access, management 
-summary: NetApp Backup and Recovery는 IAM 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스 권한을 관리합니다. 
+summary: NetApp Backup and Recovery IAM 역할을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스 권한을 관리합니다. 
 ---
-= NetApp 백업 및 복구 ID 및 액세스 관리(IAM) 역할
+= NetApp Backup and Recovery ID 및 액세스 관리(IAM) 역할
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,6 @@ summary: NetApp Backup and Recovery는 IAM 역할을 사용하여 각 사용자�
 
 
 [role="lead"]
-NetApp Backup and Recovery는 IAM(Identity and Access Management)을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리합니다.
+NetApp Backup and Recovery IAM(Identity and Access Management)을 사용하여 각 사용자가 특정 기능과 작업에 대해 갖는 액세스를 관리합니다.
 
-NetApp Backup and Recovery에 특정한 IAM 역할에 대해 알아보려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp 콘솔의 NetApp 백업 및 복구 역할"^] .
+NetApp Backup and Recovery 에 특정한 IAM 역할에 대해 알아보려면 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console 의 NetApp Backup and Recovery 역할"^] .

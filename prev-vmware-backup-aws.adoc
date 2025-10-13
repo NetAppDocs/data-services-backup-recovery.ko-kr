@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-vmware-backup-aws.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web, services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database, bluexp 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery에서 Amazon Web Services에 데이터 저장소 백업
+= NetApp Backup and Recovery 에서 Amazon Web Services에 데이터 저장소 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,17 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하면 하나 이상의 데이터 저장소를 Amazon Web Services로 백업하고 보관하여 스토리지 효율성과 클라우드 전환을 개선할 수 있습니다.
+NetApp Backup and Recovery 사용하면 하나 이상의 데이터 저장소를 Amazon Web Services로 백업하고 보관하여 스토리지 효율성과 클라우드 전환을 개선할 수 있습니다.
 
 데이터 저장소가 보관 정책과 연결되어 있는 경우 보관 계층을 선택할 수 있는 옵션이 제공됩니다.  지원되는 보관 계층은 Glacier와 Glacier Deep입니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 .시작하기 전에
-모든 사항을 충족했는지 확인하세요.link:prev-vmware-prereqs.html["가상 머신 보호 요구 사항"] 데이터 저장소를 클라우드에 백업하기 전에.
+모든 사항을 충족했는지 확인하세요.link:prev-vmware-prereqs.html["가상 머신 보호 요구 사항"] 클라우드에 데이터 저장소를 백업하기 전에.
 
 .단계
 . 콘솔 UI에서 *보호* > *백업 및 복구* > *가상 머신*을 선택합니다.

@@ -4,7 +4,7 @@ permalink: br-use-oracle-backup.html
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp backup and recovery, Oracle database, Microsoft SQL Server database, SAP HANA database, protection group 
 summary: NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세요. 
 ---
-= NetApp 백업 및 복구를 사용하여 Oracle 워크로드 백업
+= NetApp Backup and Recovery 사용하여 Oracle 워크로드 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,12 @@ summary: NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세�
 
 
 [role="lead"]
-온프레미스 ONTAP 시스템의 Oracle Database 보호 그룹이나 데이터베이스를 Amazon Web Services S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3로 백업하여 데이터가 보호되도록 하세요.  보호 그룹을 백업하면 NetApp 콘솔은 보호 그룹에 포함된 데이터베이스와 로그 데이터를 백업합니다.
+온프레미스 ONTAP 시스템의 Oracle Database 보호 그룹이나 데이터베이스를 Amazon Web Services S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3로 백업하여 데이터가 보호되도록 하세요.  보호 그룹을 백업하면 NetApp Console 보호 그룹에 포함된 데이터베이스와 로그 데이터를 백업합니다.
 
 
-NOTE: 일정에 따라 보호 그룹이나 단일 데이터베이스를 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다. 보다link:br-use-policies-create.html["정책 생성"] 지침을 보려면.
+NOTE: 일정에 따라 보호 그룹이나 단일 데이터베이스를 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다.  보다link:br-use-policies-create.html["정책 생성"] 지침을 보려면.
 
-* 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다 link:br-use-kvm-protection-groups.html["NetApp Backup and Recovery를 사용하여 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다."] 자세한 내용은.
+* 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다link:br-use-kvm-protection-groups.html["NetApp Backup and Recovery 사용하여 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다."] 자세한 내용은.
 * 지금 보호 그룹을 백업하세요(지금 주문형 백업을 생성하세요).
 * 지금 데이터베이스를 백업하세요.
 
@@ -30,10 +30,10 @@ NOTE: 일정에 따라 보호 그룹이나 단일 데이터베이스를 백업�
 
 즉시 주문형 백업을 실행할 수 있습니다.  이 기능은 시스템을 변경하려고 할 때 변경 전에 백업을 해두려는 경우에 유용합니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
 . Oracle 타일에서 *검색 및 관리*를 선택합니다.
 . *재고*를 선택하세요.
 . 보호 세부 정보를 보려면 작업 부하를 선택하세요.
@@ -55,10 +55,10 @@ NOTE: 백업에 적용되는 정책은 보호 그룹에 할당된 정책과 동�
 
 단일 데이터베이스의 주문형 백업을 실행할 수 있습니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
 . Oracle 타일에서 *검색 및 관리*를 선택합니다.
 . *재고*를 선택하세요.
 . 보호 세부 정보를 보려면 작업 부하를 선택하세요.

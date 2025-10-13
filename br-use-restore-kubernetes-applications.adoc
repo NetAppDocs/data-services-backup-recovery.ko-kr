@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-restore-kubernetes-applications.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
-summary: NetApp 백업 및 복구를 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다. 
+summary: NetApp Backup and Recovery 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다. 
 ---
 = Kubernetes 애플리케이션 복원
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: NetApp 백업 및 복구를 사용하면 보호 정책으로 보호한 
 
 
 [role="lead"]
-NetApp 백업 및 복구를 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다. 애플리케이션을 복원하려면 애플리케이션에 최소 하나의 복원 지점이 있어야 합니다. 복원 지점은 로컬 스냅샷 또는 개체 저장소 백업(또는 둘 다)으로 구성됩니다. 로컬, 보조 또는 개체 저장소 아카이브를 사용하여 애플리케이션을 복원할 수 있습니다.
+NetApp Backup and Recovery 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다. 애플리케이션을 복원하려면 애플리케이션에 최소 하나의 복원 지점이 있어야 합니다. 복원 지점은 로컬 스냅샷 또는 개체 저장소 백업(또는 둘 다)으로 구성됩니다. 로컬, 보조 또는 개체 저장소 아카이브를 사용하여 애플리케이션을 복원할 수 있습니다.
 
-.필수 NetApp 콘솔 역할
-조직 관리자 또는 SnapCenter 관리자. link:reference-roles.html["NetApp 백업 및 복구 액세스 역할에 대해 알아보세요"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+.필수 NetApp Console 역할
+조직 관리자 또는 SnapCenter 관리자. link:reference-roles.html["NetApp Backup and Recovery 액세스 역할에 대해 알아보세요"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 백업 및 복구에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 에서 *인벤토리*를 선택합니다.
 . Kubernetes 인스턴스를 선택하고 *보기*를 선택하여 해당 인스턴스와 연결된 리소스를 확인합니다.
 . *응용 프로그램* 탭을 선택하세요.
 . 애플리케이션 목록에서 복원하려는 애플리케이션을 선택하고 관련된 작업 메뉴를 선택합니다.

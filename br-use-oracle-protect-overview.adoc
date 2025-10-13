@@ -14,11 +14,11 @@ summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Az
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스와 로그를 보호하세요.  NetApp 백업 및 복구는 빠르고, 공간 효율적이며, 충돌 대비 및 데이터베이스 대비 일관된 백업 및 복원 작업을 제공합니다.  Oracle 워크로드를 Amazon Web Services S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3에 백업하고 온프레미스 Oracle 호스트로 복원할 수 있습니다.
+NetApp Backup and Recovery 사용하여 Oracle 데이터베이스와 로그를 보호하세요.  NetApp Backup and Recovery 빠르고, 공간 효율적이며, 충돌 대비 및 데이터베이스 대비 일관된 백업 및 복원 작업을 제공합니다.  Oracle 워크로드를 Amazon Web Services S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3에 백업하고 온프레미스 Oracle 호스트로 복원할 수 있습니다.
 
 image:../media/diagram-backup-recovery-general.png["백업 및 복구의 일반적인 아키텍처 다이어그램"]
 
-NetApp 백업 및 복구를 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
+NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
 
 * 여러 개의 데이터 사본은 내부자 및 외부 사이버 보안 위협으로부터 다중 계층의 보호를 제공합니다.
 * 여러 미디어 유형을 사용하면 하나의 미디어 유형에 물리적 또는 논리적 오류가 발생하는 경우에도 장애 조치를 실행할 수 있습니다.
@@ -26,9 +26,9 @@ NetApp 백업 및 복구를 사용하여 3-2-1 보호 전략을 구현합니다.
 
 
 
-NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp 백업 및 복구 UI로 전환"] .
+NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
 
-NetApp Backup and Recovery를 사용하면 Oracle 워크로드와 관련된 다음 작업을 수행할 수 있습니다.
+NetApp Backup and Recovery 사용하면 Oracle 워크로드와 관련된 다음 작업을 수행할 수 있습니다.
 
 * link:br-start-discover-oracle.html["Oracle 워크로드 검색"]
 * link:br-use-oracle-protection-groups.html["Oracle 워크로드에 대한 보호 그룹 생성 및 관리"]

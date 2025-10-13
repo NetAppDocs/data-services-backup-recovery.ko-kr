@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-cvo-azure.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP 데이터를 Azure Blob 스토리지에 백업합니다.
+= NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 데이터를 Azure Blob 스토리지에 백업합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp 백업 및 복구에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Azure Blob 스토리지로 볼륨 데이터를 백업하세요.
+NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Azure Blob 스토리지로 볼륨 데이터를 백업하세요.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 
@@ -31,13 +31,13 @@ Azure Blob 저장소에 볼륨을 백업하기 전에 지원되는 구성이 있
 
 선택적으로, 공용 또는 개인 연결을 사용하여 복제된 볼륨의 보조 ONTAP 시스템에 연결할 수도 있습니다.
 
-image:diagram_cloud_backup_cvo_azure.png["NetApp Backup and Recovery가 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
+image:diagram_cloud_backup_cvo_azure.png["NetApp Backup and Recovery 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
 
 지원되는 ONTAP 버전:: 최소 ONTAP 9.8; ONTAP 9.8P13 이상을 권장합니다.
-지원되는 Azure 지역:: NetApp 백업 및 복구는 Azure Government 지역을 포함한 모든 Azure 지역에서 지원됩니다.
+지원되는 Azure 지역:: NetApp Backup and Recovery Azure Government 지역을 포함한 모든 Azure 지역에서 지원됩니다.
 +
 --
-기본적으로 NetApp Backup and Recovery는 비용 최적화를 위해 로컬 중복성(LRS)을 사용하여 Blob 컨테이너를 프로비저닝합니다.  NetApp Backup and Recovery를 활성화한 후 데이터가 서로 다른 영역 간에 복제되도록 하려면 이 설정을 영역 중복성(ZRS)으로 변경할 수 있습니다.  Microsoft 지침을 참조하세요. https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["저장소 계정 복제 방식 변경"^] .
+기본적으로 NetApp Backup and Recovery 비용 최적화를 위해 로컬 중복성(LRS)을 사용하여 Blob 컨테이너를 프로비저닝합니다.  NetApp Backup and Recovery 활성화한 후 데이터가 서로 다른 영역 간에 복제되도록 하려면 이 설정을 영역 중복성(ZRS)으로 변경할 수 있습니다.  Microsoft 지침을 참조하세요. https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["저장소 계정 복제 방식 변경"^] .
 
 --
 다른 Azure 구독에서 백업을 만드는 데 필요한 설정:: 기본적으로 백업은 Cloud Volumes ONTAP 시스템에 사용된 것과 동일한 구독을 사용하여 생성됩니다.
@@ -47,9 +47,9 @@ image:diagram_cloud_backup_cvo_azure.png["NetApp Backup and Recovery가 백업 �
 
 == 라이센스 요구 사항 확인
 
-NetApp Backup and Recovery PAYGO 라이선싱의 경우 NetApp Backup and Recovery를 활성화하기 전에 Azure Marketplace를 통해 구독해야 합니다.  NetApp 백업 및 복구에 대한 청구는 이 구독을 통해 이루어집니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-deploying-otc-azure.html["시스템 마법사의 세부 정보 및 자격 증명 페이지에서 구독할 수 있습니다."^] .
+NetApp Backup and Recovery PAYGO 라이선싱의 경우 NetApp Backup and Recovery 활성화하기 전에 Azure Marketplace를 통해 구독해야 합니다.  NetApp Backup and Recovery 대한 청구는 이 구독을 통해 이루어집니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-deploying-otc-azure.html["시스템 마법사의 세부 정보 및 자격 증명 페이지에서 구독할 수 있습니다."^] .
 
-NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 용량 동안 서비스를 사용할 수 있도록 하는 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"] .  콘솔 에이전트와 Cloud Volumes ONTAP 시스템이 다크 사이트("비공개 모드")에 배포되는 경우 BYOL 라이선스를 사용해야 합니다.
+NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 용량 동안 서비스를 사용할 수 있도록 하는 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"].  콘솔 에이전트와 Cloud Volumes ONTAP 시스템이 다크 사이트("비공개 모드")에 배포되는 경우 BYOL 라이선스를 사용해야 합니다.
 
 백업이 저장될 저장 공간에 대한 Microsoft Azure 구독이 필요합니다.
 
@@ -57,7 +57,7 @@ NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 �
 
 == 콘솔 에이전트를 준비하세요
 
-콘솔 에이전트는 전체 또는 제한된 인터넷 액세스("표준" 또는 "제한" 모드)가 가능한 Azure 지역에 설치할 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["자세한 내용은 NetApp 콘솔 배포 모드를 참조하세요."^] .
+콘솔 에이전트는 전체 또는 제한된 인터넷 액세스("표준" 또는 "제한" 모드)가 가능한 Azure 지역에 설치할 수 있습니다. https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["자세한 내용은 NetApp Console 배포 모드를 참조하세요."^] .
 
 * https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^]
 * https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["Azure에서 표준 모드(전체 인터넷 액세스)로 콘솔 에이전트 배포"^]
@@ -68,7 +68,7 @@ NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 �
 
 === 콘솔 에이전트에 대한 권한을 확인하거나 추가합니다.
 
-NetApp 백업 및 복구 검색 및 복원 기능을 사용하려면 콘솔 에이전트 역할에 대한 특정 권한이 있어야 Azure Synapse Workspace 및 Data Lake Storage 계정에 액세스할 수 있습니다.  아래의 권한을 확인하고, 정책을 수정해야 하는 경우 단계에 따라 진행하세요.
+NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 에이전트 역할에 대한 특정 권한이 있어야 Azure Synapse Workspace 및 Data Lake Storage 계정에 액세스할 수 있습니다.  아래의 권한을 확인하고, 정책을 수정해야 하는 경우 단계에 따라 진행하세요.
 
 .시작하기 전에
 * 구독을 통해 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse")를 등록해야 합니다. https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["구독을 위해 이 리소스 공급자를 등록하는 방법을 확인하세요."^] .  리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.
@@ -148,7 +148,7 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-azure.ht
 
 기본 Microsoft 관리 암호화 키를 사용하는 대신, 활성화 마법사에서 고객이 관리하는 키를 사용하여 데이터를 암호화할 수 있습니다.  이 경우 Azure 구독, Key Vault 이름 및 키가 필요합니다. https://docs.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview["자신의 키를 사용하는 방법을 확인하세요"^] .
 
-NetApp Backup and Recovery는 _Azure 액세스 정책_, _Azure 역할 기반 액세스 제어_(Azure RBAC) 권한 모델 및 _관리형 하드웨어 보안 모델_(HSM)을 지원합니다(참조 https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview["Azure Key Vault 관리형 HSM이란 무엇인가요?"] ).
+NetApp Backup and Recovery _Azure 액세스 정책_, _Azure 역할 기반 액세스 제어_(Azure RBAC) 권한 모델 및 _관리형 하드웨어 보안 모델_(HSM)을 지원합니다(참조 https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview["Azure Key Vault 관리형 HSM이란 무엇인가요?"] ).
 
 
 
@@ -156,19 +156,19 @@ NetApp Backup and Recovery는 _Azure 액세스 정책_, _Azure 역할 기반 액
 
 기본적으로 이 서비스는 사용자를 위한 스토리지 계정을 생성합니다.  자신의 스토리지 계정을 사용하려면 백업 활성화 마법사를 시작하기 전에 계정을 만든 다음 마법사에서 해당 스토리지 계정을 선택하면 됩니다.
 
-link:prev-ontap-protect-journey.html["나만의 스토리지 계정 생성에 대해 자세히 알아보세요"] .
+link:prev-ontap-protect-journey.html["나만의 스토리지 계정 생성에 대해 자세히 알아보세요"].
 
 
 
 == 볼륨 복제를 위한 ONTAP 네트워킹 요구 사항 확인
 
-NetApp Backup and Recovery를 사용하여 보조 ONTAP 시스템에 복제된 볼륨을 생성하려는 경우 소스 및 대상 시스템이 다음 네트워킹 요구 사항을 충족하는지 확인하세요.
+NetApp Backup and Recovery 사용하여 보조 ONTAP 시스템에 복제된 볼륨을 생성하려는 경우 소스 및 대상 시스템이 다음 네트워킹 요구 사항을 충족하는지 확인하세요.
 
 
 
 ==== 온프레미스 ONTAP 네트워킹 요구 사항
 
-* 클러스터가 사내에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다.  이는 일반적으로 VPN 연결입니다.
+* 클러스터가 사내에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다. 이는 일반적으로 VPN 연결입니다.
 * ONTAP 클러스터는 추가적인 서브넷, 포트, 방화벽 및 클러스터 요구 사항을 충족해야 합니다.
 +
 Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하세요. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^] .
@@ -179,7 +179,7 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 
 ==== Cloud Volumes ONTAP 네트워킹 요구 사항
 
-* 인스턴스의 보안 그룹에는 필수 인바운드 및 아웃바운드 규칙이 포함되어야 합니다. 구체적으로는 ICMP 및 포트 11104와 11105에 대한 규칙이 포함됩니다.  이러한 규칙은 미리 정의된 보안 그룹에 포함됩니다.
+* 인스턴스의 보안 그룹에는 필수 인바운드 및 아웃바운드 규칙이 포함되어야 합니다. 구체적으로는 ICMP 및 포트 11104와 11105에 대한 규칙이 포함됩니다. 이러한 규칙은 미리 정의된 보안 그룹에 포함됩니다.
 
 
 * 서로 다른 서브넷에 있는 두 개의 Cloud Volumes ONTAP 시스템 간에 데이터를 복제하려면 서브넷을 함께 라우팅해야 합니다(이는 기본 설정입니다).
@@ -187,41 +187,41 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 
 
 
-== Cloud Volumes ONTAP 에서 NetApp 백업 및 복구 활성화
+== Cloud Volumes ONTAP 에서 NetApp Backup and Recovery 활성화
 
-NetApp 백업 및 복구를 활성화하는 것은 쉽습니다.  단계는 기존 Cloud Volumes ONTAP 시스템이 있는지 아니면 새 시스템이 있는지에 따라 약간씩 다릅니다.
+NetApp Backup and Recovery 활성화하는 것은 쉽습니다.  단계는 기존 Cloud Volumes ONTAP 시스템이 있는지 아니면 새 시스템이 있는지에 따라 약간씩 다릅니다.
 
-*새 시스템에서 NetApp 백업 및 복구 활성화*
+*새 시스템에서 NetApp Backup and Recovery 활성화*
 
-NetApp 백업 및 복구는 시스템 마법사에서 기본적으로 활성화되어 있습니다.  해당 옵션을 활성화해 두세요.
+NetApp Backup and Recovery 시스템 마법사에서 기본적으로 활성화되어 있습니다.  해당 옵션을 활성화해 두세요.
 
 보다 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP 시작"^] Cloud Volumes ONTAP 시스템을 만드는 데 필요한 요구 사항과 세부 정보를 확인하세요.
 
 
-NOTE: 리소스 그룹의 이름을 선택하려면 Cloud Volumes ONTAP 배포할 때 NetApp Backup and Recovery를 *비활성화*하세요.
+NOTE: 리소스 그룹의 이름을 선택하려면 Cloud Volumes ONTAP 배포할 때 NetApp Backup and Recovery *비활성화*하세요.
 
 .단계
 . 콘솔의 *시스템* 페이지에서 *시스템 추가*를 선택하고, 클라우드 공급자를 선택한 다음 *새로 추가*를 선택합니다.  * Cloud Volumes ONTAP 만들기*를 선택합니다.
 . 클라우드 공급자로 *Microsoft Azure*를 선택한 다음 단일 노드 또는 HA 시스템을 선택합니다.
 . Azure 자격 증명 정의 페이지에서 자격 증명 이름, 클라이언트 ID, 클라이언트 비밀번호, 디렉터리 ID를 입력하고 *계속*을 선택합니다.
-. 세부 정보 및 자격 증명 페이지를 작성하고 Azure Marketplace 구독이 설정되어 있는지 확인한 후 *계속*을 선택합니다.
-. 서비스 페이지에서 서비스를 활성화된 상태로 두고 *계속*을 선택합니다.
+. 세부 정보 및 자격 증명 페이지를 작성하고 Azure Marketplace 구독이 있는지 확인한 후 *계속*을 선택합니다.
+. 서비스 페이지에서 서비스를 활성화한 상태로 두고 *계속*을 선택합니다.
 . 마법사의 페이지를 완료하여 시스템을 배포합니다.
 
 
 .결과
-시스템에서 NetApp 백업 및 복구가 활성화되어 있습니다.  이러한 Cloud Volumes ONTAP 시스템에서 볼륨을 생성한 후 NetApp Backup and Recovery를 실행하세요.link:prev-ontap-backup-manage.html["보호하려는 각 볼륨에서 백업을 활성화합니다."] .
+시스템에서 NetApp Backup and Recovery 활성화되어 있습니다.  이러한 Cloud Volumes ONTAP 시스템에서 볼륨을 생성한 후 NetApp Backup and Recovery 실행하세요.link:prev-ontap-backup-manage.html["보호하려는 각 볼륨에서 백업을 활성화합니다."] .
 
-*기존 시스템에서 NetApp 백업 및 복구 활성화*
+*기존 시스템에서 NetApp Backup and Recovery 활성화*
 
-언제든지 시스템에서 직접 NetApp 백업 및 복구를 활성화하세요.
+언제든지 시스템에서 직접 NetApp Backup and Recovery 활성화하세요.
 
 .단계
 . 콘솔의 *시스템* 페이지에서 시스템을 선택하고 오른쪽 패널의 백업 및 복구 옆에 있는 *활성화*를 선택합니다.
 +
 백업을 위한 Azure Blob 대상이 콘솔의 시스템 페이지에 시스템으로 존재하는 경우, 클러스터를 Azure Blob 시스템으로 끌어서 놓으면 설치 마법사를 시작할 수 있습니다.
 
-. 마법사의 페이지를 완료하여 NetApp 백업 및 복구를 배포합니다.
+. 마법사의 페이지를 완료하여 NetApp Backup and Recovery 배포합니다.
 . 백업을 시작하려면 다음을 계속하세요.<<ONTAP 볼륨에서 백업 활성화>> .
 
 
@@ -260,7 +260,7 @@ NOTE: 리소스 그룹의 이름을 선택하려면 Cloud Volumes ONTAP 배포�
 . 다음 옵션을 계속 진행하세요.
 +
 ** 이미 콘솔 에이전트가 있다면 준비가 완료된 것입니다.  *다음*을 선택하세요.
-** 아직 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다. <<콘솔 에이전트를 준비하세요>> .
+** 아직 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다.  참조하다<<콘솔 에이전트를 준비하세요>> .
 
 
 
@@ -386,7 +386,7 @@ TIP: 추가적인 비용 최적화를 위해 이전 백업 파일을 Azure Archi
 
 ** *암호화 키*: 새 Azure Storage 계정을 만든 경우 공급자로부터 받은 암호화 키 정보를 입력합니다.  기본 Azure 암호화 키를 사용할지 아니면 Azure 계정에서 고객이 관리하는 키를 선택하여 데이터 암호화를 관리할지 선택하세요.
 +
-고객이 직접 관리하는 키를 사용하기로 선택한 경우 키 보관소와 키 정보를 입력하세요. https://docs.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview["자신의 키를 사용하는 방법을 알아보세요"^] .
+고객이 직접 관리하는 키를 사용하기로 선택한 경우 키 보관소와 키 정보를 입력하세요. https://docs.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview["자신의 열쇠를 사용하는 방법을 알아보세요"^] .
 
 
 
@@ -397,7 +397,7 @@ NOTE: 기존 Microsoft 저장소 계정을 선택한 경우 암호화 정보가 
 +
 ** *네트워킹*: IP 공간을 선택하고 개인 엔드포인트를 사용할지 여부를 선택합니다.  개인 엔드포인트는 기본적으로 비활성화되어 있습니다.
 +
-... 백업하려는 볼륨이 있는 ONTAP 클러스터의 IP 공간입니다.  이 IP공간의 클러스터 간 LIF에는 아웃바운드 인터넷 액세스가 있어야 합니다.
+... 백업하려는 볼륨이 있는 ONTAP 클러스터의 IP 공간입니다. 이 IP공간의 클러스터 간 LIF에는 아웃바운드 인터넷 액세스가 있어야 합니다.
 ... 선택적으로, 이전에 구성한 Azure 개인 엔드포인트를 사용할지 여부를 선택합니다. https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview["Azure 개인 엔드포인트 사용에 대해 알아보세요"^] .
 
 
@@ -435,13 +435,13 @@ TIP: 백업을 활성화하기 전에 사용자 정의 정책을 생성하려면
 
 
 .결과
-NetApp Backup and Recovery는 볼륨의 초기 백업을 시작합니다.  복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다.  이후 전송에는 스냅샷 복사본에 포함된 기본 저장 데이터의 차등 복사본이 포함됩니다.
+NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다.  복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다.  이후 전송에는 스냅샷 복사본에 포함된 기본 저장 데이터의 차등 복사본이 포함됩니다.
 
 대상 클러스터에 복제된 볼륨이 생성되어 기본 볼륨과 동기화됩니다.
 
 입력한 리소스 그룹에 Blob 스토리지 컨테이너가 생성되고, 백업 파일이 여기에 저장됩니다.
 
-기본적으로 NetApp Backup and Recovery는 비용 최적화를 위해 로컬 중복성(LRS)을 사용하여 Blob 컨테이너를 프로비저닝합니다.  서로 다른 영역 간에 데이터가 복제되도록 하려면 이 설정을 영역 중복성(ZRS)으로 변경할 수 있습니다.  Microsoft 지침을 참조하세요. https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["저장소 계정 복제 방식 변경"^] .
+기본적으로 NetApp Backup and Recovery 비용 최적화를 위해 로컬 중복성(LRS)을 사용하여 Blob 컨테이너를 프로비저닝합니다.  서로 다른 영역 간에 데이터가 복제되도록 하려면 이 설정을 영역 중복성(ZRS)으로 변경할 수 있습니다.  Microsoft 지침을 참조하세요. https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["저장소 계정 복제 방식 변경"^] .
 
 볼륨 백업 대시보드가 표시되어 백업 상태를 모니터링할 수 있습니다.
 
@@ -462,7 +462,7 @@ NetApp Backup and Recovery는 볼륨의 초기 백업을 시작합니다.  복�
 
 == 다음은 무엇인가요?
 
-* 당신은 할 수 있어요 link:prev-ontap-backup-manage.html["백업 파일과 백업 정책을 관리하세요"]. 여기에는 백업 시작 및 중지, 백업 삭제, 백업 일정 추가 및 변경 등이 포함됩니다.
-* 당신은 할 수 있어요 link:prev-ontap-policy-object-advanced-settings.html["클러스터 수준 백업 설정 관리"]. 여기에는 ONTAP 클라우드 스토리지에 액세스하는 데 사용하는 스토리지 키 변경, 개체 스토리지에 백업을 업로드하는 데 사용할 수 있는 네트워크 대역폭 변경, 향후 볼륨에 대한 자동 백업 설정 변경 등이 포함됩니다.
+* 당신은 할 수 있습니다link:prev-ontap-backup-manage.html["백업 파일과 백업 정책을 관리하세요"] .  여기에는 백업 시작 및 중지, 백업 삭제, 백업 일정 추가 및 변경 등이 포함됩니다.
+* 당신은 할 수 있습니다link:prev-ontap-policy-object-advanced-settings.html["클러스터 수준 백업 설정 관리"] .  여기에는 ONTAP 클라우드 스토리지에 액세스하는 데 사용하는 스토리지 키 변경, 개체 스토리지에 백업을 업로드하는 데 사용할 수 있는 네트워크 대역폭 변경, 향후 볼륨에 대한 자동 백업 설정 변경 등이 포함됩니다.
 * 당신도 할 수 있습니다link:prev-ontap-restore.html["백업 파일에서 볼륨, 폴더 또는 개별 파일 복원"] AWS의 Cloud Volumes ONTAP 시스템이나 온프레미스 ONTAP 시스템으로.
 

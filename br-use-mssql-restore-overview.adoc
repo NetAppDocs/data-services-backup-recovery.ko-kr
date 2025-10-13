@@ -4,7 +4,7 @@ permalink: br-use-mssql-restore-overview.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 스냅샷, 복제본, 개체 스토리지의 백업을 포함하여 백업을 생성한 위치에서 데이터 백업을 복원할 수 있습니다.  복원할 복원 위치, 복원 지점 및 리소스 유형을 검토합니다. 
 ---
-= NetApp Backup and Recovery를 사용하여 Microsoft SQL 워크로드 개요 복원
+= NetApp Backup and Recovery 사용하여 Microsoft SQL 워크로드 개요 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 스냅샷, 복제본, 개체 스토리지의 백업을 포함하여 백
 
 
 [role="lead"]
-NetApp Backup and Recovery에서 Microsoft SQL Server 데이터 백업을 사용하면 스냅샷, 복제 또는 개체 스토리지의 백업 등 백업을 이동한 위치에서 복원할 수 있습니다.  작업 부하를 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.  복원할 복원 위치, 복원 지점 및 리소스 유형을 검토합니다.
+NetApp Backup and Recovery 에서 Microsoft SQL Server 데이터 백업을 사용하면 스냅샷, 복제 또는 개체 스토리지의 백업 등 백업을 이동한 위치에서 복원할 수 있습니다.  작업 부하를 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.  복원할 복원 위치, 복원 지점 및 리소스 유형을 검토합니다.
 
 .이 위치에서 복원
 다양한 시작 위치에서 작업 부하를 복원할 수 있습니다.

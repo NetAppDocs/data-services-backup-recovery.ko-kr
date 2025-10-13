@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-limitations.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery는 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
+summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
 ---
-= Microsoft SQL Server 워크로드에 대한 NetApp 백업 및 복구의 알려진 제한 사항
+= Microsoft SQL Server 워크로드에 대한 NetApp Backup and Recovery 의 알려진 제한 사항
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -30,7 +30,7 @@ summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 데이터�
 
 == 표준 배포 모드만 가능
 
-이 NetApp 백업 및 복구 버전은 제한 모드나 비공개 모드가 아닌 표준 배포 모드에서만 작동합니다.
+이 NetApp Backup and Recovery 버전은 제한 모드나 비공개 모드가 아닌 표준 배포 모드에서만 작동합니다.
 
 
 
@@ -42,9 +42,9 @@ Windows 클러스터 이름에는 밑줄(_) 문자를 포함할 수 없습니다
 
 == SnapCenter 마이그레이션 문제
 
-SnapCenter 에서 NetApp Backup and Recovery로 리소스를 마이그레이션하는 데는 다음과 같은 제한이 있습니다.
+SnapCenter 에서 NetApp Backup and Recovery 로 리소스를 마이그레이션하는 데는 다음과 같은 제한이 있습니다.
 
-SnapCenter 정책이 NetApp 백업 및 복구 정책으로 마이그레이션되는 방식에 대한 자세한 내용은 다음을 참조하세요.link:reference-policy-differences-snapcenter.html["SnapCenter 의 정책과 NetApp 백업 및 복구의 정책 비교"] .
+SnapCenter 정책이 NetApp Backup and Recovery 정책으로 마이그레이션되는 방식에 대한 자세한 내용은 다음을 참조하세요.link:reference-policy-differences-snapcenter.html["SnapCenter 의 정책과 NetApp Backup and Recovery 정책 비교"] .
 
 
 
@@ -58,7 +58,7 @@ SnapCenter 정책이 NetApp 백업 및 복구 정책으로 마이그레이션되
 
 === 동일한 일정 계층을 사용하는 여러 정책이 있는 리소스는 지원되지 않습니다.
 
-동일한 일정 계층(예: 시간별, 일별, 주별 등)을 사용하는 여러 정책을 리소스에 할당할 수 없습니다.  NetApp Backup and Recovery는 SnapCenter 에서 해당 리소스를 가져오지 않습니다.
+동일한 일정 계층(예: 시간별, 일별, 주별 등)을 사용하는 여러 정책을 리소스에 할당할 수 없습니다.  NetApp Backup and Recovery SnapCenter 에서 해당 리소스를 가져오지 않습니다.
 
 *해결 방법*: 동일한 일정 계층을 사용하는 정책을 하나만 리소스에 연결합니다.
 
@@ -66,7 +66,7 @@ SnapCenter 정책이 NetApp 백업 및 복구 정책으로 마이그레이션되
 
 === 시간당 정책은 시간 시작 시에 시작되어야 합니다.
 
-매시간 반복되지만 매시간 시작 시 간격을 사용하지 않는 SnapCenter 정책이 있는 경우 NetApp Backup and Recovery는 리소스를 가져오지 않습니다.  예를 들어, 1:30, 2:30, 3:30 등의 일정이 있는 정책은 지원되지 않지만, 1:00, 2:00, 3:00 등의 일정이 있는 정책은 지원됩니다.
+매시간 반복되지만 매시간 시작 시 간격을 사용하지 않는 SnapCenter 정책이 있는 경우 NetApp Backup and Recovery 리소스를 가져오지 않습니다.  예를 들어, 1:30, 2:30, 3:30 등의 일정이 있는 정책은 지원되지 않지만, 1:00, 2:00, 3:00 등의 일정이 있는 정책은 지원됩니다.
 
 *해결 방법*: 매 정각부터 1시간 간격으로 반복되는 정책을 사용하세요.
 
@@ -74,7 +74,7 @@ SnapCenter 정책이 NetApp 백업 및 복구 정책으로 마이그레이션되
 
 === 하나의 리소스에 연결된 일일 및 월간 정책은 지원되지 않습니다.
 
-SnapCenter 정책이 일별 및 월별로 반복되는 경우 NetApp Backup and Recovery는 해당 정책을 가져오지 않습니다.
+SnapCenter 정책이 일별 및 월별로 반복되는 경우 NetApp Backup and Recovery 해당 정책을 가져오지 않습니다.
 
 예를 들어, 일일 정책(7일 이하 또는 7일 초과)을 리소스에 첨부하는 동시에 동일한 리소스에 월별 정책을 첨부할 수 없습니다.
 
@@ -84,13 +84,13 @@ SnapCenter 정책이 일별 및 월별로 반복되는 경우 NetApp Backup and 
 
 === 주문형 백업 정책이 마이그레이션되지 않았습니다.
 
-NetApp Backup and Recovery는 SnapCenter 에서 주문형 백업 정책을 가져오지 않습니다.
+NetApp Backup and Recovery SnapCenter 에서 주문형 백업 정책을 가져오지 않습니다.
 
 
 
 === 로그 전용 백업 정책이 마이그레이션되지 않음
 
-NetApp Backup and Recovery는 SnapCenter 에서 로그 전용 백업 정책을 가져오지 않습니다.  SnapCenter 정책에 로그 전용 백업이 포함된 경우 NetApp Backup and Recovery는 리소스를 가져오지 않습니다.
+NetApp Backup and Recovery SnapCenter 에서 로그 전용 백업 정책을 가져오지 않습니다.  SnapCenter 정책에 로그 전용 백업이 포함된 경우 NetApp Backup and Recovery 리소스를 가져오지 않습니다.
 
 *해결 방법*: SnapCenter 에서 로그 전용 백업 외에 다른 백업도 사용하는 정책을 사용하세요.
 
@@ -98,15 +98,15 @@ NetApp Backup and Recovery는 SnapCenter 에서 로그 전용 백업 정책을 �
 
 === 호스트 매핑
 
-SnapCenter 호스트에 대한 리소스에 대한 맵 스토리지 클러스터나 SVM이 없지만 NetApp Backup and Recovery에는 있습니다.  온프레미스 ONTAP 클러스터 또는 SVM은 NetApp Backup and Recovery 미리 보기 버전의 호스트에 매핑되지 않습니다.  또한 NetApp 콘솔은 SVM을 지원하지 않습니다.
+SnapCenter 호스트에 대한 리소스에 대한 맵 스토리지 클러스터나 SVM이 없지만 NetApp Backup and Recovery 있습니다.  온프레미스 ONTAP 클러스터 또는 SVM은 NetApp Backup and Recovery 미리 보기 버전의 호스트에 매핑되지 않습니다.  또한 NetApp Console SVM을 지원하지 않습니다.
 
-*해결 방법*: SnapCenter 에서 리소스를 가져오기 전에 NetApp Backup and Recovery에서 온프레미스 SnapCenter 에 등록된 모든 온프레미스 ONTAP 스토리지 시스템에 대한 시스템을 만듭니다.  그런 다음 SnapCenter 에서 NetApp Backup and Recovery로 해당 클러스터의 리소스를 가져옵니다.
+*해결 방법*: SnapCenter 에서 리소스를 가져오기 전에 NetApp Backup and Recovery 에서 온프레미스 SnapCenter 에 등록된 모든 온프레미스 ONTAP 스토리지 시스템에 대한 시스템을 만듭니다.  그런 다음 SnapCenter 에서 해당 클러스터의 리소스를 NetApp Backup and Recovery 로 가져옵니다.
 
 
 
 === 15분 간격이 아닌 일정
 
-특정 시간에 시작하여 15분 간격이 아닌 간격으로 반복되는 SnapCenter 정책 일정이 있는 경우 NetApp Backup and Recovery는 해당 일정을 가져오지 않습니다.
+특정 시간에 시작하여 15분 간격이 아닌 간격으로 반복되는 SnapCenter 정책 일정이 있는 경우 NetApp Backup and Recovery 해당 일정을 가져오지 않습니다.
 
 *해결 방법*: SnapCenter 사용하여 정책이 15분 간격으로 반복되도록 조정합니다.
 
@@ -114,4 +114,4 @@ SnapCenter 호스트에 대한 리소스에 대한 맵 스토리지 클러스터
 
 == 가상화 관리 소프트웨어에 대한 제한된 지원
 
-KVM 워크로드를 보호하는 경우, NetApp Backup and Recovery는 Apache CloudStack이나 Red Hat OpenShift Virtualization과 같은 가상화 관리 소프트웨어를 사용하는 동안 KVM 워크로드 검색을 지원하지 않습니다.
+KVM 워크로드를 보호하는 경우, NetApp Backup and Recovery Apache CloudStack이나 Red Hat OpenShift Virtualization과 같은 가상화 관리 소프트웨어를 사용하는 동안 KVM 워크로드 검색을 지원하지 않습니다.

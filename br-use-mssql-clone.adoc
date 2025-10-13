@@ -4,7 +4,7 @@ permalink: br-use-mssql-clone.html
 keywords: backing up, restoring, back up, backup, clone, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션 데이터를 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다. 
 ---
-= NetApp 백업 및 복구를 사용하여 Microsoft SQL Server 워크로드 복제
+= NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 복제
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션 데이터를 동일하거나 다른 VM에 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.
+NetApp Backup and Recovery 사용하여 개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션 데이터를 동일하거나 다른 VM에 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.
 
 다음 유형의 클론 중에서 선택하세요.
 
@@ -30,7 +30,7 @@ NetApp Backup and Recovery를 사용하여 개발, 테스트 또는 보호 목�
 * 클론 삭제
 
 
-*필수 NetApp 콘솔 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 
 
@@ -41,7 +41,7 @@ Microsoft SQL Server 워크로드의 복제본을 만들 수 있습니다.  복�
 기존 스냅샷이나 인스턴트 스냅샷에서 복제본을 만들 수 있습니다.  인스턴트 스냅샷은 백업에서 생성된 소스 데이터의 특정 시점 복사본입니다.  데이터 손실이나 손상이 발생한 경우 복제본을 사용하여 작업 부하를 복원할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *복제*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복제*를 선택합니다.
 . *새로운 복제본 만들기*를 선택합니다.
 . 복제 유형을 선택하세요:
 +
@@ -112,7 +112,7 @@ Microsoft SQL Server 워크로드의 복제본을 새로 고칠 수 있습니다
 데이터베이스 이름을 변경하고, 최신 인스턴트 스냅샷을 사용하거나, 기존 프로덕션 스냅샷에서 새로 고침하는 옵션이 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *복제*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복제*를 선택합니다.
 . 새로 고칠 복제본을 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *복제본 새로고침*.
 . *고급 설정* 섹션을 완료하세요.
@@ -140,7 +140,7 @@ Microsoft SQL Server 워크로드의 복제본을 새로 고칠 수 있습니다
 소스 워크로드의 최신 데이터로 복제본을 업데이트하지 않으려면 복제본 새로 고침을 건너뛸 수 있습니다.  복제본 새로 고침을 건너뛰면 복제본을 업데이트하지 않고도 그대로 유지할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *복제*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복제*를 선택합니다.
 . 새로 고침을 건너뛸 복제본을 선택합니다.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *새로고침 건너뛰기*.
 . 새로 고침 건너뛰기 확인 대화 상자에서 다음을 수행합니다.
@@ -157,12 +157,12 @@ Microsoft SQL Server 워크로드의 복제본을 새로 고칠 수 있습니다
 
 Microsoft SQL Server 워크로드의 복제본을 분할할 수 있습니다.  복제본을 분할하면 복제본에서 새로운 백업이 생성됩니다.  새로운 백업을 사용하여 작업 부하를 복원할 수 있습니다.
 
-클론을 독립 클론이나 장기 클론으로 분할할 수 있습니다.  마법사는 SVM에 포함된 집계 목록, 해당 크기, 복제된 볼륨이 있는 위치를 보여줍니다.  NetApp Backup and Recovery는 복제본을 분할할 충분한 공간이 있는지 여부도 나타냅니다.  복제본이 분할된 후 복제본은 보호를 위한 독립적인 데이터베이스가 됩니다.
+클론을 독립 클론이나 장기 클론으로 분할할 수 있습니다.  마법사는 SVM에 포함된 집계 목록, 해당 크기, 복제된 볼륨이 있는 위치를 보여줍니다.  NetApp Backup and Recovery 복제본을 분할할 충분한 공간이 있는지 여부도 나타냅니다.  복제본이 분할된 후 복제본은 보호를 위한 독립적인 데이터베이스가 됩니다.
 
 복제 작업은 제거되지 않으며 다른 복제에 다시 재사용될 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *복제*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복제*를 선택합니다.
 . 복제본을 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *분할 복제*.
 . 분할된 클론의 세부 정보를 검토하고 *분할*을 선택합니다.
@@ -178,7 +178,7 @@ Microsoft SQL Server 워크로드의 복제본을 삭제할 수 있습니다.  �
 복제본이 정책으로 보호되는 경우 작업을 포함하여 복제본이 삭제됩니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *복제*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복제*를 선택합니다.
 . 복제본을 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *복제본 삭제*.
 . 복제 삭제 확인 대화 상자에서 삭제 세부 정보를 검토합니다.

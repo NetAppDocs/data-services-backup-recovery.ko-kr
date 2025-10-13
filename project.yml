@@ -23,7 +23,7 @@ settings:
   langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: NetApp 백업 및 복구 문서
+  - title: NetApp Backup and Recovery 문서
     url: "/index.html"
   - title: 릴리스 노트
     entries:
@@ -43,25 +43,25 @@ sidebar:
       url: "/br-limitations-oracle.html"
   - title: 시작하기
     entries:
-    - title: NetApp 백업 및 복구에 대해 알아보세요
+    - title: NetApp Backup and Recovery 에 대해 알아보세요
       url: "/concept-backup-to-cloud.html"
-    - title: NetApp 백업 및 복구를 위한 필수 구성 요소
+    - title: NetApp Backup and Recovery 위한 필수 구성 요소
       url: "/concept-start-prereq.html"
-    - title: NetApp 백업 및 복구에 대한 라이선싱 설정
+    - title: NetApp Backup and Recovery 에 대한 라이선싱 설정
       url: "/br-start-licensing.html"
     - title: ONTAP 및 StorageGRID 에 대한 보안 인증서 설정
       url: "/task-setup-ca-certificates.html"
-    - title: NetApp Backup and Recovery를 사용하기 전에 백업 대상을 설정하세요.
+    - title: NetApp Backup and Recovery 사용하기 전에 백업 대상을 설정하세요.
       url: "/br-start-setup.html"
-    - title: NetApp 백업 및 복구에 로그인하세요
+    - title: NetApp Backup and Recovery 에 로그인하세요
       url: "/br-start-login.html"
     - title: 백업 대상 검색
       url: "/br-start-discover-backup-targets.html"
-    - title: 다양한 NetApp 백업 및 복구 워크로드로 전환
+    - title: 다양한 NetApp Backup and Recovery 워크로드로 전환
       url: "/br-start-switch-ui.html"
-    - title: NetApp 백업 및 복구 일반 설정 구성
+    - title: NetApp Backup and Recovery 일반 설정 구성
       url: "/br-start-configure.html"
-  - title: NetApp 백업 및 복구 사용
+  - title: NetApp Backup and Recovery 사용
     entries:
     - title: 대시보드에서 보호 상태 보기
       url: "/br-use-dashboard.html"
@@ -113,7 +113,7 @@ sidebar:
         url: "/br-start-discover.html"
       - title: Microsoft SQL Server 워크로드 백업
         url: "/br-use-mssql-backup.html"
-      - title: Microsoft SQL Server 작업 부하 복원
+      - title: Microsoft SQL Server 워크로드 복원
         url: "/br-use-mssql-restore.html"
       - title: Microsoft SQL Server 워크로드 복제
         url: "/br-use-mssql-clone.html"
@@ -213,17 +213,17 @@ sidebar:
         url: "/br-use-manage-execution-hook-templates.html"
     - title: 작업 모니터링
       url: "/br-use-monitor-tasks.html"
-    - title: NetApp 백업 및 복구를 다시 시작하세요
+    - title: NetApp Backup and Recovery 다시 시작하세요
       url: "/reference-restart-backup.html"
   - title: REST API로 자동화
     url: "/br-api-backup-restore.html"
   - title: 참조
     entries:
-    - title: SnapCenter 의 정책과 NetApp 백업 및 복구의 비교
+    - title: SnapCenter 의 정책과 NetApp Backup and Recovery 의 비교
       url: "/reference-policy-differences-snapcenter.html"
-    - title: NetApp 백업 및 복구 역할 및 권한
+    - title: NetApp Backup and Recovery 역할 및 권한
       url: "/reference-roles.html"
-    - title: 다크 사이트에서 NetApp 백업 및 복구 데이터 복원
+    - title: 다크 사이트에서 NetApp Backup and Recovery 데이터 복원
       url: "/reference-backup-cbs-db-in-dark-site.html"
     - title: 지원되는 AWS 아카이브 스토리지 계층
       url: "/prev-reference-aws-archive-storage-tiers.html"

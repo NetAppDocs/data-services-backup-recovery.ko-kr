@@ -11,7 +11,7 @@
 
 NOTE: VMware 워크로드 보호에 대한 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.
 
-link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하는 방법에 대해 자세히 알아보세요."] .
+link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하는 방법에 대해 자세히 알아보세요."].
 
 
 

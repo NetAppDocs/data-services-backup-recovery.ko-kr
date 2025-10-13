@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-reference-azure-archive-storage-tiers.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery는 하나의 Azure 보관 액세스 계층과 대부분의 지역을 지원합니다. 
+summary: NetApp Backup and Recovery 하나의 Azure 보관 액세스 계층과 대부분의 지역을 지원합니다. 
 ---
-= NetApp Backup and Recovery를 통해 지원되는 Azure 보관 액세스 계층
+= NetApp Backup and Recovery 통해 지원되는 Azure 보관 액세스 계층
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,24 +14,24 @@ summary: NetApp Backup and Recovery는 하나의 Azure 보관 액세스 계층�
 
 
 [role="lead"]
-NetApp Backup and Recovery는 하나의 Azure 보관 액세스 계층과 대부분의 지역을 지원합니다.
+NetApp Backup and Recovery 하나의 Azure 보관 액세스 계층과 대부분의 지역을 지원합니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp 백업 및 복구 UI로 전환"] .
+*참고* NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
 
 ====
 
 
-== NetApp 백업 및 복구에 지원되는 Azure Blob 액세스 계층
+== NetApp Backup and Recovery 에 지원되는 Azure Blob 액세스 계층
 
 백업 파일이 처음 생성되면 _Cool_ 액세스 계층에 저장됩니다.  이 계층은 자주 액세스하지 않지만 필요할 때 즉시 액세스할 수 있는 데이터를 저장하는 데 최적화되어 있습니다.
 
 소스 클러스터가 ONTAP 9.10.1 이상을 실행하는 경우 특정 일수(일반적으로 30일 이상)가 지난 후 _Cool_에서 _Azure Archive_ 저장소로 백업을 계층화하여 비용을 더욱 최적화할 수 있습니다.  이 계층의 데이터는 필요할 때 즉시 액세스할 수 없으며 검색 비용이 더 많이 들기 때문에 이러한 보관된 백업 파일에서 데이터를 복원해야 하는 빈도를 고려해야 합니다.  이 페이지에서 보관 저장소에서 데이터를 복원하는 방법에 대한 섹션을 참조하세요.
 
-이러한 유형의 수명 주기 규칙으로 NetApp Backup and Recovery를 구성하는 경우 Azure 계정에서 컨테이너를 설정할 때 어떤 수명 주기 규칙도 구성해서는 안 됩니다.
+이러한 유형의 수명 주기 규칙으로 NetApp Backup and Recovery 구성하는 경우 Azure 계정에서 컨테이너를 설정할 때 어떤 수명 주기 규칙도 구성해서는 안 됩니다.
 
-https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Azure Blob 액세스 계층에 대해 알아보기"^] .
+https://docs.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview["Azure Blob 액세스 계층에 대해 알아보기"^].
 
 
 

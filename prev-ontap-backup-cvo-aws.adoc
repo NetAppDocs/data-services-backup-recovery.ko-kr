@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-cvo-aws.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP 데이터를 Amazon S3에 백업합니다.
+= NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 데이터를 Amazon S3에 백업합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp 백업 및 복구에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Amazon S3로 볼륨 데이터 백업을 시작하세요.
+NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Amazon S3로 볼륨 데이터 백업을 시작하세요.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 
@@ -31,7 +31,7 @@ S3에 볼륨 백업을 시작하기 전에 지원되는 구성이 있는지 확�
 
 선택적으로, 공용 또는 개인 연결을 사용하여 복제된 볼륨의 보조 ONTAP 시스템에 연결할 수도 있습니다.
 
-image:diagram_cloud_backup_cvo_aws.png["NetApp Backup and Recovery가 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
+image:diagram_cloud_backup_cvo_aws.png["NetApp Backup and Recovery 백업 파일이 있는 소스 시스템의 볼륨과 대상 스토리지와 통신하는 방식을 보여주는 다이어그램입니다."]
 
 VPC 게이트웨이 엔드포인트는 이미 VPC에 존재해야 합니다. https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html["게이트웨이 엔드포인트에 대해 자세히 알아보세요"^] .
 
@@ -43,13 +43,13 @@ VPC 게이트웨이 엔드포인트는 이미 VPC에 존재해야 합니다. htt
 
 == 라이센스 요구 사항 확인
 
-NetApp Backup and Recovery PAYGO 라이선스의 경우, AWS Marketplace에서 Cloud Volumes ONTAP 및 NetApp Backup and Recovery를 배포할 수 있는 콘솔 구독을 이용할 수 있습니다.  당신은 필요합니다 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["이 NetApp 콘솔 구독을 구독하세요"^] NetApp 백업 및 복구를 활성화하기 전에.  NetApp 백업 및 복구에 대한 청구는 이 구독을 통해 이루어집니다.
+NetApp Backup and Recovery PAYGO 라이선스의 경우 AWS Marketplace에서 Cloud Volumes ONTAP 및 NetApp Backup and Recovery 배포할 수 있는 콘솔 구독을 이용할 수 있습니다.  당신은 필요합니다 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["이 NetApp Console 구독을 구독하세요"^] NetApp Backup and Recovery 활성화하기 전에.  NetApp Backup and Recovery 대한 청구는 이 구독을 통해 이루어집니다.
 
 Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 모두 백업할 수 있는 연간 계약의 경우 다음에서 구독해야 합니다. https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS Marketplace 페이지"^] 그런 다음 https://docs.netapp.com/us-en/console-setup-admin/task-adding-aws-accounts.html["구독을 AWS 자격 증명과 연결합니다."^] .
 
-Cloud Volumes ONTAP 과 NetApp Backup and Recovery를 묶을 수 있는 연간 계약의 경우, Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정해야 합니다.  이 옵션을 사용하면 온프레미스 데이터를 백업할 수 없습니다.
+Cloud Volumes ONTAP 과 NetApp Backup and Recovery 묶을 수 있는 연간 계약의 경우 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정해야 합니다.  이 옵션을 사용하면 온프레미스 데이터를 백업할 수 없습니다.
 
-NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 용량 동안 서비스를 사용할 수 있도록 하는 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"] .  콘솔 에이전트와 Cloud Volumes ONTAP 시스템이 다크 사이트에 배포되는 경우 BYOL 라이선스를 사용해야 합니다.
+NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 용량 동안 서비스를 사용할 수 있도록 하는 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"].  콘솔 에이전트와 Cloud Volumes ONTAP 시스템이 다크 사이트에 배포되는 경우 BYOL 라이선스를 사용해야 합니다.
 
 백업이 저장될 저장 공간에 대한 AWS 계정이 필요합니다.
 
@@ -57,7 +57,7 @@ NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 �
 
 == 콘솔 에이전트를 준비하세요
 
-콘솔 에이전트는 전체 또는 제한된 인터넷 액세스("표준" 또는 "제한" 모드)가 가능한 AWS 지역에 설치해야 합니다. https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["자세한 내용은 NetApp 콘솔 배포 모드를 참조하세요."^] .
+콘솔 에이전트는 전체 또는 제한된 인터넷 액세스("표준" 또는 "제한" 모드)가 가능한 AWS 지역에 설치해야 합니다. https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["자세한 내용은 NetApp Console 배포 모드를 참조하세요."^] .
 
 * https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트에 대해 알아보세요"^]
 * https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["AWS에 표준 모드(전체 인터넷 액세스)로 콘솔 에이전트 배포"^]
@@ -136,13 +136,13 @@ NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 �
 
 NOTE: AWS 중국 리전에서 백업을 생성할 때 IAM 정책의 모든 _Resource_ 섹션 아래에 있는 AWS 리소스 이름 "arn"을 "aws"에서 "aws-cn"으로 변경해야 합니다. 예를 들어, `arn:aws-cn:s3:::netapp-backup-*` .
 
-필수 AWS Cloud Volumes ONTAP 권한:: Cloud Volumes ONTAP 시스템에서 ONTAP 9.12.1 이상 소프트웨어를 실행하는 경우 해당 시스템에 권한을 제공하는 IAM 역할에는 최신 버전의 NetApp Backup and Recovery를 위한 새로운 S3 권한 세트가 포함되어야 합니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-set-up-iam-roles.html["Cloud Volumes ONTAP 정책"^] .
+필수 AWS Cloud Volumes ONTAP 권한:: Cloud Volumes ONTAP 시스템에서 ONTAP 9.12.1 이상 소프트웨어를 실행하는 경우 해당 시스템에 권한을 제공하는 IAM 역할에는 최신 버전의 NetApp Backup and Recovery 위한 새로운 S3 권한 세트가 포함되어야 합니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-set-up-iam-roles.html["Cloud Volumes ONTAP 정책"^] .
 +
 --
 콘솔 버전 3.9.23 이상을 사용하여 Cloud Volumes ONTAP 시스템을 만든 경우 이러한 권한은 이미 IAM 역할의 일부여야 합니다.  그렇지 않으면 누락된 권한을 추가해야 합니다.
 
 --
-지원되는 AWS 지역:: NetApp 백업 및 복구는 AWS GovCloud 지역을 포함한 모든 AWS 지역에서 지원됩니다.
+지원되는 AWS 지역:: NetApp Backup and Recovery AWS GovCloud 지역을 포함한 모든 AWS 지역에서 지원됩니다.
 다른 AWS 계정에서 백업을 생성하기 위한 필수 설정:: 기본적으로 백업은 Cloud Volumes ONTAP 시스템에 사용된 계정과 동일한 계정을 사용하여 생성됩니다.  백업에 다른 AWS 계정을 사용하려면 다음을 수행해야 합니다.
 +
 --
@@ -168,7 +168,7 @@ NOTE: AWS 중국 리전에서 백업을 생성할 때 IAM 정책의 모든 _Reso
 나만의 버킷을 만들어보세요:: 기본적으로 서비스는 사용자를 위해 버킷을 생성합니다.  자신의 버킷을 사용하려면 백업 활성화 마법사를 시작하기 전에 버킷을 만든 다음 마법사에서 해당 버킷을 선택하면 됩니다.
 +
 --
-link:prev-ontap-protect-journey.html["나만의 버킷을 만드는 방법에 대해 자세히 알아보세요"^] .
+link:prev-ontap-protect-journey.html["나만의 버킷을 만드는 방법에 대해 자세히 알아보세요"^].
 
 --
 
@@ -177,13 +177,13 @@ link:prev-ontap-protect-journey.html["나만의 버킷을 만드는 방법에 �
 
 == 볼륨 복제를 위한 ONTAP 네트워킹 요구 사항 확인
 
-NetApp Backup and Recovery를 사용하여 보조 ONTAP 시스템에 복제된 볼륨을 생성하려는 경우 소스 및 대상 시스템이 다음 네트워킹 요구 사항을 충족하는지 확인하세요.
+NetApp Backup and Recovery 사용하여 보조 ONTAP 시스템에 복제된 볼륨을 생성하려는 경우 소스 및 대상 시스템이 다음 네트워킹 요구 사항을 충족하는지 확인하세요.
 
 
 
 ==== 온프레미스 ONTAP 네트워킹 요구 사항
 
-* 클러스터가 사내에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다.  이는 일반적으로 VPN 연결입니다.
+* 클러스터가 사내에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다. 이는 일반적으로 VPN 연결입니다.
 * ONTAP 클러스터는 추가적인 서브넷, 포트, 방화벽 및 클러스터 요구 사항을 충족해야 합니다.
 +
 Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하세요. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^] .
@@ -194,7 +194,7 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 
 ==== Cloud Volumes ONTAP 네트워킹 요구 사항
 
-* 인스턴스의 보안 그룹에는 필수 인바운드 및 아웃바운드 규칙이 포함되어야 합니다. 구체적으로는 ICMP 및 포트 11104와 11105에 대한 규칙이 포함됩니다.  이러한 규칙은 미리 정의된 보안 그룹에 포함됩니다.
+* 인스턴스의 보안 그룹에는 필수 인바운드 및 아웃바운드 규칙이 포함되어야 합니다. 구체적으로는 ICMP 및 포트 11104와 11105에 대한 규칙이 포함됩니다. 이러한 규칙은 미리 정의된 보안 그룹에 포함됩니다.
 
 
 * 서로 다른 서브넷에 있는 두 개의 Cloud Volumes ONTAP 시스템 간에 데이터를 복제하려면 서브넷을 함께 라우팅해야 합니다(이는 기본 설정입니다).
@@ -202,13 +202,13 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 
 
 
-== Cloud Volumes ONTAP 에서 NetApp 백업 및 복구 활성화
+== Cloud Volumes ONTAP 에서 NetApp Backup and Recovery 활성화
 
-NetApp 백업 및 복구를 활성화하는 것은 쉽습니다.  단계는 기존 Cloud Volumes ONTAP 시스템이 있는지 아니면 새 시스템이 있는지에 따라 약간씩 다릅니다.
+NetApp Backup and Recovery 활성화하는 것은 쉽습니다.  단계는 기존 Cloud Volumes ONTAP 시스템이 있는지 아니면 새 시스템이 있는지에 따라 약간씩 다릅니다.
 
-*새 시스템에서 NetApp 백업 및 복구 활성화*
+*새 시스템에서 NetApp Backup and Recovery 활성화*
 
-NetApp 백업 및 복구는 시스템 마법사에서 기본적으로 활성화되어 있습니다.  해당 옵션을 활성화해 두세요.
+NetApp Backup and Recovery 시스템 마법사에서 기본적으로 활성화되어 있습니다.  해당 옵션을 활성화해 두세요.
 
 보다 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 출시"^] Cloud Volumes ONTAP 시스템을 만드는 데 필요한 요구 사항과 세부 정보를 확인하세요.
 
@@ -216,16 +216,16 @@ NetApp 백업 및 복구는 시스템 마법사에서 기본적으로 활성화�
 . 콘솔의 *시스템* 페이지에서 *시스템 추가*를 선택하고, 클라우드 공급자를 선택한 다음 *새로 추가*를 선택합니다.  * Cloud Volumes ONTAP 만들기*를 선택합니다.
 . 클라우드 공급자로 *Amazon Web Services*를 선택한 다음 단일 노드 또는 HA 시스템을 선택합니다.
 . 세부 정보 및 자격 증명 페이지를 작성하세요.
-. 서비스 페이지에서 서비스를 활성화된 상태로 두고 *계속*을 선택합니다.
+. 서비스 페이지에서 서비스를 활성화한 상태로 두고 *계속*을 선택합니다.
 . 마법사의 페이지를 완료하여 시스템을 배포합니다.
 
 
 .결과
-시스템에서 NetApp 백업 및 복구가 활성화되어 있습니다.  이러한 Cloud Volumes ONTAP 시스템에서 볼륨을 생성한 후 NetApp Backup and Recovery를 실행하세요.link:prev-ontap-backup-manage.html["보호하려는 각 볼륨에서 백업을 활성화합니다."] .
+시스템에서 NetApp Backup and Recovery 활성화되어 있습니다.  이러한 Cloud Volumes ONTAP 시스템에서 볼륨을 생성한 후 NetApp Backup and Recovery 실행하세요.link:prev-ontap-backup-manage.html["보호하려는 각 볼륨에서 백업을 활성화합니다."] .
 
-*기존 시스템에서 NetApp 백업 및 복구 활성화*
+*기존 시스템에서 NetApp Backup and Recovery 활성화*
 
-콘솔에서 언제든지 기존 시스템에서 NetApp 백업 및 복구를 활성화할 수 있습니다.
+콘솔에서 언제든지 기존 시스템에서 NetApp Backup and Recovery 활성화할 수 있습니다.
 
 .단계
 . 콘솔의 *시스템* 페이지에서 클러스터를 선택하고 오른쪽 패널의 백업 및 복구 옆에 있는 *활성화*를 선택합니다.
@@ -269,7 +269,7 @@ NetApp 백업 및 복구는 시스템 마법사에서 기본적으로 활성화�
 . 다음 옵션을 계속 진행하세요.
 +
 ** 이미 콘솔 에이전트가 있다면 준비가 완료된 것입니다.  *다음*을 선택하세요.
-** 아직 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다. <<콘솔 에이전트를 준비하세요>> .
+** 아직 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다.  참조하다<<콘솔 에이전트를 준비하세요>> .
 
 
 
@@ -430,7 +430,7 @@ TIP: 백업을 활성화하기 전에 사용자 정의 정책을 생성하려면
 
 
 .결과
-NetApp Backup and Recovery는 볼륨의 초기 백업을 시작합니다.  복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다.  이후 전송에는 스냅샷 복사본에 포함된 기본 스토리지 시스템 데이터의 차등 복사본이 포함됩니다.
+NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다.  복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다.  이후 전송에는 스냅샷 복사본에 포함된 기본 스토리지 시스템 데이터의 차등 복사본이 포함됩니다.
 
 대상 클러스터에 복제된 볼륨이 생성되어 기본 저장소 볼륨과 동기화됩니다.
 

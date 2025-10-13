@@ -6,7 +6,7 @@
 
 === 미리 보기로 Kubernetes 워크로드 지원
 
-NetApp Backup and Recovery의 이번 릴리스에서는 Kubernetes 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 Kubernetes 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
 
 * kubeconfig 파일을 공유하지 않고도 NetApp ONTAP 지원하는 Red Hat OpenShift와 오픈 소스 Kubernetes 클러스터를 살펴보세요.
 * 통합 제어 평면을 사용하여 여러 Kubernetes 클러스터에서 애플리케이션을 검색, 관리 및 보호합니다.
@@ -17,4 +17,4 @@ NetApp Backup and Recovery의 이번 릴리스에서는 Kubernetes 워크로드 
 * 실행 후크와 템플릿을 사용하여 애플리케이션과 일관된 백업을 만듭니다.
 
 
-Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
+Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .

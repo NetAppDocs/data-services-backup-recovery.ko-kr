@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-start-discover-kubernetes.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Kubernetes 
-summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
+summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
 ---
-= NetApp 백업 및 복구에서 Kubernetes 워크로드를 알아보세요
+= NetApp Backup and Recovery 에서 Kubernetes 워크로드를 알아보세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: NetApp 백업 및 복구 서비스를 사용하려면 먼저 워크로�
 [role="lead"]
 NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를 검색해야 합니다.
 
-*필수 NetApp 콘솔 역할* 백업 및 복구 슈퍼 관리자. 에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 
 
@@ -27,8 +27,8 @@ NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를
 .단계
 . 다음 중 하나를 수행하세요.
 +
-** 처음으로 Kubernetes 워크로드를 검색하는 경우 NetApp Backup and Recovery에서 Kubernetes 워크로드 유형 아래에서 *검색 및 관리*를 선택합니다.
-** 이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery에서 *인벤토리* > *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.
+** 처음으로 Kubernetes 워크로드를 검색하는 경우 NetApp Backup and Recovery 에서 Kubernetes 워크로드 유형 아래에서 *검색 및 관리*를 선택합니다.
+** 이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery 에서 *인벤토리* > *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.
 
 
 . *Kubernetes* 워크로드 유형을 선택하세요.
@@ -40,7 +40,7 @@ NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를
 ** Helm 저장소 추가
 ** Trident Protect 및 Trident Protect 커넥터 설치
 +
-이러한 단계를 거치면 NetApp Backup and Recovery가 클러스터와 상호 작용할 수 있습니다.
+이러한 단계를 거치면 NetApp Backup and Recovery 클러스터와 상호 작용할 수 있습니다.
 
 
 
@@ -53,13 +53,13 @@ NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를
 
 
 
-== NetApp 백업 및 복구 대시보드로 계속
+== NetApp Backup and Recovery 보드로 계속
 
 NetApp Backup and Recovery 보드를 보려면 다음 단계를 따르세요.
 
 . 상단 메뉴에서 *대시보드*를 선택하세요.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 +
-link:br-use-dashboard.html["대시보드에서 무엇을 볼 수 있는지 알아보세요"] .
+link:br-use-dashboard.html["대시보드에서 무엇을 볼 수 있는지 알아보세요"].
 
 

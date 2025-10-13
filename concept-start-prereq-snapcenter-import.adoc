@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-start-prereq-snapcenter-import.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, backup and recovery, snapcenter, import, migration, migrate 
-summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp 백업 및 복구를 시작하세요.  NetApp 백업 및 복구를 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
+summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp Backup and Recovery 시작하세요.  NetApp Backup and Recovery 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
 ---
-= 플러그인 서비스에서 NetApp Backup and Recovery로 가져오기 위한 전제 조건
+= 플러그인 서비스에서 NetApp Backup and Recovery 로 가져오기 위한 전제 조건
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 �
 
 
 [role="lead"]
-Microsoft SQL Server용 SnapCenter 플러그인 서비스에서 NetApp Backup and Recovery로 리소스를 가져오려면 몇 가지 항목을 더 구성해야 합니다.
+Microsoft SQL Server용 SnapCenter 플러그인 서비스에서 NetApp Backup and Recovery 로 리소스를 가져오려면 몇 가지 항목을 더 구성해야 합니다.
 
 
 
-== 먼저 NetApp 콘솔에서 시스템을 만드세요
+== 먼저 NetApp Console 에서 시스템을 만드세요
 
 SnapCenter 에서 리소스를 가져오려면 SnapCenter 에서 가져오기 전에 먼저 온프레미스 SnapCenter 클러스터 스토리지를 모두 콘솔의 시스템 페이지에 추가해야 합니다.  이렇게 하면 호스트 리소스를 올바르게 검색하고 가져올 수 있습니다.
 
@@ -28,7 +28,7 @@ SnapCenter 에서 리소스를 가져오려면 SnapCenter 에서 가져오기 �
 
 Microsoft SQL Server용 SnapCenter 플러그인에서 리소스를 가져오려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하기 위한 호스트 요구 사항이 충족되는지 확인하세요.
 
-SnapCenter 요구 사항을 특별히 확인하세요.link:concept-start-prereq.html["NetApp 백업 및 복구 필수 구성 요소"] .
+SnapCenter 요구 사항을 특별히 확인하세요.link:concept-start-prereq.html["NetApp Backup and Recovery 필수 구성 요소"] .
 
 
 

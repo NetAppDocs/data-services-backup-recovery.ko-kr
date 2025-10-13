@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-vmware-register-snapcenter.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp 백업 및 복구와 함께 사용할 SnapCenter Plug-in for VMware vSphere 등록
+= NetApp Backup and Recovery 와 함께 사용할 SnapCenter Plug-in for VMware vSphere 등록
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-데이터 저장소와 가상 머신이 표시되도록 하려면 NetApp Backup and Recovery에서 SnapCenter Plug-in for VMware vSphere 등록해야 합니다.  관리자 액세스 권한이 있는 사용자만 SnapCenter Plug-in for VMware vSphere 등록할 수 있습니다.
+데이터 저장소와 가상 머신이 표시되도록 하려면 NetApp Backup and Recovery 에서 SnapCenter Plug-in for VMware vSphere 등록해야 합니다.  관리자 액세스 권한이 있는 사용자만 SnapCenter Plug-in for VMware vSphere 등록할 수 있습니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 .단계
-. NetApp 콘솔 UI에서 *보호* > *백업 및 복구* > *가상 머신*을 선택합니다.
+. NetApp Console UI에서 *보호* > *백업 및 복구* > *가상 머신*을 선택합니다.
 . *설정* 드롭다운에서 * SnapCenter Plug-in for VMware vSphere*을 선택합니다.
 . * SnapCenter Plug-in for VMware vSphere 등록*을 선택합니다.
 . 다음 세부 사항을 지정하세요.

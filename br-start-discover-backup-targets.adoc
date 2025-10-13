@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-start-discover-backup-targets.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Microsoft SQL Server database, 
-summary: 'NetApp Backup and Recovery에서 오프사이트 백업 대상을 찾으려면 몇 가지 단계를 완료하세요.  이러한 대상에는 Amazon Web Services(AWS) S3, Microsoft Azure Blob Storage, Google Cloud Storage, StorageGRID 포함될 수 있습니다.' 
+summary: 'NetApp Backup and Recovery 에서 오프사이트 백업 대상을 찾으려면 몇 가지 단계를 완료하세요.  이러한 대상에는 Amazon Web Services(AWS) S3, Microsoft Azure Blob Storage, Google Cloud Storage, StorageGRID 포함될 수 있습니다.' 
 ---
-= NetApp 백업 및 복구에서 오프사이트 백업 대상을 찾아보세요
+= NetApp Backup and Recovery 에서 오프사이트 백업 대상을 찾아보세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'NetApp Backup and Recovery에서 오프사이트 백업 대상을 찾�
 
 
 [role="lead"]
-NetApp Backup and Recovery에서 오프사이트 백업 대상을 검색하거나 수동으로 추가하려면 몇 가지 단계를 완료하세요.
+NetApp Backup and Recovery 에서 오프사이트 백업 대상을 검색하거나 수동으로 추가하려면 몇 가지 단계를 완료하세요.
 
 
 
@@ -30,7 +30,7 @@ NetApp Backup and Recovery 사용하기 전에 백업 대상(Amazon Web Services
 오프사이트 백업 대상을 추가하려면 먼저 하나 이상의 워크로드를 검색해야 합니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . *오프사이트 백업 대상* 탭을 선택합니다.
 . *백업 대상 검색*을 선택합니다.
 . 백업 대상 유형 중 하나를 선택하세요: *Amazon Web Services(AWS) S3*, *Microsoft Azure Blob Storage*, * StorageGRID* 또는 * ONTAP S3*.
@@ -80,10 +80,10 @@ NetApp Backup and Recovery 사용하기 전에 백업 대상(Amazon Web Services
 
 == 백업 대상에 버킷 추가
 
-NetApp Backup and Recovery가 버킷을 자동으로 검색하는 대신, 오프사이트 백업 대상에 버킷을 수동으로 추가할 수 있습니다.
+NetApp Backup and Recovery 가 버킷을 자동으로 검색하는 대신, 오프사이트 백업 대상에 버킷을 수동으로 추가할 수 있습니다.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . *오프사이트 백업 대상*을 선택하세요.
 . 대상을 선택하고 오른쪽에서 *작업*을 선택하세요.image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *버킷 추가*를 선택하세요.
 . 버킷 정보를 입력하세요.  정보는 선택한 백업 대상 유형에 따라 다릅니다.
@@ -124,7 +124,7 @@ NetApp Backup and Recovery가 버킷을 자동으로 검색하는 대신, 오프
 *** *버킷 이름*: StorageGRID 버킷의 이름을 입력하세요.
 *** *지역*: 버킷의 StorageGRID 지역을 입력하세요.
 *** *버전 관리 활성화*: StorageGRID 버킷에 대한 버전 관리를 활성화하려면 이 옵션을 선택합니다.  버전 관리를 사용하면 버킷에 있는 객체의 여러 버전을 보관할 수 있으며, 이는 백업 및 복구 목적으로 유용할 수 있습니다.
-*** *객체 잠금*: StorageGRID 버킷에 대한 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰여지는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  버킷을 생성할 때만 이 기능을 활성화할 수 있으며 나중에 끌 수 없습니다.
+*** *객체 잠금*: StorageGRID 버킷에 대한 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰이는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  이 기능은 버킷을 생성할 때만 활성화할 수 있으며 나중에 끌 수 없습니다.
 *** *용량*: StorageGRID 버킷의 용량을 입력하세요.  이는 버킷에 저장할 수 있는 최대 데이터 양입니다.
 
 
@@ -134,7 +134,7 @@ NetApp Backup and Recovery가 버킷을 자동으로 검색하는 대신, 오프
 *** *버킷 대상 이름*: ONTAP S3 버킷의 이름을 입력하세요.
 *** *용량*: ONTAP S3 버킷의 용량을 입력하세요.  이는 버킷에 저장할 수 있는 최대 데이터 양입니다.
 *** *버전 관리 활성화*: ONTAP S3 버킷의 버전 관리를 활성화하려면 이 옵션을 선택합니다.  버전 관리를 사용하면 버킷에 있는 객체의 여러 버전을 보관할 수 있으며, 이는 백업 및 복구 목적으로 유용할 수 있습니다.
-*** *객체 잠금*: ONTAP S3 버킷에 대한 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰여지는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  버킷을 생성할 때만 이 기능을 활성화할 수 있으며 나중에 끌 수 없습니다.
+*** *객체 잠금*: ONTAP S3 버킷에 대한 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰이는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  이 기능은 버킷을 생성할 때만 활성화할 수 있으며 나중에 끌 수 없습니다.
 
 
 
@@ -149,7 +149,7 @@ NetApp Backup and Recovery가 버킷을 자동으로 검색하는 대신, 오프
 백업 대상에 액세스하는 데 필요한 자격 증명을 입력하세요.
 
 .단계
-. NetApp 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . *오프사이트 백업 대상*을 선택하세요.
 . 대상을 선택하고 오른쪽에서 *작업*을 선택하세요.image:icon-action.png["작업 아이콘"] 아이콘을 클릭하고 *자격 증명 변경*을 선택하세요.
 . 백업 대상에 대한 새로운 자격 증명을 입력합니다.  정보는 선택한 백업 대상 유형에 따라 다릅니다.

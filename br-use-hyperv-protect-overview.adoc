@@ -14,25 +14,25 @@ summary: 온프레미스 ONTAP 시스템에서 기본 및 보조 스토리지까
 
 
 [role="lead"]
-NetApp 백업 및 복구를 사용하여 Hyper-V VM을 보호하세요.  NetApp 백업 및 복구는 독립 실행형 인스턴스와 FCI 클러스터 인스턴스 모두에 대해 빠르고 공간 효율적이며 충돌 일관성이 뛰어나고 VM 일관성이 있는 백업 및 복원 작업을 제공합니다.
+NetApp Backup and Recovery 사용하여 Hyper-V VM을 보호하세요.  NetApp Backup and Recovery 독립 실행형 인스턴스와 FCI 클러스터 인스턴스 모두에 대해 빠르고 공간 효율적이며 충돌 일관성이 뛰어나고 VM 일관성이 있는 백업 및 복원 작업을 제공합니다.
 
 Hyper-V 워크로드를 Amazon Web Services S3 또는 StorageGRID 에 백업하고 Hyper-V 워크로드를 온프레미스 Hyper-V 호스트로 복원할 수 있습니다.
 
 image:../media/diagram-backup-recovery-general.png["백업 및 복구의 일반적인 아키텍처 다이어그램"]
 
-NetApp 백업 및 복구를 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
+NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
 
 * 여러 개의 데이터 사본은 내부자 및 외부 사이버 보안 위협으로부터 다중 계층의 보호를 제공합니다.
 * 여러 미디어 유형을 사용하면 하나의 미디어 유형에 물리적 또는 논리적 오류가 발생하는 경우에도 장애 조치를 실행할 수 있습니다.
 * 현장 사본은 빠른 복원을 용이하게 하며, 현장 사본이 손상된 경우를 대비해 오프사이트 사본을 사용할 수 있습니다.
 
 
-Hyper-V 호스트를 추가하고 리소스를 검색하면 NetApp Backup and Recovery가 NetApp Hyper-V 플러그인과 NetApp SnapCenter Windows FileSystem 플러그인을 Hyper-V 호스트에 설치하여 가상 머신을 관리하고 보호하는 데 도움을 줍니다.
+Hyper-V 호스트를 추가하고 리소스를 검색하면 NetApp Backup and Recovery 가 NetApp Hyper-V 플러그인과 NetApp SnapCenter Windows FileSystem 플러그인을 Hyper-V 호스트에 설치하여 가상 머신을 관리하고 보호하는 데 도움을 줍니다.
 
 
-NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp 백업 및 복구 UI로 전환"] .
+NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
 
-NetApp Backup and Recovery를 사용하면 Hyper-V 워크로드와 관련된 다음 작업을 수행할 수 있습니다.
+NetApp Backup and Recovery 사용하면 Hyper-V 워크로드와 관련된 다음 작업을 수행할 수 있습니다.
 
 * link:br-start-discover-hyperv.html["Hyper-V 워크로드 검색"]
 * link:br-use-hyperv-protection-groups.html["Hyper-V 워크로드에 대한 보호 그룹 생성 및 관리"]

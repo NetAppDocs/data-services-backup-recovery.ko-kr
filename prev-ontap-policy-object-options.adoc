@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-policy-object-options.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery의 개체 백업 정책 옵션
+= NetApp Backup and Recovery 의 개체 백업 정책 옵션
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,23 +14,23 @@ summary: NetApp NetApp Backup and Recovery를 사용하여 VMware 워크로드�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하면 온프레미스 ONTAP 및 Cloud Volumes ONTAP 시스템에 대한 다양한 설정으로 백업 정책을 만들 수 있습니다.
+NetApp Backup and Recovery 사용하면 온프레미스 ONTAP 및 Cloud Volumes ONTAP 시스템에 대한 다양한 설정으로 백업 정책을 만들 수 있습니다.
 
 
 NOTE: 이러한 정책 설정은 개체 저장소 백업에만 적용됩니다.  이러한 설정은 스냅샷이나 복제 정책에 영향을 미치지 않습니다.
 
 []
 ====
-*참고* NetApp 백업 및 복구 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp 백업 및 복구 워크로드로 전환"] .
+*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
 ====
 
 
 == 백업 일정 옵션
 
-NetApp Backup and Recovery를 사용하면 각 시스템(클러스터)에 대해 고유한 일정을 적용하여 여러 백업 정책을 만들 수 있습니다.  서로 다른 복구 지점 목표(RPO)를 가진 볼륨에 서로 다른 백업 정책을 할당할 수 있습니다.
+NetApp Backup and Recovery 사용하면 각 시스템(클러스터)에 대해 고유한 일정을 적용하여 여러 백업 정책을 만들 수 있습니다.  서로 다른 복구 지점 목표(RPO)를 가진 볼륨에 서로 다른 백업 정책을 할당할 수 있습니다.
 
-각 백업 정책에는 백업 파일에 적용할 수 있는 _레이블 및 보존_ 섹션이 제공됩니다.  볼륨에 적용된 스냅샷 정책은 NetApp Backup and Recovery에서 인식하는 정책 중 하나여야 하며, 그렇지 않으면 백업 파일이 생성되지 않습니다.
+각 백업 정책에는 백업 파일에 적용할 수 있는 _레이블 및 보존_ 섹션이 제공됩니다.  볼륨에 적용된 스냅샷 정책은 NetApp Backup and Recovery 에서 인식하는 정책 중 하나여야 하며, 그렇지 않으면 백업 파일이 생성되지 않습니다.
 
 일정에는 레이블과 보존 값의 두 부분이 있습니다.
 
@@ -44,7 +44,7 @@ NetApp Backup and Recovery를 사용하면 각 시스템(클러스터)에 대해
 * *보존* 값은 각 레이블(기간)에 대해 얼마나 많은 백업 파일을 보존할지 정의합니다.  카테고리나 간격에서 백업의 최대 수에 도달하면 오래된 백업이 제거되어 항상 최신 백업을 보유할 수 있습니다.  또한, 오래된 백업이 클라우드에서 더 이상 공간을 차지하지 않으므로 저장 비용도 절약됩니다.
 
 
-예를 들어, 7개의 *주간* 백업과 12개의 *월간* 백업을 생성하는 백업 정책을 만든다고 가정해 보겠습니다.
+예를 들어, 7개의 *주간* 백업과 12개의 *월간* 백업을 생성하는 백업 정책을 생성한다고 가정해 보겠습니다.
 
 * 매주, 매월 볼륨에 대한 백업 파일이 생성됩니다.
 * 8주차에 첫 번째 주간 백업이 제거되고 8주차의 새로운 주간 백업이 추가됩니다(최대 7개의 주간 백업 유지)
@@ -57,17 +57,17 @@ NetApp Backup and Recovery를 사용하면 각 시스템(클러스터)에 대해
 
 == DataLock 및 랜섬웨어 보호 옵션
 
-NetApp Backup and Recovery는 볼륨 백업에 대한 DataLock 및 랜섬웨어 보호를 지원합니다.  이러한 기능을 사용하면 백업 파일을 잠그고 검사하여 백업 파일에 랜섬웨어가 있는지 감지할 수 있습니다.  이는 클러스터의 볼륨 백업에 대한 추가 보호가 필요할 때 백업 정책에서 정의할 수 있는 선택적 설정입니다.
+NetApp Backup and Recovery 볼륨 백업에 대한 DataLock 및 랜섬웨어 보호를 지원합니다.  이러한 기능을 사용하면 백업 파일을 잠그고 검사하여 백업 파일에 랜섬웨어가 있는지 감지할 수 있습니다.  이는 클러스터의 볼륨 백업에 대한 추가 보호가 필요할 때 백업 정책에서 정의할 수 있는 선택적 설정입니다.
 
-이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다. 백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다. DataLock 및 랜섬웨어 복원력 옵션이 활성화되면 NetApp 백업 및 복구 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.
+이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다.  백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다.  DataLock 및 랜섬웨어 복원력 옵션이 활성화되면 NetApp Backup and Recovery 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.
 
-https://bluexp.netapp.com/blog/cbs-blg-the-bluexp-feature-that-protects-backups-from-ransomware["자세한 내용은 DataLock 및 랜섬웨어 보호 블로그를 참조하세요."^] .
+https://bluexp.netapp.com/blog/cbs-blg-the-bluexp-feature-that-protects-backups-from-ransomware["자세한 내용은 DataLock 및 랜섬웨어 보호 블로그를 참조하세요."^].
 
 이 기능은 소스 볼륨에 대한 보호 기능을 제공하지 않으며, 해당 소스 볼륨의 백업에만 보호 기능을 제공합니다.  일부를 사용하세요 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP 에서 제공하는 랜섬웨어 방지 보호"^] 소스 볼륨을 보호하세요.
 
 [CAUTION]
 ====
-* DataLock 및 랜섬웨어 보호 기능을 사용하려는 경우 첫 번째 백업 정책을 만들고 해당 클러스터에 대한 NetApp 백업 및 복구를 활성화할 때 이를 활성화할 수 있습니다.  나중에 NetApp 백업 및 복구 고급 설정을 사용하여 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다.
+* DataLock 및 랜섬웨어 보호 기능을 사용하려는 경우 첫 번째 백업 정책을 만들고 해당 클러스터에 대한 NetApp Backup and Recovery 활성화할 때 이를 활성화할 수 있습니다.  나중에 NetApp Backup and Recovery 고급 설정을 사용하여 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다.
 * 볼륨 데이터를 복원할 때 콘솔이 백업 파일에서 랜섬웨어를 검사하면 백업 파일의 내용에 액세스하기 위해 클라우드 공급자로부터 추가 퇴장 비용이 발생합니다.
 
 
@@ -134,7 +134,7 @@ DataLock 보존 설정은 백업 정책의 정책 보존 설정을 재정의합�
 
 
 
-link:prev-ontap-policy-object-advanced-settings.html["고급 설정 페이지에서 랜섬웨어 보호 옵션을 업데이트하는 방법"] .
+참조하다link:prev-ontap-policy-object-advanced-settings.html["고급 설정 페이지에서 랜섬웨어 보호 옵션을 업데이트하는 방법"] .
 
 
 
@@ -228,7 +228,7 @@ ifdef::aws[]
 
 ====
 +
-https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-aws.html["필요한 권한을 복사하여 붙여넣을 수 있는 정책에 대한 전체 JSON 형식을 확인하세요."^] .
+https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-aws.html["필요한 권한을 복사하여 붙여넣을 수 있는 정책에 대한 전체 JSON 형식을 확인하세요."^].
 
 
 
@@ -307,7 +307,7 @@ endif::gcp[]
 === 제한
 
 * 백업 정책에서 보관 저장소를 구성한 경우 DataLock 및 랜섬웨어 보호 기능을 사용할 수 없습니다.
-* NetApp 백업 및 복구를 활성화할 때 선택하는 DataLock 옵션은 해당 클러스터의 모든 백업 정책에 사용해야 합니다.
+* NetApp Backup and Recovery 활성화할 때 선택하는 DataLock 옵션은 해당 클러스터의 모든 백업 정책에 사용해야 합니다.
 * 단일 클러스터에서 여러 DataLock 모드를 사용할 수 없습니다.
 * DataLock을 활성화하면 모든 볼륨 백업이 잠깁니다.  단일 클러스터에 대해 잠긴 볼륨 백업과 잠기지 않은 볼륨 백업을 혼합할 수 없습니다.
 * DataLock 및 랜섬웨어 보호는 DataLock 및 랜섬웨어 보호가 활성화된 백업 정책을 사용하여 새 볼륨 백업에 적용할 수 있습니다. 나중에 고급 설정 옵션을 사용하여 이러한 기능을 활성화하거나 비활성화할 수 있습니다.
@@ -339,7 +339,7 @@ NOTE: Microsoft Azure는 대신 잠금 및 잠금 해제 모드를 사용합니�
 
 DataLock 비용을 완화하기 위한 추가 팁은 다음을 참조하세요.https://community.netapp.com/t5/Tech-ONTAP-Blogs/Understanding-NetApp-Backup-and-Recovery-DataLock-and-Ransomware-Feature-TCO/ba-p/453475[]
 
-또한 DataLock과 관련된 비용에 대한 견적은 다음을 방문하여 얻을 수 있습니다. https://bluexp.netapp.com/cloud-backup-service-tco-calculator["NetApp 백업 및 복구 총소유비용(TCO) 계산기"] .
+또한 DataLock과 관련된 비용에 대한 견적은 다음을 방문하여 얻을 수 있습니다. https://bluexp.netapp.com/cloud-backup-service-tco-calculator["NetApp Backup and Recovery 총소유비용(TCO) 계산기"] .
 
 
 
@@ -363,10 +363,10 @@ ifdef::aws[]
 
 * AWS에서 백업은 _Standard_ 스토리지 클래스에서 시작하여 30일 후에 _Standard-Infrequent Access_ 스토리지 클래스로 전환됩니다.
 +
-클러스터가 ONTAP 9.10.1 이상을 사용하는 경우 이전 백업을 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"] .
+클러스터가 ONTAP 9.10.1 이상을 사용하는 경우 이전 백업을 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"].
 
 +
-** NetApp 백업 및 복구를 활성화할 때 첫 번째 백업 정책에서 보관 계층을 선택하지 않으면 _S3 Glacier_가 향후 정책에 대한 유일한 보관 옵션이 됩니다.
+** NetApp Backup and Recovery 활성화할 때 첫 번째 백업 정책에서 보관 계층을 선택하지 않으면 _S3 Glacier_가 향후 정책에 대한 유일한 보관 옵션이 됩니다.
 ** 첫 번째 백업 정책에서 _S3 Glacier_를 선택하면 해당 클러스터의 향후 백업 정책에 대해 _S3 Glacier Deep Archive_ 계층으로 변경할 수 있습니다.
 ** 첫 번째 백업 정책에서 _S3 Glacier Deep Archive_를 선택하면 해당 계층은 해당 클러스터의 향후 백업 정책에 사용할 수 있는 유일한 아카이브 계층이 됩니다.
 
@@ -379,7 +379,7 @@ ifdef::azure[]
 
 * Azure에서 백업은 _Cool_ 액세스 계층과 연결됩니다.
 +
-클러스터가 ONTAP 9.10.1 이상을 사용하는 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"] .
+클러스터가 ONTAP 9.10.1 이상을 사용하는 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"].
 
 
 
@@ -389,7 +389,7 @@ ifdef::gcp[]
 
 * GCP에서 백업은 _Standard_ 스토리지 클래스와 연결됩니다.
 +
-온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우, NetApp 백업 및 복구 UI에서 특정 기간 후에 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에 대해 자세히 알아보세요"] .
+온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우, NetApp Backup and Recovery UI에서 특정 기간 후에 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에 대해 자세히 알아보세요"].
 
 
 
@@ -403,12 +403,12 @@ endif::gcp[]
 
 ifdef::aws[]
 
-+ ** AWS의 경우 AWS _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지에 백업을 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"^] .
++ ** AWS의 경우 AWS _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지에 백업을 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"^].
 
 endif::aws[]
 
 ifdef::azure[]
 
-+ ** Azure의 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"^] .
++ ** Azure의 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"^].
 
 endif::azure[]

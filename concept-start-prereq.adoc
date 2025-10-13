@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-start-prereq.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, backup and recovery 
-summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp 백업 및 복구를 시작하세요.  NetApp 백업 및 복구를 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
+summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp Backup and Recovery 시작하세요.  NetApp Backup and Recovery 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
 ---
-= NetApp 백업 및 복구 필수 구성 요소
+= NetApp Backup and Recovery 필수 구성 요소
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 �
 
 
 [role="lead"]
-운영 환경, NetApp 콘솔 에이전트, NetApp 콘솔 계정의 준비 상태를 확인하여 NetApp 백업 및 복구를 시작하세요.  NetApp 백업 및 복구를 사용하려면 다음과 같은 필수 구성 요소가 필요합니다.
+운영 환경, NetApp Console 에이전트, NetApp Console 계정의 준비 상태를 확인하여 NetApp Backup and Recovery 시작하세요.  NetApp Backup and Recovery 사용하려면 다음과 같은 필수 구성 요소가 필요합니다.
 
 
 
@@ -35,7 +35,7 @@ summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 �
 
 == Microsoft SQL Server 워크로드 보호를 위한 요구 사항
 
-Microsoft SQL Server 워크로드에 NetApp Backup and Recovery를 사용하려면 다음과 같은 호스트 시스템, 공간 및 크기 조정 전제 조건이 필요합니다.
+Microsoft SQL Server 워크로드에 NetApp Backup and Recovery 사용하려면 다음과 같은 호스트 시스템, 공간 및 크기 조정 전제 조건이 필요합니다.
 
 [cols="33,66a"]
 |===
@@ -53,10 +53,10 @@ Microsoft Windows 지원되는 버전에 대한 최신 정보는 다음을 참�
 
 
 | SnapCenter 서버 버전  a| 
-SnapCenter 에서 NetApp Backup and Recovery로 기존 데이터를 가져오려면 SnapCenter Server 버전 5.0 이상이 필요합니다.
+SnapCenter 에서 NetApp Backup and Recovery 로 기존 데이터를 가져오려면 SnapCenter Server 버전 5.0 이상이 필요합니다.
 
 
-NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 먼저 확인하세요. 보다 link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
+NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 먼저 확인하세요.  보다link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
 
 
 
@@ -163,7 +163,7 @@ Oracle 리소스를 검색하고 보호하기 위해 환경이 특정 요구 사
 
 Kubernetes 리소스를 검색하고 Kubernetes 애플리케이션을 보호하려면 특정 요구 사항이 필요합니다.
 
-NetApp 콘솔 요구 사항은 다음을 참조하세요.<<NetApp 콘솔에서>> .
+NetApp Console 요구 사항은 다음을 참조하세요.<<NetApp Console 에서>> .
 
 * 기본 ONTAP 시스템(ONTAP 9.16.1 이상)
 * Kubernetes 클러스터 - 지원되는 Kubernetes 배포판과 버전은 다음과 같습니다.
@@ -224,16 +224,16 @@ NOTE: Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당
 
 
 
-== NetApp 콘솔에서
+== NetApp Console 에서
 
-NetApp 콘솔이 다음 요구 사항을 충족하는지 확인하세요.
+NetApp Console 다음 요구 사항을 충족하는지 확인하세요.
 
-* 콘솔 사용자는 Microsoft SQL Server 및 Kubernetes 워크로드에서 작업을 수행하는 데 필요한 역할과 권한이 있어야 합니다.  리소스를 검색하려면 NetApp 백업 및 복구에 대한 슈퍼 관리자 역할이 있어야 합니다.  보다link:reference-roles.html["NetApp 백업 및 복구 역할 기반 기능 액세스"] NetApp Backup and Recovery에서 작업을 수행하는 데 필요한 역할과 권한에 대한 자세한 내용은 다음을 참조하세요.
+* 콘솔 사용자는 Microsoft SQL Server 및 Kubernetes 워크로드에서 작업을 수행하는 데 필요한 역할과 권한이 있어야 합니다.  리소스를 검색하려면 NetApp Backup and Recovery 대한 슈퍼 관리자 역할이 있어야 합니다.  보다link:reference-roles.html["NetApp Backup and Recovery 역할 기반 기능 액세스"] NetApp Backup and Recovery 에서 작업을 수행하는 데 필요한 역할과 권한에 대한 자세한 내용은 다음을 참조하세요.
 * 온프레미스 ONTAP 클러스터 또는 Cloud Volumes ONTAP 에 연결되는 하나 이상의 활성 콘솔 에이전트가 있는 콘솔 조직입니다.
 * NetApp 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 클러스터가 있는 콘솔 시스템이 하나 이상 있어야 합니다.
 * 콘솔 에이전트
 +
-참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트를 구성하는 방법을 알아보세요"] 그리고 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["표준 NetApp 콘솔 요구 사항"^] .
+참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["콘솔 에이전트를 구성하는 방법을 알아보세요"] 그리고 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["표준 NetApp Console 요구 사항"^] .
 
 +
 ** 미리보기 버전에는 콘솔 에이전트를 위한 Ubuntu 22.04 LTS 운영 체제가 필요합니다.
@@ -243,19 +243,19 @@ NetApp 콘솔이 다음 요구 사항을 충족하는지 확인하세요.
 
 
 
-=== NetApp 콘솔 설정
+=== NetApp Console 설정
 
-다음 단계는 콘솔과 NetApp 백업 및 복구를 설정하는 것입니다.
+다음 단계는 콘솔과 NetApp Backup and Recovery 설정하는 것입니다.
 
-검토 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["표준 NetApp 콘솔 요구 사항"^] .
+검토 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["표준 NetApp Console 요구 사항"^] .
 
 
 
 === 콘솔 에이전트 만들기
 
-백업 및 복구를 시도해 보려면 NetApp 제품 팀에 문의하세요. 그런 다음 콘솔 에이전트를 사용하면 서비스에 적합한 기능이 포함됩니다.
+백업 및 복구를 시도해 보려면 NetApp 제품 팀에 문의하세요.  그런 다음 콘솔 에이전트를 사용하면 서비스에 적합한 기능이 포함됩니다.
 
-서비스를 사용하기 전에 NetApp 콘솔에서 콘솔 에이전트를 생성하려면 해당 내용을 설명하는 콘솔 설명서를 참조하십시오. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["콘솔 에이전트를 만드는 방법"^] .
+서비스를 사용하기 전에 NetApp Console 에서 콘솔 에이전트를 생성하려면 해당 내용을 설명하는 콘솔 설명서를 참조하십시오. https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["콘솔 에이전트를 만드는 방법"^] .
 
 .콘솔 에이전트를 설치할 위치
 복원 작업을 완료하려면 다음 위치에 콘솔 에이전트를 설치할 수 있습니다.

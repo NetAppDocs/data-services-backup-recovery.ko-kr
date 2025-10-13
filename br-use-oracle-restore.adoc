@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-oracle-restore.html 
 keywords: restore, vm, oracle, databases, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery 통해 Oracle 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 복원
+= NetApp Backup and Recovery 사용하여 Oracle 데이터베이스 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 백업 또는 개체 스토리지에 저장된 백업에서 Oracle 데이터베이스를 복원합니다.
+NetApp Backup and Recovery 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 백업 또는 개체 스토리지에 저장된 백업에서 Oracle 데이터베이스를 복원합니다.
 
 .이 위치에서 복원
 다양한 시작 위치에서 데이터베이스를 복원할 수 있습니다.
@@ -36,7 +36,7 @@ NetApp Backup and Recovery를 사용하여 스냅샷 복사본, 보조 스토리
 
 Oracle 데이터베이스를 복원하면 다음이 발생합니다.
 
-* 로컬 스냅샷에서 데이터베이스를 복원하면 NetApp Backup and Recovery는 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
+* 로컬 스냅샷에서 데이터베이스를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
 * 복제된 저장소에서 복원하면 원래 위치로 복원할 수 있습니다.
 * 개체 스토리지에서 백업을 복원하면 데이터를 소스 스토리지나 온프레미스 ONTAP 시스템으로 복원하고 해당 위치에서 데이터베이스를 복구할 수 있습니다.
 
@@ -49,11 +49,11 @@ Oracle 데이터베이스를 복원하면 다음이 발생합니다.
 
 사용자의 요구 사항에 따라 Oracle 데이터베이스를 특정 시점, 특정 시스템 변경 번호(SCN) 또는 마지막 정상 상태로 복원합니다.  스냅샷에서 데이터베이스를 간단히 복원하고 자동 복구 프로세스를 건너뛸 수도 있습니다.  수동으로 복구를 수행하려면 자동 복구 프로세스를 건너뛸 수 있습니다.  데이터베이스 이름이나 특정 필터를 사용하여 데이터베이스를 검색할 수 있습니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp 콘솔 액세스 역할에 대해 알아보세요."^] .
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp 콘솔 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
-. NetApp 백업 및 복구 메뉴에서 *복원*을 선택합니다.
+. NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.
 . 이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *Oracle*을 선택합니다.
 . 복원하려는 데이터베이스의 이름을 입력하거나 복원하려는 데이터베이스가 있는 데이터베이스 호스트를 필터링합니다.
 +
@@ -86,7 +86,7 @@ Oracle 데이터베이스를 복원하면 다음이 발생합니다.
 
 
 --
-.최신 백업(마지막 양호한 상태)으로 복원
+.최신 백업(마지막 정상 상태)으로 복원
 --
 .. *최신 백업으로 복원*을 선택하세요.
 .. *다음*을 선택하세요.
