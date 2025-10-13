@@ -273,8 +273,6 @@
   <block id="01edc88c05b373b3f7ebaedf025e6c66" category="list-text">KVM 기반 VM 및 VM 데이터를 백업하고 복원하는 가이드 프로세스</block>
   <block id="4cfb069ae88ce34afb281a4bbf65ac6e" category="inline-link">KVM 워크로드 보호 개요</block>
   <block id="79fcd951f792f60f767e44b5011c7851" category="paragraph">KVM 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요.<block ref="e92217b78da768e08fd669e597378b8f" category="inline-link-rx"></block> .</block>
-  <block id="7f72a27277a7289e66ee8f5e8c51ffe5" category="section-title">Kubernetes 미리보기 개선 사항</block>
-  <block id="0de024d994558b5d82bfea2474dcdb5a" category="paragraph">Kubernetes 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 기능이 도입되었습니다.</block>
   <block id="7f6a04aadde1854e173d7668132da89b" category="list-text">3-2-1 팬아웃 백업 아키텍처 지원</block>
   <block id="b3b9066f003af6e4047de0ee6690e863" category="list-text">백업 대상으로 ONTAP S3 지원</block>
   <block id="e35ded7c45cf2f4d4c707e6aeb803b42" category="list-text">더 쉬운 관리를 위한 새로운 Kubernetes 대시보드</block>
@@ -324,7 +322,6 @@
   <block id="020a36deb114af1bb518c70d5975e940" category="list-text">리소스 그룹 생성</block>
   <block id="5ae6a8a06c30125d00a57910609856cf" category="list-text">디스크 스패닝(여러 CIFS 공유에 걸쳐)</block>
   <block id="5cb642b37b3102019402cbd3b93a5693" category="list-text">SAN을 통한 VM 보호</block>
-  <block id="9450dff5efb3139ece9422b6c372527d" category="list-text">개체 저장소에서 복원</block>
   <block id="0fffe3f2fb1497b9e344ba8dceac922b" category="list-text">SCVMM(System Center Virtual Machine Manager)을 사용하여 클러스터링된 Hyper-V 호스트를 보호합니다.</block>
   <block id="4a03732927298c2d8d1492b3d08bb831" category="summary">NetApp Backup and Recovery의 이 릴리스에는 다음과 같은 알려진 제한 사항이 있습니다.</block>
   <block id="5050c99de0a6e1bcf02e7ce66edabd97" category="doc">KVM 워크로드에 대한 NetApp 백업 및 복구의 알려진 제한 사항</block>
@@ -335,7 +332,6 @@
   <block id="e2b26238e3aec34978fbb465dfd6baff" category="list-text">VM을 대체 위치로 복원</block>
   <block id="fe8e9fc813c1e8a639c0cadb6115589f" category="list-text">SAN에 저장된 VM 보호</block>
   <block id="ca73b42f56baa81e1c83e31ee5c53d42" category="list-text">애플리케이션 보호</block>
-  <block id="58bfd5253f13fe06cafc37225664e506" category="list-text">개체 저장소에서 백업 또는 복원</block>
   <block id="41bfa1316b52f6772c1921990bc34f69" category="list-text">보호 그룹 편집</block>
   <block id="d5598f128bb28f962fcd8574013f2a43" category="list-text">여러 KVM 호스트의 VM을 사용하여 보호 그룹 만들기</block>
   <block id="2fbb28a0f1560254b88f56b3632cf88b" category="list-text">사용자 정의 백업 생성( NetApp 콘솔에서 시작된 백업만 지원됨)</block>
@@ -5000,4 +4996,15 @@
   <block id="ee885caa95dc922f4f4ba9860f7342f6" category="admonition">백업 및 복구를 사용하여 사용자 지정 정책을 만들려면 다음을 참조하세요.<block ref="d9904d3bd7927987056edc09c02007e9" category="inline-link-macro-rx"></block> .</block>
   <block id="854bc156a37cbbf040c040fbef53bdec" category="paragraph">NetApp Backup and Recovery를 사용하면 소스 볼륨의 복사본을 최대 3개까지 만들어 데이터를 보호할 수 있습니다. 볼륨에서 백업 및 복구를 활성화할 때 선택할 수 있는 옵션이 많으므로 준비할 수 있도록 선택 사항을 검토해야 합니다.</block>
   <block id="460a4c33ada7a6581872d15b96a4344b" category="sidebar">VMware 워크로드 보호(미리 보기)</block>
+  <block id="c95af44ddc098359d1a302a271aa883b" category="section-title">Kubernetes 미리보기 개선 사항</block>
+  <block id="a9db09b7be48f8631739b57e73f48cd3" category="paragraph">Kubernetes 워크로드의 미리보기 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="80aadfb002c0fe2115f71c7aeb012ab4" category="section-title">VMware 미리보기 개선 사항</block>
+  <block id="307d24114a1eea93601b6d95cac55bcb" category="paragraph">VMware 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="52c7fc54a0416d5bc7625cf3e154f5ee" category="list-text">개체 저장소에서 복원 지원</block>
+  <block id="729609f8890f70080c4290c1a64f6901" category="list-text">NetApp Console 보드에 이제 VMware 워크로드 상태 정보가 표시됩니다.</block>
+  <block id="e0aea66343c11d9c167af3537c61eac6" category="list-text">데모 모드 지원: VMware vCenter Server 환경을 추가하지 않고도 VMware 워크로드의 기능을 살펴보세요.</block>
+  <block id="48286fbde233324a7f7880389e103924" category="list-text">작업 이벤트에 대한 이메일 알림 및 알림 지원</block>
+  <block id="7c0ae68b454f9ff601ed1bdd5dcc3c30" category="list-text">NVMe 기반 스토리지에 대한 백업 및 복원 지원</block>
+  <block id="dfa4b5c6b997823449e673db12ef526d" category="list-text">보호 정책 편집</block>
+  <block id="c54d53d5c9b9527bb4d1e1020b2a04ec" category="paragraph">VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요.<block ref="81bdea79654f29d88dbffb87457fe1f5" category="inline-link-rx"></block> .</block>
 </blocks>

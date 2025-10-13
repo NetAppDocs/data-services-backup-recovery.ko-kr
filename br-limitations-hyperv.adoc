@@ -25,7 +25,7 @@ NetApp Backup and Recovery의 Hyper-V 워크로드 비공개 미리 보기 버�
 * 리소스 그룹 생성
 * 디스크 스패닝(여러 CIFS 공유에 걸쳐)
 * SAN을 통한 VM 보호
-* 개체 저장소에서 복원
+* 보호 그룹 편집
 * SCVMM(System Center Virtual Machine Manager)을 사용하여 클러스터링된 Hyper-V 호스트를 보호합니다.
 
 
