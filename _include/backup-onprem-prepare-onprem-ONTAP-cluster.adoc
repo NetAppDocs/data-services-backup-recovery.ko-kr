@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템을 준비해야 합니다.
+소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템을 준비합니다.
 
 ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
@@ -24,7 +24,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
 === ONTAP 시스템 요구 사항 확인
 
-다음 ONTAP 요구 사항이 충족되는지 확인하세요.
+ONTAP 시스템이 다음 요구 사항을 충족하는지 확인하세요.
 
 * 최소 ONTAP 9.8; ONTAP 9.8P13 이상을 권장합니다.
 * SnapMirror 라이선스(프리미엄 번들 또는 데이터 보호 번들의 일부로 포함됨).
@@ -35,7 +35,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 방법을 배우십시오 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html["클러스터 라이선스 관리"^] .
 
 * 시간과 시간대가 올바르게 설정되었습니다.  방법을 배우십시오 https://docs.netapp.com/us-en/ontap/system-admin/manage-cluster-time-concept.html["클러스터 시간 구성"^] .
-* 데이터를 복제하려는 경우 데이터를 복제하기 전에 소스 및 대상 시스템에서 호환되는 ONTAP 버전이 실행되고 있는지 확인해야 합니다.
+* 데이터를 복제하는 경우 소스 및 대상 시스템이 호환되는 ONTAP 버전을 실행하는지 확인하세요.
 +
 https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-snapmirror-concept.html["SnapMirror 관계에 대한 호환 ONTAP 버전 보기"^].
 

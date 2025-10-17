@@ -113,7 +113,7 @@ VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세�
 
 === Oracle Database 워크로드 지원을 개인 미리보기로 제공
 
-NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크로드를 검색하고 관리하는 데 대한 지원이 도입되었습니다.
+NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
 
 * 독립형 Oracle 데이터베이스를 찾아보세요
 * 데이터 전용 또는 데이터 및 로그 백업에 대한 보호 정책을 만듭니다.

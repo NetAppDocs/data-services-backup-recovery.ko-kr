@@ -19,7 +19,7 @@ summary: '인터넷 접속이 불가능한 사이트("개인 모드"라고 함)�
 
 NOTE: 이 절차는 ONTAP 볼륨 데이터에만 적용됩니다.
 
-콘솔 에이전트가 클라우드 공급자 또는 인터넷 액세스가 가능한 자체 호스트 시스템에 배포된 SaaS 환경에서 NetApp Backup and Recovery 사용하는 경우 모든 중요한 NetApp Backup and Recovery 구성 데이터가 클라우드에 백업되고 보호됩니다.  콘솔 에이전트에 문제가 있는 경우 새 콘솔 에이전트를 만들고 시스템을 추가하면 백업 세부 정보가 자동으로 복원됩니다.
+클라우드 공급업체나 인터넷에 연결된 자체 호스트에 콘솔 에이전트를 배포하여 SaaS 환경에서 NetApp Backup and Recovery 사용하면 시스템이 클라우드에 있는 모든 중요한 구성 데이터를 백업하고 보호합니다.  콘솔 에이전트에 문제가 있는 경우 새 콘솔 에이전트를 만들고 시스템을 추가하세요.  백업 세부정보가 자동으로 복원됩니다.
 
 백업되는 데이터에는 두 가지 유형이 있습니다.
 
@@ -27,7 +27,7 @@ NOTE: 이 절차는 ONTAP 볼륨 데이터에만 적용됩니다.
 * 색인된 카탈로그 파일 - 볼륨 데이터를 복원할 때 검색을 매우 빠르고 효율적으로 수행할 수 있는 검색 및 복원 기능에 사용되는 자세한 색인이 포함되어 있습니다.
 
 
-이 데이터는 하루에 한 번 자정에 백업되며, 각 파일의 최대 7개 사본이 보관됩니다. 콘솔 에이전트가 여러 개의 온프레미스 ONTAP 시스템을 관리하는 경우 NetApp Backup and Recovery 파일은 먼저 활성화된 시스템의 버킷에 위치하게 됩니다.
+이 데이터는 하루에 한 번 자정에 백업되며, 각 파일의 최대 7개 사본이 보관됩니다. 콘솔 에이전트가 여러 온프레미스 ONTAP 시스템을 관리하는 경우 NetApp Backup and Recovery 파일은 먼저 활성화된 시스템의 버킷에 저장됩니다.
 
 
 TIP: NetApp Backup and Recovery 데이터베이스나 인덱싱된 카탈로그 파일에는 볼륨 데이터가 포함되지 않습니다.
@@ -36,7 +36,7 @@ TIP: NetApp Backup and Recovery 데이터베이스나 인덱싱된 카탈로그 
 
 == NetApp Backup and Recovery 데이터를 새 콘솔 에이전트로 복원
 
-온프레미스 콘솔 에이전트에 심각한 오류가 발생한 경우 새 콘솔 에이전트를 설치한 다음 NetApp Backup and Recovery 데이터를 새 콘솔 에이전트로 복원해야 합니다.
+온프레미스 콘솔 에이전트가 작동을 멈추면 새 콘솔 에이전트를 설치한 다음 NetApp Backup and Recovery 데이터를 새 콘솔 에이전트로 복원해야 합니다.
 
 NetApp Backup and Recovery 시스템을 작동 상태로 되돌리려면 다음 작업을 수행해야 합니다.
 
@@ -46,7 +46,7 @@ NetApp Backup and Recovery 시스템을 작동 상태로 되돌리려면 다음 
 * 온프레미스 ONTAP 시스템과 StorageGRID 시스템을 모두 NetApp Console UI로 다시 검색하세요.
 
 
-시스템이 다시 정상적으로 작동하는지 확인한 후에는 새로운 백업 파일을 만드는 것이 좋습니다.
+시스템이 제대로 작동하는지 확인한 후 새로운 백업 파일을 만드세요.
 
 .필요한 것
 백업 파일이 저장되어 있는 StorageGRID 또는 ONTAP S3 버킷에서 최신 데이터베이스 및 인덱스 백업에 액세스해야 합니다.
@@ -65,7 +65,7 @@ NetApp Backup and Recovery 시스템을 작동 상태로 되돌리려면 다음 
 
 === 새로운 온프레미스 Linux 호스트에 새 콘솔 에이전트 설치
 
-새로운 콘솔 에이전트를 설치할 때는 원래 콘솔 에이전트에 설치했던 것과 동일한 소프트웨어 릴리스를 다운로드해야 합니다.  NetApp Backup and Recovery 데이터베이스 구조가 주기적으로 변경되면 최신 소프트웨어 릴리스가 원래 데이터베이스 백업과 호환되지 않을 수 있습니다.  당신은 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["백업 데이터베이스를 복원한 후 콘솔 에이전트 소프트웨어를 최신 버전으로 업그레이드합니다."^] .
+새로운 콘솔 에이전트를 설치할 때 원래 에이전트와 동일한 소프트웨어 버전을 다운로드하세요.  NetApp Backup and Recovery 데이터베이스가 변경되면 최신 소프트웨어 버전이 이전 데이터베이스 백업과 작동하지 않을 수 있습니다. 당신은 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["백업 데이터베이스를 복원한 후 콘솔 에이전트 소프트웨어를 최신 버전으로 업그레이드합니다."^] .
 
 . https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["새로운 온프레미스 Linux 호스트에 콘솔 에이전트 설치"^]
 . 방금 만든 관리자 사용자 자격 증명을 사용하여 콘솔에 로그인합니다.
@@ -203,7 +203,7 @@ curl -X POST 'http://10.193.192.202/account/account-DARKSITE1/providers/cloudman
 
 . 각 ONTAP 시스템을 선택하고 오른쪽 패널의 백업 및 복구 서비스 옆에 있는 *백업 보기*를 클릭합니다.
 +
-볼륨에 대해 생성된 모든 백업을 볼 수 있어야 합니다.
+볼륨에 대해 생성된 모든 백업이 표시되어야 합니다.
 
 . 복원 대시보드의 검색 및 복원 섹션에서 *인덱싱 설정*을 클릭합니다.
 +
