@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-manage-overview.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
-summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure, Google Cloud Platform 및 StorageGRID 로 백업하여 데이터가 보호되도록 할 수 있습니다. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다. 
+summary: NetApp Backup and Recovery 에서 리소스를 관리하여 데이터를 보호하세요. 
 ---
 = NetApp Backup and Recovery 개요를 사용하여 리소스 관리
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이
 
 
 [role="lead"]
-NetApp Backup and Recovery 에서 리소스를 관리하는 것은 데이터를 보호하는 데 필수적입니다.  백업, 데이터베이스, 인스턴스, 애플리케이션 호스트, 작업 환경 등의 리소스를 관리할 수 있습니다.  리소스의 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.
+NetApp Backup and Recovery 에서 리소스를 관리하여 데이터를 보호하세요.  백업, 데이터베이스, 인스턴스, 애플리케이션 호스트 및 시스템을 제어합니다.  리소스 보호 설정을 보고, 편집하거나 삭제합니다.
 
 리소스 관리와 관련하여 다음 작업을 수행할 수 있습니다.
 

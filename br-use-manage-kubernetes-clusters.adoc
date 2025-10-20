@@ -40,7 +40,7 @@ NOTE: Kubernetes 클러스터를 검색하려면 다음을 참조하세요.link:
 
 == Kubernetes 클러스터 제거
 
-Kubernetes 클러스터에서 호스팅되는 리소스를 더 이상 보호할 필요가 없는 경우 NetApp Backup and Recovery 에서 제거할 수 있습니다.  클러스터를 제거해도 클러스터나 리소스는 삭제되지 않습니다. NetApp Console 인벤토리에서만 클러스터가 제거됩니다.  클러스터를 제거하려면 먼저 보호를 비활성화하고 NetApp Backup and Recovery 에서 관련 애플리케이션을 삭제해야 합니다.
+Kubernetes 클러스터 보호를 중지하려면 보호를 비활성화하고 관련 애플리케이션을 삭제한 다음 NetApp Backup and Recovery 에서 클러스터를 제거합니다.  NetApp Backup and Recovery 클러스터나 해당 리소스를 삭제하지 않고 NetApp Console 인벤토리에서만 클러스터를 제거합니다.
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리* > *클러스터*를 선택합니다.

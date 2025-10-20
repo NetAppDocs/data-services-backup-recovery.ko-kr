@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-manage-inventory.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, snapcenter 
-summary: NetApp Backup and Recovery 사용하면 워크로드 호스트 정보, 데이터베이스 정보, 인스턴스 정보를 관리할 수 있습니다.  인벤토리에 대한 보호 설정을 보고, 편집하고, 삭제할 수 있습니다. 
+summary: NetApp Backup and Recovery 사용하면 Microsoft SQL Server 호스트, 데이터베이스 및 인스턴스를 관리할 수 있습니다. 
 ---
 = NetApp Backup and Recovery 사용하여 Microsoft SQL Server 인벤토리 관리
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 사용하면 워크로드 호스트 정보, 
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하면 Microsoft SQL Server 워크로드 호스트 정보, 데이터베이스 정보 및 인스턴스 정보를 관리할 수 있습니다.  인벤토리의 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.
+NetApp Backup and Recovery 사용하면 Microsoft SQL Server 호스트, 데이터베이스 및 인스턴스를 관리할 수 있습니다.  인벤토리에 대한 보호 설정을 보고, 변경하고, 제거할 수 있습니다.
 
 재고 관리와 관련하여 다음 작업을 수행할 수 있습니다.
 

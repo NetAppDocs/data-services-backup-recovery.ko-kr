@@ -886,34 +886,6 @@
   <block id="8ea9fd29df4eb58092d8258c6ccf3ad8" category="inline-link-macro">Hyper-V 워크로드 검색</block>
   <block id="3b97616ae538f454d8812a77c84392d1" category="list-text">Hyper-V 작업 부하의 경우 다음을 참조하세요.<block ref="e853aa4eb98908dd4b95a8cc80d9972f" category="inline-link-macro-rx"></block> .</block>
   <block id="e5dd8794e7e239a004607625309c03bb" category="list-text">Kubernetes 워크로드의 경우 다음을 참조하세요.<block ref="bdf340f843cf54500673f62df22d5070" category="inline-link-macro-rx"></block> .</block>
-  <block id="a88e44059c42ea669c8e082925b4f685" category="summary">NetApp Backup and Recovery 미리 보기에 참여하면 NetApp Backup and Recovery 개선하고 향상시키는 데 중요한 역할을 하게 됩니다.  NetApp Backup and Recovery 의 미리 보기 버전에 대해서는 설정을 도와드리겠습니다.  과정은 다음과 같습니다.</block>
-  <block id="d962dd4a2dd136e11ea9e6b1fc4f0231" category="doc">NetApp Backup and Recovery 미리 보기 버전 설정</block>
-  <block id="44c9fe33d945a811c980c2222cb4a7f4" category="paragraph">NetApp Backup and Recovery 미리 보기 버전 중 하나에 참여하면 NetApp Backup and Recovery 개선하고 향상시키는 데 중요한 역할을 하게 됩니다.  NetApp Backup and Recovery 미리보기 버전의 경우 설정을 도와드리겠습니다.  과정은 다음과 같습니다.</block>
-  <block id="1df25d83dcd96998ab1214f0f596e625" category="list-text">*등록*: NetApp Console 계정이 없으면 가입하세요. 방법은 다음과 같습니다.</block>
-  <block id="03b9d18619003b0462fbb22e0f737c14" category="inline-link">NetApp Console 포털</block>
-  <block id="fe522e0e492bdfc81fd85fe149b3e2f3" category="list-text">방문하세요<block ref="761f9c2f831126887f2401ade5ba082a" category="inline-link-rx"></block> .</block>
-  <block id="c994e4babe23a451bef9eb9c4e6ae1bd" category="list-text">*시작하기*를 선택하세요.</block>
-  <block id="89cbd307e3a030d88901f3a0b6db05f9" category="inline-image-macro">포털 화면에 로그인하세요</block>
-  <block id="a36f36cea71dbb3ece06859026f2a219" category="paragraph"><block ref="a36f36cea71dbb3ece06859026f2a219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7408a50737fd936622eeec54bbeb439c" category="list-text">*가입*을 선택하세요.</block>
-  <block id="4a5516994f808f657f563e4c644704a8" category="inline-image-macro">콘솔 화면에 가입하세요</block>
-  <block id="bd85572698ab218980e4334fbaad7780" category="paragraph"><block ref="bd85572698ab218980e4334fbaad7780" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="49a7eb06443c6823da67cb30105865cb" category="list-text">이름, 이메일 주소, 조직명 및 기타 세부 정보를 입력하고 *다음*을 선택하세요.</block>
-  <block id="62e103a9bdfbc60da8d1a6cd84c64574" category="paragraph">귀하의 이메일 주소를 확인하기 위한 링크가 포함된 이메일을 받게 됩니다.</block>
-  <block id="42435fc392a09cfc52a784c811f725c8" category="list-text">이메일의 링크를 선택하여 이메일 주소를 확인하세요.</block>
-  <block id="67d948af642d80e01ae49095566abfc0" category="list-text">콘솔 포털에 로그인하세요.</block>
-  <block id="09b34a6d0f4d291f84f3e8f79dde8d4c" category="list-text">다음 정보를 입력하여 프로필을 완성하세요.</block>
-  <block id="1e9e8ba34e717628d41f149382680873" category="list-text">*조직 ID*: 등록 후 조직 이름과 ID를 받게 됩니다.  여기에 입력하세요.</block>
-  <block id="4d9ae5d322cb8c8f7adf9b48949b1bc8" category="list-text">*ID 공유*: 조직 이름과 ID를 NetApp 제품 팀과 공유하세요.</block>
-  <block id="7c22ebb7979774c7df05585903c12d01" category="paragraph">*접속 시간*: 48~72시간 이내에 NetApp Backup and Recovery 에 액세스할 수 있습니다.</block>
-  <block id="81b6fb15733ca902602c664fabd1e467" category="list-text">서비스를 *탐색*하고, 기능을 테스트하고, 기존 SQL Server 작업 부하와 통합하세요.</block>
-  <block id="93e2a47a6514ac40751d124a8f1f46b3" category="list-text">*정기적으로 연락을 유지하세요*.  미리보기 세션 동안 NetApp 제품 팀과 정기적으로 체크인하세요.  이 세션은 서비스를 이해하고 피드백을 제공하는 데 도움이 됩니다.</block>
-  <block id="f8ff994376a64d4d3d6d193d64f1da36" category="list-text">*업데이트 소식 듣기*: Preview와 관련된 최신 개발 소식을 들으실 수 있습니다.</block>
-  <block id="63ad8c7fe181c1240348c85b7b859e2b" category="list-text">*질문을 하시면* NetApp Console 팀으로부터 즉각적인 답변을 받으실 수 있습니다.</block>
-  <block id="e7528011261fdc65206ea9ab08e68144" category="list-text">*피드백을 제공*하여 NetApp 제품 팀에 서비스를 개선하세요.</block>
-  <block id="1ebf3d019af1cc6cd51eaefe85900b86" category="list-text">*모범 사례 공유*와 서비스를 효과적으로 사용하기 위한 팁을 공유하세요.</block>
-  <block id="e85274cf54ca4909a650a11dc227ee47" category="list-text">*협업 촉진*: 다른 사용자와 협업하여 경험을 공유하고 서로에게서 배우세요.</block>
-  <block id="3ccfc5136e3977900273dfda295aa615" category="list-text">NetApp 제품 팀에 피드백을 제공하세요.</block>
   <block id="47531513e36377c6a5c78be39708d962" category="summary">NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.</block>
   <block id="e902bc2010ef35580633bf1114aee5b3" category="doc">NetApp Backup and Recovery 사용하기 전에 백업 대상을 설정하세요.</block>
   <block id="8a0933307f827fb9f8c7b526a219880b" category="paragraph">NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.</block>
@@ -1004,7 +976,6 @@
   <block id="0c1d62f4779d7aef54687bd64095f6b0" category="list-text">*보호 그룹*, *데이터 저장소* 또는 *가상 머신* 탭을 선택합니다.</block>
   <block id="758c66b3945b48ce4d666362f0f4cb3e" category="list-text">백업할 보호 그룹이나 가상 머신을 선택하세요.</block>
   <block id="bbddd84df8379f7ccf7c6beb918fb121" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *지금 뒤로 물러나세요*.</block>
-  <block id="8a48c0ede0c153ed05c127d90e727be5" category="admonition">백업에 적용되는 정책은 보호 그룹이나 가상 머신에 할당된 정책과 동일합니다.</block>
   <block id="85ec80b493e6765547d2b4489252b82e" category="list-text">일정 단계를 선택하세요.</block>
   <block id="ff4d762e1ab6dd75731a4f97e66ec902" category="list-text">*백업*을 선택하세요.</block>
   <block id="4efc134fd5130564588a4806f9c977f0" category="summary">온프레미스 ONTAP 시스템에서 기본 및 보조 스토리지까지 Hyper-V 가상 머신을 보호하여 데이터가 보호되도록 할 수 있습니다.</block>
@@ -1013,9 +984,7 @@
   <block id="27bf4d1e94a4188d82244d997deb945d" category="inline-image-macro">백업 및 복구의 일반적인 아키텍처 다이어그램</block>
   <block id="a25193bbdff09f58ab1dcb4151b659ec" category="paragraph"><block ref="a25193bbdff09f58ab1dcb4151b659ec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b7bf580752a61d71227184a60f0fbfd3" category="paragraph">NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.</block>
-  <block id="b192cd10ae3edf138508f051bb99fba2" category="list-text">여러 개의 데이터 사본은 내부자 및 외부 사이버 보안 위협으로부터 다중 계층의 보호를 제공합니다.</block>
   <block id="79c28420811a3b277df19fdd38cd10e0" category="list-text">여러 미디어 유형을 사용하면 하나의 미디어 유형에 물리적 또는 논리적 오류가 발생하는 경우에도 장애 조치를 실행할 수 있습니다.</block>
-  <block id="a4a3ea8ff455067664e384b62470a7a9" category="list-text">현장 사본은 빠른 복원을 용이하게 하며, 현장 사본이 손상된 경우를 대비해 오프사이트 사본을 사용할 수 있습니다.</block>
   <block id="532ee325506687dccb969b2e88d92b32" category="inline-link-macro">이전 NetApp Backup and Recovery UI로 전환</block>
   <block id="9847581c7ebe97c62f71ab1d90ed1696" category="admonition">NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.<block ref="3a517a59babeb4a2a4c0dc21bafb9259" category="inline-link-macro-rx"></block> .</block>
   <block id="124a0ee1a6efcb80b27fc999fe308e62" category="paragraph">NetApp Backup and Recovery 사용하면 Hyper-V 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
@@ -1035,7 +1004,6 @@
   <block id="bdeee485153f055707f0a73a8af513ba" category="list-text">지금 보호 그룹을 백업하세요. 보다<block ref="d41aaac62fb0d74a0e59fc21f102f78e" category="inline-link-macro-rx"></block> .</block>
   <block id="75fd7259089ff0f83a33c40dd073fef1" category="list-text">보호 그룹을 삭제합니다.</block>
   <block id="d3bc7420d7e89fa51ba74ffa21c65564" category="section-title">보호 그룹 생성</block>
-  <block id="65c7327c98e288c3f5e4a2ae048a02df" category="paragraph">보호하려는 작업 부하를 보호 그룹으로 그룹화합니다. 함께 백업하고 복원하려는 작업 부하 세트에 대한 보호 그룹을 만들 수 있습니다.</block>
   <block id="9c6ace0005a93555e47af40a4cdea531" category="list-text">*보호 그룹* 탭을 선택하세요.</block>
   <block id="8ff0bca3a887fcf730ec3c488508786c" category="list-text">*보호 그룹 만들기*를 선택합니다.</block>
   <block id="ef84603df71c48cb6dcebd2e9e3fcb87" category="list-text">보호 그룹의 이름을 입력하세요.</block>
@@ -1208,7 +1176,6 @@
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">*만들기*를 선택하세요.</block>
   <block id="909eae293e55e9fb02681b3c1668c555" category="summary">NetApp Backup and Recovery 사용하면 워크로드 호스트 정보, 데이터베이스 정보, 인스턴스 정보를 관리할 수 있습니다.  인벤토리에 대한 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.</block>
   <block id="1923fb9432a776bac3edea16865917a7" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 인벤토리 관리</block>
-  <block id="2d9b7a32eaf0657975c7a926a06dfff1" category="paragraph">NetApp Backup and Recovery 사용하면 Microsoft SQL Server 워크로드 호스트 정보, 데이터베이스 정보 및 인스턴스 정보를 관리할 수 있습니다.  인벤토리의 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.</block>
   <block id="f49c5e3d566ad0a23180a96b0ec02d6a" category="paragraph">재고 관리와 관련하여 다음 작업을 수행할 수 있습니다.</block>
   <block id="366cb36384bed83fd20b39e6a1c107e6" category="list-text">호스트 정보 관리</block>
   <block id="e03dfc11cf3bf9f6353b24940f428fe8" category="list-text">일정을 중단하다</block>
@@ -1300,7 +1267,6 @@
   <block id="36f0283cb14ad41f5a35341825d6cb8f" category="list-text">*보호 해제*를 선택하세요.</block>
   <block id="8896e71a8de95cbfa7c12f414c5bf926" category="list-text">공지사항을 읽고 준비가 되면 *보호 해제*를 선택하세요.</block>
   <block id="f0b8c712a2979155a90a4d45542f57f1" category="section-title">Kubernetes 애플리케이션 삭제</block>
-  <block id="5b37d656b7480a0d1ba63c0ceeb91543" category="paragraph">더 이상 필요하지 않은 애플리케이션은 삭제할 수 있습니다. 애플리케이션을 삭제하면 NetApp Backup and Recovery 해당 애플리케이션의 보호를 중지하고 연관된 모든 백업과 스냅샷을 삭제합니다.</block>
   <block id="e9f066e195a46d59f447e0e9faed2a72" category="list-text">애플리케이션 목록에서 삭제하려는 애플리케이션을 선택하고 관련된 작업 메뉴를 선택합니다.</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">*삭제*를 선택하세요.</block>
   <block id="ef50a59af25c08fa4e4c545948dd656e" category="list-text">*스냅샷 및 백업 삭제*를 활성화하면 애플리케이션의 모든 스냅샷과 백업이 제거됩니다.</block>
@@ -1315,12 +1281,9 @@
   <block id="539e1806cdbd1431ba6cb6b4b84fc393" category="list-text">*클러스터 편집*을 선택하세요.</block>
   <block id="9d5bb9ed8ea1b49d007ac97a59fc2f73" category="list-text">클러스터 이름을 필요에 따라 변경하세요. 클러스터 이름은 검색 과정에서 Helm 명령에 사용한 이름과 일치해야 합니다.</block>
   <block id="f23e3ed54ae928c06add368fe4fe5a66" category="section-title">Kubernetes 클러스터 제거</block>
-  <block id="8a4712efb642c0cdfd6db07aa95e5ba4" category="paragraph">Kubernetes 클러스터에서 호스팅되는 리소스를 더 이상 보호할 필요가 없는 경우 NetApp Backup and Recovery 에서 제거할 수 있습니다.  클러스터를 제거해도 클러스터나 리소스는 삭제되지 않습니다. NetApp Console 인벤토리에서만 클러스터가 제거됩니다.  클러스터를 제거하려면 먼저 보호를 비활성화하고 NetApp Backup and Recovery 에서 관련 애플리케이션을 삭제해야 합니다.</block>
   <block id="884dae5f1c15db330f66f8e2866510c1" category="list-text">*클러스터 제거*를 선택합니다.</block>
   <block id="19ce5318fcc2968a80a3d2213a7120af" category="list-text">확인 대화 상자에서 정보를 검토하고 *제거*를 선택하세요.</block>
-  <block id="36739fba3e0e2771f42b08419cec5110" category="summary">온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure, Google Cloud Platform 및 StorageGRID 로 백업하여 데이터가 보호되도록 할 수 있습니다. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.</block>
   <block id="6e464deab83d8eb0500f0c27ef47c58b" category="doc">NetApp Backup and Recovery 개요를 사용하여 리소스 관리</block>
-  <block id="6b901ae8359d24ec75c2ee3adc79920a" category="paragraph">NetApp Backup and Recovery 에서 리소스를 관리하는 것은 데이터를 보호하는 데 필수적입니다.  백업, 데이터베이스, 인스턴스, 애플리케이션 호스트, 작업 환경 등의 리소스를 관리할 수 있습니다.  리소스의 보호 설정을 보고, 편집하고, 삭제할 수 있습니다.</block>
   <block id="1391797a0b30576f1f116202d3da3a46" category="paragraph">리소스 관리와 관련하여 다음 작업을 수행할 수 있습니다.</block>
   <block id="ccc9658d0f980f24634bf5ef6aaceb3d" category="inline-link-macro">재고 관리</block>
   <block id="9517c8b5ba697f22d1982a7a6950dbce" category="list-text"><block ref="84e97f55697cdae80cb35f3f0e373346" category="inline-link-macro-rx"></block>.</block>
@@ -1334,13 +1297,9 @@
   <block id="597dd5cc22a8db7fa97336df9ce2dcf7" category="list-text">스냅샷을 삭제할 데이터베이스를 선택하세요.</block>
   <block id="d72708af931281c83921470bca8a42e3" category="list-text">작업 메뉴에서 *보호 세부 정보 보기*를 선택합니다.</block>
   <block id="d04ac725754632fa49ee2c8d7b662bd5" category="list-text">삭제할 로컬 스냅샷을 선택하세요.</block>
-  <block id="33a51da1985a56a71a1ed4ec0b77b967" category="admonition">해당 행의 *위치* 열에 있는 로컬 스냅샷 아이콘은 파란색으로 나타나야 합니다.</block>
   <block id="35422d2db629b4a63ca95691f2286539" category="list-text">*작업*을 선택하세요<block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하고 *로컬 스냅샷 삭제*를 선택하세요.</block>
   <block id="ed09f3ce9d7f603634c8b3a4750cc390" category="list-text">확인 대화 상자에서 *제거*를 선택합니다.</block>
-  <block id="bbcb762ce62661d50d1870856602096d" category="summary">NetApp Backup and Recovery 사용하면 로컬 스냅샷, 복제 및 사용자가 시작한 개체 스토리지 작업으로의 백업 상태를 모니터링하고 사용자가 시작한 작업을 복원할 수 있습니다.</block>
   <block id="c6e625be6eb278b391f109fa71a2563b" category="doc">NetApp Backup and Recovery 에서 작업 모니터링</block>
-  <block id="2aba4bf12650545f167b338115bff248" category="paragraph">NetApp Backup and Recovery 사용하면 사용자가 시작한 로컬 스냅샷, 복제 및 개체 스토리지 작업으로의 백업 상태를 모니터링하고 사용자가 시작한 작업을 복원할 수 있습니다.  완료된 작업, 진행 중인 작업 또는 실패한 작업을 확인하여 문제를 진단하고 해결할 수 있습니다.  NetApp Console 알림 센터를 사용하면 이메일로 알림을 보내도록 설정할 수 있으므로 시스템에 로그인하지 않은 경우에도 중요한 시스템 활동에 대한 정보를 받을 수 있습니다.  콘솔 타임라인을 사용하면 UI나 API를 통해 시작된 모든 작업의 ​​세부 정보를 볼 수 있습니다.</block>
-  <block id="7d7877165e305d5d9166908f3d8e07c5" category="paragraph">NetApp Backup and Recovery 작업 정보를 15일 동안 보관한 후 삭제하여 작업 모니터에 더 이상 표시되지 않습니다.</block>
   <block id="06bf7dd6f0ab94d87f59e43fc93b6d3c" category="section-title">작업 모니터에서 작업 상태 보기</block>
   <block id="7189b993e1f29567a55606a3a2b812ad" category="paragraph">*작업 모니터링* 탭에서 모든 스냅샷, 복제, 개체 스토리지로의 백업, 복원 작업과 현재 상태 목록을 볼 수 있습니다.  여기에는 Cloud Volumes ONTAP, 온프레미스 ONTAP, 애플리케이션 및 가상 머신의 작업이 포함됩니다.  각 작업이나 직무에는 고유한 ID와 상태가 있습니다.</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">상태는 다음과 같습니다.</block>
@@ -1351,7 +1310,6 @@
   <block id="d7c8c85bf79bbe1b7188497c32c3b0ca" category="list-text">실패한</block>
   <block id="f5c50f0f405ba073846066df149c9150" category="paragraph">NetApp Backup and Recovery UI와 API에서 시작한 스냅샷, 복제, 개체 스토리지 백업 및 복원 작업은 작업 모니터링 탭에서 사용할 수 있습니다.</block>
   <block id="d263c7d70394e4465e07f91a7cda636c" category="inline-link-macro">NetApp Backup and Recovery 다시 시작하는 방법을 알아보세요</block>
-  <block id="dc761c5722384bd8a68caf5410677414" category="admonition">ONTAP 시스템을 9.13.x로 업그레이드했는데 작업 모니터에서 진행 중인 예약된 백업 작업이 표시되지 않으면 NetApp Backup and Recovery 다시 시작해야 합니다. <block ref="bfa346a5b4e1ecd443201d95eab54eb4" category="inline-link-macro-rx"></block>.</block>
   <block id="f12cc055f626f9974e07168ee36fc2b6" category="list-text">NetApp Backup and Recovery 메뉴에서 *모니터링*을 선택합니다.</block>
   <block id="e81a8bad1be4be12a837fcfb49f51617" category="list-text">추가 열(시스템, SVM, 사용자 이름, 작업 부하, 정책 이름, 스냅샷 레이블)을 표시하려면 더하기 기호를 선택합니다.</block>
   <block id="87aa191eff82d3ce3518c07577f209bd" category="section-title">채용공고 목록 검색 및 필터링</block>
@@ -1360,7 +1318,6 @@
   <block id="a466bc110c2ee16333fcf19f4e7b5dc2" category="list-text">결과를 다르게 정렬하려면 각 열 제목을 선택하여 상태, 시작 시간, 리소스 이름 등을 기준으로 정렬합니다.</block>
   <block id="abfa7a0ebf0068a9c8b2a22cab7ee2b3" category="list-text">특정 일자리를 찾으려면 *고급 검색 및 필터링* 영역을 선택하여 검색 패널을 엽니다.</block>
   <block id="f55acf819cf64faf595e14da13d54f0b" category="paragraph">이 패널을 사용하여 모든 리소스에 대한 자유 텍스트 검색을 입력하세요. 예를 들어 "1권"이나 "3번 응용 프로그램"과 같습니다.  드롭다운 메뉴의 항목에 따라 작업 목록을 필터링할 수도 있습니다.</block>
-  <block id="327b66d091add79b859ef84933343b9b" category="paragraph">대부분의 필터는 설명이 필요 없습니다.  "작업량" 필터를 사용하면 다음 카테고리의 작업을 볼 수 있습니다.</block>
   <block id="5695919edc7944640ed4ec81a9a36f71" category="list-text">ONTAP 볼륨(Cloud Volumes ONTAP 및 온프레미스 ONTAP 볼륨)</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">마이크로소프트 SQL 서버</block>
   <block id="76b0fa668c1cd016096eb9bc1bfde44a" category="list-text">가상 머신</block>
@@ -1377,12 +1334,10 @@
   <block id="a338f0236c9cd90b94c866169e207597" category="list-text">작업 메뉴를 선택하세요<block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> *자세히 보기*를 선택하세요.</block>
   <block id="a2f820f1e803ccce8bb7aecd68c2172d" category="list-text">자세한 내용을 보려면 각 섹션을 확장하세요.</block>
   <block id="8b512d5ba4f8158f9bbde90865caba8c" category="section-title">작업 모니터링 결과를 보고서로 다운로드</block>
-  <block id="e58d30d472d33acd3100a5f519e69afe" category="paragraph">주요 작업 모니터링 페이지의 내용을 수정한 후 보고서로 다운로드할 수 있습니다.  NetApp Backup and Recovery 필요에 따라 검토하고 다른 그룹으로 보낼 수 있는 .CSV 파일을 생성하고 다운로드합니다. .CSV 파일에는 최대 10,000개 행의 데이터가 포함됩니다.</block>
   <block id="4ef79a32c3fec53a7c7441bdc6ef7cd0" category="paragraph">작업 모니터링 세부 정보에서 단일 작업에 대한 세부 정보가 포함된 JSON 파일을 다운로드할 수 있습니다.</block>
   <block id="2b0ecb40cc305f7af9fe7f986b5bb2dd" category="list-text">모든 작업에 대한 CSV 파일을 다운로드하려면 다운로드 버튼을 선택하고 다운로드 디렉토리에서 파일을 찾으세요.</block>
   <block id="1dc45daaf063a4c51a123d4f491b6b42" category="list-text">단일 작업에 대한 JSON 파일을 다운로드하려면 작업 메뉴를 선택하세요.<block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 작업에 대해 *JSON 파일 다운로드*를 선택하고 다운로드 디렉토리에서 파일을 찾으세요.</block>
   <block id="f1a15f873b659fefcf2800c9489b580b" category="section-title">보존(백업 수명 주기) 작업 검토</block>
-  <block id="97ed68d89be18084aed5cb3445ac40c1" category="paragraph">보존(또는 _백업 라이프사이클_) 흐름을 모니터링하면 감사 완전성, 책임성 및 백업 안전성을 확보하는 데 도움이 됩니다.  백업 수명 주기를 추적하려면 모든 백업 사본의 만료일을 파악하는 것이 좋습니다.</block>
   <block id="86fa0897ffcce46e8eca8c43e8684ef8" category="paragraph">백업 라이프사이클 작업은 삭제되었거나 삭제 대기 중인 모든 스냅샷 복사본을 추적합니다.  ONTAP 9.13부터 작업 모니터링 페이지에서 "보존"이라는 모든 작업 유형을 볼 수 있습니다.</block>
   <block id="5168f75ce01db43e41309dbb9ba106a7" category="paragraph">"보존" 작업 유형은 NetApp Backup and Recovery 로 보호되는 볼륨에서 시작된 모든 스냅샷 삭제 작업을 캡처합니다.</block>
   <block id="9304f305aa89a02039b5cb4ac930f498" category="list-text">*고급 검색 및 필터링* 영역을 선택하여 검색 패널을 엽니다.</block>
@@ -1390,7 +1345,6 @@
   <block id="1c3cccbea914c20304f63319b99fb585" category="section-title">NetApp Console 알림 센터에서 백업 및 복원 알림을 검토합니다.</block>
   <block id="bacd9783e91bb01896a4e564be2f9207" category="paragraph">NetApp Console 알림 센터는 사용자가 시작한 백업 및 복원 작업의 진행 상황을 추적하여 작업이 성공했는지 여부를 확인할 수 있습니다.</block>
   <block id="44d4deb8868ac8159ee85f4a8e68725c" category="inline-link">알림 센터에 대해 자세히 알아보고 백업 및 복원 작업에 대한 알림 이메일을 보내는 방법을 알아보세요.</block>
-  <block id="13e610b9aab0d9b0b45bb4a37586af8b" category="paragraph">알림 센터에서 알림을 보는 것 외에도 콘솔을 구성하여 특정 유형의 알림을 이메일로 알림으로 보낼 수 있습니다. 이렇게 하면 시스템에 로그인하지 않아도 중요한 시스템 활동에 대한 정보를 받을 수 있습니다.<block ref="a993635cface3018acf75d15a7289e44" category="inline-link-rx"></block> .</block>
   <block id="3b27991b1aa229f52835df236ba4b917" category="paragraph">알림 센터에는 스냅샷, 복제, 클라우드 백업, 복원 이벤트가 다수 표시되지만, 이메일 알림을 트리거하는 이벤트는 특정 이벤트뿐입니다.</block>
   <block id="9e35f94818feb2156d0744e4be9fb2ea" category="cell">작업 유형</block>
   <block id="a4ecfc70574394990cf17bd83df499f7" category="cell">이벤트</block>
@@ -1412,7 +1366,6 @@
   <block id="93d1a6c01d156e393187858c16c5c626" category="cell">NetApp Backup and Recovery 복제 역방향 재동기화 작업 실패</block>
   <block id="594e604651fd901124d237d8caf5c86f" category="cell">NetApp Backup and Recovery 복제 삭제 작업 실패</block>
   <block id="910e8697aa5e0e59e920af3a4cf26b12" category="admonition">ONTAP 9.13.0부터 모든 알림은 Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템에 표시됩니다.  Cloud Volumes ONTAP 9.13.0 및 온프레미스 ONTAP 이 있는 시스템의 경우 "복원 작업이 완료되었지만 경고가 표시됨"과 관련된 알림만 나타납니다.</block>
-  <block id="4c84697ea11760e260e11cbcfa89f1d5" category="paragraph">기본적으로 NetApp Console 조직 및 계정 관리자는 모든 "중요" 및 "권장 사항" 알림에 대한 이메일을 받습니다.  다른 모든 사용자와 수신자는 기본적으로 알림 이메일을 받지 않도록 설정되어 있습니다.  이메일은 NetApp 클라우드 계정에 속한 모든 콘솔 사용자나 백업 및 복원 활동을 알아야 하는 다른 수신자에게 보낼 수 있습니다.</block>
   <block id="4e1654b110548c12172bd1f4aa2a9b85" category="paragraph">NetApp Backup and Recovery 이메일 알림을 받으려면 알림 설정 페이지에서 알림 심각도 유형을 "중요", "경고", "오류"로 선택해야 합니다.</block>
   <block id="ac92ec63bcc51fd7fbdc332411a1c313" category="inline-link">백업 및 복원 작업에 대한 알림 이메일을 보내는 방법을 알아보세요.</block>
   <block id="3b47f916b2f443d824df44877447d71b" category="paragraph"><block ref="79adfec10aebf964dc5e4c3b78205ffe" category="inline-link-rx"></block>.</block>
@@ -1423,22 +1376,15 @@
   <block id="63e8201dff1eb0f61fc15408465cb6b1" category="paragraph">콘솔 타임라인에서 백업 및 복원 작업의 세부 정보를 보고 추가 조사를 할 수 있습니다.  콘솔 타임라인은 사용자 또는 시스템에서 시작된 각 이벤트에 대한 세부 정보를 제공하고 UI 또는 API를 통해 시작된 작업을 보여줍니다.</block>
   <block id="b47bbc8022db13f22970dc58a89f44a2" category="inline-link">타임라인과 알림 센터의 차이점에 대해 알아보세요</block>
   <block id="7c9a9551a82f974f54945fe3abbeec59" category="paragraph"><block ref="be62b15feb39ec16dcb7570febe101f2" category="inline-link-rx"></block>.</block>
-  <block id="096522687dff045b7ad64a12bd783789" category="summary">온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure, Google Cloud Platform 및 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.</block>
   <block id="d3c6745f840c2a30a5e3e9367ddd315a" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 백업</block>
-  <block id="1f24b8f05d126b4e6981228bbcf414a6" category="paragraph">온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 및 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.</block>
-  <block id="67fee12a630a39f3a2419ba00890580f" category="list-text">백업을 시작하기 전에 검색된 호스트에 대한 로그 디렉터리를 구성합니다.</block>
   <block id="7f9f81d01b7164c9af904c1ddc62367d" category="section-title">워크로드 보호 상태 보기</block>
-  <block id="98dae635da462d2ed6a530fba52f89b8" category="paragraph">백업을 시작하기 전에 워크로드의 보호 상태를 확인하세요.</block>
   <block id="9ba224f0573e42a55a47b26c40bae95c" category="list-text">호스트, 보호 그룹, 가용성 그룹, 인스턴스 및 데이터베이스 탭에 대한 세부 정보를 검토합니다.</block>
   <block id="3c440e2fe11de8b0c9ba750fb038f088" category="section-title">검색된 호스트에 대한 로그 디렉토리 구성</block>
-  <block id="32e9ec0558b517ab2c691dae389cf40a" category="paragraph">작업 부하를 백업하기 전에 검색된 호스트의 활동 로그 경로를 설정하세요.  이를 통해 작업 상태를 추적할 수 있습니다.</block>
   <block id="0e7efc08a39aef2e4e81084cfd484cde" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="f664fa7f8e8f64dd3b179d0894c484df" category="list-text">호스트를 선택하세요.</block>
   <block id="75d216d45ee5cd87dedb6c923b7ac199" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *로그 디렉토리 구성*.</block>
-  <block id="1e0bff2c91c15e182127000ba2a1a851" category="list-text">호스트 경로를 제공하거나 호스트의 호스트 또는 노드 호스트 목록을 탐색하여 호스트 로그를 저장할 위치를 찾습니다.</block>
   <block id="c90f3128927fb9082f339e01f74e41df" category="list-text">로그를 저장할 곳을 선택하세요.</block>
   <block id="f6a597cfb62c5f7cf588253ccc058cc4" category="admonition">표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러스터 인스턴스 또는 독립 실행형)에 따라 다릅니다.</block>
-  <block id="8ae6648bb93b53d7957fdb87eb19a53c" category="paragraph">작업 부하 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만들 수 있습니다.  보호 그룹은 함께 보호하려는 작업 부하를 논리적으로 그룹화한 것입니다.</block>
   <block id="8d20c84ae4e022fee3ea1139418904bc" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="6b653f8c4346a4566e361ada95367bb5" category="list-text">보호 그룹에 포함할 인스턴스나 데이터베이스를 선택합니다.</block>
   <block id="488ea583abd404c5855a27397f193fbe" category="paragraph">정책을 만들려면 *새 정책 만들기*를 선택하고 메시지에 따라 정책을 만드세요.  보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
@@ -1448,7 +1394,6 @@
   <block id="17b12279059c23fe5c84e8a845d07595" category="list-text">백업에 적용할 정책을 선택하세요.</block>
   <block id="9a7eb301acc1f194e9e93fc439819834" category="list-text">*지금 백업*을 선택하세요.</block>
   <block id="d9913a0b510a8288a50990315eb1bf1a" category="section-title">백업 일정을 일시 중단합니다</block>
-  <block id="591200027d004fef90874849895023dc" category="paragraph">일정을 일시 중단하면 예약된 시간에 백업이 일시적으로 실행되지 않습니다.  시스템 유지 관리를 수행 중이거나 백업에 문제가 있는 경우 이 작업을 수행하는 것이 좋습니다.</block>
   <block id="25c71a87678c86f2cc5bd3e9fb6b141a" category="list-text">일시 중단하려는 보호 그룹, 인스턴스 또는 데이터베이스를 선택합니다.</block>
   <block id="26e2e85490e0359c71f79e8496ccac21" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *일시 중지*.</block>
   <block id="3fc0db42b81a7ffcf33f957b455005fa" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *보호 그룹 삭제*.</block>
@@ -1458,18 +1403,11 @@
   <block id="e06e5b57a1ecbd92fac84b5373930c7c" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *보호 기능을 제거합니다*.</block>
   <block id="8c994cb58807d04791298c103bd8eeba" category="list-text">보호 제거 대화 상자에서 백업과 메타데이터를 보관할지 아니면 삭제할지 선택합니다.</block>
   <block id="a126c201103ea34a2e266dd030d47028" category="list-text">*제거*를 선택하여 작업을 확인하세요.</block>
-  <block id="d6b2c7fe6cfaf9e8fbb20cdf55e97309" category="summary">개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션을 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.</block>
-  <block id="77ba0160716d8682ae13dff6d21afaf7" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL 서버 워크로드 개요 복제</block>
-  <block id="db45e2afb836e1acca3688f68f7a2864" category="paragraph">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 애플리케이션 데이터를 개발, 테스트 또는 보호 목적으로 동일하거나 다른 VM에 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.</block>
   <block id="8b7fbced126fee3a3d3fdb0185af6396" category="list-text">클론을 생성하세요</block>
   <block id="1170d6f09309cb8dc382034a34680937" category="list-text">클론 새로 고침</block>
   <block id="d91a0b52cfc5d0c3e4b59e8544b3c61d" category="list-text">클론 분할</block>
   <block id="9ceb80285d65a64605bf06f35da2e5cb" category="list-text">클론 삭제</block>
-  <block id="efe0a5bd1ee267cf1eec471f081d02ac" category="summary">개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션 데이터를 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.</block>
-  <block id="5cca8c2d9bf5f6aa48a19d4032df28ff" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 복제</block>
-  <block id="93d5078699842e380bbf3d48df8dff3e" category="paragraph">NetApp Backup and Recovery 사용하여 개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션 데이터를 동일하거나 다른 VM에 복제합니다.  Microsoft SQL Server 워크로드의 인스턴트 스냅샷이나 기존 스냅샷에서 복제본을 만들 수 있습니다.</block>
   <block id="9623ff55868a27048ab1f8af19865a58" category="paragraph">다음 유형의 클론 중에서 선택하세요.</block>
-  <block id="0cd667209ba1928bb0427b9c34fccc5c" category="list-text">*즉각적인 스냅샷 및 복제*: 즉각적인 스냅샷에서 Microsoft SQL Server 워크로드의 복제본을 만들 수 있습니다.  인스턴트 스냅샷은 백업에서 생성된 소스 데이터의 특정 시점 복사본입니다.  복제본은 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  데이터 손실이나 손상이 발생한 경우 복제본을 사용하여 작업 부하를 복원할 수 있습니다.</block>
   <block id="24e1f95a50968c8afba32ada56159269" category="list-text">*기존 스냅샷에서 복제*: 워크로드에 사용할 수 있는 스냅샷 목록에서 기존 스냅샷을 선택할 수 있습니다.  이 옵션은 특정 시점의 복제본을 만들 때 유용합니다.  기본 저장소나 보조 저장소에 복제합니다.</block>
   <block id="442c1f9989df3374284c4930ad61deca" category="paragraph">다음과 같은 보호 목표를 달성할 수 있습니다.</block>
   <block id="1266af1011cfb1f4a1155423d32259d6" category="paragraph">Microsoft SQL Server 워크로드의 복제본을 만들 수 있습니다.  복제본은 백업에서 생성된 소스 데이터의 사본입니다.  복제본은 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  데이터 손실이나 손상이 발생한 경우 복제본을 사용하여 작업 부하를 복원할 수 있습니다.</block>
@@ -1477,17 +1415,14 @@
   <block id="2a1d395bc8ea4d34d2d0de653b0ca483" category="list-text">NetApp Backup and Recovery 메뉴에서 *복제*를 선택합니다.</block>
   <block id="b24b65db988f919f27863b57062418df" category="list-text">*새로운 복제본 만들기*를 선택합니다.</block>
   <block id="fc3c9ac07c83f451e74212c9c611b0cd" category="list-text">복제 유형을 선택하세요:</block>
-  <block id="263c8565a56fc9cee1338445e2ecd218" category="list-text">*기존 스냅샷에서 복제 및 데이터베이스 새로 고침*: 복제본에 대한 스냅샷을 선택하고 복제본에 대한 옵션을 구성합니다.  복제본에 대한 스냅샷을 선택하고 옵션을 구성하려는 경우 이 기능이 유용합니다.</block>
   <block id="22a9747df4fcda6600928f010255f13d" category="list-text">*즉각적인 스냅샷 및 복제*: 지금 소스 데이터의 스냅샷을 찍고 해당 스냅샷에서 복제본을 만듭니다.  이 옵션은 소스 워크로드의 최신 데이터에서 복제본을 만들려는 경우에 유용합니다.</block>
   <block id="a4ff90b0c32ccdad935e744d34c444fd" category="list-text">*데이터베이스 소스* 섹션을 완성하세요.</block>
   <block id="695f4384f95690fc983fbdce3ff6e9d6" category="list-text">*단일 복제본 또는 대량 복제본*: 단일 복제본을 생성할지, 아니면 여러 복제본을 생성할지 선택합니다.  *대량 복제*를 선택하면 이미 생성한 보호 그룹을 사용하여 여러 복제본을 한 번에 생성할 수 있습니다.  이 옵션은 다양한 작업 부하에 대해 여러 개의 복제본을 생성하려는 경우에 유용합니다.</block>
   <block id="cb774ddad741e39d5eac8293855ed186" category="list-text">*소스 데이터베이스 호스트, 인스턴스 및 이름*: 복제본의 소스 데이터베이스 호스트, 인스턴스 및 이름을 선택합니다.  소스 데이터베이스는 복제본이 생성될 데이터베이스입니다.</block>
   <block id="2f7d350d3fe65b8cb52912184bc13eb7" category="list-text">*데이터베이스 대상* 섹션을 완료하세요.</block>
   <block id="7f38a98dca4e28d50ffdd4e70d1272fb" category="list-text">*대상 데이터베이스 호스트, 인스턴스 및 이름*: 복제본의 대상 데이터베이스 호스트, 인스턴스 및 이름을 선택합니다.  대상 데이터베이스는 복제본이 생성될 위치입니다.</block>
-  <block id="37ad09b5fc9eac0f3e23c1c4f9e317fb" category="paragraph">선택적으로 대상 이름 드롭다운 목록에서 *접미사*를 선택하고 복제된 데이터베이스 이름에 접미사를 추가합니다.  접미사를 지정하지 않으면 복제된 데이터베이스 이름은 소스 데이터베이스 이름과 동일합니다.</block>
   <block id="33c7a9f80e0270738b2f53f0d17dc32a" category="list-text">*QoS(최대 처리량)*: 복제본에 대한 서비스 품질(QoS) 최대 처리량을 MBps 단위로 선택합니다.  QoS는 최대 처리량 및 IOPS와 같은 클론의 성능 특성을 정의합니다.</block>
   <block id="37b49273c9a13926dac916abd3204dc6" category="list-text">*마운트* 섹션을 완료하세요.</block>
-  <block id="87ab5c708e198be9797861286f2d81c4" category="list-text">*마운트 지점 자동 할당*: 복제본에 대한 마운트 지점을 자동으로 할당하려면 이 옵션을 선택합니다.  마운트 지점은 복제본이 개체 저장소에 마운트되는 위치입니다.</block>
   <block id="ba8b4d3f86d22c66cce9496f01f41360" category="list-text">*마운트 지점 경로 정의*: 복제본의 마운트 지점을 입력하세요.  마운트 지점은 복제본이 개체 저장소에 마운트되는 위치입니다.  드라이브 문자를 선택하고, 데이터 파일 경로를 입력하고, 로그 파일 경로를 입력합니다.</block>
   <block id="81e1b4393ce5a82bf9236d29d949e252" category="list-text">복원 지점을 선택하세요:</block>
   <block id="de3839b8d125e88adfb277a547882fa6" category="list-text">*기존 스냅샷*: 워크로드에 사용 가능한 스냅샷 목록에서 기존 스냅샷을 선택합니다.  이 옵션은 특정 시점의 복제본을 만들 때 유용합니다.</block>
@@ -1501,9 +1436,7 @@
   <block id="4de1eb06fca003a6a62865125c06ed51" category="list-text">*복제 새로 고침 일정 및 만료*: *즉시 복제*를 선택한 경우 복제 새로 고침을 시작할 날짜를 입력합니다.  복제 일정은 복제본이 생성되는 시기를 정의합니다.</block>
   <block id="70cf932d9292bbd69ded2413914416ee" category="list-text">*일정이 만료되면 복제본 삭제*: 복제본 만료일에 복제본을 삭제하려는 경우.</block>
   <block id="42c8d79897e584888df9def8b2398ceb" category="list-text">*복제본 새로 고침 간격*: 복제본을 새로 고칠 빈도를 선택합니다.  복제본을 매시간, 매일, 매주, 매월 또는 분기별로 새로 고칠 수 있습니다.  이 옵션은 복제본을 소스 작업 부하에 맞춰 최신 상태로 유지하려는 경우에 유용합니다.</block>
-  <block id="9afe7218901464aef836f1f00288c5ef" category="list-text">*전술문 및 후술문*: 선택적으로 복제본이 생성되기 전과 후에 실행할 전술문 및 후술문 스크립트를 지정합니다.  이러한 스크립트는 복제본 구성이나 알림 전송 등의 추가 작업을 수행하는 데 사용할 수 있습니다.</block>
   <block id="6f3ec318a7d03c1c478b8a78c38cb19e" category="list-text">*알림*: 선택적으로, 작업 보고서와 함께 복제본 생성 상태에 대한 알림을 받을 이메일 주소를 지정합니다.  복제본 생성 상태에 대한 알림을 받기 위해 웹훅 URL을 지정할 수도 있습니다.  성공 알림과 실패 알림을 모두 받을지, 아니면 둘 중 하나만 받을지 지정할 수 있습니다.</block>
-  <block id="b46751469d66299eb9d9677c4e065141" category="list-text">*태그*: 나중에 리소스 그룹을 검색하는 데 도움이 되는 하나 이상의 레이블을 선택하고 *적용*을 선택합니다.  예를 들어, 여러 리소스 그룹에 "HR"을 태그로 추가하면 나중에 해당 HR 태그와 연관된 모든 리소스 그룹을 찾을 수 있습니다.</block>
   <block id="2d97727e427122b709150b5f4a1cbcbc" category="list-text">복제본이 생성되면 *인벤토리* 페이지에서 볼 수 있습니다.</block>
   <block id="81cf121adb942b1ee3a232dfbd071787" category="paragraph">Microsoft SQL Server 워크로드의 복제본을 새로 고칠 수 있습니다.  복제본을 새로 고치면 소스 워크로드의 최신 데이터로 복제본이 업데이트됩니다.  이 기능은 복제본을 소스 작업 부하에 맞춰 최신 상태로 유지하려는 경우에 유용합니다.</block>
   <block id="b55bb5e4d643379b3f1e865f8af81a9e" category="paragraph">데이터베이스 이름을 변경하고, 최신 인스턴트 스냅샷을 사용하거나, 기존 프로덕션 스냅샷에서 새로 고침하는 옵션이 있습니다.</block>
@@ -1515,7 +1448,6 @@
   <block id="30d826de8ef0821df1383cf392c54866" category="list-text">*태그*: 나중에 리소스 그룹을 검색하는 데 도움이 되는 하나 이상의 라벨을 입력하세요.  예를 들어, 여러 리소스 그룹에 "HR"을 태그로 추가하면 나중에 해당 HR 태그와 연관된 모든 리소스 그룹을 찾을 수 있습니다.</block>
   <block id="7ae396d8697569c4da682196e15a598f" category="list-text">새로 고침 확인 대화 상자에서 계속하려면 *새로 고침*을 선택하세요.</block>
   <block id="2e7a2fe6aba8a77893665dc04b468dbf" category="section-title">복제 새로 고침 건너뛰기</block>
-  <block id="7d41efc2d32f9ec60952d826d03f219e" category="paragraph">소스 워크로드의 최신 데이터로 복제본을 업데이트하지 않으려면 복제본 새로 고침을 건너뛸 수 있습니다.  복제본 새로 고침을 건너뛰면 복제본을 업데이트하지 않고도 그대로 유지할 수 있습니다.</block>
   <block id="71625decb35c7e43fdb5deae9f939931" category="list-text">새로 고침을 건너뛸 복제본을 선택합니다.</block>
   <block id="acdc6d8215bdc39a7c6ac48e5ff4b6f5" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *새로고침 건너뛰기*.</block>
   <block id="c613ef03cc363aefacc22f329f86876b" category="list-text">새로 고침 건너뛰기 확인 대화 상자에서 다음을 수행합니다.</block>
@@ -1529,16 +1461,11 @@
   <block id="91a9421f27cf61e52bea5d9c90e7f79e" category="list-text">분할된 클론의 세부 정보를 검토하고 *분할*을 선택합니다.</block>
   <block id="e249edf19fe073ddd9570fbd4ae541d6" category="list-text">분할된 클론이 생성되면 *인벤토리* 페이지에서 볼 수 있습니다.</block>
   <block id="8a65745379abeb0cfae60a1c9411fbf7" category="paragraph">Microsoft SQL Server 워크로드의 복제본을 삭제할 수 있습니다.  복제본을 삭제하면 개체 저장소에서 복제본이 제거되고 저장 공간이 확보됩니다.</block>
-  <block id="0dcbaebd2d0c67351c93ea429ff57403" category="paragraph">복제본이 정책으로 보호되는 경우 작업을 포함하여 복제본이 삭제됩니다.</block>
   <block id="7d96331ecc4c49d8309c629c038259b6" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *복제본 삭제*.</block>
   <block id="443b1721520eef28b9df0cfca4b895f7" category="list-text">복제 삭제 확인 대화 상자에서 삭제 세부 정보를 검토합니다.</block>
   <block id="6bf252e4479008373232d625cc16f3f0" category="list-text">복제본이나 해당 저장소에 액세스할 수 없는 경우에도 SnapCenter 에서 복제된 리소스를 삭제하려면 *강제 삭제*를 선택합니다.</block>
   <block id="071238f352b79bf42fc764c1c3e7a672" category="list-text">복제본이 삭제되면 *인벤토리* 페이지에서도 제거됩니다.</block>
-  <block id="d53f53fc30ebcedcac10bb63c84a7334" category="summary">온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 및 StorageGRID 로 백업하여 데이터가 보호되도록 할 수 있습니다. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.</block>
-  <block id="970704c6c31da44d60a09e434504ddef" category="doc">NetApp Backup and Recovery 통한 Microsoft SQL 워크로드 보호 개요</block>
-  <block id="26637088d9fc088395262f4cadc1d551" category="paragraph">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 시스템에서 Amazon Web Services, Microsoft Azure 또는 StorageGRID 로 Microsoft SQL Server 애플리케이션 데이터를 보호하세요. 백업은 사용자가 만든 정책에 따라 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.</block>
   <block id="920a86bab58426e670d364756915fe89" category="paragraph">3-2-1 접근 방식의 이점은 다음과 같습니다.</block>
-  <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery NetApp SnapMirror 데이터 복제 기술을 활용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.</block>
   <block id="90611cad8ce642f37b020e9f74335606" category="inline-link-macro">SnapCenter 에서 가져오는 경우 추가 항목 구성</block>
   <block id="4be4857ddf5f778e68cf136f6d4a1b8f" category="list-text"><block ref="4be4857ddf5f778e68cf136f6d4a1b8f" category="inline-link-macro-rx"></block></block>
   <block id="d15c46d418dcb12c5418f755f162b739" category="list-text"><block ref="d15c46d418dcb12c5418f755f162b739" category="inline-link-macro-rx"></block></block>
@@ -1557,7 +1484,6 @@
   <block id="50becc4bb7baee84bd10aa757aaa2048" category="inline-link-macro">작업량 인벤토리 관리</block>
   <block id="e5c866c0e49172f48184bec3e11aa6b9" category="list-text"><block ref="e5c866c0e49172f48184bec3e11aa6b9" category="inline-link-macro-rx"></block></block>
   <block id="d66ed6d81bd70c133ddb80e0d8285080" category="list-text"><block ref="d66ed6d81bd70c133ddb80e0d8285080" category="inline-link-macro-rx"></block></block>
-  <block id="8b387432a535fb4b84f9acc0531a283f" category="paragraph">작업 부하를 백업하려면 일반적으로 백업 및 복원 작업을 제어하는 정책을 만듭니다.  보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
   <block id="3f7e0c8d0c7fc98faaf4d36a5bb06680" category="paragraph-title">지원되는 백업 대상</block>
   <block id="124dee118a2923f54724c274f69ca91a" category="paragraph">NetApp Backup and Recovery 사용하면 다음 소스 시스템의 Microsoft SQL Server 인스턴스와 데이터베이스를 퍼블릭 및 프라이빗 클라우드 공급자의 다음 보조 시스템과 개체 스토리지로 백업할 수 있습니다.  스냅샷 사본은 소스 시스템에 저장됩니다.</block>
   <block id="48a431e7da72cf4ddb716b44e3bd3022" category="cell">소스 시스템</block>
@@ -1588,29 +1514,19 @@
   <block id="7a27f6aeca7faa30d91e24a0b044228e" category="cell">온프레미스 ONTAP 시스템 ONTAP S3</block>
   <block id="d4cd0dabcf4caa22ad92fab40844c786" category="cell">해당 없음</block>
   <block id="046252999ea760a859cd9ed58c250005" category="admonition">"사내 ONTAP 시스템"에 대한 참조에는 FAS 및 AFF 시스템이 포함됩니다.</block>
-  <block id="b1064fed29b0dc7e3aa35001b7aa5fe8" category="summary">스냅샷, 복제본, 개체 스토리지의 백업을 포함하여 백업을 생성한 위치에서 데이터 백업을 복원할 수 있습니다.  복원할 복원 위치, 복원 지점 및 리소스 유형을 검토합니다.</block>
-  <block id="03a7e475e1c12b2c6d0164d66fc949cf" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL 워크로드 개요 복원</block>
-  <block id="93538a05b075f118ed03b0213f47df07" category="paragraph">NetApp Backup and Recovery 에서 Microsoft SQL Server 데이터 백업을 사용하면 스냅샷, 복제 또는 개체 스토리지의 백업 등 백업을 이동한 위치에서 복원할 수 있습니다.  작업 부하를 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.  복원할 복원 위치, 복원 지점 및 리소스 유형을 검토합니다.</block>
   <block id="a1a24114f8ff152b1eaa793979cceb31" category="list-text">기본 위치에서 복원</block>
   <block id="214aa1c07261842a0c66c9807fb461a5" category="list-text">복제된 리소스에서 복원</block>
   <block id="cba441d877fe3c83dc3240cc40b07914" category="list-text">개체 저장소 백업에서 복원</block>
   <block id="41850d3e69864b055a26374069c9dbda" category="paragraph">최신 스냅샷이나 다음 지점으로 데이터를 복원할 수 있습니다.</block>
   <block id="66b1424fe6641f4697268af9ed07b5e0" category="list-text">스냅샷에서 복원</block>
-  <block id="a0310fc93942385f0bbe33726461ece4" category="list-text">특정 시점으로 복원합니다.  파일의 이름과 위치, 마지막으로 좋은 상태였던 날짜를 알고 있다면 도움이 됩니다.</block>
   <block id="c1f62c4a8bd3bfc797c0a4be8f29b273" category="list-text">최신 백업으로 복원</block>
-  <block id="01e12de62fa77fda2815719aed8ff892" category="section-title">다음은 무엇입니까?</block>
-  <block id="957b594a5345d19dcb7aee8617ab18dd" category="paragraph">작업 부하를 복원하는 방법에 대한 자세한 내용은 다음을 참조하세요.<block ref="62e2cc937cfdf889c63d65a36a05b5ee" category="inline-link-macro-rx"></block> .</block>
   <block id="9c53b2dcf4ff2026b3d9b30dfa263b65" category="summary">스냅샷 복사본, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 데이터베이스 워크로드를 복원합니다.</block>
   <block id="4a2c019e4f44d11b6cc64ba3161fb171" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 복원</block>
-  <block id="12d4e9f9d243b572a971e5529456a50b" category="paragraph">NetApp Backup and Recovery 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 Microsoft SQL Server 워크로드를 복원합니다.  작업 부하를 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.</block>
   <block id="42ace45b519d448bedf9ce14d8cc4c23" category="paragraph">개체 스토리지에서 백업 파일을 선택하고 해당 백업에 대해 랜섬웨어 복원력이 활성화된 경우(백업 정책에서 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 무결성 검사를 실행하라는 메시지가 표시됩니다.  검사를 실시해 보시기 바랍니다.</block>
   <block id="52386b1f1b11ed7ab3350096c7964c69" category="list-text">백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.</block>
   <block id="b70369c3c6532f77755358e7ea82a3d2" category="inline-image-macro">리소스를 복원하는 흐름을 보여주는 다이어그램</block>
   <block id="2ce2b4590446a5b67b1664d9a59c0e14" category="paragraph"><block ref="2ce2b4590446a5b67b1664d9a59c0e14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b4e33e7622acc9618ace6e8ff3afc69" category="section-title">복원 방법</block>
-  <block id="a4e9043cd0d08a3604d4fa5900f2b6c6" category="paragraph">다음 방법 중 하나를 사용하여 작업 부하를 복원할 수 있습니다.  일반적으로 복원 요구 사항에 따라 다음 방법 중 하나를 선택합니다.</block>
-  <block id="ab93af0ba0fbf755cb83f2b85d489b69" category="list-text">*복원 페이지에서*: 리소스를 복원해야 하지만 정확한 이름이나 해당 리소스가 있는 위치, 마지막으로 양호한 상태였던 날짜를 기억하지 못하는 경우 이 기능을 사용하세요. 필터를 사용하여 스냅샷을 검색할 수 있습니다.</block>
-  <block id="4eade6c0159669915da700f6eafaf549" category="list-text">*인벤토리 페이지에서*: 지난주 또는 지난 달의 특정 리소스를 복원해야 하는 경우 이 기능을 사용하세요. 리소스의 이름과 위치, 마지막으로 좋은 상태였던 날짜를 알고 있어야 합니다.  복원하려는 리소스를 찾으려면 리소스 목록을 탐색합니다.</block>
   <block id="c156ce96487fbc2d3146c1025eeb814e" category="section-title">복원 옵션에서 작업 부하 데이터 복원</block>
   <block id="ff5f9394e9c4c274ba276dbd8baa7e78" category="paragraph">복원 옵션을 사용하여 데이터베이스 작업 부하를 복원합니다.</block>
   <block id="284d26c101f9b764ac03ab9ee1f7d9cc" category="list-text">복원하려는 데이터베이스를 선택하세요.  필터를 사용하여 검색하세요.</block>
@@ -1650,14 +1566,10 @@
   <block id="a5b572eff428c980edb20994fe7c49f1" category="list-text">복원하려는 리소스가 있는 호스트를 선택하세요.</block>
   <block id="c9aaadacbb7ccfbb21c9167dc0b06cb2" category="list-text">*작업*을 선택하세요<block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하고 *세부정보 보기*를 선택하세요.</block>
   <block id="917bc4b9739215b75cd62f3d93879136" category="list-text">Microsoft SQL Server 페이지에서 *데이터베이스* 탭을 선택합니다.</block>
-  <block id="d69ca0b6bfa475ff327b8d26bb282775" category="list-text">데이터베이스 탭에서 복원할 수 있는 백업이 있음을 나타내는 "보호됨" 상태를 표시하는 데이터베이스를 선택합니다.</block>
   <block id="f467c6231a57911e62401cfb0159d95b" category="paragraph">복원 페이지에서 복원할 때와 동일한 세 가지 옵션이 나타납니다.</block>
   <block id="3cc2b93a80a97a7cacb8c0d4f5da6c20" category="list-text">특정 시점으로 복원</block>
   <block id="d25e9ce84a1050d163d601d4bd2fa073" category="list-text">복원 페이지에서 복원 옵션에 대해 동일한 단계를 계속합니다.</block>
   <block id="7b588dfa65a0573a51e5ab0e2d3023e9" category="summary">NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세요.</block>
-  <block id="84686185827208a5aa3cd73e8914c726" category="doc">NetApp Backup and Recovery 사용하여 Oracle 워크로드 백업</block>
-  <block id="4870aee82774514f58cbe0b5e13295c6" category="paragraph">온프레미스 ONTAP 시스템의 Oracle Database 보호 그룹이나 데이터베이스를 Amazon Web Services S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3로 백업하여 데이터가 보호되도록 하세요.  보호 그룹을 백업하면 NetApp Console 보호 그룹에 포함된 데이터베이스와 로그 데이터를 백업합니다.</block>
-  <block id="256e34b5265109a270fa88b84b389445" category="admonition">일정에 따라 보호 그룹이나 단일 데이터베이스를 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다.  보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 지침을 보려면.</block>
   <block id="2fb29b6c97ac2109b4c3d3537ae25b9d" category="inline-link-macro">NetApp Backup and Recovery 사용하여 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다.</block>
   <block id="02cdaf324b33a661330ff286d04c61aa" category="list-text">리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다<block ref="c9c15450fe1a04e77c0be05f7471779a" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
   <block id="5a232101cd6b911084269b39726e0f05" category="list-text">지금 보호 그룹을 백업하세요(지금 주문형 백업을 생성하세요).</block>
@@ -1669,7 +1581,6 @@
   <block id="77b7ee08ed330c77cd76797cc7019357" category="doc">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스 복구 지점을 마운트 및 마운트 해제합니다.</block>
   <block id="797c8d8b5a0f5a880bd15fd855682db6" category="paragraph">복구 작업을 수행하기 위해 제어된 상태에서 데이터베이스에 액세스해야 하는 경우 Oracle 데이터베이스 복구 지점을 마운트할 수 있습니다.</block>
   <block id="079a3f8ec0bb95d8f0ae5d36f04de7c4" category="section-title">Oracle 데이터베이스 복원 지점 마운트</block>
-  <block id="3fc01e05055881fda72e906971695293" category="paragraph">보관 로그를 보관하도록 데이터베이스의 보호 정책을 구성하면 데이터베이스의 복구 지점을 마운트하여 데이터베이스에 적용된 모든 변경 사항의 기록을 볼 수 있습니다.</block>
   <block id="027d1aa00ef27e7ff911f7a3ecb49c5d" category="list-text">Oracle 타일을 선택하세요.</block>
   <block id="3fe9c6f0345265378a65d07de3e0456f" category="list-text">백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.</block>
   <block id="872dd4524336673d42ecaa46bc8eb4a9" category="list-text">목록에서 Oracle Database 워크로드에 대해 *보기*를 선택합니다.</block>
@@ -1690,7 +1601,6 @@
   <block id="504b4d4156c8604edbbda8b908e689cf" category="list-text">*마운트 해제*를 선택하여 작업을 확인합니다.</block>
   <block id="bb205d6469d1d38895fc74e5fe58b024" category="summary">온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 까지 Oracle 가상 머신을 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다.</block>
   <block id="3e4addf457cac6e6f2f337996275bb1f" category="doc">Oracle Database 워크로드 보호 개요</block>
-  <block id="5272953587a56b79833b0c22e9ec015b" category="paragraph">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스와 로그를 보호하세요.  NetApp Backup and Recovery 빠르고, 공간 효율적이며, 충돌 대비 및 데이터베이스 대비 일관된 백업 및 복원 작업을 제공합니다.  Oracle 워크로드를 Amazon Web Services S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3에 백업하고 온프레미스 Oracle 호스트로 복원할 수 있습니다.</block>
   <block id="e58749f44abd3f2817fad6c2ae87fb45" category="paragraph">NetApp Backup and Recovery 사용하면 Oracle 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
   <block id="0ef9d15a5323698b079164a26f451715" category="list-text"><block ref="0ef9d15a5323698b079164a26f451715" category="inline-link-macro-rx"></block></block>
   <block id="f7f66fefaac908c86a635d80ae33c9ef" category="inline-link-macro">Oracle 워크로드에 대한 보호 그룹 생성 및 관리</block>
@@ -1859,7 +1769,6 @@
   <block id="87bf438f6aafcccba8118644c7f4ed8b" category="list-text">* SnapMirror 볼륨 및 스냅샷 형식*: 선택적으로 Microsoft SQL Server 작업 부하에 대한 백업을 관리하는 정책에 고유한 스냅샷 이름을 입력합니다. 형식과 사용자 정의 텍스트를 입력합니다. 보조 저장소에 백업하기로 선택한 경우 SnapMirror 볼륨 접두사와 접미사를 추가할 수도 있습니다.</block>
   <block id="fb6e9d876191a4c0c156e739e377be59" category="section-title">정책 편집</block>
   <block id="1f5ec7f8a8c15e5d3277be8ae844a249" category="paragraph">정책에 대한 백업 아키텍처, 백업 빈도, 보존 정책 및 기타 설정을 편집할 수 있습니다.</block>
-  <block id="ecee2fc394ac60057e7928bb6138339d" category="admonition">이 기능은 VMware Preview 워크로드에서는 사용할 수 없습니다.</block>
   <block id="f985f1951686384a15ea5ddf855b3cab" category="paragraph">정책을 편집할 때 다른 보호 수준을 추가할 수 있지만, 보호 수준을 제거할 수는 없습니다.  예를 들어, 정책이 로컬 스냅샷만 보호하는 경우 보조 스토리지에 복제를 추가하거나 개체 스토리지에 백업을 추가할 수 있습니다.  로컬 스냅샷과 복제가 있는 경우 개체 스토리지를 추가할 수 있습니다.  하지만 로컬 스냅샷, 복제 및 개체 스토리지가 있는 경우 이러한 수준 중 하나를 제거할 수 없습니다.</block>
   <block id="f28c1acceb60dde3fa2b864db8f83957" category="paragraph">개체 스토리지에 백업하는 정책을 편집하는 경우 보관을 활성화할 수 있습니다.</block>
   <block id="eeef4d21ae9c8e573641508f4902329d" category="paragraph">SnapCenter 에서 리소스를 가져온 경우 SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에 차이가 있을 수 있습니다.  보다<block ref="323b251497d754074219cdf246ce74d7" category="inline-link-macro-rx"></block> .</block>
@@ -2033,7 +1942,6 @@
   <block id="29881d0b044ceba86593dcfef30e0573" category="list-text">보호 그룹의 백업 일정을 일시 중단하고 다시 시작합니다.</block>
   <block id="99ea4945ef61f5a29b7463a5d1480fe7" category="list-text">보호 그룹에 포함할 VM이나 데이터베이스를 선택하세요.</block>
   <block id="224efd4fdb5f19c474ab2b6ea6b4132b" category="section-title">보호 그룹의 백업 일정 일시 중단</block>
-  <block id="8ea08fb46b36f3cd2195756f05e3b2d7" category="paragraph">보호 그룹을 일시 중단하면 보호 그룹에 대한 예약된 백업이 일시 중단됩니다. 해당 그룹의 작업 부하에 대한 백업을 일시적으로 중지하려면 보호 그룹을 일시 중단해야 할 수 있습니다.</block>
   <block id="67671aa34b0789a08ab7d6954bfb7122" category="paragraph">보호 그룹을 일시 중단하면 보호 상태가 "유지 관리 중"으로 변경됩니다. 언제든지 백업 일정을 재개할 수 있습니다.</block>
   <block id="e18d539be2570002127583bafd748cad" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *보호 그룹 일시 중단*.</block>
   <block id="e1bdaded4d7fd6d9209905a6b9ce591a" category="list-text">확인 메시지를 검토하고 *일시 중단*을 선택하세요.</block>
@@ -2873,7 +2781,6 @@
   <block id="5eb0ad26e5b73df4b25640fc4cecc8b5" category="list-text">확인 대화 상자에서 시스템 이름을 입력합니다.</block>
   <block id="b2efc38b6f353a6ab5275e1b97a3207b" category="list-text">*고급 설정*을 선택하세요.</block>
   <block id="faf054b5001a252d9df902ee16e53f79" category="list-text">*백업 강제 삭제*: 모든 백업을 강제로 삭제할지 여부를 표시합니다.</block>
-  <block id="985c6503d77bf7e7b0a1cdf7cb2f8dcc" category="paragraph">극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 서비스가 더 이상 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 작업 환경 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.</block>
   <block id="22f12d99e813b34048e25ac4a5f568f3" category="section-title">볼륨에 대한 모든 백업 파일 삭제</block>
   <block id="a8ba6304562632a6eb4762aebfe0d175" category="paragraph">볼륨에 대한 모든 백업을 삭제하면 해당 볼륨에 대한 향후 백업도 비활성화됩니다.</block>
   <block id="8f0a75d2d5a82f31f2cf069c3b0ee684" category="inline-image-macro">더 많은 아이콘</block>
@@ -2881,7 +2788,6 @@
   <block id="782b223a2a5766a12495d35a0f0fc4a1" category="paragraph">모든 백업 파일 목록이 표시됩니다.</block>
   <block id="2c9220461da540ceac8b243e96929a74" category="list-text">*작업* &gt; *모든 백업 삭제*를 선택합니다.</block>
   <block id="125aa7ed80cb288006b134021f74ae4d" category="list-text">볼륨 이름을 입력하세요.</block>
-  <block id="eb1f707d55b4ea05ecb250f1ee6bee84" category="paragraph">극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 하위 서비스가 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되었지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 작업 환경 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.</block>
   <block id="0c7a693eba5a0f2f80ac9cdb747411a8" category="section-title">볼륨에 대한 단일 백업 파일 삭제</block>
   <block id="e300bd32052d102b8a28f9965281effd" category="paragraph">더 이상 필요하지 않으면 단일 백업 파일을 삭제할 수 있습니다.  여기에는 볼륨 스냅샷 복사본의 단일 백업이나 개체 스토리지의 백업을 삭제하는 것이 포함됩니다.</block>
   <block id="0f077fe78e4dac585cd0607f12f1a2b3" category="paragraph">복제된 볼륨(데이터 보호 볼륨)은 삭제할 수 없습니다.</block>
@@ -3808,7 +3714,6 @@
   <block id="f21e38c1a38f1c4f4e956d882bff761e" category="inline-image-macro">백업 파일이 소스 시스템에 스냅샷 복사본으로, 보조 스토리지 시스템에 복제된 볼륨으로, 개체 스토리지에 백업 파일로 존재하는 방식을 보여주는 다이어그램입니다.</block>
   <block id="58ead0698b2403892dd8d82de5be7c29" category="paragraph"><block ref="58ead0698b2403892dd8d82de5be7c29" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69cf282ad2d2af37ce5b061e5f12b928" category="paragraph">NetApp Backup and Recovery NetApp의 SnapMirror 데이터 복제 기술을 활용하여 스냅샷 사본을 만들고 이를 백업 위치로 전송하여 모든 백업이 완전히 동기화되도록 보장합니다.</block>
-  <block id="544723094263b1778fa9139a8dc94c28" category="list-text">현장 사본은 신속한 복원을 용이하게 하며, 현장 사본이 손상된 경우를 대비해 원격 사본도 준비되어 있습니다.</block>
   <block id="094fa5b5a02089cb6ef9dcfe3de478b1" category="paragraph">필요한 경우 백업 사본에서 전체 _볼륨_, _폴더_ 또는 하나 이상의 _파일_을 동일하거나 다른 시스템으로 복원할 수 있습니다.</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">특징</block>
   <block id="d7b479d32340f96732225021d096cc62" category="paragraph">*복제 기능:*</block>
@@ -4804,4 +4709,73 @@
   <block id="ba74bff4c4deec01ccafcf5a160089e4" category="paragraph">SnapCenter 리소스의 정책에 대해 여러 보존 값을 지원합니다.  NetApp Backup and Recovery 리소스당 하나의 보존 값만 지원합니다.</block>
   <block id="524363c64fff15aa09ef827516a023c0" category="paragraph">SnapCenter 계층이 변경되더라도 마이그레이션 후에도 각 정책에 대한 SnapMirror 레이블을 유지합니다.</block>
   <block id="16a81293ba902fc66da927551f9b54a7" category="paragraph">콘솔 에이전트에는 NetApp Backup and Recovery 기능이 포함되어 있습니다.</block>
+  <block id="5023c4ac532ec0c4d3bcb45ab912017b" category="paragraph">시스템을 변경하기 전에 데이터를 보호할 수 있도록 주문형 백업을 사용하세요.</block>
+  <block id="2d7b174d15c513f1d3517bf8118a70aa" category="admonition">백업에는 보호 그룹이나 가상 머신에 할당한 것과 동일한 정책이 사용됩니다.</block>
+  <block id="135489daff067c8c0689c51f8f9dfa0f" category="list-text">여러 개의 데이터 사본을 보관하여 내부 및 외부 사이버 보안 위협으로부터 보호합니다.</block>
+  <block id="d6948cb4b08b9cf746550052f3ca9a7d" category="list-text">온사이트 사본을 사용하면 데이터를 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.</block>
+  <block id="a7ac7524a020a5d14426a370db992e91" category="paragraph">보호하려는 작업 부하를 보호 그룹으로 그룹화합니다. 작업 부하를 함께 백업하고 복원하기 위해 보호 그룹을 만듭니다.</block>
+  <block id="5352ebde938dbfee2e240093091d21b6" category="list-text">다양한 유형의 미디어를 사용하면 한 유형의 미디어가 실패하더라도 복구하는 데 도움이 됩니다.</block>
+  <block id="10a12f1b238b4aca3eea0e189209f95f" category="list-text">온사이트 사본에서 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.</block>
+  <block id="04946e97d5c9879a750d6fbb35c8c54a" category="summary">NetApp Backup and Recovery 사용하면 Microsoft SQL Server 호스트, 데이터베이스 및 인스턴스를 관리할 수 있습니다.</block>
+  <block id="e7a5ac87e73475a462d4dc0b02fe041a" category="paragraph">NetApp Backup and Recovery 사용하면 Microsoft SQL Server 호스트, 데이터베이스 및 인스턴스를 관리할 수 있습니다.  인벤토리에 대한 보호 설정을 보고, 변경하고, 제거할 수 있습니다.</block>
+  <block id="cfdfd7a1b72e8e723d4b5a0b7e6afbf5" category="paragraph">더 이상 필요 없는 애플리케이션을 삭제하세요.  NetApp Backup and Recovery 삭제된 애플리케이션의 보호를 중지하고 모든 백업과 스냅샷을 제거합니다.</block>
+  <block id="f211d824587f775c16c5bded7ee65614" category="paragraph">Kubernetes 클러스터 보호를 중지하려면 보호를 비활성화하고 관련 애플리케이션을 삭제한 다음 NetApp Backup and Recovery 에서 클러스터를 제거합니다.  NetApp Backup and Recovery 클러스터나 해당 리소스를 삭제하지 않고 NetApp Console 인벤토리에서만 클러스터를 제거합니다.</block>
+  <block id="2bba4a20b069f20b81f5d7e00bb55ee1" category="summary">NetApp Backup and Recovery 에서 리소스를 관리하여 데이터를 보호하세요.</block>
+  <block id="5a32edb5240e680dd91847bce7538e99" category="paragraph">NetApp Backup and Recovery 에서 리소스를 관리하여 데이터를 보호하세요.  백업, 데이터베이스, 인스턴스, 애플리케이션 호스트 및 시스템을 제어합니다.  리소스 보호 설정을 보고, 편집하거나 삭제합니다.</block>
+  <block id="76be0aa5e848bc95ef63cb71a62a4a8c" category="admonition">해당 행의 *위치* 열에 있는 로컬 스냅샷 아이콘이 파란색으로 나타나는지 확인하세요.</block>
+  <block id="c9ba59160e2a933914b5eb21420c64e0" category="summary">NetApp Backup and Recovery 사용하면 로컬 스냅샷, 복제 및 백업 작업을 모니터링할 수 있습니다.</block>
+  <block id="e10e8c5d47314e650f29f8a9e66e579f" category="paragraph">NetApp Backup and Recovery 사용하면 로컬 스냅샷, 복제 및 백업 작업을 모니터링할 수 있습니다.  사용자가 시작한 복원 작업을 추적합니다.  문제 진단에 도움이 되는 완료된 작업, 진행 중인 작업 또는 실패한 작업을 확인하세요.  NetApp Console 알림 센터에서 이메일 알림을 활성화하면 로그인하지 않았을 때에도 시스템 활동에 대한 정보를 받을 수 있습니다. 콘솔 타임라인을 사용하면 UI 또는 API에서 시작된 모든 작업의 ​​세부 정보를 볼 수 있습니다.</block>
+  <block id="62d96e21fc365a7f9d8b078e4d5ed7eb" category="paragraph">NetApp Backup and Recovery 작업 정보를 15일 동안 보관한 다음, 작업 정보를 삭제하고 작업 모니터에서 제거합니다.</block>
+  <block id="c06e8b3ad6c2a4bcf247b5b6ff031cbf" category="admonition">ONTAP 시스템을 9.13.x로 업그레이드했는데 작업 모니터에서 진행 중인 예약된 백업 작업이 표시되지 않으면 NetApp Backup and Recovery 다시 시작하세요. <block ref="bfa346a5b4e1ecd443201d95eab54eb4" category="inline-link-macro-rx"></block>.</block>
+  <block id="2d7e91b503470d39f08e98b06f5d7864" category="paragraph">대부분의 필터는 설명이 필요 없습니다. "작업량" 필터를 사용하면 다음 범주의 작업을 볼 수 있습니다.</block>
+  <block id="fd5a28f02b854b31443e6f70095cf97f" category="paragraph">결과를 필터링하거나 정렬한 후, 주요 작업 모니터링 페이지의 내용을 보고서로 다운로드할 수 있습니다. NetApp Backup and Recovery 필요에 따라 검토하고 다른 그룹으로 보낼 수 있는 .CSV 파일을 생성하고 다운로드합니다. .CSV 파일에는 최대 10,000개 행의 데이터가 포함됩니다.</block>
+  <block id="28309eee9c974a9a7f8e577ac89552ad" category="paragraph">백업을 확인하고, 안전하게 보관하고, 감사를 지원하기 위해 보존(_백업 수명 주기_) 흐름을 모니터링합니다.  백업 사본이 만료되는 시점을 파악하여 수명 주기를 추적합니다.</block>
+  <block id="9535df3e89123a36d140c06cf83471aa" category="paragraph">로그인하지 않은 경우에도 알림 센터에서 알림을 보고, 중요한 시스템 활동에 대한 이메일 알림을 보내도록 콘솔을 구성할 수 있습니다.<block ref="a993635cface3018acf75d15a7289e44" category="inline-link-rx"></block> .</block>
+  <block id="63369edef3fcbf27a13a1f4394250d9b" category="paragraph">기본적으로 NetApp Console 조직 및 계정 관리자는 모든 "중요" 및 "권장 사항" 알림에 대한 이메일을 받습니다. 기본적으로 시스템은 다른 사용자와 수신자가 알림 이메일을 받도록 설정하지 않습니다.  NetApp 클라우드 계정의 모든 콘솔 사용자 또는 백업 및 복원 활동에 대해 알아야 하는 다른 수신자에게 이메일 알림을 구성합니다.</block>
+  <block id="5f5f4cee6315d890fa94bb1a326b0d96" category="summary">온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 및 StorageGRID 로 백업하여 데이터가 보호되도록 하세요.</block>
+  <block id="e37ce4efad7ee552a69ced8294691e5b" category="paragraph">온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 또는 StorageGRID 로 백업합니다.  시스템은 자동으로 백업을 생성하고 이를 클라우드 계정의 개체 저장소에 저장하여 데이터를 보호합니다.</block>
+  <block id="24fa20750f9318bf02e6c8dece85f94d" category="list-text">일정에 따라 작업 부하를 백업하려면 백업 및 복원 작업을 관리하는 정책을 만듭니다. 보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 지침을 보려면.</block>
+  <block id="31aacaea95ea11818f2629af38fa3f2c" category="list-text">백업을 시작하기 전에 검색된 호스트에 대한 로그 디렉터리를 구성합니다.</block>
+  <block id="6f74e6b5a59cfaab5656a1be6c164a0a" category="paragraph">백업을 시작하기 전에 워크로드의 보호 상태를 확인하세요.</block>
+  <block id="457aa988b8eb5473cac5e0469be1df6a" category="paragraph">작업 부하를 백업하기 전에 작업 상태를 추적하기 위해 검색된 호스트에 대한 활동 로그 경로를 설정합니다.</block>
+  <block id="080eb3bfa30dcebe4f464b99c543203f" category="list-text">호스트 경로를 입력하거나 호스트나 노드 목록을 탐색하여 호스트 로그를 저장할 위치를 찾으세요.</block>
+  <block id="689e7d0d3bec77daaa3e898a325feb08" category="paragraph">여러 작업 부하에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다.  보호 그룹은 작업 부하를 논리적으로 그룹화한 것입니다.</block>
+  <block id="bfd48fbe75694adad47437674f096479" category="paragraph">데이터를 보호하려면 시스템을 변경하기 전에 주문형 백업을 실행하세요.</block>
+  <block id="cf51cc5e19834617c83934c7925ac274" category="paragraph">유지 관리 또는 문제 해결 중에 백업을 일시적으로 중지하려면 일정을 일시 중단합니다.</block>
+  <block id="a46532f4ef2f48598210a6371a54ce44" category="summary">개발, 테스트 또는 보호 목적으로 Microsoft SQL Server 애플리케이션 데이터를 복제합니다.</block>
+  <block id="634a07db17d43ffa48b0833d4d8ae675" category="doc">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 복제</block>
+  <block id="9a9ce4cb3209a16c6920e90538eadbc2" category="paragraph">NetApp Backup and Recovery 사용하여 개발, 테스트 또는 보호를 위해 Microsoft SQL Server 애플리케이션 데이터를 VM에 복제하세요.  SQL Server 작업 부하의 즉각적인 스냅샷이나 기존 스냅샷에서 복제본을 만듭니다.</block>
+  <block id="4f01a6cf229c637b4b35854f4d232241" category="list-text">*즉각적인 스냅샷 및 복제*: 백업에서 생성된 소스 데이터의 특정 시점 복사본인 인스턴트 스냅샷에서 Microsoft SQL Server 워크로드의 복제본을 만들 수 있습니다. 복제본은 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다. 데이터 손실이나 손상이 발생한 경우 복제본을 사용하여 작업 부하를 복원할 수 있습니다.</block>
+  <block id="4b958757c89a83492b7bbd549a07ee21" category="list-text">*기존 스냅샷에서 복제 및 데이터베이스 새로 고침*: 스냅샷을 선택하고 복제 옵션을 구성합니다.</block>
+  <block id="50154417ec4f040ce30712cfee50f7b4" category="paragraph">선택적으로 대상 이름 드롭다운 목록에서 *접미사*를 선택하고 복제된 데이터베이스 이름에 접미사를 추가합니다.  접미사를 추가하지 않으면 복제된 데이터베이스 이름은 소스 데이터베이스 이름과 동일합니다.</block>
+  <block id="58f2d89bc55d8ef8651af1e18e4acfb4" category="list-text">*마운트 지점 자동 할당*: 개체 저장소에서 복제본에 대한 마운트 지점을 자동으로 할당합니다.</block>
+  <block id="13f642fe7002963c8cf22b63ae21a0e6" category="list-text">*서두와 뒷부분*: 선택적으로 복제본이 생성되기 전과 후에 실행할 스크립트를 추가합니다.  이러한 스크립트는 복제본 설정이나 알림 전송 등의 추가 작업을 수행할 수 있습니다.</block>
+  <block id="0bf69b5671c7c924972463627bd22a70" category="list-text">*태그*: 나중에 리소스 그룹을 검색하는 데 도움이 되는 레이블을 선택하고 *적용*을 선택합니다.  예를 들어, 여러 리소스 그룹에 "HR"을 태그로 추가하면 나중에 "HR" 태그와 연결된 모든 리소스 그룹을 찾을 수 있습니다.</block>
+  <block id="8b44463d6dea841eba5655fcddf2d308" category="paragraph">복제본 새로 고침을 건너뛰어 복제본을 변경하지 않습니다.</block>
+  <block id="9c56aad86b05797af73b468bb579fca1" category="paragraph">정책이 복제본을 보호하는 경우 복제본과 해당 작업이 모두 삭제됩니다.</block>
+  <block id="ba0363fe48f14ee1de2dc51cf57a540a" category="summary">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 시스템에서 Amazon Web Services, Microsoft Azure 또는 StorageGRID 로 Microsoft SQL Server 애플리케이션 데이터를 보호하세요.</block>
+  <block id="f67bd1ebeb2e1458c18ee1bfe3a0d5e2" category="doc">NetApp Backup and Recovery 개요를 사용하여 Microsoft SQL 워크로드 보호</block>
+  <block id="a355bd32745a1495313545b192a3533f" category="paragraph">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 AWS, Azure 또는 StorageGRID 로 백업하세요.  시스템은 귀하의 정책에 따라 클라우드 계정에 자동으로 백업을 생성하고 저장합니다.  3-2-1 전략을 사용하세요. 데이터 사본을 두 개의 저장 시스템에 세 개 보관하고, 나머지는 클라우드에 보관하세요.</block>
+  <block id="8c08de76609beebf11bb1d984d12384e" category="paragraph">NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷 복사본을 만들고 이를 백업 위치로 전송하여 백업을 동기화합니다.</block>
+  <block id="d23f996c9926f1f022cbe22d0fcae8e8" category="paragraph">데이터를 보호하려면 다음을 수행하세요.</block>
+  <block id="f59023f77e90026f16f584d31820eb90" category="paragraph">작업 부하를 백업하려면 백업 및 복원 작업을 관리하는 정책을 만듭니다. 보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
+  <block id="a54794387a0e725b2c0a86422f5c42f4" category="paragraph">NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드를 복원합니다.  스냅샷 복사본, 보조 저장소에 복제된 백업 또는 개체 저장소의 백업을 사용합니다.  원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템으로 작업 부하를 복원합니다.</block>
+  <block id="5f0d7635bc31258066861934b2abce44" category="list-text">파일 이름, 위치 및 마지막 유효 날짜를 알고 있는 경우 특정 시점으로 복원합니다.</block>
+  <block id="045eae722cda03b00d9ad8dfdd4cbe51" category="admonition">백업 파일에 접근하려면 클라우드 제공업체에 추가 요금을 지불해야 합니다.</block>
+  <block id="2215c4c479bee2e93b68b2a226280019" category="paragraph">다음 방법 중 하나를 사용하여 작업 부하를 복원합니다.</block>
+  <block id="3d1e74249acc11e215f68c784ae29e1f" category="list-text">*복원 페이지에서*: 리소스의 이름, 위치 또는 마지막 유효 날짜를 모르는 경우 이 옵션을 사용하여 리소스를 복원합니다.  필터를 사용하여 스냅샷을 검색합니다.</block>
+  <block id="925339af26e35afc6f5984d691aa25af" category="list-text">*인벤토리 페이지에서*: 이 옵션을 사용하면 이름, 위치, 마지막 유효 날짜를 알고 있는 특정 리소스를 복원할 수 있습니다.  목록을 탐색하여 리소스를 찾으세요.</block>
+  <block id="bf094c6c5fccca6c427a43080edf5833" category="list-text">데이터베이스 메뉴에서 "보호됨" 상태의 데이터베이스를 선택합니다.</block>
+  <block id="ce2efe5d519e4c1242177b404520665a" category="doc">NetApp Backup and Recovery 사용하여 Oracle 워크로드 백업</block>
+  <block id="b3b9d779c6c22d1258ffcbda438336c1" category="paragraph">NetApp Backup and Recovery 사용하면 온프레미스 ONTAP 시스템에서 Amazon S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3 등의 클라우드 스토리지로 Oracle Database 보호 그룹이나 데이터베이스를 백업할 수 있습니다.  NetApp Backup and Recovery 각 보호 그룹의 데이터베이스와 로그 데이터를 백업합니다.</block>
+  <block id="fe390808083985de8172887380a80c5e" category="admonition">일정에 따라 보호 그룹이나 단일 데이터베이스를 백업하려면 백업 및 복원 작업을 관리하는 정책을 만듭니다. 보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 지침을 보려면.</block>
+  <block id="26bbb7b442740e80ed850d884bef0605" category="paragraph">데이터를 보호하려면 시스템을 변경하기 전에 주문형 백업을 실행하세요.</block>
+  <block id="0dd484dd2e82385c156b95d98fd2f3fa" category="admonition">NetApp Backup and Recovery 백업 그룹과 보호 그룹 모두에 동일한 정책을 사용합니다.</block>
+  <block id="b5ba243769c03b5476a2b6c06b8c5b5a" category="paragraph">보관 로그를 보관하도록 데이터베이스의 보호 정책을 구성하면 복구 지점을 마운트하여 데이터베이스 변경 내역을 볼 수 있습니다.</block>
+  <block id="d038c8bfa872280d5c1a567bff169d05" category="paragraph">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스와 로그를 보호하세요.  빠르고 공간 효율적이며, 충돌에 대한 일관성과 데이터베이스 일관성을 갖춘 백업 및 복원을 얻으세요.  Oracle 워크로드를 AWS S3, NetApp StorageGRID, Azure Blob Storage 또는 ONTAP S3에 백업합니다.  온프레미스 Oracle 호스트에 백업을 복원합니다.</block>
+  <block id="21214671e7222d24ea30444729853d36" category="paragraph">보호하려는 작업 부하를 보호 그룹으로 그룹화하여 함께 백업하고 복원합니다.</block>
+  <block id="e1a8b67cb61fcb0e0a3b88e66f93f4cd" category="paragraph">보호 그룹을 일시 중지하면 예약된 백업이 일시 중지됩니다.</block>
+  <block id="2efbc86f2f62c8819af426f268c543d5" category="paragraph">보호 그룹을 삭제하면 해당 그룹과 해당 그룹의 모든 백업 일정이 제거됩니다.  더 이상 필요하지 않은 보호 그룹을 삭제하세요.</block>
+  <block id="d0be562abb07ac98b80cbaa51990f79d" category="paragraph">극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 서비스가 더 이상 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 시스템 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.</block>
+  <block id="fb744a1324313d70fed478c851dab696" category="paragraph">극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 하위 서비스가 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되었지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 시스템 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.</block>
 </blocks>
