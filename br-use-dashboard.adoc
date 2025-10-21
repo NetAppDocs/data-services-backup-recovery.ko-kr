@@ -19,7 +19,12 @@ summary: 워크로드 상태를 모니터링하면 워크로드 보호에 문제
 *필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 복제 관리자 또는 백업 및 복구 뷰어 역할.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
 .단계
-. NetApp Backup and Recovery 메뉴에서 *대시보드*를 선택합니다.
+. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
+. 워크로드 타일(예: Microsoft SQL Server)을 선택합니다.
+. 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
++
+다음 유형의 정보를 검토할 수 있습니다.
+
 +
 ** 발견된 호스트 또는 VM 수
 ** 발견된 Kubernetes 클러스터 수

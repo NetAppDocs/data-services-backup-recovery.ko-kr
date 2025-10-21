@@ -682,7 +682,6 @@
   <block id="98ab4e23cce41ca38b39c7baf6ef4567" category="admonition">이 과정은 몇 분 정도 걸릴 수 있습니다.</block>
   <block id="d4908a7dd622060706f5e0df98a716da" category="paragraph">NetApp Backup and Recovery 리소스를 검색한 후 인벤토리 페이지에는 워크로드 목록에 Hyper-V 워크로드가 표시됩니다.</block>
   <block id="8c75bc4aab98ebfa4607c6737296d0fa" category="section-title">NetApp Backup and Recovery 보드로 계속</block>
-  <block id="4a94cfaf243c22ac5a3b2acf1849db11" category="list-text">NetApp Backup and Recovery 보드를 표시하려면 NetApp Console 메뉴에서 *대시보드*를 선택합니다.</block>
   <block id="8c0d3ed018f04fbf259db34d9167eae7" category="list-text">데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.</block>
   <block id="dd9e4491810d247bd97912faae187a39" category="summary">NetApp Backup and Recovery 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다.</block>
   <block id="dfbbf83657db8e9ef8d6ee3a468873c2" category="doc">NetApp Backup and Recovery 에서 Kubernetes 워크로드를 알아보세요</block>
@@ -705,7 +704,6 @@
   <block id="6b3946603d5588826f1cd3f2695b8542" category="paragraph">클러스터가 인벤토리에 추가됩니다.</block>
   <block id="95f06f6ac101b19d86ae2a17fb3eb848" category="list-text">연관된 Kubernetes 워크로드에서 *보기*를 선택하면 해당 워크로드에 대한 애플리케이션, 클러스터 및 네임스페이스 목록을 볼 수 있습니다.</block>
   <block id="b0719c20a836424f725e51c9b181748d" category="paragraph">NetApp Backup and Recovery 보드를 보려면 다음 단계를 따르세요.</block>
-  <block id="0023e6c28000b2b0e540612bd4511db3" category="list-text">상단 메뉴에서 *대시보드*를 선택하세요.</block>
   <block id="09799d4864834161536cca195023364b" category="inline-link-macro">대시보드에서 무엇을 볼 수 있는지 알아보세요</block>
   <block id="d5292ed1370bb405095587cd10827f95" category="paragraph"><block ref="2a35d34f81dbac907e6068b45b5d538a" category="inline-link-macro-rx"></block>.</block>
   <block id="a8d8543f27c131c1d9b3ca0cf9f1f4ea" category="summary">NetApp Backup and Recovery 워크로드를 보호하기 위해 먼저 워크로드를 검색해야 합니다.</block>
@@ -721,7 +719,6 @@
   <block id="4eefc3e53a1cd35eca7d32b6b2c550f5" category="list-text">루트 자격 증명을 사용할지, 루트가 아닌 자격 증명을 사용할지 선택합니다.</block>
   <block id="87f459dd6c99dc89040246d5ef818100" category="list-text">*호스트 등록*: 새로운 KVM 호스트를 추가합니다.  호스트의 FQDN 또는 IP 주소, 자격 증명, 콘솔 에이전트 및 포트 번호를 입력하세요.</block>
   <block id="238fb750ebdea9faf36668536aaa8b42" category="paragraph">KVM 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩니다.</block>
-  <block id="bcfa92e95d27d2c808d23768de744fd9" category="list-text">NetApp Backup and Recovery 보드를 표시하려면 상단 메뉴에서 *대시보드*를 선택합니다.</block>
   <block id="0a6dc8ac33152480a18098d8eb98ccb6" category="doc">NetApp Backup and Recovery 에서 Oracle 워크로드를 찾아보세요</block>
   <block id="945f74309f719db5d0fb0d1bb5a31781" category="paragraph">NetApp Backup and Recovery Oracle 데이터베이스를 먼저 검색하여 보호해야 합니다.</block>
   <block id="bf36d800e1bbaf0ef44cd361867e4e09" category="section-title">Oracle 호스트를 추가하고 리소스를 검색합니다.</block>
@@ -788,7 +785,6 @@
   <block id="80be79a75ac4a79f740ad2838c734534" category="list-text">*수동 설치 사용*: 플러그인을 수동으로 설치하려면 이 상자를 선택하세요.</block>
   <block id="628bc160a519e5ae69b6c8aa88610900" category="list-text">*클러스터의 모든 호스트 추가*: 검색 중에 클러스터의 모든 호스트를 NetApp Backup and Recovery 에 추가하려면 이 상자를 선택합니다.</block>
   <block id="b7dfb6860d9af743a7d3f0fe2adfde3d" category="list-text">*선택적 사전 설치 검사 건너뛰기*: 선택적 사전 설치 검사를 건너뛰려면 이 상자를 선택하세요.  예를 들어, 가까운 미래에 메모리나 공간 고려사항이 변경될 예정이고 지금 플러그인을 설치하려는 경우 이 작업을 수행할 수 있습니다.</block>
-  <block id="413f1bdf68093f037d6630a5904e6a17" category="list-text">NetApp Backup and Recovery 보드를 표시하려면 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.</block>
   <block id="2a9ab4f690bade887dade42f4a0f412b" category="inline-link">NetApp Console 배포 모드</block>
   <block id="02a0978d1df3ca052a64d05249709cc3" category="summary">클라우드 공급업체에서 사용량에 따른 지불 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring Your Own License)을 구매하여 NetApp Backup and Recovery 대한 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
   <block id="d44c500b8ff5c565a7d3b02d14def6a3" category="paragraph">클라우드 공급업체에서 * NetApp Intelligent Services*에 대한 PAYGO(Pay-as-you-go) 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring-Your-Own-License)을 구매하여 NetApp Backup and Recovery 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
@@ -936,7 +932,6 @@
   <block id="a160325dcdf365b6a979dfed5c7d50f7" category="doc">NetApp Backup and Recovery 보드에서 보호 상태 보기</block>
   <block id="2da92f995ab136dd344c314ba2b4eed1" category="paragraph">워크로드 상태를 모니터링하면 워크로드 보호에 문제가 있는지 파악하고 이를 해결하기 위한 조치를 취할 수 있습니다.  NetApp Backup and Recovery 보드에서 백업 및 복원 상태를 확인하세요.  시스템 요약, 보호 요약, 작업 요약, 복원 요약 등을 검토할 수 있습니다.</block>
   <block id="f8dd3e1869946d83a9dde01dd1d1532b" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 복제 관리자 또는 백업 및 복구 뷰어 역할.  에 대해 알아보세요<block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block> .<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
-  <block id="cb8f96f7586f61e5cb6878a228c22371" category="list-text">NetApp Backup and Recovery 메뉴에서 *대시보드*를 선택합니다.</block>
   <block id="786dc54a357443785ac613f07c08cc8f" category="list-text">발견된 호스트 또는 VM 수</block>
   <block id="6393f4da4761be4d85c7778d5e5ebdea" category="list-text">발견된 Kubernetes 클러스터 수</block>
   <block id="54b82ae02ee9c233cf025fb2566edaf9" category="list-text">개체 스토리지의 백업 대상 수</block>
@@ -4776,4 +4771,7 @@
   <block id="96de4b90f5864c84829fbe7735879827" category="list-text">*iGroup 설정*: 복제본에 대한 iGroup을 선택합니다. iGroup은 복제본에 액세스하는 데 사용되는 개시자의 논리적 그룹입니다. 기존 iGroup을 선택하거나 새 iGroup을 만들 수 있습니다. 기본 또는 보조 ONTAP 스토리지 시스템에서 iGroup을 선택합니다.</block>
   <block id="5261c1383d98ed2b1e8b4a1fd943a918" category="list-text">*복원 전 트랜잭션 로그 백업이 실패하면 복원 중지*: 트랜잭션 로그 백업이 실패하면 복원 작업을 중지합니다.</block>
   <block id="8f40cc47127edbc609e36af0ad86f259" category="list-text">보고서 전달 세부 정보 입력: 보고서를 이메일로 전달받으려면 *이메일을 사용하여 보고서 보내기*를 선택하세요. 보고서를 받을 이메일 주소를 입력하세요.</block>
+  <block id="e666fdc6314d0f6cb22614788075b3bc" category="list-text">워크로드 타일(예: Microsoft SQL Server)을 선택합니다.</block>
+  <block id="55398f7948e83c03d38dfb4b136d75ee" category="list-text">백업 및 복구 메뉴에서 *대시보드*를 선택합니다.</block>
+  <block id="4837f0befea6b35d3b9827d282853ed9" category="paragraph">다음 유형의 정보를 검토할 수 있습니다.</block>
 </blocks>

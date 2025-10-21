@@ -57,7 +57,9 @@ NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를
 
 NetApp Backup and Recovery 보드를 보려면 다음 단계를 따르세요.
 
-. 상단 메뉴에서 *대시보드*를 선택하세요.
+. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
+. 워크로드 타일(예: Microsoft SQL Server)을 선택합니다.
+. 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 +
 link:br-use-dashboard.html["대시보드에서 무엇을 볼 수 있는지 알아보세요"].

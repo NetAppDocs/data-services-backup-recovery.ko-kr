@@ -62,6 +62,8 @@ NetApp Backup and Recovery 리소스를 검색한 후 인벤토리 페이지에�
 == NetApp Backup and Recovery 보드로 계속
 
 .단계
-. NetApp Backup and Recovery 보드를 표시하려면 NetApp Console 메뉴에서 *대시보드*를 선택합니다.
+. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
+. 워크로드 타일(예: Microsoft SQL Server)을 선택합니다.
+. 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 
