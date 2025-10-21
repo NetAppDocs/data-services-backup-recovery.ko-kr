@@ -287,7 +287,6 @@
   <block id="307d24114a1eea93601b6d95cac55bcb" category="paragraph">VMware 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 기능이 도입되었습니다.</block>
   <block id="52c7fc54a0416d5bc7625cf3e154f5ee" category="list-text">개체 저장소에서 복원 지원</block>
   <block id="729609f8890f70080c4290c1a64f6901" category="list-text">NetApp Console 보드에 이제 VMware 워크로드 상태 정보가 표시됩니다.</block>
-  <block id="e0aea66343c11d9c167af3537c61eac6" category="list-text">데모 모드 지원: VMware vCenter Server 환경을 추가하지 않고도 VMware 워크로드의 기능을 살펴보세요.</block>
   <block id="0b781a1bfcfc82e8ce2c41a12166f555" category="list-text">역할 기반 액세스 제어(RBAC) 지원</block>
   <block id="48286fbde233324a7f7880389e103924" category="list-text">작업 이벤트에 대한 이메일 알림 및 알림 지원</block>
   <block id="7c0ae68b454f9ff601ed1bdd5dcc3c30" category="list-text">NVMe 기반 스토리지에 대한 백업 및 복원 지원</block>
@@ -550,7 +549,6 @@
   <block id="7a7bd0e5e2c8bb51a37a242f6499ad01" category="list-text">*포트*: VMware vCenter Server의 포트 번호를 입력하세요.</block>
   <block id="d448876927f65c1f1ffa9fbacd95a1c7" category="list-text">*프로토콜*: *HTTP* 또는 *HTTPS*를 선택하세요.</block>
   <block id="c7a0590a9821b8dee0782b0f2f78a6eb" category="section-title">SnapCenter 호스트 리소스 가져오기 및 관리</block>
-  <block id="1e69c53525c65378aa99055dd2ebfdd1" category="paragraph">이전에 SnapCenter 사용하여 리소스를 백업한 경우 NetApp Backup and Recovery 에서 해당 리소스를 가져와 관리할 수 있습니다.  이 옵션을 사용하면 SnapCenter 서버 정보를 가져와서 여러 Snapcenter 서버를 등록하고 데이터베이스 작업 부하를 검색할 수 있습니다.</block>
   <block id="8ee500e67ed174fc635bb51aa15a8144" category="paragraph">이는 두 부분으로 구성된 프로세스입니다.</block>
   <block id="5b47a2e71047fd0fb279720aee2ba791" category="list-text">SnapCenter 서버 애플리케이션 및 호스트 리소스 가져오기</block>
   <block id="be17fa66fcbe51ceaa12130a926f665f" category="list-text">선택한 SnapCenter 호스트 리소스 관리</block>
@@ -1444,7 +1442,6 @@
   <block id="ae06e0a9d46406c88e0c6671869c7658" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *복제본 새로고침*.</block>
   <block id="8f52d4571bbd43086873d13933d1ae7c" category="list-text">*고급 설정* 섹션을 완료하세요.</block>
   <block id="751b2629b2c0cd2ab8329869ea1440ab" category="list-text">*복구 범위*: 모든 로그 백업을 복구할지, 아니면 특정 시점까지의 로그 백업만 복구할지 선택합니다.  이 옵션은 복제본을 특정 시점으로 복구하려는 경우에 유용합니다.</block>
-  <block id="ee4fb905e08184e09eb066a70768d247" category="list-text">*iGroup 설정*: 복제본에 대한 igroup을 선택합니다.  igroup은 클론에 액세스하는 데 사용되는 개시자의 논리적 그룹입니다.  기존 igroup을 선택하거나 새 igroup을 만들 수 있습니다.  기본 또는 보조 ONTAP 스토리지 시스템에서 igroup을 선택합니다.</block>
   <block id="30d826de8ef0821df1383cf392c54866" category="list-text">*태그*: 나중에 리소스 그룹을 검색하는 데 도움이 되는 하나 이상의 라벨을 입력하세요.  예를 들어, 여러 리소스 그룹에 "HR"을 태그로 추가하면 나중에 해당 HR 태그와 연관된 모든 리소스 그룹을 찾을 수 있습니다.</block>
   <block id="7ae396d8697569c4da682196e15a598f" category="list-text">새로 고침 확인 대화 상자에서 계속하려면 *새로 고침*을 선택하세요.</block>
   <block id="2e7a2fe6aba8a77893665dc04b468dbf" category="section-title">복제 새로 고침 건너뛰기</block>
@@ -1560,7 +1557,6 @@
   <block id="afd0f0cb3df3da985d47ad6cb48ff1b9" category="paragraph">NetApp Backup and Recovery 복원 작업에 사용할 수 있는 스냅샷을 보여줍니다.</block>
   <block id="626e5bb027c4aa701b03e1a2ad940196" category="list-text">최신 상태로 복원 페이지에서 로컬, 보조 저장소 또는 개체 저장소의 스냅샷 위치를 선택합니다.</block>
   <block id="d9d6e07be6295b563fa2df09e2c46f12" category="list-text">*복원 전 트랜잭션 로그 백업 생성*: 복원 작업 전에 트랜잭션 로그 백업을 생성합니다.</block>
-  <block id="e6259c0f26d81b281034782b38f78aba" category="list-text">*복원 전 트랜잭션 로그 백업이 실패하면 복원 중지*: 트랜잭션 로그 백업이 실패하면 복원 작업을 중지합니다.</block>
   <block id="bd0d10db4b0dd9e27ab86ed5c1179368" category="section-title">인벤토리 옵션에서 작업 부하 데이터 복원</block>
   <block id="9fa956de7108d564b78bfc1c4b99ffb2" category="paragraph">인벤토리 페이지에서 데이터베이스 작업 부하를 복원합니다.  인벤토리 옵션을 사용하면 인스턴스가 아닌 데이터베이스만 복원할 수 있습니다.</block>
   <block id="a5b572eff428c980edb20994fe7c49f1" category="list-text">복원하려는 리소스가 있는 호스트를 선택하세요.</block>
@@ -1832,7 +1828,6 @@
   <block id="baeaf9ec5b3f1514a0e74632387b1436" category="list-text">*호스트 선택*: 작업 부하를 기준으로 선택한 경우, 보고서를 생성할 호스트를 선택합니다.</block>
   <block id="d6b2fc5f6100a1d9ca1a63a42e2b74ee" category="list-text">*내용 선택*: 보고서에 모든 백업의 요약을 포함할지, 아니면 각 백업의 세부 정보를 포함할지 선택합니다.  (계정별로 선택한 경우)</block>
   <block id="53e06767337b5ec67b8efa63e42148aa" category="list-text">보고 범위 입력: 보고서에 지난 하루, 지난 7일, 지난 30일, 지난 분기 또는 작년의 데이터를 포함할지 선택합니다.</block>
-  <block id="17efeb67a4236aa362e1097098517211" category="list-text">보고서 전달 세부 정보 입력: 보고서를 이메일로 전달받으려면 *이메일을 사용하여 보고서 보내기*를 선택하세요.  보고서를 받을 이메일 주소를 입력하세요.</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">설정 구성</block>
   <block id="33d5eea2cdcc60026d006f7ddcce9495" category="paragraph">설정 페이지에서 이메일 알림을 구성하세요.  이메일 알림 구성에 대한 자세한 내용은 다음을 참조하세요.<block ref="d31e50b2f0a34cda84cb4d51887db3bf" category="inline-link-macro-rx"></block> .</block>
   <block id="e1fb45ea82cb12d1d1dbdee887e2850a" category="summary">NetApp Backup and Recovery 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다.</block>
@@ -4777,5 +4772,8 @@
   <block id="e1a8b67cb61fcb0e0a3b88e66f93f4cd" category="paragraph">보호 그룹을 일시 중지하면 예약된 백업이 일시 중지됩니다.</block>
   <block id="2efbc86f2f62c8819af426f268c543d5" category="paragraph">보호 그룹을 삭제하면 해당 그룹과 해당 그룹의 모든 백업 일정이 제거됩니다.  더 이상 필요하지 않은 보호 그룹을 삭제하세요.</block>
   <block id="d0be562abb07ac98b80cbaa51990f79d" category="paragraph">극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 서비스가 더 이상 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 시스템 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.</block>
-  <block id="fb744a1324313d70fed478c851dab696" category="paragraph">극단적인 경우에는 NetApp Backup and Recovery 더 이상 백업에 액세스하지 못하도록 설정해야 할 수도 있습니다. 예를 들어, 하위 서비스가 백업 버킷에 액세스할 수 없거나 백업이 DataLock으로 보호되었지만 더 이상 필요하지 않은 경우 이런 일이 발생할 수 있습니다. 이전에는 직접 삭제할 수 없었고 NetApp 지원팀에 문의해야 했습니다. 이 릴리스에서는 볼륨 및 시스템 수준에서 백업을 강제로 삭제하는 옵션을 사용할 수 있습니다.</block>
+  <block id="79fdb904d05c701adaa1a8d4744b06b9" category="paragraph">이전에 SnapCenter 사용하여 리소스를 백업한 경우 NetApp Backup and Recovery 에서 해당 리소스를 가져와 관리할 수 있습니다. 이 옵션을 사용하면 SnapCenter 서버 정보를 가져와서 여러 SnapCenter 서버를 등록하고 데이터베이스 작업 부하를 검색할 수 있습니다.</block>
+  <block id="96de4b90f5864c84829fbe7735879827" category="list-text">*iGroup 설정*: 복제본에 대한 iGroup을 선택합니다. iGroup은 복제본에 액세스하는 데 사용되는 개시자의 논리적 그룹입니다. 기존 iGroup을 선택하거나 새 iGroup을 만들 수 있습니다. 기본 또는 보조 ONTAP 스토리지 시스템에서 iGroup을 선택합니다.</block>
+  <block id="5261c1383d98ed2b1e8b4a1fd943a918" category="list-text">*복원 전 트랜잭션 로그 백업이 실패하면 복원 중지*: 트랜잭션 로그 백업이 실패하면 복원 작업을 중지합니다.</block>
+  <block id="8f40cc47127edbc609e36af0ad86f259" category="list-text">보고서 전달 세부 정보 입력: 보고서를 이메일로 전달받으려면 *이메일을 사용하여 보고서 보내기*를 선택하세요. 보고서를 받을 이메일 주소를 입력하세요.</block>
 </blocks>
