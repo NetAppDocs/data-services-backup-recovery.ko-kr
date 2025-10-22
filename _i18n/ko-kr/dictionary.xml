@@ -4774,4 +4774,6 @@
   <block id="e666fdc6314d0f6cb22614788075b3bc" category="list-text">워크로드 타일(예: Microsoft SQL Server)을 선택합니다.</block>
   <block id="55398f7948e83c03d38dfb4b136d75ee" category="list-text">백업 및 복구 메뉴에서 *대시보드*를 선택합니다.</block>
   <block id="4837f0befea6b35d3b9827d282853ed9" category="paragraph">다음 유형의 정보를 검토할 수 있습니다.</block>
+  <block id="70cc82710208295496c70c203368aaf9" category="paragraph">ONTAP 볼륨 워크로드의 이번 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="bb13349ac4c9ef7d368732d3a4fdabed" category="paragraph">ONTAP 9.17.1 이상부터 DataLock이 Google Cloud Platform에서 지원됩니다. 이는 Amazon AWS, Microsoft Azure 및 NetApp StorageGRID 통한 기존 DataLock 지원을 보완합니다.</block>
 </blocks>

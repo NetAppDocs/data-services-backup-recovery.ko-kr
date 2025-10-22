@@ -105,3 +105,11 @@ NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크�
 
 
 Oracle Database 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle 워크로드 보호 개요"] .
+
+
+
+=== ONTAP 볼륨 워크로드 향상
+
+ONTAP 볼륨 워크로드의 이번 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+
+ONTAP 9.17.1 이상부터 DataLock이 Google Cloud Platform에서 지원됩니다. 이는 Amazon AWS, Microsoft Azure 및 NetApp StorageGRID 통한 기존 DataLock 지원을 보완합니다.
