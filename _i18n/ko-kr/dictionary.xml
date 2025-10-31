@@ -4776,4 +4776,9 @@
   <block id="4837f0befea6b35d3b9827d282853ed9" category="paragraph">다음 유형의 정보를 검토할 수 있습니다.</block>
   <block id="70cc82710208295496c70c203368aaf9" category="paragraph">ONTAP 볼륨 워크로드의 이번 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
   <block id="bb13349ac4c9ef7d368732d3a4fdabed" category="paragraph">ONTAP 9.17.1 이상부터 DataLock이 Google Cloud Platform에서 지원됩니다. 이는 Amazon AWS, Microsoft Azure 및 NetApp StorageGRID 통한 기존 DataLock 지원을 보완합니다.</block>
+  <block id="a0fe305acb95f37513221f1fa15cc736" category="paragraph">루트가 아닌 사용자가 관리하는 KVM VM의 보호를 활성화하려면 다음 단계를 따르세요.</block>
+  <block id="7038d2812762c5a3340bd687f860b041" category="list-text">NFS3 유형으로 볼륨을 마운트하여 다음을 사용하지 않도록 합니다.<block ref="6e854442cd2a940c9e95941dce4ad598" prefix=" " category="inline-code"></block> 사용자 및 그룹.</block>
+  <block id="36d8cadfad50f92ea039929a8bfc7450" category="list-text">다음 명령을 사용하여 루트가 아닌 사용자를 추가하세요.<block ref="5b015a9aa658c93e9ef31fbd0e83d2b9" prefix=" " category="inline-code"></block> 기존 그룹을 보존하면서 그룹화:</block>
+  <block id="aa1cd3801b770b27b2d088367602a652" category="list-text">다음 명령을 사용하여 마운트 경로의 소유권을 부여합니다.<block ref="5b015a9aa658c93e9ef31fbd0e83d2b9" prefix=" " category="inline-code"></block> 사용자 및 그룹과 마운트 경로에 대한 권한 변경:</block>
+  <block id="fba88ec9b188c84767bd0e321c7662a9" category="list-text">기존 NetApp_SnapCenter_Backups 디렉토리가 있으면 삭제합니다.</block>
 </blocks>
