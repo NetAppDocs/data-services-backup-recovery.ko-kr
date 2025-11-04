@@ -281,20 +281,8 @@ NOTE: 보조 스토리지에서 객체 스토리지로의 변환뿐 아니라 �
 
 백업 사본은 NetApp Console 클라우드 계정에 만드는 개체 저장소에 저장됩니다.  클러스터 또는 시스템당 하나의 개체 저장소가 있으며 콘솔은 다음과 같이 개체 저장소의 이름을 지정합니다. `netapp-backup-clusteruuid` .  이 개체 저장소를 삭제하지 마십시오.
 
-ifdef::aws[]
-
-* AWS에서는 NetApp Console 사용하여 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에. endif::aws[]
-
-
-ifdef::azure[]
-
-* Azure에서 NetApp Console Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹이나 기존 리소스 그룹을 사용합니다. https://docs.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent["Blob 데이터에 대한 공개 액세스를 차단합니다."] 기본적으로. endif::azure[]
-
-
-ifdef::gcp[]
-
-endif::gcp[]
-
+* AWS에서는 NetApp Console 사용하여 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에.
+* Azure에서 NetApp Console Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹이나 기존 리소스 그룹을 사용합니다. https://docs.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent["Blob 데이터에 대한 공개 액세스를 차단합니다."] 기본적으로.
 * StorageGRID 에서 콘솔은 객체 저장소 버킷에 대한 기존 저장소 계정을 사용합니다.
 * ONTAP S3에서 콘솔은 S3 버킷에 대한 기존 사용자 계정을 사용합니다.
 

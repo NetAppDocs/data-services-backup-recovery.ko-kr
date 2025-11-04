@@ -17,7 +17,7 @@ summary: NetApp 백업 및 복구를 통해 Hyper-V 워크로드를 보호하세
 온프레미스 ONTAP 시스템의 Hyper-V VM을 Amazon Web Services, Azure NetApp Files 또는 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.
 
 * 일정에 따라 작업 부하를 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다.  보다link:br-use-policies-create.html["정책 생성"] 지침을 보려면.
-* 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다link:br-use-hyper-v-protection-groups.html["NetApp Backup and Recovery 사용하여 Hyper-V 워크로드에 대한 보호 그룹을 만들고 관리합니다."] 자세한 내용은.
+* 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다link:br-use-hyperv-protection-groups.html["NetApp Backup and Recovery 사용하여 Hyper-V 워크로드에 대한 보호 그룹을 만들고 관리합니다."] 자세한 내용은.
 * 지금 워크로드를 백업하세요(지금 주문형 백업을 생성하세요).
 
 

@@ -61,8 +61,6 @@ NetApp Backup and Recovery 볼륨 백업에 대한 DataLock 및 랜섬웨어 보
 
 이 두 가지 기능은 모두 백업 파일을 보호하여 랜섬웨어 공격 시도가 발생할 경우 항상 유효한 백업 파일에서 데이터를 복구할 수 있도록 합니다.  백업을 잠그고 일정 기간 동안 보관해야 하는 특정 규정 요구 사항을 충족하는 데도 도움이 됩니다.  DataLock 및 랜섬웨어 복원력 옵션이 활성화되면 NetApp Backup and Recovery 활성화의 일부로 프로비저닝된 클라우드 버킷에서 개체 잠금 및 개체 버전 관리가 활성화됩니다.
 
-https://bluexp.netapp.com/blog/cbs-blg-the-bluexp-feature-that-protects-backups-from-ransomware["자세한 내용은 DataLock 및 랜섬웨어 보호 블로그를 참조하세요."^].
-
 이 기능은 소스 볼륨에 대한 보호 기능을 제공하지 않으며, 해당 소스 볼륨의 백업에만 보호 기능을 제공합니다.  일부를 사용하세요 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP 에서 제공하는 랜섬웨어 방지 보호"^] 소스 볼륨을 보호하세요.
 
 [CAUTION]
@@ -339,7 +337,7 @@ NOTE: Microsoft Azure는 대신 잠금 및 잠금 해제 모드를 사용합니�
 
 DataLock 비용을 완화하기 위한 추가 팁은 다음을 참조하세요.https://community.netapp.com/t5/Tech-ONTAP-Blogs/Understanding-NetApp-Backup-and-Recovery-DataLock-and-Ransomware-Feature-TCO/ba-p/453475[]
 
-또한 DataLock과 관련된 비용에 대한 견적은 다음을 방문하여 얻을 수 있습니다. https://bluexp.netapp.com/cloud-backup-service-tco-calculator["NetApp Backup and Recovery 총소유비용(TCO) 계산기"] .
+또한 DataLock과 관련된 비용에 대한 견적은 다음을 방문하여 얻을 수 있습니다. https://www.netapp.com/data-services/backup-and-recovery-tco-calculator/["NetApp Backup and Recovery 총소유비용(TCO) 계산기"] .
 
 
 

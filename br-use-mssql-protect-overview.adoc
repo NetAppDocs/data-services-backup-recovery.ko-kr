@@ -33,7 +33,7 @@ NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷 복사본을
 * link:br-use-mssql-backup.html["ONTAP 보조 스토리지에 작업 부하 복제"]
 * link:br-use-mssql-backup.html["개체 저장소 위치에 워크로드 백업"]
 * link:br-use-mssql-backup.html["지금 워크로드를 백업하세요"]
-* link:br-use-mssql-restore-overview.html["작업 부하 복원"]
+* link:br-use-mssql-restore.html["작업 부하 복원"]
 * link:br-use-mssql-clone.html["복제 워크로드"]
 * link:br-use-manage-inventory.html["작업량 인벤토리 관리"]
 * link:br-use-manage-snapshots.html["스냅샷 관리"]
