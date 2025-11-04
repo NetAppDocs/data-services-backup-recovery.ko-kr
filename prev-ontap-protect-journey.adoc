@@ -16,11 +16,9 @@ summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 �
 [role="lead"]
 NetApp Backup and Recovery 사용하면 소스 볼륨의 복사본을 최대 3개까지 만들어 데이터를 보호할 수 있습니다.  볼륨에서 백업 및 복구를 활성화할 때 선택할 수 있는 옵션이 많으므로 준비할 수 있도록 선택 사항을 검토해야 합니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 다음 옵션을 살펴보겠습니다.
 
 * 어떤 보호 기능을 사용하시겠습니까? 스냅샷 복사본, 복제 볼륨 및/또는 클라우드 백업

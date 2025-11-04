@@ -16,11 +16,9 @@ summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 �
 [role="lead"]
 NetApp Backup and Recovery ONTAP 볼륨 데이터의 보호 및 장기 보관을 위한 백업 및 복원 기능을 제공합니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 활성화 후 백업 및 복구를 통해 블록 수준의 증분적 영구 백업이 생성되어 다른 ONTAP 클러스터와 클라우드의 개체 스토리지에 저장됩니다.  소스 볼륨 외에도 다음이 제공됩니다.
 
 * 소스 시스템의 볼륨 스냅샷 복사본

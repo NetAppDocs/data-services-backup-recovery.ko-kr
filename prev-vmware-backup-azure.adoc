@@ -18,11 +18,9 @@ SnapCenter Plug-in for VMware vSphere NetApp Backup and Recovery 와 통합하�
 
 데이터 저장소가 보관 정책과 연결되어 있는 경우 보관 계층을 선택하는 옵션이 제공됩니다.  지원되는 보관 계층은 Azure Archive Blob Storage입니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 .시작하기 전에
 모든 사항을 충족했는지 확인하세요.link:prev-vmware-prereqs.html["가상 머신 보호 요구 사항"] 클라우드에 데이터 저장소를 백업하기 전에.
 

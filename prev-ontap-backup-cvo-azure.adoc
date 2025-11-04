@@ -16,11 +16,9 @@ summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 �
 [role="lead"]
 NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Azure Blob 스토리지로 볼륨 데이터를 백업하세요.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 
 
 == 구성에 대한 지원을 확인하세요
@@ -94,7 +92,7 @@ NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 �
 +
 [%collapsible]
 ====
-[source, json]
+[source, console]
 ----
 "Microsoft.Storage/storageAccounts/listkeys/action",
 "Microsoft.Storage/storageAccounts/read",

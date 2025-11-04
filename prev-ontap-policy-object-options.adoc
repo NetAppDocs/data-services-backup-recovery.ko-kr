@@ -19,11 +19,9 @@ NetApp Backup and Recovery 사용하면 온프레미스 ONTAP 및 Cloud Volumes 
 
 NOTE: 이러한 정책 설정은 개체 저장소 백업에만 적용됩니다.  이러한 설정은 스냅샷이나 복제 정책에 영향을 미치지 않습니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 
 
 == 백업 일정 옵션

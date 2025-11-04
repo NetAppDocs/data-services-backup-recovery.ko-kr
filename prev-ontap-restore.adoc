@@ -16,11 +16,9 @@ summary: NetApp Backup and Recovery 사용하면 백업 파일에서 전체 ONTA
 [role="lead"]
 ONTAP 볼륨 데이터의 백업은 백업을 생성한 위치(스냅샷 복사본, 복제된 볼륨, 개체 스토리지에 저장된 백업)에서 사용할 수 있습니다.  이러한 백업 위치 중 하나에서 특정 시점의 데이터를 복원할 수 있습니다.  NetApp Backup and Recovery 사용하면 백업 파일에서 전체 ONTAP 볼륨을 복원할 수 있으며, 몇 개의 파일만 복원해야 하는 경우 폴더나 개별 파일을 복원할 수 있습니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 * *볼륨*을 (새로운 볼륨으로) 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템에 복원할 수 있습니다.
 * *폴더*를 원래 시스템의 볼륨, 동일한 클라우드 계정을 사용하는 다른 시스템의 볼륨 또는 온프레미스 ONTAP 시스템의 볼륨으로 복원할 수 있습니다.
 * *파일*을 원래 시스템의 볼륨, 동일한 클라우드 계정을 사용하는 다른 시스템의 볼륨 또는 온프레미스 ONTAP 시스템의 볼륨으로 복원할 수 있습니다.

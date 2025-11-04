@@ -18,7 +18,8 @@ NetApp Backup and Recovery 하나의 Azure 보관 액세스 계층과 대부분�
 
 []
 ====
-*참고* NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
+
+NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
 
 ====
 

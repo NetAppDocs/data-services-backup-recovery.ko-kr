@@ -834,14 +834,11 @@
   <block id="c6b7de80c7a26cff06eecf17f7d3c273" category="list-text">Cloud Volumes ONTAP 과 NetApp Backup and Recovery 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 라이선스를 사용하여 Cloud Volumes ONTAP 시스템에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스 용량에 포함되지 않습니다).  이 옵션을 사용하면 온프레미스 ONTAP 데이터를 백업할 수 없습니다.</block>
   <block id="5f0364e373bcb99c02ad1b8359683908" category="inline-link">Cloud Volumes ONTAP 라이선싱 주제</block>
   <block id="8bf40ad9f866315020ec4fdd4f65701a" category="paragraph">를 참조하십시오<block ref="efcb71a951fd69a7db06309cdcce3842" category="inline-link-rx"></block> 이 라이선싱 옵션에 대해 자세히 알아보세요.</block>
-  <block id="0b97613d452c304bdd00b00b89019bd9" category="paragraph">이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정할 수 있으며 콘솔에서 AWS Marketplace를 구독하라는 메시지가 표시됩니다. endif::aws[]</block>
   <block id="bd0202b4a5e368ede75c41822527f8dd" category="inline-link">Azure Marketplace 페이지</block>
   <block id="ba52c601f575024f72fb5f7ac8154b76" category="paragraph">Azure를 사용하면 연간 계약 2개를 이용할 수 있습니다.<block ref="d5a65c1c4876b0fa6968c9e08ffea7e8" category="inline-link-rx"></block> Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 경우:</block>
   <block id="f201c550f444b5128aeb063bf930d1e2" category="inline-link">구독을 Azure 자격 증명과 연결합니다.</block>
   <block id="bb2a4ab21c5ccf409e44b59faacde869" category="paragraph">이 옵션을 사용하려면 Marketplace 페이지에서 구독을 설정한 다음<block ref="ee52880e3726e54668f91a4b65aa4b29" category="inline-link-rx"></block> . 콘솔에서 Azure 자격 증명에 활성 구독을 하나만 할당할 수 있으므로 이 연간 계약 구독을 사용하여 Cloud Volumes ONTAP 시스템에 대한 비용도 지불해야 합니다.</block>
-  <block id="3171104ba9fba92f7a3e17caa85af873" category="paragraph">이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정할 수 있으며 콘솔에서 Azure Marketplace를 구독하라는 메시지가 표시됩니다. endif::azure[]</block>
   <block id="78cb5753f269296b8cbe81558d864e4f" category="paragraph">GCP를 사용하는 경우 NetApp 영업 담당자에게 문의하여 연간 계약을 구매하세요.  해당 계약은 Google Cloud Marketplace에서 비공개 제안으로 제공됩니다.</block>
-  <block id="855947b446550d6dbeba8337db6ee4ab" category="paragraph">NetApp 에서 비공개 제안을 공유한 후 NetApp Backup and Recovery 활성화 중에 Google Cloud Marketplace에서 구독할 때 연간 플랜을 선택할 수 있습니다. endif::gcp[]</block>
   <block id="f795b2e1a1434e0b0c432d97df55b423" category="section-title">NetApp Backup and Recovery BYOL 라이선스 사용</block>
   <block id="70af97100aa32faf0090b5c729f50df0" category="paragraph">NetApp 의 BYOL(Bring Your Own License)은 1년, 2년 또는 3년 기간을 제공합니다. 백업되는 소스 ONTAP 볼륨의 논리적 사용 용량(효율성 고려 전)을 기준으로 계산된, 보호하는 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
   <block id="b323a5cd735592858ae199d4fb24a0ed" category="paragraph">BYOL NetApp Backup and Recovery 라이선스는 NetApp Console 조직 또는 계정과 연결된 모든 시스템에서 총 용량이 공유되는 플로팅 라이선스입니다.  ONTAP 시스템의 경우 CLI 명령을 실행하여 필요한 용량을 대략적으로 추정할 수 있습니다.<block ref="2a47fed7b3c4b7d59e03f10c018cf5cc" prefix=" " category="inline-code"></block> 백업하려는 볼륨에 대해서.</block>
@@ -1912,7 +1909,6 @@
   <block id="9f292a76282f4f6731d03460bcd3b924" category="doc">NetApp Backup and Recovery 개요를 사용하여 VMware 워크로드 보호</block>
   <block id="c59e55a8f797ea977bb075c0da4e3733" category="paragraph">NetApp Backup and Recovery 사용하여 VMware VM과 데이터 저장소를 보호하세요.  NetApp Backup and Recovery 빠르고 공간 효율적이며, 충돌 대비 및 VM 대비 일관된 백업 및 복원 작업을 제공합니다. VMware 워크로드를 Amazon Web Services S3 또는 StorageGRID 에 백업하고 온프레미스 VMware 호스트로 VMware 워크로드를 복원할 수 있습니다.</block>
   <block id="13a7ab00fe9ae146021f5c5ab40ca443" category="paragraph">NetApp Backup and Recovery 사용하여 3-2-1 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.</block>
-  <block id="ba84ec6936d5a457a5ab6e919e49c77e" category="paragraph">*참고* NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.<block ref="3a517a59babeb4a2a4c0dc21bafb9259" category="inline-link-macro-rx"></block> .</block>
   <block id="eb2d112b017e683992cc9b9b338c90a1" category="paragraph">NetApp Backup and Recovery 사용하면 VMware 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
   <block id="4c90ef6c5dc037251bf65afdeeb1ee6c" category="list-text"><block ref="4c90ef6c5dc037251bf65afdeeb1ee6c" category="inline-link-macro-rx"></block></block>
   <block id="fa3a5087c48da1a523ef45fa2253ea19" category="inline-link-macro">VMware 워크로드에 대한 보호 그룹 생성 및 관리</block>
@@ -2302,7 +2298,6 @@
   <block id="88c51ea85ad6413ada0a99db3150b7ad" category="list-text"><block ref="88c51ea85ad6413ada0a99db3150b7ad" category="inline-link-macro-rx"></block></block>
   <block id="2290b2de6091d65659ff672552a33073" category="doc">NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 데이터를 Amazon S3에 백업합니다.</block>
   <block id="6dd5730fa3cd9ee8d3ed7531a2a5d9be" category="paragraph">NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Amazon S3로 볼륨 데이터 백업을 시작하세요.</block>
-  <block id="0011ab0d93b0c9ad9321732a590a280b" category="paragraph">*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.<block ref="e56b09183f5489111204017fecace77e" category="inline-link-macro-rx"></block> .</block>
   <block id="b70f6a951e89b0cf19d78de39f9fd2ce" category="section-title">구성에 대한 지원을 확인하세요</block>
   <block id="f540dcb6244343752d809a32f46fe48c" category="paragraph">S3에 볼륨 백업을 시작하기 전에 지원되는 구성이 있는지 확인하려면 다음 요구 사항을 읽어보세요.</block>
   <block id="61e795ce0fde928ad06964786c5284cb" category="paragraph">다음 이미지는 각 구성 요소와 구성 요소 간에 준비해야 할 연결을 보여줍니다.</block>
@@ -2861,7 +2856,6 @@
   <block id="16b737dd94da3821905b2064f8068f45" category="inline-link">SVM에 대한 DNS 서비스 구성</block>
   <block id="e30347a67bfdcb246f056cfd9aa4efbd" category="list-text">볼륨이 위치한 스토리지 VM에 대해 DNS 서버가 구성되어야 합니다.  방법을 확인하세요<block ref="f1c08d303d78e879204468f0ff96d977" category="inline-link-rx"></block> .</block>
   <block id="35668631a609fe2e8e53c6ff298d9d50" category="list-text">필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 개체 스토리지로의 NetApp Backup and Recovery 연결이 포트 443을 통해 허용되고 스토리지 VM에서 DNS 서버로의 이름 확인 트래픽이 포트 53(TCP/UDP)을 통해 허용되도록 합니다.</block>
-  <block id="e37afd2469ef3f0bffe0633c97d91c16" category="list-text">AWS에서 S3 연결을 위해 Private VPC Interface Endpoint를 사용하는 경우 HTTPS/443을 사용하려면 S3 엔드포인트 인증서를 ONTAP 클러스터에 로드해야 합니다. <block ref="a9add63f8269701d766cf4e98ddd02f6" category="inline-xref-macro-rx"></block>.  *[ ONTAP 클러스터에 S3 버킷에 액세스할 수 있는 권한이 있는지 확인하세요.</block>
   <block id="85c59068ab95a15b1e1949adae268196" category="section-title">Amazon S3를 백업 대상으로 준비하세요</block>
   <block id="a8b807b8ea1b15db459046c0c0aae9df" category="paragraph">Amazon S3를 백업 대상으로 준비하려면 다음 단계를 따르세요.</block>
   <block id="cf9f41217020d9194c2e913c73ab3139" category="list-text">S3 권한을 설정합니다.</block>
@@ -4361,7 +4355,6 @@
   <block id="1a26e136f07c381d3ef8cb588918beec" category="list-text">다음 명령을 사용하여 NetApp Backup and Recovery MySQL DB를 복원합니다.</block>
   <block id="9dec29ea058162b5bb29413e333f6c4c" category="list-text">다음 SQL 명령을 사용하여 NetApp Backup and Recovery MySQL DB가 올바르게 복원되었는지 확인하세요.</block>
   <block id="1a411806f1f54597b7259137d2e753db" category="paragraph">비밀번호를 입력하세요.</block>
-  <block id="3ec8f556a760c1ea438f0c8012517d09" category="paragraph">표시된 볼륨이 원래 환경에 있던 볼륨과 동일한지 확인하세요.</block>
   <block id="83760b08057d3103fac3ba1635b60ee2" category="list-text">백업 위치에서 Indexed Catalog 백업 zip 파일(예시 파일 이름 "Indexed_Catalog_DB_Backup_catalogdb1_23_05_2023.zip"을 사용함)을 "/opt/application/netapp/cbs" 폴더에 있는 새 콘솔 에이전트 호스트로 복사합니다.</block>
   <block id="39ba61f148a69dbb1215b6b10c98b11a" category="list-text">다음 명령을 사용하여 "Indexed_Catalog_DB_Backup_catalogdb1_23_05_2023.zip" 파일의 압축을 풉니다.</block>
   <block id="3b3267745861675e9a5e88b689b4cda8" category="list-text">*ls* 명령을 실행하여 "catalogdb1" 폴더가 생성되었고 그 아래에 "changes"와 "snapshots"라는 하위 폴더가 있는지 확인합니다.</block>
@@ -4781,4 +4774,10 @@
   <block id="22d1aa2ecc719d7521d0a8859fe171f9" category="paragraph">볼륨을 복원하려면 소스 시스템 이름, 스토리지 VM, 볼륨 이름 및 백업 파일 날짜가 필요합니다.</block>
   <block id="0e9332d24e8223d33f0f13c12dc28e78" category="list-text">복원 대시보드로 돌아가서 복원 작업의 진행 상황을 검토하려면 *복원*을 선택하세요.</block>
   <block id="dc48f529dae728780c55fde51597adee" category="paragraph">당신이 가지고 후<block ref="d2ec4e5679d82dbce801a1d23c311912" category="inline-xref-macro-rx"></block> 검색 및 복원을 사용하여 볼륨, 폴더 및 파일을 복원할 수 있습니다. 이를 통해 광범위한 필터를 사용하여 모든 백업 파일에서 복원하려는 정확한 파일이나 볼륨을 찾을 수 있습니다.</block>
+  <block id="b28e4b1f62c3596ace4ffe33a5315f55" category="paragraph">이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정하면 되고, 콘솔에서 AWS Marketplace를 구독하라는 메시지가 표시됩니다.</block>
+  <block id="4f3497b4ac779d63c0943697b51c6c4c" category="paragraph">이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정하면 되고, 콘솔에서 Azure Marketplace를 구독하라는 메시지가 표시됩니다.</block>
+  <block id="d192426871b83b5c662b0cfa51cfd2e6" category="paragraph">NetApp 비공개 제안을 공유한 후 NetApp Backup and Recovery 활성화하는 동안 Google Cloud Marketplace에서 구독할 때 연간 플랜을 선택할 수 있습니다.</block>
+  <block id="60c015b8ddd8d831a4c02882c86d1b96" category="list-text">AWS에서 S3 연결을 위해 Private VPC Interface Endpoint를 사용하는 경우 HTTPS/443을 사용하려면 S3 엔드포인트 인증서를 ONTAP 클러스터에 로드해야 합니다. <block ref="a9add63f8269701d766cf4e98ddd02f6" category="inline-xref-macro-rx"></block>.</block>
+  <block id="7f04f32c4656d50b5019019cf54c568c" category="list-text">ONTAP 클러스터에 S3 버킷에 액세스할 수 있는 권한이 있는지 확인하세요.</block>
+  <block id="8caf5a345895253ff6b6c49a438599d4" category="list-text">표시된 볼륨이 원래 환경에 있던 볼륨과 동일한지 확인하세요.</block>
 </blocks>

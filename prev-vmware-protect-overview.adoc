@@ -18,11 +18,9 @@ NetApp Backup and Recovery 사용하여 가상 머신 워크로드를 보호하�
 
 Amazon Web Services S3, Microsoft Azure Blob, Google Cloud Platform 및 StorageGRID 에 데이터 저장소를 백업하고 가상 머신을 온프레미스 SnapCenter Plug-in for VMware vSphere 으로 복원할 수 있습니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 가상 머신 워크로드를 보호하는 방법에 대한 지침은 다음 항목을 참조하세요.
 
 * link:prev-vmware-policy-create.html["VMware 워크로드에 대한 정책 만들기"]

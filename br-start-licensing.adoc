@@ -111,11 +111,9 @@ AWS를 사용하면 연간 계약이 두 개 제공됩니다. https://aws.amazon
 를 참조하십시오 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이선싱 주제"^] 이 라이선싱 옵션에 대해 자세히 알아보세요.
 
 +
-이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정할 수 있으며 콘솔에서 AWS Marketplace를 구독하라는 메시지가 표시됩니다. endif::aws[]
+이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정하면 되고, 콘솔에서 AWS Marketplace를 구독하라는 메시지가 표시됩니다.
 
 
-
-ifdef::azure[]
 
 Azure를 사용하면 연간 계약 2개를 이용할 수 있습니다. https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["Azure Marketplace 페이지"^] Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 경우:
 
@@ -128,15 +126,13 @@ Azure를 사용하면 연간 계약 2개를 이용할 수 있습니다. https://
 를 참조하십시오 https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이선싱 주제"^] 이 라이선싱 옵션에 대해 자세히 알아보세요.
 
 +
-이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정할 수 있으며 콘솔에서 Azure Marketplace를 구독하라는 메시지가 표시됩니다. endif::azure[]
+이 옵션을 사용하려면 Cloud Volumes ONTAP 시스템을 생성할 때 연간 계약을 설정하면 되고, 콘솔에서 Azure Marketplace를 구독하라는 메시지가 표시됩니다.
 
 
-
-ifdef::gcp[]
 
 GCP를 사용하는 경우 NetApp 영업 담당자에게 문의하여 연간 계약을 구매하세요.  해당 계약은 Google Cloud Marketplace에서 비공개 제안으로 제공됩니다.
 
-NetApp 에서 비공개 제안을 공유한 후 NetApp Backup and Recovery 활성화 중에 Google Cloud Marketplace에서 구독할 때 연간 플랜을 선택할 수 있습니다. endif::gcp[]
+NetApp 비공개 제안을 공유한 후 NetApp Backup and Recovery 활성화하는 동안 Google Cloud Marketplace에서 구독할 때 연간 플랜을 선택할 수 있습니다.
 
 
 

@@ -19,11 +19,9 @@ NetApp Backup and Recovery 사용하면 백업 일정 변경, 볼륨 백업 활�
 
 CAUTION: 스토리지 시스템이나 클라우드 공급자 환경에서 직접 백업 파일을 관리하거나 변경하지 마세요.  이렇게 하면 파일이 손상될 수 있으며 지원되지 않는 구성이 발생할 수 있습니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 
 
 == 시스템의 볼륨 백업 상태 보기

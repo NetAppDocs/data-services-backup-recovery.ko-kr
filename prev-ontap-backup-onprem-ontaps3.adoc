@@ -18,11 +18,9 @@ NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 기본 온�
 
 기본 온프레미스 ONTAP 시스템은 FAS, AFF 또는 ONTAP Select 시스템이 될 수 있습니다.  보조 ONTAP 시스템은 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템이 될 수 있습니다.  개체 저장소는 온프레미스 ONTAP 시스템이나 S3(Simple Storage Service) 개체 저장소 서버를 활성화한 Cloud Volumes ONTAP 시스템에 있을 수 있습니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 
 
 == 연결 방법을 식별하세요
@@ -208,7 +206,7 @@ ONTAP S3에 대한 백업을 설정하면 백업 마법사가 사용자 계정�
 
 이러한 액세스 키는 다음 권한이 있는 사용자와 연결되어야 합니다.
 
-[source, json]
+[source, console]
 ----
 "s3:ListAllMyBuckets",
 "s3:ListBucket",

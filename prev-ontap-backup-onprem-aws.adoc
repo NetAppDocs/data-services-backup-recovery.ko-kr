@@ -19,11 +19,9 @@ NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 온프레미
 
 NOTE: "온프레미스 ONTAP 시스템"에는 FAS, AFF 및 ONTAP Select 시스템이 포함됩니다.
 
-[]
-====
-*참고* NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
 
-====
+NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
+
 
 
 == 연결 방법을 식별하세요
@@ -174,7 +172,8 @@ IPspace 내의 모든 클러스터 간 LIF는 개체 저장소에 액세스할 �
 
 * 볼륨이 위치한 스토리지 VM에 대해 DNS 서버가 구성되어야 합니다.  방법을 확인하세요 https://docs.netapp.com/us-en/ontap/networking/configure_dns_services_auto.html["SVM에 대한 DNS 서비스 구성"^] .
 * 필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 개체 스토리지로의 NetApp Backup and Recovery 연결이 포트 443을 통해 허용되고 스토리지 VM에서 DNS 서버로의 이름 확인 트래픽이 포트 53(TCP/UDP)을 통해 허용되도록 합니다.
-* AWS에서 S3 연결을 위해 Private VPC Interface Endpoint를 사용하는 경우 HTTPS/443을 사용하려면 S3 엔드포인트 인증서를 ONTAP 클러스터에 로드해야 합니다. <<VPC 엔드포인트 인터페이스를 사용하여 개인 연결을 위한 시스템 구성>>.  *[ ONTAP 클러스터에 S3 버킷에 액세스할 수 있는 권한이 있는지 확인하세요.
+* AWS에서 S3 연결을 위해 Private VPC Interface Endpoint를 사용하는 경우 HTTPS/443을 사용하려면 S3 엔드포인트 인증서를 ONTAP 클러스터에 로드해야 합니다. <<VPC 엔드포인트 인터페이스를 사용하여 개인 연결을 위한 시스템 구성>>.
+* ONTAP 클러스터에 S3 버킷에 액세스할 수 있는 권한이 있는지 확인하세요.
 
 
 
@@ -239,48 +238,48 @@ NOTE: AWS 중국 리전에서 백업을 생성할 때 IAM 정책의 모든 _Reso
 [source, json]
 ----
 {
-    "Version": "2012-10-17",
-     "Statement": [
-        {
-           "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:DeleteObject",
-                "s3:ListBucket",
-                "s3:ListAllMyBuckets",
-                "s3:GetBucketLocation",
-                "s3:PutEncryptionConfiguration"
-            ],
-            "Resource": "arn:aws:s3:::netapp-backup-*",
-            "Effect": "Allow",
-            "Sid": "backupPolicy"
-        },
-        {
-            "Action": [
-                "s3:ListBucket",
-                "s3:GetBucketLocation"
-            ],
-            "Resource": "arn:aws:s3:::netapp-backup*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:DeleteObject",
-                "s3:ListAllMyBuckets",
-                "s3:PutObjectTagging",
-                "s3:GetObjectTagging",
-                "s3:RestoreObject",
-                "s3:GetBucketObjectLockConfiguration",
-                "s3:GetObjectRetention",
-                "s3:PutBucketObjectLockConfiguration",
-                "s3:PutObjectRetention"
-            ],
-            "Resource": "arn:aws:s3:::netapp-backup*/*",
-            "Effect": "Allow"
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:ListBucket",
+        "s3:ListAllMyBuckets",
+        "s3:GetBucketLocation",
+        "s3:PutEncryptionConfiguration"
+      ],
+      "Resource": "arn:aws:s3:::netapp-backup-*",
+      "Effect": "Allow",
+      "Sid": "backupPolicy"
+    },
+    {
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetBucketLocation"
+      ],
+      "Resource": "arn:aws:s3:::netapp-backup*",
+      "Effect": "Allow"
+    },
+    {
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "s3:ListAllMyBuckets",
+        "s3:PutObjectTagging",
+        "s3:GetObjectTagging",
+        "s3:RestoreObject",
+        "s3:GetBucketObjectLockConfiguration",
+        "s3:GetObjectRetention",
+        "s3:PutBucketObjectLockConfiguration",
+        "s3:PutObjectRetention"
+      ],
+      "Resource": "arn:aws:s3:::netapp-backup*/*",
+      "Effect": "Allow"
+    }
+  ]
 }
 ----
 ====
