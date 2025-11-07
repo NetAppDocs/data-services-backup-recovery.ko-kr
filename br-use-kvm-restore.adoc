@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 통해 KVM 워크로드를 보호하세요.
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하여 스냅샷 복사본, 보조 스토리지에 복제된 보호 그룹 백업 또는 개체 스토리지에 저장된 백업에서 KVM 가상 머신을 복원합니다.
+NetApp Backup and Recovery 사용하여 스냅샷, 보조 스토리지에 복제된 보호 그룹 백업 또는 개체 스토리지에 저장된 백업에서 KVM 가상 머신을 복원합니다.
 
 .이 위치에서 복원
 다양한 시작 위치에서 가상 머신을 복원할 수 있습니다.

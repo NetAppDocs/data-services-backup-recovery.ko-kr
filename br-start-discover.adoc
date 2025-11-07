@@ -24,7 +24,7 @@ NetApp Backup and Recovery 서비스를 사용하려면 먼저 Microsoft SQL Ser
 
 검색 중에 NetApp Backup and Recovery 조직 내 시스템의 Microsoft SQL Server 인스턴스와 데이터베이스를 분석합니다.
 
-NetApp Backup and Recovery Microsoft SQL Server 애플리케이션을 평가합니다.  이 서비스는 현재 백업 보호 정책, 스냅샷 사본, 백업 및 복구 옵션을 포함한 기존 보호 수준을 평가합니다.
+NetApp Backup and Recovery Microsoft SQL Server 애플리케이션을 평가합니다. 이 서비스는 현재 백업 보호 정책, 스냅샷, 백업 및 복구 옵션을 포함한 기존 보호 수준을 평가합니다.
 
 발견은 다음과 같은 방식으로 이루어집니다.
 
@@ -59,7 +59,7 @@ SnapCenter 이미 설치되어 있는 경우 다음 단계에 따라 SnapCenter 
 
 ==== SnapCenter 서버 애플리케이션 및 호스트 리소스 가져오기
 
-첫 번째 단계에서는 SnapCenter 에서 호스트 리소스를 가져와 NetApp Backup and Recovery 인벤토리 페이지에 해당 리소스를 표시합니다.  그 시점에서는 리소스가 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.
+첫 번째 단계에서는 SnapCenter 에서 호스트 리소스(rsesources)를 가져와서 NetApp Backup and Recovery 인벤토리 페이지에 해당 리소스를 표시합니다. 그 시점에서는 리소스가 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.
 
 
 TIP: SnapCenter 호스트 리소스를 가져온 후에는 NetApp Backup and Recovery 자동으로 보호 관리를 수행하지 않습니다.  이렇게 하려면 NetApp Backup and Recovery 에서 가져온 리소스를 관리하도록 명시적으로 선택해야 합니다.  이렇게 하면 NetApp Backup and Recovery 통해 해당 리소스를 백업할 준비가 됩니다.
