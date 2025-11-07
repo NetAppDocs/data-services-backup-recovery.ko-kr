@@ -4777,4 +4777,17 @@
   <block id="0b7639e600f1d3ff92ed788a9be2c0dd" category="list-text">SVM에서 SnapDiff RPC 서버를 활성화해야 합니다. 시스템에서 인덱싱을 활성화하면 콘솔에서 자동으로 이 작업이 수행됩니다. (SnapDiff는 스냅샷 간의 파일 및 디렉토리 차이점을 빠르게 식별하는 기술입니다.)</block>
   <block id="dff115c532ece3121746427a98f68318" category="list-text">_필터 기준_ 영역에서 필터 기준을 선택합니다. 예를 들어, 데이터가 있는 시스템과 파일 형식(예: .JPEG 파일)을 선택할 수 있습니다. 또는 개체 스토리지에서 사용 가능한 스냅샷이나 백업 파일 내에서만 결과를 검색하려는 경우 백업 위치 유형을 선택할 수 있습니다.</block>
   <block id="4fbc8584021c60a153dbf213f698df58" category="paragraph">검색 결과에는 검색 대상 파일이 포함된 로컬 볼륨 스냅샷과 원격 복제 볼륨이 식별됩니다.  클라우드 백업 파일, 스냅샷 또는 복제된 볼륨에서 복원하도록 선택할 수 있습니다.</block>
+  <block id="8cb59bcb28ab4d28eff3f32b41c1619f" category="paragraph">먼저 카탈로그 파일을 보관할 별도의 볼륨을 마운트해야 합니다. 이렇게 하면 스냅샷을 보관하는 파일의 크기가 너무 커져도 데이터 손실을 방지할 수 있습니다. 이는 모든 클러스터에 필요한 것은 아닙니다. 사용자 환경의 모든 클러스터에서 원하는 볼륨을 마운트할 수 있습니다. 이렇게 하지 않으면 인덱싱이 제대로 작동하지 않을 수 있습니다.</block>
+  <block id="49b1bd86131611255094bea2f77118b7" category="paragraph">장착된 볼륨의 경우 다음 크기 조정 지침을 사용하세요.</block>
+  <block id="0207db4ce855854d816d06443ff062ea" category="list-text">NetApp NVS 볼륨 사용</block>
+  <block id="aa45cf8d923bfb8185fed2178e78d921" category="list-text">300MB/s 디스크 처리량의 권장 AFF 스토리지입니다. 처리량이 낮아지면 검색 및 기타 작업에 영향을 미칩니다.</block>
+  <block id="076bea46cdc896921ec2687cf3f345bb" category="list-text">카탈로그 백업 zip 파일 외에도 카탈로그 메타데이터를 보호하기 위해 NetApp 스냅샷을 활성화합니다.</block>
+  <block id="1c3669c2099ac1b271c6bc4f19601ca5" category="list-text">10억 개의 파일당 50GB</block>
+  <block id="d8f2f459c62a4c272bc182a3bf83e97d" category="list-text">카탈로그 데이터를 위한 20GB, zip 파일 생성 및 임시 파일을 위한 추가 공간</block>
+  <block id="e40baf893187a4f380031521e09aab99" category="list-title">카탈로그를 다시 인덱싱하기 위해 볼륨을 마운트하는 단계</block>
+  <block id="f0b22c7460655890a4c18c0545153bae" category="list-text">볼륨을 마운트합니다<block ref="f454c0203410fcd923445c6d0fd3fe90" prefix=" " category="inline-code"></block> 다음 명령을 입력하여 다음을 수행합니다.</block>
+  <block id="a644d6f5b4a74fc5834ee2f4deceeb0a" category="list-text"><block ref="9e631ecdc775968f0a566931df27c2eb" prefix="" category="inline-code"></block> 카탈로그 파일이 저장될 클러스터의 볼륨입니다.</block>
+  <block id="de272d4987aa96a00ccf6441ad353c0e" category="list-text"><block ref="f454c0203410fcd923445c6d0fd3fe90" prefix="" category="inline-code"></block> 마운트되는 경로입니다</block>
+  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">예:</block>
+  <block id="67e93e04234f9801960d3d563faf4619" category="list-title">인덱스를 활성화하는 단계</block>
 </blocks>
