@@ -965,8 +965,6 @@
   <block id="4efc134fd5130564588a4806f9c977f0" category="summary">온프레미스 ONTAP 시스템에서 기본 및 보조 스토리지까지 Hyper-V 가상 머신을 보호하여 데이터가 보호되도록 할 수 있습니다.</block>
   <block id="997367baf18d147848dcf07ba10d7d8d" category="paragraph">NetApp Backup and Recovery 사용하여 Hyper-V VM을 보호하세요.  NetApp Backup and Recovery 독립 실행형 인스턴스와 FCI 클러스터 인스턴스 모두에 대해 빠르고 공간 효율적이며 충돌 일관성이 뛰어나고 VM 일관성이 있는 백업 및 복원 작업을 제공합니다.</block>
   <block id="9772979b1b90e72fc3981d222d55243a" category="paragraph">Hyper-V 워크로드를 Amazon Web Services S3 또는 StorageGRID 에 백업하고 Hyper-V 워크로드를 온프레미스 Hyper-V 호스트로 복원할 수 있습니다.</block>
-  <block id="27bf4d1e94a4188d82244d997deb945d" category="inline-image-macro">백업 및 복구의 일반적인 아키텍처 다이어그램</block>
-  <block id="a25193bbdff09f58ab1dcb4151b659ec" category="paragraph"><block ref="a25193bbdff09f58ab1dcb4151b659ec" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b7bf580752a61d71227184a60f0fbfd3" category="paragraph">NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.</block>
   <block id="79c28420811a3b277df19fdd38cd10e0" category="list-text">여러 미디어 유형을 사용하면 하나의 미디어 유형에 물리적 또는 논리적 오류가 발생하는 경우에도 장애 조치를 실행할 수 있습니다.</block>
   <block id="532ee325506687dccb969b2e88d92b32" category="inline-link-macro">이전 NetApp Backup and Recovery UI로 전환</block>
@@ -2016,25 +2014,13 @@
   <block id="a426b39cc5038676b39d2265b22cebec" category="list-text">두 번째 옵션은 연간 계약을 맺는 것입니다.</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="inline-xref">라이센스</block>
   <block id="8426d45850b9ec06adef93652db54080" category="list-text">세 번째 옵션은 NetApp 에서 직접 라이선스를 구매하는 것입니다.  읽어보세요<block ref="b839456cc57645a9392f4db60a4f044a" category="inline-xref-macro-rx"></block> 자세한 내용은 섹션을 참조하세요.</block>
-  <block id="72097de9125a66d03bbdf7bf977af276" category="paragraph">NetApp Backup and Recovery 무료 평가판으로 제공됩니다.  제한된 기간 동안 라이센스 키 없이도 서비스를 이용할 수 있습니다.</block>
   <block id="30c887a11915f5c1adb97321b93a9e39" category="paragraph">NetApp Backup and Recovery 다음과 같은 소비 모델로 제공됩니다.</block>
-  <block id="9db5c387eb2c1a4533c42a082e094d13" category="list-text">*Bring Your Own License (BYOL)*: NetApp 에서 구매한 라이선스로 모든 클라우드 제공업체에서 사용할 수 있습니다.</block>
-  <block id="467e5d512a9162ad6d144008e41f967e" category="list-text">*Pay as you go (PAYGO)*: 클라우드 공급업체의 마켓플레이스에서 시간당 구독을 제공합니다.</block>
   <block id="146cb6145f5238f0a019636047844250" category="list-text">*연간*: 클라우드 공급업체의 마켓플레이스와 맺은 연간 계약입니다.</block>
-  <block id="2d800cbdf9ba7a82c10657f2a93b18b5" category="paragraph">*면허증은 직접 지참하세요*</block>
-  <block id="e030c8eecbfc992cc68549bf0348d474" category="paragraph">BYOL은 기간 기반(1년, 2년 또는 3년)이며 1TiB 단위로 용량을 결정합니다.  예를 들어 1년 동안 일정 기간 동안 NetApp 에 ​​서비스를 사용하고 최대 용량(예: 10TiB)을 지불합니다.</block>
   <block id="b81dcdb5e6cec4dda0b7fdf2110e5d48" category="paragraph">서비스를 활성화하려면 NetApp Console 에 입력하는 일련 번호를 받게 됩니다.  두 가지 제한 중 하나에 도달하면 라이센스를 갱신해야 합니다.  백업 BYOL 라이선스는 NetApp Console 조직 또는 계정과 연결된 모든 소스 시스템에 적용됩니다.</block>
   <block id="6e26156d53b8aed5293cf52d74acb49c" category="inline-link-macro">라이센스 설정 방법 알아보기</block>
   <block id="520d2c423b38acf3262d3f1e93b53d8a" category="paragraph"><block ref="5f449dd4c94fd29d3e3b83e45dd58382" category="inline-link-macro-rx"></block>.</block>
-  <block id="3e0c229baf295106907effcb0c861fcc" category="paragraph">*선불 구독*</block>
   <block id="0f3691e0fad1edbca841aabd38ddfc42" category="paragraph">NetApp Backup and Recovery 사용량 기반 라이선스를 사용량에 따라 지불하는 모델로 제공합니다.  클라우드 공급업체의 마켓플레이스를 통해 구독한 후, 백업된 데이터에 대해 GiB당 요금을 지불합니다. 선불금은 없습니다. 귀하는 월별 청구서를 통해 클라우드 제공자로부터 요금을 청구받습니다.</block>
   <block id="9757bd87f9a5ff6758600430092b3955" category="paragraph">PAYGO 구독에 처음 가입하면 30일 무료 체험판을 이용할 수 있습니다.</block>
-  <block id="9cb9e2f871f88a22d8fe4b82590901c6" category="paragraph">*연간 계약*</block>
-  <block id="d53b530085f1dc3e3526eed96fa256d8" category="paragraph">AWS를 사용하면 1년, 2년 또는 3년의 연간 계약 두 가지를 이용할 수 있습니다.</block>
-  <block id="5987d4056acac19af6f78703bc378427" category="list-text">Cloud Volumes ONTAP 과 NetApp Backup and Recovery 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 대해 청구된 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않음). endif::aws[]</block>
-  <block id="365c46b758ba93d5bfe4bf6066ae85d9" category="paragraph">Azure를 사용하면 1년, 2년 또는 3년의 연간 계약 두 가지를 선택할 수 있습니다.</block>
-  <block id="c2031f4f264e0d58f523db5c7a98efbb" category="list-text">Cloud Volumes ONTAP 과 NetApp Backup and Recovery 번들로 제공하는 "CVO Professional" 플랜입니다.  여기에는 이 라이선스에 대해 청구된 Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 포함됩니다(백업 용량은 라이선스에 포함되지 않음). endif::azure[]</block>
-  <block id="565e9b99ea730c02b444af9641d863c0" category="paragraph">GCP를 사용하면 NetApp 에서 비공개 제안을 요청한 다음 NetApp Backup and Recovery 활성화 중에 Google Cloud Marketplace에서 구독할 때 플랜을 선택할 수 있습니다. endif::gcp[]</block>
   <block id="8d76c3c56611813110af76c5eca39835" category="section-title">지원되는 데이터 소스, 시스템 및 백업 대상</block>
   <block id="cec0c370d9c2ef0dbbf7f89c16ef1a90" category="paragraph-title">지원되는 워크로드 데이터 소스</block>
   <block id="471bdf4d52cdd0764f463e7010138e3f" category="paragraph">NetApp Backup and Recovery 다음 워크로드를 보호합니다.</block>
@@ -4790,4 +4776,19 @@
   <block id="de272d4987aa96a00ccf6441ad353c0e" category="list-text"><block ref="f454c0203410fcd923445c6d0fd3fe90" prefix="" category="inline-code"></block> 마운트되는 경로입니다</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">예:</block>
   <block id="67e93e04234f9801960d3d563faf4619" category="list-title">인덱스를 활성화하는 단계</block>
+  <block id="7c8150e957629e4f178e1453b244de4e" category="paragraph">NetApp Backup and Recovery 무료 평가판을 제공하므로 제한된 기간 동안 라이선스 키 없이도 사용할 수 있습니다.</block>
+  <block id="9b337326626f108661db15ede8612161" category="paragraph">백업 라이선스는 개체 스토리지와 관련된 백업 및 복원 작업에만 필요합니다.  스냅샷과 복제 볼륨을 만드는 데는 라이센스가 필요하지 않습니다.</block>
+  <block id="38791ac6dfcab3a4a150d9b40eb83c4b" category="paragraph">세 가지 라이선스 옵션 중에서 선택할 수 있습니다.</block>
+  <block id="24a3699faa66664ca496b9a5bd124662" category="list-text">*Bring Your Own License(BYOL)*: NetApp 에서 기간 기반(1년, 2년 또는 3년) 및 용량 기반(1TiB 단위) 라이선스를 구매합니다.  제공된 일련번호를 NetApp Console 에 입력하여 활성화하세요.  라이선스는 조직의 모든 소스 시스템을 포함합니다.  기간 또는 용량 한도에 도달하면 갱신이 필요합니다.</block>
+  <block id="248848332301b53df791d76f885827be" category="inline-link">NetApp Backup and Recovery PAYGO 구독을 사용하세요</block>
+  <block id="365539ae3de2669e3c6cab548aad4d26" category="list-text">*Pay As You Go(PAYGO)*: 클라우드 공급업체의 마켓플레이스를 통해 구독하고 백업된 데이터의 GiB당 요금을 지불하며, 월 단위로 청구됩니다.  선불은 필요하지 않습니다.  처음 가입하시면 30일 무료 체험이 제공됩니다. 자세한 내용은 다음을 참조하세요.<block ref="8edaf8cd3966d935673fb34ac864f172" category="inline-link-rx"></block> .</block>
+  <block id="b2756926bee4401109074cd37d6bbfc7" category="list-text">*연간 계약*: AWS 및 Azure 마켓플레이스를 통해 1년, 2년 또는 3년 동안 이용 가능합니다.  연간 계약은 2가지가 있습니다.</block>
+  <block id="56a16935ca4475c6ad8f6940bbbaa577" category="list-text">*클라우드 백업*: Cloud Volumes ONTAP 및 온프레미스 ONTAP 데이터를 백업합니다.</block>
+  <block id="5051cac88a3b9ad2e2baad101b5e4862" category="list-text">*CVO Professional*: Cloud Volumes ONTAP 및 NetApp Backup and Recovery 가 번들로 제공되며, Cloud Volumes ONTAP 볼륨에 대한 무제한 백업이 가능합니다(백업 용량은 라이선스에 포함되지 않음).</block>
+  <block id="c85bf80350e3e2b3024a57e3e63f42af" category="list-text">CVO Professional 플랜에는 두 가지 유형의 요금이 있습니다.</block>
+  <block id="b11cbf7b17a0a28de648a14bc329d754" category="inline-link">Cloud Volumes ONTAP 라이선싱</block>
+  <block id="3e2ef02026c97d7e5a6f8783f142b8ca" category="list-text">*리소스 요금*: 저장소 사용량에 따라 결정됩니다. 자세한 내용은 다음을 참조하세요.<block ref="fb7e1562747222c6aa716c91aa0ab813" category="inline-link-rx"></block> .</block>
+  <block id="b341302252cb59acb02da2074d4fe6c4" category="list-text">*서비스 요금*: NetApp Backup and Recovery 에 대한 요금입니다.  하지만 소스 볼륨이 CVO Professional 플랜을 사용하는 스토리지 시스템에 있는 경우 NetApp Backup and Recovery 무료로 제공됩니다.</block>
+  <block id="40d372f97e4d897da51bc1fa5978329b" category="paragraph">Google Cloud Platform을 사용하는 경우 NetApp 에서 비공개 제안을 요청하고 Google Cloud Marketplace에서 활성화하는 동안 요금제를 선택하세요.</block>
+  <block id="3cd3cc23191003954a83615e7dc619e1" category="list-text">Oracle 워크로드(미리 보기)</block>
 </blocks>
