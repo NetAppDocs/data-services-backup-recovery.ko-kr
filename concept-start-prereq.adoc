@@ -216,7 +216,6 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 ** Microsoft Hyper-V 2019, 2022 및 2025 버전
 ** ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)
 ** PowerShell 7.4.2 이상
-** 호스트 가디언 서비스 역할이 설치되어 있는지 확인하십시오(참조 https://learn.microsoft.com/en-us/windows-server/administration/server-manager/add-remove-roles-features?tabs=gui#add-roles-and-features-to-windows-server["Microsoft Windows Server 설명서"^] (지침을 위해)
 ** Windows 방화벽 설정에서 다음 포트에 대해 양방향 HTTPS 트래픽이 허용되는지 확인하세요.
 +
 *** 8144(Hyper-V용 NetApp 플러그인)
