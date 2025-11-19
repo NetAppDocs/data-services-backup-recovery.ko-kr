@@ -111,7 +111,7 @@ NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 �
 +
 [%collapsible]
 ====
-[source, console]
+[source, text]
 ----
 "Microsoft.Storage/storageAccounts/listkeys/action",
 "Microsoft.Storage/storageAccounts/read",

@@ -2811,8 +2811,6 @@
   <block id="12486a40437a6b66be9b1d2eaf68dacb" category="list-text">(선택 사항) VPC 엔드포인트 인터페이스를 사용하여 개인 연결을 위해 시스템을 구성합니다.</block>
   <block id="0d0602824136f714807f54069c6d5a89" category="paragraph">두 가지 권한 세트를 구성해야 합니다.</block>
   <block id="7ae76139c799959d1409fade800fdde1" category="list-text">콘솔 에이전트에 필요한 권한이 있는지 확인하세요.  자세한 내용은 다음을 참조하세요.<block ref="e7a931c701625a10dc7f3233361e94bd" category="inline-link-rx"></block> .</block>
-  <block id="7ce349bd25d973c660fddbe184efffb5" category="paragraph">자체 버킷을 생성하는 경우 버킷 이름으로 "netapp-backup"을 사용해야 합니다.  사용자 정의 이름을 사용해야 하는 경우 다음을 편집하세요.<block ref="36f2cf0d90ddea374df0d9a8b6aa6300" prefix=" " category="inline-code"></block> 기존 CVO에 대한 IAMRole을 설정하고 다음 목록을 S3 권한에 추가합니다.  포함해야 합니다<block ref="87307b2ef4c880d061c68a6a4277d9a9" prefix=" " category="inline-code"></block> 그리고 버킷과 연관되어야 하는 모든 필수 권한을 할당합니다.</block>
-  <block id="3bf9e0d7d11ed7ade49f8eabd71927c8" category="paragraph">"동작": [ "S3:ListBucket" "S3:GetBucketLocation" ] "리소스": "arn:aws:s3:::*", "효과": "허용" }, { "동작": [ "S3:GetObject", "S3:PutObject", "S3:DeleteObject", "S3:ListAllMyBuckets", "S3:PutObjectTagging", "S3:GetObjectTagging", "S3:RestoreObject", "S3:GetBucketObjectLockConfiguration", "S3:GetObjectRetention", "S3:PutBucketObjectLockConfiguration", "S3:PutObjectRetention" ] "리소스": "arn:aws:s3:::*",</block>
   <block id="868fb9c55d4ddac7523d9c4697eb9d9f" category="section-title">데이터 암호화를 위한 고객 관리 AWS 키 설정</block>
   <block id="72828ef5ab3d5aa027bfcdd1a9224f67" category="paragraph">온프레미스 클러스터와 S3 버킷 간에 전달되는 데이터를 암호화하기 위해 기본 Amazon S3 암호화 키를 사용하려는 경우, 기본 설치에서 해당 유형의 암호화가 사용되므로 모든 준비가 완료된 것입니다.</block>
   <block id="aa9f769e3ac07b6605a7c510f6467b0d" category="paragraph">대신 기본 키를 사용하는 대신 고객이 관리하는 키를 사용하여 데이터를 암호화하려는 경우 NetApp Backup and Recovery 마법사를 시작하기 전에 암호화 관리 키를 미리 설정해야 합니다.</block>
@@ -3715,19 +3713,16 @@
   <block id="3b4f7847e0c80a6665d11cb27ec353f5" category="list-text">이후 백업은 증분식으로 이루어지므로 이러한 효과가 없습니다.</block>
   <block id="418dfdb508c036c09d2c850937665491" category="list-text">볼륨을 처음 생성할 때 계층화 정책이 볼륨에 할당된 경우 이 문제가 발생하지 않습니다.</block>
   <block id="75968f9094e000b12da4b2ead555a058" category="list-text">백업을 할당하기 전에 백업의 영향을 고려하십시오.<block ref="a181a603769c1f98ad927e7367c7aa51" prefix=" " category="inline-code"></block> 볼륨에 대한 계층화 정책.  데이터가 즉시 계층화되므로 NetApp Backup and Recovery 로컬 계층이 아닌 클라우드 계층에서 데이터를 읽습니다.  동시 백업 작업은 클라우드 객체 저장소에 대한 네트워크 링크를 공유하므로 네트워크 리소스가 포화 상태가 되면 성능 저하가 발생할 수 있습니다.  이 경우 네트워크 포화 상태를 줄이기 위해 여러 네트워크 인터페이스(LIF)를 사전에 구성하는 것이 좋습니다.</block>
-  <block id="c5a5bd782e20196933e5157112eab21c" category="summary">NetApp Backup and Recovery 사용하면 백업 파일에서 전체 ONTAP 볼륨을 복원할 수 있으며, 몇 개의 파일만 복원하면 되는 경우 폴더나 개별 파일을 복원할 수 있습니다.</block>
   <block id="0d5740d6083fb9ac304bfaa4bb99e957" category="doc">NetApp Backup and Recovery 사용하여 백업 파일에서 ONTAP 데이터 복원</block>
   <block id="bbf0b1b9c16dc904da9a8179519e7e31" category="list-text">*볼륨*을 (새로운 볼륨으로) 원래 시스템, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템에 복원할 수 있습니다.</block>
   <block id="da7f5e5f2be2e4063a41a28fbb91f494" category="list-text">*폴더*를 원래 시스템의 볼륨, 동일한 클라우드 계정을 사용하는 다른 시스템의 볼륨 또는 온프레미스 ONTAP 시스템의 볼륨으로 복원할 수 있습니다.</block>
   <block id="a4883a32493cbf65048c6ba0d655088d" category="list-text">*파일*을 원래 시스템의 볼륨, 동일한 클라우드 계정을 사용하는 다른 시스템의 볼륨 또는 온프레미스 ONTAP 시스템의 볼륨으로 복원할 수 있습니다.</block>
-  <block id="c963f9a0ecc1066aa41c689730948ba3" category="paragraph">백업 파일의 데이터를 프로덕션 시스템으로 복원하려면 유효한 NetApp Backup and Recovery 라이선스가 필요합니다.</block>
   <block id="d92c1fbc11ff9a4d0db37653e35a2e52" category="paragraph">요약하자면, ONTAP 시스템에 볼륨 데이터를 복원하는 데 사용할 수 있는 유효한 흐름은 다음과 같습니다.</block>
   <block id="880c04d29288ca6dbdf8598c75af755f" category="list-text">백업 파일 -&gt; 복원된 볼륨</block>
   <block id="385ec83416d2acacbf83c42099e5828e" category="list-text">복제된 볼륨 -&gt; 복원된 볼륨</block>
   <block id="0039af36cdd68741c89e8c730e7b7442" category="admonition">ONTAP 데이터 복원과 관련된 제한 사항은 다음을 참조하세요.<block ref="c27bda4e85978f510ddf0a64d91a61ea" category="inline-link-macro-rx"></block> .</block>
   <block id="65fba989fe7e3d4f06e7b1a4c8b66ff0" category="section-title">복원 대시보드</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">더보기 버튼</block>
-  <block id="c0a30a4e0cad41bfc465528739121146" category="paragraph">복원 대시보드를 사용하여 볼륨, 폴더 및 파일 복원 작업을 수행합니다.  콘솔 메뉴에서 *백업 및 복구*를 클릭한 다음 *복원* 탭을 클릭하면 복원 대시보드에 액세스할 수 있습니다.  클릭할 수도 있습니다<block ref="d1d86609a9d4211430bd00b714af288b" category="inline-image-macro-rx" type="image"></block> &gt; 서비스 패널의 백업 및 복구 서비스에서 *복원 대시보드 보기*</block>
   <block id="c699c3ab8b3b70442456dfc7e6c2d402" category="admonition">NetApp Backup and Recovery 적어도 하나의 시스템에 대해 이미 활성화되어 있어야 하며 초기 백업 파일이 있어야 합니다.</block>
   <block id="5795e107f70b1fe309798439187a0470" category="paragraph">복원 대시보드는 백업 파일에서 데이터를 복원하는 두 가지 방법을 제공합니다. *찾아보기 및 복원*과 *검색 및 복원*입니다.</block>
   <block id="6b0b2f1ade447e93ec60561aec84daae" category="section-title">Browse &amp; Restore와 Search &amp; Restore 비교</block>
@@ -3752,13 +3747,9 @@
   <block id="d65d23f3099e6017c3c2569abf596741" category="cell">*폴더 복원*</block>
   <block id="68295476c4bddb2040705057bdff61c0" category="cell">복제된 볼륨</block>
   <block id="6b8f9734c5bdfb71d16a6d3d8a40513c" category="cell">백업 파일</block>
-  <block id="8425d41c6f9d3b6f077b56c4d49651a4" category="paragraph">두 가지 복원 방법을 사용하기 전에 고유한 리소스 요구 사항에 맞게 환경을 구성했는지 확인하세요.  해당 요구 사항은 아래 섹션에 설명되어 있습니다.</block>
   <block id="91679e5e03d41aefa89ddfa7649b05d2" category="paragraph">사용하려는 복원 작업 유형에 대한 요구 사항과 복원 단계를 확인하세요.</block>
   <block id="ab298a1df9e049ac3ba4c02e893cc475" category="inline-xref">찾아보기 및 복원을 사용하여 볼륨 복원</block>
-  <block id="8c10b03d547a79f12e4be387cd008855" category="list-text"><block ref="64106766a0115c58ac1976a627dae78e" category="inline-xref-macro-rx"></block></block>
-  <block id="657950c649165660c2b1df5994cc6ea1" category="list-text"><block ref="0198cacb5a3b3b848a16a5896a6b781e" category="inline-xref-macro-rx"></block></block>
   <block id="8996e9eaff78ab540aab279a66de20ac" category="inline-xref">검색 및 복원을 사용하여 볼륨, 폴더 및 파일 복원</block>
-  <block id="c3c8ae924b0105406a696e4e3b08bd56" category="list-text"><block ref="28c71e441e3fed1e54d5e765ca1c9c87" category="inline-xref-macro-rx"></block></block>
   <block id="685a6ba7b83ab5e286920feb961c08bb" category="section-title">Browse &amp; Restore를 사용하여 ONTAP 데이터 복원</block>
   <block id="b23bca1a2a7f2ec270c7be93eb3d5720" category="inline-link-macro">AWS 보관 스토리지에서 복원하는 방법에 대해 자세히 알아보세요.</block>
   <block id="b03a3a022eb328afd14c51f9d25fd0aa" category="paragraph"><block ref="ee2d4c64a4d42f71a3357c6cd2b7b94b" category="inline-link-macro-rx"></block>.</block>
@@ -3789,7 +3780,6 @@
   <block id="8e602d0d71734b6cf234a5890bf1241a" category="paragraph">복제된 볼륨에서 복원할 경우 볼륨을 원래 시스템이나 Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.</block>
   <block id="9336df9a96bed9adb0f67170b2dad2b3" category="inline-image-macro">찾아보기 및 복원을 사용하여 볼륨 복원 작업을 수행하는 흐름을 보여주는 다이어그램입니다.</block>
   <block id="38aad7ac8bd6898064d142472e3e7624" category="paragraph"><block ref="7d27a3070fb1dce60f7cb72cb7d60b55" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e024fe06d4f879196d3e62343aa21b12" category="paragraph">보시다시피 볼륨 복원을 수행하려면 소스 시스템 이름, 스토리지 VM, 볼륨 이름 및 백업 파일 날짜를 알아야 합니다.</block>
   <block id="97df4568ca8321a997d9ed32ea75ab0a" category="list-text">*복원* 탭을 선택하면 복원 대시보드가 표시됩니다.</block>
   <block id="00e49e17372cc54391186a012dcec566" category="list-text">_찾아보기 및 복원_ 섹션에서 *볼륨 복원*을 선택합니다.</block>
   <block id="7eccde2a14cd84f78dde1af09cf04af9" category="list-text">_소스 선택_ 페이지에서 복원하려는 볼륨의 백업 파일로 이동합니다.  복원하려는 날짜/시간 스탬프가 있는 *시스템*, *볼륨*, *백업* 파일을 선택합니다.</block>
@@ -3823,13 +3813,7 @@
   <block id="502b9bcf8737b06b486f332278870bbf" category="list-text">_파일_ 복원 작업을 수행하려면 ONTAP 버전이 9.6 이상이어야 합니다.</block>
   <block id="06e9f92e3090a798bd44efa87250ce22" category="list-text">폴더 복원 작업을 수행하려면 ONTAP 버전이 9.11.1 이상이어야 합니다.  데이터가 보관 저장소에 있거나 백업 파일에 DataLock 및 랜섬웨어 보호 기능이 있는 경우 ONTAP 버전 9.13.1이 필요합니다.</block>
   <block id="57bb710d517f010c4fce20687ec1c6ff" category="list-text">찾아보기 및 복원 옵션을 사용하여 FlexGroup 디렉토리를 복원하려면 ONTAP 버전이 9.15.1 p2 이상이어야 합니다.</block>
-  <block id="cee5f78cfda5fc2f3b24ce19bdf5119a" category="section-title">폴더 및 파일 복원 프로세스</block>
   <block id="01a85f08913124872d9b17dfdb08959a" category="paragraph">과정은 다음과 같습니다.</block>
-  <block id="b85ced4f441572e957c29b3e74a4335e" category="list-text">폴더나 파일이 있는 소스 시스템, 볼륨 및 백업 파일을 선택합니다.</block>
-  <block id="ecbf4074e5725b458774aa56add04b4e" category="list-text">NetApp Backup and Recovery 선택한 백업 파일 내에 있는 폴더와 파일을 표시합니다.</block>
-  <block id="f253b383194bb98b3c6ad49105cca717" category="list-text">해당 백업에서 복원할 폴더나 파일을 선택합니다.</block>
-  <block id="af40ce2fd276ed07b36265ad3349591a" category="list-text">폴더나 파일을 복원할 대상 위치(시스템, 볼륨, 폴더)를 선택하고 *복원*을 클릭합니다.</block>
-  <block id="77a738d7362cefd8d0f8a59020626e57" category="list-text">파일이 복구되었습니다.</block>
   <block id="983985e7b5c6473861f79292288f8649" category="inline-image-macro">찾아보기 및 복원을 사용하여 파일 복원 작업을 수행하는 흐름을 보여주는 다이어그램입니다.</block>
   <block id="a86b95296a5e8660c2661d4c0fdd6403" category="paragraph"><block ref="b8616ef8bcb9351aff887ce7eb6910c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7f3b049ad5900157b661c3f11e45c18c" category="section-title">폴더 및 파일 복원</block>
@@ -3857,11 +3841,6 @@
   <block id="3f25e82b6a6ddd7bce8047cf9c5eb6cf" category="list-text">원하는 폴더를 선택할 수 있습니다.</block>
   <block id="8abf03f0afbcb37f53707147d7dc79ef" category="list-text">폴더 위에 마우스를 올려놓고 행의 끝을 클릭하면 하위 폴더로 드릴다운한 다음 폴더를 선택할 수 있습니다.</block>
   <block id="09fa58168e9af9ca1cd785d08f1c7401" category="list-text">소스 폴더/파일이 있던 위치와 동일한 대상 시스템 및 볼륨을 선택한 경우, *소스 폴더 경로 유지 관리*를 선택하면 해당 폴더 또는 파일을 소스 구조에 있던 폴더로 복원할 수 있습니다.  모든 동일한 폴더와 하위 폴더가 이미 존재해야 하며, 폴더는 생성되지 않습니다.  파일을 원래 위치로 복원할 때 원본 파일을 덮어쓸지 아니면 새 파일을 만들지 선택할 수 있습니다.</block>
-  <block id="8ba7d24c75d9a4c060c33cf7a127b666" category="section-title">검색 및 복원을 사용하여 ONTAP 데이터 복원</block>
-  <block id="4647e43883c439381a72ddb443f378a3" category="paragraph">검색 및 복원을 사용하여 ONTAP 백업 파일에서 볼륨, 폴더 또는 파일을 복원할 수 있습니다.  검색 및 복원 기능을 사용하면 모든 백업에서 특정 볼륨, 폴더 또는 파일을 검색한 다음 복원을 수행할 수 있습니다.  정확한 시스템 이름, 볼륨 이름 또는 파일 이름을 알 필요는 없습니다. 검색 기능은 모든 볼륨 백업 파일을 검색합니다.</block>
-  <block id="852fc25af352236327df0d0cfcc56af6" category="paragraph">백업 파일에서 _전체 볼륨_을 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새_ 볼륨을 만듭니다.  원본 시스템의 볼륨으로 데이터를 복원하거나, 소스 시스템과 동일한 클라우드 계정에 있는 다른 시스템이나 온프레미스 ONTAP 시스템에 복원할 수 있습니다.</block>
-  <block id="1c207467db02af6d5369de8a352a5deb" category="paragraph">_폴더나 파일_을 원래 볼륨 위치, 동일한 시스템의 다른 볼륨, 동일한 클라우드 계정을 사용하는 다른 시스템 또는 온프레미스 ONTAP 시스템의 볼륨으로 복원할 수 있습니다.</block>
-  <block id="20f2d0bb5e696b331efc736ffadbb3f3" category="paragraph">복원하려는 볼륨의 백업 파일이 보관 저장소( ONTAP 9.10.1부터 사용 가능)에 있는 경우 복원 작업에 더 오랜 시간이 걸리고 추가 비용이 발생합니다.  볼륨 복원의 경우 대상 클러스터에서 ONTAP 9.10.1 이상, 파일 복원의 경우 9.11.1, Google Archive 및 StorageGRID 의 경우 9.12.1, 폴더 복원의 경우 9.13.1이 실행되어야 합니다.</block>
   <block id="123d4cc43e1a5345167ea23371a1a2c3" category="list-text">개체 스토리지의 백업 파일에 DataLock 및 랜섬웨어 보호 기능이 구성된 경우, ONTAP 버전이 9.13.1 이상인 경우에만 폴더 수준 복원이 지원됩니다.  이전 버전의 ONTAP 사용하는 경우 백업 파일에서 전체 볼륨을 복원한 다음 필요한 폴더와 파일에 액세스할 수 있습니다.</block>
   <block id="151be02e2bd1749a3dd2015c36005736" category="list-text">개체 스토리지의 백업 파일이 보관 스토리지에 있는 경우, ONTAP 버전이 9.13.1 이상인 경우에만 폴더 수준 복원이 지원됩니다.  이전 버전의 ONTAP 사용하는 경우 보관되지 않은 최신 백업 파일에서 폴더를 복원하거나 보관된 백업에서 전체 볼륨을 복원한 다음 필요한 폴더와 파일에 액세스할 수 있습니다.</block>
   <block id="3ddfa13cbce20cc68cd19aca6f181eb0" category="list-text">Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복원하는 경우 "높음" 복원 우선 순위는 지원되지 않습니다.</block>
@@ -3904,29 +3883,9 @@
   <block id="35823b9a43e6a86ef9fc8613d01ca7e0" category="list-text">볼륨, 폴더 또는 파일이 복원됩니다.</block>
   <block id="03a6f07a65b68a9b91d1456b096d425e" category="inline-image-macro">검색 및 복원을 사용하여 볼륨, 폴더 또는 파일 복원 작업을 수행하는 흐름을 보여주는 다이어그램입니다.</block>
   <block id="326eb26933ce22b49d0c6ddf7a6e6180" category="paragraph"><block ref="1d155a4bab8461674fe4d884066d77ce" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2a88d3ad33e6ade48c9940511206948e" category="paragraph">보시다시피, 실제로 일부 이름만 알면 NetApp Backup and Recovery 검색 결과와 일치하는 모든 백업 파일을 검색합니다.</block>
   <block id="5b9c355299c911b3f66ca50a1acb17d6" category="section-title">각 시스템에 대해 색인된 카탈로그를 활성화합니다.</block>
   <block id="f5b73dece12edcdf156fa7e3afdcb5ac" category="paragraph">검색 및 복원을 사용하려면 먼저 볼륨이나 파일을 복원할 각 소스 시스템에서 "인덱싱"을 활성화해야 합니다.  이를 통해 색인 카탈로그는 모든 볼륨과 모든 백업 파일을 추적하여 검색을 매우 빠르고 효율적으로 수행할 수 있습니다.</block>
   <block id="ba56376909400e0d6a0546d3b85498ef" category="paragraph">색인 카탈로그는 시스템의 모든 볼륨과 백업 파일에 대한 메타데이터를 저장하는 데이터베이스입니다.  이는 검색 및 복원 기능에서 복원하려는 데이터가 포함된 백업 파일을 빠르게 찾는 데 사용됩니다.</block>
-  <block id="ace26ef20d7de77728de7522bd26d7de" category="paragraph-title">색인된 카탈로그 v2 기능</block>
-  <block id="eb3e11343b7aaea59c83d36c6e8c8591" category="paragraph">2025년 2월에 출시되고 2025년 6월에 업데이트된 색인 카탈로그 v2에는 카탈로그를 더욱 효율적이고 사용하기 쉽게 만드는 기능이 포함되어 있습니다.  이 버전은 성능이 크게 향상되었으며 모든 신규 고객에게 기본적으로 제공됩니다.</block>
-  <block id="e45e80a3aa32c47a9d6ef311dd8f2980" category="paragraph">v2에 대한 다음 고려 사항을 검토하세요.</block>
-  <block id="b98d519952606f96dcc615efa4f4e85c" category="list-text">색인 카탈로그 v2는 미리보기 모드로 제공됩니다.</block>
-  <block id="951398abbe6e1c3079efe911a6951621" category="list-text">기존 고객이시고 Catalog v2를 사용하려면 환경을 완전히 다시 인덱싱해야 합니다.</block>
-  <block id="eb720e0effbb1828841ea62695a758b9" category="list-text">카탈로그 v2는 스냅샷 레이블이 있는 스냅샷만 인덱싱합니다.</block>
-  <block id="0823f8728ac8dd7f06c41db39f3c9e79" category="list-text">NetApp Backup and Recovery "시간별" SnapMirror 레이블이 있는 스냅샷을 인덱싱하지 않습니다.  "매시간" SnapMirror 레이블로 스냅샷을 인덱싱하려면 v2가 미리 보기 모드에 있는 동안 수동으로 활성화해야 합니다.</block>
-  <block id="7d130cb45fabc3f14e6b9b7f4708d18d" category="list-text">NetApp Backup and Recovery 카탈로그 v2를 통해서만 NetApp Backup and Recovery 로 보호되는 시스템과 관련된 볼륨과 스냅샷을 인덱싱합니다.  콘솔 플랫폼에서 발견된 다른 시스템은 인덱싱되지 않습니다.</block>
-  <block id="d018a9ab185158e1903377238af640ce" category="list-text">Catalog v2를 사용한 데이터 인덱싱은 온프레미스 환경과 Amazon Web Services, Microsoft Azure, Google Cloud Platform(GCP) 환경에서 수행됩니다.</block>
-  <block id="cba8da890b429c54fa89c60426136832" category="paragraph">Indexed Catalog v2는 다음을 지원합니다.</block>
-  <block id="d0ddbbe5ee1059ccc8adc742a7b4fc17" category="paragraph-title">시스템에 대한 색인 카탈로그 활성화</block>
-  <block id="9f0efd5842b284741e756914a3653c06" category="paragraph">Indexed Catalog v2를 사용하면 서비스에서 별도의 버킷을 제공하지 않습니다.  대신 AWS, Azure, Google Cloud Platform, StorageGRID 또는 ONTAP S3에 저장된 백업의 경우 서비스는 콘솔 에이전트 또는 클라우드 공급자 환경에서 공간을 프로비저닝합니다.</block>
-  <block id="13873715cccde14b864681e744f0f6e5" category="paragraph">v2 릴리스 이전에 색인된 카탈로그를 활성화한 경우 시스템에서 다음 현상이 발생합니다.</block>
-  <block id="1bf27db2b6cddc0bbfeb50bd92d954d2" category="inline-link">Amazon Athena 대화형 쿼리 서비스</block>
-  <block id="304514e0e009199a95060650dbf9337e" category="inline-link">AWS Glue 서버리스 데이터 통합 서비스</block>
-  <block id="7f55f1ead15a67b08eea9e732f6ed59d" category="list-text">AWS에 저장된 백업의 경우 새 S3 버킷을 프로비저닝하고<block ref="d5a117e0ffd0e43cc6657792905f20d6" category="inline-link-rx"></block> 그리고<block ref="101f211ea2a04b6a9a7d1de9342390c3" category="inline-link-rx"></block> .</block>
-  <block id="1a57137c00ac13558ef22f60c946d8b3" category="list-text">Azure에 저장된 백업의 경우 Azure Synapse 작업 영역과 작업 영역 데이터를 저장할 컨테이너로 Data Lake 파일 시스템을 프로비저닝합니다.</block>
-  <block id="b3cf2a0723236b8965edb17a6adc8bf5" category="list-text">Google Cloud에 저장된 백업의 경우 새 버킷을 프로비저닝하고<block ref="7c8e47e4f5e61b3b1d7f7769baa8100f" category="inline-link-rx"></block> 계정/프로젝트 수준에서 제공됩니다.</block>
-  <block id="5452e61fa37cd56c55cfda6a5bbda2d3" category="list-text">StorageGRID 또는 ONTAP S3에 저장된 백업의 경우 콘솔 에이전트 또는 클라우드 공급자 환경에서 공간을 프로비저닝합니다.</block>
   <block id="b72b787d86099aed222777bb2de8b6b5" category="paragraph">시스템에서 인덱싱이 이미 활성화된 경우 다음 섹션으로 이동하여 데이터를 복원하세요.</block>
   <block id="851644a4a48fea1ac5cc79f5c9d8277e" category="list-title">시스템에 대한 인덱싱을 활성화하는 단계:</block>
   <block id="e539a0c2cd27f449c2afc370c19cfb8a" category="list-text">시스템이 인덱싱되지 않은 경우, 복원 대시보드의 _검색 및 복원_에서 *시스템 인덱싱 사용*을 선택합니다.</block>
@@ -4652,9 +4611,7 @@
   <block id="e527fef252b77845c6d10efb41d3077b" category="list-text">Azure에서 NetApp Console Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹이나 기존 리소스 그룹을 사용합니다.<block ref="a7068b8d2b60241ce77a1051f3a66ed5" category="inline-link-rx"></block> 기본적으로.</block>
   <block id="ec0d6793cc0295c832eb8da5d335a0c2" category="paragraph">또한 DataLock과 관련된 비용에 대한 견적은 다음을 방문하여 얻을 수 있습니다.<block ref="b1f8c55788f886bad3d3eaf7350ac38f" category="inline-link-rx"></block> .</block>
   <block id="4bcdbd17280f1741e2f9e78f6f376421" category="paragraph"><block ref="4bcdbd17280f1741e2f9e78f6f376421" category="inline-link-rx"></block></block>
-  <block id="7eb5606462668a7d8775b600838f4f32" category="admonition">복원하려는 백업 파일이 보관 클라우드 스토리지( ONTAP 9.10.1부터)에 있는 경우 복원 작업에 시간이 더 오래 걸리고 비용이 발생합니다.  대상 클러스터는 볼륨 복원의 경우 ONTAP 9.10.1 이상, 파일 복원의 경우 9.11.1, Google Archive 및 StorageGRID 의 경우 9.12.1, 폴더 복원의 경우 9.13.1을 실행해야 합니다.</block>
   <block id="5b386dd69a6743085be6c1e524866fb5" category="paragraph">여러 파일을 선택하면 동일한 대상 볼륨에 복원됩니다.  파일을 다른 볼륨으로 복원하려면 프로세스를 여러 번 실행하세요.</block>
-  <block id="b46b886ddef2fe81123875f2839d0892" category="list-text">볼륨 백업에서 폴더나 파일을 복원하려면 *복원* 메뉴를 선택한 다음 _찾아보기 및 복원_에서 *파일 또는 폴더 복원*을 선택합니다.</block>
   <block id="22d1aa2ecc719d7521d0a8859fe171f9" category="paragraph">볼륨을 복원하려면 소스 시스템 이름, 스토리지 VM, 볼륨 이름 및 백업 파일 날짜가 필요합니다.</block>
   <block id="0e9332d24e8223d33f0f13c12dc28e78" category="list-text">복원 대시보드로 돌아가서 복원 작업의 진행 상황을 검토하려면 *복원*을 선택하세요.</block>
   <block id="dc48f529dae728780c55fde51597adee" category="paragraph">당신이 가지고 후<block ref="d2ec4e5679d82dbce801a1d23c311912" category="inline-xref-macro-rx"></block> 검색 및 복원을 사용하여 볼륨, 폴더 및 파일을 복원할 수 있습니다. 이를 통해 광범위한 필터를 사용하여 모든 백업 파일에서 복원하려는 정확한 파일이나 볼륨을 찾을 수 있습니다.</block>
@@ -4749,13 +4706,10 @@
   <block id="30e07a9dd02dd98f372bd162ec8456ef" category="paragraph">시스템에 대해 NetApp Backup and Recovery 활성화하면 처음에 선택한 모든 볼륨이 선택한 정책을 사용하여 백업됩니다. 스냅샷, 복제된 볼륨, 백업 파일에 대해 별도의 정책을 선택할 수 있습니다. 서로 다른 복구 지점 목표(RPO)를 가진 특정 볼륨에 서로 다른 백업 정책을 할당하려는 경우 해당 클러스터에 대한 추가 정책을 만들고 NetApp Backup and Recovery 활성화된 후 해당 정책을 다른 볼륨에 할당할 수 있습니다.</block>
   <block id="fa3dd3bcafecb630044b7d1eddb7cd43" category="admonition">볼륨에 적용된 스냅샷 정책에는 복제 정책과 개체 정책에 사용하는 레이블 중 하나가 있어야 합니다. 일치하는 라벨이 발견되지 않으면 백업 파일이 생성되지 않습니다. 예를 들어, "주간" 복제 볼륨과 백업 파일을 생성하려면 "주간" 스냅샷을 생성하는 스냅샷 정책을 사용해야 합니다.</block>
   <block id="9e813756b5af6bc196c66209061d9d1a" category="paragraph">예약된 랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다. 검사 빈도의 기본 설정은 7일입니다. 스캔은 최신 스냅샷에서만 수행됩니다. 예약된 검사는 비용을 절감하기 위해 비활성화할 수 있습니다. 고급 설정 페이지의 옵션을 사용하면 최신 스냅샷에 대한 예약된 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다. 이 기능을 활성화하면 기본적으로 매주 검사가 수행됩니다. 일정을 며칠이나 몇 주로 변경하거나 비활성화하여 비용을 절감할 수 있습니다.</block>
-  <block id="c379b9e8581a6fd59a6755037f41a617" category="paragraph">ONTAP 볼륨 데이터의 백업은 백업을 생성한 위치(스냅샷, 복제된 볼륨, 개체 스토리지에 저장된 백업)에서 사용할 수 있습니다. 이러한 백업 위치 중 하나에서 특정 시점의 데이터를 복원할 수 있습니다. NetApp Backup and Recovery 사용하면 백업 파일에서 전체 ONTAP 볼륨을 복원할 수 있으며, 몇 개의 파일만 복원해야 하는 경우 폴더나 개별 파일을 복원할 수 있습니다.</block>
   <block id="02c75a95538b43e9e819f0d1b0cc19f2" category="list-text">스냅샷 -&gt; 복원된 볼륨</block>
-  <block id="2630c5e201ef46189b621a683ffbc8dc" category="paragraph">복원하기 전에 소스 볼륨 이름, 소스 시스템 및 SVM, 백업 파일 날짜를 기록해 두세요. 스냅샷, 복제된 볼륨 또는 개체 스토리지에 저장된 백업에서 ONTAP 데이터를 복원할 수 있습니다.</block>
   <block id="68601916ccf016a3cbb9b91a847005f5" category="paragraph">보조 시스템(복제된 볼륨) 또는 개체 스토리지(백업 파일)에 있는 백업 파일에서 ONTAP 데이터를 다음 시스템으로 복원할 수 있습니다. 스냅샷은 소스 시스템에 저장되며 동일한 시스템으로만 복원할 수 있습니다.</block>
   <block id="2b3e9f7492129e1cad66eb9ef0df47d2" category="paragraph">*위치* 열은 백업 파일(스냅샷)이 *로컬*(소스 시스템의 스냅샷), *보조*(보조 ONTAP 시스템의 복제된 볼륨), *개체 스토리지*(개체 스토리지의 백업 파일)인지 여부를 보여줍니다. 복원할 파일을 선택하세요.</block>
   <block id="8ba8feef9dc91a81337c3e1c3f636d2e" category="admonition">지금은 개체 스토리지의 백업 파일에서만 폴더나 개별 파일을 복원할 수 있습니다. 현재 로컬 스냅샷이나 보조 시스템(복제된 볼륨)에 있는 백업 파일에서 파일과 폴더를 복원하는 것은 지원되지 않습니다.</block>
-  <block id="0c33ea8397b0b32c84a3332e9860b200" category="paragraph">검색 작업은 ONTAP 볼륨에 존재하는 모든 로컬 스냅샷, 보조 스토리지 시스템에 있는 모든 복제된 볼륨, 개체 스토리지에 있는 모든 백업 파일을 살펴봅니다.  로컬 스냅샷이나 복제된 볼륨에서 데이터를 복원하는 것이 개체 스토리지의 백업 파일에서 복원하는 것보다 빠르고 비용이 적게 들 수 있으므로, 다른 위치에서 데이터를 복원하는 것이 좋습니다.</block>
   <block id="0b7639e600f1d3ff92ed788a9be2c0dd" category="list-text">SVM에서 SnapDiff RPC 서버를 활성화해야 합니다. 시스템에서 인덱싱을 활성화하면 콘솔에서 자동으로 이 작업이 수행됩니다. (SnapDiff는 스냅샷 간의 파일 및 디렉토리 차이점을 빠르게 식별하는 기술입니다.)</block>
   <block id="dff115c532ece3121746427a98f68318" category="list-text">_필터 기준_ 영역에서 필터 기준을 선택합니다. 예를 들어, 데이터가 있는 시스템과 파일 형식(예: .JPEG 파일)을 선택할 수 있습니다. 또는 개체 스토리지에서 사용 가능한 스냅샷이나 백업 파일 내에서만 결과를 검색하려는 경우 백업 위치 유형을 선택할 수 있습니다.</block>
   <block id="4fbc8584021c60a153dbf213f698df58" category="paragraph">검색 결과에는 검색 대상 파일이 포함된 로컬 볼륨 스냅샷과 원격 복제 볼륨이 식별됩니다.  클라우드 백업 파일, 스냅샷 또는 복제된 볼륨에서 복원하도록 선택할 수 있습니다.</block>
@@ -4792,4 +4746,37 @@
   <block id="36c0d00755a4d8daae367144e5daca38" category="list-text">관리자 도메인에 속하지 않은 사용자가 Hyper-V VM을 보호하는 경우 사용자에게 다음 권한이 있는지 확인하세요.</block>
   <block id="57d2171dbc8d8d7a864a60de1ab4656c" category="list-text">사용자가 로컬 관리자 그룹의 구성원인지 확인하세요.</block>
   <block id="27bc296e867cae2ef33b5cac51392cb2" category="list-text">사용자가 "서비스로 로그온" 로컬 보안 정책에 속해 있는지 확인하세요.</block>
+  <block id="6d397139779cf4483cf1c4693e7f6cfc" category="paragraph">자체 버킷을 생성하는 경우 버킷 이름으로 "netapp-backup"을 사용해야 합니다. 사용자 정의 이름을 사용해야 하는 경우 다음을 편집하세요.<block ref="36f2cf0d90ddea374df0d9a8b6aa6300" prefix=" " category="inline-code"></block> 기존 CVO에 대한 IAMRole을 추가하고 다음 JSON 블록을 S3 권한에 추가합니다.<block ref="2af6fd9ec72aee193ee7ffe09638e08f" prefix=" " category="inline-code"></block> 정렬. 포함해야 합니다<block ref="87307b2ef4c880d061c68a6a4277d9a9" prefix=" " category="inline-code"></block> 그리고 버킷과 연관되어야 하는 모든 필수 권한을 할당합니다.</block>
+  <block id="3f05712ac311679f5293cdeca4b95c4a" category="summary">NetApp Backup and Recovery 사용하여 찾아보기 및 복원 기능을 사용하여 ONTAP 데이터를 복원하세요.</block>
+  <block id="a9069e9a58042b9bc7056398756845ee" category="paragraph">NetApp Backup and Recovery 사용하여 찾아보기 및 복원 기능을 사용하여 ONTAP 데이터를 복원하세요. 복원하기 전에 소스 볼륨 이름, 소스 시스템 및 SVM, 백업 파일 날짜를 기록해 두세요. 스냅샷, 복제된 볼륨 또는 개체 스토리지에 저장된 백업에서 ONTAP 데이터를 복원할 수 있습니다.</block>
+  <block id="05347845672273f3cffd76e4077cdb51" category="paragraph">복원 기능은 ONTAP 버전에 따라 다릅니다.</block>
+  <block id="a03a5900281bf25c93cb811180bba191" category="list-text">*폴더:* ONTAP 9.13.0 이상을 사용하면 모든 파일과 하위 폴더가 포함된 폴더를 복원할 수 있습니다. 이전 버전에서는 폴더 내의 파일만 복원할 수 있습니다.</block>
+  <block id="781858cefae9b60efaca9b16a3878de8" category="list-text">*보관 저장소:* 보관 저장소( ONTAP 9.10.1 이상에서 사용 가능)에서 복원하는 경우 속도가 느리고 추가 비용이 발생할 수 있습니다.</block>
+  <block id="39ec579fcc2df5001dd753b681b0b968" category="list-text">*목적지 클러스터 요구 사항:*</block>
+  <block id="40a94f15cd6f305f18348e67a7079bb0" category="list-text">볼륨 복원: ONTAP 9.10.1 이상</block>
+  <block id="093fffba6528268e08d16655a00408c0" category="list-text">파일 복원: ONTAP 9.11.1 이상</block>
+  <block id="e2a690f8f0185ec41067ba5b3b30a529" category="list-text">Google Archive 및 StorageGRID: ONTAP 9.12.1 이상</block>
+  <block id="8ca6fb4bb5529d6adfde15cbdb57e634" category="list-text">폴더 복원: ONTAP 9.13.1 이상</block>
+  <block id="be0215992cfd3511d910e845d0356599" category="summary">검색 및 복원을 사용하면 ONTAP 백업 파일에서 볼륨, 폴더 또는 파일을 복구할 수 있습니다.</block>
+  <block id="7e1d8ccd1392087c63490394612a8c15" category="doc">검색 및 복원을 사용하여 ONTAP 백업에서 복원</block>
+  <block id="e7831cd0e41fd9e35bee516b706fabdd" category="paragraph">검색 및 복원을 사용하면 ONTAP 백업 파일에서 볼륨, 폴더 또는 파일을 복구할 수 있습니다.  검색 및 복원을 사용하면 정확한 시스템, 볼륨 또는 파일 이름이 없어도 모든 백업(로컬 스냅샷, 복제된 볼륨, 개체 스토리지 포함)을 검색할 수 있습니다.</block>
+  <block id="ac7a11fed1e42e0aabdca6e9d3df239d" category="paragraph">로컬 스냅샷이나 복제된 볼륨에서 복원하는 것이 일반적으로 개체 스토리지에서 복원하는 것보다 빠르고 비용이 저렴합니다.</block>
+  <block id="84c030a8c3b510739684721f83cf4004" category="paragraph">전체 볼륨을 복원할 때 NetApp Backup and Recovery 백업 데이터를 사용하여 새 볼륨을 만듭니다.  원래 시스템, 동일한 클라우드 계정 내의 다른 시스템 또는 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.  폴더와 파일은 원래 위치, 동일한 시스템의 다른 볼륨, 동일한 클라우드 계정의 다른 시스템 또는 온프레미스 시스템으로 복원할 수 있습니다.</block>
+  <block id="1a7f268901b8ff64a74ae8d0296ce039" category="section-title">검색 및 복원 필수 조건</block>
+  <block id="baa8edebfac5781913655070b19655c8" category="inline-xref">카탈로그를 다시 인덱싱하려면 볼륨을 마운트하세요.</block>
+  <block id="dca45b6ea4888774fa36a0cd7a4b4e66" category="list-text">NetApp 검색 및 복원의 복원력을 높이기 위해 콘솔 에이전트에 별도의 볼륨을 마운트할 것을 권장합니다. 지침은 다음을 참조하세요.<block ref="dc95f46ff7385c77f28ead631c4ffc28" category="inline-xref-macro-rx"></block> .</block>
+  <block id="cafaac51a733b2507a0934e42ab1b5de" category="section-title">레거시 검색 및 복원 필수 구성 요소(인덱싱된 카탈로그 v1 사용)</block>
+  <block id="d3373e3f2429c68c0bce2afd2ff81bea" category="paragraph">일부 이름만 알면 NetApp Backup and Recovery 검색 결과와 일치하는 모든 백업 파일을 검색합니다.</block>
+  <block id="a6e55f722772b5f4e23c95969086688d" category="paragraph-title">색인된 카탈로그 기능</block>
+  <block id="d828defb287ef7f6ab63c8e2aa939f7c" category="paragraph">NetApp Backup and Recovery 인덱싱된 카탈로그를 사용할 때 별도의 버킷을 프로비저닝하지 않습니다. 대신 AWS, Azure, Google Cloud Platform, StorageGRID 또는 ONTAP S3에 저장된 백업의 경우 서비스는 콘솔 에이전트 또는 클라우드 공급자 환경에서 공간을 프로비저닝합니다.</block>
+  <block id="489e35e793accc52ca3476061b2e9092" category="paragraph">색인 카탈로그는 다음을 지원합니다.</block>
+  <block id="bb5d5c858e67c64d78268e97ef8e801d" category="paragraph">ONTAP 볼륨 데이터의 백업은 복제된 볼륨이나 개체 스토리지에 스냅샷으로 저장됩니다.  이러한 위치 중 어느 곳에서든 특정 시점의 데이터를 복원할 수 있습니다.  NetApp Backup and Recovery 사용하면 필요에 따라 전체 볼륨, 폴더 또는 개별 파일을 복원할 수 있습니다.</block>
+  <block id="e59ea42c20b1c148846a0526ff44c47a" category="paragraph">프로덕션 시스템에 데이터를 복원하려면 유효한 NetApp Backup and Recovery 라이선스가 필요합니다.</block>
+  <block id="d3d7e7b22ee5c56584493699998d9117" category="paragraph">복원 대시보드를 사용하여 볼륨, 폴더 및 파일 복원 작업을 수행합니다. 복원 대시보드에 액세스하려면 콘솔 메뉴에서 *백업 및 복구*를 선택한 다음 *복원* 탭을 선택합니다.  또한 선택할 수도 있습니다<block ref="d1d86609a9d4211430bd00b714af288b" category="inline-image-macro-rx" type="image"></block> &gt; 서비스 패널의 백업 및 복구 서비스에서 *복원 대시보드 보기*</block>
+  <block id="25578ef4f1298f0ec4e133f88caee125" category="paragraph">두 가지 복원 방법을 사용하기 전에 리소스 요구 사항을 충족하도록 환경을 구성하세요.  자세한 내용은 다음 섹션을 참조하세요.</block>
+  <block id="a8c20c3f2c501cda4b216ab5d3a59157" category="list-text"><block ref="f9cc88ea2514d9b9242d31770690af88" category="inline-link-macro-rx"></block></block>
+  <block id="5e763606a0239729deac991a560d57c0" category="list-text"><block ref="34e43cfade3963995cc048abf44b0989" category="inline-link-macro-rx"></block></block>
+  <block id="b72cbffce68718636e4f9c2f1c2a8173" category="list-text"><block ref="f0a1a1822bca6dd563c941cbc831d447" category="inline-link-macro-rx"></block></block>
+  <block id="cee41b55e417d2c681bd345802b719fd" category="sidebar">복원 개요</block>
+  <block id="a49488740a7ad2d76917598dae6b3fbb" category="sidebar">Browse &amp; Restore를 사용하여 ONTAP 백업에서 복원</block>
 </blocks>

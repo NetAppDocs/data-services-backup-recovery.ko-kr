@@ -293,12 +293,40 @@ NOTE: AWS 중국 리전에서 백업을 생성할 때 IAM 정책의 모든 _Reso
 
 link:prev-ontap-protect-journey.html["나만의 버킷을 만드는 방법에 대해 자세히 알아보세요"^].
 
-자체 버킷을 생성하는 경우 버킷 이름으로 "netapp-backup"을 사용해야 합니다.  사용자 정의 이름을 사용해야 하는 경우 다음을 편집하세요. `ontapcloud-instance-policy-netapp-backup` 기존 CVO에 대한 IAMRole을 설정하고 다음 목록을 S3 권한에 추가합니다.  포함해야 합니다 `"Resource": "arn:aws:s3:::*"` 그리고 버킷과 연관되어야 하는 모든 필수 권한을 할당합니다.
+자체 버킷을 생성하는 경우 버킷 이름으로 "netapp-backup"을 사용해야 합니다. 사용자 정의 이름을 사용해야 하는 경우 다음을 편집하세요. `ontapcloud-instance-policy-netapp-backup` 기존 CVO에 대한 IAMRole을 추가하고 다음 JSON 블록을 S3 권한에 추가합니다. `Statement` 정렬. 포함해야 합니다 `"Resource": "arn:aws:s3:::*"` 그리고 버킷과 연관되어야 하는 모든 필수 권한을 할당합니다.
 
 [%collapsible]
 ====
-"동작": [ "S3:ListBucket" "S3:GetBucketLocation" ] "리소스": "arn:aws:s3:::*", "효과": "허용" }, { "동작": [ "S3:GetObject", "S3:PutObject", "S3:DeleteObject", "S3:ListAllMyBuckets", "S3:PutObjectTagging", "S3:GetObjectTagging", "S3:RestoreObject", "S3:GetBucketObjectLockConfiguration", "S3:GetObjectRetention", "S3:PutBucketObjectLockConfiguration", "S3:PutObjectRetention" ] "리소스": "arn:aws:s3:::*",
-
+[source, json]
+----
+[
+  {
+    "Effect": "Allow",
+    "Action": [
+      "s3:ListBucket",
+      "s3:GetBucketLocation"
+    ],
+    "Resource": "arn:aws:s3:::*"
+  },
+  {
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetObject",
+      "s3:PutObject",
+      "s3:DeleteObject",
+      "s3:ListAllMyBuckets",
+      "s3:PutObjectTagging",
+      "s3:GetObjectTagging",
+      "s3:RestoreObject",
+      "s3:GetBucketObjectLockConfiguration",
+      "s3:GetObjectRetention",
+      "s3:PutBucketObjectLockConfiguration",
+      "s3:PutObjectRetention"
+    ],
+    "Resource": "arn:aws:s3:::*"
+  }
+]
+----
 ====
 
 
@@ -332,9 +360,9 @@ https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-aws-blu
 . AWS 콘솔에서 엔드포인트의 DNS 이름을 얻습니다.
 . VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이것을 이렇게 합니다 https://docs.netapp.com/us-en/console-setup-admin/task-maintain-connectors.html#connect-to-the-linux-vm["콘솔 에이전트를 호스팅하는 VM에 로그인"^] 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 "bucket"으로 바꿔서 처음에 추가합니다.
 +
-[source, text]
+[source, console]
 ----
-[ec2-user@ip-10-160-4-68 ~]$ openssl s_client -connect bucket.vpce-0ff5c15df7e00fbab-yxs7lt8v.s3.us-west-2.vpce.amazonaws.com:443 -showcerts
+openssl s_client -connect bucket.vpce-0ff5c15df7e00fbab-yxs7lt8v.s3.us-west-2.vpce.amazonaws.com:443 -showcerts
 ----
 . 이 명령의 출력에서 S3 인증서에 대한 데이터를 복사합니다(BEGIN / END CERTIFICATE 태그를 포함하여 그 사이의 모든 데이터).
 +
@@ -352,7 +380,7 @@ GqvbOz/oO2NWLLFCqI+xmkLcMiPrZy+/6Af+HH2mLCM4EsI2b+IpBmPkriWnnxo=
 ----
 . ONTAP 클러스터 CLI에 로그인하고 다음 명령을 사용하여 복사한 인증서를 적용합니다(사용자의 스토리지 VM 이름으로 대체).
 +
-[source, text]
+[source, console]
 ----
 cluster1::> security certificate install -vserver cluster1 -type server-ca
 Please enter Certificate: Press <Enter> when done

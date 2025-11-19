@@ -206,7 +206,7 @@ ONTAP S3에 대한 백업을 설정하면 백업 마법사가 사용자 계정�
 
 이러한 액세스 키는 다음 권한이 있는 사용자와 연결되어야 합니다.
 
-[source, console]
+[source, text]
 ----
 "s3:ListAllMyBuckets",
 "s3:ListBucket",

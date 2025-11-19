@@ -104,7 +104,13 @@ sidebar:
       - title: ONTAP 백업 관리
         url: "/prev-ontap-backup-manage.html"
       - title: ONTAP 백업에서 복원
-        url: "/prev-ontap-restore.html"
+        entries:
+        - title: 복원 개요
+          url: "/prev-ontap-restore.html"
+        - title: 검색 및 복원을 사용하여 ONTAP 백업에서 복원
+          url: "/prev-ontap-restore-search.html"
+        - title: Browse & Restore를 사용하여 ONTAP 백업에서 복원
+          url: "/prev-ontap-restore-browse.html"
     - title: Microsoft SQL Server 워크로드 보호
       entries:
       - title: Microsoft SQL Server 워크로드 보호 개요
