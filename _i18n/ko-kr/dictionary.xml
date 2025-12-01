@@ -4777,4 +4777,5 @@
   <block id="4db9a239be0f58f8e4742665ad2371e2" category="paragraph">검색 및 복원을 활성화하기 전에 환경이 다음 요구 사항을 충족하는지 확인하세요.</block>
   <block id="d0320c3b870d5944eb8c31ee83638872" category="paragraph">레거시 인덱싱을 사용할 때 검색 및 복원에 대한 요구 사항은 다음과 같습니다.</block>
   <block id="9078cbf758e0949f0dca426e9aa6c0ce" category="list-text">NetApp NFS 볼륨 사용</block>
+  <block id="459af9b852bd375bac17fb30c8c1b979" category="list-text">NetApp Backup &amp; Recovery는 클라우드 백업 기능을 유지하면서 활성 클라우드 백업 관계가 있는 FlexVol volume FlexGroup 볼륨으로 변환하는 것을 지원하지 않습니다.</block>
 </blocks>

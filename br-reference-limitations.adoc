@@ -46,6 +46,7 @@ FlexVol 볼륨에는 제한이 없습니다. 시스템의 모든 FlexVol 볼륨�
 
 
 * 온프레미스 ONTAP 시스템에서 복제를 생성할 때 대상 Cloud Volumes ONTAP 시스템의 ONTAP 버전이 9.8, 9.9 또는 9.11인 경우 미러 볼트 정책만 허용됩니다.
+* NetApp Backup & Recovery는 클라우드 백업 기능을 유지하면서 활성 클라우드 백업 관계가 있는 FlexVol volume FlexGroup 볼륨으로 변환하는 것을 지원하지 않습니다.
 
 
 
