@@ -1037,7 +1037,6 @@
   <block id="8dee103972185c1aba0e0c814961a8db" category="list-text">*알림* 섹션:</block>
   <block id="d705348f84095bf9f266942da2cf2b84" category="list-text">*이메일 알림 사용*: 복구 작업에 대한 이메일 알림을 받으려면 이 옵션을 선택하고, 어떤 유형의 알림을 받을지 지정합니다.</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">*복원*을 선택하세요.</block>
-  <block id="aef04a364ab7bd7fcab1346a4084cdaa" category="paragraph">Hyper-V 비공개 미리 보기에서는 사용할 수 없습니다.</block>
   <block id="4c931104d6ff5fdc2a76bdfc6fba4662" category="summary">온프레미스 ONTAP 시스템에서 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 이르기까지 Kubernetes 애플리케이션과 애플리케이션 데이터를 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다.</block>
   <block id="ff1a3fbe6f92249e286b8a93cf5b5d2e" category="doc">Kubernetes 워크로드 관리 개요</block>
   <block id="14cca4b1ac5c46a49fffa25e733381e7" category="paragraph">NetApp Backup and Recovery 에서 Kubernetes 워크로드를 관리하면 Kubernetes 클러스터와 애플리케이션을 한곳에서 검색, 관리 및 보호할 수 있습니다. 쿠버네티스 클러스터에 호스팅된 리소스와 애플리케이션을 관리할 수 있습니다. 또한, 단일 인터페이스를 사용하여 쿠버네티스 워크로드에 대한 보호 정책을 생성하고 연결할 수 있습니다.</block>
@@ -1090,7 +1089,6 @@
   <block id="42b3c9b2282ae6b4644cee5b5995979d" category="summary">NetApp Backup and Recovery 통해 KVM 워크로드를 보호하세요.</block>
   <block id="02055854e5f8d7c0a2161503c5645d5a" category="doc">NetApp Backup and Recovery 사용하여 KVM 가상 머신 복원</block>
   <block id="4ebed5b1ff5b9230bfba78b5f3751082" category="paragraph">다양한 시작 위치에서 가상 머신을 복원할 수 있습니다.</block>
-  <block id="2003d1dd0ff605a8b0183ae69c3823f3" category="paragraph">원래 위치로 데이터를 복원할 수 있지만, 이 Preview 릴리스에서는 대체 위치로 복원하는 기능을 사용할 수 없습니다.</block>
   <block id="c149f6b4ccbdba8011de4b1e3579b42f" category="list-text">원래 위치로 복원</block>
   <block id="25a77bf38583c396d6997e367e9268c8" category="section-title">가상 머신 복원 작동 방식</block>
   <block id="01d60535f98ec4122ee816d29473c760" category="paragraph">가상 머신을 복원하면 다음이 발생합니다.</block>
@@ -1101,7 +1099,6 @@
   <block id="108ce4e259c8e5532d28e1f7b55053e0" category="paragraph">복원 옵션을 사용하여 KVM 가상 머신을 복원합니다. 스냅샷을 이름이나 필터를 사용하여 검색할 수 있습니다.</block>
   <block id="28826b6f1571b9d0354ca0ae481f50c6" category="list-text">이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *KVM*을 선택합니다.</block>
   <block id="066fa262c239f022506c95a1e09ebb65" category="list-text">복원하려는 VM의 이름을 입력하거나 복원하려는 리소스가 있는 VM 호스트 또는 스토리지 풀을 필터링합니다.</block>
-  <block id="7f95c9104d9c5d062c442ee5aade255c" category="paragraph">KVM 미리보기에서는 사용할 수 없습니다.</block>
   <block id="67833cdc3e0f9b5bea226d3734262615" category="summary">NetApp Backup and Recovery 사용하면 애플리케이션 보호 작업 전이나 후에 작업을 수행하기 위해 실행 후크를 관리할 수 있습니다.</block>
   <block id="3d932cbb71cd117a65669b165e078b5b" category="doc">Kubernetes 워크로드에 대한 NetApp Backup and Recovery 실행 후크 템플릿 관리</block>
   <block id="ac84b7596169ab3fb6c24e8a5c85c234" category="inline-link">KubeVirt VM을 사용하여 데이터 보호</block>
@@ -1916,16 +1913,7 @@
   <block id="ba48c3305320f5df1a8db5cbd6fed75a" category="paragraph">다음 지점으로 데이터를 복원할 수 있습니다.</block>
   <block id="600582313b42616fbf96d317e8033ef9" category="paragraph">복원 옵션을 사용하여 VMware 워크로드를 복원합니다. 스냅샷을 이름이나 필터를 사용하여 검색할 수 있습니다.</block>
   <block id="1ca9578c25474d5cfeaa6c44bdbaa9b2" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 복원 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
-  <block id="71032b474c00a68ab57e3f805cdf5d61" category="list-text">이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *가상 머신*을 선택합니다.</block>
   <block id="2aceb93307f82c2d88347faa7eaa4e71" category="list-text">복원하려는 리소스의 이름을 입력하거나 복원하려는 리소스가 있는 vCenter, 데이터 센터 또는 데이터 저장소를 필터링합니다.</block>
-  <block id="3fca73cfa6e5a82be82156106e4db553" category="paragraph">복원 위치 옵션 목록이 나타납니다.</block>
-  <block id="eb58d19c210547f2e0cbe6a7689d6a12" category="list-text">스냅샷을 복원할 복원 위치를 선택하세요.</block>
-  <block id="c318ddc11c1d9b56e2cfda2af9351a42" category="list-text">로컬: 스냅샷을 원래 위치로 복원합니다.</block>
-  <block id="e4e4935a5dbb6b2200b975d599e683e4" category="list-text">보조 저장소: 스냅샷을 보조 저장소 위치로 복원합니다.</block>
-  <block id="33a039fcca21669940ad7ee10455c43d" category="list-text">개체 스토리지: 스냅샷을 개체 스토리지 위치로 복원합니다.</block>
-  <block id="6fa9a019160376f2b85947c9116180fb" category="paragraph">개체 스토리지를 선택하는 경우 복원하기 전에 스냅샷을 다시 스캔할지 여부를 선택하세요.</block>
-  <block id="0bff45ae654663c7b091c0f6dd70d653" category="paragraph">복원 대상 세부 정보 페이지에서 다음 정보를 입력합니다.</block>
-  <block id="c8f730ad9d8597b4dfcdd623d5a511aa" category="paragraph">VMware 미리보기에서는 사용할 수 없습니다.</block>
   <block id="a5315c2927cf2b05876fdd6713fbd713" category="summary">NetApp Backup and Recovery 볼륨, 데이터베이스, 가상 머신, Kubernetes 워크로드를 포함한 모든 ONTAP 워크로드에 대해 효율적이고 안전하며 비용 효율적인 데이터 보호를 제공하는 데이터 서비스입니다.</block>
   <block id="0541ead918a4013aad82336e0654ba53" category="paragraph">백업 및 복구 지원 기능은 모든 ONTAP 시스템에 이미 내장되어 있으므로 추가 하드웨어, 소프트웨어 라이선스 또는 미디어 게이트웨이가 필요하지 않습니다.  이를 통해 백업 작업이 간편하고 비용 효율적이 됩니다.  NetApp 콘솔은 여러 리소스 관리자나 전문 인력이 필요 없이 3-2-1 백업 변형의 전체 스펙트럼을 포함하여 모든 백업 전략의 구현을 간소화합니다.</block>
   <block id="8fa16cd18cf0722e85fe3e62f649f0c8" category="admonition">VMware, KVM, Hyper-V 및 Kubernetes 워크로드를 보호하는 방법에 대한 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.</block>
@@ -4487,9 +4475,6 @@
   <block id="2b2261b532e949e52edc443eb38fcb1c" category="admonition">백업 파일에 접근하려면 클라우드 제공업체에 추가 요금을 지불해야 할 수도 있습니다.</block>
   <block id="d4356e3242caba9699bd9bc147a04798" category="paragraph">복원 페이지(검색 및 복원)에서 필터를 사용하여 스냅샷을 검색하여 리소스를 복원할 수 있습니다. 정확한 이름, 위치 또는 마지막으로 알려진 날짜가 기억나지 않더라도 복원할 수 있습니다.</block>
   <block id="167f8fde1782c144b38a4f581246608e" category="paragraph">보조 저장소를 선택하는 경우 데이터와 로그의 소스 및 대상 위치를 입력합니다.</block>
-  <block id="9908b0e588dc1ce9587bfb1206e3118e" category="paragraph">다음으로, 대상 설정과 복원 전/후 옵션을 선택합니다.</block>
-  <block id="299981ed6b0aaf1c2eed2a8e35151313" category="list-text">*빠른 복원 활성화*: 빠른 복원 작업을 수행하려면 이 옵션을 선택하세요. 복구된 볼륨과 데이터는 즉시 사용할 수 있습니다. 높은 성능이 필요한 볼륨에서는 이 기능을 사용하지 마세요. 빠른 복원 프로세스 중에는 데이터에 대한 액세스가 평소보다 느릴 수 있습니다.</block>
-  <block id="ca9d8ef3573c04098ddeb120eb1f19e5" category="list-text">*이메일 알림 활성화*: 복구 작업에 대한 이메일 알림을 받으려면 선택하고 원하는 알림 유형을 선택하세요.</block>
   <block id="63751d750873479f94855f0a16fc63d8" category="list-text">Hyper-V Windows Server 호스트에 대한 소프트웨어 요구 사항:</block>
   <block id="fd7bb5c3777005321645f38a2d07ea27" category="admonition">복원 작업이 완료되지 않으면 작업 모니터에 "실패"가 표시될 때까지 기다린 후 복원 작업을 다시 시도하세요.</block>
   <block id="df3ee99c8171743d8bd35d65cf62b2ed" category="paragraph">NetApp Backup and Recovery 사용하면 클라우드에서 온프레미스 vCenter Server로 가상 머신 데이터를 복원할 수 있습니다. 백업이 수행된 위치와 정확히 동일한 위치 또는 대체 위치로 가상 머신을 복원할 수 있습니다. 가상 머신이 보관 정책을 사용하여 백업된 경우 보관 복원 우선 순위를 설정할 수 있습니다.</block>
@@ -4778,4 +4763,40 @@
   <block id="d0320c3b870d5944eb8c31ee83638872" category="paragraph">레거시 인덱싱을 사용할 때 검색 및 복원에 대한 요구 사항은 다음과 같습니다.</block>
   <block id="9078cbf758e0949f0dca426e9aa6c0ce" category="list-text">NetApp NFS 볼륨 사용</block>
   <block id="459af9b852bd375bac17fb30c8c1b979" category="list-text">NetApp Backup &amp; Recovery는 클라우드 백업 기능을 유지하면서 활성 클라우드 백업 관계가 있는 FlexVol volume FlexGroup 볼륨으로 변환하는 것을 지원하지 않습니다.</block>
+  <block id="063090df0880212c0ba8eec878096a21" category="doc">VMware 워크로드 미리보기 개선 사항</block>
+  <block id="24936fb650df7af8295e75a3667becef" category="list-text">이제 백업과 스냅샷을 대체 위치로 복원할 수 있습니다. 이 기능은 다양한 VMware vCenter 배포, VMware ESXi 호스트 또는 VMware 데이터 저장소에서 VM 버전을 관리하려는 경우에 유용합니다.</block>
+  <block id="99ee61e75520f174d08caa35e0ad294d" category="list-text">이제 기본 또는 보조 위치에서 특정 VMware 가상 디스크(VMDK 이미지)를 복원하여 VM 데이터 복원을 보다 세부적으로 제어할 수 있습니다.</block>
+  <block id="814957340a966bc73ff87feca2905da9" category="inline-link-macro">NetApp Backup and Recovery 사용하여 VMware 워크로드를 복원하는 방법에 대해 자세히 알아보세요.</block>
+  <block id="8b8a6f71e41f04ff546fb14f0800f38f" category="paragraph"><block ref="9f09945a70747c90951b9e96b5ea16be" category="inline-link-macro-rx"></block>.</block>
+  <block id="7689264f717abcf16a917111f707d7e0" category="paragraph">Hyper-V 워크로드 미리 보기에서는 사용할 수 없습니다.</block>
+  <block id="77f252cb66af8ee7dab8b27bcf3851ca" category="paragraph">KVM 워크로드 미리보기에서는 사용할 수 없습니다.</block>
+  <block id="516f1f530028d7905b72cd1b035c8a73" category="list-text">*원래 위치로 복원*: VM은 원래 위치의 동일한 vCenter 배포, ESXi 호스트 및 데이터 저장소로 복원됩니다. VM과 모든 데이터가 덮어씌워집니다.</block>
+  <block id="d2f574e5e69d11881580660614b89ba3" category="list-text">*대체 위치로 복원*: VM의 복원 대상으로 다른 vCenter, ESXi 호스트 또는 데이터 저장소를 선택할 수 있습니다. 이 기능은 서로 다른 위치와 상태에 있는 동일한 VM의 여러 복사본을 관리하는 데 유용합니다.</block>
+  <block id="fa378eb8651e1bbe815e91c2a4ec5b2b" category="list-text">이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *VMware*를 선택합니다.</block>
+  <block id="b2135f4d6adba994b22c157197d8699b" category="paragraph">검색 기준과 일치하는 가상 머신 목록이 나타납니다.</block>
+  <block id="7e4be521d13fb903d20636d087795bdb" category="list-text">목록에서 복원하려는 VM을 찾은 후 해당 VM에 대한 *가상 머신 복원* 버튼을 선택합니다.</block>
+  <block id="02e027e60aca2a9aa354a74b09718442" category="paragraph">해당 가상 머신에 생성된 스냅샷(복원 지점) 목록이 나타납니다.</block>
+  <block id="a15361d377b43197c1044f0729f9742e" category="list-text">복원하려는 스냅샷의 확인란을 활성화합니다.</block>
+  <block id="4716cc8d1f61fba6b3c321e87aece13d" category="paragraph">스냅샷 위치 옵션이 나타납니다.</block>
+  <block id="f16b36eea83bd45d35d7613cab7f6cf8" category="list-text">스냅샷의 복원 대상을 선택하세요.</block>
+  <block id="086fbde8fbe590f104f5100808b42c0b" category="list-text">*로컬*: 로컬 위치에서 스냅샷을 복원합니다.</block>
+  <block id="3a786499ea5d54fb6bb418032aca3117" category="list-text">*보조*: 원격 저장 위치에서 스냅샷을 복원합니다.</block>
+  <block id="bc9234ce73c565f247a8ae290b842ff6" category="list-text">대상 설정과 복원 전/후 옵션을 선택합니다.</block>
+  <block id="8ed9e5a565b596ef7f9cb364cf2536d7" category="paragraph">원래 위치로 복원할 때 대상 vCenter, ESXi 호스트, 데이터 저장소 또는 VM 이름을 변경할 수 없습니다. 복원 작업으로 원래 VM이 덮어쓰여집니다.</block>
+  <block id="10b0d3ffb47c4e67fc652e3b0f0220d7" category="list-text">*원래 위치* 창을 선택하세요.</block>
+  <block id="1b8d4d654146b4eec3cc22bd8b461dbb" category="list-text">다음 옵션 중에서 선택하세요:</block>
+  <block id="9969fdcd80f8f04232cfe10158190f8c" category="list-text">*사전 복원 옵션* 섹션:</block>
+  <block id="3e4b444bf949d263dd0a42369aeba637" category="list-text">*사전 스크립트*: 복원 작업이 시작되기 전에 사용자 정의 스크립트를 실행하여 추가 작업을 자동화하려면 이 옵션을 활성화합니다. 실행해야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력하세요.</block>
+  <block id="181dff5c613144551ed16703a090b3b5" category="list-text">*복원 후 옵션* 섹션:</block>
+  <block id="81dcec9119b8491a178fac7f1cf17c92" category="list-text">*가상 머신 다시 시작*: 복원 작업이 완료되고 복원 후 스크립트가 적용된 후 가상 머신을 다시 시작하려면 이 옵션을 활성화합니다.</block>
+  <block id="7de4def82cb6f4cb7277085992e1be0a" category="list-text">*추신*: 복원이 완료된 후 사용자 정의 스크립트를 실행하여 추가 작업을 자동화하려면 이 옵션을 활성화합니다. 실행해야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력하세요.</block>
+  <block id="72e03b5a87389f676881b79f8d4170ca" category="paragraph">대체 위치로 복원할 때 대상 vCenter, ESXi 호스트, 데이터 저장소 및 VM 이름을 변경하여 다른 위치 또는 다른 이름으로 VM의 새 복사본을 만들 수 있습니다.</block>
+  <block id="d9a04cc80eb84134a783629255c7bc36" category="list-text">*대체 위치* 창을 선택하세요.</block>
+  <block id="f78868ada341077e1afdf76ea00e0454" category="list-text">*대상 설정* 섹션:</block>
+  <block id="fd6f2a9c82421585e9dfe5f8820c97c0" category="list-text">*vCenter FQDN 또는 IP 주소*: 스냅샷을 복원할 vCenter 서버를 선택합니다.</block>
+  <block id="a239cc572a24441f1bb1a7abc259ccab" category="list-text">*ESXi 호스트*: 스냅샷을 복원할 호스트를 선택합니다.</block>
+  <block id="c2942751152cd0449e1de7861200bde4" category="list-text">*네트워크*: 스냅샷을 복원할 네트워크를 선택하세요.</block>
+  <block id="08c806f7ec865a3481f751e978944e5d" category="list-text">*데이터 저장소*: 스냅샷을 복원할 데이터 저장소의 이름을 입력하세요.</block>
+  <block id="70fd3915e87d44c5f19fc35858b165f8" category="list-text">*가상 머신 이름*: 스냅샷을 복원하려는 VM의 이름을 입력하세요. 이름이 데이터 저장소에 이미 있는 VM과 일치하는 경우 백업 및 복구는 현재 타임스탬프를 추가하여 이름을 고유하게 만듭니다.</block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
 </blocks>
