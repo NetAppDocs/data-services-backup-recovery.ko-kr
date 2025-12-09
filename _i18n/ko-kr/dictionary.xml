@@ -1286,7 +1286,6 @@
   <block id="f12cc055f626f9974e07168ee36fc2b6" category="list-text">NetApp Backup and Recovery 메뉴에서 *모니터링*을 선택합니다.</block>
   <block id="e81a8bad1be4be12a837fcfb49f51617" category="list-text">추가 열(시스템, SVM, 사용자 이름, 작업 부하, 정책 이름, 스냅샷 레이블)을 표시하려면 더하기 기호를 선택합니다.</block>
   <block id="87aa191eff82d3ce3518c07577f209bd" category="section-title">채용공고 목록 검색 및 필터링</block>
-  <block id="9d0747ab797d5b67d7daca67845988b1" category="paragraph">작업 모니터링 페이지에서 정책, 스냅샷 레이블, 작업 유형(보호, 복원, 보존 또는 기타), 보호 유형(로컬 스냅샷, 복제 또는 클라우드 백업) 등의 여러 필터를 사용하여 작업을 필터링할 수 있습니다.</block>
   <block id="7f8ba7d41d11ab3b1061dbce2eeadb52" category="paragraph">기본적으로 작업 모니터링 페이지에는 지난 24시간 동안의 보호 및 복구 작업이 표시됩니다.  기간 필터를 사용하여 기간을 변경할 수 있습니다.</block>
   <block id="a466bc110c2ee16333fcf19f4e7b5dc2" category="list-text">결과를 다르게 정렬하려면 각 열 제목을 선택하여 상태, 시작 시간, 리소스 이름 등을 기준으로 정렬합니다.</block>
   <block id="abfa7a0ebf0068a9c8b2a22cab7ee2b3" category="list-text">특정 일자리를 찾으려면 *고급 검색 및 필터링* 영역을 선택하여 검색 패널을 엽니다.</block>
@@ -1311,16 +1310,13 @@
   <block id="2b0ecb40cc305f7af9fe7f986b5bb2dd" category="list-text">모든 작업에 대한 CSV 파일을 다운로드하려면 다운로드 버튼을 선택하고 다운로드 디렉토리에서 파일을 찾으세요.</block>
   <block id="1dc45daaf063a4c51a123d4f491b6b42" category="list-text">단일 작업에 대한 JSON 파일을 다운로드하려면 작업 메뉴를 선택하세요.<block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 작업에 대해 *JSON 파일 다운로드*를 선택하고 다운로드 디렉토리에서 파일을 찾으세요.</block>
   <block id="f1a15f873b659fefcf2800c9489b580b" category="section-title">보존(백업 수명 주기) 작업 검토</block>
-  <block id="5168f75ce01db43e41309dbb9ba106a7" category="paragraph">"보존" 작업 유형은 NetApp Backup and Recovery 로 보호되는 볼륨에서 시작된 모든 스냅샷 삭제 작업을 캡처합니다.</block>
   <block id="9304f305aa89a02039b5cb4ac930f498" category="list-text">*고급 검색 및 필터링* 영역을 선택하여 검색 패널을 엽니다.</block>
   <block id="67e8772c27eee052c978af0d5760e36a" category="list-text">작업 유형으로 "보존"을 선택하세요.</block>
   <block id="1c3cccbea914c20304f63319b99fb585" category="section-title">NetApp Console 알림 센터에서 백업 및 복원 알림을 검토합니다.</block>
   <block id="bacd9783e91bb01896a4e564be2f9207" category="paragraph">NetApp Console 알림 센터는 사용자가 시작한 백업 및 복원 작업의 진행 상황을 추적하여 작업이 성공했는지 여부를 확인할 수 있습니다.</block>
   <block id="44d4deb8868ac8159ee85f4a8e68725c" category="inline-link">알림 센터에 대해 자세히 알아보고 백업 및 복원 작업에 대한 알림 이메일을 보내는 방법을 알아보세요.</block>
-  <block id="3b27991b1aa229f52835df236ba4b917" category="paragraph">알림 센터에는 스냅샷, 복제, 클라우드 백업, 복원 이벤트가 다수 표시되지만, 이메일 알림을 트리거하는 이벤트는 특정 이벤트뿐입니다.</block>
   <block id="9e35f94818feb2156d0744e4be9fb2ea" category="cell">작업 유형</block>
   <block id="a4ecfc70574394990cf17bd83df499f7" category="cell">이벤트</block>
-  <block id="630469b1210edbcdbdfbbd418f05c1ca" category="cell">경보 수준</block>
   <block id="cfa4593b1fb6aea2e32d9928f2c4349b" category="cell">이메일이 전송되었습니다</block>
   <block id="a9a62e70841c4d06dd16306a85700d36" category="cell">활성화</block>
   <block id="c74709859d025e289686ff60f170d924" category="cell">시스템에 대한 백업 및 복구 활성화에 실패했습니다.</block>
@@ -1992,11 +1988,8 @@
   <block id="705d7d5204c001ada8d7869c065a6a70" category="list-text">보관 개체 스토리지로 이동된 백업 파일에서 볼륨 데이터를 복원하려는 경우 클라우드 공급자가 GiB당 추가 검색 요금과 요청당 요금을 부과합니다.</block>
   <block id="e44d61516574d94ce56af3468723e18a" category="list-text">볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 클라우드 공급업체로부터 추가적인 퇴장 비용이 발생합니다.</block>
   <block id="e1b4a0ddcd3124f71fd5c65649282433" category="paragraph">*서비스 요금*</block>
-  <block id="40ff88020bcb9f0e42545b8535db30db" category="paragraph">서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지에 대한 백업을 _생성_하는 비용과 해당 백업에서 볼륨이나 파일을 _복원_하는 비용이 모두 포함됩니다.  ONTAP 효율성 이전(_before_ ONTAP )에 백업된 ONTAP 볼륨의 소스 논리적 사용 용량을 기준으로 계산된, 개체 스토리지에서 보호하는 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
   <block id="9b84371e23a14f93e2d9314a2599ac9a" category="admonition">Microsoft SQL Server의 경우 보조 ONTAP 대상이나 개체 스토리지에 스냅샷 복제를 시작하면 요금이 부과됩니다.</block>
-  <block id="da19f2e50cbb3312d0bcc973d8486544" category="paragraph">백업 서비스 비용은 세 가지 방법으로 지불할 수 있습니다.</block>
   <block id="032820ef020ebdcb4972d36db7394681" category="list-text">첫 번째 옵션은 월 단위로 요금을 지불하고 클라우드 제공업체에 가입하는 것입니다.</block>
-  <block id="a426b39cc5038676b39d2265b22cebec" category="list-text">두 번째 옵션은 연간 계약을 맺는 것입니다.</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="inline-xref">라이센스</block>
   <block id="8426d45850b9ec06adef93652db54080" category="list-text">세 번째 옵션은 NetApp 에서 직접 라이선스를 구매하는 것입니다.  읽어보세요<block ref="b839456cc57645a9392f4db60a4f044a" category="inline-xref-macro-rx"></block> 자세한 내용은 섹션을 참조하세요.</block>
   <block id="30c887a11915f5c1adb97321b93a9e39" category="paragraph">NetApp Backup and Recovery 다음과 같은 소비 모델로 제공됩니다.</block>
@@ -4608,7 +4601,6 @@
   <block id="35521e84b87db7ff299e3d292854a426" category="paragraph">NetApp Backup and Recovery 사용하여 스냅샷, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 Hyper-V 워크로드를 복원합니다.</block>
   <block id="c71707f07223923dbaab7d7f94cf956b" category="paragraph">NetApp Backup and Recovery 사용하여 스냅샷, 보조 스토리지에 복제된 보호 그룹 백업 또는 개체 스토리지에 저장된 백업에서 KVM 가상 머신을 복원합니다.</block>
   <block id="c4a9fad82bfaa655d1dc063df314c9ed" category="list-text">로그 디렉토리를 구성합니다(인벤토리 &gt; 호스트). 스냅샷에서 데이터베이스 호스트의 로그를 백업하려면 먼저 NetApp Backup and Recovery 에서 로그를 구성하세요. 자세한 내용은 다음을 참조하세요.<block ref="24412093cd6bfc9d3bb3355f8f2561e8" category="inline-link-macro-rx"></block> .</block>
-  <block id="d4269b8b09864c01c1c86fd8fbf36f7e" category="paragraph">백업 라이프사이클 작업은 삭제되었거나 삭제 대기 중인 모든 스냅샷을 추적합니다. ONTAP 9.13부터 작업 모니터링 페이지에서 "보존"이라는 모든 작업 유형을 볼 수 있습니다.</block>
   <block id="e55271e37b053fabbe06b3671cfb3c48" category="paragraph">NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷을 생성하고 이를 백업 위치로 전송하여 백업을 동기화합니다.</block>
   <block id="ac953870175731881060585a6b9ee690" category="paragraph">NetApp Backup and Recovery 사용하면 다음 소스 시스템의 Microsoft SQL Server 인스턴스와 데이터베이스를 퍼블릭 및 프라이빗 클라우드 공급자의 다음 보조 시스템과 개체 스토리지로 백업할 수 있습니다. 스냅샷은 소스 시스템에 저장됩니다.</block>
   <block id="d07d19d5986209f0a00db1f8289e73d2" category="paragraph">기본 저장소나 보조 시스템(복제된 볼륨) 또는 개체 저장소(백업 파일)에 있는 백업에서 Microsoft SQL Server 인스턴스와 데이터베이스를 다음 시스템으로 복원할 수 있습니다. 스냅샷은 소스 시스템에 저장되며 동일한 시스템으로만 복원할 수 있습니다.</block>
@@ -4825,4 +4817,36 @@
   <block id="7580e90069a8f15fc27aabfe1ca9e800" category="list-text">결과 메뉴에서 *가상 머신 복원*을 선택합니다.</block>
   <block id="17f7a448c0fdbce6c9a45d289bcf9e83" category="list-text">*데이터 저장소*: 드롭다운 목록에서 스냅샷을 복원할 데이터 저장소의 이름을 선택합니다.</block>
   <block id="92ef4bdfd24483ff1f89cbc83ac91ce5" category="list-text">백업이 수행된 정확한 위치나 대체 위치로 VM을 복원할 수 있습니다.</block>
+  <block id="c8114f7295c45b5e4daffaaf7225f524" category="paragraph">작업 모니터링 페이지에서 정책, 스냅샷 레이블, 작업 유형(보호, 복원, 보존 또는 기타), 보호 유형(로컬 스냅샷, 복제 또는 클라우드 백업) 등의 여러 필터를 사용하여 작업을 필터링할 수 있습니다.</block>
+  <block id="8e357ee9c7f7033fb2069bec01bfa7b5" category="paragraph">백업 라이프사이클 작업은 삭제되었거나 삭제 대기 중인 모든 스냅샷을 추적합니다. ONTAP 9.13부터 작업 모니터링 페이지에서 "보존"이라는 모든 작업 유형을 볼 수 있습니다.</block>
+  <block id="192bfa3d569dc6662018c9e874cd07e8" category="paragraph">"보존" 작업 유형은 NetApp Backup and Recovery 로 보호되는 볼륨에서 시작된 모든 스냅샷 삭제 작업을 캡처합니다.</block>
+  <block id="81f2ef03318777ac36a4a73237288610" category="paragraph">알림 센터에는 스냅샷, 복제, 클라우드 백업, 복원 이벤트가 다수 표시되지만, 이메일 알림을 트리거하는 이벤트는 특정 이벤트뿐입니다.</block>
+  <block id="5dd32721e3e223e6a87039f75b4c315d" category="cell">알림이 생성되었습니다</block>
+  <block id="a907ac316a0e62996e50939eddb00cf1" category="cell">볼륨이 이제 스냅샷 정책과 연결되었습니다.</block>
+  <block id="de05700e8dd719721f13f9c6b00f1b7a" category="cell">볼륨 백업 또는 상태 수정됨</block>
+  <block id="832781ccddafcada7da950ee920e4677" category="cell">시스템에 대한 백업 및 복구 활성화가 성공했습니다.</block>
+  <block id="f4ceecec904030bc411eb94dfb80f45a" category="cell">임시 볼륨 백업에 실패했습니다.</block>
+  <block id="80fd95bd893f8df76c2fa9dd4bad6849" category="cell">임시 볼륨 백업이 성공했습니다.</block>
+  <block id="5ed835b77018cbf32fbdfb39bcc25527" category="cell">다중 볼륨 백업에 실패했습니다.</block>
+  <block id="0298583ff5a55aeec25dc314bbd47357" category="cell">Cron 작업</block>
+  <block id="f771739629c02b8a1545a40985444450" category="cell">누락된 스냅샷 레이블 확인</block>
+  <block id="39e7a35fbe3bf187f05710b99a1abab5" category="cell">이 시스템에 대한 보안 토큰을 ONTAP 으로 보내지 못했습니다.</block>
+  <block id="1da6059b2e40a5d5dcd0f29c0344d522" category="cell">Pub/Sub 이벤트</block>
+  <block id="75c3b3bb89bde01f9166a94cbfa98588" category="cell">연결 실패</block>
+  <block id="4d40cebef25fff7de69b66a1fd2b91ac" category="cell">예약된 스냅샷을 삭제하지 못했습니다.</block>
+  <block id="01a38301f446b2e021e1fa29a4fb17a3" category="cell">볼륨의 예약된 백업이 실패했습니다.</block>
+  <block id="331af99e5b6a5cf68b545ebe121bccfb" category="cell">볼륨 복원이 성공했습니다.</block>
+  <block id="6be567f0c08a3a4af17cffb149fa98ce" category="cell">볼륨 복원에 실패했습니다.</block>
+  <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="cell">랜섬웨어</block>
+  <block id="cac26c3a96c9684d7c23fab2394f7ee9" category="cell">백업 사본에서 잠재적인 랜섬웨어 공격이 확인되었습니다.</block>
+  <block id="4f7bae4887ae7adfba52529b1ef897f1" category="cell">이 시스템의 백업 사본에서 잠재적인 랜섬웨어 공격이 식별되었습니다.</block>
+  <block id="781ab27075c39bdc6b2c5a6f2d1c7999" category="cell">볼륨 실패의 복제 관계 수정</block>
+  <block id="dcbc181d9286ddc85c2def0e5a88a627" category="cell">타겟 작업</block>
+  <block id="490b6cef8b42244be7db684255156f74" category="cell">로컬 또는 클라우드 대상 복구 실패</block>
+  <block id="985aacac93e75bfb41dca796dd136773" category="cell">주문형 복원 실패</block>
+  <block id="df660ed534483b04ecb1bf0371cdbe53" category="cell">시스템 운영</block>
+  <block id="eb31ef8eb2f5dc2e91e3fc628c278047" category="cell">임시 볼륨 스냅샷 생성 실패</block>
+  <block id="cf45f15c2dbe19bdbf9de3e329061b93" category="paragraph">서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지 또는 ONTAP 대상에 대한 백업을 생성하는 비용과 해당 백업에서 볼륨이나 파일을 복원하는 비용이 모두 포함됩니다.  개체 스토리지나 ONTAP 에서 보호하는 데이터에 대해서만 비용을 지불합니다(여기에는 SnapMirror 구성이 포함됩니다).  요금은 ONTAP 볼륨이 개체 스토리지 또는 ONTAP 대상에 백업되는 소스 논리적 사용 용량( ONTAP 효율성 이전)을 사용하여 계산됩니다. 이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
+  <block id="1da151060a18e6460ac3d7eb0f913a37" category="paragraph">백업 및 복구 비용을 지불하는 방법은 세 가지가 있습니다.</block>
+  <block id="6fa5c823869ff5f58a4f5dcaaa68d86d" category="list-text">두 번째 옵션은 연간 계약을 구매하는 것입니다.</block>
 </blocks>
