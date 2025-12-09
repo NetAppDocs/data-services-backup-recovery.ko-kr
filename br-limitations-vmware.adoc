@@ -20,8 +20,6 @@ NetApp Backup and Recovery 의 VMware 워크로드 미리보기 버전에서는 
 
 * 산
 * 마운트 해제
-* 대체 위치로 복원
-* VMDK 복원
 * VMDK 첨부
 * VMDK 분리
 * vVol 지원

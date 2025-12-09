@@ -389,7 +389,6 @@
   <block id="eace16d66cdd93ad876c620db7456077" category="list-text">산</block>
   <block id="1281764038ea27ade56d7d2b8be22798" category="list-text">마운트 해제</block>
   <block id="25e66e51214e8342374fa891a42988b3" category="list-text">대체 위치로 복원</block>
-  <block id="635e272d16a4b652a6ff48968baf8726" category="list-text">VMDK 복원</block>
   <block id="00c5709c4d9ca9f8035d5d0e33f2421e" category="list-text">VMDK 첨부</block>
   <block id="097b06a0d5de05867037a2fdc678ef17" category="list-text">VMDK 분리</block>
   <block id="ef18d76ed6c710e78abb28c0e09b3e30" category="list-text">vVol 지원</block>
@@ -4474,7 +4473,6 @@
   <block id="fc7c1a6c328c3622bdd68b73c548bb4f" category="paragraph">개체 스토리지의 백업 파일에 랜섬웨어 복원력이 활성화된 경우 복원하기 전에 추가 검사를 실행하라는 메시지가 표시됩니다.  검사를 실시하는 것이 좋습니다.</block>
   <block id="2b2261b532e949e52edc443eb38fcb1c" category="admonition">백업 파일에 접근하려면 클라우드 제공업체에 추가 요금을 지불해야 할 수도 있습니다.</block>
   <block id="d4356e3242caba9699bd9bc147a04798" category="paragraph">복원 페이지(검색 및 복원)에서 필터를 사용하여 스냅샷을 검색하여 리소스를 복원할 수 있습니다. 정확한 이름, 위치 또는 마지막으로 알려진 날짜가 기억나지 않더라도 복원할 수 있습니다.</block>
-  <block id="167f8fde1782c144b38a4f581246608e" category="paragraph">보조 저장소를 선택하는 경우 데이터와 로그의 소스 및 대상 위치를 입력합니다.</block>
   <block id="63751d750873479f94855f0a16fc63d8" category="list-text">Hyper-V Windows Server 호스트에 대한 소프트웨어 요구 사항:</block>
   <block id="fd7bb5c3777005321645f38a2d07ea27" category="admonition">복원 작업이 완료되지 않으면 작업 모니터에 "실패"가 표시될 때까지 기다린 후 복원 작업을 다시 시도하세요.</block>
   <block id="df3ee99c8171743d8bd35d65cf62b2ed" category="paragraph">NetApp Backup and Recovery 사용하면 클라우드에서 온프레미스 vCenter Server로 가상 머신 데이터를 복원할 수 있습니다. 백업이 수행된 위치와 정확히 동일한 위치 또는 대체 위치로 가상 머신을 복원할 수 있습니다. 가상 머신이 보관 정책을 사용하여 백업된 경우 보관 복원 우선 순위를 설정할 수 있습니다.</block>
@@ -4766,17 +4764,12 @@
   <block id="063090df0880212c0ba8eec878096a21" category="doc">VMware 워크로드 미리보기 개선 사항</block>
   <block id="24936fb650df7af8295e75a3667becef" category="list-text">이제 백업과 스냅샷을 대체 위치로 복원할 수 있습니다. 이 기능은 다양한 VMware vCenter 배포, VMware ESXi 호스트 또는 VMware 데이터 저장소에서 VM 버전을 관리하려는 경우에 유용합니다.</block>
   <block id="99ee61e75520f174d08caa35e0ad294d" category="list-text">이제 기본 또는 보조 위치에서 특정 VMware 가상 디스크(VMDK 이미지)를 복원하여 VM 데이터 복원을 보다 세부적으로 제어할 수 있습니다.</block>
-  <block id="814957340a966bc73ff87feca2905da9" category="inline-link-macro">NetApp Backup and Recovery 사용하여 VMware 워크로드를 복원하는 방법에 대해 자세히 알아보세요.</block>
-  <block id="8b8a6f71e41f04ff546fb14f0800f38f" category="paragraph"><block ref="9f09945a70747c90951b9e96b5ea16be" category="inline-link-macro-rx"></block>.</block>
   <block id="7689264f717abcf16a917111f707d7e0" category="paragraph">Hyper-V 워크로드 미리 보기에서는 사용할 수 없습니다.</block>
   <block id="77f252cb66af8ee7dab8b27bcf3851ca" category="paragraph">KVM 워크로드 미리보기에서는 사용할 수 없습니다.</block>
   <block id="516f1f530028d7905b72cd1b035c8a73" category="list-text">*원래 위치로 복원*: VM은 원래 위치의 동일한 vCenter 배포, ESXi 호스트 및 데이터 저장소로 복원됩니다. VM과 모든 데이터가 덮어씌워집니다.</block>
   <block id="d2f574e5e69d11881580660614b89ba3" category="list-text">*대체 위치로 복원*: VM의 복원 대상으로 다른 vCenter, ESXi 호스트 또는 데이터 저장소를 선택할 수 있습니다. 이 기능은 서로 다른 위치와 상태에 있는 동일한 VM의 여러 복사본을 관리하는 데 유용합니다.</block>
   <block id="fa378eb8651e1bbe815e91c2a4ec5b2b" category="list-text">이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *VMware*를 선택합니다.</block>
   <block id="b2135f4d6adba994b22c157197d8699b" category="paragraph">검색 기준과 일치하는 가상 머신 목록이 나타납니다.</block>
-  <block id="7e4be521d13fb903d20636d087795bdb" category="list-text">목록에서 복원하려는 VM을 찾은 후 해당 VM에 대한 *가상 머신 복원* 버튼을 선택합니다.</block>
-  <block id="02e027e60aca2a9aa354a74b09718442" category="paragraph">해당 가상 머신에 생성된 스냅샷(복원 지점) 목록이 나타납니다.</block>
-  <block id="a15361d377b43197c1044f0729f9742e" category="list-text">복원하려는 스냅샷의 확인란을 활성화합니다.</block>
   <block id="4716cc8d1f61fba6b3c321e87aece13d" category="paragraph">스냅샷 위치 옵션이 나타납니다.</block>
   <block id="f16b36eea83bd45d35d7613cab7f6cf8" category="list-text">스냅샷의 복원 대상을 선택하세요.</block>
   <block id="086fbde8fbe590f104f5100808b42c0b" category="list-text">*로컬*: 로컬 위치에서 스냅샷을 복원합니다.</block>
@@ -4796,7 +4789,40 @@
   <block id="fd6f2a9c82421585e9dfe5f8820c97c0" category="list-text">*vCenter FQDN 또는 IP 주소*: 스냅샷을 복원할 vCenter 서버를 선택합니다.</block>
   <block id="a239cc572a24441f1bb1a7abc259ccab" category="list-text">*ESXi 호스트*: 스냅샷을 복원할 호스트를 선택합니다.</block>
   <block id="c2942751152cd0449e1de7861200bde4" category="list-text">*네트워크*: 스냅샷을 복원할 네트워크를 선택하세요.</block>
-  <block id="08c806f7ec865a3481f751e978944e5d" category="list-text">*데이터 저장소*: 스냅샷을 복원할 데이터 저장소의 이름을 입력하세요.</block>
   <block id="70fd3915e87d44c5f19fc35858b165f8" category="list-text">*가상 머신 이름*: 스냅샷을 복원하려는 VM의 이름을 입력하세요. 이름이 데이터 저장소에 이미 있는 VM과 일치하는 경우 백업 및 복구는 현재 타임스탬프를 추가하여 이름을 고유하게 만듭니다.</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025년 12월 8일</block>
+  <block id="14a4fd4957d1a547c2b4ccadbaed0a90" category="inline-link-macro">NetApp Backup and Recovery 사용하여 VMware VM을 복원하는 방법에 대해 자세히 알아보세요.</block>
+  <block id="6dc955af209317a9d714156228721ed4" category="paragraph"><block ref="dd7466c8c4dbfb4163f16106a1d7f80c" category="inline-link-macro-rx"></block>.</block>
+  <block id="01f07264521662850e2d8465c322c978" category="inline-link-macro">NetApp Backup and Recovery 사용하여 VMware 가상 디스크를 복원하는 방법에 대해 자세히 알아보세요.</block>
+  <block id="61b4efc27d21705d0d4d56786ccc1f78" category="paragraph"><block ref="78a5fc4b6640a61792f9693d7c0f443b" category="inline-link-macro-rx"></block>.</block>
+  <block id="af5eb3f6323875097e7bb24b26d6173d" category="summary">기존 VMDK를 복원하거나, 삭제되거나 분리된 VMDK를 기존 VM 또는 vVol VM의 기본 또는 보조 백업에서 복원할 수 있습니다.</block>
+  <block id="26b80604718acd7f55cf527a0bdacff9" category="doc">백업에서 특정 가상 디스크 복원</block>
+  <block id="49ad71250d1ffd36154d69faa3ad6ea1" category="paragraph">기존 가상 디스크(VMDK) 또는 삭제되거나 분리된 가상 디스크를 기존 VM의 기본 또는 보조 백업에서 복원할 수 있습니다. 이를 통해 특정 VM 데이터나 애플리케이션만 복원할 수 있으므로 특정 데이터만 영향을 받는 상황에서 전체 VM과 관련된 모든 가상 디스크를 복원할 필요가 없습니다. 가상 디스크가 복원되면 원래 VM에 연결되어 사용할 준비가 됩니다.</block>
+  <block id="25734bf6409795c4ad848a8de171d984" category="paragraph">VM에서 하나 이상의 가상 머신 디스크(VMDK)를 동일한 데이터 저장소 또는 다른 데이터 저장소로 복원할 수 있습니다.</block>
+  <block id="65edaa2fcae57d6f852991cc8468f875" category="admonition">NFS 환경에서 복원 작업의 성능을 향상시키려면 VMware 애플리케이션 vStorage API for Array Integration(VAAI)을 활성화하세요.</block>
+  <block id="9560f1f6257455641b369c78c24ba389" category="list-text">백업이 반드시 존재해야 합니다.</block>
+  <block id="8b5bb04e87b59bfec2f1d748b4ce1dc1" category="list-text">VM은 전송 중이어서는 안 됩니다.</block>
+  <block id="ded66736229bb16e0827ec27ef3ebd43" category="paragraph">복원하려는 VM은 vMotion 또는 Storage vMotion 상태가 아니어야 합니다.</block>
+  <block id="35317c90c50ee8180041c9d51a4f8af2" category="list-text">VMDK가 삭제되거나 VM에서 분리되면 복원 작업을 통해 VMDK가 VM에 연결됩니다.</block>
+  <block id="1e6537897e726c537f77519264b64453" category="list-text">VM이 있는 FabricPool 의 스토리지 계층을 사용할 수 없는 경우 복원 작업이 실패할 수 있습니다.</block>
+  <block id="b59c69b3461a70dfc0aa2e0732ab7524" category="list-text">연결 및 복원 작업은 기본 SCSi 컨트롤러를 사용하여 VMDK를 연결합니다. 그러나 NVMe 디스크가 있는 VM에 연결된 VMDK를 백업하는 경우, 연결 및 복원 작업에는 NVMe 컨트롤러가 사용 가능한 경우 이를 사용합니다.</block>
+  <block id="bcaa22a88e6250de97f1c34ff1815b3e" category="list-text">목록에서 복원하려는 VM을 찾은 후 해당 VM의 옵션 메뉴 버튼을 선택합니다.</block>
+  <block id="2bf7491fa72c164885118e8edcadf89c" category="list-text">결과 메뉴에서 *가상 디스크 복원*을 선택합니다.</block>
+  <block id="4ebce1ab53c9ce1f839951332126f91e" category="paragraph">해당 가상 머신에 생성된 스냅샷(복원 지점) 목록이 나타납니다. 기본적으로, *시간 프레임* 드롭다운에서 선택한 기간의 최신 스냅샷이 표시됩니다.</block>
+  <block id="20bc64a67ad04aa40e6f57492daf95cd" category="paragraph">각 스냅샷의 *위치* 열에 있는 켜진 아이콘은 스냅샷을 사용할 수 있는 저장 위치(기본, 보조 또는 개체 저장소)를 나타냅니다.</block>
+  <block id="cd1f1a4a4415e09f2c3fc9ab17aff625" category="list-text">복원하려는 스냅샷에 대한 라디오 버튼을 활성화합니다.</block>
+  <block id="57385260ec48afcc58eb70dc9059c8c0" category="list-text">*객체 저장소*: 개체 저장소에서 스냅샷을 복원합니다.</block>
+  <block id="c1389ae5f188f85d79b6e1088e21576d" category="paragraph">보조 저장소를 선택하는 경우 드롭다운 목록에서 대상 위치를 선택하세요.</block>
+  <block id="a1ff6993d36232fbd0d0471769216a69" category="list-text">대상 설정과 복원 전/후 옵션을 선택하세요.</block>
+  <block id="21ba1fcc630eae9c060829f621ac7124" category="paragraph">원래 위치로 복원할 때 대상 vCenter, ESXi 호스트, 데이터 저장소 또는 가상 디스크 이름을 변경할 수 없습니다. 원본 가상 디스크가 덮어씌워집니다.</block>
+  <block id="9f63eee4b169a6ac1fce2d2e6ec65d64" category="list-text">*대상 설정* 섹션에서 복원하려는 가상 디스크의 확인란을 활성화합니다.</block>
+  <block id="e3926503d87ede09d428d2ca5fc4abf5" category="paragraph">대체 위치로 복원할 때 대상 데이터 저장소를 변경할 수 있습니다. 복원 작업 후 가상 디스크는 선택한 데이터 저장소와 관계없이 원래 VM에 연결됩니다.</block>
+  <block id="a52505a238fc5c9d5d1a17651cbc03f5" category="list-text">선택한 모든 가상 디스크에 대해:</block>
+  <block id="9f53070c09f51b35472e37750d246cce" category="list-text">가상 디스크에 대한 다른 데이터 저장소 복원 대상을 선택하려면 *데이터 저장소 선택*을 선택합니다.</block>
+  <block id="51b825d58961da2f3a3564b41afdfb96" category="list-text">*선택*을 선택하여 선택 사항을 확인하고 선택 창을 닫습니다.</block>
+  <block id="ba17c5605be67b2a72ebec653d77cbda" category="list-text">로컬 스냅샷이나 원격 백업에서 워크로드를 복원할 때 NetApp Backup and Recovery 원래 위치로 복원하는 경우 원래 VM을 덮어쓰고, 대체 위치로 복원하는 경우 _새로운_ 리소스를 만듭니다.</block>
+  <block id="28a03a8c8c98d85d8de8ad54702a82fa" category="list-text">복제된 워크로드에서 복원하는 경우 워크로드를 원래 온프레미스 ONTAP 시스템이나 다른 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.</block>
+  <block id="7580e90069a8f15fc27aabfe1ca9e800" category="list-text">결과 메뉴에서 *가상 머신 복원*을 선택합니다.</block>
+  <block id="17f7a448c0fdbce6c9a45d289bcf9e83" category="list-text">*데이터 저장소*: 드롭다운 목록에서 스냅샷을 복원할 데이터 저장소의 이름을 선택합니다.</block>
+  <block id="92ef4bdfd24483ff1f89cbc83ac91ce5" category="list-text">백업이 수행된 정확한 위치나 대체 위치로 VM을 복원할 수 있습니다.</block>
 </blocks>

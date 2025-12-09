@@ -143,6 +143,8 @@ sidebar:
         url: "/br-use-vmware-backup.html"
       - title: VMware 워크로드 복원
         url: "/br-use-vmware-restore.html"
+      - title: 백업에서 특정 가상 디스크 복원
+        url: "/br-use-vmware-restore-vmdks-from-backups.html"
     - title: VMware 워크로드 보호(VMware용 SnapCenter 플러그인 사용)
       entries:
       - title: 가상 머신 워크로드 보호 개요
