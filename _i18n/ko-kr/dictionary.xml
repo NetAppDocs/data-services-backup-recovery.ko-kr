@@ -4846,7 +4846,4 @@
   <block id="985aacac93e75bfb41dca796dd136773" category="cell">주문형 복원 실패</block>
   <block id="df660ed534483b04ecb1bf0371cdbe53" category="cell">시스템 운영</block>
   <block id="eb31ef8eb2f5dc2e91e3fc628c278047" category="cell">임시 볼륨 스냅샷 생성 실패</block>
-  <block id="cf45f15c2dbe19bdbf9de3e329061b93" category="paragraph">서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지 또는 ONTAP 대상에 대한 백업을 생성하는 비용과 해당 백업에서 볼륨이나 파일을 복원하는 비용이 모두 포함됩니다.  개체 스토리지나 ONTAP 에서 보호하는 데이터에 대해서만 비용을 지불합니다(여기에는 SnapMirror 구성이 포함됩니다).  요금은 ONTAP 볼륨이 개체 스토리지 또는 ONTAP 대상에 백업되는 소스 논리적 사용 용량( ONTAP 효율성 이전)을 사용하여 계산됩니다. 이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
-  <block id="1da151060a18e6460ac3d7eb0f913a37" category="paragraph">백업 및 복구 비용을 지불하는 방법은 세 가지가 있습니다.</block>
-  <block id="6fa5c823869ff5f58a4f5dcaaa68d86d" category="list-text">두 번째 옵션은 연간 계약을 구매하는 것입니다.</block>
 </blocks>
