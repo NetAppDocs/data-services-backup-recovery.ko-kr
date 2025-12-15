@@ -23,7 +23,7 @@ NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 시스템의 Micro
 * 온사이트 사본에서 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.
 
 
-NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷을 생성하고 이를 백업 위치로 전송하여 백업을 동기화합니다.
+NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷을 생성하고 이를 백업 위치로 전송함으로써 백업을 동기화합니다.
 
 데이터를 보호하려면 다음을 수행하세요.
 

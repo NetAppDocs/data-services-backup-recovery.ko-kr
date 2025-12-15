@@ -1779,7 +1779,6 @@
   <block id="408156cb89b56d3b746dba5ade40b0e4" category="paragraph">콘솔은 애플리케이션의 백업을 생성하고 백업 및 복구의 *모니터링* 영역에 진행 상황을 표시합니다. 백업은 애플리케이션과 연결된 보호 정책을 기반으로 생성됩니다.</block>
   <block id="2f2fda22f167ad6c7dcc0ac3f92cd945" category="summary">NetApp Backup and Recovery 에서 백업 수, 성공적인 백업 수, 실패한 백업 수를 포함하여 백업 상태를 볼 수 있는 보고서를 만듭니다.  백업 유형, 백업에 사용된 저장 시스템, 백업 시간 등 각 백업의 세부 정보를 볼 수도 있습니다.</block>
   <block id="8e6f4a9d7c64e35859548854a52b145a" category="doc">NetApp Backup and Recovery 에서 Microsoft SQL Server 워크로드에 대한 보고서 만들기</block>
-  <block id="9192196558994f8d47c11797f2b33682" category="paragraph">NetApp Backup and Recovery 에서 Microsoft SQL Server 워크로드에 대한 보고서를 만들어 백업 수, 성공적인 백업 수, 실패한 백업 수를 포함한 백업 상태를 확인합니다.  백업 유형, 백업에 사용된 저장 시스템, 백업 시간 등 각 백업의 세부 정보를 볼 수도 있습니다.</block>
   <block id="df63e1970b7cb20512cb62b542bcd3f8" category="section-title">보고서 만들기</block>
   <block id="391ccda3039974f5c4561d91d157e4be" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 복제 관리자.  에 대해 알아보세요<block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block> .<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="a75db1c6ad7a6018f4076429dcb47fd8" category="list-text">NetApp Backup and Recovery 메뉴에서 *보고서* 옵션을 선택합니다.</block>
@@ -1910,7 +1909,6 @@
   <block id="1ca9578c25474d5cfeaa6c44bdbaa9b2" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 복원 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="2aceb93307f82c2d88347faa7eaa4e71" category="list-text">복원하려는 리소스의 이름을 입력하거나 복원하려는 리소스가 있는 vCenter, 데이터 센터 또는 데이터 저장소를 필터링합니다.</block>
   <block id="a5315c2927cf2b05876fdd6713fbd713" category="summary">NetApp Backup and Recovery 볼륨, 데이터베이스, 가상 머신, Kubernetes 워크로드를 포함한 모든 ONTAP 워크로드에 대해 효율적이고 안전하며 비용 효율적인 데이터 보호를 제공하는 데이터 서비스입니다.</block>
-  <block id="0541ead918a4013aad82336e0654ba53" category="paragraph">백업 및 복구 지원 기능은 모든 ONTAP 시스템에 이미 내장되어 있으므로 추가 하드웨어, 소프트웨어 라이선스 또는 미디어 게이트웨이가 필요하지 않습니다.  이를 통해 백업 작업이 간편하고 비용 효율적이 됩니다.  NetApp 콘솔은 여러 리소스 관리자나 전문 인력이 필요 없이 3-2-1 백업 변형의 전체 스펙트럼을 포함하여 모든 백업 전략의 구현을 간소화합니다.</block>
   <block id="8fa16cd18cf0722e85fe3e62f649f0c8" category="admonition">VMware, KVM, Hyper-V 및 Kubernetes 워크로드를 보호하는 방법에 대한 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.</block>
   <block id="1f603af7daec690416eee590da3bda4c" category="section-title">NetApp Backup and Recovery 로 할 수 있는 일</block>
   <block id="fa9b71fd6339baf1b1e8d4ce0528032e" category="paragraph">NetApp Backup and Recovery 사용하면 다음 목표를 달성할 수 있습니다.</block>
@@ -1991,7 +1989,6 @@
   <block id="9b84371e23a14f93e2d9314a2599ac9a" category="admonition">Microsoft SQL Server의 경우 보조 ONTAP 대상이나 개체 스토리지에 스냅샷 복제를 시작하면 요금이 부과됩니다.</block>
   <block id="032820ef020ebdcb4972d36db7394681" category="list-text">첫 번째 옵션은 월 단위로 요금을 지불하고 클라우드 제공업체에 가입하는 것입니다.</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="inline-xref">라이센스</block>
-  <block id="8426d45850b9ec06adef93652db54080" category="list-text">세 번째 옵션은 NetApp 에서 직접 라이선스를 구매하는 것입니다.  읽어보세요<block ref="b839456cc57645a9392f4db60a4f044a" category="inline-xref-macro-rx"></block> 자세한 내용은 섹션을 참조하세요.</block>
   <block id="30c887a11915f5c1adb97321b93a9e39" category="paragraph">NetApp Backup and Recovery 다음과 같은 소비 모델로 제공됩니다.</block>
   <block id="146cb6145f5238f0a019636047844250" category="list-text">*연간*: 클라우드 공급업체의 마켓플레이스와 맺은 연간 계약입니다.</block>
   <block id="b81dcdb5e6cec4dda0b7fdf2110e5d48" category="paragraph">서비스를 활성화하려면 NetApp Console 에 입력하는 일련 번호를 받게 됩니다.  두 가지 제한 중 하나에 도달하면 라이센스를 갱신해야 합니다.  백업 BYOL 라이선스는 NetApp Console 조직 또는 계정과 연결된 모든 소스 시스템에 적용됩니다.</block>
@@ -4601,7 +4598,6 @@
   <block id="35521e84b87db7ff299e3d292854a426" category="paragraph">NetApp Backup and Recovery 사용하여 스냅샷, 보조 스토리지에 복제된 워크로드 백업 또는 개체 스토리지에 저장된 백업에서 Hyper-V 워크로드를 복원합니다.</block>
   <block id="c71707f07223923dbaab7d7f94cf956b" category="paragraph">NetApp Backup and Recovery 사용하여 스냅샷, 보조 스토리지에 복제된 보호 그룹 백업 또는 개체 스토리지에 저장된 백업에서 KVM 가상 머신을 복원합니다.</block>
   <block id="c4a9fad82bfaa655d1dc063df314c9ed" category="list-text">로그 디렉토리를 구성합니다(인벤토리 &gt; 호스트). 스냅샷에서 데이터베이스 호스트의 로그를 백업하려면 먼저 NetApp Backup and Recovery 에서 로그를 구성하세요. 자세한 내용은 다음을 참조하세요.<block ref="24412093cd6bfc9d3bb3355f8f2561e8" category="inline-link-macro-rx"></block> .</block>
-  <block id="e55271e37b053fabbe06b3671cfb3c48" category="paragraph">NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷을 생성하고 이를 백업 위치로 전송하여 백업을 동기화합니다.</block>
   <block id="ac953870175731881060585a6b9ee690" category="paragraph">NetApp Backup and Recovery 사용하면 다음 소스 시스템의 Microsoft SQL Server 인스턴스와 데이터베이스를 퍼블릭 및 프라이빗 클라우드 공급자의 다음 보조 시스템과 개체 스토리지로 백업할 수 있습니다. 스냅샷은 소스 시스템에 저장됩니다.</block>
   <block id="d07d19d5986209f0a00db1f8289e73d2" category="paragraph">기본 저장소나 보조 시스템(복제된 볼륨) 또는 개체 저장소(백업 파일)에 있는 백업에서 Microsoft SQL Server 인스턴스와 데이터베이스를 다음 시스템으로 복원할 수 있습니다. 스냅샷은 소스 시스템에 저장되며 동일한 시스템으로만 복원할 수 있습니다.</block>
   <block id="4c0cc18e33fa07512d511f9a04e0629a" category="cell">Azure 온프레미스 ONTAP 시스템 ONTAP S3의 ​​Cloud Volumes ONTAP</block>
@@ -4846,4 +4842,11 @@
   <block id="985aacac93e75bfb41dca796dd136773" category="cell">주문형 복원 실패</block>
   <block id="df660ed534483b04ecb1bf0371cdbe53" category="cell">시스템 운영</block>
   <block id="eb31ef8eb2f5dc2e91e3fc628c278047" category="cell">임시 볼륨 스냅샷 생성 실패</block>
+  <block id="d6c67ddd6689909f9ab7e453c230fd09" category="paragraph">NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷을 생성하고 이를 백업 위치로 전송함으로써 백업을 동기화합니다.</block>
+  <block id="488ee5eee6409c61723daa55708c1c38" category="paragraph">NetApp Backup and Recovery 에서 Microsoft SQL Server 워크로드에 대한 보고서를 생성하여 성공 및 실패 백업 횟수, 백업 유형, 스토리지 시스템 및 타임스탬프를 포함한 백업 상태 및 세부 정보를 확인할 수 있습니다.</block>
+  <block id="683c401da81ee8eab953d27954a799cf" category="paragraph">백업 및 복구 지원 기능은 모든 ONTAP 시스템에 이미 내장되어 있으므로 추가 하드웨어, 소프트웨어 라이선스 또는 미디어 게이트웨이가 필요하지 않습니다. 이를 통해 백업 작업이 간편하고 비용 효율적이 됩니다. NetApp Console 사용하면 여러 명의 리소스 관리자나 전문 인력 없이도 3-2-1 백업 변형을 포함한 모든 백업 전략을 간편하게 구현할 수 있습니다.</block>
+  <block id="cf45f15c2dbe19bdbf9de3e329061b93" category="paragraph">서비스 요금은 NetApp 에 ​​지불되며, 여기에는 개체 스토리지 또는 ONTAP 대상에 대한 백업을 생성하는 비용과 해당 백업에서 볼륨이나 파일을 복원하는 비용이 모두 포함됩니다. 개체 스토리지나 ONTAP 에서 보호하는 데이터에 대해서만 비용을 지불합니다(여기에는 SnapMirror 구성이 포함됩니다). 요금은 ONTAP 볼륨이 개체 스토리지 또는 ONTAP 대상에 백업되는 소스 논리적 사용 용량( ONTAP 효율성 이전)을 사용하여 계산됩니다. 이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
+  <block id="1da151060a18e6460ac3d7eb0f913a37" category="paragraph">백업 및 복구 비용을 지불하는 방법은 세 가지가 있습니다.</block>
+  <block id="6fa5c823869ff5f58a4f5dcaaa68d86d" category="list-text">두 번째 옵션은 연간 계약을 구매하는 것입니다.</block>
+  <block id="41bda454559167e0de7967190676c8d0" category="list-text">세 번째 옵션은 NetApp 에서 직접 라이선스를 구매하는 것입니다. 참조 <block ref="b839456cc57645a9392f4db60a4f044a" category="inline-xref-macro-rx"></block> 자세한 내용은 해당 섹션을 참조하십시오.</block>
 </blocks>
