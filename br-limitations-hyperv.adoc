@@ -29,23 +29,3 @@ NetApp Backup and Recovery 의 Hyper-V 워크로드에 대한 비공개 미리 �
 * 보호 그룹 편집
 * SCVMM(System Center Virtual Machine Manager)을 사용하여 클러스터링된 Hyper-V 호스트를 보호합니다.
 
-
-
-
-== 지원되지 않는 레거시 NetApp Console 계정
-
-레거시 NetApp Console 계정은 Hyper-V 워크로드를 보호하는 데 필요한 기능을 지원하지 않습니다.  콘솔 웹 UI에서 레거시 계정을 사용하고 있는지 확인하세요.  기존 콘솔 계정이 있는 경우 Hyper-V 워크로드를 보호하기 전에 새 계정을 만드세요.
-
-.단계
-. NetApp Console 메뉴에서 *관리 > ID 및 액세스*를 선택합니다.
-. *조직*에서 조직 ID 옆에 *계정 ID*가 표시되는지 확인하세요.
-+
-*계정 ID*가 표시되면 기존 계정을 사용하고 있는 것입니다.
-
-. 기존 계정을 사용하는 경우 다음을 수행하세요.
-+
-.. 콘솔에서 로그아웃한 다음 탐색하세요. https://console.netapp.com/["콘솔 로그인 페이지"^] .
-.. *가입*을 선택하여 새 계정을 만드세요.
-
-
-
