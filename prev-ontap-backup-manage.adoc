@@ -236,27 +236,12 @@ NetApp Backup and Recovery 백업을 개체 파일로 생성할 때와 백업 �
 클러스터에서 ONTAP 9.10.1 이상을 실행하는 경우 특정 일수가 지난 후 보관 저장소에 대한 백업 계층화를 활성화하거나 비활성화하는 옵션도 있습니다.
 
 +
-ifdef::aws[]
+link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지 사용에 대해 자세히 알아보세요"]. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소 사용에 대해 자세히 알아보세요"]. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소 사용에 대해 자세히 알아보세요"]. ( ONTAP 9.12.1이 필요합니다.)
+
++
+참고로, 아카이브 저장소로 계층화된 백업 파일은 백업 계층화를 중지하더라도 해당 계층에 그대로 남아 있으며, 자동으로 표준 계층으로 다시 이동되지 않습니다. 표준 티어에는 새로운 볼륨 백업만 저장됩니다.
 
 
-
-link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지 사용에 대해 자세히 알아보세요"].
-
-endif::aws[]
-
-ifdef::azure[]
-
-link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소 사용에 대해 자세히 알아보세요"].
-
-endif::azure[]
-
-ifdef::gcp[]
-
-link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소 사용에 대해 자세히 알아보세요"]. ( ONTAP 9.12.1이 필요합니다.)
-
-endif::gcp[]
-
-+ 백업을 아카이브로 계층화하는 것을 중지하더라도 아카이브 스토리지에 계층화된 모든 백업 파일은 해당 계층에 남아 있으며, 자동으로 표준 계층으로 다시 이동되지 않습니다.  표준 계층에는 새로운 볼륨 백업만 저장됩니다.
 
 
 
@@ -282,25 +267,9 @@ endif::gcp[]
 클러스터에서 ONTAP 9.10.1 이상을 실행하는 경우 특정 일수가 지난 후 보관 저장소에 대한 백업 계층화를 활성화하거나 비활성화하는 옵션도 있습니다.
 
 +
-ifdef::aws[]
+link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지 사용에 대해 자세히 알아보세요"]. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소 사용에 대해 자세히 알아보세요"]. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소 사용에 대해 자세히 알아보세요"]. ( ONTAP 9.12.1이 필요합니다.)
 
 
-
-link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지 사용에 대해 자세히 알아보세요"].
-
-endif::aws[]
-
-ifdef::azure[]
-
-link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소 사용에 대해 자세히 알아보세요"].
-
-endif::azure[]
-
-ifdef::gcp[]
-
-link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소 사용에 대해 자세히 알아보세요"]. ( ONTAP 9.12.1이 필요합니다.)
-
-endif::gcp[]
 
 
 

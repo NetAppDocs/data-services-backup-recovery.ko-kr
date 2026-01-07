@@ -257,19 +257,9 @@ NetApp Backup and Recovery 완전한 인터넷 연결(표준 모드 또는 SaaS 
 
 NetApp Backup and Recovery 인터넷 연결이 제한된 사이트(제한 모드라고도 함)에서 볼륨 데이터를 백업하는 데 사용할 수 있습니다.  이 경우 대상 클라우드 지역에 콘솔 에이전트를 배포해야 합니다.
 
-ifdef::aws[]
-
 * AWS 상업 지역에 설치된 온프레미스 ONTAP 시스템이나 Cloud Volumes ONTAP 시스템의 데이터를 Amazon S3에 백업할 수 있습니다. link:prev-ontap-backup-cvo-aws.html["Cloud Volumes ONTAP 데이터를 Amazon S3에 백업합니다."].
-
-
-endif::aws[]
-
-ifdef::azure[]
-
 * Azure 상용 지역에 설치된 온-프레미스 ONTAP 시스템 또는 Cloud Volumes ONTAP 시스템의 데이터를 Azure Blob에 백업할 수 있습니다. link:prev-ontap-backup-cvo-azure.html["Cloud Volumes ONTAP 데이터를 Azure Blob에 백업"].
 
-
-endif::azure[]
 
 
 
@@ -281,11 +271,5 @@ NetApp Backup and Recovery 인터넷 연결이 없는 사이트(_개인 모드_ 
 NOTE: BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다. NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다. 레거시 BlueXP 인터페이스의 개인 모드 설명서는 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대한 PDF 문서"] .
 
 * 로컬 온프레미스 ONTAP 시스템의 데이터를 로컬 NetApp StorageGRID 시스템으로 백업할 수 있습니다. link:prev-ontap-backup-onprem-storagegrid.html["온프레미스 ONTAP 데이터를 StorageGRID 에 백업"].
-* 로컬 온프레미스 ONTAP 시스템의 데이터를 S3 개체 스토리지에 대해 구성된 로컬 온프레미스 ONTAP 시스템이나 Cloud Volumes ONTAP 시스템으로 백업할 수 있습니다. link:prev-ontap-backup-onprem-ontaps3.html["온프레미스 ONTAP 데이터를 ONTAP S3에 백업"] . ifdef::aws[]
+* 로컬 온프레미스 ONTAP 시스템의 데이터를 S3 개체 스토리지에 대해 구성된 로컬 온프레미스 ONTAP 시스템이나 Cloud Volumes ONTAP 시스템으로 백업할 수 있습니다. link:prev-ontap-backup-onprem-ontaps3.html["온프레미스 ONTAP 데이터를 ONTAP S3에 백업"].
 
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]

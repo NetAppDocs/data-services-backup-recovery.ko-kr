@@ -72,7 +72,7 @@ NetApp Backup and Recovery 볼륨 백업에 대한 DataLock 및 랜섬웨어 보
 
 === DataLock이란 무엇입니까?
 
-이 기능을 사용하면 SnapMirror 통해 클라우드에 복제된 클라우드 스냅샷을 잠글 수 있으며, 랜섬웨어 공격을 감지하고 개체 저장소에서 스냅샷의 일관된 사본을 복구하는 기능을 활성화할 수도 있습니다.  이 기능은 AWS, Azure 및 StorageGRID 에서 지원됩니다.
+이 기능을 사용하면 SnapMirror 통해 클라우드에 복제된 클라우드 스냅샷을 잠글 수 있으며, 랜섬웨어 공격을 감지하고 객체 저장소에서 스냅샷의 일관된 복사본을 복구할 수 있습니다. 이 기능은 AWS, Azure, Google Cloud Platform 및 StorageGRID 에서 지원됩니다.
 
 DataLock은 백업 파일이 일정 기간 동안 수정되거나 삭제되는 것을 방지합니다. 이를 _변경 불가능한 저장소_라고도 합니다.  이 기능은 "객체 잠금"을 위해 객체 스토리지 공급자의 기술을 사용합니다.
 
@@ -165,25 +165,23 @@ DataLock 보존 설정은 백업 정책의 정책 보존 설정을 재정의합�
 
 [cols="55,45"]
 |===
-| 소스 시스템 | 백업 파일 대상 ifdef::aws[] 
+| 소스 시스템 | 백업 파일 저장 위치 
 
 
-| AWS의 Cloud Volumes ONTAP | 아마존 S3 endif::aws[] ifdef::azure[] 
+| AWS의 Cloud Volumes ONTAP | 아마존 S3 
 
 
-| Azure의 Cloud Volumes ONTAP | Azure Blob endif::azure[] ifdef::gcp[] 
+| Azure의 Cloud Volumes ONTAP | Azure Blob 
 
 
-| Google Cloud의 Cloud Volumes ONTAP | 구글 클라우드 endif::gcp[] 
+| Google Cloud의 Cloud Volumes ONTAP | 구글 클라우드 
 
 
-| 온프레미스 ONTAP 시스템 | ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] Google Cloud endif::gcp[] NetApp StorageGRID 
+| 온프레미스 ONTAP 시스템 | Amazon S3 Azure Blob Google Cloud NetApp StorageGRID 
 |===
 
 
 === 요구 사항
-
-ifdef::aws[]
 
 * AWS의 경우:
 +
@@ -228,33 +226,17 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-permissions-aws.html
 
 
 
-
-
-endif::aws[]
-
-ifdef::azure[]
-
 * Azure의 경우:
 +
 ** 클러스터는 ONTAP 9.12.1 이상을 실행해야 합니다.
 ** 콘솔 에이전트는 클라우드나 사내에 배포될 수 있습니다.
 
 
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
 * Google Cloud의 경우:
 +
 ** 클러스터는 ONTAP 9.17.1 이상을 실행해야 합니다.
 ** 콘솔 에이전트는 클라우드나 사내에 배포될 수 있습니다.
 
-
-
-
-endif::gcp[]
 
 * StorageGRID 의 경우:
 +
@@ -355,8 +337,6 @@ AWS, Azure 또는 Google 클라우드 스토리지를 사용하는 경우 특정
 ====
 각 백업 정책은 백업 파일에 적용할 수 있는 _보관 정책_ 섹션을 제공합니다.
 
-ifdef::aws[]
-
 * AWS에서 백업은 _Standard_ 스토리지 클래스에서 시작하여 30일 후에 _Standard-Infrequent Access_ 스토리지 클래스로 전환됩니다.
 +
 클러스터가 ONTAP 9.10.1 이상을 사용하는 경우 이전 백업을 _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"].
@@ -369,42 +349,23 @@ ifdef::aws[]
 
 
 
-endif::aws[]
-
-ifdef::azure[]
-
 * Azure에서 백업은 _Cool_ 액세스 계층과 연결됩니다.
 +
 클러스터가 ONTAP 9.10.1 이상을 사용하는 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"].
 
 
 
-endif::azure[]
-
-ifdef::gcp[]
-
 * GCP에서 백업은 _Standard_ 스토리지 클래스와 연결됩니다.
 +
 온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우, NetApp Backup and Recovery UI에서 특정 기간 후에 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에 대해 자세히 알아보세요"].
-
-
-
-endif::gcp[]
 
 * StorageGRID 에서 백업은 _Standard_ 스토리지 클래스와 연결됩니다.
 +
 온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하고 StorageGRID 시스템에서 11.4 이상을 사용하는 경우 이전 백업 파일을 퍼블릭 클라우드 보관 스토리지에 보관할 수 있습니다.
 
++
+** AWS의 경우, AWS _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 백업을 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"^].
+** Azure의 경우, 오래된 백업을 Azure Archive 스토리지로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"^].
 
 
-ifdef::aws[]
 
-+ ** AWS의 경우 AWS _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지에 백업을 계층화할 수 있습니다. link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에 대해 자세히 알아보세요"^].
-
-endif::aws[]
-
-ifdef::azure[]
-
-+ ** Azure의 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에 대해 자세히 알아보세요"^].
-
-endif::azure[]

@@ -9,19 +9,6 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
-  filter:
-    label: 클라우드 제공업체
-    default: 모든 클라우드 제공업체
-    options:
-    - name: 아마존 웹 서비스
-      alias: AWS
-      id: aws
-    - name: 구글 클라우드
-      alias: 구글 클라우드
-      id: gcp
-    - name: 마이크로소프트 애저
-      alias: 하늘빛
-      id: azure
   langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:

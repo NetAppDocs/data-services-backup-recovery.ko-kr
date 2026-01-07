@@ -1972,7 +1972,6 @@
   <block id="31f9c16bc3570a56499294176c354ee7" category="inline-link">Azure 데이터 레이크 스토리지</block>
   <block id="82ba9e045163c7c72098c50671704351" category="list-text">Azure에서는<block ref="a3ff4de37e7a195a145416e9f02577ac" category="inline-link-rx"></block> 그리고<block ref="47b506e6a2508a9b210c02fa89bbdc24" category="inline-link-rx"></block> 귀하의 데이터를 저장하고 분석하기 위해 귀하의 스토리지 계정에 프로비저닝됩니다.</block>
   <block id="9fece9ac1c7d50fbf1a1498b93cbeb15" category="inline-link">Google Cloud BigQuery 서비스</block>
-  <block id="a9e0f848e6e51d1ca02fdbb4bf91773a" category="list-text">Google에서는 새로운 버킷이 배포되고<block ref="7c8e47e4f5e61b3b1d7f7769baa8100f" category="inline-link-rx"></block> 계정/프로젝트 수준에서 프로비저닝됩니다. endif::gcp[]</block>
   <block id="705d7d5204c001ada8d7869c065a6a70" category="list-text">보관 개체 스토리지로 이동된 백업 파일에서 볼륨 데이터를 복원하려는 경우 클라우드 공급자가 GiB당 추가 검색 요금과 요청당 요금을 부과합니다.</block>
   <block id="e44d61516574d94ce56af3468723e18a" category="list-text">볼륨 데이터를 복원하는 과정에서 랜섬웨어에 대한 백업 파일을 스캔할 계획이라면(클라우드 백업에 대해 DataLock 및 랜섬웨어 복원력을 활성화한 경우), 클라우드 공급업체로부터 추가적인 퇴장 비용이 발생합니다.</block>
   <block id="e1b4a0ddcd3124f71fd5c65649282433" category="paragraph">*서비스 요금*</block>
@@ -2643,12 +2642,8 @@
   <block id="1f2242e2c4c50f131ef13c9b0750cece" category="list-text">_정책 편집_ 페이지에서 아래쪽 화살표를 선택하여 _레이블 및 보존_ 섹션을 확장하여 일정 및/또는 백업 보존을 변경하고 *저장*을 선택합니다.</block>
   <block id="11424b9a70e420c1dd25a5c8dd143872" category="paragraph">클러스터에서 ONTAP 9.10.1 이상을 실행하는 경우 특정 일수가 지난 후 보관 저장소에 대한 백업 계층화를 활성화하거나 비활성화하는 옵션도 있습니다.</block>
   <block id="2ee1435ab41f69d919a20dc4c3d48cc8" category="inline-link-macro">AWS 보관 스토리지 사용에 대해 자세히 알아보세요</block>
-  <block id="c86e8102bf4f78e9feec6f5707740536" category="paragraph"><block ref="74169e9d6aed252bcfdf8c7b3af7403c" category="inline-link-macro-rx"></block>.</block>
   <block id="2a42635401c2f16c2080bd6994708fa1" category="inline-link-macro">Azure 보관 저장소 사용에 대해 자세히 알아보세요</block>
-  <block id="ba495708b905a450346e6127df6e1205" category="paragraph"><block ref="2ee7cc9e20761e67f0920429cf98cc54" category="inline-link-macro-rx"></block>.</block>
   <block id="0d1c0309cd5a222639167f043ad2659c" category="inline-link-macro">Google 보관 저장소 사용에 대해 자세히 알아보세요</block>
-  <block id="619556a98b7ce9c2609fd64276c45841" category="paragraph"><block ref="aba7d321ee8cc50f731dfdd9ecd7c01c" category="inline-link-macro-rx"></block>. ( ONTAP 9.12.1이 필요합니다.)</block>
-  <block id="273a0c18ae7ae64c7f1016a71ed51d1e" category="paragraph">+ 백업을 아카이브로 계층화하는 것을 중지하더라도 아카이브 스토리지에 계층화된 모든 백업 파일은 해당 계층에 남아 있으며, 자동으로 표준 계층으로 다시 이동되지 않습니다.  표준 계층에는 새로운 볼륨 백업만 저장됩니다.</block>
   <block id="d3b3f333837b21ed08dfd04c10e48346" category="section-title">새로운 클라우드 백업 정책 추가</block>
   <block id="704cbb6a4b98702a1ff1e784b08e0bc1" category="paragraph">시스템에 대해 NetApp Backup and Recovery 활성화하면 처음에 선택한 모든 볼륨이 정의한 기본 백업 정책을 사용하여 백업됩니다.  서로 다른 복구 지점 목표(RPO)를 가진 특정 볼륨에 서로 다른 백업 정책을 할당하려는 경우 해당 클러스터에 대한 추가 정책을 만들고 해당 정책을 다른 볼륨에 할당할 수 있습니다.</block>
   <block id="ebef09b04d71dbdf490084193f232a2f" category="inline-xref">해당 시스템의 볼륨에 정책을 적용합니다.</block>
@@ -3214,7 +3209,6 @@
   <block id="d6b2f75c5e7cc6c2d5da7268c117d88e" category="doc">NetApp Backup and Recovery 고급 설정에서 개체 스토리지 백업 옵션 관리</block>
   <block id="2f5538c2e34ba12aae307adeb8e9361f" category="admonition">이러한 설정은 백업-객체 저장소에만 사용할 수 있습니다.  이러한 설정은 스냅샷이나 복제 설정에 영향을 미치지 않습니다.</block>
   <block id="c7097337eab210464618620268aa80bc" category="paragraph">고급 설정 페이지에서 다음 옵션을 변경할 수 있습니다.</block>
-  <block id="6d1da260b80b103438f3aedda67c1b8e" category="list-text">ifdef::aws[]의 최대 전송 속도 옵션을 사용하여 개체 스토리지에 백업을 업로드하는 데 할당된 네트워크 대역폭 변경</block>
   <block id="90262b49b516aea0770d54c5389860ab" category="list-text">"연간" 스냅샷이 소스 시스템에서 제거되는지 여부 변경</block>
   <block id="6866e75c6eebeffef8ecc7e577b86a5c" category="list-text">예약된 검사를 포함하여 시스템에 대한 랜섬웨어 검사 활성화 또는 비활성화</block>
   <block id="0b1dbe1ca2e686301ad63250cc03207d" category="section-title">클러스터 수준 백업 설정 보기</block>
@@ -3275,7 +3269,6 @@
   <block id="9d6ba5ad698127fccb9f60a35f6f12bc" category="list-text">DataLock 및 랜섬웨어 보호 기능을 사용하려는 경우 첫 번째 백업 정책을 만들고 해당 클러스터에 대한 NetApp Backup and Recovery 활성화할 때 이를 활성화할 수 있습니다.  나중에 NetApp Backup and Recovery 고급 설정을 사용하여 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다.</block>
   <block id="b786f06f750594e45a7a7ec6d9cf4ac2" category="list-text">볼륨 데이터를 복원할 때 콘솔이 백업 파일에서 랜섬웨어를 검사하면 백업 파일의 내용에 액세스하기 위해 클라우드 공급자로부터 추가 퇴장 비용이 발생합니다.</block>
   <block id="921b747c1abfd997d26a273c0b62011b" category="section-title">DataLock이란 무엇입니까?</block>
-  <block id="8c5ed3c4325fc24dbf86bb370210fae8" category="paragraph">이 기능을 사용하면 SnapMirror 통해 클라우드에 복제된 클라우드 스냅샷을 잠글 수 있으며, 랜섬웨어 공격을 감지하고 개체 저장소에서 스냅샷의 일관된 사본을 복구하는 기능을 활성화할 수도 있습니다.  이 기능은 AWS, Azure 및 StorageGRID 에서 지원됩니다.</block>
   <block id="1ba4a0b9c57fe8015ce8449413192339" category="paragraph">DataLock은 백업 파일이 일정 기간 동안 수정되거나 삭제되는 것을 방지합니다. 이를 _변경 불가능한 저장소_라고도 합니다.  이 기능은 "객체 잠금"을 위해 객체 스토리지 공급자의 기술을 사용합니다.</block>
   <block id="4e596858d3955027bd4bc8cab9e72010" category="paragraph">클라우드 제공자는 스냅샷 보존 기간을 기준으로 계산되는 보존 기간(RUD)을 사용합니다.  스냅샷 보존 기간은 백업 정책에 정의된 레이블과 보존 횟수를 기준으로 계산됩니다.</block>
   <block id="f50811813bbd72e21d2cb23e440692d9" category="paragraph">최소 스냅샷 보존 기간은 30일입니다.  이것이 어떻게 작동하는지 몇 가지 예를 살펴보겠습니다.</block>
@@ -3320,12 +3313,7 @@
   <block id="1364637fafeabf3ff1cd69cc9cda6bcf" category="list-text">복구 과정에는 마지막으로 알려진 양호한 사본으로 되돌리는 작업이 포함됩니다.</block>
   <block id="b3f1b65a3c7ad581029671863ce84f3e" category="section-title">지원되는 시스템 및 개체 스토리지 공급자</block>
   <block id="04caa6fde87b21be8738fc7aac2130d5" category="paragraph">다음 퍼블릭 및 프라이빗 클라우드 공급자의 개체 스토리지를 사용하는 경우 다음 시스템의 ONTAP 볼륨에서 DataLock 및 랜섬웨어 보호를 활성화할 수 있습니다.</block>
-  <block id="49930e1d4376887999c072bd91775525" category="cell">백업 파일 대상 ifdef::aws[]</block>
-  <block id="8889077573d45691231050324d93b6a9" category="cell">아마존 S3 endif::aws[] ifdef::azure[]</block>
-  <block id="0959a2f5eff65303771c49363a01d789" category="cell">Azure Blob endif::azure[] ifdef::gcp[]</block>
   <block id="155ec659cc4e13b84e26ac8a60d0983e" category="cell">Google Cloud의 Cloud Volumes ONTAP</block>
-  <block id="a9a9ab6f27a7c96f41b3ea91feb1ef02" category="cell">구글 클라우드 endif::gcp[]</block>
-  <block id="4e592a9288f7e548ef70784305002a5e" category="cell">ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] Google Cloud endif::gcp[] NetApp StorageGRID</block>
   <block id="f3ec603ab9c35660f371c0fc057b7fd1" category="list-text">클러스터는 ONTAP 9.11.1 이상을 실행해야 합니다.</block>
   <block id="6eccb1b4300ae9587c674c0708c7ee79" category="list-text">콘솔 에이전트는 클라우드나 사내에 배포될 수 있습니다.</block>
   <block id="685a143757efe250c8c69c08616cbe33" category="list-text">다음 S3 권한은 콘솔 에이전트에 권한을 제공하는 IAM 역할의 일부여야 합니다.  이들은 리소스 "arn:aws:s3:::netapp-backup-*"의 "backupS3Policy" 섹션에 있습니다.</block>
@@ -3403,8 +3391,6 @@
   <block id="934b0a65e87eaa0952123591f2e40ba3" category="paragraph">온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하는 경우, NetApp Backup and Recovery UI에서 특정 기간 후에 이전 백업을 _아카이브_ 스토리지로 계층화하여 비용을 더욱 최적화할 수 있습니다. <block ref="a5f5ea528fdc4d7b7927a7bc5e75da85" category="inline-link-macro-rx"></block>.</block>
   <block id="c811e121a426ef27a318d7ddd351730d" category="list-text">StorageGRID 에서 백업은 _Standard_ 스토리지 클래스와 연결됩니다.</block>
   <block id="858f352aed10fc578bc936929dbfe50b" category="paragraph">온프레미스 클러스터에서 ONTAP 9.12.1 이상을 사용하고 StorageGRID 시스템에서 11.4 이상을 사용하는 경우 이전 백업 파일을 퍼블릭 클라우드 보관 스토리지에 보관할 수 있습니다.</block>
-  <block id="8a63c8142c234622452551e194e08f2c" category="paragraph">+ ** AWS의 경우 AWS _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지에 백업을 계층화할 수 있습니다. <block ref="da672f43205b0c90027c7dfb66aec892" category="inline-link-macro-rx"></block>.</block>
-  <block id="d9687428f28d3ac3ad41d545b8ad9fb3" category="paragraph">+ ** Azure의 경우 이전 백업을 _Azure Archive_ 저장소로 계층화할 수 있습니다. <block ref="378f4ee26769b0f22cf8e5c4c18a63bc" category="inline-link-macro-rx"></block>.</block>
   <block id="bb4d18abee2ac1ac9616f24e56d8201d" category="doc">NetApp Backup and Recovery 통해 보호 여정을 계획하세요</block>
   <block id="854bc156a37cbbf040c040fbef53bdec" category="paragraph">NetApp Backup and Recovery 사용하면 소스 볼륨의 복사본을 최대 3개까지 만들어 데이터를 보호할 수 있습니다.  볼륨에서 백업 및 복구를 활성화할 때 선택할 수 있는 옵션이 많으므로 준비할 수 있도록 선택 사항을 검토해야 합니다.</block>
   <block id="abb8243f73c63e089a9cc6cdf95785b2" category="paragraph">다음 옵션을 살펴보겠습니다.</block>
@@ -3539,7 +3525,6 @@
   <block id="c91b161e73b74151a87e57d1b478a8bf" category="admonition">BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다. NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다. 레거시 BlueXP 인터페이스의 개인 모드 설명서는 다음을 참조하세요.<block ref="48f65378777d422181826aa490861bdb" category="inline-link-rx"></block> .</block>
   <block id="7d137c690fd8c0d815296a007443c889" category="list-text">로컬 온프레미스 ONTAP 시스템의 데이터를 로컬 NetApp StorageGRID 시스템으로 백업할 수 있습니다. <block ref="860e591e9b4ec768065d563e22bafdf4" category="inline-link-macro-rx"></block>.</block>
   <block id="02cb06ba88a3c5f99e8d4b475bd0ac1b" category="inline-link-macro">온프레미스 ONTAP 데이터를 ONTAP S3에 백업</block>
-  <block id="f64e5b9e38f4a83fb5814d4090a2cb6b" category="list-text">로컬 온프레미스 ONTAP 시스템의 데이터를 S3 개체 스토리지에 대해 구성된 로컬 온프레미스 ONTAP 시스템이나 Cloud Volumes ONTAP 시스템으로 백업할 수 있습니다. <block ref="61d8249673309599fa2a7a8b0c67a195" category="inline-link-macro-rx"></block> . ifdef::aws[]</block>
   <block id="8116cbee5887b07b452fecf9c1836d5c" category="doc">NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 보호하세요</block>
   <block id="f147568c086732bd86eb443dc52d5e33" category="paragraph">NetApp Backup and Recovery ONTAP 볼륨 데이터의 보호 및 장기 보관을 위한 백업 및 복원 기능을 제공합니다.  2개의 서로 다른 스토리지 시스템에 소스 데이터의 사본 3개를 두고, 클라우드에 사본 1개를 두는 3-2-1 전략을 구현할 수 있습니다.</block>
   <block id="80281310e7f1753680348f039d61ece0" category="paragraph">활성화 후 백업 및 복구를 통해 블록 수준의 증분적 영구 백업이 생성되어 다른 ONTAP 클러스터와 클라우드의 개체 스토리지에 저장됩니다.  소스 볼륨 외에도 다음이 제공됩니다.</block>
@@ -3581,17 +3566,11 @@
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">지원되는 지역</block>
   <block id="c120c4e2a5b4e4e9674aa4b23a31ab0a" category="paragraph">NetApp Backup and Recovery 많은 Amazon Web Services, Microsoft Azure 및 Google Cloud 지역에서 Cloud Volumes ONTAP 통해 지원됩니다.</block>
   <block id="6c6a0225cb0a619d8872981b7be0ac95" category="inline-link">글로벌 지역 지도를 사용하여 자세히 알아보세요</block>
-  <block id="1d85e7a2656bd01575d59e1548bbed4b" category="cell">대상 객체 저장소(백업) ifdef::aws[]</block>
   <block id="c373a9aa878db8431d1195796e8e6695" category="cell">Google의 Cloud Volumes ONTAP</block>
   <block id="9ecea76e21268445d7d03aec4130ba29" category="cell">Google 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP</block>
-  <block id="c0b279eeed106351906f95aa546f2ffa" category="cell">Google 클라우드 스토리지 endif::gcp[]</block>
-  <block id="54ae5f645a65dd82ea439de20806bd9f" category="cell">ifdef::aws[] Amazon S3 endif::aws[] ifdef::azure[] Azure Blob endif::azure[] ifdef::gcp[] Google Cloud Storage endif::gcp[] NetApp StorageGRID ONTAP S3</block>
   <block id="85970a97aacb509bbf4ce9364724b494" category="cell">백업 파일 위치</block>
   <block id="1f7c54e25f65414cece608c8f0604e55" category="cell">목적지 시스템</block>
-  <block id="bc7aa7434d0ca9752e2c02b4ffee9953" category="cell">AWS 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::aws[] ifdef::azure[]</block>
-  <block id="b97f160a229c063bdce958beafa0f695" category="cell">Azure 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::azure[] ifdef::gcp[]</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">구글 클라우드 스토리지</block>
-  <block id="a9f8eef7fdd18a9397fd96b661adbbf3" category="cell">Google 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::gcp[]</block>
   <block id="8c7ae1ac5e93ce07c68e74f8dae54373" category="cell">온프레미스 ONTAP 시스템 Cloud Volumes ONTAP</block>
   <block id="b1b998a9bc88754640934520205257d6" category="paragraph">"온프레미스 ONTAP 시스템"에 대한 참조에는 FAS, AFF 및 ONTAP Select 시스템이 포함됩니다.</block>
   <block id="8c9b6b8729507556572552d0d8f472e3" category="section-title">지원되는 볼륨</block>
@@ -3635,11 +3614,6 @@
   <block id="19fe226921eb8023a05c222ee84c5db8" category="paragraph">백업은 백업 유형에 따라 다른 위치에 저장됩니다.</block>
   <block id="84b23b52a16a2d456b93cfcd37a9fb17" category="list-text">_복제된 볼륨_은 보조 스토리지 시스템( Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템)에 상주합니다.</block>
   <block id="9b1fec5e0f334c7c6734500536c26eec" category="list-text">_백업 사본_은 콘솔이 클라우드 계정에 생성하는 개체 저장소에 저장됩니다.  클러스터/시스템당 하나의 개체 저장소가 있으며, 콘솔에서는 개체 저장소의 이름을 "netapp-backup-clusteruuid"로 지정합니다.  이 개체 저장소를 삭제하지 마십시오.</block>
-  <block id="6dd0453948f319bf0e93a8760cf57765" category="paragraph">+ ** AWS에서는 콘솔을 통해 다음을 수행할 수 있습니다.<block ref="b38667957fcdf9b9da65b213e7fb2492" category="inline-link-rx"></block> S3 버킷에.</block>
-  <block id="49f986a30678b9238f4b6ca6f8da583b" category="paragraph">+ ** Azure에서 콘솔은 Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹이나 기존 리소스 그룹을 사용합니다.  콘솔<block ref="a7068b8d2b60241ce77a1051f3a66ed5" category="inline-link-rx"></block> 기본적으로.</block>
-  <block id="57e10e6b47afffacbbee5d09e4bc9473" category="paragraph">+ ** GCP에서 콘솔은 Google Cloud Storage 버킷에 대한 스토리지 계정이 있는 새 프로젝트나 기존 프로젝트를 사용합니다.</block>
-  <block id="564b1e8b7bc04c9ca474231a3cbf4c49" category="paragraph">+ ** StorageGRID 에서 콘솔은 S3 버킷에 대해 기존 테넌트 계정을 사용합니다.</block>
-  <block id="fc0acb7cce83e6633e2048efb8274cd6" category="paragraph">+ ** ONTAP S3에서 콘솔은 S3 버킷에 대한 기존 사용자 계정을 사용합니다.</block>
   <block id="ce6bd8b7e44a144f2c3eefb8fb43c028" category="inline-link-macro">시스템에 대한 NetApp Backup and Recovery 등록 취소</block>
   <block id="dde7812a2b64115f166d47da097a615f" category="paragraph">나중에 클러스터의 대상 개체 저장소를 변경하려면 다음이 필요합니다.<block ref="4b0267ab70996ada4858bf6db6495e68" category="inline-link-macro-rx"></block> 그런 다음 새로운 클라우드 공급자 정보를 사용하여 NetApp Backup and Recovery 활성화합니다.</block>
   <block id="47c63e2d9d67be358326c1eff2c87d12" category="section-title">사용자 정의 가능한 백업 일정 및 보존 설정</block>
@@ -3707,20 +3681,14 @@
   <block id="8996e9eaff78ab540aab279a66de20ac" category="inline-xref">검색 및 복원을 사용하여 볼륨, 폴더 및 파일 복원</block>
   <block id="685a6ba7b83ab5e286920feb961c08bb" category="section-title">Browse &amp; Restore를 사용하여 ONTAP 데이터 복원</block>
   <block id="b23bca1a2a7f2ec270c7be93eb3d5720" category="inline-link-macro">AWS 보관 스토리지에서 복원하는 방법에 대해 자세히 알아보세요.</block>
-  <block id="b03a3a022eb328afd14c51f9d25fd0aa" category="paragraph"><block ref="ee2d4c64a4d42f71a3357c6cd2b7b94b" category="inline-link-macro-rx"></block>.</block>
   <block id="f0a32293e7110abfd30f9402fa924815" category="inline-link-macro">Azure 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요.</block>
-  <block id="4f7a7f0966b49199b4fcb96bfb027259" category="paragraph"><block ref="bf09a0f29ffa1dc0ee63da51e58f16ef" category="inline-link-macro-rx"></block>.</block>
   <block id="e57e5c06a7f562addb87315f013677ab" category="inline-link-macro">Google 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요.</block>
-  <block id="5257e1b4d697f8d8bc3d04bda6a273e8" category="paragraph"><block ref="9220ac6939e2eccbf843225c6d0eb5f6" category="inline-link-macro-rx"></block>.</block>
   <block id="e429a3dcdf9ca5d36834b72490aae784" category="admonition">Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복원하는 경우 높은 우선순위는 지원되지 않습니다.</block>
   <block id="598e51a2b37024d5f553af642c739db8" category="section-title">지원되는 시스템 및 개체 스토리지 공급자를 찾아보고 복원합니다.</block>
   <block id="bc6bfb0b14fd7cced8ee62c645d8aa17" category="paragraph">*참고:* 모든 유형의 백업 파일에서 볼륨을 복원할 수 있지만, 현재 개체 스토리지의 백업 파일에서만 폴더나 개별 파일을 복원할 수 있습니다.</block>
   <block id="4392d15c8884c7cc66b17ff794eb41d2" category="cell">*객체 저장소에서(백업)*</block>
   <block id="a4e7ccecf7c1ff2d3e2de88d9f7559d4" category="cell">*기본(스냅샷)에서*</block>
   <block id="c1ad4111606308626e152e2bc5089a8b" category="cell">*2차 시스템(복제)에서*</block>
-  <block id="aab3dd6e73e091e7f55c3e923a012dbb" category="cell">대상 시스템 ifdef::aws[]</block>
-  <block id="508c69ac69618e417c42c1ec4f1802fe" category="cell">AWS 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::aws[] ifdef::azure[]</block>
-  <block id="a57e78a7b424a1f155d5c251bf4bfe16" category="cell">Azure 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::azure[] ifdef::gcp[]</block>
   <block id="f6bc09197fbc5599ccf48032f3ead672" category="cell">온프레미스 ONTAP 시스템으로</block>
   <block id="56a66e1fc15e989f40186eb5d1841f59" category="paragraph">찾아보기 및 복원의 경우 콘솔 에이전트를 다음 위치에 설치할 수 있습니다.</block>
   <block id="26b66b8e6541c0f2e46ee638955dab17" category="list-text">Amazon S3의 경우 콘솔 에이전트는 AWS 또는 사내에 배포될 수 있습니다.</block>
@@ -3749,7 +3717,6 @@
   <block id="2f7ffcf09fd8291d200be9f94baef41d" category="list-text">복원된 볼륨에 사용할 이름을 입력하고 볼륨이 상주할 저장소 VM과 집계를 선택합니다.  FlexGroup 볼륨을 복원할 때는 여러 개의 집계를 선택해야 합니다.  기본적으로 *&lt;source_volume_name&gt;_restore*가 볼륨 이름으로 사용됩니다.</block>
   <block id="7a2007148011e973184940a379d2cfeb" category="paragraph">ONTAP 9.13.0 이상을 사용하여 Cloud Volumes ONTAP 시스템이나 ONTAP 9.14.1을 실행하는 온프레미스 ONTAP 시스템으로 개체 스토리지에서 백업을 복원하는 경우 _빠른 복원_ 작업을 수행할 수 있는 옵션이 제공됩니다.</block>
   <block id="15c25e27b550e844257a7920d4c7a5ea" category="paragraph">그리고 보관 스토리지 계층( ONTAP 9.10.1부터 사용 가능)에 있는 백업 파일에서 볼륨을 복원하는 경우 복원 우선순위를 선택할 수 있습니다.</block>
-  <block id="05a3d8f98ebfb8438c88a925f984d2a0" category="paragraph"><block ref="9220ac6939e2eccbf843225c6d0eb5f6" category="inline-link-macro-rx"></block>. Google 보관함 저장 계층의 백업 파일은 거의 즉시 복원되며 복원 우선 순위가 필요하지 않습니다.</block>
   <block id="f88c0e05820f08ba199e29b639f011b8" category="list-text">*다음*을 선택하여 일반 복원 또는 빠른 복원 프로세스를 수행할지 여부를 선택합니다.</block>
   <block id="2618b905cdc9e04055a7d6a5328eebfb" category="list-text">*일반 복원*: 높은 성능이 필요한 볼륨에 일반 복원을 사용합니다.  복원 프로세스가 완료될 때까지 볼륨을 사용할 수 없습니다.</block>
   <block id="64063115b259542737cce343064e3233" category="list-text">*빠른 복원*: 복원된 볼륨과 데이터는 즉시 사용할 수 있습니다. 높은 성능이 필요한 볼륨에서는 이 기능을 사용하지 마세요. 빠른 복원 프로세스 중에는 데이터에 대한 액세스가 평소보다 느릴 수 있습니다.</block>
@@ -4408,19 +4375,7 @@
   <block id="0253148ca606e51aa3fdb4d9f8b84f32" category="sidebar">지원되는 AWS 아카이브 스토리지 계층</block>
   <block id="62967cdcfc7912e3c1a9b3870580fe3f" category="sidebar">지원되는 Azure 보관 저장소 계층</block>
   <block id="6af2225d62ab9c4b0de4dfa7f9e852f5" category="sidebar">지원되는 Google Cloud 보관 스토리지 계층</block>
-  <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">클라우드 제공업체</block>
-  <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">모든 클라우드 제공업체</block>
-  <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">아마존 웹 서비스</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">AWS</block>
   <block id="56ef2682280ac110060b881925a87b80" category="sidebar">구글 클라우드</block>
-  <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">마이크로소프트 애저</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="sidebar">하늘빛</block>
-  <block id="5a81378cdc7edd9ea960cf02d6ca78d2" category="paragraph">ifdef::aws[]</block>
-  <block id="6beb2fa01dc121194547db1bfbe03408" category="paragraph">endif::aws[]</block>
-  <block id="b010c7530103ef9947582474d65ff9a3" category="paragraph">ifdef::azure[]</block>
-  <block id="6e1e9c83b80f4d22d34cbdf60a71383b" category="paragraph">ifdef::gcp[]</block>
-  <block id="879701946bb2bc7241d0f85fd843455a" category="paragraph">endif::azure[]</block>
-  <block id="310c228207a0f8446bbe4c5d16978cb7" category="paragraph">endif::gcp[]</block>
   <block id="6fc478198b32debce80454c7af87f2a6" category="paragraph">소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템을 준비합니다.</block>
   <block id="9d6517026ceae75d40ad31bbce85a01f" category="paragraph">ONTAP 시스템이 다음 요구 사항을 충족하는지 확인하세요.</block>
   <block id="412575a7231cf720dd454d12218d97e8" category="list-text">데이터를 복제하는 경우 소스 및 대상 시스템이 호환되는 ONTAP 버전을 실행하는지 확인하세요.</block>
@@ -4841,4 +4796,19 @@
   <block id="7a90fde5622dcca215688cd078d7dd01" category="list-text">Google Cloud Platform용 Cloud Volumes ONTAP 9.8 이상 버전(NFS 및 CIFS 프로토콜 사용)</block>
   <block id="6f1c9788058344e9232a35579eac91e2" category="list-text">Amazon FSx for NetApp ONTAP (Microsoft SQL Server 워크로드만 해당)</block>
   <block id="0b115ac5b217f989a1fc7dd422161b82" category="list-title">지원되는 백업 대상</block>
+  <block id="c1ff016c5b916007ee8f97689d0cf42d" category="paragraph"><block ref="74169e9d6aed252bcfdf8c7b3af7403c" category="inline-link-macro-rx"></block>. <block ref="2ee7cc9e20761e67f0920429cf98cc54" category="inline-link-macro-rx"></block>. <block ref="aba7d321ee8cc50f731dfdd9ecd7c01c" category="inline-link-macro-rx"></block>. ( ONTAP 9.12.1이 필요합니다.)</block>
+  <block id="6d7ca5f3a62a8450cd1f9e559fa7f7d2" category="paragraph">참고로, 아카이브 저장소로 계층화된 백업 파일은 백업 계층화를 중지하더라도 해당 계층에 그대로 남아 있으며, 자동으로 표준 계층으로 다시 이동되지 않습니다. 표준 티어에는 새로운 볼륨 백업만 저장됩니다.</block>
+  <block id="6fe3c37e727721914225ad76304d3726" category="list-text">최대 전송 속도 옵션을 사용하여 객체 스토리지에 백업을 업로드하는 데 할당되는 네트워크 대역폭을 변경합니다.</block>
+  <block id="5b9be87b8cd311cb68b9eddc1c1d9d4b" category="paragraph">이 기능을 사용하면 SnapMirror 통해 클라우드에 복제된 클라우드 스냅샷을 잠글 수 있으며, 랜섬웨어 공격을 감지하고 객체 저장소에서 스냅샷의 일관된 복사본을 복구할 수 있습니다. 이 기능은 AWS, Azure, Google Cloud Platform 및 StorageGRID 에서 지원됩니다.</block>
+  <block id="ed56c48eb3d77598d7dd71524f288c12" category="cell">백업 파일 저장 위치</block>
+  <block id="e6af6ec70c8f1f9b1b24a05417aae82a" category="cell">Amazon S3 Azure Blob Google Cloud NetApp StorageGRID</block>
+  <block id="31c25778a66dd9ff2087fb25f9f003e3" category="list-text">AWS의 경우, AWS _S3 Glacier_ 또는 _S3 Glacier Deep Archive_ 스토리지로 백업을 계층화할 수 있습니다. <block ref="da672f43205b0c90027c7dfb66aec892" category="inline-link-macro-rx"></block>.</block>
+  <block id="cf79bdcd3a75ca2aaf153bfbee77f91f" category="list-text">Azure의 경우, 오래된 백업을 Azure Archive 스토리지로 계층화할 수 있습니다. <block ref="378f4ee26769b0f22cf8e5c4c18a63bc" category="inline-link-macro-rx"></block>.</block>
+  <block id="55746a30fb9b4c5182484dec9b3600d3" category="list-text">로컬 온프레미스 ONTAP 시스템의 데이터를 S3 개체 스토리지에 대해 구성된 로컬 온프레미스 ONTAP 시스템이나 Cloud Volumes ONTAP 시스템으로 백업할 수 있습니다. <block ref="61d8249673309599fa2a7a8b0c67a195" category="inline-link-macro-rx"></block>.</block>
+  <block id="a99979a95e2c9dcb0b5768f80898dd11" category="cell">Amazon S3 Azure Blob Google Cloud Storage NetApp StorageGRID ONTAP S3</block>
+  <block id="5cbc97866d11e9b3160156a597fbd5bf" category="list-text">AWS에서 콘솔을 사용하면 다음이 가능합니다.<block ref="b38667957fcdf9b9da65b213e7fb2492" category="inline-link-rx"></block> S3 버킷에 저장됩니다.</block>
+  <block id="108d25df82fe933520bf967ad1d14b85" category="list-text">Azure에서 콘솔은 Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹 또는 기존 리소스 그룹을 사용합니다. 콘솔<block ref="a7068b8d2b60241ce77a1051f3a66ed5" category="inline-link-rx"></block> 기본적으로.</block>
+  <block id="fc2c90af4df4de3a15611b7cf431a683" category="list-text">GCP에서 콘솔은 Google Cloud Storage 버킷에 대한 스토리지 계정이 있는 새 프로젝트 또는 기존 프로젝트를 사용합니다.</block>
+  <block id="96e895b3970ec91a00e97afd2eb59250" category="list-text">StorageGRID 에서 콘솔은 S3 버킷에 기존 테넌트 계정을 사용합니다.</block>
+  <block id="836b4aa41fc8e9938df6b2350419d4f6" category="paragraph"><block ref="ee2d4c64a4d42f71a3357c6cd2b7b94b" category="inline-link-macro-rx"></block>. <block ref="bf09a0f29ffa1dc0ee63da51e58f16ef" category="inline-link-macro-rx"></block>. <block ref="9220ac6939e2eccbf843225c6d0eb5f6" category="inline-link-macro-rx"></block>.</block>
 </blocks>

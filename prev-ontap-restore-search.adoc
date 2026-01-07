@@ -34,23 +34,7 @@ summary: 검색 및 복원을 사용하면 ONTAP 백업 파일에서 볼륨, 폴
 
 
 
-ifdef::aws[]
-
-link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에서 복원하는 방법에 대해 자세히 알아보세요."].
-
-endif::aws[]
-
-ifdef::azure[]
-
-link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요."].
-
-endif::azure[]
-
-ifdef::gcp[]
-
-link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요."].
-
-endif::gcp[]
+link:prev-reference-aws-archive-storage-tiers.html["AWS 보관 스토리지에서 복원하는 방법에 대해 자세히 알아보세요."]. link:prev-reference-azure-archive-storage-tiers.html["Azure 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요."]. link:prev-reference-gcp-archive-storage-tiers.html["Google 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요."].
 
 [NOTE]
 ====
@@ -76,16 +60,16 @@ endif::gcp[]
 2+| 백업 파일 위치 | 목적지 시스템 
 
 
-| *객체 저장소(백업)* | *2차 시스템(복제)* | ifdef::aws[] 
+| *객체 저장소(백업)* | *2차 시스템(복제)* |  
 
 
-| 아마존 S3 | AWS 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP | AWS 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::aws[] ifdef::azure[] 
+| 아마존 S3 | AWS 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP | AWS 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP 
 
 
-| Azure Blob | Azure 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP | Azure 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::azure[] ifdef::gcp[] 
+| Azure Blob | Azure 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP | Azure 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP 
 
 
-| 구글 클라우드 스토리지 | Google 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP | Google 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP endif::gcp[] 
+| 구글 클라우드 스토리지 | Google 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP | Google 온프레미스 ONTAP 시스템의 Cloud Volumes ONTAP 
 
 
 | NetApp StorageGRID | 온프레미스 ONTAP 시스템 Cloud Volumes ONTAP | 온프레미스 ONTAP 시스템 
@@ -95,27 +79,9 @@ endif::gcp[]
 |===
 검색 및 복원의 경우 콘솔 에이전트를 다음 위치에 설치할 수 있습니다.
 
-ifdef::aws[]
-
 * Amazon S3의 경우 콘솔 에이전트는 AWS 또는 사내에 배포될 수 있습니다.
-
-
-endif::aws[]
-
-ifdef::azure[]
-
 * Azure Blob의 경우 콘솔 에이전트는 Azure 또는 사내에 배포될 수 있습니다.
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
 * Google Cloud Storage의 경우 콘솔 에이전트는 Google Cloud Platform VPC에 배포되어야 합니다.
-
-
-endif::gcp[]
-
 * StorageGRID 의 경우 콘솔 에이전트는 인터넷 접속 여부와 관계없이 사내에 배포되어야 합니다.
 * ONTAP S3의 ​​경우 콘솔 에이전트는 인터넷 접속 여부와 관계없이 사내 또는 클라우드 공급자 환경에 배포될 수 있습니다.
 
@@ -147,8 +113,6 @@ endif::gcp[]
 
 [%collapsible]
 ====
-ifdef::aws[]
-
 * AWS 요구 사항:
 +
 ** 콘솔에 권한을 제공하는 사용자 역할에 특정 Amazon Athena, AWS Glue 및 AWS S3 권한을 추가해야 합니다. link:prev-ontap-backup-onprem-aws.html["모든 권한이 올바르게 구성되었는지 확인하세요."].
@@ -158,10 +122,6 @@ ifdef::aws[]
 
 
 
-
-endif::aws[]
-
-ifdef::azure[]
 
 * Azure 요구 사항:
 +
@@ -175,10 +135,6 @@ ifdef::azure[]
 
 
 
-endif::azure[]
-
-ifdef::gcp[]
-
 * Google Cloud 요구 사항:
 +
 ** NetApp Console 권한을 제공하는 사용자 역할에 특정 Google BigQuery 권한을 추가해야 합니다. link:prev-ontap-backup-onprem-gcp.html["모든 권한이 올바르게 구성되었는지 확인하세요."].
@@ -186,10 +142,6 @@ ifdef::gcp[]
 과거에 구성한 콘솔 에이전트와 함께 NetApp Backup and Recovery 이미 사용하고 있는 경우 지금 콘솔 사용자 역할에 BigQuery 권한을 추가해야 합니다.  검색 및 복원에 필요합니다.
 
 
-
-
-
-endif::gcp[]
 
 * StorageGRID 및 ONTAP S3 요구 사항:
 +
@@ -336,34 +288,15 @@ mount 10.192.24.17:/CATALOG_SCALE_234 /opt/application/netapp/cbs
 온프레미스 ONTAP 시스템을 선택하고 개체 스토리지에 대한 클러스터 연결을 아직 구성하지 않은 경우 추가 정보를 입력하라는 메시지가 표시됩니다.
 
 +
-ifdef::aws[]
-
-+
 *** Amazon S3에서 복원할 때 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택하고, ONTAP 클러스터에 S3 버킷에 대한 액세스 권한을 부여하기 위해 생성한 사용자의 액세스 키와 비밀 키를 입력하고, 선택적으로 안전한 데이터 전송을 위해 개인 VPC 엔드포인트를 선택합니다. link:prev-ontap-backup-onprem-aws.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
+*** Azure Blob에서 복원할 때 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택하고, 필요에 따라 VNet 및 서브넷을 선택하여 안전한 데이터 전송을 위한 개인 엔드포인트를 선택합니다. link:prev-ontap-backup-onprem-azure.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
+*** Google Cloud Storage에서 복원할 때 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택하고, 개체 스토리지에 액세스하기 위한 액세스 키와 비밀 키를 선택합니다. link:prev-ontap-backup-onprem-gcp.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
+*** StorageGRID 에서 복원할 때 StorageGRID 서버의 FQDN과 ONTAP StorageGRID 와 HTTPS 통신에 사용해야 하는 포트를 입력하고, 개체 스토리지에 액세스하는 데 필요한 액세스 키와 비밀 키를 입력하고, 대상 볼륨이 있는 ONTAP 클러스터의 IP 공간을 입력합니다. link:prev-ontap-backup-onprem-storagegrid.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
+*** ONTAP S3에서 복원할 때 ONTAP S3 서버의 FQDN과 ONTAP ONTAP S3와 HTTPS 통신에 사용해야 하는 포트를 입력하고, 개체 스토리지에 액세스하는 데 필요한 액세스 키와 비밀 키를 선택하고, 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택합니다. link:prev-ontap-backup-onprem-ontaps3.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
 
 
 
 
-
-
-endif::aws[]
-
-ifdef::azure[]
-
-* Azure Blob에서 복원할 때 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택하고, 필요에 따라 VNet 및 서브넷을 선택하여 안전한 데이터 전송을 위한 개인 엔드포인트를 선택합니다. link:prev-ontap-backup-onprem-azure.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Google Cloud Storage에서 복원할 때 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택하고, 개체 스토리지에 액세스하기 위한 액세스 키와 비밀 키를 선택합니다. link:prev-ontap-backup-onprem-gcp.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
-
-
-endif::gcp[]
-
-* StorageGRID 에서 복원할 때 StorageGRID 서버의 FQDN과 ONTAP StorageGRID 와 HTTPS 통신에 사용해야 하는 포트를 입력하고, 개체 스토리지에 액세스하는 데 필요한 액세스 키와 비밀 키를 입력하고, 대상 볼륨이 있는 ONTAP 클러스터의 IP 공간을 입력합니다. link:prev-ontap-backup-onprem-storagegrid.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
-* ONTAP S3에서 복원할 때 ONTAP S3 서버의 FQDN과 ONTAP ONTAP S3와 HTTPS 통신에 사용해야 하는 포트를 입력하고, 개체 스토리지에 액세스하는 데 필요한 액세스 키와 비밀 키를 선택하고, 대상 볼륨이 상주할 ONTAP 클러스터의 IP 공간을 선택합니다. link:prev-ontap-backup-onprem-ontaps3.html["이러한 요구 사항에 대한 세부 정보를 확인하세요"].
 
 
 .결과
