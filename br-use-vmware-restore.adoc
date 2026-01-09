@@ -91,8 +91,8 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 
 
 
-. *다음*을 선택하세요.
-. 대상 설정과 복원 전/후 옵션을 선택합니다.
+. 계속하려면 *다음*을 선택하세요.
+. 복원 대상 및 설정을 선택하십시오.
 
 
 [discrete]

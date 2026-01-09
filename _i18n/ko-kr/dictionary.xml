@@ -1013,10 +1013,7 @@
   <block id="47d76616568defc7344e2cfbcdf92653" category="paragraph">가능한 복원 지점 목록이 나타납니다.</block>
   <block id="effade56c0dfab07db57229c5b4e6e4e" category="list-text">사용할 복원 지점을 선택하세요.</block>
   <block id="6f012e8e8abed5b3c7ee277d331469f3" category="list-text">스냅샷 소스 위치를 선택하세요.</block>
-  <block id="39e791cd576f013480b8ac3c88fcd655" category="list-text">계속하려면 *완료* 또는 *다음*을 선택하세요. 복원 대상 설정 페이지로 이동합니다.</block>
-  <block id="94697b58b65e2562f9eac2c0fef08c35" category="paragraph">다음으로, 대상 설정과 복원 전, 복원 후 옵션을 선택할 수 있습니다.</block>
   <block id="23de539bf06cfaf2cd9dc515802272ce" category="floating-title">목적지 선택</block>
-  <block id="5dd0bd8435aec915fe085d771534ba47" category="list-text">대상 설정과 복원 전, 복원 후 옵션을 선택하세요.</block>
   <block id="abfc7c0c366258e23e15cd12a5f89811" category="open-title">원래 위치로 복원</block>
   <block id="f841432c2e7b95f0e1480a64c27a957d" category="list-text">*빠른 복원 활성화*: 빠른 복원 작업을 수행하려면 이 옵션을 선택하세요. 복구된 볼륨과 데이터는 즉시 사용할 수 있습니다. 높은 성능이 필요한 볼륨에서는 이 기능을 사용하지 마세요. 빠른 복원 프로세스 중에는 데이터에 대한 액세스가 평소보다 느릴 수 있습니다.</block>
   <block id="6ca1e0675a4f2fa0425b153f38956afe" category="list-text">*복원 전 옵션*: 복원 작업 전에 실행해야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력합니다.</block>
@@ -1590,7 +1587,6 @@
   <block id="e778183067d12c261c4b71b0ccc4eaad" category="open-title">복구 없이 스냅샷에서 복원</block>
   <block id="e9bde7b168cf5fbb3d9d5b297ca8bfb2" category="list-text">*복구 없이 스냅샷에서 복원*을 선택합니다.</block>
   <block id="002b8c566162a2cd02c4e355805ac3f6" category="paragraph">일치하는 스냅샷이 표시됩니다.</block>
-  <block id="ae0355b3acbc8735275d2415050e631f" category="list-text">*다음*을 선택하여 복원 대상 설정 페이지로 이동합니다.</block>
   <block id="98b2af096c36f02920b21c788a2a0dc6" category="list-text">*목적지 설정*:</block>
   <block id="12c0707880528cef62d0f97d7a498d1a" category="list-text">전체 데이터베이스를 복원할지 아니면 데이터베이스의 테이블스페이스만 복원할지 선택합니다.</block>
   <block id="78847577cebd91850d891ed95fe6bce3" category="list-text">*제어 파일*: 선택적으로 이 옵션을 활성화하면 데이터베이스 제어 파일도 복원됩니다.</block>
@@ -4698,7 +4694,6 @@
   <block id="f16b36eea83bd45d35d7613cab7f6cf8" category="list-text">스냅샷의 복원 대상을 선택하세요.</block>
   <block id="086fbde8fbe590f104f5100808b42c0b" category="list-text">*로컬*: 로컬 위치에서 스냅샷을 복원합니다.</block>
   <block id="3a786499ea5d54fb6bb418032aca3117" category="list-text">*보조*: 원격 저장 위치에서 스냅샷을 복원합니다.</block>
-  <block id="bc9234ce73c565f247a8ae290b842ff6" category="list-text">대상 설정과 복원 전/후 옵션을 선택합니다.</block>
   <block id="8ed9e5a565b596ef7f9cb364cf2536d7" category="paragraph">원래 위치로 복원할 때 대상 vCenter, ESXi 호스트, 데이터 저장소 또는 VM 이름을 변경할 수 없습니다. 복원 작업으로 원래 VM이 덮어쓰여집니다.</block>
   <block id="10b0d3ffb47c4e67fc652e3b0f0220d7" category="list-text">*원래 위치* 창을 선택하세요.</block>
   <block id="1b8d4d654146b4eec3cc22bd8b461dbb" category="list-text">다음 옵션 중에서 선택하세요:</block>
@@ -4737,7 +4732,6 @@
   <block id="cd1f1a4a4415e09f2c3fc9ab17aff625" category="list-text">복원하려는 스냅샷에 대한 라디오 버튼을 활성화합니다.</block>
   <block id="57385260ec48afcc58eb70dc9059c8c0" category="list-text">*객체 저장소*: 개체 저장소에서 스냅샷을 복원합니다.</block>
   <block id="c1389ae5f188f85d79b6e1088e21576d" category="paragraph">보조 저장소를 선택하는 경우 드롭다운 목록에서 대상 위치를 선택하세요.</block>
-  <block id="a1ff6993d36232fbd0d0471769216a69" category="list-text">대상 설정과 복원 전/후 옵션을 선택하세요.</block>
   <block id="21ba1fcc630eae9c060829f621ac7124" category="paragraph">원래 위치로 복원할 때 대상 vCenter, ESXi 호스트, 데이터 저장소 또는 가상 디스크 이름을 변경할 수 없습니다. 원본 가상 디스크가 덮어씌워집니다.</block>
   <block id="9f63eee4b169a6ac1fce2d2e6ec65d64" category="list-text">*대상 설정* 섹션에서 복원하려는 가상 디스크의 확인란을 활성화합니다.</block>
   <block id="e3926503d87ede09d428d2ca5fc4abf5" category="paragraph">대체 위치로 복원할 때 대상 데이터 저장소를 변경할 수 있습니다. 복원 작업 후 가상 디스크는 선택한 데이터 저장소와 관계없이 원래 VM에 연결됩니다.</block>
@@ -4811,4 +4805,9 @@
   <block id="fc2c90af4df4de3a15611b7cf431a683" category="list-text">GCP에서 콘솔은 Google Cloud Storage 버킷에 대한 스토리지 계정이 있는 새 프로젝트 또는 기존 프로젝트를 사용합니다.</block>
   <block id="96e895b3970ec91a00e97afd2eb59250" category="list-text">StorageGRID 에서 콘솔은 S3 버킷에 기존 테넌트 계정을 사용합니다.</block>
   <block id="836b4aa41fc8e9938df6b2350419d4f6" category="paragraph"><block ref="ee2d4c64a4d42f71a3357c6cd2b7b94b" category="inline-link-macro-rx"></block>. <block ref="bf09a0f29ffa1dc0ee63da51e58f16ef" category="inline-link-macro-rx"></block>. <block ref="9220ac6939e2eccbf843225c6d0eb5f6" category="inline-link-macro-rx"></block>.</block>
+  <block id="ab042cf6b82a1ca2824a55aecccf0f72" category="list-text">계속하려면 *다음*을 선택하세요.</block>
+  <block id="38cf859695687379726e3ea14b05ddc1" category="list-text">복원 대상 및 설정을 선택하십시오.</block>
+  <block id="a30b9d9cd5fcd792454de596b4a70bbf" category="paragraph">원래 위치로 복원하면 *대상 설정* 섹션을 확장하여 대상 설정을 볼 수 있지만 변경할 수는 없습니다.</block>
+  <block id="6ae1e8b4e49e0eb340bfe865ab9bf2be" category="list-text">*복원 후 옵션* 섹션에서 다음 옵션을 고려하십시오.</block>
+  <block id="549fac1df4ed1f1a9ecf014524bf6245" category="paragraph">*가상 머신 재시작*: 복원 후 새 가상 머신을 부팅하려면 이 옵션을 활성화하십시오.</block>
 </blocks>
