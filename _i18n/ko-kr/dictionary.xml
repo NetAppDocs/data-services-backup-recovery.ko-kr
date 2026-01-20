@@ -4873,7 +4873,6 @@
   <block id="0bf794e2b090829c5f342b426fa04d5c" category="summary">Windows 게스트 OS의 VMDK에서 하나 이상의 파일이나 폴더를 복원할 수 있습니다.</block>
   <block id="9cda0c7b074ab9336e54e5c799f32f1d" category="doc">VMDK에서 게스트 파일 및 폴더 복원</block>
   <block id="a26360f952d07b84e1088cc6c613eafe" category="admonition">NetApp Backup and Recovery 에서 게스트 VM에 대한 자격 증명을 생성해야 해당 VM에서 파일과 폴더를 복원할 수 있습니다. NetApp Backup and Recovery 가상 디스크를 연결할 때 게스트 VM에 인증하기 위해 이러한 자격 증명을 사용합니다.</block>
-  <block id="50f6ae852890a51c1bdcbc5fa3074be0" category="paragraph">NetApp Backup and Recovery 기본적으로 연결된 가상 디스크를 24시간 동안 사용할 수 있도록 설정한 후 자동으로 연결을 해제합니다. 마법사에서 복원 작업 후 게스트 파일 복원 세션을 자동으로 삭제하거나 수동으로 삭제할 수 있습니다.</block>
   <block id="84768fbdedcb14c4c8dd78daf9604451" category="paragraph">게스트 파일 또는 폴더 복원 성능은 두 가지 요인에 따라 달라집니다. 복원되는 파일 또는 폴더의 크기와 복원되는 파일 또는 폴더의 수입니다. 복원할 데이터 세트의 크기가 동일하다면, 다수의 작은 크기의 파일을 복원하는 데는 소수의 큰 크기의 파일을 복원하는 데에 비해 예상보다 더 오랜 시간이 걸릴 수 있습니다.</block>
   <block id="851e8e79b33ecfa430d9ed62957e5cad" category="admonition">VM에서는 동시에 하나의 연결 또는 복원 작업만 실행할 수 있습니다. 동일한 VM에서 병렬 연결 또는 복원 작업을 실행할 수 없습니다.</block>
   <block id="7392d9ba3083cd42958684b4749d4c72" category="admonition">게스트 복원 기능을 사용하면 시스템 파일과 숨겨진 파일을 보고 복원할 수 있으며 암호화된 파일도 볼 수 있습니다. 기존 시스템 파일을 덮어쓰거나 암호화된 파일을 암호화된 폴더에 복원하지 마십시오. 복원 작업 중에는 게스트 파일의 숨김, 시스템 및 암호화 속성이 복원된 파일에 유지되지 않습니다. 예약된 파티션을 보거나 탐색하면 오류가 발생할 수 있습니다.</block>
@@ -4901,7 +4900,6 @@
   <block id="6682a5a344207b03b09bfb0798a193b6" category="section-title">게스트 복원 워크플로</block>
   <block id="dfb5e1e797a80916627d17588b36ab12" category="paragraph">게스트 OS 복원 작업에는 다음 단계가 포함됩니다.</block>
   <block id="7193518e6f5f0076ef05680742323f9c" category="list-text">붙이다</block>
-  <block id="f02fee54a71e292fba6eea93ae620b05" category="paragraph">게스트 VM이나 프록시 VM에 가상 디스크를 연결하고 게스트 파일 복원 세션을 시작합니다.</block>
   <block id="0f68101772bd5397ef8eb1b632798652" category="list-text">기다리다</block>
   <block id="75acbae837699c01fe86ee8a2c9fec00" category="paragraph">연결 작업이 완료될 때까지 기다린 후 찾아보기 및 복원 작업을 진행하십시오. 연결 작업이 완료되면 게스트 파일 복원 세션이 자동으로 생성됩니다.</block>
   <block id="137bf66cd89f2d7f861099ca8519563c" category="list-text">파일 또는 폴더 선택</block>
@@ -4912,7 +4910,6 @@
   <block id="6a7a37bd722f9a7ebe568ae7d8778d8f" category="paragraph">Windows 게스트 운영 체제에서 VMDK 파일의 파일이나 폴더를 복원하기 전에 모든 요구 사항을 검토하십시오.</block>
   <block id="36139d788258b0f7f760e90a7e475cfb" category="list-text">VMware 도구가 설치되어 실행 중이어야 합니다.</block>
   <block id="9809213078fe536846ce61d52cfab742" category="paragraph">NetApp Backup and Recovery VMware 도구의 정보를 사용하여 VMware 게스트 운영 체제에 연결을 설정합니다.</block>
-  <block id="1572f8be6f1646b62b5c0d4d4c380fe8" category="list-text">Windows 게스트 OS는 Windows Server 2008 R2 이상을 실행해야 합니다.</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp 상호 운용성 매트릭스 도구(IMT)</block>
   <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
   <block id="73e99419f23009b467a68b78510f24c7" category="list-text">대상 VM에 대한 자격 증명은 사용자 이름이 "Administrator"인 내장 도메인 또는 로컬 관리자 계정을 사용합니다. 복원 작업을 시작하기 전에 가상 디스크를 연결할 VM에 대한 자격 증명을 구성하십시오. 연결 및 복원 작업 모두에 자격 증명이 필요합니다. 워크그룹 사용자는 내장된 로컬 관리자 계정을 사용할 수 있습니다.</block>
@@ -4926,8 +4923,6 @@
   <block id="9229096468701d10aab6b30f546310c1" category="section-title">게스트 파일 복원 제한 사항</block>
   <block id="ce6cdc51d08da1519febc60a0e9593aa" category="paragraph">게스트 운영 체제에서 파일이나 폴더를 복원하기 전에 기능 제한 사항을 숙지해야 합니다.</block>
   <block id="0938c50db6a8d08637c074ab0c183305" category="list-text">게스트 OS 내부에서는 동적 디스크 유형을 복원할 수 없습니다.</block>
-  <block id="306e51cbbbbd449259f2c9a524080247" category="list-text">암호화된 파일이나 폴더를 복원하면 암호화 속성이 유지되지 않습니다. 암호화된 폴더에는 파일이나 폴더를 복원할 수 없습니다.</block>
-  <block id="631e06eeff5fdebb1ee6aaaa3f7502fd" category="list-text">게스트 파일 찾아보기 페이지에는 필터링할 수 없는 숨겨진 파일과 폴더가 표시됩니다.</block>
   <block id="21e6b4873654be153e3c8d0024f83773" category="list-text">Linux 게스트 OS에서는 복원할 수 없습니다.</block>
   <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">Linux 게스트 OS를 실행하는 VM에서는 파일과 폴더를 복원할 수 없습니다. 하지만 VMDK를 첨부한 다음 파일과 폴더를 수동으로 복원할 수 있습니다. 지원되는 게스트 OS에 대한 최신 정보는 다음을 참조하세요.<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
   <block id="a24b5bfa95a0c9efe3023cae447296e6" category="list-text">NTFS 파일 시스템에서 FAT 파일 시스템으로 복원할 수 없습니다.</block>
@@ -4975,4 +4970,9 @@
   <block id="9b7e5fddcf3e2a7a93fe6669de87fbc2" category="sidebar">특정 가상 디스크 복원</block>
   <block id="6d74a680eadd149117f584cf67b83c34" category="sidebar">게스트 파일 및 폴더 복원</block>
   <block id="3a4d751e404219df1dc6de0a13c8db55" category="sidebar">워크플로, 전제 조건 및 제한 사항</block>
+  <block id="d85468613eebe17a50e2bf01c2bd42f5" category="paragraph">게스트 VM에 가상 디스크를 연결하고 게스트 파일 복원 세션을 시작합니다.</block>
+  <block id="b2c5a3b35bd8f72bf653aa42e54cc06c" category="list-text">Windows 게스트 운영 체제는 Windows Server 2008 R2 이상이어야 합니다.</block>
+  <block id="367aa9be05b109b226ffbefe3981ac88" category="list-text">암호화된 파일이나 폴더를 복원하면 암호화 속성이 유지되지 않습니다.</block>
+  <block id="34454c78e4e96cfe4c311b8ba072f6cd" category="list-text">암호화된 폴더에는 파일이나 폴더를 복원할 수 없습니다.</block>
+  <block id="86a44ece7a205cf4a21804522a9cd44a" category="list-text">숨겨진 파일과 폴더는 파일 탐색 페이지에 표시되지만 필터링할 수 없습니다.</block>
 </blocks>
