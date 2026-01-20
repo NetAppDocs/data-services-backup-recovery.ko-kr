@@ -27,7 +27,7 @@ NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를
 .단계
 . 다음 중 하나를 수행하세요.
 +
-** 처음으로 Kubernetes 워크로드를 검색하는 경우 NetApp Backup and Recovery 에서 Kubernetes 워크로드 유형 아래에서 *검색 및 관리*를 선택합니다.
+** Kubernetes 워크로드를 처음 사용하는 경우 NetApp Backup and Recovery 의 *워크로드*에서 *Kubernetes* 타일을 선택하십시오.
 ** 이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery 에서 *인벤토리* > *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.
 
 

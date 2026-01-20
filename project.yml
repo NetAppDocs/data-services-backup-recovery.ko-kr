@@ -129,9 +129,19 @@ sidebar:
       - title: VMware 워크로드 백업
         url: "/br-use-vmware-backup.html"
       - title: VMware 워크로드 복원
-        url: "/br-use-vmware-restore.html"
-      - title: 백업에서 특정 가상 디스크 복원
-        url: "/br-use-vmware-restore-vmdks-from-backups.html"
+        entries:
+        - title: VMware 가상 머신 복원
+          url: "/br-use-vmware-restore.html"
+        - title: 특정 가상 디스크 복원
+          url: "/br-use-vmware-restore-vmdks-from-backups.html"
+        - title: 게스트 파일 및 폴더 복원
+          entries:
+          - title: 워크플로, 전제 조건 및 제한 사항
+            url: "/br-use-vmware-restore-guest-files-and-folders-overview.html"
+          - title: VMDK에서 게스트 파일 및 폴더 복원
+            url: "/br-use-vmware-restore-guest-files-and-folders-from-vmdks.html"
+          - title: 게스트 파일 복원 문제 해결
+            url: "/br-use-vmware-guest-file-restore-scenarios-you-might-encounter.html"
     - title: VMware 워크로드 보호(VMware용 SnapCenter 플러그인 사용)
       entries:
       - title: 가상 머신 워크로드 보호 개요

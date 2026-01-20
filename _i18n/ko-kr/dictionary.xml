@@ -348,7 +348,6 @@
   <block id="57a114780f98fd4bb0b06506b0ca9577" category="paragraph">NetApp Backup and Recovery 의 Hyper-V 워크로드에 대한 비공개 미리 보기 버전에서는 다음 작업이 지원되지 않습니다.</block>
   <block id="5ae6a8a06c30125d00a57910609856cf" category="list-text">디스크 스패닝(여러 CIFS 공유에 걸쳐)</block>
   <block id="5cb642b37b3102019402cbd3b93a5693" category="list-text">SAN을 통한 VM 보호</block>
-  <block id="0fffe3f2fb1497b9e344ba8dceac922b" category="list-text">SCVMM(System Center Virtual Machine Manager)을 사용하여 클러스터링된 Hyper-V 호스트를 보호합니다.</block>
   <block id="4a03732927298c2d8d1492b3d08bb831" category="summary">NetApp Backup and Recovery 의 이 릴리스에는 다음과 같은 알려진 제한 사항이 있습니다.</block>
   <block id="5050c99de0a6e1bcf02e7ce66edabd97" category="doc">KVM 워크로드에 대한 NetApp Backup and Recovery 의 알려진 제한 사항</block>
   <block id="448a90c8bbb9415c292cb0e585249a04" category="paragraph">NetApp Backup and Recovery 의 KVM 워크로드 비공개 미리 보기 버전에서는 다음 작업 및 구성이 지원되지 않습니다.</block>
@@ -492,7 +491,6 @@
   <block id="aa02d2a98a082cacd35a10457e954436" category="doc">NetApp Backup and Recovery 설정 구성</block>
   <block id="5095bcec3e4370bbbc8bf8d7b47623c5" category="paragraph">NetApp Console 설정한 후 백업 및 복구 설정을 구성합니다.  호스트 리소스에 대한 자격 증명을 추가하고, SnapCenter 리소스를 가져오고, 로그 디렉토리를 구성하고, VMware vCenter 설정을 지정합니다.  데이터를 백업하거나 복구하기 전에 다음 단계를 완료하세요.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-xref"></block>
-  <block id="703c7afa8428dbb84a57f0e06749affb" category="list-text"><block ref="473bc5f1f9d293596a6cf3f7d880fe14" category="inline-xref-macro-rx"></block>SnapCenter 에서 가져온 Windows 및 SQL Server 호스트에 대한 자격 증명을 추가합니다.  (Microsoft SQL Server 워크로드에만 해당)</block>
   <block id="07ede38140c5a0a6207121bf4f4767ef" category="list-text"><block ref="018d9e0f2fecc03b7f691fcb7f4f3055" category="inline-xref-macro-rx"></block>.</block>
   <block id="7913d727f9f60b520b623b3eb18a233d" category="list-text"><block ref="cc46040cc8e081b4419d0d89a46ecf93" category="inline-xref-macro-rx"></block>. (Microsoft SQL Server 워크로드에만 해당)</block>
   <block id="d64cd0a27b28c206184fce8cc1e3a57f" category="list-text"><block ref="6b0c6b1a663fb4e7f1c7e667f6d83b77" category="inline-xref-macro-rx"></block>.</block>
@@ -500,7 +498,6 @@
   <block id="a5999c1155de9850d34ba60075be7171" category="inline-link">모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요.</block>
   <block id="7dea1900c0a761205245e3263e1f1ebf" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자.  에 대해 알아보세요<block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block> .<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="5c42b26269b60e99eac73f94a3585743" category="section-title">호스트 리소스에 대한 자격 증명 추가</block>
-  <block id="b65c7169cf8702ef1805f781de02bc69" category="paragraph">SnapCenter 에서 가져올 호스트 리소스에 대한 자격 증명을 추가합니다.  NetApp Backup and Recovery 이러한 자격 증명을 사용하여 작업 부하를 검색하고 백업 정책을 적용합니다.</block>
   <block id="c353deca6689f7e632a94f8d6f03f7ca" category="paragraph">자격 증명이 없으면 호스트 워크로드에 액세스하고 관리할 수 있는 권한을 부여하여 자격 증명을 만드세요.</block>
   <block id="aedf3a488773fb9c60ee19cf684d0005" category="paragraph">다음 유형의 자격 증명을 구성해야 합니다.</block>
   <block id="33597ea687793f3f614f3518b3d90ac4" category="list-text">Microsoft SQL Server 자격 증명</block>
@@ -508,20 +505,13 @@
   <block id="17fe4bc22a2a4e1640f40d1beb8728a8" category="list-text">NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.</block>
   <block id="8437578ff6b68a46b9b27c74acdd6234" category="list-text">*자격 증명*의 아래쪽 화살표를 선택하세요.</block>
   <block id="83476bbdd229501eeabb850858a4024b" category="list-text">*새 자격 증명 추가*를 선택합니다.</block>
-  <block id="1bedb2e0bc3060fea77e1dad6a206303" category="list-text">자격 증명에 대한 정보를 입력하세요.  선택한 인증 모드에 따라 다른 필드가 나타납니다.  필드에 대한 자세한 내용을 보려면 정보 *i*를 선택하세요.</block>
   <block id="009f47a3a44b93b6e8f3fe67db56cd8f" category="list-text">*자격 증명 이름*: 자격 증명의 이름을 입력하세요.</block>
-  <block id="f3ed99da624b2f7878545820c05d42e5" category="list-text">*인증 모드*: *Windows* 또는 *Microsoft SQL*을 선택하세요.</block>
-  <block id="de0578e6c3169b9a708c027941fd6217" category="admonition">Windows와 Microsoft SQL Server에 대한 자격 증명을 모두 입력해야 하므로 두 세트의 자격 증명을 추가해야 합니다.</block>
   <block id="ed6d922dadb294d54c3c4f844391207a" category="list-text">*Windows*를 선택한 경우:</block>
-  <block id="71c9fbfbc0367795ed316f4712cbbed6" category="list-text">*콘솔 에이전트*: 콘솔 에이전트 IP 주소를 입력하세요.</block>
   <block id="89311de32f3a0314b08d05b9a13f35f6" category="list-text">*도메인 및 사용자 이름*: 자격 증명에 대한 NetBIOS 또는 도메인 FQDN과 사용자 이름을 입력합니다.</block>
   <block id="125391fb56ddee7b099041397ad56b37" category="list-text">*비밀번호*: 자격 증명의 비밀번호를 입력하세요.</block>
-  <block id="077032acd9dcd0fd78e046ae0752ee63" category="list-text">*Microsoft SQL*을 선택한 경우:</block>
-  <block id="8db59c71868ea9a3a81d318f9b4c3078" category="list-text">*호스트*: 검색된 SQL Server 호스트 주소를 선택하세요.</block>
   <block id="b4edde7cbb09cfc80c7462166ca765c3" category="list-text">*SQL Server 인스턴스*: 검색된 SQL Server 인스턴스를 선택합니다.</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">*추가*를 선택하세요.</block>
   <block id="d67ce54df78cb91f71855151c15ee454" category="section-title">호스트 리소스에 대한 자격 증명 편집</block>
-  <block id="d9ac15a6366f5d06e30d9e29eb6ecb31" category="paragraph">나중에 SnapCenter 에서 가져온 호스트 리소스의 비밀번호를 편집할 수 있습니다.</block>
   <block id="417df0a576ca3f73f1672955493c1371" category="list-text">아래쪽 화살표를 선택하여 *자격 증명* 섹션을 확장합니다.</block>
   <block id="dab40747af7b8b39dcb8cf68acb4f53e" category="inline-image-macro">작업 옵션</block>
   <block id="7c60bb16141be5fd1d4d7893307168fa" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *자격 증명 편집*.</block>
@@ -676,7 +666,6 @@
   <block id="f0338e38e7978ec30d1f5eb9b845e843" category="section-title">Kubernetes 워크로드를 알아보세요</block>
   <block id="a74bdf5d9abca25c000c1902f13999c8" category="paragraph">백업 및 복구 인벤토리에서 사용자 환경의 Kubernetes 워크로드를 검색합니다.  워크로드를 추가하면 NetApp Backup and Recovery 에 Kubernetes 클러스터가 추가됩니다.  그런 다음 애플리케이션을 추가하고 클러스터 리소스를 보호할 수 있습니다.</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">다음 중 하나를 수행하세요.</block>
-  <block id="c18324e4a97bb333a32ac23c81d62389" category="list-text">처음으로 Kubernetes 워크로드를 검색하는 경우 NetApp Backup and Recovery 에서 Kubernetes 워크로드 유형 아래에서 *검색 및 관리*를 선택합니다.</block>
   <block id="6226950d1b144f972ce9b5d3caea9b42" category="list-text">이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery 에서 *인벤토리* &gt; *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.</block>
   <block id="e7c444e4a1d2f156d71a907145c8a598" category="list-text">*Kubernetes* 워크로드 유형을 선택하세요.</block>
   <block id="96c35fcba67cbf6710845bcca4668cc2" category="list-text">클러스터 이름을 입력하고 클러스터와 함께 사용할 커넥터를 선택하세요.</block>
@@ -694,22 +683,14 @@
   <block id="d5292ed1370bb405095587cd10827f95" category="paragraph"><block ref="2a35d34f81dbac907e6068b45b5d538a" category="inline-link-macro-rx"></block>.</block>
   <block id="a8d8543f27c131c1d9b3ca0cf9f1f4ea" category="summary">NetApp Backup and Recovery 워크로드를 보호하기 위해 먼저 워크로드를 검색해야 합니다.</block>
   <block id="53b57e71ade6f566bc9a40b2d755856b" category="doc">NetApp Backup and Recovery 에서 KVM 워크로드를 알아보세요</block>
-  <block id="da99ef1e3a4655762878849b958b6339" category="paragraph">NetApp Backup and Recovery KVM 호스트와 가상 머신을 보호하기 전에 검색해야 합니다.</block>
-  <block id="3f65dc3e5d8703153e9361635518dbf8" category="section-title">KVM 호스트를 추가하고 리소스를 검색합니다.</block>
-  <block id="9c76ba797da429be427b4f5c78dbaf5b" category="paragraph">KVM 호스트 정보를 추가하고 NetApp Backup and Recovery 워크로드를 검색하도록 합니다. 각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.</block>
   <block id="eb843ea9168f30f329148ea12f95519f" category="list-text">NetApp Console 메뉴에서 *보호 &gt; 백업 및 복구*를 선택합니다.</block>
   <block id="acaaf9de0e4071fe117da04dbbe9565d" category="list-text">KVM 타일에서 *검색 및 관리*를 선택합니다.</block>
-  <block id="1ab8ba690be124cf719dc3ecd310a339" category="paragraph">백업 및 복구에 처음 로그인하는 경우 콘솔에 이미 시스템이 있지만 리소스를 검색하지 못한 경우 "새로운 NetApp Backup and Recovery 에 오신 것을 환영합니다" 랜딩 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.</block>
   <block id="12d8eeba7e97739f6035cbec50bd2369" category="list-text">*작업 유형*: *KVM*을 선택하세요.</block>
-  <block id="893154d2bbfb66474661f9a0545a1144" category="list-text">아직 이 KVM 호스트에 대한 자격 증명을 저장하지 않은 경우 *자격 증명 추가*를 선택합니다.</block>
-  <block id="4eefc3e53a1cd35eca7d32b6b2c550f5" category="list-text">루트 자격 증명을 사용할지, 루트가 아닌 자격 증명을 사용할지 선택합니다.</block>
-  <block id="87f459dd6c99dc89040246d5ef818100" category="list-text">*호스트 등록*: 새로운 KVM 호스트를 추가합니다.  호스트의 FQDN 또는 IP 주소, 자격 증명, 콘솔 에이전트 및 포트 번호를 입력하세요.</block>
   <block id="238fb750ebdea9faf36668536aaa8b42" category="paragraph">KVM 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩니다.</block>
   <block id="0a6dc8ac33152480a18098d8eb98ccb6" category="doc">NetApp Backup and Recovery 에서 Oracle 워크로드를 찾아보세요</block>
   <block id="945f74309f719db5d0fb0d1bb5a31781" category="paragraph">NetApp Backup and Recovery Oracle 데이터베이스를 먼저 검색하여 보호해야 합니다.</block>
   <block id="bf36d800e1bbaf0ef44cd361867e4e09" category="section-title">Oracle 호스트를 추가하고 리소스를 검색합니다.</block>
   <block id="8160dc72c9473d18119ea3e52fe65572" category="paragraph">Oracle 호스트 정보를 추가하고 NetApp Backup and Recovery 워크로드를 검색하도록 합니다. 각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.</block>
-  <block id="83cc971ca0082d369a50f141f24d0974" category="list-text">Oracle 타일에서 *검색 및 관리*를 선택합니다.</block>
   <block id="bdd8003feffb3131de98b744d8d7e952" category="list-text">*작업 유형*: *Oracle*을 선택하세요.</block>
   <block id="c758c27facd2d09f2ccc8fc60719f412" category="list-text">아직 이 Oracle 호스트에 대한 자격 증명을 저장하지 않은 경우 *자격 증명 추가*를 선택합니다.</block>
   <block id="8bd91057b53c6035123596e5f2ba38ab" category="list-text">*호스트 등록*: 새로운 Oracle 호스트를 추가합니다.  호스트의 FQDN 또는 IP 주소, 자격 증명, 콘솔 에이전트 및 포트 번호를 입력하세요.</block>
@@ -845,8 +826,6 @@
   <block id="0daac1b9cd4c3a240bf2f6b44ba178a1" category="paragraph">NetApp Console 로그인 페이지가 나타납니다.</block>
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">콘솔에 로그인합니다.</block>
   <block id="4d2b18ba50dc1294ccb141fdc1041417" category="inline-link">NetApp Console 표준 모드 시작하기</block>
-  <block id="2bee1e2711d556b1f1494117c663c95e" category="list-text">처음으로 백업 및 복구에 로그인하고 아직 *시스템* 페이지에 시스템을 추가하지 않은 경우 백업 및 복구에 "새로운 NetApp Backup and Recovery 에 오신 것을 환영합니다" 랜딩 페이지가 표시되고 시스템을 추가하는 옵션이 제공됩니다.  *시스템* 페이지에 시스템을 추가하는 방법에 대한 자세한 내용은 다음을 참조하세요.<block ref="296443cffec903f0b2ef92c8eb1c49ba" category="inline-link-rx"></block> .</block>
-  <block id="22a84448d7c89870b25df89f9ffb2aea" category="list-text">처음으로 백업 및 복구에 로그인하고 *시스템* 페이지에 시스템을 추가했지만 리소스를 검색하지 못한 경우 "새로운 NetApp Backup and Recovery 에 오신 것을 환영합니다" 랜딩 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.</block>
   <block id="bbad9a213d5f66b0be7b3560016ee386" category="list-text">아직 선택하지 않았다면 *검색 및 관리* 옵션을 선택하세요.</block>
   <block id="9caabb5d3f96fc2ff6ec322a90fc5dd7" category="inline-link-macro">Microsoft SQL Server 워크로드 알아보기</block>
   <block id="78ee359d959f46c3e9be3e03df6414b7" category="list-text">Microsoft SQL Server 워크로드의 경우 다음을 참조하세요.<block ref="2ccdda391ff5985cd5dd52b5e1ae8139" category="inline-link-macro-rx"></block> .</block>
@@ -950,7 +929,6 @@
   <block id="85ec80b493e6765547d2b4489252b82e" category="list-text">일정 단계를 선택하세요.</block>
   <block id="ff4d762e1ab6dd75731a4f97e66ec902" category="list-text">*백업*을 선택하세요.</block>
   <block id="4efc134fd5130564588a4806f9c977f0" category="summary">온프레미스 ONTAP 시스템에서 기본 및 보조 스토리지까지 Hyper-V 가상 머신을 보호하여 데이터가 보호되도록 할 수 있습니다.</block>
-  <block id="997367baf18d147848dcf07ba10d7d8d" category="paragraph">NetApp Backup and Recovery 사용하여 Hyper-V VM을 보호하세요.  NetApp Backup and Recovery 독립 실행형 인스턴스와 FCI 클러스터 인스턴스 모두에 대해 빠르고 공간 효율적이며 충돌 일관성이 뛰어나고 VM 일관성이 있는 백업 및 복원 작업을 제공합니다.</block>
   <block id="9772979b1b90e72fc3981d222d55243a" category="paragraph">Hyper-V 워크로드를 Amazon Web Services S3 또는 StorageGRID 에 백업하고 Hyper-V 워크로드를 온프레미스 Hyper-V 호스트로 복원할 수 있습니다.</block>
   <block id="b7bf580752a61d71227184a60f0fbfd3" category="paragraph">NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.</block>
   <block id="79c28420811a3b277df19fdd38cd10e0" category="list-text">여러 미디어 유형을 사용하면 하나의 미디어 유형에 물리적 또는 논리적 오류가 발생하는 경우에도 장애 조치를 실행할 수 있습니다.</block>
@@ -1001,7 +979,6 @@
   <block id="68976f4a60a7e436e5b5aff0b5dabf41" category="paragraph">작업 부하를 복원하면 다음이 발생합니다.</block>
   <block id="3850249b64193fae9627627088cec7a4" category="list-text">로컬 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.</block>
   <block id="b0ea04995bb7a05b4310a459f5315a78" category="list-text">복제된 워크로드에서 복원하는 경우 워크로드를 원래 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.</block>
-  <block id="0f4570eee3ca580a8c827d191240eb2b" category="paragraph">복원 페이지(검색 및 복원이라고도 함)*에서는 정확한 이름, 리소스가 있는 위치 또는 마지막으로 양호한 상태였던 날짜를 기억하지 못하더라도 리소스를 복원할 수 있습니다. 필터를 사용하여 스냅샷을 검색할 수 있습니다.</block>
   <block id="4967eb3bddc1aeeafa7fa83be9252bb4" category="section-title">복원 옵션(검색 및 복원)에서 작업 부하 데이터 복원</block>
   <block id="ef14b6cabf130697cc9bf71b74faf58b" category="paragraph">복원 옵션을 사용하여 Hyper-V 워크로드를 복원합니다. 스냅샷을 이름이나 필터를 사용하여 검색할 수 있습니다.</block>
   <block id="d1e52fcdb63677c060eb2093a79135fe" category="paragraph">*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
@@ -1054,7 +1031,6 @@
   <block id="439c49409f66b996051132e75cb733a9" category="list-text">백업할 보호 그룹을 선택하세요.</block>
   <block id="b6ae737eccbf79159084e585ff9b8d6d" category="admonition">백업에 적용되는 정책은 보호 그룹에 할당된 정책과 동일합니다.</block>
   <block id="83eee0f9c4eb954285e6843ba724717c" category="summary">온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 까지 KVM 가상 머신을 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다.</block>
-  <block id="b50d1c66e5cefa8210e3dfae785f5c80" category="paragraph">NetApp Backup and Recovery 사용하여 KVM VM과 스토리지 풀을 보호하세요.  NetApp Backup and Recovery 빠르고 공간 효율적이며, 충돌 대비 및 VM 대비 일관된 백업 및 복원 작업을 제공합니다.</block>
   <block id="da432308eb7dd348eae3f93d7993654d" category="paragraph">KVM 워크로드를 Amazon Web Services S3, Azure NetApp Files 또는 StorageGRID 에 백업하고 KVM 워크로드를 온프레미스 KVM 호스트로 복원할 수 있습니다.</block>
   <block id="4e5ffc8b9d57dca3872ba7f107e09b39" category="paragraph">NetApp Backup and Recovery 사용하면 KVM 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
   <block id="6343f6c391fb966ad325d76211a59524" category="list-text"><block ref="6343f6c391fb966ad325d76211a59524" category="inline-link-macro-rx"></block></block>
@@ -1698,7 +1674,6 @@
   <block id="73a43948bd7a3f1ff765863e2f49aceb" category="list-text">*최대 전송 속도*: 대역폭 사용에 제한을 두지 않으려면 *무제한*을 선택하세요.  전송 속도를 제한하려면 *제한됨*을 선택하고 백업을 개체 스토리지에 업로드하는 데 할당된 네트워크 대역폭을 1~1,000Mbps로 선택합니다.  기본적으로 ONTAP 무제한의 대역폭을 사용하여 시스템 볼륨의 백업 데이터를 개체 스토리지로 전송할 수 있습니다.  백업 트래픽이 일반 사용자 작업 부하에 영향을 미치는 경우 전송 중에 사용되는 네트워크 대역폭 양을 줄이는 것을 고려하세요.</block>
   <block id="1d9dcd5641a380621da1bad708aac2df" category="list-text">*백업 재시도*: (VMware 워크로드에는 적용되지 않음) 실패 또는 중단 시 작업을 재시도하려면 *실패 시 작업 재시도 활성화*를 선택합니다. 스냅샷 및 백업 작업 재시도의 최대 횟수와 재시도 시간 간격을 입력합니다. 재검표는 10회 미만이어야 합니다. 이 설정은 실패나 중단이 발생한 경우 백업 작업을 다시 시도하려는 경우에 유용합니다.</block>
   <block id="ebc38593846bd56262189cdea41159c0" category="admonition">스냅샷 빈도를 1시간으로 설정하면 최대 지연 시간과 재시도 횟수는 45분을 초과해서는 안 됩니다.</block>
-  <block id="d3e01ad5d4c898032205d39244a2e9c6" category="list-text">*VM 일치 스냅샷 사용*: (VMware 워크로드에만 적용) VM 일치 스냅샷을 사용할지 여부를 선택합니다. 이렇게 하면 새로 생성된 스냅샷이 스냅샷 생성 시점의 가상 머신 상태와 일관성을 유지하게 됩니다. 이는 백업이 성공적으로 복원되었는지, 데이터가 일관된 상태인지 확인하는 데 유용합니다. 이는 기존 스냅샷에는 적용되지 않습니다.</block>
   <block id="febcf1de845ae5c111f7fe2fdf9a0023" category="list-text">*랜섬웨어 검사*: 각 버킷에서 랜섬웨어 검사를 활성화할지 여부를 선택합니다. 이를 위해서는 개체 스토리지에 DataLock 잠금이 필요합니다. 검사 빈도를 일 단위로 입력하세요. 이 옵션은 AWS 및 Microsoft Azure 개체 스토리지에 적용됩니다. 클라우드 제공업체에 따라 이 옵션을 사용하면 추가 요금이 부과될 수 있습니다.</block>
   <block id="a276106fc685cb5d2acecf05047b555c" category="list-text">*백업 검증*: (VMware 워크로드에는 적용되지 않음) 백업 검증을 활성화할지 여부와 즉시 수행할지 나중에 수행할지 선택합니다. 이 기능은 백업이 유효하고 성공적으로 복원될 수 있도록 보장합니다. 백업의 무결성을 보장하려면 이 옵션을 활성화하는 것이 좋습니다. 기본적으로 백업 검증은 보조 저장소가 구성된 경우 보조 저장소에서 실행됩니다. 보조 저장소가 구성되지 않은 경우 백업 검증은 기본 저장소에서 실행됩니다.</block>
   <block id="5c9b86ff3ed09d60fd7e04707b95622a" category="paragraph">또한 다음 옵션을 구성하세요.</block>
@@ -2122,7 +2097,6 @@
   <block id="82ede2f1cf5c1f154c5f0ccbd08838b2" category="section-title">KVM 워크로드 보호를 위한 요구 사항</block>
   <block id="64bef292bab71a21d8b1fdfdc5e220aa" category="paragraph">KVM 가상 머신을 검색하고 보호하려면 특정 요구 사항이 필요합니다.</block>
   <block id="0e41245837200bd6043f82d33b20190c" category="list-text">커널 버전 5.14.0-503.22.1.el9_5.x86_64(장기) 이상을 실행하는 최신 Linux 배포판</block>
-  <block id="981e418f547641ce3452aca04dd38475" category="list-text">콘솔 에이전트에서 KVM 호스트로의 포트 22에 대한 인바운드 트래픽이 허용되는지 확인하십시오.</block>
   <block id="c970c11004fdd5ce2f1cc065c0a6ad6b" category="list-text">QEMU 게스트 에이전트 버전 9.0.0 이상</block>
   <block id="1264706b848dd57765cb327cb40961af" category="list-text">libvirt 버전 10.5.0 이상</block>
   <block id="a006e7e12c4a49555c6da7767f1640f2" category="section-title">Oracle 워크로드 보호를 위한 요구 사항</block>
@@ -2295,7 +2269,6 @@
   <block id="9613bc876286a5238d733c45a18b6b2c" category="list-text">다음 방법 중 하나를 사용하여 백업 및 복구 활성화 마법사에 액세스하세요.</block>
   <block id="60ba87f581e252f66351afe3c5b9dc13" category="list-text">콘솔의 *시스템* 페이지에서 시스템을 선택하고 오른쪽 패널의 백업 및 복구 옆에 있는 *활성화 &gt; 백업 볼륨*을 선택합니다.</block>
   <block id="5b2b52549c07a8db3c4f8d8b697bdf2b" category="paragraph">백업을 위한 AWS 대상이 콘솔의 시스템 페이지에 시스템으로 존재하는 경우 ONTAP 클러스터를 AWS 개체 스토리지로 끌어올 수 있습니다.</block>
-  <block id="4c013eef5eb36bcd99b1e7e68c7ab39f" category="list-text">백업 및 복구 막대에서 *볼륨*을 선택합니다.  볼륨 탭에서 *작업*을 선택하세요.<block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘 옵션을 선택하고 단일 볼륨(이미 복제나 개체 스토리지 백업이 활성화되지 않은 볼륨)에 대해 *백업 활성화*를 선택합니다.</block>
   <block id="dece324f2a03458f6bcd8448505fb517" category="paragraph">마법사의 소개 페이지에는 로컬 스냅샷, 복제, 백업을 포함한 보호 옵션이 표시됩니다.  이 단계에서 두 번째 옵션을 선택한 경우, 하나의 볼륨이 선택된 상태로 백업 전략 정의 페이지가 나타납니다.</block>
   <block id="6ac200dba9170b850fa322020c66c468" category="list-text">다음 옵션을 계속 진행하세요.</block>
   <block id="279860fbcfaa6a21c8cc8d5f6caec531" category="list-text">이미 콘솔 에이전트가 있다면 준비가 완료된 것입니다.  *다음*을 선택하세요.</block>
@@ -2345,7 +2318,6 @@
   <block id="ebe3e023565bd2cf134f2cd00a79842b" category="paragraph">백업이 저장될 지역을 선택하세요.  이는 Cloud Volumes ONTAP 시스템이 있는 지역과 다른 지역일 수 있습니다.</block>
   <block id="f85a942eb2bd683f5253b7f3bebddea1" category="paragraph">새로운 버킷을 만들거나 기존 버킷을 선택하세요.</block>
   <block id="0ea4b8f8e49e76c407dc92eef3ef1c15" category="inline-link">자신의 암호화 키를 사용하는 방법을 확인하세요</block>
-  <block id="e1873fb565e4b4215abdf8e3bd737274" category="list-text">*암호화 키*: 새 버킷을 만든 경우 공급자로부터 받은 암호화 키 정보를 입력하세요.  데이터 암호화를 관리하기 위해 기본 AWS 암호화 키를 사용할지, 아니면 AWS 계정에서 고객이 관리하는 키를 선택할지 선택하세요. <block ref="d92909932e1ff9d87b508ff8380d446c" category="inline-link-rx"></block> ).</block>
   <block id="9d83a21cd37d72af555469c7ed0d2ec9" category="paragraph">고객이 직접 관리하는 키를 사용하기로 선택한 경우 키 보관소와 키 정보를 입력하세요.</block>
   <block id="ec32f8eb7058323c02b13f59dd447a40" category="admonition">기존 버킷을 선택한 경우 암호화 정보가 이미 제공되므로 지금 입력할 필요가 없습니다.</block>
   <block id="2283ed1c2d2204e889a93d07486e3a8b" category="list-text">*백업 정책*: 기존의 백업-객체 스토리지 정책을 선택하거나 새로 만듭니다.</block>
@@ -2556,14 +2528,11 @@
   <block id="fa72bd720d056e7babef4250c9f04a78" category="list-text">*볼륨* 메뉴를 선택하면 Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 백업된 볼륨 목록을 볼 수 있습니다.</block>
   <block id="e44fc1f1184fad322f753d2fd49e065b" category="list-text">특정 시스템의 특정 볼륨을 찾는 경우 시스템과 볼륨별로 목록을 구체화할 수 있습니다.  검색 필터를 사용할 수도 있고, 볼륨 스타일(FlexVol 또는 FlexGroup), 볼륨 유형 등을 기준으로 열을 정렬할 수도 있습니다.</block>
   <block id="967a559f8463f8584f05c86c2fe8737e" category="paragraph">추가 열(집계, 보안 스타일(Windows 또는 UNIX), 스냅샷 정책, 복제 정책, 백업 정책)을 표시하려면 더하기 기호를 선택합니다.</block>
-  <block id="994d86579a5334a5d4b1d409d5976ee7" category="paragraph">해당 백업 유형이 활성화되면 각 아이콘은 파란색이고, 백업 유형이 비활성화되면 회색입니다.  각 아이콘 위에 커서를 올려 놓으면 사용 중인 백업 정책과 각 백업 유형에 대한 기타 관련 정보를 볼 수 있습니다.</block>
   <block id="7a5095d2213da4d8d8d6f7835126440e" category="section-title">시스템의 추가 볼륨에 대한 백업 활성화</block>
   <block id="8d9e236023d48edfbb8546d1322f938b" category="paragraph">NetApp Backup and Recovery 처음 활성화할 때 시스템의 일부 볼륨에서만 백업을 활성화한 경우 나중에 추가 볼륨에서 백업을 활성화할 수 있습니다.</block>
-  <block id="350cebc09a12734c052df1349098314b" category="list-text">*볼륨* 탭에서 백업을 활성화하려는 볼륨을 식별하고 작업 메뉴를 선택합니다.<block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 행의 끝에서 *백업 활성화*를 선택하세요.</block>
   <block id="40a7b9f9f8520270d9a6a6f8c3b155e3" category="list-text">이 볼륨의 백업 설정을 검토한 다음 *백업 활성화*를 선택합니다.</block>
   <block id="617bf089a60793ed8197f15849023ab0" category="section-title">기존 볼륨에 할당된 백업 설정 변경</block>
   <block id="6c143468a72ae48b392ccaf6bfdab3dd" category="section-title">단일 볼륨의 백업 설정 편집</block>
-  <block id="6783230016acdea3f2efff067c9f0ae2" category="list-text">*볼륨* 탭에서 정책을 변경하려는 볼륨을 식별하고 작업 메뉴를 선택합니다.<block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 행의 끝에서 *백업 전략 편집*을 선택하세요.</block>
   <block id="28d4180de7948c969ad2c178ab5ac2ba" category="paragraph">이 클러스터에 대해 NetApp Backup and Recovery 활성화할 때 초기 백업 정책에서 클라우드 백업에 대해 _DataLock 및 랜섬웨어 복원력_을 활성화한 경우 DataLock으로 구성된 다른 정책만 표시됩니다.  NetApp Backup and Recovery 활성화할 때 _DataLock 및 랜섬웨어 복원력_을 활성화하지 않은 경우 DataLock이 구성되지 않은 다른 클라우드 백업 정책만 표시됩니다.</block>
   <block id="ed3685aa06ca7db640e77339c669a75e" category="section-title">여러 볼륨의 백업 설정 편집</block>
   <block id="90d35772fb2c0d1903fd5cb179fca792" category="paragraph">여러 볼륨에서 동일한 백업 설정을 사용하려면 여러 볼륨에서 동시에 백업 설정을 활성화하거나 편집할 수 있습니다.  백업 설정이 없는 볼륨, 스냅샷 설정만 있는 볼륨, 클라우드 백업 설정만 있는 볼륨 등을 선택하고 다양한 백업 설정으로 모든 볼륨에 대량 변경을 적용할 수 있습니다.</block>
@@ -2571,7 +2540,6 @@
   <block id="7eaf859529ad561f910e542e5b3fb6be" category="list-text">같은 시스템</block>
   <block id="d3feb463acdba151ebb0b4b2c264db93" category="list-text">동일한 스타일(FlexVol 또는 FlexGroup 볼륨)</block>
   <block id="dd58ff694012627b51f755db5b9e26a4" category="list-text">동일한 유형(읽기-쓰기 또는 데이터 보호 볼륨)</block>
-  <block id="71b5bee9d26480c15e9d32a1c5f12b8f" category="paragraph">5개 이상의 볼륨을 백업에 사용하도록 설정한 경우 NetApp Backup and Recovery 한 번에 5개의 볼륨만 초기화합니다.  해당 작업이 완료되면 다음 세트를 시작하기 위해 5개의 하위 작업으로 구성된 다음 배치를 생성하고 모든 볼륨이 초기화될 때까지 계속됩니다.</block>
   <block id="a89ea423a899eff48cd02bf63ec8a4a7" category="list-text">*볼륨* 탭에서 볼륨이 있는 시스템별로 필터링합니다.</block>
   <block id="8527adc5d092ab7a3143547ad5cb009b" category="list-text">백업 설정을 관리할 모든 볼륨을 선택합니다.</block>
   <block id="239c515997387c56b8c4025161f4c6b9" category="list-text">구성하려는 백업 작업 유형에 따라 대량 작업 메뉴에서 버튼을 클릭합니다.</block>
@@ -3208,12 +3176,6 @@
   <block id="90262b49b516aea0770d54c5389860ab" category="list-text">"연간" 스냅샷이 소스 시스템에서 제거되는지 여부 변경</block>
   <block id="6866e75c6eebeffef8ecc7e577b86a5c" category="list-text">예약된 검사를 포함하여 시스템에 대한 랜섬웨어 검사 활성화 또는 비활성화</block>
   <block id="0b1dbe1ca2e686301ad63250cc03207d" category="section-title">클러스터 수준 백업 설정 보기</block>
-  <block id="3f7a9ad888e3a180f11e92f70141b6a7" category="paragraph">각 시스템에 대한 클러스터 수준 백업 설정을 볼 수 있습니다.</block>
-  <block id="df103be8b9388b2bf0177177038233aa" category="list-text">_백업 설정 페이지_에서 다음을 클릭하세요.<block ref="a1d09704e1f652cf0082bca28cb44e87" category="inline-image-macro-rx" type="image"></block> 시스템에 대해 *고급 설정*을 선택하세요.</block>
-  <block id="166ff8fdcfa38fc724852eb2f800e957" category="paragraph">_고급 설정_ 페이지에는 해당 시스템의 현재 설정이 표시됩니다.</block>
-  <block id="4620c3bb0f2d2d6609a91b73aef2a36b" category="list-text">옵션을 확장하고 변경하세요.</block>
-  <block id="c4f1313315ea53ba0324c17262762c44" category="paragraph">변경 후의 모든 백업 작업에는 새로운 값이 사용됩니다.</block>
-  <block id="f59fca00224a89098e0fdb00d310452d" category="paragraph">일부 옵션은 소스 클러스터의 ONTAP 버전과 백업이 있는 클라우드 공급자 대상에 따라 사용할 수 없습니다.</block>
   <block id="5fb03dafd6274ec459f4ae7b73182f44" category="section-title">백업을 개체 스토리지에 업로드하는 데 사용 가능한 네트워크 대역폭을 변경합니다.</block>
   <block id="22d415965913ef63161945f2e9b22fbd" category="paragraph">시스템에 대해 NetApp Backup and Recovery 활성화하면 기본적으로 ONTAP 무제한의 대역폭을 사용하여 시스템 볼륨의 백업 데이터를 개체 스토리지로 전송할 수 있습니다.  백업 트래픽이 일반 사용자 작업 부하에 영향을 미치는 경우 고급 설정 페이지에서 최대 전송 속도 옵션을 사용하여 전송 중에 사용되는 네트워크 대역폭 양을 조절할 수 있습니다.</block>
   <block id="91732be5dbec4e6cd5795e6c9726f75b" category="list-text">고급 설정 페이지에서 *최대 전송 속도* 섹션을 확장합니다.</block>
@@ -3224,8 +3186,6 @@
   <block id="65fd1c000589ff36a794229f1987490d" category="paragraph">이 옵션은 새 읽기/쓰기 볼륨의 새 백업 파일에만 적용되며, 데이터 보호(DP) 볼륨에서는 지원되지 않습니다.</block>
   <block id="cef9bbe98866aa24765a5c6e51e5daa5" category="section-title">"연간" 스냅샷이 소스 시스템에서 제거되는지 여부를 변경합니다.</block>
   <block id="69ef3b07789885abe39838d3bdd565ae" category="list-text">고급 설정 페이지에서 *연간 스냅샷 삭제* 섹션을 확장합니다.</block>
-  <block id="550e2d4456467c22193939aa0029676d" category="inline-image-macro">고급 설정 페이지의 연간 스냅샷 항목 스크린샷입니다.</block>
-  <block id="824924c3b132c056f8e7a92e2b64399e" category="paragraph"><block ref="824924c3b132c056f8e7a92e2b64399e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="906f0c83e11579cff84ef8bb2602e8ee" category="list-text">소스 시스템에서 연간 스냅샷을 유지하려면 *비활성화*를 선택합니다.</block>
   <block id="32a5c26baa0363b9a3a4a05896b16fd9" category="section-title">랜섬웨어 검사 활성화 또는 비활성화</block>
   <block id="4451065c28f2079aa69e4b099c64d39a" category="inline-link-macro">DataLock 및 랜섬웨어 복원력 옵션</block>
@@ -3235,7 +3195,6 @@
   <block id="753626f8e1f5bd64d141de3a2128da9a" category="paragraph">예약된 랜섬웨어 검사가 비활성화된 경우에도 주문형 검사를 수행할 수 있으며 복원 작업 중에도 검사가 계속 진행됩니다.</block>
   <block id="e7326f303b8abf78625da7d8f22fa0b4" category="inline-link-macro">정책 관리</block>
   <block id="53f2e5824456fc72fcf46ed59f0055b0" category="paragraph">참조하다<block ref="413884571f4d053a53a019b431cecdb2" category="inline-link-macro-rx"></block> 랜섬웨어 탐지를 구현하는 정책 관리에 대한 자세한 내용은 다음을 참조하세요.</block>
-  <block id="0a9f76c05550ca3603727850b14e66c0" category="list-text">고급 설정 페이지에서 *랜섬웨어 검사* 섹션을 확장합니다.</block>
   <block id="aff5ff19f93c3791711602e8baa7587d" category="list-text">랜섬웨어 검사를 활성화하거나 비활성화합니다.</block>
   <block id="e80157cb62f595a86effb45e1dfb4df2" category="list-text">*예약된 랜섬웨어 검사*를 선택하세요.</block>
   <block id="1491d983e19f493f0131d8289237002e" category="list-text">선택적으로, 기본 스캔 주기를 매주 또는 며칠 또는 몇 주로 변경할 수 있습니다.</block>
@@ -4554,7 +4513,6 @@
   <block id="6c93c0ee904d580923385784899b59a3" category="paragraph">정책이 할당된 기존 볼륨에 할당된 백업 정책을 변경할 수 있습니다. 로컬 스냅샷, 복제된 볼륨 및 백업 파일에 대한 정책을 변경할 수 있습니다. 볼륨에 적용하려는 새로운 스냅샷, 복제 또는 백업 정책은 이미 존재해야 합니다.</block>
   <block id="257aa7f9d15bc46fa7c45edeac5b1ab7" category="list-text">_백업 전략 편집_ 페이지에서 로컬 스냅샷, 복제된 볼륨 및 백업 파일에 대한 기존 백업 정책을 변경하고 *다음*을 선택합니다.</block>
   <block id="96f9f5071945e75714c9ffbe54f80851" category="list-text">나타나는 백업 페이지에서 로컬 스냅샷, 복제된 볼륨 또는 백업 파일에 대한 기존 백업 정책을 변경하고 *저장*을 선택합니다.</block>
-  <block id="c394a26f3d6de3615a172a12e31a16e4" category="paragraph">볼륨의 개체에 임시 스냅샷이나 백업을 만들 수 있습니다. 임시 복제 볼륨을 생성할 수 없습니다.</block>
   <block id="44b2c63b1441a7eef6175bc2818c45c0" category="paragraph">볼륨에 대한 세부 정보와 스냅샷 목록이 표시됩니다.</block>
   <block id="2e3f296276fc537735df961d32dd7d12" category="cell">대상 볼륨을 업데이트하기 위해 스냅샷의 증분 전송을 일시 중지합니다. 증분 업데이트를 다시 시작하려면 나중에 다시 시작할 수 있습니다.</block>
   <block id="695fbf9213e2d5d1e929e9356fa04c37" category="paragraph">이 작업은 스냅샷이나 복제된 볼륨에는 영향을 미치지 않습니다. 이러한 유형의 백업 파일은 삭제되지 않습니다.</block>
@@ -4573,11 +4531,8 @@
   <block id="1b22a10a2875f8854738412fd55a7964" category="list-text">과거 스냅샷을 백업 파일로 내보내고 향후 볼륨의 초기 기준 백업 파일에 포함할지 여부를 변경합니다.</block>
   <block id="8590a86fff0fbd8d0c19bac8d47c9fe1" category="section-title">과거 스냅샷을 백업 파일로 내보낼지 여부를 변경합니다.</block>
   <block id="20cf918510f72844a04ae68981e61c14" category="paragraph">이 시스템에서 사용하는 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 볼륨에 대한 로컬 스냅샷이 있는 경우 해당 기록 스냅샷을 백업 파일로 개체 스토리지에 내보낼 수 있습니다.  이를 통해 이전 스냅샷을 기준 백업 사본으로 이동하여 클라우드에서 백업을 초기화할 수 있습니다.</block>
-  <block id="5f73887604eb5a0b44550e5a1371b94d" category="list-text">고급 설정 페이지에서 *기존 스냅샷 내보내기* 섹션을 확장합니다.</block>
   <block id="7eb825e7b5e7636a29150410089bcbf5" category="list-text">기존 스냅샷을 내보낼지 여부를 선택하세요.</block>
   <block id="98d551107f1d17645e2b050fe333480b" category="paragraph">볼륨의 백업 정책에 대해 "연간" 백업 레이블을 선택하면 생성되는 스냅샷의 크기가 매우 커집니다. 기본적으로 이러한 연간 스냅샷은 개체 스토리지로 전송된 후 소스 시스템에서 자동으로 삭제됩니다. 연간 스냅샷 삭제 섹션에서 이 기본 동작을 변경할 수 있습니다.</block>
-  <block id="9d667c05d0d18216605cbb0bc59a1281" category="paragraph">랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다. 검사 빈도의 기본 설정은 7일입니다. 스캔은 최신 스냅샷에서만 수행됩니다. 고급 설정 페이지의 옵션을 사용하여 최신 스냅샷에 대한 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다. 이 기능을 활성화하면 기본적으로 7일마다 검사가 수행됩니다.</block>
-  <block id="b337f362b39ae43e2ecb969af7243145" category="paragraph">예약된 랜섬웨어 검사는 최신 스냅샷에서만 실행됩니다.</block>
   <block id="da251788f86e521e7d3714c723201b4e" category="list-text">스냅샷, 복제 볼륨 및/또는 클라우드 백업 중 어떤 보호 기능을 사용하시겠습니까?</block>
   <block id="55aeb9ffe6571ee026c3aced844fd2a8" category="cell">소스 볼륨 내의 볼륨에 대한 읽기 전용, 특정 시점 이미지를 스냅샷으로 생성합니다.  스냅샷을 사용하여 개별 파일을 복구하거나 볼륨의 전체 내용을 복원할 수 있습니다.</block>
   <block id="df0b18dcdaa591155a9eed6206daef89" category="paragraph">스냅샷은 모든 백업 방법의 기반이며, 백업 및 복구 서비스를 사용하려면 필수입니다. 스냅샷은 볼륨의 읽기 전용 특정 시점 이미지입니다. 이미지는 최소한의 저장 공간을 사용하고 마지막 스냅샷이 만들어진 이후 파일의 변경 사항만 기록하므로 성능 오버헤드가 무시할 수 있을 정도입니다.  볼륨에 생성된 스냅샷은 복제된 볼륨과 백업 파일을 소스 볼륨의 변경 사항과 동기화하는 데 사용됩니다(그림 참조).</block>
@@ -4684,7 +4639,6 @@
   <block id="063090df0880212c0ba8eec878096a21" category="doc">VMware 워크로드 미리보기 개선 사항</block>
   <block id="24936fb650df7af8295e75a3667becef" category="list-text">이제 백업과 스냅샷을 대체 위치로 복원할 수 있습니다. 이 기능은 다양한 VMware vCenter 배포, VMware ESXi 호스트 또는 VMware 데이터 저장소에서 VM 버전을 관리하려는 경우에 유용합니다.</block>
   <block id="99ee61e75520f174d08caa35e0ad294d" category="list-text">이제 기본 또는 보조 위치에서 특정 VMware 가상 디스크(VMDK 이미지)를 복원하여 VM 데이터 복원을 보다 세부적으로 제어할 수 있습니다.</block>
-  <block id="7689264f717abcf16a917111f707d7e0" category="paragraph">Hyper-V 워크로드 미리 보기에서는 사용할 수 없습니다.</block>
   <block id="77f252cb66af8ee7dab8b27bcf3851ca" category="paragraph">KVM 워크로드 미리보기에서는 사용할 수 없습니다.</block>
   <block id="516f1f530028d7905b72cd1b035c8a73" category="list-text">*원래 위치로 복원*: VM은 원래 위치의 동일한 vCenter 배포, ESXi 호스트 및 데이터 저장소로 복원됩니다. VM과 모든 데이터가 덮어씌워집니다.</block>
   <block id="d2f574e5e69d11881580660614b89ba3" category="list-text">*대체 위치로 복원*: VM의 복원 대상으로 다른 vCenter, ESXi 호스트 또는 데이터 저장소를 선택할 수 있습니다. 이 기능은 서로 다른 위치와 상태에 있는 동일한 VM의 여러 복사본을 관리하는 데 유용합니다.</block>
@@ -4809,5 +4763,216 @@
   <block id="38cf859695687379726e3ea14b05ddc1" category="list-text">복원 대상 및 설정을 선택하십시오.</block>
   <block id="a30b9d9cd5fcd792454de596b4a70bbf" category="paragraph">원래 위치로 복원하면 *대상 설정* 섹션을 확장하여 대상 설정을 볼 수 있지만 변경할 수는 없습니다.</block>
   <block id="6ae1e8b4e49e0eb340bfe865ab9bf2be" category="list-text">*복원 후 옵션* 섹션에서 다음 옵션을 고려하십시오.</block>
-  <block id="549fac1df4ed1f1a9ecf014524bf6245" category="paragraph">*가상 머신 재시작*: 복원 후 새 가상 머신을 부팅하려면 이 옵션을 활성화하십시오.</block>
+  <block id="48ddddb06a7cca979a8b0eb4de198113" category="doc">ONTAP 볼륨 워크로드 개선 사항</block>
+  <block id="cbab7e5b614b876bebcce0c29fd1afb6" category="paragraph">*다중 버킷 지원*: (비공개 미리 보기) ONTAP 9.17.1 이상 버전부터 시스템 내 볼륨을 서로 다른 클라우드 공급자에 걸쳐 시스템당 최대 6개의 버킷으로 보호할 수 있습니다.</block>
+  <block id="695e42eb94aa8a143b557dc75e4cc65e" category="inline-link-macro">NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 백업하는 방법에 대해 자세히 알아보세요.</block>
+  <block id="c380d2c239579706adcab966ccded39a" category="paragraph"><block ref="040f925aac1483fc9f3f6e8bd68d3888" category="inline-link-macro-rx"></block>.</block>
+  <block id="558e5aec99d772eb277c493188d3c607" category="section-title">VMware 워크로드 개선 사항</block>
+  <block id="d8cf45a94e57901a57764525baf2f9bf" category="paragraph">이번 VMware 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="0f685163e47b1dbc7208e24f5639ed4c" category="list-text">NetApp Backup and Recovery 에서 VMware 워크로드 지원이 이제 정식 출시(GA)되었습니다.</block>
+  <block id="3b2cdba7e0b9954f4d9e79b310fdbccd" category="list-text">이제 게스트 OS 파일과 폴더를 복원할 수 있습니다.</block>
+  <block id="7646858e9d2b15a6ffb584e47fd5567e" category="paragraph"><block ref="4f4eca7ac15d647aeef99bf9ca19ff76" category="inline-link-rx"></block>.</block>
+  <block id="1ae0fe82c82eb100fa0d7221b899a229" category="inline-link">게스트 파일 및 폴더 복원에 대해 자세히 알아보세요.</block>
+  <block id="f73006a3da0451caefdac27f55b5a651" category="paragraph"><block ref="ec740e6f2b69e9d5eeb44cc6164f597c" category="inline-link-rx"></block>.</block>
+  <block id="2fcce708931d6d68e1d88fc4a46eef94" category="section-title">Hyper-V 워크로드 미리 보기 개선 사항</block>
+  <block id="0c95402d3c8d84b27c1f2eb1f4757c29" category="paragraph">이번 Hyper-V 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="1bfaec2035ab816cb33f0b9264b08184" category="list-text">이제 Hyper-V VM 백업 및 스냅샷을 다른 위치로 복원할 수 있습니다. 이 기능은 서로 다른 Hyper-V 호스트에서 VM 버전을 관리하려는 경우에 유용합니다.</block>
+  <block id="86ef33bcd420761fa8d995a0d265b43f" category="list-text">System Center Virtual Machine Manager(SCVMM)로 프로비저닝되고 CIFS 공유에 호스팅된 Hyper-V 가상 머신이 이제 NetApp Backup and Recovery 에서 지원됩니다.</block>
+  <block id="3d0f94ed484d5b1224a05746eeef7916" category="list-text">이제 보호 그룹을 편집할 수 있습니다.</block>
+  <block id="33c7653a8f2aa564c4ccd96aaacf4f4f" category="admonition">이번 릴리스에서는 작업 메뉴의 *업그레이드* 옵션을 사용하여 Hyper-V 또는 Windows용 NetApp 플러그인을 업그레이드할 수 없습니다. 그 대신 각 Hyper-V 호스트를 제거한 다음 다시 추가하여 플러그인을 업데이트하십시오.</block>
+  <block id="2e9a0674716cf9fc0f20713c35ea7c92" category="inline-link">NetApp Backup and Recovery 사용하여 Hyper-V VM을 복원하는 방법에 대해 자세히 알아보세요.</block>
+  <block id="b6346010c4ef2da943c1c7fa6a17d974" category="paragraph"><block ref="7ec45f32ee1da46f6d69c07cb5d19e8e" category="inline-link-rx"></block>.</block>
+  <block id="4b39db76689788868bda30b97106ca4a" category="section-title">KVM 워크로드 미리 보기 개선 사항</block>
+  <block id="0daeca72fa8b0acaee6fea8ae743cb8c" category="paragraph">KVM 워크로드 미리 보기에서 Apache CloudStack 관리 플랫폼과의 통합을 지원하므로 Apache CloudStack에서 관리하는 KVM 호스트 및 가상 머신을 보호할 수 있습니다.</block>
+  <block id="432d122bca6b826d0ff8b770008cb6da" category="list-text">Hyper-V의 "프로세서 호환성" 설정과 관계없이 CPU 제조사가 다른 시스템(Intel과 AMD 또는 그 반대) 간에는 가상 머신이나 가상 머신 데이터를 복원할 수 없습니다. 이 설정은 동일 제조사의 서로 다른 세대 프로세서(예: Intel 대 Intel 또는 AMD 대 AMD) 간의 호환성만 지원합니다.</block>
+  <block id="cbf60595828cc0c9aea61a13478c0526" category="admonition">2026년 1월 19일 릴리스에서는 작업 메뉴의 *업그레이드* 옵션을 사용하여 Hyper-V 또는 Windows용 NetApp 플러그인을 업그레이드할 수 없습니다. 그 대신 각 Hyper-V 호스트를 제거한 다음 다시 추가하여 플러그인을 업데이트하십시오.</block>
+  <block id="fa1b7fd0ad5ec372cdf9f907c6fbf709" category="section-title">문제 해결 참고 사항</block>
+  <block id="9bd2877d70202ee3498597fbe9e5cc2f" category="paragraph">NetApp Backup and Recovery 에서 KVM 워크로드의 비공개 미리 보기를 사용할 때 다음 사항에 유의하십시오.</block>
+  <block id="ac034a836e482984e927ce7aef3a7bcc" category="list-text">KVM 워크로드 복원이 성공적으로 완료되도록 하려면 KVM 백업에 사용하는 보호 정책에서 *VM 일관성 스냅샷 사용* 설정이 활성화되어 있는지 확인하십시오.</block>
+  <block id="a9f8d95d40be1c757e5dddec176f49aa" category="list-text">Apache CloudStack에서 관리하는 KVM 호스트가 포함된 스토리지 풀을 백업하려면 모든 관리 호스트를 NetApp Backup and Recovery 에 추가해야 합니다. 임시 해결책으로 CloudStack에서 관리하는 모든 KVM 호스트를 NetApp Backup and Recovery 에 추가하십시오.</block>
+  <block id="a08807a7feb533e9af18670f44dd0184" category="list-text">보호 그룹에 속한 중지된 가상 머신은 백업할 수 없습니다. 임시 해결책으로, 백업을 시작하기 전에 중지된 VM을 보호 그룹에서 제거하십시오.</block>
+  <block id="caf127224717f7d5605f4155b3a36376" category="list-text"><block ref="473bc5f1f9d293596a6cf3f7d880fe14" category="inline-xref-macro-rx"></block> NetApp Backup and Recovery 인증해야 하는 모든 Windows, Microsoft SQL Server, Oracle Database 또는 Linux 호스트에 적용됩니다. 여기에는 게스트 파일이나 폴더를 복원할 때 사용되는 Windows 게스트 OS 자격 증명이 포함됩니다.</block>
+  <block id="a22707a596fa8306e8d6a5944e2eda1e" category="list-text"><block ref="89ad28258fc3723b5b08e269206e91aa" category="inline-xref-macro-rx"></block>. (KVM 워크로드에만 해당)</block>
+  <block id="e0981966cb393b67a49dfbe74acbcaa9" category="paragraph">호스트 리소스에 대한 자격 증명을 추가하세요. NetApp Backup and Recovery 이러한 자격 증명을 사용하여 워크로드를 검색하고 백업 정책을 적용합니다.</block>
+  <block id="53f563c80059cb500ae35dbc14632b31" category="list-text">Windows 게스트 OS 자격 증명은 게스트 파일 또는 폴더를 복원할 때 사용됩니다.</block>
+  <block id="061d749919f42e07f2fd5b453fc9f869" category="list-text">Oracle 데이터베이스 자격 증명</block>
+  <block id="5bce5986d99cf24ee658dd798a565317" category="list-text">Linux 호스트 자격 증명</block>
+  <block id="30129b68377c980a5b046dd8307f9c40" category="list-text">자격 증명 정보를 입력하세요. 선택한 인증 모드에 따라 표시되는 필드가 다릅니다. 필드에 대한 자세한 정보를 보려면 정보 *i* 아이콘 위에 마우스를 올리세요.</block>
+  <block id="bc62518159080c18eacbe3647ed36870" category="list-text">*인증 모드*: *Windows*, *Microsoft SQL*, *Oracle Database*, 또는 *Linux* 중에서 선택하십시오.</block>
+  <block id="07672e93c417bae4731ac20b5c60c1b7" category="admonition">Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Server 모두에 대한 자격 증명을 입력해야 하므로 두 세트의 자격 증명을 추가해야 합니다.</block>
+  <block id="aea23489ce3aa9b6406ebb28e0cda430" category="open-title">Windows</block>
+  <block id="aa30bd4ba35532a1da46207d4d7c7a01" category="list-text">*상담원*: 목록에서 콘솔 상담원을 선택하세요.</block>
+  <block id="f6aab249c552b708ee4965a85a35d5c9" category="list-text">*Microsoft SQL Server*를 선택하신 경우:</block>
+  <block id="4b0ada5e3746ad5c81b80a9d5bd7282a" category="list-text">*호스트*: 검색된 SQL Server 호스트 주소를 선택합니다.</block>
+  <block id="c30dd1a85cf86d95b11c1a08f70130ce" category="open-title">오라클 데이터베이스</block>
+  <block id="cd5d89e9518c748d54323c53d321ce4f" category="list-text">*오라클 데이터베이스*를 선택하신 경우:</block>
+  <block id="0bb131c45d988a961e3e1278ea79bebf" category="list-text">*사용자 이름*: 자격 증명에 사용할 사용자 이름을 입력하십시오.</block>
+  <block id="edc9f0a5a5d57797bf68e37364743831" category="open-title">리눅스</block>
+  <block id="54d4c8f3914a24ebe783e9966db6fa15" category="list-text">Linux를 선택하신 경우:</block>
+  <block id="a277ffecf5bfb010132309a2882f058f" category="paragraph">나중에 생성한 모든 계정 정보의 비밀번호를 수정할 수 있습니다.</block>
+  <block id="cfc365129f2bf6a0dc774cf0c8e279ce" category="section-title">KVM 관리 플랫폼을 추가하세요</block>
+  <block id="6505d7ba0cb4b5b363b0e258c7c6c830" category="paragraph">Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는 경우, NetApp Backup and Recovery 와 통합해야 합니다.</block>
+  <block id="908f42391bc11fe938651b8c7c03cfbb" category="list-text">아래쪽 화살표를 선택하여 *관리 플랫폼* 섹션을 확장하세요.</block>
+  <block id="6885472c6735eb1b868b48211eccb97f" category="list-text">*관리 플랫폼 자격 증명 추가*를 선택하세요.</block>
+  <block id="e9bb728917086f81d9458ae8f44eee8c" category="list-text">*관리 플랫폼 IP 주소 또는 FQDN*: 관리 플랫폼의 IP 주소 또는 정규화된 도메인 이름을 입력하십시오.</block>
+  <block id="a102e68fcc16a49b53abc597c80d00ef" category="list-text">*API 키*: API 요청 인증에 사용할 API 키를 입력하세요.</block>
+  <block id="5ccad303f837a7c94b607467f12e6406" category="list-text">*비밀 키*: API 요청 인증에 사용할 비밀 키를 입력하세요.</block>
+  <block id="91c10b5bb9bf8dc1199095d6ba8c4af2" category="list-text">*포트*: 백업 및 복구와 관리 플랫폼 간의 통신에 사용할 포트를 입력하십시오.</block>
+  <block id="7f5e8a4c7ecae4d83608e658058d805d" category="list-text">*에이전트*: 백업 및 복구와 관리 플랫폼 간의 통신을 원활하게 하기 위해 사용할 콘솔 에이전트를 선택하십시오.</block>
+  <block id="5e64bc473b36f5e9fee0f064962a0ca6" category="list-text">완료되면 *추가*를 선택하세요.</block>
+  <block id="fa97453764f14ccf742ba27e3b9ffd70" category="list-text">Kubernetes 워크로드를 처음 사용하는 경우 NetApp Backup and Recovery 의 *워크로드*에서 *Kubernetes* 타일을 선택하십시오.</block>
+  <block id="c6e9500362ca178210719b0b4670f0b7" category="paragraph">NetApp Backup and Recovery KVM 호스트와 가상 머신을 보호하기 전에 먼저 이를 검색해야 합니다. KVM 호스트와 가상 머신을 백업 및 복구에 추가하려면 먼저 Apache CloudStack과 같은 관리 플랫폼에서 관리해야 합니다.</block>
+  <block id="335a1dcb45b3cddcd5ee1f36ea5908a4" category="section-title">관리 플랫폼, KVM 호스트를 추가하고 리소스를 검색하세요.</block>
+  <block id="390fac69b1d41991ae5f68a1ba3cbda4" category="paragraph">관리 플랫폼 및 KVM 호스트 정보를 추가하면 NetApp Backup and Recovery 가 워크로드를 검색할 수 있습니다.</block>
+  <block id="24e30755a36f1f0fbf2585a3d6fcea00" category="list-text">*워크로드*에서 *KVM* 타일을 선택하세요.</block>
+  <block id="99c78c9137cee80ce48d764854f4f37d" category="paragraph">NetApp Backup and Recovery에 처음 로그인하고 콘솔에 시스템은 있지만 검색된 리소스가 없는 경우, "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 페이지가 나타나고 "리소스 검색" 옵션이 표시됩니다.</block>
+  <block id="72caa651e04c375669fa47d6d7c97bd8" category="list-text">아직 관리 플랫폼을 백업 및 복구와 통합하지 않았다면 *관리 플랫폼 추가*를 선택하십시오.</block>
+  <block id="e48c46f67dcc12e71756d8f1484fd1e5" category="list-text">*KVM 설정*: 다음 정보를 입력하여 새 KVM 호스트를 추가하세요.</block>
+  <block id="1379fbf6716203ac9b069e9dcb1b630e" category="list-text">*KVM FQDN 또는 IP 주소*: 호스트의 FQDN 또는 IP 주소를 입력하십시오.</block>
+  <block id="a3b2bf747985ecc6d947647708117a50" category="list-text">*자격 증명*: KVM 호스트의 사용자 이름과 비밀번호를 입력하십시오.</block>
+  <block id="9bf19b226e98ad82718a06ed1be0ccff" category="list-text">*콘솔 에이전트*: 백업 및 복구와 KVM 호스트 간의 통신에 사용할 콘솔 에이전트를 선택하십시오.</block>
+  <block id="255d844db697f34dcf46b6abb2370218" category="list-text">*포트 번호*: 백업 및 복구 기능과 KVM 호스트 간의 통신에 사용할 포트를 입력하십시오.</block>
+  <block id="cba87e6c48ee4064103429e66f87d737" category="list-text">*관리 플랫폼*: KVM 호스트가 관리형이고 백업 및 복구에 관리 플랫폼을 추가한 경우 목록에서 관리 플랫폼을 선택하십시오.</block>
+  <block id="1ab61c2a203a782ffd6293f052fa3198" category="list-text">*워크로드*에서 *Oracle* 타일을 선택하십시오.</block>
+  <block id="c189a17e1064cb3a5bd66a3609a81829" category="list-text">NetApp Backup and Recovery에 처음 로그인했고 아직 *시스템* 페이지에 시스템을 추가하지 않은 경우, Backup and Recovery는 시스템을 추가할 수 있는 옵션이 있는 "새로운 NetApp Backup and Recovery 에 오신 것을 환영합니다" 랜딩 페이지를 표시합니다. *시스템* 페이지에 시스템을 추가하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<block ref="296443cffec903f0b2ef92c8eb1c49ba" category="inline-link-rx"></block>.</block>
+  <block id="68e5fb66babe998c725422990c3addbf" category="paragraph">NetApp Backup and Recovery 사용하여 Hyper-V VM을 보호하세요. NetApp Backup and Recovery 독립 실행형 인스턴스와 FCI 클러스터 인스턴스 모두에 대해 빠르고 공간 효율적이며, 크래시 일관성 및 VM 일관성을 보장하는 백업 및 복원 작업을 제공합니다. System Center Virtual Machine Manager(SCVMM)로 프로비저닝되어 CIFS 공유에 호스팅된 Hyper-V 가상 머신도 보호할 수 있습니다.</block>
+  <block id="b7e2bfb3fcdb70bdfbdc97013b33db87" category="list-text">*보호 그룹* 메뉴를 선택하세요.</block>
+  <block id="7f924709b4be1415b21d2f13de8768fc" category="section-title">보호 그룹을 편집합니다</block>
+  <block id="d866b8b94a3e8b940c5c063a7cf79472" category="paragraph">보호 그룹을 편집하여 이름이나 설정을 변경하세요. 보호 그룹에 속한 리소스가 변경된 경우 보호 그룹을 편집해야 할 수 있습니다.</block>
+  <block id="2028d26ecaf3fcd5b07a86fe6beca923" category="list-text">편집할 보호 그룹을 선택하세요.</block>
+  <block id="712a9492193e1ef0b35be30256c2d566" category="list-text">작업 아이콘을 선택하세요 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *수정*.</block>
+  <block id="08483165aa1f33d41b512e87d0481649" category="list-text">보호 그룹의 이름이나 그룹에 포함된 가상 머신 목록과 같은 보호 그룹 설정을 변경하십시오.</block>
+  <block id="ad41a0253f0fa950ebd266549a680870" category="list-text">필요한 경우 보호 정책을 변경하세요. 완료되면 *다음*을 선택하세요.</block>
+  <block id="c3db3d5055385cdff6f17b6bf22a7152" category="list-text">설정을 검토한 후 *제출*을 선택하십시오.</block>
+  <block id="90f68f3e2b7c1b2173cf20adbaecd7aa" category="list-text">다른 위치로 복원</block>
+  <block id="7979de06740fd39ab039421367c0315f" category="paragraph">복원 페이지(검색 및 복원이라고도 함)에서는 정확한 이름, 리소스가 있는 위치 또는 마지막으로 양호한 상태였던 날짜를 기억하지 못하더라도 리소스를 복원할 수 있습니다. 필터를 사용하여 스냅샷을 검색할 수 있습니다.</block>
+  <block id="20ca6e882fe3b588e30201e762f2131d" category="list-text">*가상 머신 시작*: 복원 후 새 가상 머신을 부팅하려면 이 옵션을 활성화하십시오.</block>
+  <block id="e826f41c4b42c72f20eb65258162843d" category="list-text">*목적지 설정* 섹션에서 다음 정보를 입력하십시오.</block>
+  <block id="1b24040896cd5eefd580726b364e1b23" category="list-text">*Hyper-V FQDN 또는 IP 주소*: 대상 Hyper-V 호스트의 정규화된 도메인 이름 또는 IP 주소를 입력하십시오.</block>
+  <block id="58f55695440dd00b2067cb992ebbfefd" category="list-text">*네트워크*: 스냅샷을 복원할 대상 네트워크를 선택하십시오.</block>
+  <block id="66a46a535a32ca1624cf944a50032f26" category="list-text">*가상 머신 이름*: 복원할 가상 머신의 이름을 입력하십시오.</block>
+  <block id="bfe700a949b5800613b9b6c35635602a" category="list-text">*대상 위치*: 복원된 데이터가 저장될 대상 폴더 또는 CIFS 공유 폴더를 입력하십시오.</block>
+  <block id="46b4ed9b4dd033d33b169dedf1087069" category="list-text">*복원 전 옵션* 섹션에서 다음 옵션을 고려하십시오.</block>
+  <block id="80ca63ba7d66f5d8a55a9817ee3bc137" category="list-text">*빠른 복원*: 복원된 가상 머신을 즉시 사용할 수 있도록 하려면 이 옵션을 활성화하십시오. 전체 볼륨이 아닌 VM을 실행하는 데 필요한 파일만 객체 저장소에서 복원됩니다.</block>
+  <block id="286d76e7e91f5683e678b1a399bad3bd" category="list-text">*복원 후 옵션* 섹션에서 다음 옵션을 고려하십시오.</block>
+  <block id="7510c6e86ae26f29103eade23948e7e7" category="paragraph">NetApp Backup and Recovery 사용하여 관리형 KVM VM 및 스토리지 풀을 보호하세요. NetApp Backup and Recovery 빠르고 공간 효율적이며, 크래시 일관성 및 VM 일관성을 보장하는 백업 및 복원 작업을 제공합니다. KVM 호스트와 가상 머신은 백업 및 복구 기능을 사용하여 보호하기 전에 Apache CloudStack과 같은 관리 플랫폼에서 관리되어야 합니다.</block>
+  <block id="8ff035fa875da8ae8e1e252604570212" category="list-text">*VM 일관성 스냅샷 활성화*: VM 일관성 스냅샷을 활성화할지 여부를 선택합니다. 이렇게 하면 새로 생성된 스냅샷이 스냅샷 생성 시점의 가상 머신 상태와 일관성을 유지하게 됩니다. 이는 백업을 성공적으로 복원하고 데이터가 일관된 상태를 유지하도록 보장하는 데 유용합니다. 이는 기존 스냅샷에는 적용되지 않습니다.</block>
+  <block id="a6f4d54cf73e6e376bec67151132228e" category="summary">게스트 파일을 복원하려고 할 때 게스트 파일 복원 세션이 비어 있거나, 게스트 파일 복원 디스크 연결 작업이 실패하거나, 게스트 파일 복원 세션이 중단된 후 백업이 분리되지 않는 경우가 발생할 수 있습니다.</block>
+  <block id="b6b36b81e336437107eb237b1e03955e" category="doc">게스트 파일 복원 문제 해결</block>
+  <block id="e186535e6f6fedaa3e8c07a0dda81d24" category="paragraph">게스트 파일을 복원하려고 할 때 다음과 같은 시나리오가 발생할 수 있습니다.</block>
+  <block id="e2b39c8b51a0a2a12e2e00f7bdd2127f" category="section-title">게스트 파일 복원 세션이 비어 있습니다.</block>
+  <block id="db2dc5988d458b3d9d19d3a39d616e1f" category="paragraph">이 문제는 게스트 파일 복원 세션을 생성하는 동안 게스트 운영 체제가 재부팅될 경우 발생합니다. 게스트 OS의 VMDK 파일이 오프라인 상태로 유지될 수 있으므로 게스트 파일 복원 세션 목록이 비어 있을 수 있습니다.</block>
+  <block id="efdc15efa02d496331c0b53a11beab72" category="paragraph">이 문제를 해결하려면 게스트 OS에서 VMDK를 수동으로 다시 온라인으로 전환하세요. VMDK가 온라인 상태이면 게스트 파일 복원 세션에 올바른 내용이 표시됩니다.</block>
+  <block id="f9364c3689e8fa9d558080e005772cd1" category="section-title">게스트 파일 복원 디스크 연결 작업이 실패했습니다.</block>
+  <block id="95c259e43559e78a13dbc7969fdef7cf" category="paragraph">이 문제는 게스트 파일 복원 작업을 시작했지만 VMware 도구가 실행 중이고 게스트 OS 자격 증명이 올바른 경우에도 디스크 연결 작업이 실패할 때 발생합니다. 이런 경우, 다음 오류가 반환됩니다.</block>
+  <block id="9b71c1817815e7cd4130bed94e2ea447" category="paragraph"><block ref="294cedeefde97d4fb81e2aaa200cfe43" prefix="" category="inline-code"></block></block>
+  <block id="359361098bd32a62519f56fcb0c584b3" category="paragraph">이 문제를 해결하려면 게스트 OS에서 VMware Tools Windows 서비스를 다시 시작한 다음 게스트 파일 복원 작업을 다시 시도하세요.</block>
+  <block id="e2b253374500e2e93f1c334a2bb7ddd4" category="section-title">게스트 파일 복원 세션이 중단된 후에도 백업이 분리되지 않습니다.</block>
+  <block id="898c4d9cd797d45ca2066478fd269974" category="paragraph">이 문제는 VM 일치 백업에서 게스트 파일 복원 작업을 수행할 때 발생합니다. 게스트 파일 복원 세션이 활성화되어 있는 동안 동일한 VM에 대해 또 다른 VM 일치 백업이 수행됩니다. 게스트 파일 복원 세션이 24시간 후 수동 또는 자동으로 연결이 끊어지면 해당 세션의 백업은 분리되지 않습니다.</block>
+  <block id="5857a2699c75798b2ae21bc0b06aff95" category="paragraph">이 문제를 해결하려면 활성 게스트 파일 복원 세션에서 연결된 VMDK를 수동으로 분리하세요.</block>
+  <block id="0bf794e2b090829c5f342b426fa04d5c" category="summary">Windows 게스트 OS의 VMDK에서 하나 이상의 파일이나 폴더를 복원할 수 있습니다.</block>
+  <block id="9cda0c7b074ab9336e54e5c799f32f1d" category="doc">VMDK에서 게스트 파일 및 폴더 복원</block>
+  <block id="a26360f952d07b84e1088cc6c613eafe" category="admonition">NetApp Backup and Recovery 에서 게스트 VM에 대한 자격 증명을 생성해야 해당 VM에서 파일과 폴더를 복원할 수 있습니다. NetApp Backup and Recovery 가상 디스크를 연결할 때 게스트 VM에 인증하기 위해 이러한 자격 증명을 사용합니다.</block>
+  <block id="50f6ae852890a51c1bdcbc5fa3074be0" category="paragraph">NetApp Backup and Recovery 기본적으로 연결된 가상 디스크를 24시간 동안 사용할 수 있도록 설정한 후 자동으로 연결을 해제합니다. 마법사에서 복원 작업 후 게스트 파일 복원 세션을 자동으로 삭제하거나 수동으로 삭제할 수 있습니다.</block>
+  <block id="84768fbdedcb14c4c8dd78daf9604451" category="paragraph">게스트 파일 또는 폴더 복원 성능은 두 가지 요인에 따라 달라집니다. 복원되는 파일 또는 폴더의 크기와 복원되는 파일 또는 폴더의 수입니다. 복원할 데이터 세트의 크기가 동일하다면, 다수의 작은 크기의 파일을 복원하는 데는 소수의 큰 크기의 파일을 복원하는 데에 비해 예상보다 더 오랜 시간이 걸릴 수 있습니다.</block>
+  <block id="851e8e79b33ecfa430d9ed62957e5cad" category="admonition">VM에서는 동시에 하나의 연결 또는 복원 작업만 실행할 수 있습니다. 동일한 VM에서 병렬 연결 또는 복원 작업을 실행할 수 없습니다.</block>
+  <block id="7392d9ba3083cd42958684b4749d4c72" category="admonition">게스트 복원 기능을 사용하면 시스템 파일과 숨겨진 파일을 보고 복원할 수 있으며 암호화된 파일도 볼 수 있습니다. 기존 시스템 파일을 덮어쓰거나 암호화된 파일을 암호화된 폴더에 복원하지 마십시오. 복원 작업 중에는 게스트 파일의 숨김, 시스템 및 암호화 속성이 복원된 파일에 유지되지 않습니다. 예약된 파티션을 보거나 탐색하면 오류가 발생할 수 있습니다.</block>
+  <block id="b422ec3f16fdaa990ba1990cb6991810" category="list-text">*가상 머신* 메뉴를 선택하세요.</block>
+  <block id="c05c3e6e65adc438464f134095bf4d0b" category="list-text">복원하려는 파일이 포함된 가상 머신을 목록에서 선택하십시오.</block>
+  <block id="53542a230db2440f13432651fe6b3487" category="list-text">작업 아이콘을 선택하세요 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> 해당 VM에 대해.</block>
+  <block id="c0bb93c6bec67d2385d257bd2f31eeb2" category="list-text">*파일 및 폴더 복원*을 선택하세요.</block>
+  <block id="08cc4acec34cca35a8c76fb3d615326d" category="list-text">복원할 스냅샷을 선택한 다음 *다음*을 선택하십시오.</block>
+  <block id="da8e304a7760412a8328c95f01373d11" category="list-text">복원할 스냅샷 위치를 선택하세요. 보조 위치를 선택하는 경우 목록에서 보조 스냅샷을 선택하십시오.</block>
+  <block id="1e6ec30e7907b02414675ea9e2c04c5f" category="list-text">목록에서 가상 머신에 연결할 가상 디스크를 선택한 다음 *다음*을 선택합니다.</block>
+  <block id="39538cdb3b7fefca1983a30c57bbf632" category="list-text">_가상 머신 자격 증명 선택_ 페이지에서 게스트 VM에 대한 자격 증명을 아직 저장하지 않은 경우 *자격 증명 추가*를 선택하고 다음 단계를 수행하십시오.</block>
+  <block id="77d4955805adede5c1d4b622d127cfa3" category="list-text">*인증 모드*: *Windows*를 선택하십시오.</block>
+  <block id="a542c5909f4fe575b0d1bcb5a4350a01" category="list-text">*에이전트*: NetApp Backup and Recovery 와 이 호스트 간의 통신을 처리할 콘솔 에이전트를 목록에서 선택하십시오.</block>
+  <block id="18de7c55432e8413c4ce2a56b3996ea8" category="list-text">*비밀번호*: 자격 증명에 사용할 비밀번호를 입력하십시오.</block>
+  <block id="60ec0884c18a5fb50c01015fd5a57742" category="list-text">게스트 VM에 인증하는 데 사용할 가상 머신 자격 증명을 선택하십시오.</block>
+  <block id="35f90aab6a0dab3fe0d57225980eb834" category="paragraph">NetApp Backup and Recovery 가상 디스크를 VM에 연결하고 숨겨진 파일을 포함한 모든 파일과 폴더를 표시합니다. 이 프로그램은 시스템 예약 파티션을 포함하여 모든 파티션에 드라이브 문자를 할당합니다.</block>
+  <block id="9d9478caad2fb1071aba58520617939e" category="paragraph">선택한 파일과 폴더는 화면 오른쪽 창에 표시됩니다.</block>
+  <block id="e079f71e45cefb5cf18407d7fb49ea4e" category="list-text">선택한 파일이 복원될 게스트의 UNC 공유 경로를 입력합니다.</block>
+  <block id="ae5705d13bba8928a397a3ac415b0498" category="list-text">IPv4 주소 예시:<block ref="c1efda00eba14c667cfd89393b2be583" prefix=" " category="inline-code"></block></block>
+  <block id="b1e8bed47212dec25b77d52a670930a0" category="list-text">IPv6 주소 예시:<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="inline-code"></block></block>
+  <block id="568b266180f72a62a6b7a16e74fd7c84" category="paragraph">이미 같은 이름의 파일이 있는 경우, 덮어쓰기를 선택하거나 건너뛸 수 있습니다.</block>
+  <block id="9400685c82ef048826c1183065e6283e" category="paragraph">복원 진행 상황은 작업 모니터링 페이지에서 확인할 수 있습니다.</block>
+  <block id="e4bfaed3f3210f4076310e841130f424" category="summary">Windows 게스트 OS의 가상 머신 디스크(VMDK)에서 파일이나 폴더를 복원할 수 있습니다.</block>
+  <block id="26dc9b7bc6b95362feca65c89dc39119" category="doc">게스트 파일 및 폴더 복원 시 요구 사항 및 제한 사항</block>
+  <block id="6682a5a344207b03b09bfb0798a193b6" category="section-title">게스트 복원 워크플로</block>
+  <block id="dfb5e1e797a80916627d17588b36ab12" category="paragraph">게스트 OS 복원 작업에는 다음 단계가 포함됩니다.</block>
+  <block id="7193518e6f5f0076ef05680742323f9c" category="list-text">붙이다</block>
+  <block id="f02fee54a71e292fba6eea93ae620b05" category="paragraph">게스트 VM이나 프록시 VM에 가상 디스크를 연결하고 게스트 파일 복원 세션을 시작합니다.</block>
+  <block id="0f68101772bd5397ef8eb1b632798652" category="list-text">기다리다</block>
+  <block id="75acbae837699c01fe86ee8a2c9fec00" category="paragraph">연결 작업이 완료될 때까지 기다린 후 찾아보기 및 복원 작업을 진행하십시오. 연결 작업이 완료되면 게스트 파일 복원 세션이 자동으로 생성됩니다.</block>
+  <block id="137bf66cd89f2d7f861099ca8519563c" category="list-text">파일 또는 폴더 선택</block>
+  <block id="bc67d1c399dfdffa3650a08e1bbd1222" category="paragraph">VMDK 파일을 찾아보고 복원할 파일 또는 폴더를 하나 이상 선택하십시오.</block>
+  <block id="2bd339d85ee3b33e513359ce781b60cc" category="list-text">복원하다</block>
+  <block id="850eb27faf64ee4adf2b325fd847bf4d" category="paragraph">선택한 파일이나 폴더를 지정된 위치로 복원합니다.</block>
+  <block id="8584d390f3574a98d0772b42a6ba1d23" category="section-title">게스트 파일 및 폴더 복원을 위한 전제 조건</block>
+  <block id="6a7a37bd722f9a7ebe568ae7d8778d8f" category="paragraph">Windows 게스트 운영 체제에서 VMDK 파일의 파일이나 폴더를 복원하기 전에 모든 요구 사항을 검토하십시오.</block>
+  <block id="36139d788258b0f7f760e90a7e475cfb" category="list-text">VMware 도구가 설치되어 실행 중이어야 합니다.</block>
+  <block id="9809213078fe536846ce61d52cfab742" category="paragraph">NetApp Backup and Recovery VMware 도구의 정보를 사용하여 VMware 게스트 운영 체제에 연결을 설정합니다.</block>
+  <block id="1572f8be6f1646b62b5c0d4d4c380fe8" category="list-text">Windows 게스트 OS는 Windows Server 2008 R2 이상을 실행해야 합니다.</block>
+  <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">NetApp 상호 운용성 매트릭스 도구(IMT)</block>
+  <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
+  <block id="73e99419f23009b467a68b78510f24c7" category="list-text">대상 VM에 대한 자격 증명은 사용자 이름이 "Administrator"인 내장 도메인 또는 로컬 관리자 계정을 사용합니다. 복원 작업을 시작하기 전에 가상 디스크를 연결할 VM에 대한 자격 증명을 구성하십시오. 연결 및 복원 작업 모두에 자격 증명이 필요합니다. 워크그룹 사용자는 내장된 로컬 관리자 계정을 사용할 수 있습니다.</block>
+  <block id="ae010d54b0afb3a6e93783bbe5550d22" category="admonition">기본 관리자 계정이 아니지만 VM 내에서 관리자 권한이 있는 계정을 사용해야 하는 경우 게스트 VM에서 UAC를 비활성화해야 합니다.</block>
+  <block id="8eb1b908e8b622c31068641ddc091252" category="list-text">복원할 백업 스냅샷과 VMDK를 알아야 합니다.</block>
+  <block id="3f4fed5ff0dc846844f8156e2545446d" category="paragraph">NetApp Backup and Recovery 복원할 파일이나 폴더를 검색하는 기능을 지원하지 않습니다. 시작하기 전에 스냅샷과 해당 VMDK 파일에서 파일이나 폴더의 위치를 ​​알아야 합니다.</block>
+  <block id="96fdba8a07d31243e627a47b806ee47d" category="list-text">연결할 가상 디스크는 NetApp Backup and Recovery 백업에 포함되어 있어야 합니다.</block>
+  <block id="3cb16855769c9ad83ad9563474e376db" category="paragraph">복원하려는 파일 또는 폴더가 포함된 가상 디스크는 NetApp Backup and Recovery 사용하여 수행된 VM 백업에 있어야 합니다.</block>
+  <block id="7f395b83396bafcd5e1d1206370ba67d" category="list-text">영어 알파벳이 아닌 이름을 가진 파일의 경우 단일 파일이 아닌 디렉토리에 복원해야 합니다.</block>
+  <block id="ee1c70a48815e066082eefeebc34049f" category="paragraph">일본어 간지와 같이 알파벳이 아닌 이름을 가진 파일은 해당 파일이 위치한 디렉토리를 복원하여 복원할 수 있습니다.</block>
+  <block id="9229096468701d10aab6b30f546310c1" category="section-title">게스트 파일 복원 제한 사항</block>
+  <block id="ce6cdc51d08da1519febc60a0e9593aa" category="paragraph">게스트 운영 체제에서 파일이나 폴더를 복원하기 전에 기능 제한 사항을 숙지해야 합니다.</block>
+  <block id="0938c50db6a8d08637c074ab0c183305" category="list-text">게스트 OS 내부에서는 동적 디스크 유형을 복원할 수 없습니다.</block>
+  <block id="306e51cbbbbd449259f2c9a524080247" category="list-text">암호화된 파일이나 폴더를 복원하면 암호화 속성이 유지되지 않습니다. 암호화된 폴더에는 파일이나 폴더를 복원할 수 없습니다.</block>
+  <block id="631e06eeff5fdebb1ee6aaaa3f7502fd" category="list-text">게스트 파일 찾아보기 페이지에는 필터링할 수 없는 숨겨진 파일과 폴더가 표시됩니다.</block>
+  <block id="21e6b4873654be153e3c8d0024f83773" category="list-text">Linux 게스트 OS에서는 복원할 수 없습니다.</block>
+  <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">Linux 게스트 OS를 실행하는 VM에서는 파일과 폴더를 복원할 수 없습니다. 하지만 VMDK를 첨부한 다음 파일과 폴더를 수동으로 복원할 수 있습니다. 지원되는 게스트 OS에 대한 최신 정보는 다음을 참조하세요.<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
+  <block id="a24b5bfa95a0c9efe3023cae447296e6" category="list-text">NTFS 파일 시스템에서 FAT 파일 시스템으로 복원할 수 없습니다.</block>
+  <block id="b4d6235f9c53c6f6c0666f45953094dc" category="paragraph">NTFS 포맷에서 FAT 포맷으로 복원하려고 하면 FAT 파일 시스템이 Windows 보안 속성을 지원하지 않기 때문에 NTFS 보안 설명자가 복사되지 않습니다.</block>
+  <block id="a23a5720d2a1cff6970cbb72b31dc86c" category="list-text">복제된 VMDK나 초기화되지 않은 VMDK에서는 게스트 파일을 복원할 수 없습니다.</block>
+  <block id="fb0007811dddc85c888a6d43364c9f0e" category="list-text">파일의 디렉토리 구조를 복원할 수 없습니다.</block>
+  <block id="530b9ade1e2a76461a137de423d242c5" category="paragraph">중첩된 디렉터리에서 파일을 복원할 때 시스템은 파일만 복원하고 디렉터리 구조는 복원하지 않습니다. 전체 디렉터리 트리를 복원하려면 최상위 디렉터리를 복사하십시오.</block>
+  <block id="35674b701e3b3620222acdb851b06f2b" category="list-text">vVol VM에서 다른 호스트로 게스트 파일을 복원할 수 없습니다.</block>
+  <block id="629ec47b81132f329d4136880bd3bbde" category="list-text">암호화된 게스트 파일은 복구할 수 없습니다.</block>
+  <block id="eadac8b708c86a6a21a7335aed187216" category="list-text">KVM 호스트와 가상 머신은 관리 플랫폼을 통해 관리되어야 합니다. NetApp Backup and Recovery 다음과 같은 관리 플랫폼을 지원합니다.</block>
+  <block id="b806d8cdb5c8844efc0f6d0452537da7" category="list-text">Apache CloudStack 4.22.0.0</block>
+  <block id="c31a96b388ecbcb2a70d87cf34bcbd49" category="list-text">콘솔 에이전트에서 KVM 호스트로 향하는 22번 포트로의 인바운드 네트워크 트래픽이 허용되어 있는지 확인하십시오.</block>
+  <block id="e2e0908f47e299507ed9dc85b603e9e3" category="list-text">백업 및 복구 메뉴에서 *볼륨*을 선택하세요. 볼륨 탭에서 *작업*을 선택합니다. <block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘 옵션을 선택하고 (복제 또는 객체 스토리지 백업이 이미 활성화되지 않은) 단일 볼륨에 대해 *3-2-1 보호 활성화*를 선택합니다.</block>
+  <block id="b2da82f32872fe2c684c43eda8ae1349" category="list-text">*백업*: 볼륨을 객체 스토리지에 백업합니다. 기존 버킷을 선택하거나 새 버킷을 구성할 때 클러스터당 최대 6개의 버킷에 볼륨을 백업할 수 있습니다.</block>
+  <block id="cd582c730b547c14e66855897469242b" category="list-text">*복제 대상*: 대상 시스템과 스토리지 VM을 선택하십시오. 선택적으로 복제된 볼륨 이름에 추가될 대상 애그리게이트 또는 애그리게이트들을 선택하고 접두사 또는 접미사를 지정할 수 있습니다.</block>
+  <block id="c4768a212afc2577e900cf8706656602" category="list-text">*백업*: 다음 옵션을 설정하세요.</block>
+  <block id="59d7aa0f1f316dd1d14b5bbe02d4d985" category="list-text">*암호화*: 새 버킷을 생성한 경우 공급자로부터 받은 암호화 키 정보를 입력하십시오. 데이터 암호화를 관리할 때 기본 AWS 암호화 키를 사용할지, 아니면 AWS 계정에서 직접 관리하는 고객 키를 사용할지 선택하세요. <block ref="d92909932e1ff9d87b508ff8380d446c" category="inline-link-rx"></block>).</block>
+  <block id="5cf85684b99a8b0df0187c0fddfe9241" category="list-text">*네트워킹*: 이 공급자에 대한 네트워킹 옵션을 구성합니다.</block>
+  <block id="5a3443bdabcca33a88f837ed431e4140" category="list-text">*기존 스냅샷 내보내기*: 이 시스템의 볼륨에 대해 방금 선택한 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 로컬 스냅샷이 있는 경우 이 추가 메시지가 표시됩니다. 볼륨을 가장 완벽하게 보호하기 위해 모든 과거 스냅샷을 백업 파일로 객체 스토리지에 복사하려면 이 확인란을 선택하십시오.</block>
+  <block id="fd5c6f657b9b82dc2fc86f506dacc05d" category="list-text">선택적으로 *로컬 스냅샷, 복제 및 백업에서 일치하지 않는 레이블을 자동으로 수정*할 수 있습니다. 이렇게 하면 스냅샷, 복제 및 백업 정책의 레이블과 일치하는 레이블이 지정된 스냅샷이 생성됩니다.</block>
+  <block id="a85910c6eeb75a045489c2b16a61b922" category="paragraph">각 아이콘은 해당 백업 유형이 활성화되면 불이 켜지고, 비활성화되면 회색으로 표시됩니다. 각 아이콘 위에 마우스 커서를 올리면 사용 중인 백업 정책과 각 백업 유형에 대한 기타 관련 정보를 확인할 수 있습니다.</block>
+  <block id="ff171d855d9a99655f572a9bb5b1628f" category="list-text">*볼륨* 탭에서 백업을 활성화할 볼륨을 선택하고 작업 메뉴를 선택합니다. <block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 행의 맨 끝에서 *3-2-1 보호 활성화*를 선택하십시오.</block>
+  <block id="1ae9b0331f20d420feb95df3c5f492ec" category="list-text">*볼륨* 메뉴에서 정책 설정을 수정하려는 볼륨을 찾고, [작업] 메뉴를 선택합니다. <block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 행의 맨 끝에서 *백업 전략 편집*을 선택합니다.</block>
+  <block id="7a8eafe0820d78646db0118a296f0af3" category="paragraph">백업용으로 활성화된 볼륨이 5개 이상인 경우 NetApp Backup and Recovery 한 번에 5개의 볼륨만 초기화합니다. 이 작업이 완료되면 모든 볼륨이 초기화될 때까지 5개씩 그룹으로 나누어 계속 진행됩니다.</block>
+  <block id="a3836fe1cde887edc4dd8114527d3364" category="paragraph">볼륨의 객체 저장소에 임시 스냅샷 또는 백업을 생성할 수 있습니다. 임시 복제 볼륨을 생성할 수 없습니다.</block>
+  <block id="b2e6e5cb6227ce1d5b6a363159209ac4" category="list-text">ONTAP 시스템이 객체 스토리지에 액세스할 수 있도록 하는 스토리지 키 변경</block>
+  <block id="2774448b191c49f2e074a4d577568616" category="list-text">객체 스토리지에 연결된 ONTAP IPspace 변경</block>
+  <block id="d912fedf31ed28560d44791ec26922dd" category="paragraph">클러스터 수준 시스템 설정과 각 시스템의 공급자 설정을 볼 수 있습니다.</block>
+  <block id="c443374e0a3448722596473ffa46dfd7" category="list-text">_백업 설정 페이지_에서 다음을 선택하세요. <block ref="a1d09704e1f652cf0082bca28cb44e87" category="inline-image-macro-rx" type="image"></block> 시스템의 경우 *고급 설정 구성 &gt; 시스템 설정*을 선택하여 시스템 설정을 보고, *고급 설정 구성 &gt; 공급자 설정*을 선택하여 공급자 설정을 볼 수 있습니다.</block>
+  <block id="ab9786fed694b6c1095a21ead04e885c" category="paragraph">결과 페이지에는 해당 시스템의 현재 설정이 표시됩니다. 공급자 설정을 볼 때 표시되는 공급자 설정은 페이지 상단에서 선택한 버킷과 관련된 설정입니다.</block>
+  <block id="3526204a1f7b4d3e632bf0adbd48c9e8" category="paragraph">참고로, 일부 옵션은 소스 클러스터의 ONTAP 버전과 백업이 저장되는 클라우드 공급자 대상에 따라 사용 불가능할 수 있습니다.</block>
+  <block id="3a93d61f0b77075a19993185ff1b011f" category="list-text">_백업 설정 페이지_에서 클릭하세요. <block ref="a1d09704e1f652cf0082bca28cb44e87" category="inline-image-macro-rx" type="image"></block> 시스템의 경우 *고급 설정 구성 &gt; 시스템 설정*을 선택하십시오.</block>
+  <block id="308a95aee449ddd00629a9605caff608" category="list-text">고급 설정 페이지에서 *기존 스냅샷 복사본 내보내기* 섹션을 확장합니다.</block>
+  <block id="64703cf7405da9314690af646cf94df8" category="paragraph">랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다. 검사 빈도의 기본 설정은 7일입니다. 스캔은 최신 스냅샷에서만 수행됩니다.</block>
+  <block id="e34f27aaca6e297f80c1ee05c575f188" category="section-title">시스템에 대한 랜섬웨어 검사를 활성화 또는 비활성화합니다.</block>
+  <block id="6e66997594a2573c888fb35b818bec11" category="paragraph">클러스터에 대한 랜섬웨어 검사를 활성화 또는 비활성화할 수 있습니다.</block>
+  <block id="269c74f89d19496b04459039d508e44d" category="list-text">다음 페이지에서 *랜섬웨어 검사* 섹션을 펼치십시오.</block>
+  <block id="5299ea3429e3a9adb55b5ee3ed45db22" category="section-title">공급자에 대한 랜섬웨어 검사를 활성화 또는 비활성화합니다.</block>
+  <block id="b49e83f9693b48c2788f78f6c47d5a38" category="paragraph">공급자 설정 페이지를 사용하여 공급자 수준에서 랜섬웨어 검사를 활성화 또는 비활성화할 수 있습니다. 이 페이지의 설정은 페이지 상단에서 선택한 버킷과 관련이 있습니다.</block>
+  <block id="bfde028ef8efd6b608042bae922380e6" category="list-text">_백업 설정 페이지_에서 다음을 클릭하세요. <block ref="a1d09704e1f652cf0082bca28cb44e87" category="inline-image-macro-rx" type="image"></block> 시스템에서 *고급 설정 구성 &gt; 공급자 설정*을 선택합니다.</block>
+  <block id="ac960be8ab0dada73edd8073df004280" category="list-text">결과 페이지 상단에서 설정을 변경해야 하는 버킷을 선택하십시오.</block>
+  <block id="9255ea030351a8ee8402a7708baf0223" category="list-text">*랜섬웨어 검사* 섹션을 펼치세요.</block>
+  <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026년 1월 19일</block>
+  <block id="88009dbb638181324526010a9eff3c19" category="sidebar">VMware 가상 머신 복원</block>
+  <block id="9b7e5fddcf3e2a7a93fe6669de87fbc2" category="sidebar">특정 가상 디스크 복원</block>
+  <block id="6d74a680eadd149117f584cf67b83c34" category="sidebar">게스트 파일 및 폴더 복원</block>
+  <block id="3a4d751e404219df1dc6de0a13c8db55" category="sidebar">워크플로, 전제 조건 및 제한 사항</block>
 </blocks>

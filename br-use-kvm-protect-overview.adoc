@@ -14,7 +14,7 @@ summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Az
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하여 KVM VM과 스토리지 풀을 보호하세요.  NetApp Backup and Recovery 빠르고 공간 효율적이며, 충돌 대비 및 VM 대비 일관된 백업 및 복원 작업을 제공합니다.
+NetApp Backup and Recovery 사용하여 관리형 KVM VM 및 스토리지 풀을 보호하세요. NetApp Backup and Recovery 빠르고 공간 효율적이며, 크래시 일관성 및 VM 일관성을 보장하는 백업 및 복원 작업을 제공합니다. KVM 호스트와 가상 머신은 백업 및 복구 기능을 사용하여 보호하기 전에 Apache CloudStack과 같은 관리 플랫폼에서 관리되어야 합니다.
 
 KVM 워크로드를 Amazon Web Services S3, Azure NetApp Files 또는 StorageGRID 에 백업하고 KVM 워크로드를 온프레미스 KVM 호스트로 복원할 수 있습니다.
 

@@ -26,6 +26,8 @@ NetApp Backup and Recovery 의 Hyper-V 워크로드에 대한 비공개 미리 �
 * VM을 대체 위치로 복원
 * 디스크 스패닝(여러 CIFS 공유에 걸쳐)
 * SAN을 통한 VM 보호
-* 보호 그룹 편집
-* SCVMM(System Center Virtual Machine Manager)을 사용하여 클러스터링된 Hyper-V 호스트를 보호합니다.
+* Hyper-V의 "프로세서 호환성" 설정과 관계없이 CPU 제조사가 다른 시스템(Intel과 AMD 또는 그 반대) 간에는 가상 머신이나 가상 머신 데이터를 복원할 수 없습니다. 이 설정은 동일 제조사의 서로 다른 세대 프로세서(예: Intel 대 Intel 또는 AMD 대 AMD) 간의 호환성만 지원합니다.
 
+
+
+NOTE: 2026년 1월 19일 릴리스에서는 작업 메뉴의 *업그레이드* 옵션을 사용하여 Hyper-V 또는 Windows용 NetApp 플러그인을 업그레이드할 수 없습니다. 그 대신 각 Hyper-V 호스트를 제거한 다음 다시 추가하여 플러그인을 업데이트하십시오.
