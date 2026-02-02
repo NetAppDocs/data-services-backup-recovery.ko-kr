@@ -463,7 +463,6 @@
   <block id="27e92fcddc23071f7a376e1c06fa20d6" category="list-text">MetroCluster 지원:</block>
   <block id="fa5ec1bbbde705a6b3fbd36d5f35b9f9" category="list-text">ONTAP 9.12.1 GA 이상을 사용하는 경우 기본 시스템에 연결하면 백업이 지원됩니다.  전체 백업 구성이 보조 시스템으로 전송되므로 전환 후에도 클라우드로의 백업이 자동으로 계속됩니다.  보조 시스템에는 백업을 설정할 필요가 없습니다(사실, 설정하는 것이 제한되어 있습니다).</block>
   <block id="a1e9108dbd21ffa07a61d3c3e7ecf506" category="list-text">ONTAP 9.12.0 및 이전 버전을 사용하는 경우 백업은 ONTAP 보조 시스템에서만 지원됩니다.</block>
-  <block id="6413e2887d9fc1bca42a1d8fa137281d" category="list-text">현재 FlexGroup 볼륨 백업은 지원되지 않습니다.</block>
   <block id="ff65f252d2a0aa40e634cf2ad7eaa2d3" category="list-text">데이터 보호 볼륨에서는 *지금 백업* 버튼을 사용한 임시 볼륨 백업이 지원되지 않습니다.</block>
   <block id="3dd0180637528cde8671a0c957cf90da" category="list-text">SM-BC 구성은 지원되지 않습니다.</block>
   <block id="28014e4f484f0639d9b0151965328912" category="list-text">ONTAP 단일 볼륨에서 여러 개체 저장소로의 SnapMirror 관계 팬아웃을 지원하지 않습니다. 따라서 이 구성은 NetApp Backup and Recovery 에서 지원되지 않습니다.</block>
@@ -4974,4 +4973,5 @@
   <block id="f411222cfe4404b6e0b3d9790460b804" category="list-text">이제 Hyper-V VM 백업 및 스냅샷을 다른 위치로 복원할 수 있습니다. 이 기능을 사용하여 서로 다른 Hyper-V 호스트에서 VM 버전을 관리할 수 있습니다.</block>
   <block id="83de53928b74eea738d883969ca231fa" category="list-text">NetApp Backup and Recovery는 이제 System Center Virtual Machine Manager(SCVMM)로 프로비저닝되고 CIFS 공유에서 호스팅되는 Hyper-V 가상 머신을 지원합니다.</block>
   <block id="fe3a06f4a23ebd296fcaecd751b29ac6" category="paragraph">KVM 워크로드 미리 보기 기능은 이제 Apache CloudStack에서 관리하는 KVM 호스트 및 가상 머신을 보호합니다.</block>
+  <block id="e82f8585939ff44aeed4d4c863058cee" category="list-text">ONTAP 9.18.1 버전부터 FlexGroup 볼륨 백업이 MetroCluster 구성에서 지원됩니다.</block>
 </blocks>
