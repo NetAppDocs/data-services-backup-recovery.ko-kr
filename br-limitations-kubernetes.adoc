@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: br-limitations-kubernetes.html 
+keywords: limitations, known, NetApp Backup and Recovery, Kubernetes 
+summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetApp Backup and Recovery 제한 사항을 검토하십시오. 
+---
+= NetApp Backup and Recovery for Kubernetes 워크로드의 알려진 제한 사항
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+이 버전에서 작동하지 않거나 제대로 작동하지 않는 플랫폼, 장치 또는 기능은 다음과 같습니다.  이러한 제한 사항을 주의 깊게 읽으십시오.
+
+
+
+== 애플리케이션의 보호 정책 변경
+
+애플리케이션에 연결된 보호 정책을 다른 버킷 또는 2차 복제 대상으로 변경하면 보호 정책이 실패할 수 있습니다.
+
+*해결 방법*: 애플리케이션을 제거한 후 다시 추가하십시오.
+
+
+
+== 3-2-1 보호 정책 구성 제한 사항
+
+오브젝트 스토리지 백업이 2차 스토리지로의 복제와 동시에 발생하지 않는 3-2-1 보호 정책을 생성할 때 애플리케이션 보호 시 보호 정책이 멈춥니다.
+
+*해결 방법*: 애플리케이션을 제거한 후 다시 추가하고 다른 보호 정책으로 보호하십시오.

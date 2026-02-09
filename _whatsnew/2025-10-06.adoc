@@ -104,7 +104,7 @@ NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크�
 * Oracle 대시보드 지원
 
 
-Oracle Database 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle 워크로드 보호 개요"] .
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle Database 워크로드 보호 개요"]을 참조하십시오.
 
 
 

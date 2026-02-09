@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-oracle-mount-unmount.html 
 keywords: restore, vm, oracle, databases, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery 통해 Oracle 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 보호하십시오. 
 ---
 = NetApp Backup and Recovery 사용하여 Oracle 데이터베이스 복구 지점을 마운트 및 마운트 해제합니다.
 :hardbreaks:

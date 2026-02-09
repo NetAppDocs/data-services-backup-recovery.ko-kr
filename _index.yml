@@ -80,17 +80,17 @@ indexpage:
       url: "/br-use-hyperv-backup.html"
     - title: Hyper-V 워크로드 복원
       url: "/br-use-hyperv-restore.html"
-  - title: Oracle 워크로드 보호(비공개 미리보기)
+  - title: Oracle Database 워크로드 보호(비공개 미리 보기)
     links:
-    - title: Oracle 워크로드 보호 개요
+    - title: Oracle Database 워크로드 보호 개요
       url: "/br-use-oracle-protect-overview.html"
-    - title: Oracle 워크로드 검색
+    - title: Oracle Database 워크로드를 살펴보세요
       url: "/br-start-discover-oracle.html"
-    - title: Oracle 워크로드에 대한 보호 그룹 생성 및 관리
+    - title: Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리
       url: "/br-use-oracle-protection-groups.html"
-    - title: Oracle 워크로드 백업
+    - title: Oracle Database 워크로드를 백업합니다
       url: "/br-use-oracle-backup.html"
-    - title: Oracle 워크로드 복원
+    - title: Oracle Database 워크로드 복원
       url: "/br-use-oracle-restore.html"
   - title: Kubernetes 워크로드 보호(미리 보기)
     links:

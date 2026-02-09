@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-oracle-protection-groups.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle, database, workloads, volumes, snapshots 
-summary: NetApp Backup and Recovery 에서 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다. 
+summary: NetApp Backup and Recovery에서 Oracle Database 워크로드용 보호 그룹을 생성하고 관리합니다. 
 ---
-= NetApp Backup and Recovery 사용하여 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다.
+= NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드용 보호 그룹을 생성하고 관리하세요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -20,7 +20,7 @@ Oracle Database 리소스 세트에 대한 백업 작업을 관리하기 위해 
 
 * 보호 그룹을 만듭니다.
 * 보호 세부 정보를 확인하세요.
-* 지금 보호 그룹을 백업하세요. 보다link:br-use-kvm-backup.html["지금 Oracle 워크로드를 백업하세요"] .
+* 지금 바로 보호 그룹을 백업하세요. link:br-use-kvm-backup.html["지금 바로 Oracle Database 워크로드를 백업하세요"]을 참조하십시오.
 * 보호 그룹을 삭제합니다.
 
 

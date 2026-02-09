@@ -77,7 +77,7 @@ NetApp Backup and Recovery 사용하면 다음 목표를 달성할 수 있습니
 ** 참조하다link:br-use-hyperv-protect-overview.html["Hyper-V 워크로드 보호"] .
 
 
-* *Oracle 워크로드(미리 보기)*:
+* *Oracle Database 워크로드(미리 보기)*:
 +
 ** 데이터베이스와 로그 백업 및 복원
 ** 보호 그룹을 사용하여 백업 작업 관리
@@ -85,7 +85,7 @@ NetApp Backup and Recovery 사용하면 다음 목표를 달성할 수 있습니
 ** 3-2-1 백업 아키텍처로 데이터베이스 보호
 ** 백업 보존 구성
 ** ARCHIVELOG 백업 마운트 및 마운트 해제
-** 참조하다link:br-use-oracle-protect-overview.html["Oracle 워크로드 보호"] .
+** link:br-use-oracle-protect-overview.html["Oracle Database 워크로드를 보호합니다"]을(를) 참조하세요.
 
 
 * *Kubernetes 워크로드(미리 보기)*:
@@ -148,6 +148,8 @@ NetApp Backup and Recovery 소스 볼륨의 스토리지 효율성을 보존하�
 *서비스 요금*
 
 ONTAP 볼륨 워크로드의 경우 객체 스토리지로 보호되는 볼륨에 대해서만 요금이 부과됩니다. 요금은 효율성이 적용되기 전 소스 ONTAP 볼륨의 논리적 사용 용량(프런트엔드 테라바이트(FETB)라고도 함)을 기준으로 부과됩니다.
+
+Kubernetes 워크로드의 경우 모든 영구 볼륨의 총 크기를 기준으로 요금이 부과됩니다.
 
 다른 모든 워크로드의 경우, 하나 이상의 보조 스토리지 또는 객체 스토리지 대상으로 보호되는 리소스에 대해 요금이 부과됩니다. 요금은 소스 워크로드의 논리적 크기를 기준으로 계산됩니다. 데이터베이스의 경우 데이터베이스 크기를 의미하고, 가상 머신의 경우 가상 머신 크기를 의미합니다.
 

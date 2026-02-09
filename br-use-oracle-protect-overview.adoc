@@ -14,7 +14,7 @@ summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Az
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하여 Oracle 데이터베이스와 로그를 보호하세요.  빠르고 공간 효율적이며, 충돌에 대한 일관성과 데이터베이스 일관성을 갖춘 백업 및 복원을 얻으세요.  Oracle 워크로드를 AWS S3, NetApp StorageGRID, Azure Blob Storage 또는 ONTAP S3에 백업합니다.  온프레미스 Oracle 호스트에 백업을 복원합니다.
+NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스와 로그를 보호하세요. 빠르고 공간 효율적이며, 크래시 일관성 및 데이터베이스 일관성을 보장하는 백업 및 복원 기능을 제공합니다. Oracle Database 워크로드를 AWS S3, NetApp StorageGRID, Azure Blob Storage 또는 ONTAP S3에 백업하고, 온프레미스 Oracle 호스트에 복원할 수 있습니다.
 
 NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
 
@@ -26,10 +26,10 @@ NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 
 
 NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
 
-NetApp Backup and Recovery 사용하면 Oracle 워크로드와 관련된 다음 작업을 수행할 수 있습니다.
+NetApp Backup and Recovery를 사용하면 Oracle Database 워크로드와 관련된 다음과 같은 작업을 수행할 수 있습니다.
 
-* link:br-start-discover-oracle.html["Oracle 워크로드 검색"]
-* link:br-use-oracle-protection-groups.html["Oracle 워크로드에 대한 보호 그룹 생성 및 관리"]
-* link:br-use-oracle-backup.html["Oracle 워크로드 백업"]
-* link:br-use-oracle-restore.html["Oracle 워크로드 복원"]
+* link:br-start-discover-oracle.html["Oracle Database 워크로드를 살펴보세요"]
+* link:br-use-oracle-protection-groups.html["Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리"]
+* link:br-use-oracle-backup.html["Oracle Database 워크로드를 백업합니다"]
+* link:br-use-oracle-restore.html["Oracle Database 워크로드 복원"]
 

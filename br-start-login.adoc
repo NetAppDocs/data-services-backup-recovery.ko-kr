@@ -43,7 +43,7 @@ NetApp Console 로그인 페이지가 나타납니다.
 ** Microsoft SQL Server 워크로드의 경우 다음을 참조하세요.link:br-start-discover.html["Microsoft SQL Server 워크로드 알아보기"] .
 ** VMware 워크로드의 경우 다음을 참조하세요.link:br-use-vmware-discovery.html["VMware 워크로드 알아보기"] .
 ** KVM 작업 부하에 대해서는 다음을 참조하세요.link:br-start-discover-kvm.html["KVM 워크로드 검색"] .
-** Oracle 워크로드의 경우 다음을 참조하세요.link:br-start-discover-oracle.html["Oracle 워크로드 검색"] .
+** Oracle Database 워크로드에 대해서는 link:br-start-discover-oracle.html["Oracle Database 워크로드를 살펴보세요"]을 참조하십시오.
 ** Hyper-V 작업 부하의 경우 다음을 참조하세요.link:br-start-discover-hyperv.html["Hyper-V 워크로드 검색"] .
 ** Kubernetes 워크로드의 경우 다음을 참조하세요.link:br-start-discover-kubernetes.html["Kubernetes 워크로드를 알아보세요"] .
 

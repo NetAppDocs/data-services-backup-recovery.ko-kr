@@ -302,8 +302,6 @@
   <block id="290536edae9da601f8170c5b55f24416" category="list-text">가상화된 데이터베이스</block>
   <block id="fa13bdfd9eed88794d8035a9e287804f" category="list-text">데이터베이스 백업 검색 및 복원</block>
   <block id="50f97ccd9c70c1fad84f646a4f0a7844" category="list-text">Oracle 대시보드 지원</block>
-  <block id="51d8503c0e8b0708c3068080f066d721" category="inline-link">Oracle 워크로드 보호 개요</block>
-  <block id="834f349029c5bc6715f25a9eac82f171" category="paragraph">Oracle Database 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요.<block ref="aa11c9ead0c1847dba5fa900ff49219a" category="inline-link-rx"></block> .</block>
   <block id="8d799f5cd163dd189424382fcbc55641" category="summary">웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 RESTful API를 통해서도 사용할 수 있습니다.</block>
   <block id="3273eb60c717ba9173100472fd580bfa" category="doc">NetApp Backup and Recovery REST API를 사용하여 자동화</block>
   <block id="c50c9f52d92103a492abf38f4b5325e0" category="paragraph">웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 백업 및 복구 REST API를 통해서도 사용할 수 있습니다.</block>
@@ -365,14 +363,7 @@
   <block id="5131ec6f366fecc1e6e217f1cd4771d5" category="list-text">여러 NFS 마운트 지점 또는 공유에 걸쳐 있는 디스크</block>
   <block id="60cb90015b7d70207c84b5b4c09b1c4a" category="list-text">RAW 디스크 포맷</block>
   <block id="def5bb1c4fff047ce52153ac1f2ef9b5" category="list-text">NetFS 이외의 스토리지 풀 유형(NetFS만 지원됨)</block>
-  <block id="43250e477f245ad8251ae2cf9a6044b5" category="doc">Oracle 워크로드용 NetApp Backup and Recovery 의 알려진 제한 사항</block>
-  <block id="d905e8ea866675c3cf4643035604b776" category="paragraph">다음 작업은 NetApp Backup and Recovery 의 Oracle Database 워크로드에 대한 비공개 미리 보기 버전에서 지원되지 않습니다.</block>
   <block id="203b3a4b594fb28b853f0cb7e5561c26" category="list-text">오프라인 백업</block>
-  <block id="ff24590464659ee8cdec688128c35f89" category="list-text">복제</block>
-  <block id="2f42226f79de76630de2401fec50f917" category="list-text">ASM 구성</block>
-  <block id="79df96f2a2c49c67db8b8abedacd66da" category="list-text">SAN에 저장된 데이터베이스 보호</block>
-  <block id="ed1c3b4d6aee5defa8827a5cd00e2e81" category="paragraph">Oracle Database는 Oracle 워크로드의 비공개 미리보기 버전에서 NFS를 사용하는 독립 실행형 배포로만 지원됩니다.</block>
-  <block id="3af84d3004e466ae586915e19ffb662b" category="summary">NetApp Backup and Recovery 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery 조직 내 시스템의 모든 볼륨과 파일을 분석합니다.</block>
   <block id="11750133b5aeccdb05ec0c5b1027ace4" category="doc">VMware 워크로드용 NetApp Backup and Recovery 의 알려진 제한 사항</block>
   <block id="bd24e6cbfe24fff0710652a52a0736b5" category="paragraph">NetApp Backup and Recovery 의 VMware 워크로드 미리보기 버전에서는 다음 작업이 지원되지 않습니다.</block>
   <block id="eace16d66cdd93ad876c620db7456077" category="list-text">산</block>
@@ -669,10 +660,8 @@
   <block id="e7c444e4a1d2f156d71a907145c8a598" category="list-text">*Kubernetes* 워크로드 유형을 선택하세요.</block>
   <block id="96c35fcba67cbf6710845bcca4668cc2" category="list-text">클러스터 이름을 입력하고 클러스터와 함께 사용할 커넥터를 선택하세요.</block>
   <block id="39b0136210d9abd099b81781cc0a17db" category="list-text">표시되는 명령줄 지침을 따르세요.</block>
-  <block id="3b47301a2201ba1175e2a109a103127b" category="list-text">Trident 보호 네임스페이스 만들기</block>
   <block id="ed6eabebedff09350cdabab556887c62" category="list-text">쿠버네티스 비밀을 생성하세요</block>
   <block id="6c27e11d1144953d7877449d5adc966d" category="list-text">Helm 저장소 추가</block>
-  <block id="c1a343fd7e28cea1253758e1b64a4d0d" category="list-text">Trident Protect 및 Trident Protect 커넥터 설치</block>
   <block id="efa5307bfad4cbe53b6ae3c88baa522e" category="paragraph">이러한 단계를 거치면 NetApp Backup and Recovery 클러스터와 상호 작용할 수 있습니다.</block>
   <block id="9bac5e7d53677c1fdcf7d275fd58ed60" category="list-text">모든 단계를 완료한 후 *검색*을 선택하세요.</block>
   <block id="6b3946603d5588826f1cd3f2695b8542" category="paragraph">클러스터가 인벤토리에 추가됩니다.</block>
@@ -686,7 +675,6 @@
   <block id="acaaf9de0e4071fe117da04dbbe9565d" category="list-text">KVM 타일에서 *검색 및 관리*를 선택합니다.</block>
   <block id="12d8eeba7e97739f6035cbec50bd2369" category="list-text">*작업 유형*: *KVM*을 선택하세요.</block>
   <block id="238fb750ebdea9faf36668536aaa8b42" category="paragraph">KVM 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩니다.</block>
-  <block id="0a6dc8ac33152480a18098d8eb98ccb6" category="doc">NetApp Backup and Recovery 에서 Oracle 워크로드를 찾아보세요</block>
   <block id="945f74309f719db5d0fb0d1bb5a31781" category="paragraph">NetApp Backup and Recovery Oracle 데이터베이스를 먼저 검색하여 보호해야 합니다.</block>
   <block id="bf36d800e1bbaf0ef44cd361867e4e09" category="section-title">Oracle 호스트를 추가하고 리소스를 검색합니다.</block>
   <block id="8160dc72c9473d18119ea3e52fe65572" category="paragraph">Oracle 호스트 정보를 추가하고 NetApp Backup and Recovery 워크로드를 검색하도록 합니다. 각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.</block>
@@ -832,8 +820,6 @@
   <block id="8eec52ebd7892b36424f0c784c1a70dc" category="list-text">VMware 워크로드의 경우 다음을 참조하세요.<block ref="4c90ef6c5dc037251bf65afdeeb1ee6c" category="inline-link-macro-rx"></block> .</block>
   <block id="cbc99816ef9ba154c39b76f904359040" category="inline-link-macro">KVM 워크로드 검색</block>
   <block id="f8e001546fd93d61022ff713e03298f8" category="list-text">KVM 작업 부하에 대해서는 다음을 참조하세요.<block ref="6343f6c391fb966ad325d76211a59524" category="inline-link-macro-rx"></block> .</block>
-  <block id="73e8c7525f434c946114ba1e9477bb6e" category="inline-link-macro">Oracle 워크로드 검색</block>
-  <block id="76b4ef756320e6f6ca5d1c225439f7f5" category="list-text">Oracle 워크로드의 경우 다음을 참조하세요.<block ref="0ef9d15a5323698b079164a26f451715" category="inline-link-macro-rx"></block> .</block>
   <block id="8ea9fd29df4eb58092d8258c6ccf3ad8" category="inline-link-macro">Hyper-V 워크로드 검색</block>
   <block id="3b97616ae538f454d8812a77c84392d1" category="list-text">Hyper-V 작업 부하의 경우 다음을 참조하세요.<block ref="e853aa4eb98908dd4b95a8cc80d9972f" category="inline-link-macro-rx"></block> .</block>
   <block id="e5dd8794e7e239a004607625309c03bb" category="list-text">Kubernetes 워크로드의 경우 다음을 참조하세요.<block ref="bdf340f843cf54500673f62df22d5070" category="inline-link-macro-rx"></block> .</block>
@@ -1491,15 +1477,11 @@
   <block id="f467c6231a57911e62401cfb0159d95b" category="paragraph">복원 페이지에서 복원할 때와 동일한 세 가지 옵션이 나타납니다.</block>
   <block id="3cc2b93a80a97a7cacb8c0d4f5da6c20" category="list-text">특정 시점으로 복원</block>
   <block id="d25e9ce84a1050d163d601d4bd2fa073" category="list-text">복원 페이지에서 복원 옵션에 대해 동일한 단계를 계속합니다.</block>
-  <block id="7b588dfa65a0573a51e5ab0e2d3023e9" category="summary">NetApp 백업 및 복구를 통해 Oracle 워크로드를 보호하세요.</block>
-  <block id="2fb29b6c97ac2109b4c3d3537ae25b9d" category="inline-link-macro">NetApp Backup and Recovery 사용하여 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다.</block>
-  <block id="02cdaf324b33a661330ff286d04c61aa" category="list-text">리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보다<block ref="c9c15450fe1a04e77c0be05f7471779a" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
   <block id="5a232101cd6b911084269b39726e0f05" category="list-text">지금 보호 그룹을 백업하세요(지금 주문형 백업을 생성하세요).</block>
   <block id="99a4d620d348de03a46767ad6dd1a27c" category="list-text">지금 데이터베이스를 백업하세요.</block>
   <block id="0e3dfc8aecedae71e6c1e03c52c544ec" category="section-title">지금 온디맨드 백업으로 데이터베이스를 백업하세요</block>
   <block id="4875f551855c5d20449df9a7a54edc8a" category="paragraph">단일 데이터베이스의 주문형 백업을 실행할 수 있습니다.</block>
   <block id="d8e3db119b7cf9c31602a2121bfa4365" category="list-text">백업할 데이터베이스를 선택하세요.</block>
-  <block id="630481ffe08dcea3b2119a33662f9d29" category="summary">NetApp Backup and Recovery 통해 Oracle 워크로드를 보호하세요.</block>
   <block id="77b7ee08ed330c77cd76797cc7019357" category="doc">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스 복구 지점을 마운트 및 마운트 해제합니다.</block>
   <block id="797c8d8b5a0f5a880bd15fd855682db6" category="paragraph">복구 작업을 수행하기 위해 제어된 상태에서 데이터베이스에 액세스해야 하는 경우 Oracle 데이터베이스 복구 지점을 마운트할 수 있습니다.</block>
   <block id="079a3f8ec0bb95d8f0ae5d36f04de7c4" category="section-title">Oracle 데이터베이스 복원 지점 마운트</block>
@@ -1523,18 +1505,7 @@
   <block id="504b4d4156c8604edbbda8b908e689cf" category="list-text">*마운트 해제*를 선택하여 작업을 확인합니다.</block>
   <block id="bb205d6469d1d38895fc74e5fe58b024" category="summary">온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 까지 Oracle 가상 머신을 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다.</block>
   <block id="3e4addf457cac6e6f2f337996275bb1f" category="doc">Oracle Database 워크로드 보호 개요</block>
-  <block id="e58749f44abd3f2817fad6c2ae87fb45" category="paragraph">NetApp Backup and Recovery 사용하면 Oracle 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
-  <block id="0ef9d15a5323698b079164a26f451715" category="list-text"><block ref="0ef9d15a5323698b079164a26f451715" category="inline-link-macro-rx"></block></block>
-  <block id="f7f66fefaac908c86a635d80ae33c9ef" category="inline-link-macro">Oracle 워크로드에 대한 보호 그룹 생성 및 관리</block>
-  <block id="f647111ef4b009cd2203e0e63adc9ed6" category="list-text"><block ref="f647111ef4b009cd2203e0e63adc9ed6" category="inline-link-macro-rx"></block></block>
-  <block id="4480911dc79312ba167f517766049321" category="inline-link-macro">Oracle 워크로드 백업</block>
-  <block id="e7a6be28bd48e7e2231639888ee15d80" category="list-text"><block ref="e7a6be28bd48e7e2231639888ee15d80" category="inline-link-macro-rx"></block></block>
-  <block id="9a5fb46f313add6fc79aea102dcbaeb7" category="inline-link-macro">Oracle 워크로드 복원</block>
-  <block id="1cb9d10dd89115a71445adf4d5cf89fd" category="list-text"><block ref="1cb9d10dd89115a71445adf4d5cf89fd" category="inline-link-macro-rx"></block></block>
-  <block id="3fa704a0aa0f3e1205c4156e0affab68" category="summary">NetApp Backup and Recovery 에서 Oracle 워크로드에 대한 보호 그룹을 만들고 관리합니다.</block>
   <block id="e935651dcc727466a56b42d180db281c" category="paragraph">Oracle Database 리소스 세트에 대한 백업 작업을 관리하기 위해 보호 그룹을 만듭니다.  보호 그룹은 함께 보호하려는 데이터베이스와 같은 리소스의 논리적 그룹입니다.  Oracle 데이터베이스를 백업하려면 보호 그룹을 만들어야 합니다.</block>
-  <block id="30549a9efedf2c08f7e3c1070d0ec4a4" category="inline-link-macro">지금 Oracle 워크로드를 백업하세요</block>
-  <block id="9d2eb7298d6b079511014afa9fcf74b8" category="list-text">지금 보호 그룹을 백업하세요. 보다<block ref="6391799ae7a331a8ab5f8579820481db" category="inline-link-macro-rx"></block> .</block>
   <block id="4d11952e83e906d7c1c3bb7b8d814881" category="doc">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스 복원</block>
   <block id="79f77d8cbb1beb81481eb9b45d453a34" category="paragraph">다양한 시작 위치에서 데이터베이스를 복원할 수 있습니다.</block>
   <block id="d69f96cdc13d3a1e25929628b856adfc" category="section-title">Oracle 데이터베이스 복원 작동 방식</block>
@@ -1569,7 +1540,6 @@
   <block id="a4aa2f0da5fe920e49b4efa7582a1089" category="list-text">스크립트에 대한 시간 초과 값을 선택하세요.  이 기간 내에 스크립트가 실행되지 않으면 복원은 계속 진행됩니다.</block>
   <block id="f3d19f008b19feab896904cb50b1a321" category="list-text">*추신*: 선택적으로 이 옵션을 활성화하고 복원 작업 이후에 실행되어야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력합니다.</block>
   <block id="f8b53e55e8c6663dd48cecfd73eac0aa" category="list-text">*복구 후 읽기-쓰기 모드로 데이터베이스 또는 컨테이너 데이터베이스 열기*: 복원 작업이 완료되면 백업 및 복구가 데이터베이스에 대해 읽기-쓰기 모드를 활성화합니다.</block>
-  <block id="edbf5d4d98db112afa4f80b2be7e4681" category="paragraph">Oracle 워크로드 미리 보기에서는 사용할 수 없습니다.</block>
   <block id="b82be1f9be4e926901513f5106f48a87" category="summary">NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다.</block>
   <block id="94b302da41c06e07da50582e09e11a6f" category="doc">NetApp Backup and Recovery 에서 백업을 관리하기 위한 정책을 만들고 관리합니다.</block>
   <block id="014eafc4485f15b25db30025cd8b8df2" category="paragraph">NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다.</block>
@@ -1586,7 +1556,6 @@
   <block id="b7e23f2fbc84fffbedf563f644b8df93" category="section-title">정책 보기</block>
   <block id="9a23580d7344d92df6d39880be8984ee" category="list-text">NetApp Backup and Recovery 메뉴에서 *정책*을 선택합니다.</block>
   <block id="1acb02454e9197d4580e47cc314bafcc" category="list-text">이 정책 세부 사항을 검토하세요.</block>
-  <block id="6c3c2610bdd335f75a90c7ddab40a182" category="list-text">*작업 부하*: 예로는 Microsoft SQL Server, Volumes, VMware, KVM, Hyper-V 또는 Kubernetes가 있습니다.</block>
   <block id="c0d97b31eeb845274929b3f74cfce135" category="list-text">*백업 유형*: 예로는 전체 백업과 로그 백업이 있습니다.</block>
   <block id="eacf7361c754b5087b6ade2e010c1a1f" category="list-text">*아키텍처*: 예로는 로컬 스냅샷, 팬아웃, 캐스케이딩, 디스크 대 디스크, 디스크 대 개체 저장소가 있습니다.</block>
   <block id="292fca252d0ac5aa32931919e05e3331" category="list-text">*보호된 리소스*: 해당 작업 부하의 총 리소스 중 보호되는 리소스 수를 보여줍니다.</block>
@@ -1605,7 +1574,6 @@
   <block id="b2ba8b5a519744f308bb1fe099fca96c" category="admonition">피해야 할 문자 목록을 보려면 호버 팁을 확인하세요.</block>
   <block id="6fd5c80899312e5732b24f0d6a48f05a" category="list-text">*에이전트* 목록에서 콘솔 에이전트를 선택합니다.</block>
   <block id="35acdaad091c35b1b0b01e1b4dfa1cae" category="list-text">*백업 아키텍처* 섹션: 아래쪽 화살표를 선택하고 3-2-1 팬아웃, 3-2-1 캐스케이드 또는 디스크 간 등 백업에 대한 데이터 흐름을 선택합니다.</block>
-  <block id="404347b12f0f61e72da6a2792d7aabdc" category="list-text">*3-2-1 팬아웃*: 기본 저장소(디스크)에서 보조 저장소(디스크)로, 그리고 클라우드(객체 저장소)로. ONTAP 간, ONTAP 간, ONTAP 저장소 구성 등 다양한 스토리지 시스템에 걸쳐 여러 개의 데이터 사본을 생성합니다. 이는 클라우드 하이퍼스케일러 객체 저장소이거나 개인 객체 저장소인 StorageGRID 일 수 있습니다. 이러한 구성은 최적의 데이터 보호와 재해 복구를 달성하는 데 도움이 됩니다.</block>
   <block id="6cf0d5d70bb7be2a62ce45235fdc5421" category="admonition">이 옵션은 Amazon FSx for NetApp ONTAP 에서는 사용할 수 없습니다.</block>
   <block id="dd3964688f448cf4c53372241aa29860" category="paragraph">VMware 워크로드의 경우, 이는 기본의 데이터스토어 또는 VM에 로컬 스냅샷을 구성하고 기본 디스크 스토리지에서 보조 디스크 스토리지로 복제하며 기본에서 클라우드 개체 스토리지로 복제합니다.</block>
   <block id="786fc46f790a4c1a43af79907a835e9f" category="list-text">*3-2-1 캐스케이드*: (Kubernetes 워크로드에서는 사용할 수 없음) 기본 스토리지(디스크)에서 보조 스토리지(디스크)로, 기본 스토리지(디스크)에서 클라우드 스토리지(객체 저장소)로. 이는 클라우드 하이퍼스케일러 객체 저장소이거나 개인 객체 저장소인 StorageGRID 일 수 있습니다. 이를 통해 여러 시스템에 걸쳐 데이터 복제 체인이 생성되어 중복성과 안정성이 보장됩니다.</block>
@@ -1724,14 +1692,6 @@
   <block id="4049c9e3b9c424f5991c5f917ad92c40" category="inline-link-macro">실행 후크 템플릿</block>
   <block id="5e97a71c79e2f24deabf91daa3d20cd1" category="list-text">*Prescripts and postscripts* 영역에서 백업 작업 전이나 후에 실행하려는 Prescripts 또는 Postscripts 실행 후크를 활성화하고 구성합니다.  사전 스크립트 또는 사후 스크립트를 활성화하려면 이미 하나 이상을 만들어야 합니다.<block ref="3059f3d40a47ddab4d322199b8601d95" category="inline-link-macro-rx"></block> .</block>
   <block id="9f77aac915c7dddb04d022bff72e881d" category="paragraph">애플리케이션이 생성되어 Kubernetes 인벤토리의 *애플리케이션* 탭에 있는 애플리케이션 목록에 나타납니다.  NetApp Console 사용하면 설정에 따라 애플리케이션을 보호할 수 있으며, 백업 및 복구의 *모니터링* 영역에서 진행 상황을 모니터링할 수 있습니다.</block>
-  <block id="d34e75e1972332b08f5260e29a3eb456" category="section-title">기존 Kubernetes 애플리케이션 보호</block>
-  <block id="bcd7e935fe0f91f433516ff86415dcd4" category="paragraph">이미 추가한 Kubernetes 애플리케이션에서 보호 정책을 활성화합니다.</block>
-  <block id="104d1a34e290d2de5a494845fa1be7b8" category="list-text">애플리케이션 목록에서 보호하려는 애플리케이션을 선택하고 관련된 작업 메뉴를 선택합니다.</block>
-  <block id="20d541172ecc7e2d477ce2738120938c" category="list-text">*보호*를 선택하세요.</block>
-  <block id="f58eabeb108df6c5973f0ece276c562f" category="list-text">*정책* 영역에서 애플리케이션을 보호하기 위한 기존 보호 정책을 선택하거나 새 정책을 만듭니다. 참조하다<block ref="3739f9f9696bd133d77df1c4736a8480" category="inline-link-macro-rx"></block> 보호 정책 생성에 대한 자세한 내용은 다음을 참조하세요.</block>
-  <block id="6eeabb5a1fdc64db00294aa16e2efc65" category="list-text">*Prescripts and postscripts* 영역에서 백업 작업 전이나 후에 실행하려는 Prescripts 또는 Postscripts 실행 후크를 활성화하고 구성합니다.  실행 후크의 유형, 사용하는 템플릿, 인수 및 레이블 선택기를 구성할 수 있습니다.</block>
-  <block id="1c5ac4940b53e1922d936ca78379e63f" category="paragraph">콘솔을 사용하면 설정에 따라 애플리케이션을 보호할 수 있으며, 백업 및 복구의 *모니터링* 영역에서 진행 상황을 모니터링할 수 있습니다.  애플리케이션에 대한 보호 기능을 활성화하면 콘솔에서 해당 애플리케이션의 전체 백업이 생성됩니다. 이후 증분 백업은 애플리케이션과 관련된 보호 정책에 정의된 일정에 따라 생성됩니다.</block>
-  <block id="53932eb694521eb34987ea9c43f0a292" category="section-title">지금 Kubernetes 애플리케이션을 백업하세요</block>
   <block id="4b6c3c6a317300967177891eec6ba8fd" category="paragraph">향후 백업 및 스냅샷을 위한 기준을 설정하거나 최신 데이터가 보호되도록 Kubernetes 애플리케이션의 백업을 수동으로 생성합니다.</block>
   <block id="ef4da1dbc592e89fff8af00102b37ff3" category="list-text">애플리케이션 목록에서 백업하려는 애플리케이션을 선택하고 관련된 작업 메뉴를 선택합니다.</block>
   <block id="46b6ecff43461a732d3eda912df73a42" category="list-text">*지금 백업*을 선택하세요.</block>
@@ -1906,12 +1866,9 @@
   <block id="492fd59c461c682062524e7444f188c1" category="list-text">*Hyper-V 워크로드(미리 보기)*:</block>
   <block id="bcd52013d4bab273c97ec6049c73eb19" category="inline-link-macro">Hyper-V 워크로드 보호</block>
   <block id="6a88dd8d1df81c216e94864f62adb181" category="list-text">참조하다<block ref="5ad55f158503485706ea0446a924f3eb" category="inline-link-macro-rx"></block> .</block>
-  <block id="543cf4a1253e720b7d0efccfee564ef5" category="list-text">*Oracle 워크로드(미리 보기)*:</block>
   <block id="9ccb39720e55d973803af308a46b7f9d" category="list-text">데이터베이스와 로그 백업 및 복원</block>
   <block id="b9f9fe4773f2a73086e819aa78413e31" category="list-text">데이터베이스 및 로그 백업을 관리하기 위한 정책 생성</block>
   <block id="1aced3c59920e62aa237af558421e7bc" category="list-text">3-2-1 백업 아키텍처로 데이터베이스 보호</block>
-  <block id="a0150835683a46b302509d38f9c83e9f" category="inline-link-macro">Oracle 워크로드 보호</block>
-  <block id="f09a108fc13868756069afcfa8a6c090" category="list-text">참조하다<block ref="5b41776fecc34d5acf699b1f80f8e0f5" category="inline-link-macro-rx"></block> .</block>
   <block id="3066f1ebade966cf5d09fd225d9c82df" category="list-text">*Kubernetes 워크로드(미리 보기)*:</block>
   <block id="1c1c6b4c5003945f6d28242d24286ee6" category="list-text">Kubernetes 애플리케이션과 리소스를 한 곳에서 관리하고 보호하세요.</block>
   <block id="3f06fb8fe2ecccdacfaa2644488d935d" category="list-text">보호 정책을 사용하여 증분 백업을 구성합니다.</block>
@@ -2098,7 +2055,6 @@
   <block id="0e41245837200bd6043f82d33b20190c" category="list-text">커널 버전 5.14.0-503.22.1.el9_5.x86_64(장기) 이상을 실행하는 최신 Linux 배포판</block>
   <block id="c970c11004fdd5ce2f1cc065c0a6ad6b" category="list-text">QEMU 게스트 에이전트 버전 9.0.0 이상</block>
   <block id="1264706b848dd57765cb327cb40961af" category="list-text">libvirt 버전 10.5.0 이상</block>
-  <block id="a006e7e12c4a49555c6da7767f1640f2" category="section-title">Oracle 워크로드 보호를 위한 요구 사항</block>
   <block id="bd1f903de615a0961eab2be934f825c0" category="paragraph">Oracle 리소스를 검색하고 보호하기 위해 환경이 특정 요구 사항을 충족하는지 확인하세요.</block>
   <block id="7509d7baf822c07a0ff0cabeada1f21a" category="list-text">오라클 데이터베이스:</block>
   <block id="d4e3176f0ba3c81be4e51425c09b9e73" category="list-text">Oracle 19C 및 21C는 독립 실행형 배포에서 지원됩니다.</block>
@@ -2119,9 +2075,6 @@
   <block id="42113cf11e30b764619d3a98db65262d" category="list-text">Rancher Kubernetes Engine 2(RKE2) v1.26.7+rke2r1, v1.28.5+rke2r1</block>
   <block id="3c230289b9e480de28e2d616db466bc7" category="list-text">수세 랜처</block>
   <block id="59aaea4a07522d3cb111c0d446b7e7e3" category="list-text">NetApp Trident 24.10 이상</block>
-  <block id="f186f228bc71cb57a140bcc20f23c216" category="list-text">NetApp Trident Protect 25.07 이상(Kubernetes 워크로드 검색 중 설치됨)</block>
-  <block id="2c2fbc0a1685b20c95a5f489ce3868b3" category="list-text">NetApp Trident Protect Connector 25.07 이상(Kubernetes 워크로드 검색 중 설치됨)</block>
-  <block id="362363dccd2cc68b02c87c4b9e577f91" category="list-text">Kubernetes 클러스터, Trident Protect Connector 및 Trident Protect 프록시 간의 아웃바운드 방향에서 TCP 포트 443이 필터링되지 않았는지 확인하세요.</block>
   <block id="e33a9836e18ab4c7f01ac49f666c4e33" category="section-title">Hyper-V 워크로드 보호를 위한 요구 사항</block>
   <block id="7e75f7658d8e69b52e07a066a4510af5" category="paragraph">Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정 요구 사항을 충족하는지 확인하세요.</block>
   <block id="99fcf7547e608c33c370f1d5fe54e0a9" category="list-text">Microsoft Hyper-V 2019, 2022 및 2025 버전</block>
@@ -4266,7 +4219,6 @@
   <block id="460a4c33ada7a6581872d15b96a4344b" category="sidebar">VMware 워크로드 보호(미리 보기)</block>
   <block id="6a3bb59ab6ca7e1af58c7f804a58a47c" category="sidebar">KVM 워크로드 보호(비공개 미리보기)</block>
   <block id="d800ef02fd04e0bcce643b8bacdfd33e" category="sidebar">Hyper-V 워크로드 보호(비공개 미리 보기)</block>
-  <block id="0b4d495603c5e5fa389805d34bdd9a7f" category="sidebar">Oracle 워크로드 보호(비공개 미리보기)</block>
   <block id="8f12fe2d1611902de146ad61b89b8295" category="sidebar">Kubernetes 워크로드 보호(미리 보기)</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp Data Services</block>
@@ -4278,7 +4230,6 @@
   <block id="fe5216e8c6ca199aaa9802985fb31c17" category="sidebar">VMware 워크로드에 대한 알려진 제한 사항</block>
   <block id="006d31cf1f539a7e450614470546345c" category="sidebar">Hyper-V 워크로드에 대한 알려진 제한 사항</block>
   <block id="c97a0e572b66db226b5bead553a18a21" category="sidebar">KVM 워크로드에 대한 알려진 제한 사항</block>
-  <block id="3feb49183384fc17fa972d94a86ad3c6" category="sidebar">Oracle 워크로드에 대한 알려진 제한 사항</block>
   <block id="af63af72a4851d67644aa944a5b730df" category="sidebar">NetApp Backup and Recovery 위한 필수 구성 요소</block>
   <block id="ad4016cac47a83a6e1446b1b38d42180" category="sidebar">ONTAP 및 StorageGRID 에 대한 보안 인증서 설정</block>
   <block id="302152c28a081827c4d7c5eeb2372c70" category="sidebar">NetApp Backup and Recovery 일반 설정 구성</block>
@@ -4316,7 +4267,6 @@
   <block id="9234f5bc35aa09673eacbf8fece508db" category="sidebar">가상 머신 데이터 및 데이터 저장소 복원</block>
   <block id="a6c93de7c03701dfba222e9072ffe5e7" category="sidebar">KVM 워크로드 보호(미리 보기)</block>
   <block id="1db561ecd535caff5b4a1e7b87668d89" category="sidebar">Hyper-V 워크로드 보호(미리 보기)</block>
-  <block id="d9f824c8f622071705d9d0322fc719f8" category="sidebar">Oracle 워크로드 보호(미리 보기)</block>
   <block id="34caa737a5a671b66cc6fe7531c1f8b9" category="sidebar">복구 지점 마운트 및 마운트 해제</block>
   <block id="60c0c463b8839d0f2c5e5cea8fa728ad" category="sidebar">Kubernetes 워크로드 보호(미리 보기)</block>
   <block id="3186e7c44dc909386a0204716ffc46f6" category="sidebar">Kubernetes 워크로드에 대한 실행 후크 템플릿 관리</block>
@@ -4338,7 +4288,6 @@
   <block id="96804f828cf944ce68e80e74ae8d7cc0" category="list-text">SUSE Rancher Kubernetes 배포판 지원</block>
   <block id="7d6928dd953d625f33fbfd89243bf778" category="paragraph">NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.</block>
   <block id="d2ce5b8a55f10a315816f6647894815f" category="paragraph">실행 후크는 관리되는 Kubernetes 애플리케이션에서 데이터 보호 작업과 함께 실행되는 사용자 지정 작업입니다.  예를 들어, 실행 후크를 사용하여 스냅샷 전에 데이터베이스 트랜잭션을 일시 중지하고 스냅샷 후에 다시 시작하여 애플리케이션과 일관된 스냅샷을 만듭니다.  실행 후크 템플릿을 생성할 때 후크 유형, 실행할 스크립트, 대상 컨테이너에 대한 필터를 지정합니다.  템플릿을 사용하여 실행 후크를 애플리케이션에 연결합니다.</block>
-  <block id="404af526c79edf2284a92604e83b4a45" category="paragraph">NetApp Backup and Recovery 데이터 보호 중에 KubeVirt와 같은 애플리케이션의 파일 시스템을 동결하고 동결 해제합니다.  Trident Protect 설명서를 사용하여 이 동작을 전역적으로 또는 특정 애플리케이션에 대해 비활성화할 수 있습니다.</block>
   <block id="d77282c03df8b10c2c7ca1ca7deb9f52" category="list-text">적용 가능한 사용자 정의 사전 작업 실행 후크는 해당 컨테이너에서 실행됩니다. 여러 개의 사용자 정의 사전 작업 후크를 만들 수 있지만 실행 순서는 보장되지 않으며 구성할 수 없습니다.</block>
   <block id="8ae86463dd99c66d5a9ac9fadaa7dbd9" category="list-text">NetApp Backup and Recovery 해당 컨테이너에서 적용 가능한 사용자 정의 사전 작업 실행 후크를 실행합니다.  여러 개의 사용자 정의 사후 작업 후크를 만들 수 있지만 실행 순서는 보장되지 않으며 구성할 수 없습니다.</block>
   <block id="fa277bc4215bc063ac5d9134fd68a383" category="paragraph">동일한 유형의 후크를 여러 개 만드는 경우 실행 순서는 보장되지 않습니다.  다양한 유형의 후크는 항상 지정된 순서대로 실행됩니다. 예를 들어, 다양한 유형의 후크를 모두 포함하는 구성을 실행하는 순서는 다음과 같습니다.</block>
@@ -4429,13 +4378,11 @@
   <block id="3d1e74249acc11e215f68c784ae29e1f" category="list-text">*복원 페이지에서*: 리소스의 이름, 위치 또는 마지막 유효 날짜를 모르는 경우 이 옵션을 사용하여 리소스를 복원합니다.  필터를 사용하여 스냅샷을 검색합니다.</block>
   <block id="925339af26e35afc6f5984d691aa25af" category="list-text">*인벤토리 페이지에서*: 이 옵션을 사용하면 이름, 위치, 마지막 유효 날짜를 알고 있는 특정 리소스를 복원할 수 있습니다.  목록을 탐색하여 리소스를 찾으세요.</block>
   <block id="bf094c6c5fccca6c427a43080edf5833" category="list-text">데이터베이스 메뉴에서 "보호됨" 상태의 데이터베이스를 선택합니다.</block>
-  <block id="ce2efe5d519e4c1242177b404520665a" category="doc">NetApp Backup and Recovery 사용하여 Oracle 워크로드 백업</block>
   <block id="b3b9d779c6c22d1258ffcbda438336c1" category="paragraph">NetApp Backup and Recovery 사용하면 온프레미스 ONTAP 시스템에서 Amazon S3, NetApp StorageGRID, Microsoft Azure Blob Storage 또는 ONTAP S3 등의 클라우드 스토리지로 Oracle Database 보호 그룹이나 데이터베이스를 백업할 수 있습니다.  NetApp Backup and Recovery 각 보호 그룹의 데이터베이스와 로그 데이터를 백업합니다.</block>
   <block id="fe390808083985de8172887380a80c5e" category="admonition">일정에 따라 보호 그룹이나 단일 데이터베이스를 백업하려면 백업 및 복원 작업을 관리하는 정책을 만듭니다. 보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 지침을 보려면.</block>
   <block id="26bbb7b442740e80ed850d884bef0605" category="paragraph">데이터를 보호하려면 시스템을 변경하기 전에 주문형 백업을 실행하세요.</block>
   <block id="0dd484dd2e82385c156b95d98fd2f3fa" category="admonition">NetApp Backup and Recovery 백업 그룹과 보호 그룹 모두에 동일한 정책을 사용합니다.</block>
   <block id="b5ba243769c03b5476a2b6c06b8c5b5a" category="paragraph">보관 로그를 보관하도록 데이터베이스의 보호 정책을 구성하면 복구 지점을 마운트하여 데이터베이스 변경 내역을 볼 수 있습니다.</block>
-  <block id="d038c8bfa872280d5c1a567bff169d05" category="paragraph">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스와 로그를 보호하세요.  빠르고 공간 효율적이며, 충돌에 대한 일관성과 데이터베이스 일관성을 갖춘 백업 및 복원을 얻으세요.  Oracle 워크로드를 AWS S3, NetApp StorageGRID, Azure Blob Storage 또는 ONTAP S3에 백업합니다.  온프레미스 Oracle 호스트에 백업을 복원합니다.</block>
   <block id="21214671e7222d24ea30444729853d36" category="paragraph">보호하려는 작업 부하를 보호 그룹으로 그룹화하여 함께 백업하고 복원합니다.</block>
   <block id="e1a8b67cb61fcb0e0a3b88e66f93f4cd" category="paragraph">보호 그룹을 일시 중지하면 예약된 백업이 일시 중지됩니다.</block>
   <block id="2efbc86f2f62c8819af426f268c543d5" category="paragraph">보호 그룹을 삭제하면 해당 그룹과 해당 그룹의 모든 백업 일정이 제거됩니다.  더 이상 필요하지 않은 보호 그룹을 삭제하세요.</block>
@@ -4765,7 +4712,6 @@
   <block id="48ddddb06a7cca979a8b0eb4de198113" category="doc">ONTAP 볼륨 워크로드 개선 사항</block>
   <block id="cbab7e5b614b876bebcce0c29fd1afb6" category="paragraph">*다중 버킷 지원*: (비공개 미리 보기) ONTAP 9.17.1 이상 버전부터 시스템 내 볼륨을 서로 다른 클라우드 공급자에 걸쳐 시스템당 최대 6개의 버킷으로 보호할 수 있습니다.</block>
   <block id="695e42eb94aa8a143b557dc75e4cc65e" category="inline-link-macro">NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 백업하는 방법에 대해 자세히 알아보세요.</block>
-  <block id="c380d2c239579706adcab966ccded39a" category="paragraph"><block ref="040f925aac1483fc9f3f6e8bd68d3888" category="inline-link-macro-rx"></block>.</block>
   <block id="558e5aec99d772eb277c493188d3c607" category="section-title">VMware 워크로드 개선 사항</block>
   <block id="d8cf45a94e57901a57764525baf2f9bf" category="paragraph">이번 VMware 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
   <block id="3b2cdba7e0b9954f4d9e79b310fdbccd" category="list-text">이제 게스트 OS 파일과 폴더를 복원할 수 있습니다.</block>
@@ -4974,4 +4920,329 @@
   <block id="83de53928b74eea738d883969ca231fa" category="list-text">NetApp Backup and Recovery는 이제 System Center Virtual Machine Manager(SCVMM)로 프로비저닝되고 CIFS 공유에서 호스팅되는 Hyper-V 가상 머신을 지원합니다.</block>
   <block id="fe3a06f4a23ebd296fcaecd751b29ac6" category="paragraph">KVM 워크로드 미리 보기 기능은 이제 Apache CloudStack에서 관리하는 KVM 호스트 및 가상 머신을 보호합니다.</block>
   <block id="e82f8585939ff44aeed4d4c863058cee" category="list-text">ONTAP 9.18.1 버전부터 FlexGroup 볼륨 백업이 MetroCluster 구성에서 지원됩니다.</block>
+  <block id="09b3e69fece0c8fed98cbfa4f60560d0" category="paragraph">장시간 실행되는 s3 백업 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 백업 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.</block>
+  <block id="5eb831e0d78e65bcd3dba1b12bc07037" category="inline-link">AWS API 문서</block>
+  <block id="acc296a904bd0d4d976a52cfe9fe9b8c" category="list-text">현재 세션 토큰 만료 확인에 대한 자세한 내용은<block ref="718365c4473e4015a2556ceb49bc6d0e" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="47700faecc8b055ea48413402a7add11" category="inline-link">AWS IAM 문서</block>
+  <block id="40a9530583ad3747ca30675858b0a6cd" category="list-text">AWS 리소스에 대한 자격 증명 관련 자세한 내용은 <block ref="101809cc7793764f39e2d5fc223ea04c" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="40a81a4873df306bd0d241dc6c5f81ba" category="admonition">여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호할 때만 사용할 수 있습니다.</block>
+  <block id="782b4a6bf31d7d564f002ed80e56a970" category="doc">데이터 이동 시간 초과 주석</block>
+  <block id="2cf4114566459ea3b3a5ac507cb86fd9" category="paragraph">백업 및 복원 작업 중에 <block ref="f49fa3f76b2a4fcdf04dff369d417d84" prefix=" " category="inline-code"></block> 어노테이션을 사용하여 데이터 이동 작업에 대한 타임아웃을 구성할 수 있습니다. 이 어노테이션은 데이터 이동기가 타임아웃되기 전에 특정 작업이 완료될 때까지 대기해야 하는 최대 시간(초)을 지정합니다. 네트워크 문제 또는 기타 요인으로 인해 데이터 이동 작업이 중단될 수 있는 상황에서 특히 유용합니다. 전체 프로세스에 대한 일반적인 타임아웃을 설정하는 대신 중단된 작업을 감지하고 처리하는 데 도움이 됩니다. 예를 들어 네트워크 문제로 인해 볼륨 데이터 복원이 진행되지 않으면 지정된 기간에 따라 작업이 타임아웃됩니다.</block>
+  <block id="c2b7f24f4ddbaedb4e3d9e19f77eebac" category="paragraph">아래와 같이 YAML 파일에서 이 주석을 사용할 수 있습니다.</block>
+  <block id="14a0e26cbe187a4754f8b523ffba6073" category="paragraph">이 예시에서, 복원 작업 중 2초 이내에 진행 상황이 없으면 해당 주석은 <block ref="ec2a2895b09b6030ec8cc1b3c43ddc4d" prefix=" " category="inline-code"></block> 작업을 실패로 처리합니다.</block>
+  <block id="c49aaf233c16f1193a8d683c17866eea" category="admonition">주석 값이 0보다 작거나 같으면 작업이 즉시 실패합니다.</block>
+  <block id="94d4a30d9c79c7c0ed251e92efa4cf7e" category="paragraph">Trident Protect는 데이터 보호 작업 중 KubeVirt 가상 머신에 대한 파일 시스템 동결 및 동결 해제 기능을 제공하여 데이터 일관성을 보장합니다. VM 동결 작업에 대한 구성 방법과 기본 동작은 Trident Protect 버전에 따라 다르며, 최신 릴리스에서는 Helm 차트 매개변수를 통해 간소화된 구성을 제공합니다.</block>
+  <block id="5ac5b84505fffb8149e9d0cb84ddedbe" category="admonition">복원 작업 중에는 가상 머신(VM)에 대해 생성된<block ref="890b633d48ac6398f14ae722463da08b" prefix=" " category="inline-code"></block>는 복원되지 않습니다.</block>
+  <block id="d7a7411094ef8b2d0700b0d64c688766" category="example-title">Trident Protect 25.10 이상</block>
+  <block id="bef8e5378f20989a496a5caac68e7dc0" category="paragraph">Trident Protect는 데이터 보호 작업 중에 일관성을 보장하기 위해 KubeVirt 파일 시스템을 자동으로 동결 및 해제합니다. Trident Protect 25.10부터는 Helm 차트 설치 시 <block ref="f9e1922095ec0e9e8b4f185586e66425" prefix=" " category="inline-code"></block> 매개변수를 사용하여 이 동작을 비활성화할 수 있습니다. 이 매개변수는 기본적으로 활성화되어 있습니다.</block>
+  <block id="e8ac8c64b628b92773c6f939fe2b1102" category="example-title">Trident Protect 24.10.1 ~ 25.06</block>
+  <block id="a099f4b5b32bb2a3c98bf39fd2eada0d" category="paragraph">Trident Protect 24.10.1부터 Trident Protect는 데이터 보호 작업 중에 KubeVirt 파일 시스템을 자동으로 동결 및 해제합니다. 필요에 따라 다음 명령을 사용하여 이 자동 동작을 비활성화할 수 있습니다:</block>
+  <block id="ea7f18044a9efb2ea47bdd370e5870f3" category="example-title">Trident Protect 24.10</block>
+  <block id="98d3ce5c789124fc9207b48d4d1e8fc7" category="paragraph">Trident Protect 24.10은 데이터 보호 작업 중에 KubeVirt VM 파일 시스템의 일관된 상태를 자동으로 보장하지 않습니다. Trident Protect 24.10을 사용하여 KubeVirt VM 데이터를 보호하려면 데이터 보호 작업을 수행하기 전에 파일 시스템의 동결/해제 기능을 수동으로 활성화해야 합니다. 이렇게 하면 파일 시스템이 일관된 상태를 유지하게 됩니다.</block>
+  <block id="acb14ba5b70eb330a1d4de9c6b7a325d" category="inline-link-macro">가상화 구성</block>
+  <block id="5ea5c247812e1dca5ff02ca853f05032" category="paragraph">Trident Protect 24.10을 구성하여 <block ref="e0dd4c4b8aa16596df6c3f5cb36d3cdc" category="inline-link-macro-rx"></block>을(를) 사용한 다음 다음 명령을 사용하여 데이터 보호 작업 중 VM 파일 시스템의 동결 및 해제를 관리할 수 있습니다.</block>
+  <block id="cedf2576eebff15fc6b30d5a7109eb6b" category="doc">복원 및 페일오버 작업 중 네임스페이스 주석 및 레이블</block>
+  <block id="131ff34387be167411ffda7d60b577e7" category="paragraph">복원 및 페일오버 작업 중에 대상 네임스페이스의 레이블과 주석은 소스 네임스페이스의 레이블과 주석과 일치하도록 조정됩니다. 대상 네임스페이스에 존재하지 않는 소스 네임스페이스의 레이블 또는 주석은 추가되며, 이미 존재하는 레이블 또는 주석은 소스 네임스페이스의 값과 일치하도록 덮어쓰여집니다. 대상 네임스페이스에만 존재하는 레이블 또는 주석은 변경되지 않습니다.</block>
+  <block id="20f40e0b9308901dac07ce8a8efb3350" category="inline-link-macro">OpenShift 보안 컨텍스트 제약 조건 문서</block>
+  <block id="80aabc2f42a52376f3d884d3b02360f4" category="admonition">Red Hat OpenShift를 사용하는 경우 OpenShift 환경에서 네임스페이스 어노테이션의 중요한 역할을 알아두는 것이 중요합니다. 네임스페이스 어노테이션은 복원된 Pod가 OpenShift 보안 컨텍스트 제약 조건(SCC)에 정의된 적절한 권한 및 보안 구성을 준수하고 권한 문제 없이 볼륨에 액세스할 수 있도록 보장합니다. 자세한 내용은 <block ref="842acfa178c0bbf09e368bf9db0716b8" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="6c83555d4261acb08ebbc5f24823dc7b" category="paragraph">복원 또는 장애 조치 작업을 수행하기 전에 Kubernetes 환경 변수<block ref="1580ff61f204e9d56cd5324c7e9221ba" prefix=" " category="inline-code"></block>를 설정하여 대상 네임스페이스의 특정 어노테이션이 덮어쓰여지는 것을 방지할 수 있습니다. 예를 들면 다음과 같습니다.</block>
+  <block id="59f713e31282fe744caf06335d891f9a" category="inline-link-macro">Trident Protect 헬름 차트의 추가 설정을 구성합니다</block>
+  <block id="98b806d92f2e28da541021a181de980f" category="admonition">복원 또는 페일오버 작업을 수행할 때<block ref="22416353aff9ef4322e1ee858f418ae4" prefix=" " category="inline-code"></block> 및<block ref="8028cf835d9b72ff2d6f835934c25568" prefix=" " category="inline-code"></block>에 지정된 네임스페이스 어노테이션 및 레이블은 복원 또는 페일오버 작업에서 제외됩니다. 초기 Helm 설치 시 이러한 설정이 구성되어 있는지 확인하십시오. 자세한 내용은 <block ref="647ed99900e7ff1307ad7b7cec525a2c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="d65eac563b898cb7e41b8853a4fe1a3c" category="paragraph"><block ref="cc1f5c1d16e33b8463c9ee27295cd5df" prefix=" " category="inline-code"></block> 플래그와 함께 Helm을 사용하여 소스 애플리케이션을 설치한 경우 <block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> 레이블 키에 특별한 처리가 적용됩니다. 복원 또는 페일오버 프로세스 중에 Trident Protect는 이 레이블을 대상 네임스페이스로 복사하지만 소스의 값이 소스 네임스페이스와 일치하는 경우 값을 대상 네임스페이스 값으로 업데이트합니다. 이 값이 소스 네임스페이스와 일치하지 않으면 변경 없이 대상 네임스페이스로 복사됩니다.</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">예</block>
+  <block id="1280c48f074ec68fd2281266662c9a3f" category="paragraph">다음 예제는 서로 다른 어노테이션과 레이블을 가진 소스 및 대상 네임스페이스를 보여줍니다. 작업 전후의 대상 네임스페이스 상태와 어노테이션 및 레이블이 대상 네임스페이스에서 어떻게 결합되거나 덮어쓰여지는지 확인할 수 있습니다.</block>
+  <block id="2cfe257f724ed59a07ab01918c828fb5" category="section-title">복원 또는 페일오버 작업 전에</block>
+  <block id="c972cd959174c84d137520d91c011446" category="paragraph">다음 표는 복원 또는 페일오버 작업 전 예시 소스 및 대상 네임스페이스의 상태를 보여줍니다.</block>
+  <block id="b3ba0fe968ce39dcfc6fe8cc0f1b02da" category="cell">네임스페이스</block>
+  <block id="933e469cb306a0ea9faabd3e4235d3be" category="cell">주석</block>
+  <block id="3ad6cb6100190c8f81e99fd52debf7ef" category="cell">라벨</block>
+  <block id="86a2c974d76e381c7efd2206939722b7" category="cell">네임스페이스 ns-1(소스)</block>
+  <block id="278dbe8403d8ebf0d4ec8f723ca24aa6" category="list-text">annotation.one/key: "updatedvalue"</block>
+  <block id="7217e7166d38adddcd72b9b1c9359148" category="list-text">annotation.two/key: "true"</block>
+  <block id="a03c56a353af6ece3297a5fcad5250f2" category="list-text">environment=production</block>
+  <block id="d1642f369aa9d43205cf91975f1359d4" category="list-text">컴플라이언스=hipaa</block>
+  <block id="fc10b995e3d1c13cbae652922eba0bb6" category="list-text">name=ns-1</block>
+  <block id="58e6b4eeb688a71c985d2593769d2fda" category="cell">네임스페이스 ns-2(대상)</block>
+  <block id="f0e6f2ec2d0d1aa7012e3b32889c034c" category="list-text">annotation.one/key: "true"</block>
+  <block id="1e678090acf06eb2bf74c38dee9d3317" category="list-text">annotation.three/key: "false"</block>
+  <block id="ebbaf450aa5330e33917a8de9157e099" category="list-text">role=database</block>
+  <block id="46c40b68ab6fcc817f5134602b1985e3" category="section-title">복원 작업 후</block>
+  <block id="15d6567aa33ad00e352de9164a741b8b" category="paragraph">다음 표는 복원 또는 장애 조치 작업 후 예시 대상 네임스페이스의 상태를 보여줍니다. 일부 키가 추가되었고, 일부는 덮어쓰여졌으며, <block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> 레이블은 대상 네임스페이스와 일치하도록 업데이트되었습니다.</block>
+  <block id="a8306d4d1af4239dba9a6bcfd799eba7" category="list-text">name=ns-2</block>
+  <block id="a5085953f7b15a312b4e12827abc66e5" category="list-text">(_선택 사항_) 애플리케이션의 특정 리소스만 복원해야 하는 경우, 특정 레이블로 표시된 리소스를 포함하거나 제외하는 필터링을 추가하십시오.</block>
+  <block id="2cb1c3616d5b69db8670e7040d8b858f" category="admonition">Trident Protect는 사용자가 선택한 리소스와의 연관성 때문에 일부 리소스를 자동으로 선택합니다. 예를 들어, 영구 볼륨 클레임 리소스를 선택하고 해당 리소스에 연결된 Pod가 있는 경우 Trident Protect는 연결된 Pod도 복원합니다.</block>
+  <block id="4a0207b6a74b63dcaaa4d58fe75ec431" category="list-text">*resourceFilter.resourceSelectionCriteria*: (필터링에 필수) <block ref="f4d72a64acd8929c0cc9ed96a7a336cc" prefix=" " category="inline-code"></block> 또는 <block ref="843f2812f595e7ec7c5036e89fde02d6" prefix=" " category="inline-code"></block>를 사용하여 resourceMatchers에 정의된 리소스를 포함하거나 제외합니다. 포함 또는 제외할 리소스를 정의하려면 다음 resourceMatchers 매개변수를 추가하십시오.</block>
+  <block id="1eb6c79d30a4cb086ad406cb25fec350" category="list-text">*resourceFilter.resourceMatchers*: resourceMatcher 객체의 배열입니다. 이 배열에 여러 요소를 정의하는 경우, 요소들은 OR 연산으로 일치하며, 각 요소 내부의 필드(그룹, 종류, 버전)는 AND 연산으로 일치합니다.</block>
+  <block id="be16b6e14200639734fb9694e3c0f655" category="list-text">*resourceMatchers[].group*: (_선택 사항_) 필터링할 리소스의 그룹입니다.</block>
+  <block id="2162d9f0c97d87c37f838ea27ecb393a" category="list-text">*resourceMatchers[].kind*: (_선택 사항_) 필터링할 리소스의 종류입니다.</block>
+  <block id="862dca1a77422225d13abda4b7bf539b" category="list-text">*resourceMatchers[].version*: (_선택 사항_) 필터링할 리소스의 버전입니다.</block>
+  <block id="f5d1dcaf86934b4541162f010db1d3e1" category="list-text">*resourceMatchers[].names*: (_선택 사항_) 필터링할 리소스의 Kubernetes metadata.name 필드에 있는 이름입니다.</block>
+  <block id="19c69b04e9f9adb29979cc0ff90625b2" category="list-text">*resourceMatchers[].namespaces*: (_선택 사항_) 필터링할 리소스의 Kubernetes metadata.name 필드에 있는 네임스페이스입니다.</block>
+  <block id="d9348d075dc7b3c91cff99d56dfc327b" category="inline-link">Kubernetes 문서</block>
+  <block id="cb4354b08a6a88b3c12671390a85c520" category="list-text">*resourceMatchers[].labelSelectors*: (_선택 사항_) <block ref="d4ce3da8407a7d8e148bb1287288e778" category="inline-link-rx"></block>에 정의된 리소스의 Kubernetes metadata.name 필드에 있는 레이블 선택기 문자열입니다. 예:<block ref="6ea45baf659f1f35e51c8dc9005eac03" prefix=" " category="inline-code"></block></block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">예를 들면 다음과 같습니다.</block>
+  <block id="00d3f03654bed141c3478449f1760762" category="paragraph">장시간 소요되는 s3 복원 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.</block>
+  <block id="89a7d3742e536d3e468bf485545ed9fb" category="paragraph">Oracle Database 워크로드 보호에 대한 자세한 내용은<block ref="dca8e6f6588b72be45d0f60d74204461" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="37c785778d2185acbba38fa4b6624392" category="paragraph"><block ref="b49343ccc7da9738bd595bd89e3d39db" category="inline-link-macro-rx"></block>.</block>
+  <block id="27f6ebf60d74cce9ba572615629e4416" category="doc">Kubernetes 워크로드 개선 사항</block>
+  <block id="de8616724d177017abdd720d7365feff" category="paragraph">이번 Kubernetes 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="e83849cb5376223ea17f24fcaf9756e4" category="list-text">*CR 워크플로우 지원*: 이제 NetApp Backup and Recovery 웹 UI뿐만 아니라 CR을 사용하여 일반적인 보호 작업을 수행할 수 있습니다.</block>
+  <block id="e572a091207dcc253fde964cd9d716cb" category="list-text">*클러스터 마이그레이션*: 이제 Trident Protect로 보호되는 기존 Kubernetes 클러스터를 Backup and Recovery에 추가할 수 있습니다.</block>
+  <block id="9674b909ef82dfe8331f77d84e878c04" category="list-text">*알림 프레임워크 지원*: 이제 특정 Kubernetes 워크로드 이벤트에 대한 이메일 및 UI 알림을 받을 수 있습니다.</block>
+  <block id="ea6aa972206a8b460e06b79e84a9211b" category="list-text">*복원 탭 통합*: 이제 복원 메뉴에서 Kubernetes 워크로드 복원 작업에 액세스할 수 있습니다.</block>
+  <block id="bf72fb868ac644263293cb0c5ccc59c1" category="list-text">*3-2-1 팬아웃 백업 아키텍처 지원*: 이제 Kubernetes 워크로드를 보호할 때 보호 정책에서 3-2-1 팬아웃 아키텍처를 사용할 수 있습니다.</block>
+  <block id="3338619eac8377287ea3a8f33c958b54" category="section-title">Oracle Database 워크로드 개선 사항</block>
+  <block id="b663bfd2f714b44e458d15bb1e6002bc" category="paragraph">이번 Oracle Database 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.</block>
+  <block id="c1cb9a739430571a50b81bf3a48a1ab8" category="list-text">*루트 권한이 없는 사용자 지원*: 이제 루트 권한이 없는 사용자도 백업, 복원 및 복제 작업을 수행할 수 있어 보안 및 규정 준수가 향상됩니다.</block>
+  <block id="2b8a690a9b9248405fb6bba05b997f16" category="list-text">*클론 지원*: 이제 ASM 라이브러리 v2를 사용하여 운영 및 2차 NAS, SAN 및 ASM 환경 전반에 걸쳐 클론 기능을 지원하여 통합 보호 워크플로를 구현할 수 있습니다.</block>
+  <block id="8ff8833aaf25d3ffbe1942bc11221a77" category="list-text">*클론 분할 지원*: 이제 쓰기 가능한 스냅샷(클론)을 상위 볼륨에서 분할하여 스토리지를 확보하고 독립적인 작업을 수행할 수 있습니다.</block>
+  <block id="de315feba3cc97f871a801444cebe8a8" category="list-text">*객체 저장소에 대한 백업 및 복원*: 이제 객체 기반 S3 호환 스토리지 타겟에 대한 네이티브 백업 및 복원 기능이 지원됩니다.</block>
+  <block id="ffb4de355aa6d4aa7e8805128e9c2860" category="list-text">*Clone Lifecycle Management(CLM)*: 운영 스토리지에서 클론 새로 고침 작업이 지원됩니다.</block>
+  <block id="bb34df9f9d35ad561edcc8780a11b63c" category="list-text">*다른 호스트로 복제*: 이제 기본 스토리지와 2차 스토리지 모두에서 데이터베이스를 다른 호스트로 복제할 수 있습니다(테스트 또는 분석용).</block>
+  <block id="ec76c85c764d367b1028b426d5aaa897" category="list-text">*ONTAP 일관성 그룹 지원*: 이제 ONTAP 일관성 그룹이 지원되어 여러 볼륨에서 애플리케이션 정합성 보장 스냅샷을 보장합니다.</block>
+  <block id="07bac542633034a121251f74bf3c7880" category="list-text">이제 NetApp Backup and Recovery는 Oracle Database 워크로드에 대해 다음과 같은 보호 정책 아키텍처를 지원합니다.</block>
+  <block id="8f8f2fbe982fd62b69f6aa2faf0d46da" category="list-text">3-2-1 팬아웃</block>
+  <block id="55cf8812c6c22803ddfa5fd41279187d" category="list-text">디스크 간</block>
+  <block id="0f6d38819f95da81f8bc80258fee7071" category="list-text">디스크에서 오브젝트 스토리지로</block>
+  <block id="e3b858c29172bddae0dbb7e461b2f7df" category="list-text">캐스케이딩</block>
+  <block id="cc5d8c9d6668803b438b03567e08b611" category="section-title">기타 개선 사항</block>
+  <block id="6ec61dc6a9b7787975d159ba164424f9" category="paragraph">Hyper-V 워크로드, KVM 워크로드 및 VMware 워크로드가 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.</block>
+  <block id="6e56df4eb422b0b15187c84ba551237e" category="summary">환경에서 Backup and Recovery를 사용하기 전에 이러한 NetApp Backup and Recovery 제한 사항을 검토하십시오.</block>
+  <block id="36f1a2626b3ec6834b4eb361bac96c37" category="doc">NetApp Backup and Recovery for Kubernetes 워크로드의 알려진 제한 사항</block>
+  <block id="36c070b302c08836d912ffb6841bb46e" category="section-title">애플리케이션의 보호 정책 변경</block>
+  <block id="ad4e872c3df8cab19a9d649f27b25605" category="paragraph">애플리케이션에 연결된 보호 정책을 다른 버킷 또는 2차 복제 대상으로 변경하면 보호 정책이 실패할 수 있습니다.</block>
+  <block id="c21b208a187eea104dc2c97a887a8d44" category="paragraph">*해결 방법*: 애플리케이션을 제거한 후 다시 추가하십시오.</block>
+  <block id="bbe3b273a032bd3c8a5d28ca2ed8a114" category="section-title">3-2-1 보호 정책 구성 제한 사항</block>
+  <block id="9f0dc4af8fb867cc1d90bc96a3df9976" category="paragraph">오브젝트 스토리지 백업이 2차 스토리지로의 복제와 동시에 발생하지 않는 3-2-1 보호 정책을 생성할 때 애플리케이션 보호 시 보호 정책이 멈춥니다.</block>
+  <block id="7a9541e3e0859a3bc7198878ae12b9bd" category="paragraph">*해결 방법*: 애플리케이션을 제거한 후 다시 추가하고 다른 보호 정책으로 보호하십시오.</block>
+  <block id="3f21300a12c48d2767fb3e5b7f83112b" category="doc">NetApp Backup and Recovery for Oracle Database 워크로드의 알려진 제한 사항</block>
+  <block id="b295452d4036457162f0388dddf070da" category="paragraph">NetApp Backup and Recovery의 Oracle Database 워크로드 비공개 미리 보기 버전에서는 다음 작업이 지원되지 않습니다.</block>
+  <block id="bc757dcd5d14a5f50685dfc481e61eb9" category="paragraph">Oracle Database 워크로드의 비공개 미리 보기 버전에서는 Oracle Database가 NFS, SAN 또는 ASM SAN을 사용하는 독립 실행형 배포로만 지원됩니다.</block>
+  <block id="92342f1ac80ff519b37da9a3148cbbd9" category="summary">보안 강화를 위해 NetApp Backup and Recovery에서 특정 역할에 대한 액세스 권한을 구성하십시오.</block>
+  <block id="42481383ace46d9a4716cce3ab760979" category="doc">NetApp Backup and Recovery에서 역할 기반 액세스 제어 설정</block>
+  <block id="c43786d5855026fcdf77809fb14618c9" category="paragraph">보안을 강화하고 리소스 액세스를 제어하려면 NetApp Backup and Recovery에 역할 기반 액세스를 구성하십시오. NetApp Console은 일부 Backup and Recovery 워크로드에 대해 역할 기반 액세스 제어(RBAC)를 지원합니다. 이러한 워크로드에 특정한 관리자 또는 뷰어 역할을 할당할 수 있습니다. 역할 기반 액세스 제어를 아직 지원하지 않는 다른 워크로드는 프로젝트 수준 연결이 지원될 때까지 Backup and Recovery 역할을 가진 모든 사용자가 액세스할 수 있습니다.</block>
+  <block id="0095575f49738915ec4332a4cab3f770" category="paragraph">조직 내 리소스에 대한 액세스를 제어하려면 다음 단계를 따르십시오. NetApp Console 메뉴의 *Administration &gt; Identity and access* 페이지에서 변경하십시오.</block>
+  <block id="4ce081445a8183fac4f9d6fc6a51691e" category="admonition">다음 단계는 NetApp Console에서 Organization Admin 역할이 할당된 것으로 가정합니다.</block>
+  <block id="c9b674f0a38b83f43d155669dc9e1dae" category="list-text">ID 및 액세스 프로젝트 구조를 생성합니다.</block>
+  <block id="4b146c004809dfbb48c225acceabf595" category="paragraph">조직 관리자로서 워크로드가 저장될 Identity and Access 폴더와 프로젝트 구조를 설정하십시오.</block>
+  <block id="26564786bd7b3b623f0d304e50e4b2c4" category="list-text">사용자 역할을 할당합니다.</block>
+  <block id="bc84f44819baf4c2067c740895559760" category="list-text">기본 옵션:</block>
+  <block id="5bbec3994efca5a72e64608daaa37c96" category="paragraph">워크로드용으로 지정된 각 프로젝트에 사용자를 추가하고 적절한 역할을 부여합니다. 예를 들면 다음과 같습니다.</block>
+  <block id="a69e66fc51befba55c7c820be12ca0f1" category="list-text">*조직 관리자* 및 *Backup and Recovery 슈퍼 관리자*: 이러한 역할을 가진 사용자는 모든 조직의 모든 리소스를 볼 수 있으며, Backup and Recovery 워크로드를 검색하고 프로젝트(예: US East 또는 US West)에 할당할 수 있습니다.</block>
+  <block id="44ed33b9e7e797c038285a37d20e899a" category="list-text">*폴더 또는 프로젝트 관리자* 및 *Backup and Recovery 슈퍼 관리자*: 이러한 역할을 가진 사용자는 권한이 있는 폴더 또는 프로젝트의 리소스만 볼 수 있지만 Backup and Recovery 워크로드를 검색하고 해당 프로젝트에 할당할 수 있습니다.</block>
+  <block id="67703f80cd44bf597b333f1cc2a34901" category="list-text">대체 옵션:</block>
+  <block id="6d2d1e1d6a9a3cf3960bdb349373c649" category="paragraph">사용자에게 전체 NetApp Backup and Recovery 관리자 액세스 권한을 부여하는 대신 자신에게 NetApp Backup and Recovery 최고 관리자 역할을 할당하고 워크로드를 직접 검색할 수 있습니다.</block>
+  <block id="da57866549888e8bceaf30a4db33bfc5" category="list-text">Backup and Recovery에서 워크로드를 검색합니다.</block>
+  <block id="63e4e660d97fd26bbffa7cb3968c22c4" category="paragraph">Organization 관리자 또는 Folder 또는 project 관리자는 사용 가능한 워크로드를 검색하고 적절한 project(예: US East 또는 US West)를 선택합니다. 각 워크로드는 선택한 project와 자동으로 연결됩니다.</block>
+  <block id="0e8d553f80f80eac9e99c265bf9f4d72" category="list-text">프로젝트에 사용자를 추가합니다.</block>
+  <block id="0da282e170c520798099314d27620ed4" category="paragraph">조직 관리자 또는 폴더/프로젝트 관리자는 워크로드가 있는 프로젝트에 NetApp Console 사용자를 추가합니다. 사용자의 액세스 요구 사항에 따라 조직 뷰어 역할과 NetApp Backup and Recovery 역할을 할당합니다. 적절한 NetApp Backup and Recovery 역할을 가진 사용자는 해당 프로젝트의 새 워크로드에 자동으로 액세스 권한을 얻게 됩니다.</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">관련 정보</block>
+  <block id="728d17e7146dcd6218a24c46a1de8943" category="inline-link-macro">NetApp Console ID 및 액세스 관리에 대해 알아보십시오</block>
+  <block id="d612358528f4a89a703f161a8c3e4a9e" category="list-text"><block ref="22de56c086dedbed6837db4613efda62" category="inline-link-macro-rx"></block>.</block>
+  <block id="aedba1ff218d6d25f9aefebf5dfdff4f" category="list-text"><block ref="8432e361253dad22d74ca5fd3ad3c136" category="inline-link-macro-rx"></block>.</block>
+  <block id="509c51772921c8ab860f75456880683f" category="list-text"><block ref="a16a606232229e0e62a5010aaabec2ae" category="inline-xref-macro-rx"></block> 백업 작업 전후에 스크립트를 실행합니다. (Kubernetes 워크로드만 해당)</block>
+  <block id="1d74d204f5274b499e41d2e0238b7bdd" category="inline-link-macro">새 보호 정책을 생성합니다</block>
+  <block id="c7a4eea6d62999931e3442bac0f23c29" category="paragraph">Trident Protect로 현재 보호되고 있는 클러스터를 검색하면 검색 프로세스 중에 Trident Protect에서 사용했던 모든 백업 스케줄이 비활성화됩니다(Trident Protect 백업 스케줄은 Backup and Recovery와 호환되지 않습니다). 클러스터의 애플리케이션을 보호하려면 <block ref="f0814d3538b9ea88d5e27855ca8d3a8e" category="inline-link-macro-rx"></block> 또는 기존 정책에 애플리케이션을 연결하십시오. 필요한 경우 Trident Protect 백업 스케줄을 제거할 수 있습니다.</block>
+  <block id="a44ad7bb8f2123fa1919c8eb91adac29" category="list-text">Trident Protect 네임스페이스를 생성합니다.</block>
+  <block id="75457b35c4c6b70a7664a43e080563ca" category="list-text">Trident Protect 및 Trident Protect 커넥터를 설치하거나 업그레이드하십시오</block>
+  <block id="dff3994b6daee1be81638e1c4964af92" category="doc">NetApp Backup and Recovery에서 Oracle Database 워크로드를 검색하세요</block>
+  <block id="e242e6f8581d6d11d04b2c80d7a16519" category="inline-link-macro">Oracle Database 워크로드를 살펴보세요</block>
+  <block id="ec9157f5af288c671e8006da3677d9c3" category="list-text">Oracle Database 워크로드에 대해서는 <block ref="c9b387ac576fa007292bb17c9c97e163" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="72581b2d72c5eaf924f3612a1d930c1f" category="summary">NetApp Backup and Recovery를 사용하면 사용자 지정 리소스(CR)를 사용하여 Kubernetes 애플리케이션을 수동으로 백업할 수 있습니다.</block>
+  <block id="81c6902865980301c496fb545daf563f" category="doc">이제 Backup and Recovery에서 사용자 지정 리소스를 사용하여 Kubernetes 애플리케이션을 백업하세요.</block>
+  <block id="98059fcd3ca40facbefb17e9841439ff" category="section-title">사용자 지정 리소스를 사용하여 지금 Kubernetes 애플리케이션 백업</block>
+  <block id="c2c21ce64dd4770c44c8642d322a5424" category="admonition">클러스터 범위 리소스는 애플리케이션 정의에서 명시적으로 참조되거나 애플리케이션 네임스페이스를 참조하는 경우 백업, 스냅샷 또는 클론에 포함됩니다.</block>
+  <block id="fe52ac2568977e4c3fd2c94c3daa5a5a" category="section-title">사용자 지정 리소스를 사용하여 로컬 스냅샷을 생성합니다</block>
+  <block id="27c1841c409fd90a4c17d9725071d73b" category="paragraph">Kubernetes 애플리케이션의 스냅샷을 생성하고 로컬에 저장하려면 특정 속성을 가진 Snapshot 사용자 정의 리소스를 사용하십시오.</block>
+  <block id="dde7632642eb239d814cdb58f6e7c1a7" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="f2a957d477f28333fe5340abcdba5f6d" prefix=" " category="inline-code"></block>.</block>
+  <block id="3585700696abe40ccc0973202ddace0a" category="list-text">생성한 파일에서 다음 속성을 구성하십시오.</block>
+  <block id="3dbbdf39618ebec771728a10e75c52f9" category="list-text">*metadata.name*: (_필수_) 이 사용자 지정 리소스의 이름입니다. 환경에 맞는 고유하고 적절한 이름을 선택하세요.</block>
+  <block id="14c5017706ef7ba38dbfced0b670f7e4" category="list-text">*spec.applicationRef*: 스냅샷을 생성할 애플리케이션의 Kubernetes 이름입니다.</block>
+  <block id="92c5bebe15e018e9b60ed9fa2a5d7736" category="list-text">*spec.appVaultRef*: (_필수_) 스냅샷 콘텐츠(메타데이터)를 저장할 AppVault의 이름입니다.</block>
+  <block id="a9860c462819471295facd0a13fc4275" category="list-text">*spec.reclaimPolicy*: (_선택 사항_) 스냅샷 CR이 삭제될 때 스냅샷의 AppArchive에 어떤 일이 발생하는지 정의합니다. 즉, <block ref="afece4245269582cb2f1009d4fb52047" prefix=" " category="inline-code"></block>로 설정하더라도 스냅샷은 삭제됩니다. 유효한 옵션:</block>
+  <block id="ff5ca6a0665c8d286d507fe36b867e1c" category="list-text"><block ref="afece4245269582cb2f1009d4fb52047" prefix="" category="inline-code"></block> (기본값)</block>
+  <block id="c009f85498c5a7a2db78e1874e6dd4b1" category="list-text"><block ref="f2a6c498fb90ee345d997f888fce3b18" prefix="" category="inline-code"></block></block>
+  <block id="7e1f6887e34df6926f4857dbe55cd426" category="list-text"><block ref="f2a957d477f28333fe5340abcdba5f6d" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="094b4f1f6b9b3e907c7b81b6cb1aa90b" category="section-title">사용자 지정 리소스를 사용하여 애플리케이션을 오브젝트 스토리지에 백업합니다</block>
+  <block id="e66dcb518f5eed46d29f1bce6d1165b8" category="paragraph">특정 속성을 가진 Backup CR을 생성하여 애플리케이션을 오브젝트 스토어에 백업합니다.</block>
+  <block id="b8bcd9ef37f1224eaa43c22793dbfc80" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="3cc60d6081fbcccb7d8da4092a47553e" prefix=" " category="inline-code"></block>.</block>
+  <block id="888ea90f9844794ae90f13cbee8b341f" category="list-text">*spec.applicationRef*: (_필수_) 백업할 애플리케이션의 Kubernetes 이름입니다.</block>
+  <block id="e2092d1675b7aaf32ee37c20adf69a32" category="list-text">*spec.appVaultRef*: (_필수, spec.appVaultTargetsRef와 상호 배타적_) 스냅샷과 백업을 동일한 버킷에 저장하는 경우, 백업 콘텐츠를 저장할 AppVault의 이름입니다.</block>
+  <block id="90acb6b1767d94f7c9ad46c817f6a296" category="list-text">*spec.appVaultTargetsRef*: (_필수, spec.appVaultRef와 상호 배타적_) 스냅샷과 백업을 서로 다른 버킷에 저장하는 경우, 백업 콘텐츠를 저장할 AppVault의 이름입니다.</block>
+  <block id="c3556f7361ca71ac227ebd903de664ed" category="list-text">*spec.dataMover*: (_선택 사항_) 백업 작업에 사용할 백업 도구를 나타내는 문자열입니다. 값은 대소문자를 구분하며 반드시<block ref="250c51527f347066847969f002be67a2" prefix=" " category="inline-code"></block>이어야 합니다.</block>
+  <block id="300fad6a76be12ae227fb48393c4df0c" category="list-text">*spec.reclaimPolicy*: (_선택 사항_) Backup CR이 삭제될 때 백업 콘텐츠(메타데이터/볼륨 데이터)에 어떤 일이 발생하는지 정의합니다. 가능한 값:</block>
+  <block id="0353a7a44a8c62ed98420560f469ae63" category="list-text">*spec.cleanupSnapshot*: (_필수_) Backup CR에서 생성된 임시 스냅샷이 백업 작업 완료 후 삭제되지 않도록 합니다. 권장 값:<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>.</block>
+  <block id="c4c1ca05ef023287f122a753e2bf09e2" category="paragraph">스냅샷과 백업을 저장하는 데 동일한 버킷을 사용하는 경우의 YAML 예:</block>
+  <block id="4955d31336096d0bf7fe94f34e2ec86b" category="paragraph">스냅샷과 백업을 저장하기 위해 서로 다른 버킷을 사용하는 경우의 YAML 예:</block>
+  <block id="49fca1eefbaadffc82d25ddcf6f70227" category="list-text"><block ref="3cc60d6081fbcccb7d8da4092a47553e" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="5ecfe1f399971241c89c85a832e8eb34" category="section-title">사용자 정의 리소스를 사용하여 3-2-1 팬아웃 백업을 생성합니다</block>
+  <block id="5062f68e28a097921937f2397947ef97" category="paragraph">3-2-1 팬아웃 아키텍처를 사용한 백업은 백업 결과를 2차 스토리지와 오브젝트 스토리지에 모두 복사합니다. 3-2-1 팬아웃 백업을 생성하려면 특정 속성을 가진 Backup CR을 생성해야 합니다.</block>
+  <block id="a4f79e3a595e7199f93e7fc4eee66aad" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="5d14f6fbcd2faed4273ed95afe88d782" prefix=" " category="inline-code"></block>.</block>
+  <block id="8a1eea1b8ed14b7d1a7a0f6ac5a52124" category="list-text">*spec.appVaultTargetsRef*: (_필수_) 백업 콘텐츠를 저장할 AppVault의 이름입니다.</block>
+  <block id="f13a97e3ca838cd3b17d6f7d093dac64" category="list-text">*spec.replicateSnapshot*: (_필수_) NetApp Backup and Recovery에 스냅샷을 2차 스토리지에 복제하도록 지시합니다. 필수 값:<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>.</block>
+  <block id="8b59df0e684df8c88e38a7fccd0b3e1c" category="list-text">*spec.replicateSnapshotReclaimPolicy*: (_선택 사항_) 복제된 스냅샷이 삭제될 때 발생하는 상황을 정의합니다. 가능한 값:</block>
+  <block id="139f344cca23a89c521bc7cc6c7100b8" category="paragraph">YAML 예:</block>
+  <block id="743d24f676c4a718096faa6e2308b198" category="list-text"><block ref="5d14f6fbcd2faed4273ed95afe88d782" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="3f09cbddd61fbee1ddfdf268eb77431c" category="section-title">지원되는 백업 주석</block>
+  <block id="7f2c724042753cc2a998724f90cd367b" category="paragraph">다음 표는 백업 CR을 생성할 때 사용할 수 있는 주석을 설명합니다.</block>
+  <block id="55f6611cb342565cf0f5002400f53a95" category="cell">주석</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">유형</block>
+  <block id="31ce3cdcd67850870b616f75b555bbc5" category="cell">기본값</block>
+  <block id="27f412d00b6f20d8bd151bc0355eae9a" category="cell">protect.trident.netapp.io/full-backup</block>
+  <block id="b45cffe084dd3d20d928bee85e7b0f21" category="cell">문자열</block>
+  <block id="ff6493b4c08e9896ced760eabb2513ed" category="cell">백업을 비증분 백업으로 수행할지 여부를 지정합니다. <block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>로 설정하여 비증분 백업을 생성합니다. 복원과 관련된 위험을 최소화하려면 주기적으로 전체 백업을 수행하고 전체 백업 사이에 증분 백업을 수행하는 것이 좋습니다.</block>
+  <block id="c07fbc0b2a1a865fe9e3a55c05b4f690" category="cell">"false"</block>
+  <block id="59177e9fd24a996fe7acc348af54e912" category="cell">protect.trident.netapp.io/snapshot-completion-timeout</block>
+  <block id="c464fe04226687fa8c814ba8a8690384" category="cell">전체 스냅샷 작업이 완료되는 데 허용되는 최대 시간입니다.</block>
+  <block id="435bbfd1496ab991e2a7530d2c7273b1" category="cell">"60m"</block>
+  <block id="a3f0891bded2c705ab3b29833481ffcf" category="cell">protect.trident.netapp.io/volume-snapshots-ready-to-use-timeout</block>
+  <block id="67c844e70c6f5fd7910ea8f4358464b6" category="cell">볼륨 스냅샷이 사용 가능한 상태에 도달하는 데 허용되는 최대 시간입니다.</block>
+  <block id="38986de1c1221cb10e5c108c3ad55e0e" category="cell">"30분"</block>
+  <block id="af978cfba15392673bcd27f4c22e2926" category="cell">protect.trident.netapp.io/volume-snapshots-created-timeout</block>
+  <block id="c748817d9411064cf0b0b7cc203fc5be" category="cell">볼륨 스냅샷을 생성하는 데 허용되는 최대 시간입니다.</block>
+  <block id="e36568406cce6542af248eed6ec657e2" category="cell">"5m"</block>
+  <block id="728633ade1403bcbcd881fc22ec19596" category="cell">protect.trident.netapp.io/pvc-bind-timeout-sec</block>
+  <block id="fc7da248a2f7c60cc6dde87d2093c48e" category="cell">새로 생성된 PersistentVolumeClaims(PVC)가<block ref="685d1f2146dd079015e81918414e8971" prefix=" " category="inline-code"></block> 단계에 도달할 때까지 작업이 실패하기 전에 기다리는 최대 시간(초)입니다.</block>
+  <block id="d396afb1bbf01f546690ad93f3524626" category="cell">"1200" (20분)</block>
+  <block id="4255dda5f5998cbad65847ed764b4130" category="doc">Backup and Recovery 웹 UI를 사용하여 지금 Kubernetes 애플리케이션을 백업하십시오</block>
+  <block id="55ebd262da946bfda89bdb99e1367f0f" category="paragraph">NetApp Backup and Recovery를 사용하면 웹 인터페이스를 통해 Kubernetes 애플리케이션을 수동으로 백업할 수 있습니다.</block>
+  <block id="8b9e73cb622150ff43b7f7777e74619a" category="section-title">웹 UI를 사용하여 Kubernetes 애플리케이션을 지금 백업합니다</block>
+  <block id="b7d8dcf9545dd644dca99859290097ab" category="summary">주석, 네임스페이스 설정 및 스토리지 옵션을 사용하여 CR 복원 작업을 사용자 지정할 수 있습니다.</block>
+  <block id="a38e36651b4997072578f6107bf75c77" category="doc">고급 사용자 지정 리소스 복원 설정 사용</block>
+  <block id="3fbccf21ba46fe754417d45e7396e0e4" category="paragraph">주석, 네임스페이스 설정, 스토리지 옵션과 같은 고급 설정을 사용하여 특정 요구 사항에 맞게 복원 작업을 사용자 지정할 수 있습니다.</block>
+  <block id="52391deb129507aac52d6fb22aaf137c" category="section-title">지원되는 필드</block>
+  <block id="c87f7398b288400e3d2c984a3d997d7b" category="paragraph">이 섹션에서는 복원 작업에 사용할 수 있는 추가 필드에 대해 설명합니다.</block>
+  <block id="11162de38772a3876602bb4d9d213f43" category="section-title">스토리지 클래스 매핑</block>
+  <block id="b48c8c7ca3eb5e63afdfe6bbd74a35c9" category="paragraph"><block ref="b57d666629acffb30cc697faadc136b5" prefix=" " category="inline-code"></block> 속성은 소스 애플리케이션에 있는 스토리지 클래스를 대상 클러스터의 새 스토리지 클래스로 매핑하는 방법을 정의합니다. 이 속성은 스토리지 클래스가 다른 클러스터 간에 애플리케이션을 마이그레이션하거나 BackupRestore 작업의 스토리지 백엔드를 변경할 때 사용할 수 있습니다.</block>
+  <block id="c26fe677a830587ef1c141567a86c86a" category="paragraph">*예:*</block>
+  <block id="ffbfa7c1456b1cb991affd8a76d54fd1" category="section-title">지원되는 주석</block>
+  <block id="738d4e5947ef1239f584cd47619cf356" category="paragraph">이 섹션에서는 시스템의 다양한 동작을 구성하는 데 지원되는 어노테이션 목록을 제공합니다. 사용자가 어노테이션을 명시적으로 설정하지 않으면 시스템은 기본값을 사용합니다.</block>
+  <block id="f49fa3f76b2a4fcdf04dff369d417d84" category="cell">protect.trident.netapp.io/data-mover-timeout-sec</block>
+  <block id="a666ad37acca2b6a0ee400d7b2acf088" category="cell">데이터 이동기 작동이 정지될 수 있는 최대 허용 시간(초)입니다.</block>
+  <block id="aff5adfa33a9913ad2ab5d578c3f08c8" category="cell">"300"</block>
+  <block id="3b2f6f0bb673ee02e8aafe624e2e971f" category="cell">protect.trident.netapp.io/kopia-content-cache-size-limit-mb</block>
+  <block id="f044e4dc5e5fdde631180451c25a973c" category="cell">Kopia 콘텐츠 캐시의 최대 크기 제한(메가바이트)입니다.</block>
+  <block id="9d397fb20eca1ebda087637e32a30a7b" category="cell">"1000"</block>
+  <block id="b5e51a86f312c3ccd69b085ad9c3dbe0" category="cell">새로 생성된 PersistentVolumeClaims(PVC)가 <block ref="685d1f2146dd079015e81918414e8971" prefix=" " category="inline-code"></block> 단계에 도달하기까지 기다리는 최대 시간(초)입니다. 이 시간이 지나면 작업이 실패합니다. 모든 복원 CR 유형(BackupRestore, BackupInplaceRestore, SnapshotRestore, SnapshotInplaceRestore)에 적용됩니다. 스토리지 백엔드 또는 클러스터에서 더 많은 시간이 필요한 경우 더 높은 값을 사용하십시오.</block>
+  <block id="2151f194894ed39bed85837028624418" category="paragraph">NetApp Backup and Recovery는 데이터 보호 중에 KubeVirt와 같은 애플리케이션의 파일 시스템을 동결했다가 해제합니다. Trident Protect 설명서를 참조하면 이 동작을 전체적으로 또는 특정 애플리케이션에 대해 비활성화할 수 있습니다.</block>
+  <block id="3dcec4402177c92a041652b5ddf0e042" category="inline-xref">복원 지점을 제거합니다</block>
+  <block id="87cab9bb9101d164be91b209013585fb" category="admonition">애플리케이션에 대한 보호 작업이 실행 중인 동안에는 해당 애플리케이션의 보호를 해제할 수 없습니다. 작업이 완료될 때까지 기다리거나 임시 해결책으로 <block ref="d905f53d4bafd83a40adfdb447e3be41" category="inline-xref-macro-rx"></block> 실행 중인 보호 작업에서 사용하는 방법을 사용하십시오. 그런 다음 애플리케이션의 보호를 해제할 수 있습니다.</block>
+  <block id="03b9ad9ea568f0b46cb903165e845c91" category="section-title">Kubernetes 애플리케이션의 복원 지점을 제거합니다</block>
+  <block id="dd9c36f28cc9f5f12040d95ba4f5de93" category="paragraph">애플리케이션의 보호 기능을 해제해야 하는데 현재 보호 작업이 실행 중인 경우 해당 애플리케이션의 복원 지점을 제거해야 할 수도 있습니다.</block>
+  <block id="2b1b69f5a5491f8a48a1c6b1ab95e069" category="list-text">NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.</block>
+  <block id="c37993406f0db941d92735ab7dd5749d" category="list-text">목록에서 Kubernetes 애플리케이션을 선택하고 해당 애플리케이션에 대해 *View and Restore*를 선택합니다.</block>
+  <block id="be2e1ce690d729ac69efe2ac639971e5" category="list-text">삭제할 복구 지점을 선택하고 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *복구 지점 삭제*를 선택하여 삭제합니다.</block>
+  <block id="a4f1667d52f920bc11608f8119eb8eaa" category="summary">NetApp 백업 및 복구를 통해 Oracle 데이터베이스 워크로드를 보호하십시오.</block>
+  <block id="9081ff61e0c05d14dc1b7c6045823a83" category="doc">NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 백업하십시오</block>
+  <block id="3b395fe1694016ad90a832d1d28d54a9" category="inline-link-macro">NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드용 보호 그룹을 생성하고 관리하세요</block>
+  <block id="3c8155ed06e836b39ff46c4fa1cc3c91" category="list-text">리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 생성합니다. 자세한 내용은 <block ref="11b8e0fbdcb5cec8e8ac558aea655522" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="6fe6342988793dfab1cd728ba40b7b6d" category="summary">NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 보호하십시오.</block>
+  <block id="172dcc67f8b871ecd3a6df9cfe1f753f" category="paragraph">NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스와 로그를 보호하세요. 빠르고 공간 효율적이며, 크래시 일관성 및 데이터베이스 일관성을 보장하는 백업 및 복원 기능을 제공합니다. Oracle Database 워크로드를 AWS S3, NetApp StorageGRID, Azure Blob Storage 또는 ONTAP S3에 백업하고, 온프레미스 Oracle 호스트에 복원할 수 있습니다.</block>
+  <block id="62a3e51100215ef17a24383d5729e00e" category="paragraph">NetApp Backup and Recovery를 사용하면 Oracle Database 워크로드와 관련된 다음과 같은 작업을 수행할 수 있습니다.</block>
+  <block id="c9b387ac576fa007292bb17c9c97e163" category="list-text"><block ref="c9b387ac576fa007292bb17c9c97e163" category="inline-link-macro-rx"></block></block>
+  <block id="0c455356b172e0f15e2d62ca94bfa5c6" category="inline-link-macro">Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리</block>
+  <block id="ce4ef45ffb0bf8da9fa1877ae859c0e3" category="list-text"><block ref="ce4ef45ffb0bf8da9fa1877ae859c0e3" category="inline-link-macro-rx"></block></block>
+  <block id="88ed72683238588c2440ec4dd0ab3eca" category="inline-link-macro">Oracle Database 워크로드를 백업합니다</block>
+  <block id="0d34b4ba574939ced489d0243500c926" category="list-text"><block ref="0d34b4ba574939ced489d0243500c926" category="inline-link-macro-rx"></block></block>
+  <block id="7e96e8e02dab57292bff1e9f31e0c7df" category="inline-link-macro">Oracle Database 워크로드 복원</block>
+  <block id="ce74d754b7d458e8a3f95ad96eaea826" category="list-text"><block ref="ce74d754b7d458e8a3f95ad96eaea826" category="inline-link-macro-rx"></block></block>
+  <block id="90549b69fb71fa7637e6a760ce45293c" category="summary">NetApp Backup and Recovery에서 Oracle Database 워크로드용 보호 그룹을 생성하고 관리합니다.</block>
+  <block id="d07e8f6398c66f7d79a80768d3aa858b" category="inline-link-macro">지금 바로 Oracle Database 워크로드를 백업하세요</block>
+  <block id="5361440c8196cc52ba89e8281bc2ef22" category="list-text">지금 바로 보호 그룹을 백업하세요. <block ref="0b07e2abdc1829709878f1d54c90a7ab" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="ecd7b1e39a181dfd260b4d2201a85373" category="paragraph">Oracle Database 워크로드 미리 보기에서는 사용할 수 없습니다.</block>
+  <block id="930da9bc61f880bd2f19e2938c5376f6" category="list-text">*워크로드*: 예로는 Microsoft SQL Server, 볼륨, VMware, KVM, Hyper-V, Oracle Database 또는 Kubernetes가 있습니다.</block>
+  <block id="a1b57f3367efea5ba168ebc1b00dfb09" category="list-text">*3-2-1 팬아웃*: 운영 스토리지(디스크)에서 2차 스토리지(디스크)를 거쳐 클라우드(오브젝트 스토어)로. ONTAP에서 ONTAP로, ONTAP에서 오브젝트 스토어로 구성하는 것과 같이 서로 다른 스토리지 시스템에 걸쳐 데이터의 여러 복사본을 생성합니다. 클라우드 하이퍼스케일러 오브젝트 스토어 또는 프라이빗 오브젝트 스토어가 될 수 있습니다. 이러한 구성은 최적의 데이터 보호 및 재해 복구를 달성하는 데 도움이 됩니다.</block>
+  <block id="7257ebd350ec9dc53fbb407575e942c9" category="open-title">웹 UI를 사용하여 애플리케이션 추가</block>
+  <block id="7eb786201a1068df31c2a8d7805c50bf" category="open-title">CR을 사용하여 애플리케이션 추가</block>
+  <block id="b4b10aa7102ef4de9ba1d5672445c895" category="list-text">타겟 애플리케이션 CR 파일을 생성합니다.</block>
+  <block id="17131e6f435088e2e03c7280ff7da690" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다(예:<block ref="52c90dc70fe5cbabbc6872aba835befa" prefix=" " category="inline-code"></block>).</block>
+  <block id="18924d9e76d2dc9a88bddb772904461d" category="list-text">다음 속성을 구성하십시오.</block>
+  <block id="3b96edf2a12486fc5d9dfaf7e692cdfc" category="list-text">*metadata.name*: (_Required_) 애플리케이션 사용자 지정 리소스의 이름입니다. 보호 작업에 필요한 다른 CR 파일에서 이 값을 참조하므로 선택한 이름을 기억해 두십시오.</block>
+  <block id="244fede3edf8f2ab57f281d777777961" category="list-text">*spec.includedNamespaces*: (_필수_) 네임스페이스 및 레이블 선택기를 사용하여 애플리케이션에서 사용하는 네임스페이스와 리소스를 지정합니다. 애플리케이션 네임스페이스는 이 목록에 반드시 포함되어야 합니다. 레이블 선택기는 선택 사항이며, 지정된 각 네임스페이스 내의 리소스를 필터링하는 데 사용할 수 있습니다.</block>
+  <block id="cc8aa03bb88101c1901ab425b29a1901" category="list-text">*spec.includedClusterScopedResources*: (_선택 사항_) 이 속성을 사용하여 애플리케이션 정의에 포함할 클러스터 범위 리소스를 지정합니다. 이 속성을 사용하면 그룹, 버전, 종류 및 레이블을 기준으로 이러한 리소스를 선택할 수 있습니다.</block>
+  <block id="eba6898a839f426c3106a97f94614eb9" category="list-text">*groupVersionKind*: (_필수_) 클러스터 범위 리소스의 API 그룹, 버전 및 종류를 지정합니다.</block>
+  <block id="8d8a8010684a930aa7760c829cad4141" category="list-text">*labelSelector*: (_선택 사항_) 레이블을 기준으로 클러스터 범위 리소스를 필터링합니다.</block>
+  <block id="5f47e505a6f61f7f97fe140353dc6594" category="list-text">필요한 경우 다음 주석을 구성하십시오.</block>
+  <block id="57320d49ea044bfa493c42beb1df6cfe" category="inline-link-macro">전역 파일 시스템 고정 설정</block>
+  <block id="2d4560ac7467fc580503e1a2ec64edbc" category="list-text">*metadata.annotations.protect.trident.netapp.io/skip-vm-freeze*: (_선택 사항_) 이 어노테이션은 KubeVirt 환경과 같이 스냅샷 전에 파일 시스템이 동결되는 가상 머신에서 정의된 애플리케이션에만 적용됩니다. 이 애플리케이션이 스냅샷 중에 파일 시스템에 쓸 수 있는지 여부를 지정합니다. true로 설정하면 애플리케이션은 전역 설정을 무시하고 스냅샷 중에 파일 시스템에 쓸 수 있습니다. false로 설정하면 애플리케이션은 전역 설정을 무시하고 스냅샷 중에 파일 시스템이 동결됩니다. 지정되었지만 애플리케이션 정의에 가상 머신이 없는 경우 어노테이션은 무시됩니다. 지정하지 않으면 애플리케이션은 <block ref="a6fb49ce3deb125e56649f63b2a21282" category="inline-link-macro-rx"></block>를 따릅니다.</block>
+  <block id="8f13f2f073acc52149f6e8567d13e534" category="list-text">*protect.trident.netapp.io/protection-command*: (_선택 사항_) 이 주석을 사용하여 Backup and Recovery에 애플리케이션을 보호하거나 보호를 중지하도록 지시합니다. 가능한 값은<block ref="124c16e5bae30d956b37ef14c9a00ab4" prefix=" " category="inline-code"></block> 또는<block ref="354492320803067b5a2cd287e209154d" prefix=" " category="inline-code"></block>입니다.</block>
+  <block id="f0d0a63fd9731679f5ea79603dba4d1f" category="list-text">*protect.trident.netapp.io/protection-policy-name*: (_선택 사항_) 이 어노테이션을 사용하여 이 애플리케이션을 보호하는 데 사용할 NetApp Backup and Recovery 보호 정책의 이름을 지정합니다. 이 보호 정책은 NetApp Backup and Recovery에 이미 존재해야 합니다.</block>
+  <block id="1fdb8b98325df025bfd256fc475c0986" category="paragraph">애플리케이션이 이미 생성된 후에 이 주석을 적용해야 하는 경우 다음 명령을 사용할 수 있습니다.</block>
+  <block id="2508b93e69f47b3a094284dbdc9a09de" category="list-text">(_선택 사항_) 특정 레이블로 표시된 리소스를 포함하거나 제외하는 필터링을 추가합니다.</block>
+  <block id="b4d332d25d8164d8387707934254781d" category="admonition"><block ref="a25777d0a6883efb33950a7cd7a8f9b9" prefix=" " category="inline-code"></block>와<block ref="2021b5ec814a388ca04af6c6d6c2d16f" prefix=" " category="inline-code"></block>가 모두 사용될 경우,<block ref="a25777d0a6883efb33950a7cd7a8f9b9" prefix=" " category="inline-code"></block>가 먼저 실행된 다음<block ref="2021b5ec814a388ca04af6c6d6c2d16f" prefix=" " category="inline-code"></block>가 결과 리소스에 적용됩니다.</block>
+  <block id="964ba319e15e38c5b0f3ee2a3dd4a8f8" category="list-text">사용 환경에 맞는 애플리케이션 CR을 생성한 후 CR을 적용합니다. 예를 들면 다음과 같습니다.</block>
+  <block id="a23759db2139aa9e17de9cb47110d6d5" category="doc">사용자 지정 리소스를 사용하여 Kubernetes 애플리케이션을 복원합니다</block>
+  <block id="415a07ca472058e76674945c8c1ccdb3" category="paragraph">사용자 지정 리소스를 사용하여 스냅샷 또는 백업에서 애플리케이션을 복원할 수 있습니다. 기존 스냅샷에서 복원하면 동일한 클러스터에 애플리케이션을 복원할 때 더 빠릅니다.</block>
+  <block id="f346d32ba5d9c332bf8577bf1bacda07" category="list-text">애플리케이션을 복원하면 해당 애플리케이션에 대해 구성된 모든 실행 후크가 애플리케이션과 함께 복원됩니다. 복원 후 실행 후크가 있는 경우 복원 작업의 일부로 자동으로 실행됩니다.</block>
+  <block id="961ce5b35a999d2dc3f7e386f74eb614" category="list-text">qtree 볼륨의 경우 백업에서 다른 네임스페이스 또는 원래 네임스페이스로 복원하는 것이 지원됩니다. 그러나 스냅샷에서 다른 네임스페이스 또는 원래 네임스페이스로 복원하는 것은 qtree 볼륨에서 지원되지 않습니다.</block>
+  <block id="57367d979fb9d476b127b8b1c0e64004" category="list-text">고급 설정을 사용하여 복원 작업을 사용자 지정할 수 있습니다. 자세한 내용은 <block ref="de6b60e125121f4190b8e2b41a7ccad4" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="d46abb8b08b9cabb804a375e086762ef" category="section-title">다른 네임스페이스로 백업을 복원합니다</block>
+  <block id="6b76c2e4af7a396193495c80e698179e" category="paragraph">BackupRestore CR을 사용하여 다른 네임스페이스로 백업을 복원하면 Backup and Recovery는 새 네임스페이스에 애플리케이션을 복원하고 복원된 애플리케이션에 대한 애플리케이션 CR을 생성합니다. 복원된 애플리케이션을 보호하려면 필요에 따라 백업 또는 스냅샷을 생성하거나 보호 일정을 설정하십시오.</block>
+  <block id="cff063350a0daf1b0ee4c6c97eb2e2de" category="list-text">기존 리소스가 있는 다른 네임스페이스로 백업을 복원해도 백업에 포함된 리소스와 이름이 같은 리소스는 변경되지 않습니다. 백업의 모든 리소스를 복원하려면 대상 네임스페이스를 삭제하고 다시 생성하거나 새 네임스페이스로 백업을 복원해야 합니다.</block>
+  <block id="8220f502d7a1609266e7dd4c63b34dc3" category="list-text">CR을 사용하여 새 네임스페이스로 복원할 경우, CR을 적용하기 전에 대상 네임스페이스를 수동으로 생성해야 합니다. NetApp Backup and Recovery는 CLI를 사용할 때만 네임스페이스를 자동으로 생성합니다.</block>
+  <block id="d110d36251c4dd04b7da5ef237ac6063" category="inline-link">Kopia 문서</block>
+  <block id="3a5aee390b39f0e0c8e4c0cc152c72f6" category="admonition">Kopia를 데이터 이동 도구로 사용하여 백업을 복원할 때, 선택적으로 CR에 주석을 지정하여 Kopia에서 사용하는 임시 저장소의 동작을 제어할 수 있습니다. 구성 가능한 옵션에 대한 자세한 내용은<block ref="08f67cdc0555f043586a8a4182d9187b" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="0334c5d881452d9144d4edf93d44ff85" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="aa3356b96c40153ef83fe9854ede7a70" prefix=" " category="inline-code"></block>.</block>
+  <block id="8ebefb3e84a05b2e3bf54824870d776d" category="list-text">*spec.appArchivePath*: 백업 콘텐츠가 저장되는 AppVault 내부 경로입니다. 다음 명령을 사용하여 이 경로를 찾을 수 있습니다.</block>
+  <block id="3f1db1c30ba33e5d04499f000ed77f97" category="list-text">*spec.appVaultRef*: (_필수_) 백업 콘텐츠가 저장되는 AppVault의 이름입니다.</block>
+  <block id="33dc1feba43183f93ade318576611f4a" category="list-text">*spec.namespaceMapping*: 복원 작업의 소스 네임스페이스를 타겟 네임스페이스로 매핑합니다. <block ref="a6f7f0a873c27a67ee3194949076866b" prefix=" " category="inline-code"></block> 및 <block ref="2cfb071d6be7d4cf9e297100f62858fe" prefix=" " category="inline-code"></block>를 사용자 환경의 정보로 교체하십시오.</block>
+  <block id="18ad656f28db1ef6b2d76d21959ca243" category="list-text"><block ref="aa3356b96c40153ef83fe9854ede7a70" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="6d5b0033591078b013b5aae0aa8c41df" category="section-title">원래 네임스페이스로 백업을 복원합니다</block>
+  <block id="7260bc412b6c22c2589f01098c1f4430" category="paragraph">언제든지 백업을 원래 네임스페이스로 복원할 수 있습니다.</block>
+  <block id="34653be4af07bad31b9a3775f18b1b5f" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="59a09233aaa2a2c9e25fc46650bd6dee" prefix=" " category="inline-code"></block>.</block>
+  <block id="349d4c53fe9d2e740d60f7ce8094c294" category="list-text"><block ref="59a09233aaa2a2c9e25fc46650bd6dee" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="6b38457a21195fb9cff9562291b07742" category="section-title">다른 클러스터에 백업을 복원합니다</block>
+  <block id="7fa8874b1f645ca2af9d81b51985b8fb" category="paragraph">원래 클러스터에 문제가 발생한 경우 백업을 다른 클러스터로 복원할 수 있습니다.</block>
+  <block id="ea67012b60407e642c3e4bbb13486738" category="list-text">CR을 사용하여 새 네임스페이스로 복원할 경우, CR을 적용하기 전에 타겟 네임스페이스를 수동으로 생성해야 합니다.</block>
+  <block id="dd4ee610bd1d035c73bc0cbcd80e46da" category="paragraph">다음 사전 요구 사항이 충족되는지 확인하십시오.</block>
+  <block id="e23fef665fca7137c4d6ee6b9a9ec06a" category="list-text">타겟 클러스터에 Trident Protect가 설치되어 있습니다.</block>
+  <block id="b20f8883edb9068c67a2faeb3c083d38" category="list-text">타겟 클러스터는 백업이 저장된 소스 클러스터와 동일한 AppVault의 버킷 경로에 액세스할 수 있습니다.</block>
+  <block id="2358fb4006fff416413cb9bfc04e4b73" category="list-text">장시간 소요되는 복원 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.</block>
+  <block id="df710f89ebb9e663bd3d66607a0bf413" category="inline-link">AWS 문서</block>
+  <block id="f3aa7db516c38030a276a5895520407a" category="list-text">AWS 리소스에 대한 자격 증명 관련 자세한 내용은 <block ref="968595e57d50a64e3fbe0f06bc16cb91" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="cfb3749b52f4ce0c21dcdc3a9fce80f2" category="list-text">Trident Protect CLI 플러그인을 사용하여 타겟 클러스터에서 AppVault CR의 가용성을 확인합니다.</block>
+  <block id="1ff83a5266e9e025c2984e0c10dea90e" category="admonition">애플리케이션 복원에 사용할 네임스페이스가 타겟 클러스터에 있는지 확인합니다.</block>
+  <block id="8d433ae9a21c49e9e5433ebd408605c0" category="list-text">타겟 클러스터에서 사용 가능한 AppVault의 백업 콘텐츠를 확인합니다.</block>
+  <block id="378e6f0ba7080535a4462b5311befb40" category="paragraph">이 명령을 실행하면 AppVault에서 사용 가능한 백업이 표시되며, 여기에는 백업이 생성된 클러스터, 해당 애플리케이션 이름, 타임스탬프 및 아카이브 경로가 포함됩니다.</block>
+  <block id="52b5830420efb96c3a91beb52bac3b23" category="paragraph">*예시 출력:*</block>
+  <block id="053aba80de03f3fdf626d1c858342330" category="list-text">AppVault 이름과 아카이브 경로를 사용하여 타겟 클러스터에 애플리케이션을 복원합니다.</block>
+  <block id="fceebbe32c1f7b24c54d6a4e8a0fa776" category="admonition">BackupRestore CR을 사용할 수 없는 경우 2단계에서 언급한 명령을 사용하여 백업 내용을 볼 수 있습니다.</block>
+  <block id="c4ffbcd8e0c029dda531491d6bee1c78" category="section-title">스냅샷을 다른 네임스페이스로 복원합니다</block>
+  <block id="ce7cf7554a5476a82205e8d69fb3706e" category="paragraph">스냅샷에서 사용자 지정 리소스(CR) 파일을 사용하여 다른 네임스페이스 또는 원래 소스 네임스페이스로 데이터를 복원할 수 있습니다. SnapshotRestore CR을 사용하여 스냅샷을 다른 네임스페이스로 복원하면 Backup and Recovery가 새 네임스페이스에 애플리케이션을 복원하고 복원된 애플리케이션에 대한 애플리케이션 CR을 생성합니다. 복원된 애플리케이션을 보호하려면 필요에 따라 백업 또는 스냅샷을 생성하거나 보호 일정을 설정하십시오.</block>
+  <block id="15910dd29963e5df5f2b5879472bcc00" category="list-text">SnapshotRestore는 <block ref="b57d666629acffb30cc697faadc136b5" prefix=" " category="inline-code"></block> 속성을 지원하지만, 소스 및 타겟 스토리지 클래스가 동일한 스토리지 백엔드를 사용하는 경우에만 가능합니다. 다른 스토리지 백엔드를 사용하는 <block ref="e1e2a331ab1d8dccfea06fc8e04e2f5d" prefix=" " category="inline-code"></block>로 복원을 시도하면 복원 작업이 실패합니다.</block>
+  <block id="a35b06511e032bee46bbed064afa12dc" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="fac6dff7f801a4983f4a536dbcbd40d7" prefix=" " category="inline-code"></block>.</block>
+  <block id="d2e7f59eea5f95f37b023a243745727d" category="list-text">*spec.appVaultRef*: (_필수_) 스냅샷 콘텐츠가 저장된 AppVault의 이름입니다.</block>
+  <block id="ac6cdb13ccdd5d0ac3195b3301db572c" category="list-text">*spec.appArchivePath*: 스냅샷 콘텐츠가 저장되는 AppVault 내부의 경로입니다. 다음 명령을 사용하여 이 경로를 찾을 수 있습니다.</block>
+  <block id="bca1b1b2b1a229dc37dffa4f7012c02d" category="list-text"><block ref="fac6dff7f801a4983f4a536dbcbd40d7" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="c4c7c0b8d390ffc1225601169810e0ae" category="section-title">스냅샷을 원래 네임스페이스로 복원합니다</block>
+  <block id="a392e5395f0751460dc460cd6ec5e89d" category="paragraph">언제든지 스냅샷을 원래 네임스페이스로 복원할 수 있습니다.</block>
+  <block id="4d18dba9a79fbe92e2bb99f0a9300df3" category="list-text">사용자 정의 리소스(CR) 파일을 생성하고 이름을 지정합니다<block ref="620b0dae36dbe6aeaae5d993f961c634" prefix=" " category="inline-code"></block>.</block>
+  <block id="54625166c25afd8a6a484aaf2f346fbb" category="list-text"><block ref="620b0dae36dbe6aeaae5d993f961c634" prefix=" " category="inline-code"></block> 파일에 올바른 값을 입력한 후 CR을 적용하십시오.</block>
+  <block id="a81b2faa73385ff60c0791d7006409d9" category="doc">웹 UI를 사용하여 Kubernetes 애플리케이션을 복원합니다</block>
+  <block id="51621b374731a256fcdaa7e17b724680" category="paragraph">Trident Protect를 사용하여 백업한 애플리케이션을 복원하는 경우 소스 클러스터와 타겟 클러스터 모두에 Trident Protect가 설치되어 있는지 확인하십시오.</block>
+  <block id="fb5dbc581e0b5b523350175d27ea83c0" category="list-text">사용하려는 복원 지점의 *Restore* 버튼을 선택하십시오.</block>
+  <block id="98c52679a9ed385c5482f74fe44c97ae" category="list-text">복원할 소스 위치를 선택합니다.</block>
+  <block id="d30d07971f43ce3280b143ce31154411" category="admonition">현재 Trident Protect에서 생성한 로컬 스냅샷을 다른 클러스터로 복원하는 것은 지원되지 않습니다.</block>
+  <block id="6d99ca24de4c4c5c0b932cbcc18fdbbe" category="list-text">원래 네임스페이스로 복원할지, 아니면 새 네임스페이스로 복원할지 선택하십시오.</block>
+  <block id="41af3e90c2d7ebbd0ddd4e36e78220b5" category="list-text">새 네임스페이스로 복원하도록 선택한 경우 사용할 타겟 네임스페이스를 입력하십시오.</block>
+  <block id="a2552d8c6714f46cdb5bfe28dbdc9b87" category="list-text">*대상 설정* 섹션을 확장하고 기본 스토리지 클래스, 다른 스토리지 클래스로 복원하거나 다른 클러스터로 복원하는 경우 스토리지 클래스를 타겟 클러스터에 매핑하도록 선택합니다.</block>
+  <block id="a5e9d16a9cc07839a654d90f3a7a4b97" category="list-text">다른 스토리지 클래스로 복원하도록 선택한 경우, 각 소스 스토리지 클래스와 일치하는 대상 스토리지 클래스를 선택하십시오.</block>
+  <block id="7a19603af554b25cd8b2df54b3b90a02" category="list-text">선택적으로, Trident Protect를 사용하여 생성된 백업 또는 스냅샷을 복원하는 경우 복원 작업의 스토리지 버킷으로 사용된 AppVault의 세부 정보를 확인하십시오. 환경 또는 AppVault 상태가 변경된 경우 *App Vault 동기화*를 선택하여 세부 정보를 새로 고치십시오.</block>
+  <block id="36232457f4c28ae76f2c98b665ead40c" category="inline-link">Trident Protect AppVault 객체를 사용하여 버킷을 관리하세요.</block>
+  <block id="8cce25f9f8aead82fb847fec859b60d7" category="admonition">Trident Protect를 사용하여 생성된 백업 또는 스냅샷을 복원하기 위해 Kubernetes 클러스터에 AppVault를 생성해야 하는 경우 <block ref="c0135beaf775585a3c544dba5d035e47" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="833959b645e98d6a80a20300bfd003a1" category="list-text">선택적으로 *복원 스크립트* 섹션을 확장하고 *Postscript* 옵션을 활성화하여 복원 작업 완료 후 실행될 실행 후크 템플릿을 선택할 수 있습니다. 필요한 경우 스크립트에 필요한 인수를 입력하고 리소스 레이블을 기준으로 리소스를 필터링하기 위한 레이블 선택기를 추가합니다.</block>
+  <block id="ecd47ecc902c53d5808953e54e89b94f" category="list-text">*Oracle Database 워크로드(미리 보기)*:</block>
+  <block id="0e8ecb4e7677fd2e4d2af938fc466bff" category="inline-link-macro">Oracle Database 워크로드를 보호합니다</block>
+  <block id="95815b21a64646ca02a4d958d053cef7" category="list-text"><block ref="840bb935154607a5be4199a217b0bf56" category="inline-link-macro-rx"></block>을(를) 참조하세요.</block>
+  <block id="4a6440cf633ba5f9e68b3e722f3a2bdd" category="paragraph">Kubernetes 워크로드의 경우 모든 영구 볼륨의 총 크기를 기준으로 요금이 부과됩니다.</block>
+  <block id="ac48592f4b6ad81597a3d86209bce635" category="section-title">Oracle Database 워크로드 보호를 위한 요구 사항</block>
+  <block id="6b4dd2a26d258b058101055118ed2560" category="list-text">호스트 OS 지원: Red Hat Enterprise Linux 8 및 9</block>
+  <block id="cd992a76d620e6cac42ca61d20f93f1d" category="list-text">NetApp Trident Protect 25.07 이상(Kubernetes 워크로드 검색 중에 설치됨)</block>
+  <block id="8c703f00b817f5c9121d74efc33cdde9" category="list-text">NetApp Trident Protect Connector 25.07 이상(Kubernetes 워크로드 검색 중에 설치됨)</block>
+  <block id="5254dbe16e57a413455e2c5f7d5e70a1" category="list-text">Kubernetes 클러스터, Trident Protect 커넥터 및 Trident Protect 프록시 간의 아웃바운드 방향에서 TCP 포트 443이 필터링되지 않았는지 확인하십시오.</block>
+  <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026년 2월 9일</block>
+  <block id="f3effb5ce493101e0cf4cbc9e93014e1" category="sidebar">Oracle Database 워크로드 보호(비공개 미리 보기)</block>
+  <block id="e45770f83b5d2c438c00dea64c505ce7" category="sidebar">Oracle Database 워크로드에 대한 알려진 제한 사항</block>
+  <block id="c33d3729ba9e6e1c1dd6ccc4b6c7f949" category="sidebar">Oracle Database 워크로드 보호(미리 보기)</block>
+  <block id="1e6021824e75d382885d2bb2e945f719" category="sidebar">사용자 지정 리소스를 사용하여 Kubernetes 애플리케이션을 복원합니다</block>
 </blocks>

@@ -10,7 +10,7 @@ ONTAP 볼륨 워크로드의 이번 릴리스에서는 다음과 같은 향상�
 
 *다중 버킷 지원*: (비공개 미리 보기) ONTAP 9.17.1 이상 버전부터 시스템 내 볼륨을 서로 다른 클라우드 공급자에 걸쳐 시스템당 최대 6개의 버킷으로 보호할 수 있습니다.
 
-link:prev-ontap-backup-manage.html["NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 백업하는 방법에 대해 자세히 알아보세요."].
+link:https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-manage.html["NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 백업하는 방법에 대해 자세히 알아보세요."].
 
 
 

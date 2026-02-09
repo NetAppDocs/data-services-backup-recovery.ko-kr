@@ -18,7 +18,7 @@ summary: NetApp Backup and Recovery 사용하면 애플리케이션 보호 작�
 
 [NOTE]
 ====
-NetApp Backup and Recovery 데이터 보호 중에 KubeVirt와 같은 애플리케이션의 파일 시스템을 동결하고 동결 해제합니다.  Trident Protect 설명서를 사용하여 이 동작을 전역적으로 또는 특정 애플리케이션에 대해 비활성화할 수 있습니다.
+NetApp Backup and Recovery는 데이터 보호 중에 KubeVirt와 같은 애플리케이션의 파일 시스템을 동결했다가 해제합니다. Trident Protect 설명서를 참조하면 이 동작을 전체적으로 또는 특정 애플리케이션에 대해 비활성화할 수 있습니다.
 
 * 모든 애플리케이션에서 이 동작을 비활성화하려면 다음을 참조하세요. https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-requirements.html#protecting-data-with-kubevirt-vms["KubeVirt VM을 사용하여 데이터 보호"] .
 * 특정 애플리케이션에 대해 이 동작을 비활성화하려면 다음을 참조하세요. https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-manage-applications.html#define-an-application["응용 프로그램 정의"] .
@@ -105,6 +105,9 @@ NOTE: 복원 또는 복제 작업 후에 실행되는 실행 후크에 네임스
 == 실행 후크 템플릿 만들기
 
 애플리케이션에서 데이터 보호 작업 전이나 후에 작업을 수행하는 데 사용할 수 있는 사용자 정의 실행 후크 템플릿을 만들 수 있습니다.
+
+
+NOTE: 여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호할 때만 사용할 수 있습니다.
 
 .단계
 . 콘솔에서 *보호* > *백업 및 복구*로 이동합니다.
