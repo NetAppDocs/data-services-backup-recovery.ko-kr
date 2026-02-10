@@ -144,26 +144,6 @@ sidebar:
             url: "/br-use-vmware-restore-guest-files-and-folders-from-vmdks.html"
           - title: 게스트 파일 복원 문제 해결
             url: "/br-use-vmware-guest-file-restore-scenarios-you-might-encounter.html"
-    - title: VMware 워크로드 보호(VMware용 SnapCenter 플러그인 사용)
-      entries:
-      - title: 가상 머신 워크로드 보호 개요
-        url: "/prev-vmware-protect-overview.html"
-      - title: 가상 머신 워크로드 보호를 위한 전제 조건
-        url: "/prev-vmware-prereqs.html"
-      - title: 가상 머신 데이터를 백업하기 위한 정책 생성
-        url: "/prev-vmware-policy-create.html"
-      - title: Amazon Web Services에 데이터 저장소 백업
-        url: "/prev-vmware-backup-aws.html"
-      - title: Microsoft Azure에 데이터 저장소 백업
-        url: "/prev-vmware-backup-azure.html"
-      - title: Google Cloud Platform에 데이터 저장소 백업
-        url: "/prev-vmware-backup-gcp.html"
-      - title: StorageGRID 에 데이터 저장소 백업
-        url: "/prev-vmware-backup-storagegrid.html"
-      - title: 데이터스토어 및 가상 머신 데이터 보호 관리
-        url: "/prev-vmware-manage.html"
-      - title: 가상 머신 데이터 및 데이터 저장소 복원
-        url: "/prev-vmware-restore.html"
     - title: KVM 워크로드 보호(미리 보기)
       entries:
       - title: KVM 워크로드 보호 개요
