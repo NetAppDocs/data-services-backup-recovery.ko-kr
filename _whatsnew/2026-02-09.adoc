@@ -1,6 +1,18 @@
-= Kubernetes 워크로드 개선 사항
+= 일반 공급(GA)에서 지원되는 Microsoft Hyper-V 워크로드
 :allow-uri-read: 
 
+
+
+
+=== 일반 공급(GA)에서 지원되는 Microsoft Hyper-V 워크로드
+
+Microsoft Hyper-V 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.
+
+
+
+=== 일반 공급(GA)에서 지원되는 KVM 워크로드
+
+NetApp Backup and Recovery에서 KVM 워크로드 지원이 이제 정식 출시(GA)되었습니다.
 
 
 
@@ -42,9 +54,3 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle Database 워크로드 보호 개요"]을 참조하십시오.
-
-
-
-=== 기타 개선 사항
-
-Hyper-V 워크로드, KVM 워크로드 및 VMware 워크로드가 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.

@@ -120,7 +120,7 @@ sidebar:
         url: "/br-use-manage-snapshots.html"
       - title: Microsoft SQL Server 보고서 만들기
         url: "/br-use-reports.html"
-    - title: VMware 워크로드 보호(VMware용 SnapCenter 플러그인 없이 미리 보기)
+    - title: VMware 워크로드 보호(SnapCenter Plug-in for VMware 없이)
       entries:
       - title: VMware 워크로드 보호 개요
         url: "/br-use-vmware-protect-overview.html"
@@ -150,8 +150,6 @@ sidebar:
         url: "/prev-vmware-protect-overview.html"
       - title: 가상 머신 워크로드 보호를 위한 전제 조건
         url: "/prev-vmware-prereqs.html"
-      - title: SnapCenter Plug-in for VMware vSphere 등록
-        url: "/prev-vmware-register-snapcenter.html"
       - title: 가상 머신 데이터를 백업하기 위한 정책 생성
         url: "/prev-vmware-policy-create.html"
       - title: Amazon Web Services에 데이터 저장소 백업
@@ -178,7 +176,7 @@ sidebar:
         url: "/br-use-kvm-backup.html"
       - title: KVM 워크로드 복원
         url: "/br-use-kvm-restore.html"
-    - title: Hyper-V 워크로드 보호(미리 보기)
+    - title: Hyper-V 워크로드 보호
       entries:
       - title: Hyper-V 워크로드 보호 개요
         url: "/br-use-hyperv-protect-overview.html"
