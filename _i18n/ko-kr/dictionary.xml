@@ -3822,172 +3822,7 @@
   <block id="f2b162f98b611318ceee106c4b60ae51" category="list-text">지역별 Google Cloud Storage 가격에 대한 자세한 내용은 다음을 방문하세요.<block ref="51a97b69fb4ea5748d26915fe19e0057" category="inline-link-rx"></block> .</block>
   <block id="fd161debce2c53100b7c61aa8b2d7c6b" category="list-text">Google 보관소에 보관된 항목을 복원하는 데 얼마나 걸리나요?</block>
   <block id="efce98c74b9fc5fb1711b2f3d4da8f34" category="list-text">*검색 시간*: 보관소에서 백업 파일을 검색하여 표준 저장소에 넣는 데 걸리는 시간입니다.  이 시기를 "보습" 시기라고도 합니다.  다른 클라우드 공급업체가 제공하는 "가장 차가운" 저장 솔루션과 달리, 밀리초 단위로 데이터에 액세스할 수 있습니다.</block>
-  <block id="ea41fefc75b4937d079e3db8ee84bd6b" category="doc">NetApp Backup and Recovery 에서 Amazon Web Services에 데이터 저장소 백업</block>
-  <block id="88d382e3b7aa9d602ce38d8495a201ac" category="paragraph">NetApp Backup and Recovery 사용하면 하나 이상의 데이터 저장소를 Amazon Web Services로 백업하고 보관하여 스토리지 효율성과 클라우드 전환을 개선할 수 있습니다.</block>
-  <block id="88e6abd4ee4f112ba359e37a218778f6" category="paragraph">데이터 저장소가 보관 정책과 연결되어 있는 경우 보관 계층을 선택할 수 있는 옵션이 제공됩니다.  지원되는 보관 계층은 Glacier와 Glacier Deep입니다.</block>
-  <block id="c5697e1933bfd2df9d2052983e1d9241" category="inline-link-macro">가상 머신 보호 요구 사항</block>
-  <block id="a7772e34879d0350763b229c08abb4ce" category="paragraph">모든 사항을 충족했는지 확인하세요.<block ref="b3cdcdb9363cf72cee94211d1cf49d2a" category="inline-link-macro-rx"></block> 클라우드에 데이터 저장소를 백업하기 전에.</block>
-  <block id="ec20419fe9b99a13a7e6a63187f9ad59" category="list-text">콘솔 UI에서 *보호* &gt; *백업 및 복구* &gt; *가상 머신*을 선택합니다.</block>
-  <block id="418c5509e2171d55b0aee5c2ea4442b5" category="inline-image-macro">행동</block>
-  <block id="4d2ca83fc058acd8fd1a2b0e9633319d" category="list-text">선택하다<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 백업하려는 데이터 저장소에 해당하는 항목을 선택하고 *백업 활성화*를 클릭합니다.</block>
-  <block id="323d618819396c39de9471cdfb373ee7" category="list-text">정책 할당 페이지에서 정책을 선택하고 *다음*을 선택합니다.</block>
-  <block id="65c66680701f71dd9f3d5af61f0f6b41" category="list-text">시스템을 추가합니다.</block>
-  <block id="5acc11cd60ff7e94ad464f395b9bc687" category="paragraph">콘솔에서 검색할 클러스터 관리 LIF를 구성합니다.  데이터 저장소 중 하나에 시스템을 추가한 후에는 동일한 ONTAP 클러스터에 있는 다른 모든 데이터 저장소에 재사용할 수 있습니다.</block>
-  <block id="c4f42debc709f58c735092418fa00fa1" category="list-text">SVM에 해당하는 *시스템 추가*를 선택합니다.</block>
-  <block id="30871e9b3db5bb3040245da62e031a45" category="list-text">시스템 추가 마법사에서:</block>
-  <block id="b19fb0dfd78b28bc5415a7f3f4ad6a49" category="list-text">클러스터 관리 LIF의 IP 주소를 지정합니다.</block>
-  <block id="73f07eefb51e62cc902b672233bd4977" category="list-text">ONTAP 클러스터 사용자의 자격 증명을 지정합니다.</block>
-  <block id="85f2ee063f5ea4d52167b81f6a73c16a" category="list-text">*시스템 추가*를 선택하세요.</block>
-  <block id="52405c4e62742959f93902e51bb72d0b" category="list-text">*Amazon Web Services*를 선택하여 클라우드 공급자로 구성합니다.</block>
-  <block id="4117af0b4d26b5ba222b63a2b7e1eb27" category="list-text">AWS 계정을 지정하세요.</block>
-  <block id="0b6515b0d85be4c32021431c5119a675" category="list-text">AWS 액세스 키 필드에 데이터 암호화 키를 지정합니다.</block>
-  <block id="095a532bc2c4eed2ec2c64b6008b497f" category="list-text">AWS Secret Key 필드에 데이터 암호화에 사용할 비밀번호를 지정합니다.</block>
-  <block id="b5d98853353bde168501864a9aa65bfd" category="list-text">백업을 만들 지역을 선택하세요.</block>
-  <block id="386a17271d92cc7a25bf8eec122b0494" category="list-text">시스템으로 추가된 클러스터 관리 LIF의 IP 주소를 지정합니다.</block>
-  <block id="e1a761122b21c1ecd586765e53dacaf5" category="list-text">보관 계층을 선택하세요.</block>
-  <block id="e56d2516907f7fa0a6e073e43392e9ff" category="paragraph">보관 계층은 일회성 작업이므로 나중에 다시 설정할 수 없으므로 설정하는 것이 좋습니다.</block>
-  <block id="aa6666c7d701e3d022bd0894584ba6bc" category="list-text">세부 정보를 검토하고 *백업 활성화*를 선택하세요.</block>
-  <block id="0d41ec9efd8e5ceb127f404e3e8dc747" category="doc">NetApp Backup and Recovery 사용하여 Microsoft Azure에 데이터 저장소 백업</block>
-  <block id="edad35da0f3ccd8716a3ecbec6ba4250" category="paragraph">SnapCenter Plug-in for VMware vSphere NetApp Backup and Recovery 와 통합하여 하나 이상의 데이터 저장소를 Microsoft Azure에 백업할 수 있습니다.  이를 통해 VM 관리자는 쉽고 빠르게 데이터를 백업하고 보관하여 저장 효율성을 높이고 클라우드 전환을 가속화할 수 있습니다.</block>
-  <block id="0f375a841aae3358a6339864ccfaa86f" category="paragraph">데이터 저장소가 보관 정책과 연결되어 있는 경우 보관 계층을 선택하는 옵션이 제공됩니다.  지원되는 보관 계층은 Azure Archive Blob Storage입니다.</block>
-  <block id="a5d365a9b7414bdc6e9205c9e8eb585d" category="list-text">NetApp Console UI에서 *보호* &gt; *백업 및 복구* &gt; *가상 머신*을 선택합니다.</block>
-  <block id="b621b490b47d0134904539933037722c" category="list-text">선택하다<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 백업하려는 데이터 저장소에 해당하는 항목을 선택하고 *백업 활성화*를 선택합니다.</block>
-  <block id="8a8bca40b3d548c634cd73d37e5a630c" category="list-text">클라우드 공급자로 구성하려면 *Microsoft Azure*를 선택하세요.</block>
-  <block id="3cc0854835f3b022e6a1537884da217d" category="list-text">Azure 구독 ID를 지정합니다.</block>
-  <block id="db7f740fbee2466830a1f559dba6b17b" category="list-text">새로운 리소스 그룹을 만들거나 기존 리소스 그룹을 사용합니다.</block>
-  <block id="9e8ed7b08261a94b9277289757488767" category="paragraph">보관 계층은 일회성 작업이므로 나중에 다시 설정할 수 없으므로 설정하는 것이 좋습니다.</block>
-  <block id="ea30425cb29f7e447fdeace74c26461f" category="doc">NetApp Backup and Recovery 사용하여 Google Cloud Platform에 데이터 저장소 백업</block>
-  <block id="476c041ec40c52b29e7eff32f4cb7b32" category="paragraph">SnapCenter Plug-in for VMware vSphere NetApp Backup and Recovery 와 통합하여 하나 이상의 데이터 저장소를 Google Cloud Platform에 백업할 수 있습니다.  이를 통해 VM 관리자는 쉽고 빠르게 데이터를 백업하고 보관하여 저장 효율성을 높이고 클라우드 전환을 가속화할 수 있습니다.</block>
-  <block id="bccdf5c7461a91341c81491a049f7917" category="list-text">클라우드 공급자로 구성하려면 *Google Cloud Platform*을 선택하세요.</block>
-  <block id="bd1bf42f3eb311ef9f00c80352b4b141" category="list-text">백업을 위해 Google Cloud Storage 버킷을 생성할 Google Cloud 프로젝트를 선택합니다.</block>
-  <block id="fa0f3e6189a17df2b37f1f89872dbee4" category="list-text">Google Cloud 액세스 키 필드에 키를 지정합니다.</block>
-  <block id="3ee34b7fd8f9ec35694f9ada246e9a7b" category="list-text">Google Cloud Secret Key 필드에 비밀번호를 지정합니다.</block>
-  <block id="3ec390de7db5c59f007c717fb9aa2dac" category="list-text">IP 공간을 지정하세요.</block>
-  <block id="71fb704fe6aa28d59f46358c61d5b35a" category="doc">NetApp Backup and Recovery 사용하여 StorageGRID 에 데이터 저장소 백업</block>
-  <block id="5cf880745ad0e6e8d8208ad538957b63" category="paragraph">NetApp Backup and Recovery 와 SnapCenter Plug-in for VMware vSphere 통합하여 하나 이상의 데이터 저장소를 StorageGRID 에 백업할 수 있습니다.  이를 통해 VM 관리자는 쉽고 빠르게 데이터를 백업하고 보관하여 저장 효율성을 높이고 클라우드 전환을 가속화할 수 있습니다.</block>
-  <block id="6c5cc1315b69c8256bbc33cf47a5a7ab" category="list-text">* StorageGRID*를 선택하세요.</block>
-  <block id="cf4e6e70123f43cdec5ffd93f792c083" category="list-text">스토리지 서버 IP를 지정하세요.</block>
-  <block id="10303a499a9e21a77e6dad69618c622b" category="list-text">액세스 키와 비밀 키를 선택하세요.</block>
-  <block id="b26e7e8656acba73c7e69f8c75f299d1" category="doc">NetApp Backup and Recovery 에서 데이터 저장소 및 VM 보호 관리</block>
-  <block id="749f97c0bfe03215ddfcc33e348d0c86" category="paragraph">NetApp Backup and Recovery 사용하면 데이터를 백업하고 복원하기 전에 정책, 데이터 저장소 및 가상 머신을 볼 수 있습니다.  데이터베이스, 정책 또는 리소스 그룹의 변경 사항에 따라 NetApp Console UI에서 업데이트를 볼 수 있습니다.</block>
-  <block id="5bea9354a7049a7e639553b703f18e84" category="paragraph">모든 기본 사전 정의된 정책을 볼 수 있습니다.  각 정책에 대한 세부 정보를 보면 연관된 모든 정책과 가상 머신이 나열됩니다.</block>
-  <block id="b69b2eb51081aa4642c6e881faa0bcb8" category="list-text">*설정* 드롭다운에서 *정책*을 선택합니다.</block>
-  <block id="8448a57387950bac4af453a04975933d" category="list-text">자세한 내용을 보고 싶은 정책에 해당하는 *자세한 내용 보기*를 선택하세요.</block>
-  <block id="1c281da53a696408c46b6da9d44b27e7" category="paragraph">연관된 정책과 가상 머신이 나열됩니다.</block>
-  <block id="8ed12ef54cb1d9b3b955b96ba5173201" category="section-title">데이터 저장소 및 가상 머신 보기</block>
-  <block id="e3dbc361d0cd589544c61663904eef2c" category="paragraph">SnapCenter Plug-in for VMware vSphere 사용하여 보호되는 데이터 저장소와 가상 머신이 표시됩니다.</block>
-  <block id="4e98200f297bd7d5853a285fdfe1191f" category="list-text">콘솔 UI에서 *보호* &gt; *백업 및 복구* &gt; *가상 머신* &gt; *설정* &gt; * SnapCenter Plug-in for VMware vSphere*을 선택합니다.</block>
-  <block id="18a02c3f300d1165ca70adad83d6a91a" category="list-text">데이터스토어와 가상 머신을 보려는 SnapCenter Plug-in for VMware vSphere 선택하세요.</block>
-  <block id="b1314bfff132a050766ce5d32ac976de" category="section-title">데이터 저장소 보호 해제</block>
-  <block id="24e973d26bb253c7b5fb8a764db6860a" category="paragraph">이전에 보호된 데이터 저장소의 보호를 해제할 수 있습니다.  클라우드 백업을 삭제하거나 더 이상 클라우드에 백업하지 않으려면 데이터 저장소의 보호를 해제할 수 있습니다.  보호 해제가 성공하면 데이터 저장소를 다시 보호할 수 있습니다.</block>
-  <block id="a4d4871f49f1183bee5e02ea1b2064f9" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 보호를 해제하려는 데이터 저장소에 해당하는 항목을 선택하고 *보호 해제*를 선택합니다.</block>
-  <block id="b4aa547260f4fe266f03ec3a845576a5" category="section-title">SnapCenter Plug-in for VMware vSphere 편집</block>
-  <block id="7d890413f9b664e2bcf99c30c870de89" category="paragraph">콘솔에서 SnapCenter Plug-in for VMware vSphere 의 세부 정보를 편집할 수 있습니다.</block>
-  <block id="73f6eff78e2d5b4c91558c1e0c0e8a24" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 그리고 *편집*을 선택하세요.</block>
-  <block id="05c829c7b617d014c0186656453575ea" category="list-text">필요에 따라 세부 정보를 수정하세요.</block>
-  <block id="738c224049615eeb47fe5a57a6ea8f7c" category="section-title">리소스 및 백업 새로 고침</block>
-  <block id="0e9cec251ac8debda34d029f4302d4eb" category="paragraph">애플리케이션에 추가된 최신 데이터 저장소와 백업을 보려면 리소스와 백업을 새로 고쳐야 합니다.  이렇게 하면 리소스와 백업 검색이 시작되고 최신 세부 정보가 표시됩니다.</block>
-  <block id="04fa58f349615d27149f6dda8efe38e2" category="list-text">*백업 및 복구* &gt; *가상 머신*을 선택합니다.</block>
-  <block id="266f9ff12956ac5692bc7be08bda846f" category="list-text">*설정* 드롭다운에서 * SnapCenter Plug-in for VMware vSphere*을 선택합니다.</block>
-  <block id="3909de0b2400078920ffd3d72a06f81b" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> SnapCenter Plug-in for VMware vSphere 에 해당하고 *리소스 및 백업 새로 고침*을 선택합니다.</block>
-  <block id="aa8a6c50e00adebd857afeb3c163080e" category="section-title">정책 또는 리소스 그룹 새로 고침</block>
-  <block id="a663847f6a4dfe84a9e34d968b306aef" category="paragraph">정책이나 리소스 그룹이 변경되면 보호 관계를 새로 고쳐야 합니다.</block>
-  <block id="dfc67c4e882a2d4fffb8d16037fa7dd2" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 데이터 저장소에 해당하는 항목을 선택하고 *보호 새로 고침*을 선택합니다.</block>
-  <block id="ecb0c28cd21006ad8c86d4be09edf297" category="section-title">SnapCenter Plug-in for VMware vSphere 등록 취소</block>
-  <block id="3d61f1dcef482f1c526370542b798e50" category="paragraph">SnapCenter Plug-in for VMware vSphere 과 연결된 모든 데이터 저장소와 가상 머신은 보호되지 않습니다.</block>
-  <block id="b184ae3f5a4589cacbec55aa0fa973fc" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> SnapCenter Plug-in for VMware vSphere 에 해당하고 *등록 취소*를 선택합니다.</block>
-  <block id="d65dcf19e9eda758238d835f23a69642" category="section-title">작업 모니터링</block>
-  <block id="4044636ea8a32c730e3b044adcda1f8c" category="paragraph">모든 NetApp Backup and Recovery 작업에 대한 작업이 생성됩니다.  각 작업의 일부로 수행되는 모든 작업과 모든 하위 작업을 모니터링할 수 있습니다.</block>
-  <block id="942b89acbe370667e9d70389e84f8544" category="list-text">*백업 및 복구* &gt; *작업 모니터링*을 선택합니다.</block>
-  <block id="5f2c87cb3d6dde849915754be64e1690" category="paragraph">작업을 시작하면 작업이 시작되었음을 알리는 창이 나타납니다.  링크를 선택하여 작업을 모니터링할 수 있습니다.</block>
-  <block id="84d686b7ff9ad225b36fb397dd4cbce7" category="list-text">기본 작업을 선택하면 하위 작업과 각 하위 작업의 상태를 볼 수 있습니다.</block>
-  <block id="38f579d721675ddff9e2ac5938361837" category="doc">NetApp Backup and Recovery 에서 데이터 저장소를 백업하는 정책 만들기</block>
-  <block id="b584330b721e66ff5dabb697badb5ff7" category="paragraph">NetApp Backup and Recovery 에서 제공되는 다음 사전 정의된 정책 중 하나를 사용하거나 정책을 만들 수 있습니다.</block>
-  <block id="43852dc1e0c3229284688eb4c01dfef0" category="list-text">미리 정의된 정책을 편집하지 않으려면 정책을 만들어야 합니다.</block>
-  <block id="38fb3153d6139974d24ba11e28a0718d" category="list-text">백업을 개체 저장소에서 보관 저장소로 옮기려면 ONTAP 9.10.1 이상을 실행해야 하며 Amazon Web Services 또는 Microsoft Azure가 클라우드 공급자여야 합니다.</block>
-  <block id="5d0ad01dbdb8717fbebf1cb44a3c10cd" category="list-text">각 클라우드 공급자에 대해 아카이브 액세스 계층을 구성해야 합니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 관하여</block>
-  <block id="25a9fea1bd39d0e24939bbbf1f842b7a" category="paragraph">NetApp Console 에서 사용할 수 있는 미리 정의된 정책은 다음과 같습니다.</block>
-  <block id="002f7378a5fcfc2f66cfea851a7fd5f4" category="cell">정책 이름</block>
-  <block id="b021df6aac4654c454f46c77646e745f" category="cell">상표</block>
-  <block id="dfa56cb0ff8ac0e7087134a3d7e1f39d" category="cell">유지 가치</block>
-  <block id="7250cb0d0c1524aec805084d9f0ffc21" category="paragraph">1년 일일 LTR(장기 유지율)</block>
-  <block id="c512b685438f41daa7386329a3b8f8d3" category="paragraph">일일</block>
-  <block id="5ef698cd9fe650923ea331c15af3b160" category="paragraph">366</block>
-  <block id="5ea7bb0579b5fe6d2acf33c0ab584548" category="paragraph">5년 일일 LTR</block>
-  <block id="069654d5ce089c13f642d19f09a3d1c0" category="paragraph">1830</block>
-  <block id="2cd29ea4d4dd80df56178fc41c9bc385" category="paragraph">7년 주간 LTR</block>
-  <block id="6c25e6a6da95b3d583c6ec4c3f82ed4d" category="paragraph">주간</block>
-  <block id="d709f38ef758b5066ef31b18039b8ce5" category="paragraph">370</block>
-  <block id="f76a9390149b62241c42efed985a431a" category="paragraph">10년 월 LTR</block>
-  <block id="9030e39f00132d583da4122532e509e9" category="paragraph">월간 간행물</block>
-  <block id="da4fb5c6e93e74d3df8527599fa62642" category="paragraph">120</block>
-  <block id="0ef51421739da7017b4d3decc1813f4a" category="list-text">가상 머신 페이지의 설정 드롭다운 목록에서 *정책*을 선택합니다.</block>
-  <block id="db92c743d97601150bbdfa11bf3cf66b" category="list-text">*정책 만들기*를 선택하세요.</block>
-  <block id="9f6b1aa82322cc4f853fe0fe7c532ff0" category="list-text">보존 섹션에서 보존 유형 중 하나를 선택하고 보존할 백업 수를 지정합니다.</block>
-  <block id="db2205364549e4c4841dc9b5d66f62a3" category="list-text">백업 저장소 소스로 기본 저장소 또는 보조 저장소를 선택합니다.</block>
-  <block id="2a60e5494e07cff54330378780f8e2a4" category="list-text">(선택 사항) 비용 최적화를 위해 일정 기간이 지난 후 개체 저장소에서 보관 저장소로 백업을 이동하려면 *계층 백업을 보관 저장소로* 확인란을 선택하고 백업을 보관해야 하는 일수를 입력합니다.</block>
-  <block id="44dae527927c9be3aabaf37ba09b9068" category="admonition">데이터 저장소와 연결된 정책은 편집하거나 삭제할 수 없습니다.</block>
-  <block id="ac58e4fdaef529d7061db727c7d95b98" category="doc">NetApp Backup and Recovery 의 가상 머신 워크로드에 대한 필수 구성 요소</block>
-  <block id="443b7d29fe382a91202282145dbedf43" category="paragraph">NetApp Backup and Recovery 사용하여 가상 머신 워크로드를 보호하기 전에 다음 필수 구성 요소를 충족하는지 확인하세요.</block>
-  <block id="d511399444cf864b695600d159b7c93b" category="list-text">SnapCenter Plug-in for VMware vSphere</block>
-  <block id="2a18af02b6c0b7e92a17df9509574f26" category="list-text">온프레미스 보조 스토리지에서 데이터스토어를 백업하려면 SnapCenter Plug-in for VMware vSphere 사용해야 합니다.</block>
-  <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8 이상</block>
-  <block id="06126ace9559015b34270e5c984cb3c9" category="list-text">VMFS 지원을 위해 SnapCenter Plug-in for VMware vSphere 4.9 이상에서 실행되어야 합니다.  SnapCenter Plug-in for VMware vSphere 이전 버전에서 4.9 릴리스로 업그레이드한 경우 VMFS 데이터 저장소를 백업해야 합니다.</block>
-  <block id="bff3cdd2fd5f993f3bc3fbbd3c43fb30" category="list-text">SnapCenter Plug-in for VMware vSphere 에서 최소한 하나의 백업이 수행되어야 합니다.</block>
-  <block id="61607910a1db523098b12865f02faff4" category="list-text">SnapCenter Plug-in for VMware vSphere 에 레이블이 없거나 콘솔의 가상 머신 정책과 동일한 레이블이 있는 일일, 주간 또는 월간 정책이 하나 이상 있어야 합니다.</block>
-  <block id="9c2d7e78a68e18061466c4c12001d828" category="list-text">사전 설정된 정책의 경우 일정 계층은 SnapCenter Plug-in for VMware vSphere 과 클라우드의 데이터 저장소에서 동일해야 합니다.</block>
-  <block id="ad747f24f06324c9bc58eeaa274f014a" category="list-text">데이터 저장소에 FlexGroup 볼륨이 없는지 확인하세요. FlexGroup 볼륨을 백업하고 복원하는 것은 지원되지 않습니다.</block>
-  <block id="f8038513f93eb5ca7b2505674255b67b" category="list-text">필요한 리소스 그룹에서 "*_recent*"를 비활성화합니다.  리소스 그룹에 대해 "*_recent*"를 활성화한 경우 해당 리소스 그룹의 백업을 클라우드로의 데이터 보호에 사용할 수 없으며, 따라서 복원 작업에도 사용할 수 없습니다.</block>
-  <block id="391eb750d98c55b72607ff6ec6311db2" category="list-text">가상 머신이 복원될 대상 데이터 저장소에 VMDK, VMX, VMSD 등 모든 가상 머신 파일의 복사본을 수용할 수 있는 충분한 공간이 있는지 확인하세요.</block>
-  <block id="6ee2c41b7a9bfae5bb618327d9499834" category="list-text">이전 복원 작업 실패로 인해 대상 데이터 저장소에 restore_xxx_xxxxxx_filename 형식의 오래된 가상 머신 파일이 없는지 확인하세요.  복원 작업을 시작하기 전에 오래된 파일을 삭제해야 합니다.</block>
-  <block id="7148963c1fe9bd20799d84596b688191" category="list-text">프록시가 구성된 커넥터를 배포하려면 모든 발신 커넥터 호출이 프록시 서버를 통해 라우팅되는지 확인하세요.</block>
-  <block id="e0d0f7f19ee8c764850a895376299f6e" category="list-text">데이터 저장소를 백업하는 볼륨이 볼륨 탭(NetApp Backup and Recovery -&gt; 볼륨)에서 이미 보호된 경우, 동일한 데이터 저장소를 가상 머신 탭(NetApp Backup and Recovery -&gt; 가상 머신)에서 다시 보호할 수 없습니다.</block>
-  <block id="455299fd2e4b438ff8661df0bfd1cace" category="paragraph">다음 이미지는 각 구성 요소와 구성 요소 간에 준비해야 하는 연결을 보여줍니다.</block>
-  <block id="add26d38486fad5ca461f986832fa6c3" category="inline-image-macro">아키텍처 다이어그램</block>
-  <block id="955c6f1851b4039bd20ae31d5f14d338" category="paragraph"><block ref="955c6f1851b4039bd20ae31d5f14d338" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1ad1b9b9f7ac4090b8d287b119a246b7" category="doc">NetApp Backup and Recovery 개요에서 가상 머신 워크로드 보호</block>
-  <block id="f2e6828ccbddc013dabb3aca8551e78b" category="paragraph">NetApp Backup and Recovery 사용하여 가상 머신 워크로드를 보호하세요.  NetApp Backup and Recovery VM, 데이터 저장소 및 VMDK에 대해 빠르고 공간 효율적이며 충돌 일관성이 뛰어나고 VM 일관성이 있는 백업 및 복원 작업을 제공합니다.</block>
-  <block id="40c5998ccd6f421d1eaa29ece0c36b59" category="paragraph">Amazon Web Services S3, Microsoft Azure Blob, Google Cloud Platform 및 StorageGRID 에 데이터 저장소를 백업하고 가상 머신을 온프레미스 SnapCenter Plug-in for VMware vSphere 으로 복원할 수 있습니다.</block>
-  <block id="21b169a7cabe8831cd38ce5fb6f77475" category="paragraph">가상 머신 워크로드를 보호하는 방법에 대한 지침은 다음 항목을 참조하세요.</block>
-  <block id="49ef03573c7748afa14739a88a72a8fe" category="inline-link-macro">VMware 워크로드에 대한 정책 만들기</block>
-  <block id="f906bca37e956e72a0c25eb84a587aba" category="list-text"><block ref="f906bca37e956e72a0c25eb84a587aba" category="inline-link-macro-rx"></block></block>
-  <block id="533a49682158340fa752f41b001c3ed7" category="inline-link-macro">Amazon Web Services에 VMware 데이터스토어 백업</block>
-  <block id="28ed746142d082cc313c957c3916de57" category="list-text"><block ref="28ed746142d082cc313c957c3916de57" category="inline-link-macro-rx"></block></block>
-  <block id="b4d632569ac2a60a95624d732b062c21" category="inline-link-macro">VMware 데이터 저장소를 Microsoft Azure에 백업</block>
-  <block id="8452a00d810c3f304181a9750756e3c3" category="list-text"><block ref="8452a00d810c3f304181a9750756e3c3" category="inline-link-macro-rx"></block></block>
-  <block id="f54c20442d5c079704492d9e9cc632b0" category="inline-link-macro">VMware 데이터 저장소를 Google Cloud Platform에 백업</block>
-  <block id="08261c8a90295d24c0179c89fab872df" category="list-text"><block ref="08261c8a90295d24c0179c89fab872df" category="inline-link-macro-rx"></block></block>
-  <block id="d4e0304413c6571799459b3f2395df3b" category="inline-link-macro">VMware 데이터스토어를 StorageGRID 에 백업</block>
-  <block id="a8fdfae9cbcef9f449ea9eb2143c4f64" category="list-text"><block ref="a8fdfae9cbcef9f449ea9eb2143c4f64" category="inline-link-macro-rx"></block></block>
-  <block id="2f8f18e2be23909e758abe786154b05f" category="list-text"><block ref="2f8f18e2be23909e758abe786154b05f" category="inline-link-macro-rx"></block></block>
-  <block id="1f325f707555c5e4623d4ca3ed92bc14" category="inline-link-macro">VMware 워크로드에 대한 보호 관리</block>
-  <block id="6b5e78f60de50d17c6c9e6c26f183c04" category="list-text"><block ref="6b5e78f60de50d17c6c9e6c26f183c04" category="inline-link-macro-rx"></block></block>
-  <block id="4f42130e8cfb9f713223107cb029a735" category="doc">NetApp Backup and Recovery 사용하여 가상 머신 데이터 복원</block>
-  <block id="b9f7c26581cad3cbd789c6d293692814" category="admonition">여러 데이터 저장소에 걸쳐 있는 가상 머신은 복원할 수 없습니다.</block>
-  <block id="1c79f8653ccf267be1bce47f8ccf3d2f" category="list-text">대체 위치로 복원하는 경우:</block>
-  <block id="0bd63162a36deb15bb735dfc68ec0b84" category="list-text">소스 및 대상 vCenter가 연결 모드인지 확인하세요.</block>
-  <block id="ccea797bbf5eba8cc950fa05c806cd76" category="list-text">NetApp Console 의 *시스템* 페이지와 SnapCenter Plug-in for VMware vSphere 의 연결 모드 vCenter에 소스 및 대상 클러스터 세부 정보가 추가되었는지 확인하세요.</block>
-  <block id="52bda1d8d40e82cef23f0197a5e0c990" category="list-text">콘솔 UI에서 *보호* &gt; *백업 및 복구* &gt; *가상 머신* &gt; * SnapCenter Plug-in for VMware vSphere*을 선택하고 SnapCenter Plug-in for VMware vSphere 선택합니다.</block>
-  <block id="d180a4da8965c4cd5488cd05903774f0" category="list-text">데이터 저장소나 가상 머신에서 가상 머신을 원래 위치나 대체 위치로 복원할 수 있습니다.</block>
-  <block id="db5366d69994d30376d1a970dcebb9ce" category="cell">가상 머신을 복원하려면...</block>
-  <block id="5e2ad6fd9deb412d871137094ee43ef0" category="cell">이렇게 하세요...</block>
-  <block id="ccc5c5f6926c7affe9ddb8b5fd8e78d0" category="paragraph">데이터 저장소에서 원래 위치로</block>
-  <block id="7103002346129eef1e9f38419a6c849d" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 복원하려는 데이터 저장소에 해당하는 항목을 선택하고 *세부정보 보기*를 클릭합니다.</block>
-  <block id="a7b5011dd36cfe0539eff959f97ab523" category="list-text">복원하려는 백업에 해당하는 *복원*을 선택하세요.</block>
-  <block id="ce924f0dcf910e34ec23b7b7ca88af8d" category="list-text">백업에서 복원할 가상 머신을 선택하고 *다음*을 선택합니다.</block>
-  <block id="8cc375f4ce3601a663a600c7d8e620e5" category="list-text">*원본*이 선택되어 있는지 확인하고 *계속*을 선택하세요.</block>
-  <block id="793f88b02160a70ac96d346b799dd570" category="list-text">가상 머신이 보관 설정이 구성된 정책을 사용하여 보호되는 경우 *보관 복원 우선 순위*를 선택하고 *다음*을 선택합니다.</block>
-  <block id="5f6a823289f7bbe90f46815d77f2f0f9" category="list-text">세부 정보를 검토하고 *복원*을 선택하세요.</block>
-  <block id="c0df5d97adcf3825af806d990e658e67" category="paragraph">데이터 저장소에서 대체 위치로</block>
-  <block id="1be093b2878514e1a668a6557e0fa48f" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 복원하려는 데이터 저장소에 해당하는 항목을 선택하고 *세부 정보 보기*를 선택합니다.</block>
-  <block id="2f663ab73d99f410b05e9f748fdb9f69" category="list-text">*대체*를 선택하세요.</block>
-  <block id="1825907f18d398bff7d7bf89210651db" category="list-text">대체 vCenter Server, ESXi 호스트, 데이터스토어 및 네트워크를 선택합니다.</block>
-  <block id="94187c3780ece70dc5689a3db077e744" category="list-text">복원 후 VM의 이름을 입력하고 *계속*을 선택합니다.</block>
-  <block id="0236f808af929087f6a9616d379b96a4" category="paragraph">가상 머신에서 원래 위치로</block>
-  <block id="6cd8cc5fdd9e1409bcb46d17177068ee" category="list-text">작업 아이콘을 선택하세요<block ref="1d94ccc08c31bc8efbc06bfabc6854b6" category="inline-image-macro-rx" type="image"></block> 복원하려는 가상 머신에 해당하는 항목을 선택하고 *복원*을 선택합니다.</block>
-  <block id="071df86763e0e93af80e50596aa0710c" category="list-text">가상 머신을 복원할 백업을 선택합니다.</block>
-  <block id="ccb90cb50d99e7cb9712a836810d4fae" category="paragraph">가상 머신에서 대체 위치로</block>
   <block id="b92e6028af16604f3b6fd4eade9dfec6" category="summary">인터넷 접속이 불가능한 사이트("개인 모드"라고 함)에서 NetApp Backup and Recovery 사용하는 경우, NetApp Backup and Recovery 구성 데이터는 백업이 저장되는 StorageGRID 또는 ONTAP S3 버킷에 백업됩니다.  나중에 콘솔 에이전트 호스트 시스템에 문제가 발생하면 새로운 콘솔 에이전트를 배포하고 중요한 NetApp Backup and Recovery 데이터를 복원할 수 있습니다.</block>
   <block id="a215e32a572a4f73138eb57df3fb494d" category="doc">다크 사이트에서 NetApp Backup and Recovery 구성 데이터 복원</block>
   <block id="e49ea1690cc473e646cdffd861381cbc" category="paragraph">인터넷 접속이 불가능한 사이트(개인 모드)에서 NetApp Backup and Recovery 사용하는 경우, NetApp Backup and Recovery 구성 데이터는 백업이 저장되는 StorageGRID 또는 ONTAP S3 버킷에 백업됩니다.  콘솔 에이전트 호스트 시스템에 문제가 있는 경우 새로운 콘솔 에이전트를 배포하고 중요한 NetApp Backup and Recovery 데이터를 복원할 수 있습니다.</block>
@@ -4239,16 +4074,6 @@
   <block id="c00b274754a2d13242a61b1534660a37" category="sidebar">Microsoft SQL Server 인벤토리 관리</block>
   <block id="41e1a34ea3ba2b687b86e55ec1a7955d" category="sidebar">Microsoft SQL Server 스냅샷 관리</block>
   <block id="c8ffa42e0e508862d020665c979eb5c0" category="sidebar">Microsoft SQL Server 보고서 만들기</block>
-  <block id="b1b8c22062b7762d4a3c459e880dee3b" category="sidebar">VMware 워크로드 보호(VMware용 SnapCenter 플러그인 사용)</block>
-  <block id="7706cc052aa7120ddac8475709793258" category="sidebar">가상 머신 워크로드 보호 개요</block>
-  <block id="9ce88727019b612743000c7bcc2bfd23" category="sidebar">가상 머신 워크로드 보호를 위한 전제 조건</block>
-  <block id="776ec5ed6f61de56be98c037c8ca01c9" category="sidebar">가상 머신 데이터를 백업하기 위한 정책 생성</block>
-  <block id="1d5ad62b9217b4a3f085f517534f40bb" category="sidebar">Amazon Web Services에 데이터 저장소 백업</block>
-  <block id="32d2b45dd98e36ad888d7156b4532053" category="sidebar">Microsoft Azure에 데이터 저장소 백업</block>
-  <block id="eb1ab874b09a7eab583845e8576be828" category="sidebar">Google Cloud Platform에 데이터 저장소 백업</block>
-  <block id="ba7b66b996d8928df996e4fd4fffa4a4" category="sidebar">StorageGRID 에 데이터 저장소 백업</block>
-  <block id="9a3f2e7eb30992bb084418711e5093f2" category="sidebar">데이터스토어 및 가상 머신 데이터 보호 관리</block>
-  <block id="9234f5bc35aa09673eacbf8fece508db" category="sidebar">가상 머신 데이터 및 데이터 저장소 복원</block>
   <block id="a6c93de7c03701dfba222e9072ffe5e7" category="sidebar">KVM 워크로드 보호(미리 보기)</block>
   <block id="34caa737a5a671b66cc6fe7531c1f8b9" category="sidebar">복구 지점 마운트 및 마운트 해제</block>
   <block id="60c0c463b8839d0f2c5e5cea8fa728ad" category="sidebar">Kubernetes 워크로드 보호(미리 보기)</block>
@@ -4288,11 +4113,7 @@
   <block id="d4356e3242caba9699bd9bc147a04798" category="paragraph">복원 페이지(검색 및 복원)에서 필터를 사용하여 스냅샷을 검색하여 리소스를 복원할 수 있습니다. 정확한 이름, 위치 또는 마지막으로 알려진 날짜가 기억나지 않더라도 복원할 수 있습니다.</block>
   <block id="63751d750873479f94855f0a16fc63d8" category="list-text">Hyper-V Windows Server 호스트에 대한 소프트웨어 요구 사항:</block>
   <block id="fd7bb5c3777005321645f38a2d07ea27" category="admonition">복원 작업이 완료되지 않으면 작업 모니터에 "실패"가 표시될 때까지 기다린 후 복원 작업을 다시 시도하세요.</block>
-  <block id="df3ee99c8171743d8bd35d65cf62b2ed" category="paragraph">NetApp Backup and Recovery 사용하면 클라우드에서 온프레미스 vCenter Server로 가상 머신 데이터를 복원할 수 있습니다. 백업이 수행된 위치와 정확히 동일한 위치 또는 대체 위치로 가상 머신을 복원할 수 있습니다. 가상 머신이 보관 정책을 사용하여 백업된 경우 보관 복원 우선 순위를 설정할 수 있습니다.</block>
   <block id="51e153ee1aa6cdb4ca7796e926180b53" category="admonition">NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.<block ref="e56b09183f5489111204017fecace77e" category="inline-link-macro-rx"></block> .</block>
-  <block id="2f3b7eef1cf7df43dea1233ed03f5f42" category="list-text">콘솔의 *시스템* 페이지에서 다른 위치에 시스템이 추가되었는지 확인하세요.</block>
-  <block id="870482577443f708a74b9dbe9b8fe928" category="admonition">VMware vSphere vMotion을 사용하여 가상 머신을 이동하고 콘솔에서 복원하는 경우 백업 및 복구는 이를 원래 백업 위치로 복원합니다.</block>
-  <block id="6e6630b7443f8dd6eade1b55e3c59141" category="paragraph">Amazon Web Services의 경우 지원되는 보관 복원 우선 순위는 높음, 표준, 낮음이며, Microsoft Azure의 경우 높음과 표준입니다.</block>
   <block id="2f52181b09a7c053aed22699e227b9db" category="paragraph">클라우드 공급업체나 인터넷에 연결된 자체 호스트에 콘솔 에이전트를 배포하여 SaaS 환경에서 NetApp Backup and Recovery 사용하면 시스템이 클라우드에 있는 모든 중요한 구성 데이터를 백업하고 보호합니다.  콘솔 에이전트에 문제가 있는 경우 새 콘솔 에이전트를 만들고 시스템을 추가하세요.  백업 세부정보가 자동으로 복원됩니다.</block>
   <block id="361cc78877d7de2ea952f510e7626ad4" category="paragraph">이 데이터는 하루에 한 번 자정에 백업되며, 각 파일의 최대 7개 사본이 보관됩니다. 콘솔 에이전트가 여러 온프레미스 ONTAP 시스템을 관리하는 경우 NetApp Backup and Recovery 파일은 먼저 활성화된 시스템의 버킷에 저장됩니다.</block>
   <block id="2be5ff28599e1447ad26486d058560b3" category="paragraph">온프레미스 콘솔 에이전트가 작동을 멈추면 새 콘솔 에이전트를 설치한 다음 NetApp Backup and Recovery 데이터를 새 콘솔 에이전트로 복원해야 합니다.</block>
@@ -5232,4 +5053,5 @@
   <block id="a4af15d338a93411ae3eacbe3e9d1c5e" category="sidebar">KVM 워크로드 보호(미리보기)</block>
   <block id="bd7b6aa0517dacb10ee10e479293ef82" category="sidebar">Oracle Database 워크로드 보호(미리 보기)</block>
   <block id="72f656ffc88a48ec4092d869ae05c4e6" category="sidebar">VMware 워크로드 보호(SnapCenter Plug-in for VMware 없이)</block>
+  <block id="2e6a10996a90ae08a445bcd92b94e301" category="list-text">지원되는 연결형 스토리지: ONTAP 9.13 이상</block>
 </blocks>
