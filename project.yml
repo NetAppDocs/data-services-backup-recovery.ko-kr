@@ -120,7 +120,7 @@ sidebar:
         url: "/br-use-manage-snapshots.html"
       - title: Microsoft SQL Server 보고서 만들기
         url: "/br-use-reports.html"
-    - title: VMware 워크로드 보호(SnapCenter Plug-in for VMware 없이)
+    - title: VMware 워크로드 보호
       entries:
       - title: VMware 워크로드 보호 개요
         url: "/br-use-vmware-protect-overview.html"

@@ -10,9 +10,9 @@ Microsoft Hyper-V 워크로드 지원이 이제 NetApp Backup and Recovery에서
 
 
 
-=== 일반 공급(GA)에서 지원되는 KVM 워크로드
+=== 일반 출시(GA)에서 지원되는 VMware 워크로드
 
-NetApp Backup and Recovery에서 KVM 워크로드 지원이 이제 정식 출시(GA)되었습니다.
+NetApp Backup and Recovery에서 VMware 워크로드 지원이 이제 정식 출시(GA)되었습니다.
 
 
 
