@@ -137,3 +137,9 @@ NetApp Backup and Recovery BYOL 라이선스가 없는 경우 콘솔 오른쪽 �
 NetApp Console 사용하여 BYOL 라이선스를 관리합니다.  콘솔에서 새로운 라이선스를 추가하고, 기존 라이선스를 업데이트하고, 라이선스 상태를 볼 수 있습니다.
 
 https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html["라이선스 추가에 대해 알아보세요"^].
+
+
+
+== 라이선스 용량 초과
+
+라이선스 용량을 초과하면 PAYGO 요금이 적용됩니다. PAYGO 구독이 없으면 새 백업을 생성할 수 없지만 기존 백업은 서비스 보증 없이 복원 가능한 상태로 유지됩니다. 라이선스가 만료되기 전에 반드시 갱신하십시오. 만료된 라이선스는 새 백업을 방지하고 서비스를 중단시킵니다.
