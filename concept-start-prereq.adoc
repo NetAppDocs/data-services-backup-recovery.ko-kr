@@ -73,8 +73,8 @@ NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 
 
 
 | 필수 소프트웨어 패키지  a| 
-* ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)
-* 파워셸 7.4.2
+* ASP.NET Core Runtime 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치)
+* PowerShell 7.4.13
 
 
 지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT#welcome["NetApp 상호 운용성 매트릭스 도구"^] .
@@ -219,8 +219,8 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 * Hyper-V Windows Server 호스트에 대한 소프트웨어 요구 사항:
 +
 ** Microsoft Hyper-V 2019, 2022 및 2025 버전
-** ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)
-** PowerShell 7.4.2 이상
+** ASP.NET Core Runtime 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치)
+** PowerShell 7.4.13 이상
 ** 관리자 도메인에 속하지 않은 사용자가 Hyper-V VM을 보호하는 경우 사용자에게 다음 권한이 있는지 확인하세요.
 +
 *** 사용자가 로컬 관리자 그룹의 구성원인지 확인하세요.

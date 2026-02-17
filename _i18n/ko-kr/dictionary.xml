@@ -2025,8 +2025,6 @@
   <block id="074c2f1dacf9047766e7f8d5dce71060" category="paragraph">5GB</block>
   <block id="f3f916d11656905ba60e080b6d73ea62" category="paragraph">충분한 디스크 공간을 할당하고 로그 폴더의 저장 공간 소비량을 모니터링합니다.  필요한 로그 공간은 수행된 백업 횟수와 데이터 보호 작업 빈도에 따라 달라집니다.  충분한 공간이 없으면 작업에 대한 로그가 생성되지 않습니다.</block>
   <block id="c02f07fcd7047bf35e0bb82decca0939" category="cell">필수 소프트웨어 패키지</block>
-  <block id="fddae060f712e7706e9adb56d9a4fb40" category="list-text">ASP.NET Core Runtime 8.0.12 호스팅 번들(및 모든 후속 8.0.x 패치)</block>
-  <block id="f5b6b1603a32d7ce84d327505a80be82" category="list-text">파워셸 7.4.2</block>
   <block id="fdd736f6cacce38b5102696f59ea433a" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="c2340f294ea0edd3eaa143337cddb591" category="inline-link-rx"></block> .</block>
   <block id="573531ec152a1cc1709422d00088088e" category="section-title">VMware 워크로드 보호를 위한 요구 사항</block>
   <block id="4ccfae37bea4d344c283e2a68013c9c1" category="paragraph">VMware 워크로드를 검색하고 보호하려면 특정 요구 사항이 필요합니다.</block>
@@ -2075,7 +2073,6 @@
   <block id="e33a9836e18ab4c7f01ac49f666c4e33" category="section-title">Hyper-V 워크로드 보호를 위한 요구 사항</block>
   <block id="7e75f7658d8e69b52e07a066a4510af5" category="paragraph">Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정 요구 사항을 충족하는지 확인하세요.</block>
   <block id="99fcf7547e608c33c370f1d5fe54e0a9" category="list-text">Microsoft Hyper-V 2019, 2022 및 2025 버전</block>
-  <block id="4c6ec01f6ae03e08c146fe6865423a4b" category="list-text">PowerShell 7.4.2 이상</block>
   <block id="4c0e33820cc2625f20df7d75a7db2a90" category="list-text">Windows 방화벽 설정에서 다음 포트에 대해 양방향 HTTPS 트래픽이 허용되는지 확인하세요.</block>
   <block id="2f09bec2ba16dad8a4210aafc07d4e36" category="list-text">8144(Hyper-V용 NetApp 플러그인)</block>
   <block id="eeb69275da8e2dd563a27a05a24a4ff1" category="list-text">8145(Windows용 NetApp 플러그인)</block>
@@ -5052,4 +5049,7 @@
   <block id="dbeedec7ca35d125dd2a7ee8355c41f5" category="section-title">일반 출시(GA)에서 지원되는 VMware 워크로드</block>
   <block id="1fe60033089958dd8dab2fc11925056d" category="section-title">라이선스 용량 초과</block>
   <block id="73b5f5184f0b378b50b42a6e8ceb743c" category="paragraph">라이선스 용량을 초과하면 PAYGO 요금이 적용됩니다. PAYGO 구독이 없으면 새 백업을 생성할 수 없지만 기존 백업은 서비스 보증 없이 복원 가능한 상태로 유지됩니다. 라이선스가 만료되기 전에 반드시 갱신하십시오. 만료된 라이선스는 새 백업을 방지하고 서비스를 중단시킵니다.</block>
+  <block id="b9c809d8faa35e3cecf28c39b12a0890" category="list-text">ASP.NET Core Runtime 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치)</block>
+  <block id="d5339ec2460f6dc04a037cc1e0c21e2c" category="list-text">PowerShell 7.4.13</block>
+  <block id="6d379457554ecca51ab298da606eeb2d" category="list-text">PowerShell 7.4.13 이상</block>
 </blocks>
