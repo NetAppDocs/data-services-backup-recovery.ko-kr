@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: br-use-kubernetes-reports.html 
+keywords: backing up, back up, backup, backup on-prem ontap, policy, policies, backup policies, cloud backup, aws, aws s3, azure, google cloud 
+summary: Kubernetes 워크로드에 대한 보호 보고서를 생성하여 성공 및 실패한 백업 수, 백업 유형, 클러스터 상태 정보 등을 포함한 보호 상태 및 세부 정보를 확인할 수 있습니다. 
+---
+= NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고서를 생성하고 관리합니다.
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고서를 생성하여 성공 및 실패 백업 횟수, 백업 유형, 클러스터 상태 정보 등을 포함한 보호 상태 및 세부 정보를 확인할 수 있습니다.
+
+*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자, Backup and Recovery 백업 관리자 또는 Backup and Recovery 복원 관리자. link:reference-roles.html["백업 및 복구 역할과 권한"]에 대해 자세히 알아보십시오. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+
+
+
+== 보호 보고서 생성
+
+클러스터의 보호 상태를 확인하려면 보호 보고서를 생성하세요.
+
+.단계
+. NetApp Backup and Recovery 메뉴에서 *보고서* 옵션을 선택합니다.
+. *보고서 만들기*를 선택하세요.
+. 보고서 범위 세부 정보를 입력하세요.
++
+** *보고서 이름*: 보고서에 대한 고유한 이름을 입력하세요.
+** *보고서 유형*: 계정별 보고서 또는 워크로드별 보고서 중 원하는 유형을 선택하십시오(목록에서 Kubernetes를 선택하십시오).
+** *클러스터 선택*: 워크로드별로 선택한 경우, 보고서를 생성할 클러스터를 목록에서 선택하고 *Accept*를 선택하십시오. 모든 클러스터에 대한 보고서를 생성하려면 *Select all*을 선택하십시오.
+
+
+. 보고 범위 입력: 보고서에 포함할 데이터 기간을 최근 하루, 최근 7일, 최근 30일, 최근 분기 또는 최근 1년 중에서 선택하십시오.
+. 보고서 구성 세부 정보를 입력하십시오. 보고서를 한 번만 실행할지 또는 정기적으로 생성하도록 예약할지 선택하십시오. 예약 보고서의 경우, 반복 빈도를 선택하고 시작 날짜를 지정하십시오.
++
+.. 이메일 전송 세부 정보 입력: (예약된 보고서에만 해당) 이메일로 보고서를 전송하려면 예약된 보고서를 수신할 이메일 주소를 하나 이상 입력하십시오.
+
+
++
+설정 페이지에서 이메일 알림을 구성하세요. 이메일 알림 구성에 대한 자세한 내용은 다음을 참조하세요.link:br-start-configure.html["설정 구성"] .
+
+. *만들기*를 선택하세요.
+
+
+
+
+== 보호 보고서 다운로드
+
+생성된 보호 보고서를 JSON 파일 또는 PDF 문서로 다운로드하여 보고 공유할 수 있습니다.
+
+.단계
+. NetApp Backup and Recovery 메뉴에서 *보고서* 옵션을 선택합니다.
+. *Reports* 페이지에서 *Reports* 메뉴를 선택하면 생성된 보호 보고서 목록을 볼 수 있습니다.
+. 다운로드하려는 보고서에 대해 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *다운로드*를 선택하십시오.
++
+** *JSON 다운로드*를 선택하여 보고서를 JSON 형식으로 다운로드합니다.
+** 보고서를 PDF 문서로 다운로드하려면 *Download PDF*를 선택하세요.
+
+
+
+
+
+
+== 보호 보고서 보기
+
+NetApp Backup and Recovery에서 보호 보고서의 대화형 세부 정보를 빠르게 확인할 수 있습니다. 작업 요약 정보, 데이터 보호 상태, 구성 세부 정보 등을 볼 수 있습니다.
+
+.단계
+. NetApp Backup and Recovery 메뉴에서 *보고서* 옵션을 선택합니다.
+. *Reports* 페이지에서 *Reports* 메뉴를 선택하면 생성된 보호 보고서 목록을 볼 수 있습니다.
+. 보려는 보고서의 경우 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *보고서 보기*를 선택합니다.
++
+보고서 세부 정보가 표시됩니다.
+
+
+
+
+
+== 보호 보고서 삭제
+
+더 이상 필요하지 않은 경우 보호 보고서를 삭제하십시오.
+
+.단계
+. NetApp Backup and Recovery 메뉴에서 *보고서* 옵션을 선택합니다.
+. *Reports* 페이지에서 *Reports* 메뉴를 선택하면 생성된 보호 보고서 목록을 볼 수 있습니다.
+. 삭제하려는 보고서에서 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *삭제*를 선택하세요.
+. *삭제*를 선택하여 작업을 확인합니다.
+

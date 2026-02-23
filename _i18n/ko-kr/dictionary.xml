@@ -354,7 +354,6 @@
   <block id="e2b26238e3aec34978fbb465dfd6baff" category="list-text">VM을 대체 위치로 복원</block>
   <block id="fe8e9fc813c1e8a639c0cadb6115589f" category="list-text">SAN에 저장된 VM 보호</block>
   <block id="ca73b42f56baa81e1c83e31ee5c53d42" category="list-text">애플리케이션 보호</block>
-  <block id="d5598f128bb28f962fcd8574013f2a43" category="list-text">여러 KVM 호스트의 VM을 사용하여 보호 그룹 만들기</block>
   <block id="2fbb28a0f1560254b88f56b3632cf88b" category="list-text">사용자 정의 백업 생성( NetApp Console 에서 시작된 백업만 지원됨)</block>
   <block id="b26873df0260bdc332a7511f6823cf63" category="section-title">지원되지 않는 구성</block>
   <block id="f19c49e2c5af4fdef9d76da8243928b8" category="paragraph">다음 구성은 지원되지 않습니다.</block>
@@ -1698,8 +1697,6 @@
   <block id="793c79d603a2a6eb42272304c6135f12" category="list-text">올바른 애플리케이션 이름이 선택되었는지 확인하세요.</block>
   <block id="408156cb89b56d3b746dba5ade40b0e4" category="paragraph">콘솔은 애플리케이션의 백업을 생성하고 백업 및 복구의 *모니터링* 영역에 진행 상황을 표시합니다. 백업은 애플리케이션과 연결된 보호 정책을 기반으로 생성됩니다.</block>
   <block id="2f2fda22f167ad6c7dcc0ac3f92cd945" category="summary">NetApp Backup and Recovery 에서 백업 수, 성공적인 백업 수, 실패한 백업 수를 포함하여 백업 상태를 볼 수 있는 보고서를 만듭니다.  백업 유형, 백업에 사용된 저장 시스템, 백업 시간 등 각 백업의 세부 정보를 볼 수도 있습니다.</block>
-  <block id="8e6f4a9d7c64e35859548854a52b145a" category="doc">NetApp Backup and Recovery 에서 Microsoft SQL Server 워크로드에 대한 보고서 만들기</block>
-  <block id="df63e1970b7cb20512cb62b542bcd3f8" category="section-title">보고서 만들기</block>
   <block id="391ccda3039974f5c4561d91d157e4be" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 복제 관리자.  에 대해 알아보세요<block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block> .<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="a75db1c6ad7a6018f4076429dcb47fd8" category="list-text">NetApp Backup and Recovery 메뉴에서 *보고서* 옵션을 선택합니다.</block>
   <block id="3b0a91a5ea7b77db2fb83f740b7d1303" category="list-text">*보고서 만들기*를 선택하세요.</block>
@@ -4525,10 +4522,7 @@
   <block id="432d122bca6b826d0ff8b770008cb6da" category="list-text">Hyper-V의 "프로세서 호환성" 설정과 관계없이 CPU 제조사가 다른 시스템(Intel과 AMD 또는 그 반대) 간에는 가상 머신이나 가상 머신 데이터를 복원할 수 없습니다. 이 설정은 동일 제조사의 서로 다른 세대 프로세서(예: Intel 대 Intel 또는 AMD 대 AMD) 간의 호환성만 지원합니다.</block>
   <block id="cbf60595828cc0c9aea61a13478c0526" category="admonition">2026년 1월 19일 릴리스에서는 작업 메뉴의 *업그레이드* 옵션을 사용하여 Hyper-V 또는 Windows용 NetApp 플러그인을 업그레이드할 수 없습니다. 그 대신 각 Hyper-V 호스트를 제거한 다음 다시 추가하여 플러그인을 업데이트하십시오.</block>
   <block id="fa1b7fd0ad5ec372cdf9f907c6fbf709" category="section-title">문제 해결 참고 사항</block>
-  <block id="9bd2877d70202ee3498597fbe9e5cc2f" category="paragraph">NetApp Backup and Recovery 에서 KVM 워크로드의 비공개 미리 보기를 사용할 때 다음 사항에 유의하십시오.</block>
   <block id="ac034a836e482984e927ce7aef3a7bcc" category="list-text">KVM 워크로드 복원이 성공적으로 완료되도록 하려면 KVM 백업에 사용하는 보호 정책에서 *VM 일관성 스냅샷 사용* 설정이 활성화되어 있는지 확인하십시오.</block>
-  <block id="a9f8d95d40be1c757e5dddec176f49aa" category="list-text">Apache CloudStack에서 관리하는 KVM 호스트가 포함된 스토리지 풀을 백업하려면 모든 관리 호스트를 NetApp Backup and Recovery 에 추가해야 합니다. 임시 해결책으로 CloudStack에서 관리하는 모든 KVM 호스트를 NetApp Backup and Recovery 에 추가하십시오.</block>
-  <block id="a08807a7feb533e9af18670f44dd0184" category="list-text">보호 그룹에 속한 중지된 가상 머신은 백업할 수 없습니다. 임시 해결책으로, 백업을 시작하기 전에 중지된 VM을 보호 그룹에서 제거하십시오.</block>
   <block id="caf127224717f7d5605f4155b3a36376" category="list-text"><block ref="473bc5f1f9d293596a6cf3f7d880fe14" category="inline-xref-macro-rx"></block> NetApp Backup and Recovery 인증해야 하는 모든 Windows, Microsoft SQL Server, Oracle Database 또는 Linux 호스트에 적용됩니다. 여기에는 게스트 파일이나 폴더를 복원할 때 사용되는 Windows 게스트 OS 자격 증명이 포함됩니다.</block>
   <block id="a22707a596fa8306e8d6a5944e2eda1e" category="list-text"><block ref="89ad28258fc3723b5b08e269206e91aa" category="inline-xref-macro-rx"></block>. (KVM 워크로드에만 해당)</block>
   <block id="e0981966cb393b67a49dfbe74acbcaa9" category="paragraph">호스트 리소스에 대한 자격 증명을 추가하세요. NetApp Backup and Recovery 이러한 자격 증명을 사용하여 워크로드를 검색하고 백업 정책을 적용합니다.</block>
@@ -5052,4 +5046,46 @@
   <block id="b9c809d8faa35e3cecf28c39b12a0890" category="list-text">ASP.NET Core Runtime 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치)</block>
   <block id="d5339ec2460f6dc04a037cc1e0c21e2c" category="list-text">PowerShell 7.4.13</block>
   <block id="6d379457554ecca51ab298da606eeb2d" category="list-text">PowerShell 7.4.13 이상</block>
+  <block id="5a9e2fbc6e8b2849a76465cd1a86c575" category="doc">일반 공급(GA)에서 지원되는 KVM 워크로드</block>
+  <block id="e58f3c7a76cad4e6c2c7f515b3171f76" category="section-title">Kubernetes가 일반 공급(GA)에서 지원됩니다</block>
+  <block id="2c4d488d266d9d0655ce2e1451e05b2d" category="paragraph">Kubernetes 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다. 이번 Kubernetes 워크로드 릴리스에는 다음과 같은 향상된 기능도 포함되어 있습니다.</block>
+  <block id="2329c3692bdf2d2f098db291ec4e9427" category="paragraph">*보고서 지원*: 이제 NetApp Backup and Recovery로 보호되는 Kubernetes 클러스터 및 애플리케이션에 대한 보호 활동 보고서를 생성할 수 있습니다.</block>
+  <block id="2b9a71c68fa2528dcd54a63d6e7b908d" category="paragraph">NetApp Backup and Recovery에서 KVM 워크로드의 비공개 미리 보기를 사용할 때 다음 사항에 유의하십시오.</block>
+  <block id="bc077e67c7216de25b87f90d5ec28ac0" category="list-text">보호 대상 가상 머신에서 QEMU Guest Agent가 실행 중이 아니면 백업이 실패할 수 있습니다. 해결 방법으로 백업을 시작하기 전에 가상 머신에서<block ref="c17d9742912ea08e0cfecda90a08c954" prefix=" " category="inline-code"></block> 데몬이 실행 중인지 확인하십시오.</block>
+  <block id="66330fd6b5a015d85e0b01e96c040005" category="summary">Kubernetes 워크로드에 대한 보호 보고서를 생성하여 성공 및 실패한 백업 수, 백업 유형, 클러스터 상태 정보 등을 포함한 보호 상태 및 세부 정보를 확인할 수 있습니다.</block>
+  <block id="7e9944e42087b52e398e40511794ab10" category="doc">NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고서를 생성하고 관리합니다.</block>
+  <block id="59db8c9d0215fa2a51b2a35609aa5bbd" category="paragraph">NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고서를 생성하여 성공 및 실패 백업 횟수, 백업 유형, 클러스터 상태 정보 등을 포함한 보호 상태 및 세부 정보를 확인할 수 있습니다.</block>
+  <block id="6f0eb8b8a8ac47dbe395a0547f6dba8d" category="paragraph">*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자, Backup and Recovery 백업 관리자 또는 Backup and Recovery 복원 관리자. <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="d45ba014e75a2424453d999d1ec1584d" category="section-title">보호 보고서 생성</block>
+  <block id="cf9569ff04e8697d933d86bb055b6753" category="paragraph">클러스터의 보호 상태를 확인하려면 보호 보고서를 생성하세요.</block>
+  <block id="764cb0718c60ad28fec23c72e06cd3eb" category="list-text">*보고서 유형*: 계정별 보고서 또는 워크로드별 보고서 중 원하는 유형을 선택하십시오(목록에서 Kubernetes를 선택하십시오).</block>
+  <block id="32e7d2bef37709329417fce15d4ef70a" category="list-text">*클러스터 선택*: 워크로드별로 선택한 경우, 보고서를 생성할 클러스터를 목록에서 선택하고 *Accept*를 선택하십시오. 모든 클러스터에 대한 보고서를 생성하려면 *Select all*을 선택하십시오.</block>
+  <block id="4aa69b04f720d9cf28bddc129bdda982" category="list-text">보고 범위 입력: 보고서에 포함할 데이터 기간을 최근 하루, 최근 7일, 최근 30일, 최근 분기 또는 최근 1년 중에서 선택하십시오.</block>
+  <block id="8b1d3f0d4147e569670599b2074a9453" category="list-text">보고서 구성 세부 정보를 입력하십시오. 보고서를 한 번만 실행할지 또는 정기적으로 생성하도록 예약할지 선택하십시오. 예약 보고서의 경우, 반복 빈도를 선택하고 시작 날짜를 지정하십시오.</block>
+  <block id="cf5d0c81e1ff395be07be7ab39b273a2" category="list-text">이메일 전송 세부 정보 입력: (예약된 보고서에만 해당) 이메일로 보고서를 전송하려면 예약된 보고서를 수신할 이메일 주소를 하나 이상 입력하십시오.</block>
+  <block id="6966f88ce9330f288d2ff468e8f1bf31" category="section-title">보호 보고서 다운로드</block>
+  <block id="ca0fab6dece474777af6f27a9ab6f7bf" category="paragraph">생성된 보호 보고서를 JSON 파일 또는 PDF 문서로 다운로드하여 보고 공유할 수 있습니다.</block>
+  <block id="16d046f9df08fac82032019de67dd111" category="list-text">*Reports* 페이지에서 *Reports* 메뉴를 선택하면 생성된 보호 보고서 목록을 볼 수 있습니다.</block>
+  <block id="46d0b33f9602910da192296aa16047c8" category="list-text">다운로드하려는 보고서에 대해 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *다운로드*를 선택하십시오.</block>
+  <block id="3e67afef1e2a25129f8131a465c1f233" category="list-text">*JSON 다운로드*를 선택하여 보고서를 JSON 형식으로 다운로드합니다.</block>
+  <block id="6a6e83b2656cc80c95ff1d51721fdfdf" category="list-text">보고서를 PDF 문서로 다운로드하려면 *Download PDF*를 선택하세요.</block>
+  <block id="907ad6bf80ead0c498e1b96eeac0931b" category="section-title">보호 보고서 보기</block>
+  <block id="5ec71cd773423bccb3eb37e7ca0de834" category="paragraph">NetApp Backup and Recovery에서 보호 보고서의 대화형 세부 정보를 빠르게 확인할 수 있습니다. 작업 요약 정보, 데이터 보호 상태, 구성 세부 정보 등을 볼 수 있습니다.</block>
+  <block id="4282f8fe4c83ccf233576c6529acd9cf" category="list-text">보려는 보고서의 경우 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *보고서 보기*를 선택합니다.</block>
+  <block id="ba033453bbd04ac2ce08fa3e831d97b0" category="paragraph">보고서 세부 정보가 표시됩니다.</block>
+  <block id="a1c5f902308b29e3dc37ca9471a1016c" category="section-title">보호 보고서 삭제</block>
+  <block id="ba71a8f948ce2ac60c238f470758a980" category="paragraph">더 이상 필요하지 않은 경우 보호 보고서를 삭제하십시오.</block>
+  <block id="583b019e08073df7e3a4598861ee7567" category="list-text">삭제하려는 보고서에서 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *삭제*를 선택하세요.</block>
+  <block id="ea78509096df982db8c5234ed6ea3e7c" category="list-text">*삭제*를 선택하여 작업을 확인합니다.</block>
+  <block id="9c7a2480e98d69e7a466d0b0fd60ac07" category="list-text">보호 그룹을 편집합니다.</block>
+  <block id="3b8d8ee10228976bdc630252832886f7" category="list-text">호스트를 선택하면 해당 호스트에서 사용 가능한 VM 목록이 표시됩니다. 검색된 모든 호스트의 VM을 포함하려면 호스트 목록에서 *All*을 선택하십시오.</block>
+  <block id="fc20073811aa1e335ccc2bd9d99eebc7" category="list-text">보호 그룹에 포함할 개별 VM을 선택하거나 목록의 모든 VM을 포함하려면 *모두*를 선택합니다.</block>
+  <block id="b40b521f6bdf32a177d77954a599ae27" category="paragraph">선택한 VM은 *추가된 가상 머신* 영역에 나타납니다. 목록에서 개별 VM을 제거하거나 목록을 완전히 비울 수 있습니다. 여러 KVM 호스트의 VM을 목록에 추가할 수 있습니다.</block>
+  <block id="a9e57cec2c8ac57d718acff237fa31e8" category="list-text">보호 그룹에 적용할 보호 정책을 선택하거나 *새 정책 생성*을 선택하여 새 정책을 생성하십시오.</block>
+  <block id="7e6254a3c499887f0d500958fc6584ed" category="paragraph">보호 그룹을 삭제하고 다시 생성하지 않고 보호 그룹의 세부 정보를 변경해야 하는 경우 보호 그룹을 편집하십시오.</block>
+  <block id="78fa67c28bf09a9555618080f725243c" category="list-text">보호 그룹의 일반 세부 정보 및 VM에 필요한 변경 사항을 적용하십시오.</block>
+  <block id="3573adc4fce66bc7bb13c8f35b9d7e90" category="list-text">필요한 경우 보호 그룹과 연결된 정책을 변경하십시오.</block>
+  <block id="64599804111c69e57052c204fb880b42" category="doc">NetApp Backup and Recovery에서 Microsoft SQL Server 워크로드에 대한 보호 보고서를 생성합니다</block>
+  <block id="8b3c75a910501c009c7e86f190f1825d" category="section-title">2026년 2월 23일</block>
+  <block id="175ddb68a640ea3daeb84c25a2402e6f" category="sidebar">보호 보고서 생성 및 관리</block>
 </blocks>

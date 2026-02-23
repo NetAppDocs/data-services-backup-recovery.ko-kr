@@ -210,6 +210,8 @@ sidebar:
         url: "/br-use-manage-kubernetes-applications.html"
       - title: Kubernetes 워크로드에 대한 실행 후크 템플릿 관리
         url: "/br-use-manage-execution-hook-templates.html"
+      - title: 보호 보고서 생성 및 관리
+        url: "/br-use-kubernetes-reports.html"
     - title: 작업 모니터링
       url: "/br-use-monitor-tasks.html"
     - title: NetApp Backup and Recovery 다시 시작하세요
