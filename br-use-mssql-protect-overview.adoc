@@ -78,9 +78,6 @@ NetApp Backup and Recovery 사용하면 다음 소스 시스템의 Microsoft SQL
 
 
 | StorageGRID | Cloud Volumes ONTAP 온프레미스 ONTAP 시스템 | 온프레미스 ONTAP 시스템 ONTAP S3 
-
-
-| Amazon FSx for NetApp ONTAP | Amazon FSx for NetApp ONTAP | 해당 없음 
 |===
 
 NOTE: "사내 ONTAP 시스템"에 대한 참조에는 FAS 및 AFF 시스템이 포함됩니다.
