@@ -5047,7 +5047,6 @@
   <block id="d5339ec2460f6dc04a037cc1e0c21e2c" category="list-text">PowerShell 7.4.13</block>
   <block id="6d379457554ecca51ab298da606eeb2d" category="list-text">PowerShell 7.4.13 이상</block>
   <block id="5a9e2fbc6e8b2849a76465cd1a86c575" category="doc">일반 공급(GA)에서 지원되는 KVM 워크로드</block>
-  <block id="e58f3c7a76cad4e6c2c7f515b3171f76" category="section-title">Kubernetes가 일반 공급(GA)에서 지원됩니다</block>
   <block id="2c4d488d266d9d0655ce2e1451e05b2d" category="paragraph">Kubernetes 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다. 이번 Kubernetes 워크로드 릴리스에는 다음과 같은 향상된 기능도 포함되어 있습니다.</block>
   <block id="2329c3692bdf2d2f098db291ec4e9427" category="paragraph">*보고서 지원*: 이제 NetApp Backup and Recovery로 보호되는 Kubernetes 클러스터 및 애플리케이션에 대한 보호 활동 보고서를 생성할 수 있습니다.</block>
   <block id="2b9a71c68fa2528dcd54a63d6e7b908d" category="paragraph">NetApp Backup and Recovery에서 KVM 워크로드의 비공개 미리 보기를 사용할 때 다음 사항에 유의하십시오.</block>
@@ -5088,4 +5087,6 @@
   <block id="64599804111c69e57052c204fb880b42" category="doc">NetApp Backup and Recovery에서 Microsoft SQL Server 워크로드에 대한 보호 보고서를 생성합니다</block>
   <block id="8b3c75a910501c009c7e86f190f1825d" category="section-title">2026년 2월 23일</block>
   <block id="175ddb68a640ea3daeb84c25a2402e6f" category="sidebar">보호 보고서 생성 및 관리</block>
+  <block id="1d30989467a5dda6a77c2158034a190b" category="paragraph">NetApp Backup and Recovery에서 KVM 워크로드 지원이 이제 정식 출시(GA)되었습니다.</block>
+  <block id="403eb7104337d3b7cb0c9cbd6a28b588" category="section-title">일반 공급(GA)에서 지원되는 Kubernetes 워크로드</block>
 </blocks>
