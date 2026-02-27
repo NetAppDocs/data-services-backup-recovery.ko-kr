@@ -144,7 +144,7 @@ sidebar:
             url: "/br-use-vmware-restore-guest-files-and-folders-from-vmdks.html"
           - title: 게스트 파일 복원 문제 해결
             url: "/br-use-vmware-guest-file-restore-scenarios-you-might-encounter.html"
-    - title: KVM 워크로드 보호(미리 보기)
+    - title: KVM 워크로드 보호
       entries:
       - title: KVM 워크로드 보호 개요
         url: "/br-use-kvm-protect-overview.html"
@@ -182,7 +182,7 @@ sidebar:
         url: "/br-use-oracle-restore.html"
       - title: 복구 지점 마운트 및 마운트 해제
         url: "/br-use-oracle-mount-unmount.html"
-    - title: Kubernetes 워크로드 보호(미리 보기)
+    - title: Kubernetes 워크로드 보호
       entries:
       - title: Kubernetes 워크로드 보호 개요
         url: "/br-use-kubernetes-protect-overview.html"
