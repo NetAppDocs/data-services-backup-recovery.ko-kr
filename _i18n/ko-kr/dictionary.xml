@@ -670,13 +670,7 @@
   <block id="acaaf9de0e4071fe117da04dbbe9565d" category="list-text">KVM 타일에서 *검색 및 관리*를 선택합니다.</block>
   <block id="12d8eeba7e97739f6035cbec50bd2369" category="list-text">*작업 유형*: *KVM*을 선택하세요.</block>
   <block id="238fb750ebdea9faf36668536aaa8b42" category="paragraph">KVM 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩니다.</block>
-  <block id="945f74309f719db5d0fb0d1bb5a31781" category="paragraph">NetApp Backup and Recovery Oracle 데이터베이스를 먼저 검색하여 보호해야 합니다.</block>
-  <block id="bf36d800e1bbaf0ef44cd361867e4e09" category="section-title">Oracle 호스트를 추가하고 리소스를 검색합니다.</block>
   <block id="8160dc72c9473d18119ea3e52fe65572" category="paragraph">Oracle 호스트 정보를 추가하고 NetApp Backup and Recovery 워크로드를 검색하도록 합니다. 각 콘솔 에이전트 내에서 워크로드를 검색할 시스템을 선택합니다.</block>
-  <block id="bdd8003feffb3131de98b744d8d7e952" category="list-text">*작업 유형*: *Oracle*을 선택하세요.</block>
-  <block id="c758c27facd2d09f2ccc8fc60719f412" category="list-text">아직 이 Oracle 호스트에 대한 자격 증명을 저장하지 않은 경우 *자격 증명 추가*를 선택합니다.</block>
-  <block id="8bd91057b53c6035123596e5f2ba38ab" category="list-text">*호스트 등록*: 새로운 Oracle 호스트를 추가합니다.  호스트의 FQDN 또는 IP 주소, 자격 증명, 콘솔 에이전트 및 포트 번호를 입력하세요.</block>
-  <block id="5ea9a0faddd392a3b490b6e503bc42b2" category="paragraph">Oracle 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩니다.</block>
   <block id="5b9d0f0da934c7776ba30ad3c1fe47b2" category="doc">Microsoft SQL Server 워크로드를 검색하고 NetApp Backup and Recovery 에서 SnapCenter 에서 선택적으로 가져오기</block>
   <block id="cd6726508604886a0b7b678ad4f6a2b8" category="paragraph">NetApp Backup and Recovery 서비스를 사용하려면 먼저 Microsoft SQL Server 워크로드를 검색해야 합니다.  이미 SnapCenter 설치되어 있는 경우 SnapCenter 에서 백업 데이터와 정책을 가져올 수도 있습니다.</block>
   <block id="da39a7712232603b7b60f32ff70cea25" category="section-title">Microsoft SQL Server 워크로드를 검색하고 선택적으로 SnapCenter 리소스를 가져옵니다.</block>
@@ -1364,7 +1358,6 @@
   <block id="81397f7503542040ff1aa87c847e281b" category="list-text">계속하려면 *건너뛰기*를 선택하세요.</block>
   <block id="67728477667cd78a4cb8ac8a3336c7ef" category="paragraph">Microsoft SQL Server 워크로드의 복제본을 분할할 수 있습니다.  복제본을 분할하면 복제본에서 새로운 백업이 생성됩니다.  새로운 백업을 사용하여 작업 부하를 복원할 수 있습니다.</block>
   <block id="f4ed3104414bb69a5dfac99135ef72f2" category="paragraph">클론을 독립 클론이나 장기 클론으로 분할할 수 있습니다.  마법사는 SVM에 포함된 집계 목록, 해당 크기, 복제된 볼륨이 있는 위치를 보여줍니다.  NetApp Backup and Recovery 복제본을 분할할 충분한 공간이 있는지 여부도 나타냅니다.  복제본이 분할된 후 복제본은 보호를 위한 독립적인 데이터베이스가 됩니다.</block>
-  <block id="fc54fcad59dc4a5ea9c76bbb98303c4a" category="paragraph">복제 작업은 제거되지 않으며 다른 복제에 다시 재사용될 수 있습니다.</block>
   <block id="3cc3bf063b3735dfee9852891c6d4ef6" category="list-text">복제본을 선택하세요.</block>
   <block id="42db557ffc18279f75ced7531cb65db0" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *분할 복제*.</block>
   <block id="91a9421f27cf61e52bea5d9c90e7f79e" category="list-text">분할된 클론의 세부 정보를 검토하고 *분할*을 선택합니다.</block>
@@ -1478,7 +1471,6 @@
   <block id="d8e3db119b7cf9c31602a2121bfa4365" category="list-text">백업할 데이터베이스를 선택하세요.</block>
   <block id="77b7ee08ed330c77cd76797cc7019357" category="doc">NetApp Backup and Recovery 사용하여 Oracle 데이터베이스 복구 지점을 마운트 및 마운트 해제합니다.</block>
   <block id="797c8d8b5a0f5a880bd15fd855682db6" category="paragraph">복구 작업을 수행하기 위해 제어된 상태에서 데이터베이스에 액세스해야 하는 경우 Oracle 데이터베이스 복구 지점을 마운트할 수 있습니다.</block>
-  <block id="079a3f8ec0bb95d8f0ae5d36f04de7c4" category="section-title">Oracle 데이터베이스 복원 지점 마운트</block>
   <block id="027d1aa00ef27e7ff911f7a3ecb49c5d" category="list-text">Oracle 타일을 선택하세요.</block>
   <block id="3fe9c6f0345265378a65d07de3e0456f" category="list-text">백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.</block>
   <block id="872dd4524336673d42ecaa46bc8eb4a9" category="list-text">목록에서 Oracle Database 워크로드에 대해 *보기*를 선택합니다.</block>
@@ -1492,7 +1484,6 @@
   <block id="96a0bc8738e149cc2c970e821cab7d08" category="paragraph">백업 및 복구에 사용해야 하는 마운트 경로가 표시됩니다.</block>
   <block id="da4155d1cceea0707c4abe61465647f3" category="list-text">*마운트*를 선택하세요.</block>
   <block id="87f1df33c9d0ca12a7396f2e8f264291" category="paragraph">복구 지점은 Oracle 호스트에 마운트됩니다.</block>
-  <block id="ce5c6f3695f2913abcf739f0f30f1067" category="section-title">Oracle 데이터베이스 복원 지점 마운트 해제</block>
   <block id="078e01c25936988332a6694f6b3c4157" category="paragraph">더 이상 해당 데이터베이스에 대한 변경 사항을 볼 필요가 없으면 복구 지점을 마운트 해제합니다.</block>
   <block id="a8e9d9645fc4e43a4a7ce0324acee062" category="list-text">목록에서 Oracle 워크로드에 대해 *보기*를 선택합니다.</block>
   <block id="6f951d1c709837901904521a57b0a9f4" category="list-text">목록에서 복구 지점을 선택하고 작업 아이콘을 선택하세요.<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *마운트 해제*.</block>
@@ -4912,7 +4903,6 @@
   <block id="d07e8f6398c66f7d79a80768d3aa858b" category="inline-link-macro">지금 바로 Oracle Database 워크로드를 백업하세요</block>
   <block id="5361440c8196cc52ba89e8281bc2ef22" category="list-text">지금 바로 보호 그룹을 백업하세요. <block ref="0b07e2abdc1829709878f1d54c90a7ab" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="ecd7b1e39a181dfd260b4d2201a85373" category="paragraph">Oracle Database 워크로드 미리 보기에서는 사용할 수 없습니다.</block>
-  <block id="930da9bc61f880bd2f19e2938c5376f6" category="list-text">*워크로드*: 예로는 Microsoft SQL Server, 볼륨, VMware, KVM, Hyper-V, Oracle Database 또는 Kubernetes가 있습니다.</block>
   <block id="a1b57f3367efea5ba168ebc1b00dfb09" category="list-text">*3-2-1 팬아웃*: 운영 스토리지(디스크)에서 2차 스토리지(디스크)를 거쳐 클라우드(오브젝트 스토어)로. ONTAP에서 ONTAP로, ONTAP에서 오브젝트 스토어로 구성하는 것과 같이 서로 다른 스토리지 시스템에 걸쳐 데이터의 여러 복사본을 생성합니다. 클라우드 하이퍼스케일러 오브젝트 스토어 또는 프라이빗 오브젝트 스토어가 될 수 있습니다. 이러한 구성은 최적의 데이터 보호 및 재해 복구를 달성하는 데 도움이 됩니다.</block>
   <block id="7257ebd350ec9dc53fbb407575e942c9" category="open-title">웹 UI를 사용하여 애플리케이션 추가</block>
   <block id="7eb786201a1068df31c2a8d7805c50bf" category="open-title">CR을 사용하여 애플리케이션 추가</block>
@@ -5078,4 +5068,46 @@
   <block id="2432a396f38937322a4e606bf0aa7f0a" category="list-text">Microsoft Azure Blob(VMware 워크로드에는 사용할 수 없음)</block>
   <block id="ab95f28db65589c3a2b5f277f324e60b" category="list-text">ONTAP S3(VMware 워크로드에는 사용할 수 없음)</block>
   <block id="1d57820923cf47d0bb8ab74db80344ab" category="list-text">ONTAP 9.15.1에서는 "찾아보기 및 복원" 옵션을 사용하여 FlexGroup 폴더를 복원할 수 있습니다.</block>
+  <block id="5bc860fb25e08cbdf4fb6e1eb9fa16c9" category="paragraph">Oracle 데이터베이스를 검색하면 NetApp Backup and Recovery에서 백업 및 스냅샷을 생성하고 복원하여 데이터베이스를 보호할 수 있습니다.</block>
+  <block id="e82e6b5a702d1fc223d9ea698359376e" category="section-title">Oracle 데이터베이스 호스트를 추가하고 리소스를 검색합니다</block>
+  <block id="b5476a384252538238d37795b3f8f5a1" category="list-text">*워크로드 유형* 필드에서 *Oracle*을 선택하십시오.</block>
+  <block id="3dcf508963e6fe907e0ca3a4c9693fd9" category="list-text">이 Oracle Database 호스트에 대한 자격 증명을 아직 저장하지 않은 경우 *자격 증명 추가*를 선택하십시오.</block>
+  <block id="19c33f5bda8d2b67e3f14b642d95e9ec" category="list-text">*호스트 등록*: 새 Oracle 데이터베이스 호스트를 추가합니다. 호스트의 FQDN 또는 IP 주소, 자격 증명, Console 에이전트 및 포트 번호를 입력하십시오.</block>
+  <block id="2e9227201c87c406d2477a129cc51bf0" category="list-text">(선택 사항) 루트 사용자가 아닌 사용자의 자격 증명을 선택하는 경우 다음을 수행하십시오.</block>
+  <block id="a70d5c13d6b7f41208490c29f59e3063" category="list-text">선택한 루트가 아닌 사용자를 Oracle 데이터베이스 호스트의 sudoers 파일에 추가하는 방법에 대한 지침을 보려면 *sudoers 구성*을 선택하십시오.</block>
+  <block id="bf8e3c6752e8047e150b1ede213faaf5" category="list-text">대화 상자의 지침을 따르고 완료되면 확인란을 활성화한 다음 *완료*를 선택하십시오.</block>
+  <block id="4388b2b0f034ea64ddb691069cae7e62" category="list-text">*고급 설정*: 다음을 수행하십시오:</block>
+  <block id="c9bc8bea020f64d04a5acca88723ddfd" category="list-text">NetApp 플러그인에 사용할 포트와 설치 경로를 입력하십시오. 이 플러그인을 사용하면 Oracle 데이터베이스 호스트와 NetApp Backup and Recovery 간의 통신이 가능해집니다.</block>
+  <block id="d24f4a3688f3efcb4c012c56b0cbe72b" category="list-text">NetApp Backup and Recovery에서 플러그인을 자동으로 설치하도록 허용할지 또는 설치를 건너뛸지 선택하십시오(설치를 건너뛰는 경우 호스트에 플러그인을 수동으로 설치해야 합니다).</block>
+  <block id="7ed97ae916d37ed8443606f5c8ac4fbb" category="list-text">사전 설치 점검을 수행할지 또는 건너뛸지 선택하십시오.</block>
+  <block id="25f9ab167417178f57bb91f475e3b1b1" category="paragraph">Oracle 데이터베이스 워크로드는 인벤토리 페이지의 워크로드 목록에 표시됩니다.</block>
+  <block id="30000add7aaf9253676b4000b4de34d5" category="paragraph">클론 작업은 제거되지 않으며 다른 클론에 다시 사용할 수 있습니다.</block>
+  <block id="cd988024594d1879c00a0562b6e05d11" category="summary">NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 복제하세요.</block>
+  <block id="0a2540edb55d3589a778219595c0a236" category="doc">NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 복제합니다</block>
+  <block id="4c35109db8b6bd097c28381279b0921a" category="paragraph">NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 시스템의 Oracle 데이터베이스 쓰기 가능한 복제본을 기본 또는 2차 스토리지에 생성할 수 있습니다. 복제본의 수명 주기를 관리하여 지정된 일정에 따라 주기적으로 새로 고쳐지도록 할 수 있습니다.</block>
+  <block id="6762b8756c91b8a3858e4cd8e6c3fd13" category="section-title">Oracle 데이터베이스의 클론 생성</block>
+  <block id="45f1217ea429824adb8728761976bdd4" category="paragraph">기존 스냅샷에서 즉시 클론을 생성합니다. 이 방법을 사용하여 스냅샷에서 지속적으로 새로 고쳐지지 않는 일회성 클론을 생성합니다.</block>
+  <block id="9de0e2b17d7e1e2da6c0ce7e9dc6e377" category="list-text">*Clone*을 선택합니다.</block>
+  <block id="217a3032cd4179f2b9c8e8c54e28dc5f" category="list-text">*데이터베이스 소스* 섹션에서 목록에서 소스 호스트와 데이터베이스를 선택합니다.</block>
+  <block id="a34f2c4ba7ebd928bc52c6458240ba79" category="list-text">*데이터베이스 대상* 섹션에서 목록에서 대상 호스트와 데이터베이스를 선택합니다. 대상 호스트와 데이터베이스는 원본과 다를 수 있습니다.</block>
+  <block id="98e04edfb16ae23e37276c1b10bb37f5" category="list-text">*Select restore point* 페이지의 *Clone from* 섹션에서 *Existing snapshots*을 선택합니다.</block>
+  <block id="624f61dd9e5f153789e0f1474e3af02a" category="list-text">목록에서 복제본의 기준으로 사용할 기존 스냅샷(복원 지점)을 선택하고 *Next*를 선택합니다.</block>
+  <block id="250bd2e0fd20f197756f90da65d7b032" category="paragraph">스냅샷이 두 개 이상의 위치에 저장된 경우 *스냅샷 위치 선택*이 나타납니다.</block>
+  <block id="59b1d9c0faeccb050b2ae82254459fd3" category="list-text">사용할 스냅샷 위치를 선택하고 * 다음 * 을 선택합니다.</block>
+  <block id="b2fe9cdb3dfb44588722f86420682e65" category="list-text">*고급 옵션* 페이지에서 다음을 수행하십시오.</block>
+  <block id="20decfe57e54a87359cea95bba79c274" category="list-text">이전에 사양 파일을 저장한 경우, 해당 파일을 업로드하여 복제된 데이터베이스 설정을 사용자 지정할 수 있습니다. 또한 데이터베이스 스냅샷에 대한 기본 사양 파일을 다운로드할 수도 있습니다.</block>
+  <block id="3c7b24476512ff19d3887cbbaf0c549e" category="list-text">*Recovery scope* 섹션에서 복제본을 생성할 때 복원할 데이터를 제한하는 방법을 선택하고 선택한 옵션에 필요한 정보를 입력하십시오. *None*을 선택하면 모든 데이터가 복원됩니다.</block>
+  <block id="3360c6db4a303d4e7db0bf74d740c00f" category="list-text">*Prescripts and postscripts* 섹션에서 *Prescript* 및 *Postscript* 옵션 중 하나 또는 둘 다를 활성화하여 클론 작업이 시작되기 전이나 완료된 후에 스크립트를 실행할 수 있습니다. 각 옵션에 대해 전체 스크립트 경로와 필요한 인수를 입력하십시오.</block>
+  <block id="50059824044533f44d3ae954c21388e4" category="section-title">Oracle 데이터베이스의 클론 예약</block>
+  <block id="15e0124ddc742fcfe98d5dda893c46e7" category="paragraph">데이터베이스 복제본을 즉시 생성하고 복제본을 지속적으로 새로 고치도록 예약합니다. 이렇게 하면 데이터베이스의 최신 복제본이 생성됩니다. 선택한 일정에 따라 데이터베이스의 최신 상태에서 복제본을 지속적으로 새로 고치려면 이 방법을 사용하십시오.</block>
+  <block id="beed2b8d7c8943c45007114d3902e342" category="list-text">*복원 지점 선택* 페이지의 *복제 원본* 섹션에서 *즉시 스냅샷 및 복제*를 선택합니다.</block>
+  <block id="5eb27b07ac88ccc12c3c2eee2489d1df" category="list-text">스냅샷이 생성될 때 저장할 위치를 선택합니다.</block>
+  <block id="3be58c81d9fd861bc0413b8f72e39d9c" category="list-text">복제된 데이터베이스 설정을 사용자 지정하려면 *대상 데이터베이스 매개변수 사용자 지정* 옵션을 활성화하십시오. 이전에 사양 파일을 저장한 경우 이 옵션을 사용하여 해당 파일을 업로드하고 복제된 데이터베이스 설정을 사용자 지정할 수 있습니다. 또한 현재 설정을 반영하는 데이터베이스의 기본 사양 파일을 다운로드할 수도 있습니다.</block>
+  <block id="12955fb7f90e9645025713968aacbab9" category="list-text">*Clone refresh schedule* 섹션에서 클론을 새로 고칠 시점과 빈도를 선택하세요. 클론을 새로 고치면 인스턴트 스냅샷이 다시 생성되고 기존 클론이 새 클론으로 덮어쓰여집니다.</block>
+  <block id="39705154f7358a24581822dc4f6d05f2" category="paragraph">Oracle 데이터베이스 워크로드의 클론을 분할할 수 있습니다. 클론을 분할하면 클론으로부터 새로운 백업이 생성됩니다. 이 새로운 백업을 사용하여 데이터베이스를 복원할 수 있습니다.</block>
+  <block id="20794590d8be25afeadb46ebb7aac87d" category="paragraph">Oracle Database 워크로드의 복제본을 삭제할 수 있습니다. 복제본을 삭제하면 객체 저장소에서 제거되어 스토리지 공간이 확보됩니다.</block>
+  <block id="9584ee8db3d24be1a3a6e4d94ece5c2e" category="section-title">Oracle 데이터베이스 복구 지점 마운트</block>
+  <block id="8616a450958f68321bde3e8f34b8c9c5" category="section-title">Oracle 데이터베이스 복구 지점을 마운트 해제합니다</block>
+  <block id="df197f1a2e9f772f8de9983ed94d9541" category="list-text">*워크로드*: 예를 들어 Microsoft SQL Server, ONTAP 볼륨, VMware, KVM, Hyper-V, Oracle 데이터베이스 또는 Kubernetes가 있습니다.</block>
+  <block id="e1589447f05ccd92a0e9ade876573b81" category="sidebar">Oracle 데이터베이스 워크로드 복제</block>
 </blocks>

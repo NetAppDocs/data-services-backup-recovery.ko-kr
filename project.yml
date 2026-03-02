@@ -178,6 +178,8 @@ sidebar:
         url: "/br-use-oracle-protection-groups.html"
       - title: Oracle Database 워크로드를 백업합니다
         url: "/br-use-oracle-backup.html"
+      - title: Oracle 데이터베이스 워크로드 복제
+        url: "/br-use-oracle-clone.html"
       - title: Oracle Database 워크로드 복원
         url: "/br-use-oracle-restore.html"
       - title: 복구 지점 마운트 및 마운트 해제
