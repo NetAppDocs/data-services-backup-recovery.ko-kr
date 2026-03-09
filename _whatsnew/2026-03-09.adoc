@@ -1,0 +1,32 @@
+= ONTAP Volumes 워크로드 개선 사항
+:allow-uri-read: 
+
+
+
+
+=== ONTAP Volumes 워크로드 개선 사항
+
+이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 향상된 기능을 제공합니다.
+
+* *원본 위치로 복원*: 이제 로컬 스냅샷 및 복제된 스냅샷의 파일을 원본 위치뿐만 아니라 다른 위치로도 복원할 수 있습니다.
+* *시간별 볼륨 검색*: 이제 Dashboard에서 새로운 볼륨을 더 빠르게 검색하고 새로 고칩니다.
+* *다크 사이트 지원*: 이제 다크 사이트용 Backup and Recovery를 https://mysupport.netapp.com/site/products/all/details/netapp-console/downloads-tab/download/61906/4.4.0/downloads["NetApp 지원 사이트"]에서 다운로드할 수 있습니다. 현재 다크 사이트용 NetApp Backup and Recovery는 ONTAP Volumes 워크로드만 지원합니다.
+* *Unicode 호환성 개선*: 카탈로그 색인에서 Unicode 문자를 더 잘 처리합니다.
+* *FlexGroup 호환성 향상*: ONTAP FlexVol 볼륨을 FlexGroup 볼륨으로 변환할 때 이제 변환 전에 생성된 백업을 복원할 수 있습니다.
+* *다중 버킷 지원*: 이제 시스템 내 볼륨을 서로 다른 클라우드 공급자에 걸쳐 시스템당 최대 6개의 버킷으로 보호할 수 있습니다.
+
+
+ONTAP Volume 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
+
+
+
+=== VMware 워크로드 개선 사항
+
+이번 릴리스에서 VMware 워크로드는 다음과 같은 향상된 기능을 소개합니다.
+
+* *객체 저장소에서 게스트 데이터 복원*: 이제 객체 저장소에서 게스트 파일과 폴더를 복원할 수 있습니다.
+* *VMFS/NFS 빠른 복원*: 이제 다른 위치로 복원할 때 빠른 복원 옵션을 활성화할 수 있습니다. 이 옵션을 활성화하면 오브젝트 저장소에서 VM 메타데이터(파일, LUN 및 네임스페이스)만 검색되므로 전체 복원보다 볼륨을 더 빠르게 사용할 수 있습니다.
+* *Amazon FSx for NetApp ONTAP 지원*: VMware 워크로드에서 이제 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템을 지원합니다.
+
+
+VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .

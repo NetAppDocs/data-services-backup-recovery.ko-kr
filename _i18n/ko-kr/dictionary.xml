@@ -364,8 +364,6 @@
   <block id="eace16d66cdd93ad876c620db7456077" category="list-text">산</block>
   <block id="1281764038ea27ade56d7d2b8be22798" category="list-text">마운트 해제</block>
   <block id="25e66e51214e8342374fa891a42988b3" category="list-text">대체 위치로 복원</block>
-  <block id="00c5709c4d9ca9f8035d5d0e33f2421e" category="list-text">VMDK 첨부</block>
-  <block id="097b06a0d5de05867037a2fdc678ef17" category="list-text">VMDK 분리</block>
   <block id="ef18d76ed6c710e78abb28c0e09b3e30" category="list-text">vVol 지원</block>
   <block id="2cc658d562a11cd1528c2219f2d25da7" category="list-text">NVMe 지원</block>
   <block id="98dc7ecfe4c87955d5fb8b98b895eac7" category="list-text">이메일 통합</block>
@@ -452,7 +450,6 @@
   <block id="ff65f252d2a0aa40e634cf2ad7eaa2d3" category="list-text">데이터 보호 볼륨에서는 *지금 백업* 버튼을 사용한 임시 볼륨 백업이 지원되지 않습니다.</block>
   <block id="3dd0180637528cde8671a0c957cf90da" category="list-text">SM-BC 구성은 지원되지 않습니다.</block>
   <block id="28014e4f484f0639d9b0151965328912" category="list-text">ONTAP 단일 볼륨에서 여러 개체 저장소로의 SnapMirror 관계 팬아웃을 지원하지 않습니다. 따라서 이 구성은 NetApp Backup and Recovery 에서 지원되지 않습니다.</block>
-  <block id="139c263dc37495a1365dde941627eb32" category="list-text">현재 Amazon S3, Azure 및 StorageGRID 에서는 객체 저장소의 WORM/규정 준수 모드가 지원됩니다.  이는 DataLock 기능으로 알려져 있으며, 클라우드 공급자 인터페이스가 아닌 NetApp Backup and Recovery 설정을 사용하여 관리해야 합니다.</block>
   <block id="3e6e24d49c1e2a7357bbe49c1cf7e682" category="section-title">ONTAP 볼륨에 대한 복원 제한</block>
   <block id="79ec871c574dbe9adf17973bdb4bf029" category="paragraph">이러한 제한 사항은 파일과 폴더를 복원하는 검색 및 복원 방법과 찾아보기 및 복원 방법 모두에 적용됩니다(특별히 언급되지 않는 한).</block>
   <block id="03a5b9815bb473e6f4be8d24abee633a" category="list-text">찾아보기 및 복원 기능은 한 번에 최대 100개의 개별 파일을 복원할 수 있습니다.</block>
@@ -462,8 +459,6 @@
   <block id="118a57e2fb1b730b4d9702fc0590ed48" category="paragraph">9.11.1 이전 버전의 ONTAP 사용하는 경우 폴더 복원이 지원되지 않습니다.</block>
   <block id="caac6b6b759dd099323676db10be1564" category="list-text">디렉토리/폴더 복원은 클러스터가 ONTAP 9.13.1 이상을 실행하는 경우에만 보관 저장소에 있는 데이터에 대해 지원됩니다.</block>
   <block id="e8573f3934d023dbb0b6cea67803d326" category="list-text">DataLock을 사용하여 보호되는 데이터에 대해서만 디렉터리/폴더 복원이 지원되며, 클러스터가 ONTAP 9.13.1 이상을 실행하는 경우에만 가능합니다.</block>
-  <block id="2ad2934a6b663d3e1150684467ab796f" category="list-text">현재 복제 및/또는 로컬 스냅샷에서는 디렉토리/폴더 복원이 지원되지 않습니다.</block>
-  <block id="b2ff0fb046b03e40e599f1561ed5ebd3" category="list-text">FlexGroup 볼륨에서 FlexVol 볼륨으로, 또는 FlexVol 볼륨에서 FlexGroup 볼륨으로 복원하는 것은 지원되지 않습니다.</block>
   <block id="5f5966e9da5716290dfc2b88ceeb2217" category="list-text">복원되는 파일은 대상 볼륨의 언어와 동일한 언어를 사용해야 합니다.  언어가 같지 않으면 오류 메시지가 표시됩니다.</block>
   <block id="0bfb7259f1f6626c1cdf5b3afe490baa" category="list-text">Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복원하는 경우 _높음_ 복원 우선 순위는 지원되지 않습니다.</block>
   <block id="baa1235434f9122bbcf4cd93c72c3ed3" category="list-text">DP 볼륨을 백업한 후 해당 볼륨에 대한 SnapMirror 관계를 끊기로 결정한 경우 SnapMirror 관계도 삭제하거나 SnapMirror 방향을 반전하지 않는 한 해당 볼륨에 파일을 복원할 수 없습니다.</block>
@@ -1995,7 +1990,6 @@
   <block id="573531ec152a1cc1709422d00088088e" category="section-title">VMware 워크로드 보호를 위한 요구 사항</block>
   <block id="4ccfae37bea4d344c283e2a68013c9c1" category="paragraph">VMware 워크로드를 검색하고 보호하려면 특정 요구 사항이 필요합니다.</block>
   <block id="1269e07e6a9265be5844ea32a0494a7f" category="paragraph">*소프트웨어 지원*</block>
-  <block id="2d5a6b46412544fb6ac242fbc736934e" category="list-text">지원되는 NFS 버전: NFS 3 및 NFS 4.1</block>
   <block id="40f1a54f3602033103d74e381708e352" category="list-text">지원되는 VMware ESXi Server 버전: 7.0U1 이상</block>
   <block id="c7d133a7d1fcc4fc9f8bf51535dc3ef0" category="list-text">지원되는 VMware vCenter vSphere 버전: 7.0U1 이상</block>
   <block id="f3c396a6341d422a1f0e7a503896ed29" category="list-text">IP 주소: IPv4 및 IPv6</block>
@@ -4341,7 +4335,6 @@
   <block id="4db9a239be0f58f8e4742665ad2371e2" category="paragraph">검색 및 복원을 활성화하기 전에 환경이 다음 요구 사항을 충족하는지 확인하세요.</block>
   <block id="d0320c3b870d5944eb8c31ee83638872" category="paragraph">레거시 인덱싱을 사용할 때 검색 및 복원에 대한 요구 사항은 다음과 같습니다.</block>
   <block id="9078cbf758e0949f0dca426e9aa6c0ce" category="list-text">NetApp NFS 볼륨 사용</block>
-  <block id="459af9b852bd375bac17fb30c8c1b979" category="list-text">NetApp Backup &amp; Recovery는 클라우드 백업 기능을 유지하면서 활성 클라우드 백업 관계가 있는 FlexVol volume FlexGroup 볼륨으로 변환하는 것을 지원하지 않습니다.</block>
   <block id="063090df0880212c0ba8eec878096a21" category="doc">VMware 워크로드 미리보기 개선 사항</block>
   <block id="24936fb650df7af8295e75a3667becef" category="list-text">이제 백업과 스냅샷을 대체 위치로 복원할 수 있습니다. 이 기능은 다양한 VMware vCenter 배포, VMware ESXi 호스트 또는 VMware 데이터 저장소에서 VM 버전을 관리하려는 경우에 유용합니다.</block>
   <block id="99ee61e75520f174d08caa35e0ad294d" category="list-text">이제 기본 또는 보조 위치에서 특정 VMware 가상 디스크(VMDK 이미지)를 복원하여 VM 데이터 복원을 보다 세부적으로 제어할 수 있습니다.</block>
@@ -4999,8 +4992,6 @@
   <block id="6108d5ad430f0631e5c6e10714ba980c" category="doc">일반 공급(GA)에서 지원되는 Microsoft Hyper-V 워크로드</block>
   <block id="c5db154b8366e71dcf87e4624b1a0112" category="paragraph">Microsoft Hyper-V 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.</block>
   <block id="bd7b6aa0517dacb10ee10e479293ef82" category="sidebar">Oracle Database 워크로드 보호(미리 보기)</block>
-  <block id="2e6a10996a90ae08a445bcd92b94e301" category="list-text">지원되는 연결형 스토리지: ONTAP 9.13 이상</block>
-  <block id="a58576b20da9581ef64dc73d9299ba68" category="list-text">NFS 및 VMFS 데이터 저장소가 지원됩니다.</block>
   <block id="dbeedec7ca35d125dd2a7ee8355c41f5" category="section-title">일반 출시(GA)에서 지원되는 VMware 워크로드</block>
   <block id="1fe60033089958dd8dab2fc11925056d" category="section-title">라이선스 용량 초과</block>
   <block id="73b5f5184f0b378b50b42a6e8ceb743c" category="paragraph">라이선스 용량을 초과하면 PAYGO 요금이 적용됩니다. PAYGO 구독이 없으면 새 백업을 생성할 수 없지만 기존 백업은 서비스 보증 없이 복원 가능한 상태로 유지됩니다. 라이선스가 만료되기 전에 반드시 갱신하십시오. 만료된 라이선스는 새 백업을 방지하고 서비스를 중단시킵니다.</block>
@@ -5110,4 +5101,29 @@
   <block id="8616a450958f68321bde3e8f34b8c9c5" category="section-title">Oracle 데이터베이스 복구 지점을 마운트 해제합니다</block>
   <block id="df197f1a2e9f772f8de9983ed94d9541" category="list-text">*워크로드*: 예를 들어 Microsoft SQL Server, ONTAP 볼륨, VMware, KVM, Hyper-V, Oracle 데이터베이스 또는 Kubernetes가 있습니다.</block>
   <block id="e1589447f05ccd92a0e9ade876573b81" category="sidebar">Oracle 데이터베이스 워크로드 복제</block>
+  <block id="76c3536921b70f0616becde2e9340a54" category="doc">ONTAP Volumes 워크로드 개선 사항</block>
+  <block id="78b068f24da5a7e17080acceea02e506" category="paragraph">이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="61f251cc47dddbc52bddd098d342b6d5" category="list-text">*원본 위치로 복원*: 이제 로컬 스냅샷 및 복제된 스냅샷의 파일을 원본 위치뿐만 아니라 다른 위치로도 복원할 수 있습니다.</block>
+  <block id="b64975edc0e1d4d2b77bbc09821fe6c1" category="list-text">*시간별 볼륨 검색*: 이제 Dashboard에서 새로운 볼륨을 더 빠르게 검색하고 새로 고칩니다.</block>
+  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 지원 사이트</block>
+  <block id="8f504b1c826d739819c7ea02c4fd893f" category="list-text">*다크 사이트 지원*: 이제 다크 사이트용 Backup and Recovery를<block ref="e2fed6b5af5d107fdef5614adaedfcef" category="inline-link-rx"></block>에서 다운로드할 수 있습니다. 현재 다크 사이트용 NetApp Backup and Recovery는 ONTAP Volumes 워크로드만 지원합니다.</block>
+  <block id="ccf9e1de6190057c9e2e1a10c6b8f07f" category="list-text">*Unicode 호환성 개선*: 카탈로그 색인에서 Unicode 문자를 더 잘 처리합니다.</block>
+  <block id="a173f0fc9f4786dd11c96099dd446ec8" category="list-text">*FlexGroup 호환성 향상*: ONTAP FlexVol 볼륨을 FlexGroup 볼륨으로 변환할 때 이제 변환 전에 생성된 백업을 복원할 수 있습니다.</block>
+  <block id="f32d4e838dfc925da7a940c6e55acf8c" category="list-text">*다중 버킷 지원*: 이제 시스템 내 볼륨을 서로 다른 클라우드 공급자에 걸쳐 시스템당 최대 6개의 버킷으로 보호할 수 있습니다.</block>
+  <block id="e32587f34260a350a3a49e3604fb2a4c" category="inline-link">ONTAP 볼륨 워크로드 보호 개요</block>
+  <block id="db44a854b206d5d90008224f3bb5b2da" category="paragraph">ONTAP Volume 워크로드 보호에 대한 자세한 내용은<block ref="660ec036763d30562702201a56aaa402" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="f154c542c430b30dc73d2d3e87fd6f65" category="paragraph">이번 릴리스에서 VMware 워크로드는 다음과 같은 향상된 기능을 소개합니다.</block>
+  <block id="63eb1b3f5c128e6460c85c7b6e5d2bb9" category="list-text">*객체 저장소에서 게스트 데이터 복원*: 이제 객체 저장소에서 게스트 파일과 폴더를 복원할 수 있습니다.</block>
+  <block id="7d88c93c0ec65e1bcc3564692a490a5b" category="list-text">*VMFS/NFS 빠른 복원*: 이제 다른 위치로 복원할 때 빠른 복원 옵션을 활성화할 수 있습니다. 이 옵션을 활성화하면 오브젝트 저장소에서 VM 메타데이터(파일, LUN 및 네임스페이스)만 검색되므로 전체 복원보다 볼륨을 더 빠르게 사용할 수 있습니다.</block>
+  <block id="ba95b1986315d65e4bb0f2dcb924f870" category="list-text">*Amazon FSx for NetApp ONTAP 지원*: VMware 워크로드에서 이제 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템을 지원합니다.</block>
+  <block id="4313ef91d0af92358d4bfc05358d4692" category="list-text">FlexVol 볼륨을 FlexGroup 볼륨으로 또는 그 반대로 변환하면 변환된 볼륨은 새로운 볼륨으로 간주됩니다. 따라서 변환 후 변환된 볼륨에 대한 보호 설정을 해야 합니다. 변환 전에 생성된 백업은 다른 볼륨으로 복원할 수 있습니다.</block>
+  <block id="d88c13a12326a1a581751edb0a83ae1b" category="list-text">현재 Amazon S3, Google Cloud Platform(GCP), Azure 및 StorageGRID에서 객체 저장소의 WORM/규정 준수 모드가 지원됩니다. 이는 DataLock 기능으로 알려져 있으며, 클라우드 공급자 인터페이스가 아닌 NetApp Backup and Recovery 설정을 사용하여 관리해야 합니다.</block>
+  <block id="106839ddc74bb36d184d46f6f8d5016f" category="list-text">*spec.dataMover*: (_선택 사항, Trident Protect에서 마이그레이션된 클러스터의 경우 필수_) 백업 작업에 사용할 백업 도구를 나타내는 문자열입니다. 이 클러스터가 Trident Protect에서 Backup and Recovery로 마이그레이션된 경우 값은 대소문자를 구분하며<block ref="250c51527f347066847969f002be67a2" prefix=" " category="inline-code"></block>이어야 합니다.</block>
+  <block id="06e1026570d8a901d8b6dedf9e5d6f66" category="list-text">*빠른 복원*: 이 옵션을 활성화하면 Backup and Recovery에서 오브젝트 저장소의 VM 메타데이터(파일, LUN 및 네임스페이스)만 복원하도록 지시합니다. 이렇게 하면 전체 복원보다 볼륨을 더 빠르게 사용할 수 있습니다.</block>
+  <block id="5b6eae3d36833d14f04c696b7a2e75a9" category="list-text">NFSv3, NFSv4.1 및 VMFS 데이터 저장소가 지원됩니다.</block>
+  <block id="eff24131b4bb3e0f34de9a437296c19b" category="list-text">연결된 스토리지 지원:</block>
+  <block id="9e2d6035ec7a18aa99db06aab17683c8" category="list-text">ONTAP 9.13.1 이상</block>
+  <block id="84926f15fa96e5fbcf319691a6c909e3" category="list-text">버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템</block>
+  <block id="d683472bc4b099b7787d3a9d8df4673e" category="admonition">*자체 버킷 사용*을 선택하는 경우 백업 대상으로 생성하는 컨테이너의 이름이 Azure 스토리지 계정의 이름과 동일한지 확인하십시오.</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026년 3월 9일</block>
 </blocks>
