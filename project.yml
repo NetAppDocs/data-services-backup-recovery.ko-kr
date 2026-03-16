@@ -88,8 +88,6 @@ sidebar:
         url: "/prev-ontap-backup-onprem-storagegrid.html"
       - title: SnapMirror 사용하여 볼륨을 Cloud Resync로 마이그레이션
         url: "/prev-ontap-migrate-resync.html"
-      - title: 다크 사이트에서 구성 데이터 복원
-        url: "/reference-backup-cbs-db-in-dark-site.html"
       - title: ONTAP 백업 관리
         url: "/prev-ontap-backup-manage.html"
       - title: ONTAP 백업에서 복원
@@ -234,6 +232,8 @@ sidebar:
       url: "/prev-reference-azure-archive-storage-tiers.html"
     - title: 지원되는 Google Cloud 보관 스토리지 계층
       url: "/prev-reference-gcp-archive-storage-tiers.html"
+    - title: 다크 사이트에서 구성 데이터 복원
+      url: "/reference-backup-cbs-db-in-dark-site.html"
   - title: 법적 고지 사항
     url: "/legal-notices.html"
 product-family:
