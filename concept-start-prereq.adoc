@@ -188,11 +188,7 @@ chown -R qemu:qemu <kvm_vm_mount_path> & chmod 771 <kvm_vm_mount_path>
 | 요구 사항 | 지원됨 
 
 
-| 배포 토폴로지  a| 
-* 독립 실행형(NFS, SAN, ASM SAN)
-* ASM 기반 RAC(VMFS의 VMDK)
-
-
+| 배포 토폴로지 | 독립 실행형(NFS, SAN, ASM SAN) 
 
 
 | Oracle Database 버전  a| 
