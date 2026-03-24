@@ -261,7 +261,7 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 | ASP.NET Core 런타임 | 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치) 
 
 
-| PowerShell | 7.0U1 이상 
+| PowerShell | 7.4.13 이상 
 
 
 | 관리자가 아닌 사용자가 Hyper-V VM을 보호하는 경우 해당 사용자에게 다음 권한이 있는지 확인하십시오  a| 

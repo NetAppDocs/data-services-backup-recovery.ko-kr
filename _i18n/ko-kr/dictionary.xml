@@ -5120,7 +5120,6 @@
   <block id="a5f167b540745795bfa82881525658b7" category="paragraph">환경이 Oracle Database 리소스를 검색하고 보호하기 위한 특정 요구 사항을 충족하는지 확인하십시오.</block>
   <block id="be84d19651fadb3105ee4563b1a749a1" category="cell">배포 토폴로지</block>
   <block id="6573228c28e984dea35ef8e206b9b22e" category="list-text">독립 실행형(NFS, SAN, ASM SAN)</block>
-  <block id="40462b3520e204c56d496704b2197731" category="list-text">ASM 기반 RAC(VMFS의 VMDK)</block>
   <block id="23288ce9e4c4065a0c262950a798255a" category="cell">Oracle Database 버전</block>
   <block id="0ac3a1f034484f75f44fe8688e650ffe" category="list-text">Oracle Database 19c</block>
   <block id="e78bd68f4ea5809752852eea2f74942d" category="list-text">Oracle Database 21c</block>
@@ -5147,4 +5146,5 @@
   <block id="86a1075e6640849bd364878900fd5412" category="paragraph">클라우드 계정을 사용하지 않고 온프레미스에서 _표준 모드_로 Backup and Recovery를 사용할 때 Console 에이전트를 교체하고 에이전트에 저장된 구성 데이터를 복원하려면 다음 단계를 따르십시오(예: NetApp StorageGrid를 백업 대상으로 사용하는 경우).</block>
   <block id="72edcbdd4436f32d101a83a36dd2d1db" category="list-text">*ls* 명령을 실행하여 "catalogdb1" 폴더가 생성되었고 하위 폴더<block ref="45b963397aa40d4a0063e0d85e4fe7a1" prefix=" " category="inline-code"></block>,<block ref="b17be6650251f2e6c7d4e90209beb4e0" prefix=" " category="inline-code"></block> 및<block ref="695633290d050f31cec0c9d4bd4a57fe" prefix=" " category="inline-code"></block>가 포함되어 있는지 확인하십시오.</block>
   <block id="69b1a964078d5301a2aa9822cb2304f2" category="section-title">2026년 3월 16일</block>
+  <block id="5896522d63454009d1844a27f9e16972" category="cell">7.4.13 이상</block>
 </blocks>
