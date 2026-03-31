@@ -18,6 +18,24 @@ NetApp Backup and Recovery 의 새로운 기능을 알아보세요.
 
 
 
+== 2026년 3월 31일
+
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+
+
+=== Oracle Database 워크로드 개선 사항
+
+이번 릴리스에서 Oracle Database 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *클러스터형 호스트 지원*: 이제 Oracle Automatic Storage Management(ASM)를 사용하고 VMFS 파일 시스템의 VMDK를 사용하여 배포된 Oracle Real Application Clusters(RAC) 데이터베이스를 검색하고 보호할 수 있습니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-discover-oracle.html["Oracle Database 워크로드를 살펴보세요"]를 참조하십시오.
+* *RMAN 카탈로그 지원*: 이제 Backup and Recovery를 구성하여 보호 메타데이터를 RMAN 복구 카탈로그에 저장할 수 있으며, 이를 통해 대상 제어 파일이 손실될 경우 중복성과 장기 보존이 가능합니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-configure-oracle-database.html["Oracle 데이터베이스 구성"]를 참조하십시오.
+
+
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle 데이터베이스 워크로드 보호 개요"]을 참조하십시오.
+
+
+
 == 2026년 3월 16일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.

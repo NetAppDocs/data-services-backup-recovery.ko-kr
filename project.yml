@@ -172,6 +172,8 @@ sidebar:
         url: "/br-use-oracle-protect-overview.html"
       - title: Oracle Database 워크로드를 살펴보세요
         url: "/br-start-discover-oracle.html"
+      - title: Oracle 데이터베이스 구성
+        url: "/br-start-configure-oracle-database.html"
       - title: Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리
         url: "/br-use-oracle-protection-groups.html"
       - title: Oracle Database 워크로드를 백업합니다
@@ -180,7 +182,7 @@ sidebar:
         url: "/br-use-oracle-clone.html"
       - title: Oracle Database 워크로드 복원
         url: "/br-use-oracle-restore.html"
-      - title: 복구 지점 마운트 및 마운트 해제
+      - title: 마운트, 마운트 해제 및 카탈로그 복구 지점
         url: "/br-use-oracle-mount-unmount.html"
     - title: Kubernetes 워크로드 보호
       entries:
