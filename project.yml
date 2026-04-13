@@ -42,8 +42,6 @@ sidebar:
       url: "/task-setup-ca-certificates.html"
     - title: NetApp Backup and Recovery 사용하기 전에 백업 대상을 설정하세요.
       url: "/br-start-setup.html"
-    - title: NetApp Backup and Recovery 에 로그인하세요
-      url: "/br-start-login.html"
     - title: 백업 대상 검색
       url: "/br-start-discover-backup-targets.html"
     - title: 다양한 NetApp Backup and Recovery 워크로드로 전환
@@ -54,6 +52,8 @@ sidebar:
       url: "/br-rbac-setup.html"
   - title: NetApp Backup and Recovery 사용
     entries:
+    - title: NetApp Backup and Recovery 에 로그인하세요
+      url: "/br-start-login.html"
     - title: 대시보드에서 보호 상태 보기
       url: "/br-use-dashboard.html"
     - title: 백업 및 복원을 관리하는 정책 만들기
@@ -134,13 +134,13 @@ sidebar:
           url: "/br-use-vmware-restore.html"
         - title: 특정 가상 디스크 복원
           url: "/br-use-vmware-restore-vmdks-from-backups.html"
-        - title: 게스트 파일 및 폴더 복원
+        - title: 파일 및 폴더 복원
           entries:
           - title: 워크플로, 전제 조건 및 제한 사항
             url: "/br-use-vmware-restore-guest-files-and-folders-overview.html"
-          - title: VMDK에서 게스트 파일 및 폴더 복원
+          - title: VMDK에서 파일 및 폴더 복원
             url: "/br-use-vmware-restore-guest-files-and-folders-from-vmdks.html"
-          - title: 게스트 파일 복원 문제 해결
+          - title: 파일 및 폴더 복원 문제 해결
             url: "/br-use-vmware-guest-file-restore-scenarios-you-might-encounter.html"
     - title: KVM 워크로드 보호
       entries:

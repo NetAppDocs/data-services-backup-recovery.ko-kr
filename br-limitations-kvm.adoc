@@ -25,7 +25,6 @@ NetApp Backup and Recovery의 KVM 워크로드에서는 다음과 같은 작업 
 다음 작업은 지원되지 않습니다.
 
 * VM 복제, 마운트 또는 마운트 해제
-* VM을 대체 위치로 복원
 * SAN에 저장된 VM 보호
 * 애플리케이션 보호
 * 사용자 정의 백업 생성( NetApp Console 에서 시작된 백업만 지원됨)
