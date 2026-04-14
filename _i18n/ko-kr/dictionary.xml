@@ -4472,13 +4472,10 @@
   <block id="898c4d9cd797d45ca2066478fd269974" category="paragraph">이 문제는 VM 일치 백업에서 게스트 파일 복원 작업을 수행할 때 발생합니다. 게스트 파일 복원 세션이 활성화되어 있는 동안 동일한 VM에 대해 또 다른 VM 일치 백업이 수행됩니다. 게스트 파일 복원 세션이 24시간 후 수동 또는 자동으로 연결이 끊어지면 해당 세션의 백업은 분리되지 않습니다.</block>
   <block id="5857a2699c75798b2ae21bc0b06aff95" category="paragraph">이 문제를 해결하려면 활성 게스트 파일 복원 세션에서 연결된 VMDK를 수동으로 분리하세요.</block>
   <block id="0bf794e2b090829c5f342b426fa04d5c" category="summary">Windows 게스트 OS의 VMDK에서 하나 이상의 파일이나 폴더를 복원할 수 있습니다.</block>
-  <block id="a26360f952d07b84e1088cc6c613eafe" category="admonition">NetApp Backup and Recovery 에서 게스트 VM에 대한 자격 증명을 생성해야 해당 VM에서 파일과 폴더를 복원할 수 있습니다. NetApp Backup and Recovery 가상 디스크를 연결할 때 게스트 VM에 인증하기 위해 이러한 자격 증명을 사용합니다.</block>
   <block id="851e8e79b33ecfa430d9ed62957e5cad" category="admonition">VM에서는 동시에 하나의 연결 또는 복원 작업만 실행할 수 있습니다. 동일한 VM에서 병렬 연결 또는 복원 작업을 실행할 수 없습니다.</block>
-  <block id="b422ec3f16fdaa990ba1990cb6991810" category="list-text">*가상 머신* 메뉴를 선택하세요.</block>
   <block id="c0bb93c6bec67d2385d257bd2f31eeb2" category="list-text">*파일 및 폴더 복원*을 선택하세요.</block>
   <block id="08cc4acec34cca35a8c76fb3d615326d" category="list-text">복원할 스냅샷을 선택한 다음 *다음*을 선택하십시오.</block>
   <block id="da8e304a7760412a8328c95f01373d11" category="list-text">복원할 스냅샷 위치를 선택하세요. 보조 위치를 선택하는 경우 목록에서 보조 스냅샷을 선택하십시오.</block>
-  <block id="60ec0884c18a5fb50c01015fd5a57742" category="list-text">게스트 VM에 인증하는 데 사용할 가상 머신 자격 증명을 선택하십시오.</block>
   <block id="568b266180f72a62a6b7a16e74fd7c84" category="paragraph">이미 같은 이름의 파일이 있는 경우, 덮어쓰기를 선택하거나 건너뛸 수 있습니다.</block>
   <block id="9400685c82ef048826c1183065e6283e" category="paragraph">복원 진행 상황은 작업 모니터링 페이지에서 확인할 수 있습니다.</block>
   <block id="e4bfaed3f3210f4076310e841130f424" category="summary">Windows 게스트 OS의 가상 머신 디스크(VMDK)에서 파일이나 폴더를 복원할 수 있습니다.</block>
@@ -4489,7 +4486,6 @@
   <block id="0f68101772bd5397ef8eb1b632798652" category="list-text">기다리다</block>
   <block id="75acbae837699c01fe86ee8a2c9fec00" category="paragraph">연결 작업이 완료될 때까지 기다린 후 찾아보기 및 복원 작업을 진행하십시오. 연결 작업이 완료되면 게스트 파일 복원 세션이 자동으로 생성됩니다.</block>
   <block id="137bf66cd89f2d7f861099ca8519563c" category="list-text">파일 또는 폴더 선택</block>
-  <block id="bc67d1c399dfdffa3650a08e1bbd1222" category="paragraph">VMDK 파일을 찾아보고 복원할 파일 또는 폴더를 하나 이상 선택하십시오.</block>
   <block id="2bd339d85ee3b33e513359ce781b60cc" category="list-text">복원하다</block>
   <block id="850eb27faf64ee4adf2b325fd847bf4d" category="paragraph">선택한 파일이나 폴더를 지정된 위치로 복원합니다.</block>
   <block id="8584d390f3574a98d0772b42a6ba1d23" category="section-title">게스트 파일 및 폴더 복원을 위한 전제 조건</block>
@@ -4550,7 +4546,6 @@
   <block id="88009dbb638181324526010a9eff3c19" category="sidebar">VMware 가상 머신 복원</block>
   <block id="9b7e5fddcf3e2a7a93fe6669de87fbc2" category="sidebar">특정 가상 디스크 복원</block>
   <block id="3a4d751e404219df1dc6de0a13c8db55" category="sidebar">워크플로, 전제 조건 및 제한 사항</block>
-  <block id="d85468613eebe17a50e2bf01c2bd42f5" category="paragraph">게스트 VM에 가상 디스크를 연결하고 게스트 파일 복원 세션을 시작합니다.</block>
   <block id="b2c5a3b35bd8f72bf653aa42e54cc06c" category="list-text">Windows 게스트 운영 체제는 Windows Server 2008 R2 이상이어야 합니다.</block>
   <block id="367aa9be05b109b226ffbefe3981ac88" category="list-text">암호화된 파일이나 폴더를 복원하면 암호화 속성이 유지되지 않습니다.</block>
   <block id="34454c78e4e96cfe4c311b8ba072f6cd" category="list-text">암호화된 폴더에는 파일이나 폴더를 복원할 수 없습니다.</block>
@@ -4587,7 +4582,6 @@
   <block id="80aabc2f42a52376f3d884d3b02360f4" category="admonition">Red Hat OpenShift를 사용하는 경우 OpenShift 환경에서 네임스페이스 어노테이션의 중요한 역할을 알아두는 것이 중요합니다. 네임스페이스 어노테이션은 복원된 Pod가 OpenShift 보안 컨텍스트 제약 조건(SCC)에 정의된 적절한 권한 및 보안 구성을 준수하고 권한 문제 없이 볼륨에 액세스할 수 있도록 보장합니다. 자세한 내용은 <block ref="842acfa178c0bbf09e368bf9db0716b8" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="6c83555d4261acb08ebbc5f24823dc7b" category="paragraph">복원 또는 장애 조치 작업을 수행하기 전에 Kubernetes 환경 변수<block ref="1580ff61f204e9d56cd5324c7e9221ba" prefix=" " category="inline-code"></block>를 설정하여 대상 네임스페이스의 특정 어노테이션이 덮어쓰여지는 것을 방지할 수 있습니다. 예를 들면 다음과 같습니다.</block>
   <block id="59f713e31282fe744caf06335d891f9a" category="inline-link-macro">Trident Protect 헬름 차트의 추가 설정을 구성합니다</block>
-  <block id="98b806d92f2e28da541021a181de980f" category="admonition">복원 또는 페일오버 작업을 수행할 때<block ref="22416353aff9ef4322e1ee858f418ae4" prefix=" " category="inline-code"></block> 및<block ref="8028cf835d9b72ff2d6f835934c25568" prefix=" " category="inline-code"></block>에 지정된 네임스페이스 어노테이션 및 레이블은 복원 또는 페일오버 작업에서 제외됩니다. 초기 Helm 설치 시 이러한 설정이 구성되어 있는지 확인하십시오. 자세한 내용은 <block ref="647ed99900e7ff1307ad7b7cec525a2c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="d65eac563b898cb7e41b8853a4fe1a3c" category="paragraph"><block ref="cc1f5c1d16e33b8463c9ee27295cd5df" prefix=" " category="inline-code"></block> 플래그와 함께 Helm을 사용하여 소스 애플리케이션을 설치한 경우 <block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> 레이블 키에 특별한 처리가 적용됩니다. 복원 또는 페일오버 프로세스 중에 Trident Protect는 이 레이블을 대상 네임스페이스로 복사하지만 소스의 값이 소스 네임스페이스와 일치하는 경우 값을 대상 네임스페이스 값으로 업데이트합니다. 이 값이 소스 네임스페이스와 일치하지 않으면 변경 없이 대상 네임스페이스로 복사됩니다.</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">예</block>
   <block id="1280c48f074ec68fd2281266662c9a3f" category="paragraph">다음 예제는 서로 다른 어노테이션과 레이블을 가진 소스 및 대상 네임스페이스를 보여줍니다. 작업 전후의 대상 네임스페이스 상태와 어노테이션 및 레이블이 대상 네임스페이스에서 어떻게 결합되거나 덮어쓰여지는지 확인할 수 있습니다.</block>
@@ -5126,8 +5120,6 @@
   <block id="cab9c79c2324192af6049aa8cd78508d" category="list-text">*대체 스토리지 시스템으로 복원*: 이제 원래(운영) 스토리지 시스템을 완전히 사용할 수 없는 경우에도 가상 머신을 대체 스토리지 시스템으로 복원할 수 있습니다. 자세한 내용은<block ref="f3d02f39d5e1822fd83675aa2d7843de" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="9486b4129634e76f84d1e52fbd1b3326" category="inline-link">파일 및 폴더 복원</block>
   <block id="19e7d45c6bedb302dc81dcad6024f1c3" category="list-text">*Linux VM에 파일 복원*: 이제 VM 파일과 폴더를 Linux VM에 복원할 수 있습니다. 자세한 내용은<block ref="d14b743b42535a5def60386aae0617f3" category="inline-link-rx"></block>를 참조하십시오.</block>
-  <block id="cbd6efe68945c4eed8277905a2c0fe44" category="list-text">*파일 및 폴더 복원 시 프록시 VM 지원* - 이제 소스 vCenter에서 호스팅되는 다른 VM으로 파일 및 폴더를 복원할 수 있습니다. 자세한 내용은<block ref="f3d02f39d5e1822fd83675aa2d7843de" category="inline-link-rx"></block>를 참조하십시오.</block>
-  <block id="b8f9bd73e7115f55039fdbc342c5bf1f" category="list-text">*재귀적 파일 및 폴더 검색* - 이제 VMDK 파일 전체에서 특정 파일이나 폴더를 검색할 수 있습니다. 자세한 내용은<block ref="f3d02f39d5e1822fd83675aa2d7843de" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="7868afad22516e76c1d3b0f45146b148" category="list-text">*관리되는 오프사이트 백업 대상* 탭을 선택합니다.</block>
   <block id="e75ea37e96b8396fc26e7835fb754851" category="list-text">사용 가능한 백업 타겟 유형 중 하나를 선택합니다. *AWS*, *Azure*, *StorageGRID*, *ONTAP S3* 또는 *GCP*.</block>
   <block id="c6ef992c54853d072b258e289ef08dd0" category="list-text">(AWS 및 Azure 백업 타겟에만 해당) *자격 증명 위치 선택* 섹션에서 자격 증명이 있는 위치를 선택한 다음 자격 증명을 연결하는 방법을 선택합니다.</block>
@@ -5216,23 +5208,17 @@
   <block id="6a6c8216e6380fa87d23abc6456110a7" category="list-text">*검토* 단계에서 태그 설정을 검토합니다.</block>
   <block id="cef2f01b5a9d6194b30ee87880a2501f" category="paragraph">새로운 태그 기반 보호 그룹이 태그 아이콘으로 표시되어 목록에 나타납니다.</block>
   <block id="a22504a40a8afdfa908ab0544ecc4178" category="doc">VMDK에서 파일 및 폴더 복원</block>
-  <block id="24519b4fc7c6f69129233c5f1654a6e4" category="paragraph">VMDK에서 하나 이상의 파일 또는 폴더를 원래 VM 또는 동일한 VMware vCenter 서버의 다른 VM으로 복원할 수 있습니다. Windows 및 Linux 게스트가 지원됩니다.</block>
   <block id="32de0b1da4ab4b8f52bfe3ce1811b043" category="list-text"><block ref="538cee55729c515ab8aab7ca0ccd040a" category="inline-link-macro-rx"></block>에서 사전 요구 사항 및 제한 사항을 검토하십시오.</block>
   <block id="7b7824cad48305f033e7a7b04105000a" category="paragraph">파일 또는 폴더 복원 성능은 복원 대상 파일 또는 폴더의 크기와 복원 대상 파일 또는 폴더의 개수라는 두 가지 요소에 따라 달라집니다. 복원할 데이터 세트의 전체 크기가 동일하더라도, 크기가 작은 파일이 다수인 경우 크기가 큰 파일이 소수인 경우보다 복원 시간이 예상보다 오래 걸릴 수 있습니다.</block>
   <block id="ec4a88c3778360f79e6ff325a92a3d17" category="paragraph">원격 VM으로 복원할 수 있지만(VM 간 복원이라고 함) 소스 및 대상 운영 체제가 동일해야 합니다.</block>
   <block id="4c9600bd9236b2e70ac2b1114017de33" category="admonition">파일 및 폴더 복원 기능을 사용하면 시스템 파일, 숨겨진 파일, 암호화된 파일을 보고 복원할 수 있습니다. 기존 시스템 파일을 덮어쓰거나 암호화된 파일을 암호화된 폴더에 복원하지 마십시오. 복원 작업 중에는 게스트 파일의 숨김, 시스템 및 암호화 속성이 복원된 파일에 유지되지 않습니다. 예약된 파티션을 보거나 탐색하면 오류가 발생할 수 있습니다.</block>
-  <block id="3e06033eac23d3464498e98c2a13f82d" category="open-title">파일과 폴더를 원래 VM으로 복원합니다</block>
   <block id="923c2be14ab1a46fb997485d1b8b8a4d" category="paragraph">가상 디스크에서 게스트 파일과 폴더를 원래(소스) 가상 머신으로 복원합니다.</block>
   <block id="19a7ed3b19960c1d22474edf3f03f892" category="list-text">가상 머신 목록에서 복원하려는 파일이 포함된 VM의 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block>을 선택합니다.</block>
-  <block id="d465b892e7707a7c517f87c0630068c3" category="list-text">목록에서 VM에 연결할 가상 디스크를 선택한 다음 * Next * 를 선택합니다.</block>
   <block id="bd573ab03c0ee475ede63ff83e686f56" category="list-text">_게스트 가상 머신 세부 정보_ 페이지에서 다음을 수행하십시오.</block>
   <block id="c6e8a4c6e5322c1ceb8b26f4b2439795" category="list-text">*게스트 가상 머신 세부 정보* 섹션에서 *원본 가상 머신*을 선택하여 가상 디스크를 원본 VM에 연결합니다.</block>
-  <block id="4f771cccc6eb6e31cbe75447322c430a" category="list-text">*게스트 가상 머신 자격 증명* 섹션에서 게스트 VM에 대한 자격 증명을 아직 저장하지 않은 경우 *자격 증명 추가*를 선택하고 Windows 또는 Linux 호스트에 대한 자격 증명 정보를 입력한 다음 *추가*를 선택합니다.</block>
-  <block id="e4d0f550a74efd46e53d2c10ae5af484" category="paragraph">NetApp Backup and Recovery는 가상 디스크를 VM에 연결하고 숨겨진 파일을 포함한 모든 파일과 폴더를 표시합니다. Windows 게스트의 경우 시스템 예약 파티션을 포함하여 모든 파티션에 드라이브 문자를 할당합니다.</block>
   <block id="eb239c6e755285e102501b3b2c0382cd" category="paragraph">파일 탐색기 창 근처에 있는 돋보기(검색) 아이콘을 사용하여 파일과 폴더를 검색할 수 있습니다. 패턴 일치는 지원되지 않지만, 이름이나 확장자의 일부를 사용하여 파일이나 폴더를 검색할 수 있습니다.</block>
   <block id="622573067c12083b451e0b5802f31fc1" category="list-text">복원할 파일 또는 폴더를 선택합니다.</block>
   <block id="030ef4a6604fa5d6b0af3172a454ed6a" category="paragraph">복원하도록 선택한 파일과 폴더는 화면 오른쪽 창에 나열됩니다.</block>
-  <block id="4e6324c68794e57f43cb14b274707b92" category="list-text">"경로로 복원" 섹션에서 선택한 파일이 복원될 게스트의 경로를 입력합니다.</block>
   <block id="097f9151e6a7e1515f9962684b6e00dc" category="list-text">Windows 게스트의 경우 UNC 공유 경로를 입력하십시오.</block>
   <block id="1ee4d011c88c8d217a30c51644b126a2" category="list-text">IPv4 경로 예:<block ref="c1efda00eba14c667cfd89393b2be583" prefix=" " category="inline-code"></block></block>
   <block id="6f0e49df443b7ad85886779a44b22750" category="list-text">IPv6 경로 예:<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="inline-code"></block></block>
@@ -5240,13 +5226,8 @@
   <block id="36cd6911f28eb4d2836a6f36630319ab" category="list-text">로컬 경로 예:<block ref="eeb7a05395e240242091459d33444db8" prefix=" " category="inline-code"></block></block>
   <block id="54dd4a35d8cf45457b3d28ec1c8555f4" category="list-text">IPv4 경로 예:<block ref="13b4425d0a3271ecf9f63cf3fd9e8d3a" prefix=" " category="inline-code"></block></block>
   <block id="ae506f4f3b2f41295e927a2a84ba4abb" category="list-text">IPv6 경로 예:<block ref="1822c00862f8d247a7e6656b8838a5b4" prefix=" " category="inline-code"></block></block>
-  <block id="b7a3b9fc054d5af5835b24611cb82f2a" category="list-text">"Post-restore-options" 섹션에서 *복원 완료 후 게스트 세션 연결 해제* 설정을 활성화하여 복원 완료 후 게스트 세션 연결을 선택적으로 해제할 수 있습니다. 이렇게 하면 VMDK가 분리되고 데이터 저장소가 마운트 해제됩니다. 즉, 추가 파일 및 폴더 복원 작업을 수행하기 전에 게스트 세션을 다시 연결해야 합니다.</block>
-  <block id="3915e57fb69cd6ec67340fe0fd3e0214" category="open-title">다른 VM으로 파일 및 폴더 복원</block>
-  <block id="24b469e148bda42df48ef38c8ee87352" category="paragraph">프록시 VM(원본 VM과 동일한 vCenter에 있는 다른 VM)을 사용하여 가상 디스크에서 다른 가상 머신으로 게스트 파일 및 폴더를 복원합니다.</block>
   <block id="63240001bfd20bd297440f370de9df9f" category="list-text">*게스트 가상 머신 세부 정보* 섹션에서:</block>
   <block id="466d39120cac10999cfd322f5ef15c59" category="list-text">*프록시 가상 머신*을 선택하여 가상 디스크를 프록시 VM에 연결합니다.</block>
-  <block id="52ab29c54b643acc4f96c4e8ca7e0c2d" category="list-text">목록에서 소스 vCenter, 데이터센터 및 데이터스토어를 선택하십시오.</block>
-  <block id="b3a640a593628a2d983c21b7abc31fc6" category="list-text">복원할 VM을 선택합니다. 선택한 VM이 오른쪽 창에 나타납니다.</block>
   <block id="5aaba1bfb08f20b4b36449fd15d4916e" category="paragraph">Windows 또는 Linux 게스트 OS의 가상 머신 디스크(VMDK)에서 파일 또는 폴더를 복원할 수 있습니다.</block>
   <block id="ab08ae9b37014ead8598f03e3ced4d5a" category="paragraph">VMDK에서 파일이나 폴더를 복원하기 전에 모든 요구 사항을 검토하십시오.</block>
   <block id="6b654052b7ec38473aa3cbf529a0c95d" category="paragraph">NetApp Backup and Recovery는 VMware 도구의 정보를 사용하여 VMware 게스트 운영 체제에 연결을 설정합니다.</block>
@@ -5269,4 +5250,29 @@
   <block id="13805175d1bc9d9656654bec32406f98" category="admonition">Backup and Recovery는 동일 볼륨의 다른 스냅샷과 생성 타임스탬프가 정확히 일치하는 스냅샷은 인덱싱하지 않습니다.</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026년 4월 13일</block>
   <block id="462fcd2b84c5fc16f3d89522a2068baa" category="sidebar">파일 및 폴더 복원 문제 해결</block>
+  <block id="44c66f240c569e9a6734099280701e88" category="admonition">복원 또는 페일오버 작업을 수행할 때<block ref="22416353aff9ef4322e1ee858f418ae4" prefix=" " category="inline-code"></block> 및<block ref="8028cf835d9b72ff2d6f835934c25568" prefix=" " category="inline-code"></block>에 지정된 네임스페이스 주석 및 레이블은 복원 또는 페일오버 작업에서 제외됩니다. 초기 Helm 설치 시 이러한 설정이 구성되어 있는지 확인하십시오. 자세한 내용은<block ref="b9fc3066a0a1e2a32e2c8ea860fac505" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="12dc36f8332118bd4fe7f1b4633c0a17" category="list-text">*파일 및 폴더 복원 시 프록시 VM 지원* - 이제 가상 디스크를 원래 VM에 연결하지 않고 프록시 VM을 사용하여 가상 디스크에서 파일과 폴더를 복원할 수 있습니다. 자세한 내용은<block ref="d14b743b42535a5def60386aae0617f3" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="ddd4881e88c799f792de41fafe0a11d7" category="list-text">*재귀적 파일 및 폴더 검색* - 이제 가상 디스크 전체에서 특정 파일이나 폴더를 검색할 수 있습니다. 자세한 내용은<block ref="d14b743b42535a5def60386aae0617f3" category="inline-link-rx"></block>을 참조하세요.</block>
+  <block id="d07a2c33b1ba6b58e2a1a775e9fc5aa7" category="doc">가상 디스크에서 파일 및 폴더 복원</block>
+  <block id="979479a71f02703e287e1fad2bc3d0ae" category="paragraph">가상 디스크의 파일이나 폴더를 원래 VM 또는 다른 VM으로 복원할 수 있습니다. 가상 디스크를 원래 VM에 연결하지 않으려면 프록시 VM에 연결할 수도 있습니다.</block>
+  <block id="e66fc9654ba30e5bd71aa3b351339afa" category="list-text">프록시 VM을 사용하여 파일 및 폴더를 복원하려면 파일 및 폴더 복원 프로세스를 시작하기 전에 프록시 VM이 이미 구성되어 있는지 확인하십시오.</block>
+  <block id="c127ae612a3e24c3b1f14accf888c545" category="list-text">파일과 폴더를 복원하려면 NetApp Backup and Recovery에서 소스 가상 디스크와 대상 VM에 대한 자격 증명을 생성해야 합니다. NetApp Backup and Recovery는 파일과 폴더를 복원할 때 이러한 자격 증명을 사용하여 가상 디스크 및 대상 VM에 인증합니다.</block>
+  <block id="1c130d484b2f6c43fe50844352c0fbab" category="open-title">VMDK를 원래 VM에 연결하여 파일 및 폴더 복원</block>
+  <block id="a0ec642000121309c4291ca16bcc0eb6" category="list-text">페이지 오른쪽 상단의 워크로드 목록에서 *VMware*를 선택하십시오.</block>
+  <block id="46bd056de8e50f2386373b1ab72d25cc" category="list-text">목록에서 복원해야 하는 파일과 폴더가 있는 가상 디스크를 선택한 다음 *다음*을 선택합니다.</block>
+  <block id="0ee359b2883aea99ab54c5f6e1cbbdd2" category="list-text">*게스트 가상 머신 자격 증명* 섹션에서 소스 가상 디스크와 대상 VM에 대한 자격 증명을 아직 저장하지 않은 경우 *자격 증명 추가*를 선택하고 Windows 또는 Linux 자격 증명 정보를 입력한 다음 *추가*를 선택합니다.</block>
+  <block id="96d873c9c5f4f0cb774b7fef8b1af828" category="admonition">원본 및 대상 VM은 동일한 OS 제품군을 실행해야 하며, OS 버전은 다를 수 있습니다.</block>
+  <block id="23d80b2131ccbe0c66cc4388cf4b96e7" category="list-text">목록에서 사용할 가상 머신 자격 증명을 선택하십시오.</block>
+  <block id="17a0fe355ba048bffab9be2e21aa1892" category="paragraph">NetApp Backup and Recovery는 가상 디스크를 원래 VM에 연결하고 숨겨진 파일을 포함한 모든 파일과 폴더를 표시합니다. Windows 게스트의 경우 시스템 예약 파티션을 포함하여 모든 파티션에 드라이브 문자를 할당합니다.</block>
+  <block id="9e987ea26d0bf564e3720c8384a36055" category="list-text">"복원 경로" 섹션에서 선택한 파일이 복원될 대상 VM 및 파일 시스템 위치의 경로를 입력합니다.</block>
+  <block id="c4726c55925fe78699115ff6d865e58e" category="list-text">"Post-restore-options" 섹션에서 *복원 완료 후 게스트 세션 연결 해제* 설정을 활성화하여 복원 완료 후 게스트 세션 연결을 선택적으로 해제할 수 있습니다. 이렇게 하면 가상 디스크가 분리되고 데이터 저장소가 마운트 해제됩니다. 따라서 추가 파일 및 폴더 복원 작업을 수행하기 전에 게스트 세션을 다시 연결해야 합니다.</block>
+  <block id="f0d553382a9457e98c5a1c5257bf7df3" category="open-title">파일과 폴더를 복원하려면 VMDK를 프록시 VM에 연결하십시오</block>
+  <block id="d647f20440ac814961fd11fbcaa98199" category="paragraph">원래 VM에 가상 디스크를 연결하지 않으려면 프록시 VM(원본과 동일한 vCenter에 있는 다른 VM)을 사용하여 게스트 파일 및 폴더를 복원하십시오.</block>
+  <block id="eb66e9de2a9e101b66f49d6a53b11ee2" category="list-text">목록에서 프록시 VM이 위치한 vCenter, 데이터센터 및 데이터스토어를 선택하십시오.</block>
+  <block id="679423ab325845a4f1b212c4c6d83db5" category="list-text">목록에서 프록시 VM으로 사용할 VM을 선택하십시오. 가상 디스크는 이 VM에 연결됩니다. 선택한 프록시 VM은 오른쪽 창에 나타납니다.</block>
+  <block id="f5a81b5e2c809dbce0854edbe51083cf" category="paragraph">NetApp Backup and Recovery는 가상 디스크를 프록시 VM에 연결하고 숨겨진 파일을 포함한 모든 파일과 폴더를 표시합니다. Windows 게스트의 경우 시스템 예약 파티션을 포함하여 모든 파티션에 드라이브 문자를 할당합니다.</block>
+  <block id="f02fee54a71e292fba6eea93ae620b05" category="paragraph">게스트 VM 또는 프록시 VM에 가상 디스크를 연결하고 게스트 파일 복원 세션을 시작합니다.</block>
+  <block id="cc306461c288d34376cc4d746276d7cd" category="paragraph">가상 디스크 파일을 찾아보거나 검색하여 복원할 파일 또는 폴더를 하나 이상 선택합니다.</block>
+  <block id="3277407828b8713b5f9be81275930144" category="list-text">프록시 VM을 사용하려면 프록시 VM을 구성해야 합니다.</block>
+  <block id="2770d470ed8c5f3c1a3f955553de9580" category="paragraph">프록시 VM에 가상 디스크를 연결하려면 연결 및 복원 작업이 시작되기 전에 프록시 VM을 구성해야 합니다.</block>
 </blocks>
