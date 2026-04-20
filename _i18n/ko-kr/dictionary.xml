@@ -4555,7 +4555,6 @@
   <block id="40a9530583ad3747ca30675858b0a6cd" category="list-text">AWS 리소스에 대한 자격 증명 관련 자세한 내용은 <block ref="101809cc7793764f39e2d5fc223ea04c" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="40a81a4873df306bd0d241dc6c5f81ba" category="admonition">여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호할 때만 사용할 수 있습니다.</block>
   <block id="782b4a6bf31d7d564f002ed80e56a970" category="doc">데이터 이동 시간 초과 주석</block>
-  <block id="2cf4114566459ea3b3a5ac507cb86fd9" category="paragraph">백업 및 복원 작업 중에 <block ref="f49fa3f76b2a4fcdf04dff369d417d84" prefix=" " category="inline-code"></block> 어노테이션을 사용하여 데이터 이동 작업에 대한 타임아웃을 구성할 수 있습니다. 이 어노테이션은 데이터 이동기가 타임아웃되기 전에 특정 작업이 완료될 때까지 대기해야 하는 최대 시간(초)을 지정합니다. 네트워크 문제 또는 기타 요인으로 인해 데이터 이동 작업이 중단될 수 있는 상황에서 특히 유용합니다. 전체 프로세스에 대한 일반적인 타임아웃을 설정하는 대신 중단된 작업을 감지하고 처리하는 데 도움이 됩니다. 예를 들어 네트워크 문제로 인해 볼륨 데이터 복원이 진행되지 않으면 지정된 기간에 따라 작업이 타임아웃됩니다.</block>
   <block id="c2b7f24f4ddbaedb4e3d9e19f77eebac" category="paragraph">아래와 같이 YAML 파일에서 이 주석을 사용할 수 있습니다.</block>
   <block id="14a0e26cbe187a4754f8b523ffba6073" category="paragraph">이 예시에서, 복원 작업 중 2초 이내에 진행 상황이 없으면 해당 주석은 <block ref="ec2a2895b09b6030ec8cc1b3c43ddc4d" prefix=" " category="inline-code"></block> 작업을 실패로 처리합니다.</block>
   <block id="c49aaf233c16f1193a8d683c17866eea" category="admonition">주석 값이 0보다 작거나 같으면 작업이 즉시 실패합니다.</block>
@@ -4570,14 +4569,9 @@
   <block id="acb14ba5b70eb330a1d4de9c6b7a325d" category="inline-link-macro">가상화 구성</block>
   <block id="5ea5c247812e1dca5ff02ca853f05032" category="paragraph">Trident Protect 24.10을 구성하여 <block ref="e0dd4c4b8aa16596df6c3f5cb36d3cdc" category="inline-link-macro-rx"></block>을(를) 사용한 다음 다음 명령을 사용하여 데이터 보호 작업 중 VM 파일 시스템의 동결 및 해제를 관리할 수 있습니다.</block>
   <block id="cedf2576eebff15fc6b30d5a7109eb6b" category="doc">복원 및 페일오버 작업 중 네임스페이스 주석 및 레이블</block>
-  <block id="131ff34387be167411ffda7d60b577e7" category="paragraph">복원 및 페일오버 작업 중에 대상 네임스페이스의 레이블과 주석은 소스 네임스페이스의 레이블과 주석과 일치하도록 조정됩니다. 대상 네임스페이스에 존재하지 않는 소스 네임스페이스의 레이블 또는 주석은 추가되며, 이미 존재하는 레이블 또는 주석은 소스 네임스페이스의 값과 일치하도록 덮어쓰여집니다. 대상 네임스페이스에만 존재하는 레이블 또는 주석은 변경되지 않습니다.</block>
   <block id="20f40e0b9308901dac07ce8a8efb3350" category="inline-link-macro">OpenShift 보안 컨텍스트 제약 조건 문서</block>
-  <block id="80aabc2f42a52376f3d884d3b02360f4" category="admonition">Red Hat OpenShift를 사용하는 경우 OpenShift 환경에서 네임스페이스 어노테이션의 중요한 역할을 알아두는 것이 중요합니다. 네임스페이스 어노테이션은 복원된 Pod가 OpenShift 보안 컨텍스트 제약 조건(SCC)에 정의된 적절한 권한 및 보안 구성을 준수하고 권한 문제 없이 볼륨에 액세스할 수 있도록 보장합니다. 자세한 내용은 <block ref="842acfa178c0bbf09e368bf9db0716b8" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
-  <block id="6c83555d4261acb08ebbc5f24823dc7b" category="paragraph">복원 또는 장애 조치 작업을 수행하기 전에 Kubernetes 환경 변수<block ref="1580ff61f204e9d56cd5324c7e9221ba" prefix=" " category="inline-code"></block>를 설정하여 대상 네임스페이스의 특정 어노테이션이 덮어쓰여지는 것을 방지할 수 있습니다. 예를 들면 다음과 같습니다.</block>
   <block id="59f713e31282fe744caf06335d891f9a" category="inline-link-macro">Trident Protect 헬름 차트의 추가 설정을 구성합니다</block>
-  <block id="d65eac563b898cb7e41b8853a4fe1a3c" category="paragraph"><block ref="cc1f5c1d16e33b8463c9ee27295cd5df" prefix=" " category="inline-code"></block> 플래그와 함께 Helm을 사용하여 소스 애플리케이션을 설치한 경우 <block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block> 레이블 키에 특별한 처리가 적용됩니다. 복원 또는 페일오버 프로세스 중에 Trident Protect는 이 레이블을 대상 네임스페이스로 복사하지만 소스의 값이 소스 네임스페이스와 일치하는 경우 값을 대상 네임스페이스 값으로 업데이트합니다. 이 값이 소스 네임스페이스와 일치하지 않으면 변경 없이 대상 네임스페이스로 복사됩니다.</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">예</block>
-  <block id="1280c48f074ec68fd2281266662c9a3f" category="paragraph">다음 예제는 서로 다른 어노테이션과 레이블을 가진 소스 및 대상 네임스페이스를 보여줍니다. 작업 전후의 대상 네임스페이스 상태와 어노테이션 및 레이블이 대상 네임스페이스에서 어떻게 결합되거나 덮어쓰여지는지 확인할 수 있습니다.</block>
   <block id="2cfe257f724ed59a07ab01918c828fb5" category="section-title">복원 또는 페일오버 작업 전에</block>
   <block id="c972cd959174c84d137520d91c011446" category="paragraph">다음 표는 복원 또는 페일오버 작업 전 예시 소스 및 대상 네임스페이스의 상태를 보여줍니다.</block>
   <block id="b3ba0fe968ce39dcfc6fe8cc0f1b02da" category="cell">네임스페이스</block>
@@ -5243,7 +5237,6 @@
   <block id="13805175d1bc9d9656654bec32406f98" category="admonition">Backup and Recovery는 동일 볼륨의 다른 스냅샷과 생성 타임스탬프가 정확히 일치하는 스냅샷은 인덱싱하지 않습니다.</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026년 4월 13일</block>
   <block id="462fcd2b84c5fc16f3d89522a2068baa" category="sidebar">파일 및 폴더 복원 문제 해결</block>
-  <block id="44c66f240c569e9a6734099280701e88" category="admonition">복원 또는 페일오버 작업을 수행할 때<block ref="22416353aff9ef4322e1ee858f418ae4" prefix=" " category="inline-code"></block> 및<block ref="8028cf835d9b72ff2d6f835934c25568" prefix=" " category="inline-code"></block>에 지정된 네임스페이스 주석 및 레이블은 복원 또는 페일오버 작업에서 제외됩니다. 초기 Helm 설치 시 이러한 설정이 구성되어 있는지 확인하십시오. 자세한 내용은<block ref="b9fc3066a0a1e2a32e2c8ea860fac505" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="12dc36f8332118bd4fe7f1b4633c0a17" category="list-text">*파일 및 폴더 복원 시 프록시 VM 지원* - 이제 가상 디스크를 원래 VM에 연결하지 않고 프록시 VM을 사용하여 가상 디스크에서 파일과 폴더를 복원할 수 있습니다. 자세한 내용은<block ref="d14b743b42535a5def60386aae0617f3" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="ddd4881e88c799f792de41fafe0a11d7" category="list-text">*재귀적 파일 및 폴더 검색* - 이제 가상 디스크 전체에서 특정 파일이나 폴더를 검색할 수 있습니다. 자세한 내용은<block ref="d14b743b42535a5def60386aae0617f3" category="inline-link-rx"></block>을 참조하세요.</block>
   <block id="d07a2c33b1ba6b58e2a1a775e9fc5aa7" category="doc">가상 디스크에서 파일 및 폴더 복원</block>
@@ -5281,4 +5274,16 @@
   <block id="6a9a9c5f060efdfcbe5e8180b067f48a" category="admonition">백업 관계가 삭제된 후에는 개별 볼륨 백업 파일을 삭제할 수 없습니다. 하지만, <block ref="3808038aea69a954ce325a28d1d98875" category="inline-xref-macro-rx"></block>.</block>
   <block id="a251d9e6fa7397f3631b218bdece2a5c" category="admonition">백업 관계가 삭제된 후에는 개별 볼륨 백업 파일을 삭제할 수 없습니다. 하지만 <block ref="3808038aea69a954ce325a28d1d98875" category="inline-xref-macro-rx"></block>. 볼륨에 대한 백업 관계를 삭제해야 하는 경우 먼저 볼륨에 대한 백업을 삭제한 다음 백업 관계를 삭제하십시오.</block>
   <block id="015c04742dc48d5005ee2eea17467386" category="paragraph">시스템에 대해 NetApp Backup and Recovery를 비활성화하면 기존 백업을 삭제하지 않고 모든 볼륨에 대한 백업 및 복원이 일시 중지됩니다. 이를 통해 이 시스템에서 백업 서비스 등록을 취소하지 않고 일정 기간 동안 모든 백업 및 복원 작업을 일시 중지할 수 있습니다.</block>
+  <block id="ac702e35e5d377649ce818c63f8cb9d6" category="paragraph">백업 및 복원 중에 작업별 데이터 이동 시간 초과(초)를 설정하려면 어노테이션<block ref="f49fa3f76b2a4fcdf04dff369d417d84" prefix=" " category="inline-code"></block>을 사용하십시오. 이 어노테이션은 데이터 이동기가 작업 진행을 기다리는 시간을 지정하며, 이 시간이 지나면 시간 초과됩니다. 이는 전송 중단(예: 네트워크 문제로 볼륨 데이터 복원이 진행되지 않는 경우)을 감지하고 처리하는 데 유용합니다.</block>
+  <block id="aaaf3fb2db80e20e6d50218f16d99f4f" category="paragraph">복원 및 페일오버 중에 대상 네임스페이스 레이블과 주석은 소스와 일치하도록 업데이트됩니다. 소스의 키가 대상 키에 추가되거나 덮어쓰여지고, 대상에만 존재하는 키는 변경되지 않고 그대로 유지됩니다.</block>
+  <block id="a0c960e39999d3e07d43b18aadea4f7e" category="admonition">Red Hat OpenShift에서 네임스페이스 어노테이션은 복원된 Pod가 올바른 보안 컨텍스트 제약 조건과 권한을 받도록 보장하여 볼륨에 액세스하고 권한 오류 없이 실행할 수 있도록 하므로 중요합니다. 자세한 내용은 <block ref="842acfa178c0bbf09e368bf9db0716b8" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="96cd9f82d7fe1a044069b8c1e88870d3" category="paragraph">Kubernetes 환경 변수를 설정합니다</block>
+  <block id="6e18bf7adc407522d3adc14c25f83f28" category="paragraph">복원 또는 장애 조치 전에 특정 대상 네임스페이스 주석이 덮어쓰여지는 것을 방지합니다. 예를 들면 다음과 같습니다.</block>
+  <block id="67f7d0d1a6c01cbe0e09404d53ae8fac" category="admonition">복원 또는 페일오버 중에<block ref="22416353aff9ef4322e1ee858f418ae4" prefix=" " category="inline-code"></block> 및<block ref="8028cf835d9b72ff2d6f835934c25568" prefix=" " category="inline-code"></block>에 지정된 네임스페이스 어노테이션 및 레이블은 복원 또는 페일오버 작업에서 제외됩니다. 초기 Helm 설치 시 이러한 설정이 구성되어 있는지 확인하십시오. 자세한 내용은<block ref="b9fc3066a0a1e2a32e2c8ea860fac505" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="3e3fc64dca0b9c44d365fc5635e23463" category="paragraph">Helm을 사용하여 <block ref="cc1f5c1d16e33b8463c9ee27295cd5df" prefix=" " category="inline-code"></block> 플래그로 소스 애플리케이션을 설치한 경우, Trident Protect는 이름 레이블을 대상 네임스페이스로 복사합니다. 레이블 값이 소스 네임스페이스 이름과 일치하면 대상 네임스페이스 이름으로 대체되고, 일치하지 않으면 그대로 유지됩니다.</block>
+  <block id="5ac7bbd26db92893a2f8bcca7d6084a4" category="paragraph">다음 예는 서로 다른 레이블과 주석이 있는 소스 및 대상 네임스페이스를 보여주고, 키가 추가, 병합 또는 덮어쓰기되는 방식을 설명하기 위해 작업 전후의 대상 네임스페이스를 표시합니다.</block>
+  <block id="c7ac12b44e81f24dcab5d6e8675df0a1" category="paragraph">이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.</block>
+  <block id="4f06e500210ecec059ecf486106df9e6" category="list-text">*ASA r2 SAN 지원*: VMware 워크로드에서 이제 NetApp ASA r2 SAN 전용 환경에서 호스팅되는 VMFS 데이터스토어의 VM 보호를 지원합니다.</block>
+  <block id="fe6a65d4e5dee2ab8e25b78186c2fa25" category="list-text">ASA r2 SAN 전용 시스템(ONTAP 9.17.1 이상 필요)</block>
+  <block id="6dba6d956d3e495df0c0575cd1b23218" category="section-title">2026년 4월 20일</block>
 </blocks>
