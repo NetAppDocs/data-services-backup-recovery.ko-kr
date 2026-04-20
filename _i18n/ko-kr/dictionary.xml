@@ -4779,7 +4779,6 @@
   <block id="8d8a8010684a930aa7760c829cad4141" category="list-text">*labelSelector*: (_선택 사항_) 레이블을 기준으로 클러스터 범위 리소스를 필터링합니다.</block>
   <block id="5f47e505a6f61f7f97fe140353dc6594" category="list-text">필요한 경우 다음 주석을 구성하십시오.</block>
   <block id="57320d49ea044bfa493c42beb1df6cfe" category="inline-link-macro">전역 파일 시스템 고정 설정</block>
-  <block id="2d4560ac7467fc580503e1a2ec64edbc" category="list-text">*metadata.annotations.protect.trident.netapp.io/skip-vm-freeze*: (_선택 사항_) 이 어노테이션은 KubeVirt 환경과 같이 스냅샷 전에 파일 시스템이 동결되는 가상 머신에서 정의된 애플리케이션에만 적용됩니다. 이 애플리케이션이 스냅샷 중에 파일 시스템에 쓸 수 있는지 여부를 지정합니다. true로 설정하면 애플리케이션은 전역 설정을 무시하고 스냅샷 중에 파일 시스템에 쓸 수 있습니다. false로 설정하면 애플리케이션은 전역 설정을 무시하고 스냅샷 중에 파일 시스템이 동결됩니다. 지정되었지만 애플리케이션 정의에 가상 머신이 없는 경우 어노테이션은 무시됩니다. 지정하지 않으면 애플리케이션은 <block ref="a6fb49ce3deb125e56649f63b2a21282" category="inline-link-macro-rx"></block>를 따릅니다.</block>
   <block id="8f13f2f073acc52149f6e8567d13e534" category="list-text">*protect.trident.netapp.io/protection-command*: (_선택 사항_) 이 주석을 사용하여 Backup and Recovery에 애플리케이션을 보호하거나 보호를 중지하도록 지시합니다. 가능한 값은<block ref="124c16e5bae30d956b37ef14c9a00ab4" prefix=" " category="inline-code"></block> 또는<block ref="354492320803067b5a2cd287e209154d" prefix=" " category="inline-code"></block>입니다.</block>
   <block id="f0d0a63fd9731679f5ea79603dba4d1f" category="list-text">*protect.trident.netapp.io/protection-policy-name*: (_선택 사항_) 이 어노테이션을 사용하여 이 애플리케이션을 보호하는 데 사용할 NetApp Backup and Recovery 보호 정책의 이름을 지정합니다. 이 보호 정책은 NetApp Backup and Recovery에 이미 존재해야 합니다.</block>
   <block id="1fdb8b98325df025bfd256fc475c0986" category="paragraph">애플리케이션이 이미 생성된 후에 이 주석을 적용해야 하는 경우 다음 명령을 사용할 수 있습니다.</block>
@@ -5286,4 +5285,5 @@
   <block id="4f06e500210ecec059ecf486106df9e6" category="list-text">*ASA r2 SAN 지원*: VMware 워크로드에서 이제 NetApp ASA r2 SAN 전용 환경에서 호스팅되는 VMFS 데이터스토어의 VM 보호를 지원합니다.</block>
   <block id="fe6a65d4e5dee2ab8e25b78186c2fa25" category="list-text">ASA r2 SAN 전용 시스템(ONTAP 9.17.1 이상 필요)</block>
   <block id="6dba6d956d3e495df0c0575cd1b23218" category="section-title">2026년 4월 20일</block>
+  <block id="15c76b732e7da21111f18374ed2e9ae6" category="list-text">*metadata.annotations.protect.trident.netapp.io/skip-vm-freeze*: (_선택 사항_) 이 어노테이션은 KubeVirt 환경과 같이 스냅샷 전에 파일 시스템이 동결되는 가상 머신에서 정의된 애플리케이션에만 적용됩니다. 이 애플리케이션이 스냅샷 중에 파일 시스템에 쓸 수 있는지 여부를 지정합니다. true로 설정하면 애플리케이션은 전역 설정을 무시하고 스냅샷 중에 파일 시스템에 쓸 수 있습니다. false로 설정하면 애플리케이션은 전역 설정을 무시하고 스냅샷 중에 파일 시스템이 동결됩니다. 지정되었지만 애플리케이션 정의에 가상 머신이 없는 경우 어노테이션은 무시됩니다. 지정하지 않으면 애플리케이션은<block ref="3047941e3fa7c2760a995edc5fae820b" category="inline-link-rx"></block>를 따릅니다.</block>
 </blocks>
