@@ -8,7 +8,6 @@
 
 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
-* *ASA r2 SAN 지원*: VMware 워크로드에서 이제 NetApp ASA r2 SAN 전용 환경에서 호스팅되는 VMFS 데이터스토어의 VM 보호를 지원합니다.
-
+*ASA r2 SAN 지원*: VMware 워크로드에서 이제 NetApp ASA r2 SAN 전용 환경에서 호스팅되는 VMFS 데이터스토어의 VM 보호를 지원합니다.
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .

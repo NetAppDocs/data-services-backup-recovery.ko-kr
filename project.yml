@@ -218,6 +218,8 @@ sidebar:
       url: "/br-use-monitor-tasks.html"
     - title: NetApp Backup and Recovery 다시 시작하세요
       url: "/reference-restart-backup.html"
+    - title: 미리보기 및 숨겨진 기능 활성화
+      url: "/enable-preview-features.html"
   - title: REST API로 자동화
     url: "/br-api-backup-restore.html"
   - title: 참조
