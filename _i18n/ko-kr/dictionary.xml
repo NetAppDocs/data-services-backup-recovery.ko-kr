@@ -41,27 +41,18 @@
   <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">이 릴리스에서는 FlexGroup 폴더 복원에 대한 지원이 기술 미리보기로 제공됩니다.</block>
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link">찾아보기 및 복원을 사용하여 폴더 및 파일 복원</block>
   <block id="20a9fe231d3378f3b995e621821a5fb1" category="paragraph">자세한 내용은 다음을 참조하세요.<block ref="eb7fa071b1afec4a727e847897c52430" category="inline-link-rx"></block> .</block>
-  <block id="da9489b6abd27b653b6c28d99ae2ac6b" category="paragraph">수동으로 활성화하는 방법에 대한 자세한 내용은 다음을 참조하세요.<block ref="cb48ac5d5b1e506c1ce232053a519e6a" category="inline-link-rx"></block> .</block>
   <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="doc">RHEL 8 또는 9에서 탐색 및 복원을 통한 Podman 지원</block>
   <block id="adc0925d00b7b860ba010d483035a38d" category="paragraph">NetApp Backup and Recovery 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다.  이는 NetApp Backup and Recovery 찾아보기 및 복원 방법에 적용됩니다.</block>
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-link">호스트 요구 사항</block>
-  <block id="6be4e0f7143419aee9499b2a2505b0ab" category="paragraph">콘솔 에이전트 버전 3.9.40은 RHEL 8 또는 9 호스트에서 콘솔 에이전트 소프트웨어를 수동으로 설치하는 경우 해당 위치에 관계 없이 Red Hat Enterprise Linux 버전 8 및 9의 특정 버전을 지원합니다.<block ref="10c1911da0601c7d780b4af72d11f3ab" category="inline-link-rx"></block> .  최신 RHEL 버전에는 Docker 엔진 대신 Podman 엔진이 필요합니다.  이전에는 NetApp Backup and Recovery Podman 엔진을 사용할 때 두 가지 제한이 있었습니다.  이러한 제한은 제거되었습니다.</block>
   <block id="6111aa812639d5e432842ceca200ea78" category="inline-link">백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요.</block>
   <block id="f807d2e87806a64e8251db4daa8c0686" category="paragraph"><block ref="a417ea89f701f9bc0a6d7405552ab71a" category="inline-link-rx"></block>.</block>
   <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">더 빠른 카탈로그 인덱싱으로 검색 및 복원이 개선됩니다.</block>
   <block id="9353e94049314c6236b51712848f2572" category="paragraph">이번 릴리스에는 기준 색인 작업을 훨씬 더 빠르게 완료하는 개선된 카탈로그 색인이 포함되어 있습니다.  더 빠른 인덱싱을 통해 검색 및 복원 기능을 더욱 빠르게 사용할 수 있습니다.</block>
   <block id="517624d736bd2a385ee8cda71584112f" category="doc">SnapLock Compliance 및 SnapLock Enterprise 보호 모드</block>
-  <block id="c9c56efcf255aca32ed492e84095d7c2" category="paragraph">NetApp Backup and Recovery 이제 SnapLock Compliance 또는 SnapLock Enterprise 보호 모드를 사용하여 구성된 FlexVol 및 FlexGroup 온프레미스 볼륨을 모두 백업할 수 있습니다. 이 지원을 받으려면 클러스터에서 ONTAP 9.14 이상을 실행해야 합니다. ONTAP 버전 9.11.1부터 SnapLock Enterprise 모드를 사용하여 FlexVol 볼륨을 백업하는 기능이 지원되었습니다. 이전 ONTAP 릴리스에서는 SnapLock 보호 볼륨 백업을 지원하지 않습니다.</block>
   <block id="d41c5b540be0c3c679bd7d5c99b06670" category="inline-link">NetApp Backup and Recovery 에 대해 알아보세요</block>
-  <block id="97b3d65b7c467100f6712b88b990af6d" category="paragraph">지원되는 볼륨의 전체 목록을 확인하세요.<block ref="a026c5bec08ff7bb5b963e48c0daa63e" category="inline-link-rx"></block> .</block>
   <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">볼륨 페이지에서 검색 및 복원 프로세스에 대한 인덱싱</block>
   <block id="15400d9962ba34aa5fdf096b27ab90a3" category="paragraph">검색 및 복원을 사용하려면 먼저 볼륨 데이터를 복원하려는 각 소스 시스템에서 "인덱싱"을 활성화해야 합니다.  이를 통해 색인된 카탈로그는 모든 볼륨의 백업 파일을 추적할 수 있습니다.  이제 볼륨 페이지에 인덱싱 상태가 표시됩니다.</block>
   <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">색인됨: 볼륨이 색인되었습니다.</block>
-  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">진행 중</block>
-  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">인덱싱되지 않음</block>
-  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">인덱싱이 일시 중지되었습니다.</block>
-  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">오류</block>
-  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">활성화되지 않음</block>
   <block id="1ef2d1ba8a2963702ac1e5240f81ffde" category="doc">NetApp Backup and Recovery 미리보기 릴리스</block>
   <block id="501af319d8923aa4758190eb4fbada30" category="paragraph">NetApp Backup and Recovery 의 이 Preview 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.</block>
   <block id="a2e3a30df706bb24099d5e00888df71a" category="admonition">이 문서는 기술 미리보기로 제공됩니다. 이 미리보기 제공을 통해 NetApp 일반 공급 전에 제공 세부 정보, 내용 및 일정을 수정할 권리가 있습니다.</block>
@@ -152,7 +143,6 @@
   <block id="2a42543b31a44385d9801b2e6d715417" category="list-text">정책에서 DataLock을 활성화하는 것은 지원되지 않습니다.</block>
   <block id="bd38f0d8ed5d82f6a34eef6f60e82afc" category="list-text">정책에서 보관 모드를 활성화하는 것은 지원되지 않습니다.</block>
   <block id="7f4d22b3de45045172408ddd711a85a1" category="paragraph">*시작하기*</block>
-  <block id="532a003570e90a57b7965cafcf69d336" category="paragraph">이 미리 보기 기능을 사용하려면 콘솔 에이전트에서 플래그를 활성화해야 합니다.  그런 다음 백업 섹션에서 *타사 호환* 개체 저장소를 선택하여 보호 워크플로에서 MinIO 타사 개체 저장소의 연결 세부 정보를 입력할 수 있습니다.</block>
   <block id="c65f3468fbd84ca6a3ed5c4f86c93ec8" category="doc">향상된 ONTAP 볼륨 대시보드</block>
   <block id="4fd717f9bf23502f14b97a4e0dd209e6" category="paragraph">2025년 4월, 훨씬 더 빠르고 효율적인 향상된 ONTAP 볼륨 대시보드의 미리보기를 출시했습니다.</block>
   <block id="24c045ea49f5ec7c22662da2305601e6" category="paragraph">이 대시보드는 작업 부하가 많은 기업 고객을 돕기 위해 설계되었습니다. 볼륨이 20,000개에 달하는 고객의 경우에도 새로운 대시보드는 10초 이내에 로드됩니다.</block>
@@ -187,13 +177,11 @@
   <block id="2211c8a4939111428200ceec5f271f42" category="paragraph">보호 기능을 활성화하거나 복원 프로세스를 시작할 때 이 옵션을 활성화하거나 비활성화할 수 있습니다.</block>
   <block id="e642532444d0db4591ce8b9d729f92b3" category="paragraph">이 설정을 비활성화하면 NetApp Backup and Recovery 제대로 작동하도록 개인 엔드포인트를 수동으로 만들어야 합니다. 적절한 연결 없이는 백업 및 복구 작업을 성공적으로 수행하지 못할 수 있습니다.</block>
   <block id="fad4c67d1d97874133e7a367fe5038fd" category="section-title">ONTAP S3에서 SnapMirror to Cloud Resync 지원</block>
-  <block id="8e0a943cdbcd7f9c7f29128489119715" category="paragraph">이전 릴리스에서는 SnapMirror to Cloud Resync(SM-C Resync)에 대한 지원이 도입되었습니다. 이 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호를 간소화합니다. 이 릴리스에서는 ONTAP S3의 ​​SM-C Resync 지원은 물론 Wasabi, MinIO와 같은 다른 S3 호환 공급자에 대한 지원도 추가되었습니다.</block>
   <block id="fa551b5810fe894fcd21bf7c8ffc98d1" category="section-title">StorageGRID 용 자체 버킷 가져오기</block>
   <block id="4b2511d38450982bde4f504e80a44028" category="paragraph">작업 환경의 개체 스토리지에 백업 파일을 만들면 기본적으로 NetApp Backup and Recovery 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다. 이전에는 이를 재정의하여 Amazon S3, Azure Blob Storage, Google Cloud Storage에 대한 자체 컨테이너를 지정할 수 있었습니다. 이 릴리스를 사용하면 이제 자체 StorageGRID 개체 스토리지 컨테이너를 가져올 수 있습니다.</block>
   <block id="e6e5a011626c6db86099687e0a358c1f" category="inline-link">나만의 객체 스토리지 컨테이너를 만드세요</block>
   <block id="51c4ba7436895c5fa861c805e1caee68" category="paragraph">보다<block ref="63f7d9c65b21d9a782eb05b351422f54" category="inline-link-rx"></block> .</block>
   <block id="5d8fc779baf0d068c296ee5013b2224f" category="doc">미리 보기로 Kubernetes 워크로드 지원</block>
-  <block id="3544c31b5491dc7ecb73e28d6e25a1e8" category="paragraph">NetApp Backup and Recovery 의 이번 릴리스에서는 Kubernetes 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.</block>
   <block id="200a1ca96330b8c7561607ba3e8efa76" category="list-text">kubeconfig 파일을 공유하지 않고도 NetApp ONTAP 지원하는 Red Hat OpenShift와 오픈 소스 Kubernetes 클러스터를 살펴보세요.</block>
   <block id="bc97cde5f3a6fe336563401fb4b522a7" category="list-text">통합 제어 평면을 사용하여 여러 Kubernetes 클러스터에서 애플리케이션을 검색, 관리 및 보호합니다.</block>
   <block id="8671fb87efe354c05f9373edb6889d96" category="list-text">Kubernetes 애플리케이션의 백업 및 복구를 위한 데이터 이동 작업을 NetApp ONTAP 으로 오프로드합니다.</block>
@@ -252,7 +240,6 @@
   <block id="387c71fcb2fb7fdf9038db9d12137530" category="inline-link-macro">NetApp Console 릴리스 노트.</block>
   <block id="3a1e37eecca95e81d9e509646022ffda" category="paragraph">변경된 내용에 대한 자세한 내용은 다음을 참조하세요.<block ref="019a5c722618673de9fa5ca0cf2abddb" category="inline-link-macro-rx"></block></block>
   <block id="86df852f08da7feceb910d31327e83d7" category="section-title">Hyper-V 워크로드 지원(개인 미리 보기)</block>
-  <block id="9fb98f9a29d9d72ef6008750be44e084" category="paragraph">NetApp Backup and Recovery 의 이번 릴리스에서는 Hyper-V 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.</block>
   <block id="bd0905239cb012ebf878ac40c3981660" category="list-text">독립 실행형 인스턴스와 장애 조치 클러스터 인스턴스(FCI)에서 VM 백업 및 복원</block>
   <block id="cb861f226468f5c5741c826734953432" category="list-text">SMB3 공유에 저장된 VM 보호</block>
   <block id="165a3a57ae6cbe2ce8d382109a648112" category="list-text">가상 머신 수준에서의 대량 보호</block>
@@ -262,7 +249,6 @@
   <block id="57a29df96f4bdf53f80c56b739785313" category="inline-link">Hyper-V 워크로드 보호 개요</block>
   <block id="f7bc6e5577bf047a5f192d548391185c" category="paragraph">Hyper-V 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요.<block ref="8b99e6e4e6dfd30b0b16292fe5edfbd4" category="inline-link-rx"></block> .</block>
   <block id="ade0d83a8d5df6524dcf5bc339bf6236" category="section-title">비공개 미리보기로 제공되는 KVM 워크로드 지원</block>
-  <block id="c42adba211239f644f4ee6954d8a909e" category="paragraph">NetApp Backup and Recovery 의 이번 릴리스에서는 KVM 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.</block>
   <block id="99803398691d47a569fe2e0eeaf8a74c" category="list-text">NFS 공유에 저장된 qcow2 VM 이미지를 백업하고 복원합니다.</block>
   <block id="81e3905959a6e11107e52c1db1aa927a" category="list-text">백업 스토리지 풀</block>
   <block id="be660bd29054ec196c26b5d7ab12eca9" category="list-text">보호 그룹을 사용한 대량 VM 및 스토리지 풀 보호</block>
@@ -324,8 +310,6 @@
   <block id="a0d08a35ff701967dbc1c996dc96b450" category="paragraph">API 호출을 할 때 Authorization 헤더에 사용자 토큰을 추가하고 x-agent-id 헤더에 콘솔 에이전트 ID를 추가합니다.  API에서는 NetApp Console 계정 ID를 사용해야 합니다.</block>
   <block id="92ab15f0eb1b97b8c4bdb14a10948af8" category="inline-link">서비스 액세스 토큰 생성</block>
   <block id="e5f2b8ab19b544e0e970070da0ef345c" category="admonition">서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 액세스 토큰을 사용해야 합니다. "client_id" 값("Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC")은 고정된 값이므로 변경할 수 없습니다. 이 경우 다음 지침을 따르세요.<block ref="ad1a67426fea429db40073e48bac82e2" category="inline-link-rx"></block> .</block>
-  <block id="cb27bd3cf10a5c5ee3ef77ed62b4ec63" category="list-text">NetApp NetApp Console 웹 사이트에서 사용자 토큰을 얻습니다.</block>
-  <block id="9644265a314e497bc18814e1694c3d27" category="paragraph">다음 링크에서 새로 고침 토큰을 생성하세요: https://services.cloud.netapp.com/refresh-token/.  새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.</block>
   <block id="4130aadba8d01957d2f7bc7a8826bbc7" category="admonition">NetApp Console 웹 사이트의 사용자 토큰에는 만료 날짜가 있습니다. API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필드가 포함되어 있습니다.  토큰을 새로 고치려면 이 API를 다시 호출해야 합니다.</block>
   <block id="354fecdc1c1045cf24231c0bec3c74cd" category="list-text">NetApp Console 계정 ID를 얻으세요.</block>
   <block id="8249fee34290d25027be632b8f27da68" category="paragraph">이 API는 다음과 같은 응답을 반환합니다. *[0].[ accountPublicId]*의 출력을 구문 분석하여 계정 ID를 검색할 수 있습니다.</block>
@@ -520,7 +504,6 @@
   <block id="5b67703bc7ab6a4716dda43c544c9f7d" category="list-text">*기존 자격 증명*: 이 옵션을 선택하면 이미 추가한 기존 자격 증명을 사용할 수 있습니다.  자격 증명 이름을 입력하세요.</block>
   <block id="29c1c21dae903f81a5ce83243375ad66" category="list-text">*새로운 자격 증명 추가*: 기존 SnapCenter 호스트 자격 증명이 없으면 새 자격 증명을 추가할 수 있습니다. 자격 증명 이름, 인증 모드, 사용자 이름 및 비밀번호를 입력하세요.</block>
   <block id="d9f0e4ad58dd91513c083d85b8d9abac" category="list-text">*가져오기*를 선택하여 항목을 검증하고 SnapCenter 서버를 등록합니다.</block>
-  <block id="e2aca1a90b2505bdbd8989fd67da5b73" category="admonition">SnapCenter 서버가 이미 등록된 경우 기존 등록 세부 정보를 업데이트할 수 있습니다.</block>
   <block id="1a2fd2144a03d5f7da4895a769c5f322" category="paragraph">인벤토리 페이지에는 가져온 SnapCenter 리소스가 표시됩니다.</block>
   <block id="c836a45d41f4d6fac973334982e0121b" category="section-title">SnapCenter 호스트 리소스 관리</block>
   <block id="8a44019232b730c71ae86feed08e1f3a" category="paragraph">SnapCenter 리소스를 가져온 후 NetApp Backup and Recovery 에서 해당 호스트 리소스를 관리합니다.  가져온 리소스를 관리하도록 선택하면 NetApp Backup and Recovery SnapCenter 에서 가져온 리소스를 백업하고 복구할 수 있습니다.  더 이상 SnapCenter Server에서 해당 리소스를 관리할 필요가 없습니다.</block>
@@ -529,7 +512,6 @@
   <block id="1fb988937b21c00da1e824876b010dc1" category="list-text">* NetApp Console 에서 관리*를 선택합니다.</block>
   <block id="67c5a09051e18a795b9e554ac46c53fc" category="paragraph">인벤토리 페이지에서는 호스트 이름 아래에 *관리됨*이 표시되어 선택한 호스트 리소스가 이제 NetApp Backup and Recovery 에서 관리된다는 것을 나타냅니다.</block>
   <block id="dd65b1fcdfdbfc9273253615b14bdeb7" category="section-title">가져온 SnapCenter 리소스 편집</block>
-  <block id="34cc7187d0a3d7c2dd259f99b254962d" category="paragraph">나중에 SnapCenter 리소스를 다시 가져오거나 가져온 SnapCenter 리소스를 편집하여 등록 세부 정보를 업데이트할 수 있습니다.</block>
   <block id="2dadcaeef8b607b311c6e42ed35272c1" category="paragraph">SnapCenter 서버의 포트와 비밀번호 세부 정보만 변경할 수 있습니다.</block>
   <block id="0f9066b0f9e42b12f45badda9e9c8254" category="list-text">* SnapCenter 에서 가져오기*를 위해 아래쪽 화살표를 선택하세요.</block>
   <block id="88b324247ad56ee6b822b2ad7363ece8" category="paragraph">SnapCenter 에서 가져오기 페이지에는 이전에 가져온 모든 항목이 표시됩니다.</block>
@@ -1662,7 +1644,6 @@
   <block id="5d49eb458c546b4f70a99f4b37bbcc20" category="list-text">기본 저장소 클래스 또는 다른 저장소 클래스로 복원할지 선택합니다.</block>
   <block id="12c3c958b266fff57134abb1c9649419" category="list-text">선택적으로, 다른 스토리지 클래스로 복원하도록 선택한 경우 각 소스 스토리지 클래스와 일치하는 대상 스토리지 클래스를 선택합니다.</block>
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">백업 삭제</block>
-  <block id="f34f3b4d83a98c1f03d57b6ce4176300" category="summary">NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요.</block>
   <block id="d1980609675dd3ea40abaebd4a0989d8" category="doc">NetApp Backup and Recovery 사용하여 VMware 워크로드 백업</block>
   <block id="30a409f022898dd26f006e04486b81e0" category="paragraph">온프레미스 ONTAP 시스템의 VMware VM과 데이터 저장소를 Amazon Web Services, Azure NetApp Files 또는 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.</block>
   <block id="f941928782d55bd3ba649990c808fcbd" category="inline-link-macro">NetApp Backup and Recovery 사용하여 VMware 워크로드에 대한 보호 그룹을 만들고 관리합니다.</block>
@@ -2530,7 +2511,6 @@
   <block id="15791d531460b4c275e03017399fcd1a" category="inline-link">IPspaces에 대해 자세히 알아보세요</block>
   <block id="c96f0b5929f61d63c7ae3512d00fb22b" category="list-text">클러스터 간 LIF는 ONTAP 개체 스토리지에 연결하는 데 사용해야 하는 _IPspace_와 연결되어야 합니다.<block ref="0edb32ced43734581c082142ee8a87a9" category="inline-link-rx"></block> .</block>
   <block id="d23d9fa8bc8aada34e7bfaf673a1e1d7" category="paragraph">NetApp Backup and Recovery 설정하면 사용할 IP 공간을 입력하라는 메시지가 표시됩니다. 이러한 LIF가 연결된 IP 공간을 선택해야 합니다. 이는 "기본" IP 공간일 수도 있고 사용자가 만든 사용자 지정 IP 공간일 수도 있습니다.</block>
-  <block id="f2d23bc0f0e4ec1066fdf58d41ab19ab" category="paragraph">"기본"이 아닌 다른 IP 공간을 사용하는 경우 개체 스토리지에 액세스하려면 정적 경로를 만들어야 할 수도 있습니다.</block>
   <block id="187b50ee8f2351a69b8fa6b8b42687d5" category="paragraph">IPspace 내의 모든 클러스터 간 LIF는 개체 저장소에 액세스할 수 있어야 합니다. 현재 IP 공간에 대해 이를 구성할 수 없는 경우 모든 클러스터 간 LIF가 개체 저장소에 액세스할 수 있는 전용 IP 공간을 만들어야 합니다.</block>
   <block id="16b737dd94da3821905b2064f8068f45" category="inline-link">SVM에 대한 DNS 서비스 구성</block>
   <block id="e30347a67bfdcb246f056cfd9aa4efbd" category="list-text">볼륨이 위치한 스토리지 VM에 대해 DNS 서버가 구성되어야 합니다.  방법을 확인하세요<block ref="f1c08d303d78e879204468f0ff96d977" category="inline-link-rx"></block> .</block>
@@ -2621,7 +2601,6 @@
   <block id="352e593026b22ecd240cab27c36a6aa8" category="paragraph">NetApp Backup and Recovery 설정하면 사용할 IP 공간을 입력하라는 메시지가 표시됩니다. 각 LIF가 연결된 IP 공간을 선택해야 합니다. 이는 "기본" IP 공간일 수도 있고 사용자가 만든 사용자 지정 IP 공간일 수도 있습니다.</block>
   <block id="4ac800b4e5d934f314da963c023ec8e3" category="list-text">노드와 클러스터 간 LIF는 객체 저장소에 액세스할 수 있습니다.</block>
   <block id="cf4f978809886b33abb134b8d95a53fa" category="list-text">볼륨이 위치한 스토리지 VM에 대한 DNS 서버가 구성되었습니다.  방법을 확인하세요<block ref="f1c08d303d78e879204468f0ff96d977" category="inline-link-rx"></block> .</block>
-  <block id="113b5e7186c305ad07d9c9c046e30198" category="list-text">기본 IP 공간과 다른 IP 공간을 사용하는 경우 개체 스토리지에 액세스하려면 정적 경로를 만들어야 할 수도 있습니다.</block>
   <block id="c6ab18cd48dd0f412dee7654780c4eef" category="list-text">필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 개체 스토리지로의 NetApp Backup and Recovery 서비스 연결이 포트 443을 통해 허용되고 스토리지 VM에서 DNS 서버로의 이름 확인 트래픽이 포트 53(TCP/UDP)을 통해 허용되도록 합니다.</block>
   <block id="dc6287483bb6663eb24a6b4a97292566" category="section-title">Azure Blob을 백업 대상으로 준비</block>
   <block id="7c6c6d3f55cf70ec4e78761174989411" category="list-text">기본 Microsoft 관리 암호화 키를 사용하는 대신, 활성화 마법사에서 사용자 지정 관리 키를 사용하여 데이터를 암호화할 수 있습니다.  이 경우 Azure 구독, Key Vault 이름 및 키가 필요합니다.<block ref="5499082d3ade4f2b56fcc95816a14476" category="inline-link-rx"></block> .</block>
@@ -2667,7 +2646,6 @@
   <block id="12b49f489ea72468724070c09fc7f45d" category="list-text">ONTAP 콘솔 에이전트에서 클러스터 관리 LIF로의 인바운드 연결이 필요합니다.  콘솔 에이전트는 Google Cloud Platform VPC에 상주할 수 있습니다.</block>
   <block id="8bdfdad72ee7298056198e1b5d8fb704" category="list-text">노드의 클러스터 간 LIF는 객체 저장소에 액세스할 수 있습니다.</block>
   <block id="7dfd82301201229d10d2b7f30a3a9e1e" category="paragraph">Private Google Access 또는 Private Service Connect를 사용하는 경우 DNS 서버가 다음을 가리키도록 구성되었는지 확인하세요.<block ref="3f4ca1d8ed90e1a3c0451eb42e58e5ef" prefix=" " category="inline-code"></block> 올바른 내부(개인) IP 주소로.</block>
-  <block id="6f10fb0bdda82988a0fa6dcc2515c346" category="list-text">기본 IP 공간과 다른 IP 공간을 사용하는 경우 개체 스토리지에 액세스하려면 정적 경로를 만들어야 할 수도 있습니다.</block>
   <block id="a62451f46dc42982cf209550cb11486e" category="list-text">필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 포트 443을 통해 개체 스토리지로 NetApp Backup and Recovery 연결을 허용하고, 스토리지 VM에서 포트 53(TCP/UDP)을 통해 DNS 서버로 이름 확인 트래픽을 허용합니다.</block>
   <block id="496645a84a32070fadbf91b2c575e751" category="paragraph">백업을 위한 Google Cloud Storage 대상이 콘솔의 *시스템* 페이지에 있는 경우 ONTAP 클러스터를 Google Cloud 개체 스토리지로 끌어다 놓을 수 있습니다.</block>
   <block id="8b7d5c44d9577dfc1c061905392bd3f1" category="list-text">*로컬 스냅샷*: 개체 스토리지에 복제나 백업을 수행하는 경우 로컬 스냅샷을 만들어야 합니다.</block>
@@ -2718,7 +2696,6 @@
   <block id="cfb67c066deff155999e8b4bab9d5bd1" category="list-text">ONTAP 클러스터는 백업 및 복원 작업을 위해 클러스터 간 LIF에서 ONTAP S3 서버로 사용자가 지정한 포트를 통해 HTTPS 연결을 시작합니다.  포트는 백업 설정 중에 구성할 수 있습니다.</block>
   <block id="da21bd86fb59a4ebcb3e9faa287bbb0d" category="list-text">ONTAP 콘솔 에이전트에서 클러스터 관리 LIF로의 인바운드 연결이 필요합니다.</block>
   <block id="13af414a6c38f36f8a15bdef0358f5c4" category="list-text">노드의 클러스터 간 LIF는 개체 저장소에 액세스할 수 있습니다(콘솔 에이전트가 "다크" 사이트에 설치된 경우에는 필요하지 않음).</block>
-  <block id="a82a5bb2727df3f1958829955576a139" category="list-text">기본 IP 공간과 다른 IP 공간을 사용하는 경우 개체 스토리지에 액세스하려면 정적 경로를 만들어야 할 수도 있습니다.</block>
   <block id="b470d5270f42332102265af5da8e545a" category="list-text">필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 개체 스토리지로의 NetApp Backup and Recovery 서비스 연결을 지정한 포트(일반적으로 포트 443)를 통해 허용하고, 스토리지 VM에서 DNS 서버로의 이름 확인 트래픽을 포트 53(TCP/UDP)을 통해 허용합니다.</block>
   <block id="6da2ce1a0bc0894620f6c533f7a2f2b4" category="section-title">ONTAP S3를 백업 대상으로 준비하세요</block>
   <block id="c3bf5d608f066a6b405a40012a2fc10c" category="inline-link">ONTAP S3 문서</block>
@@ -2778,7 +2755,6 @@
   <block id="793640ee72b7150dff71a288a821c67c" category="list-text">지원되는 StorageGRID 버전</block>
   <block id="8a456872aea50fd247449bd552854586" category="list-text">StorageGRID 10.3 이상이 지원됩니다.</block>
   <block id="a3c3d46eb7dece1ea66293e26e27c747" category="paragraph">이전 백업을 클라우드 보관 스토리지로 계층화하려면 StorageGRID 시스템에서 11.3 이상 버전을 실행해야 합니다.  또한, StorageGRID 시스템은 콘솔의 *시스템* 페이지에서 검색되어야 합니다.</block>
-  <block id="de84af939f41492b1264ce8c3df573a9" category="paragraph">사용자 보관 저장소를 사용하려면 관리자 노드 IP 액세스가 필요합니다.</block>
   <block id="a99287c7990930f58a55c1e2dba88d64" category="paragraph">게이트웨이 IP 액세스는 항상 필요합니다.</block>
   <block id="5a7e671d36e7ddbd948f2001988ffe33" category="inline-link">자세한 내용은 StorageGRID 문서를 참조하세요.</block>
   <block id="c794a55c739e453d58e6bcd42293fda2" category="list-text">StorageGRID 스토리지에 대한 액세스를 제어하려면 S3 테넌트 계정을 만들어야 합니다.<block ref="71eb6cc3bcb687d271a4ec87759d7b9d" category="inline-link-rx"></block> .</block>
@@ -3073,7 +3049,6 @@
   <block id="b3f1b65a3c7ad581029671863ce84f3e" category="section-title">지원되는 시스템 및 개체 스토리지 공급자</block>
   <block id="04caa6fde87b21be8738fc7aac2130d5" category="paragraph">다음 퍼블릭 및 프라이빗 클라우드 공급자의 개체 스토리지를 사용하는 경우 다음 시스템의 ONTAP 볼륨에서 DataLock 및 랜섬웨어 보호를 활성화할 수 있습니다.</block>
   <block id="155ec659cc4e13b84e26ac8a60d0983e" category="cell">Google Cloud의 Cloud Volumes ONTAP</block>
-  <block id="f3ec603ab9c35660f371c0fc057b7fd1" category="list-text">클러스터는 ONTAP 9.11.1 이상을 실행해야 합니다.</block>
   <block id="6eccb1b4300ae9587c674c0708c7ee79" category="list-text">콘솔 에이전트는 클라우드나 사내에 배포될 수 있습니다.</block>
   <block id="685a143757efe250c8c69c08616cbe33" category="list-text">다음 S3 권한은 콘솔 에이전트에 권한을 제공하는 IAM 역할의 일부여야 합니다.  이들은 리소스 "arn:aws:s3:::netapp-backup-*"의 "backupS3Policy" 섹션에 있습니다.</block>
   <block id="28393e8d0c5d4d42b764689c3d805dd0" category="example-title">AWS S3 권한</block>
@@ -3105,7 +3080,6 @@
   <block id="2575b79b2cd768a027306db8b9e8614a" category="list-text">s3:객체 버전 가져오기</block>
   <block id="7b2b7c08da06dd437ae98c50b4ace20f" category="inline-link">필요한 권한을 복사하여 붙여넣을 수 있는 정책에 대한 전체 JSON 형식을 확인하세요.</block>
   <block id="14fe833125ea1176d7706671e8ef16cc" category="paragraph"><block ref="44b6ea42a3069db8220a474116b68855" category="inline-link-rx"></block>.</block>
-  <block id="4f411ed71b5f872404c482a3c45285e2" category="list-text">클러스터는 ONTAP 9.12.1 이상을 실행해야 합니다.</block>
   <block id="8dcc4563f1d723683eb1d9c883e3a1eb" category="list-text">Google Cloud의 경우:</block>
   <block id="f17f73c90517746e41e59ce4e6a2072f" category="list-text">클러스터는 ONTAP 9.17.1 이상을 실행해야 합니다.</block>
   <block id="43757ece62940efe206ed418c8c8f76b" category="list-text">StorageGRID 시스템은 11.6.0.3 이상을 실행해야 합니다.</block>
@@ -3198,7 +3172,6 @@
   <block id="307fac06deb7cfd0fa48e676ffc86224" category="paragraph">복제 또는 백업에 대한 사용자 지정 정책을 생성하는 경우 정책 레이블(예: "매일" 또는 "매주")이 스냅샷 정책이나 복제된 볼륨에 있는 레이블과 일치해야 하며 백업 파일이 생성되지 않습니다.</block>
   <block id="8cb2e913decbf9b532c186901104e076" category="inline-link-macro">새로운 백업 정책 추가</block>
   <block id="ee49cee7c44ccb04a139f40fb9f4a214" category="paragraph">NetApp Backup and Recovery UI에서 개체 스토리지 정책에 대한 스냅샷, 복제 및 백업을 생성할 수 있습니다.  섹션을 참조하세요<block ref="0559f444e8f88edb894615ec30a1d00b" category="inline-link-macro-rx"></block> 자세한 내용은.</block>
-  <block id="4cbdf0f70d1e657d5de76d924cb80f7c" category="paragraph">NetApp Backup and Recovery 사용하여 사용자 정의 정책을 만드는 것 외에도 System Manager나 ONTAP 명령줄 인터페이스(CLI)를 사용할 수 있습니다.</block>
   <block id="c2fc643b815b9305bcbcfd94e340a3cc" category="inline-link">System Manager 또는 ONTAP CLI를 사용하여 스냅샷 정책을 만듭니다.</block>
   <block id="fc3b34c5669f34396b08c49ba3f73599" category="list-text"><block ref="fc3b34c5669f34396b08c49ba3f73599" category="inline-link-rx"></block></block>
   <block id="e722bdc21722d564815561c634007199" category="inline-link">System Manager 또는 ONTAP CLI를 사용하여 복제 정책을 만듭니다.</block>
@@ -3742,11 +3715,9 @@
   <block id="ff6cbd3287f545a89d1e5e58f0d17bd4" category="section-title">SnapCenter 일일 일정 가져오기</block>
   <block id="61ed4c8e3ffbc53bcf1724532421e782" category="paragraph">NetApp Backup and Recovery SnapCenter 일정을 다음과 같이 조정합니다.</block>
   <block id="c08c2154284f4af8503c116de1e73d16" category="paragraph">*예*: 월요일부터 시작하여 3일마다 반복되는 SnapCenter 일일 정책이 있는 경우 NetApp Backup and Recovery 일정을 월요일, 목요일, 일요일로 매주로 설정합니다.  정확히 3일마다 진행되는 것이 아니기 때문에 어떤 날은 건너뛰기도 합니다.</block>
-  <block id="9f6a1fee7b57b18f64bf8bca4ad36e30" category="list-text">SnapCenter 일정이 7일보다 크게 설정된 경우 NetApp Backup and Recovery 일정을 월별로 설정합니다.  이번 달에는 일부 스냅샷이 건너뛰어질 예정입니다.</block>
   <block id="9430705db67f982f601f840df3cc16d6" category="section-title">SnapCenter 시간별 일정을 가져왔습니다.</block>
   <block id="3002d82ef196f81026a4e21905803959" category="paragraph">1시간 이상의 반복 간격을 가진 SnapCenter 시간별 정책은 NetApp Backup and Recovery 에서 일일 정책으로 변환됩니다.</block>
   <block id="a3e76bcb5e859bfa4430da805976f2bd" category="paragraph">24의 계수가 아닌 반복 간격(예: 5, 7 등)을 사용하는 시간별 정책은 하루 중 일부 스냅샷을 건너뜁니다.</block>
-  <block id="9ffb5bf344108bbac86816e15898f943" category="paragraph">*예*: 오전 1시부터 5시간 간격으로 반복되는 SnapCenter 시간별 정책이 있는 경우, NetApp Backup and Recovery (마이그레이션 후)는 일정을 오전 1시, 오전 6시, 오전 11시, 오후 4시, 오후 9시로 5시간 간격으로 매일로 설정합니다.  일부 시간은 건너뛰어집니다. 오후 9시 이후에는 5시간마다 반복하기 위해 오전 2시가 되어야 하지만 항상 오전 1시가 됩니다.</block>
   <block id="6a7a60343b8fa701471b08effbb43285" category="section-title">SnapCenter 정책의 로그 보존</block>
   <block id="26d5fd5ccf3209caaffe340f43009814" category="paragraph">SnapCenter 에 여러 정책이 적용된 리소스가 있는 경우 NetApp Backup and Recovery 다음 우선 순위를 사용하여 로그 보존 값을 할당합니다.</block>
   <block id="e38f6416749d06acffe55900ce6dfec5" category="list-text">SnapCenter 의 "로그 백업 정책을 사용한 전체 백업"과 "로그 전용" 정책의 경우, NetApp Backup and Recovery 로그 전용 정책 보존 값을 사용합니다.</block>
@@ -3786,7 +3757,6 @@
   <block id="cbeefab9985d18cf649d85c32d79d188" category="summary">NetApp Backup and Recovery 와 StorageGRID 또는 ONTAP 간 통신을 활성화하기 위해 보안 인증서를 만듭니다.</block>
   <block id="63b31af683f5a728cbf36267c289589f" category="doc">NetApp Backup and Recovery 에서 StorageGRID 및 ONTAP 에 대한 보안 인증서 설정</block>
   <block id="67fc617cb862496da73f0d13f68e5e84" category="section-title">StorageGRID 에 대한 보안 인증서 생성</block>
-  <block id="f4ea80cc019b2160c012d4312934a08a" category="paragraph">NetApp Backup and Recovery 컨테이너와 StorageGRID 간의 통신에서 StorageGRID 인증서를 확인해야 하는 경우 다음 단계를 완료하세요.</block>
   <block id="66474d54a0b8e88b5463c446c79940ef" category="paragraph">생성된 인증서에는 NetApp Backup and Recovery 에서 백업을 활성화할 때 제공한 이름과 동일한 CN 및 주체 대체 이름이 있어야 합니다.</block>
   <block id="04fad0ac16d7f2deb1987a5510c738a1" category="list-text">StorageGRID 설명서의 단계에 따라 StorageGRID 인증서를 생성하세요.</block>
   <block id="3b513e24628a82f33115f07ebd442378" category="inline-link">인증서 구성에 대한 StorageGRID 정보</block>
@@ -3798,7 +3768,6 @@
   <block id="cdff415187609f29944bf1c630161ca7" category="admonition">볼륨 이름은 표준, 개인, 제한 배포 모드에서 다릅니다. 이 예제에서는 표준 모드를 사용합니다. 참조하다<block ref="731df046572b68b75f040bb1dced01d2" category="inline-link-rx"></block> .</block>
   <block id="8e7afc71bbbdb7a90d5effeee846b799" category="list-text">NetApp Backup and Recovery 볼륨의 마운트 지점을 찾습니다. 달리다:</block>
   <block id="e97115c3e90314c60ded3b359ea70498" category="admonition">마운트 지점은 표준, 개인 및 제한 배포 모드마다 다릅니다. 이 예에서는 표준 클라우드 배포를 보여줍니다. 참조하다<block ref="731df046572b68b75f040bb1dced01d2" category="inline-link-rx"></block> .</block>
-  <block id="16a11dc8e42e07e3f4167ea593dc06be" category="list-text">MountPoint 디렉토리로 변경합니다. 달리다:</block>
   <block id="096c73b5512780e3a3a1510cb1d77009" category="list-text">StorageGRID 인증서가 루트 CA와 중간 CA에 의해 서명된 경우 다음을 추가합니다.<block ref="8921ffd638d5e5fd424e4c197e829486" prefix=" " category="inline-code"></block> 두 파일을 하나의 파일로 통합<block ref="0cf87cdc35b35ebc25d6a3bf7c9a3198" prefix=" " category="inline-code"></block> 현재 위치에서. 이 파일에 리프 인증서를 추가하지 마세요.</block>
   <block id="22945d914abe20d687b81ff6fbc05c67" category="section-title">cloudmanager_cbs 컨테이너에 대한 단계</block>
   <block id="f96abe500d7acb97552081ca537d4b46" category="paragraph">NetApp Backup and Recovery (Cloud Backup Service )에서 StorageGRID Server 인증서 검증을 활성화해야 합니다.</block>
@@ -3836,7 +3805,6 @@
   <block id="70e79bc1dae40cb4d65ff9311b208121" category="list-text"><block ref="70e79bc1dae40cb4d65ff9311b208121" category="inline-link-rx"></block></block>
   <block id="94127ba5494a8ba1866437839940b777" category="inline-link">System Manager를 사용하여 ONTAP SSL 인증서를 관리하는 방법</block>
   <block id="490355a668be7c4c18c41a966a22c161" category="list-text"><block ref="490355a668be7c4c18c41a966a22c161" category="inline-link-rx"></block></block>
-  <block id="b5864db94d8bb2d25b7f4630a16f599e" category="list-text">콘솔 에이전트에 루트로 로그인합니다. 달리다:</block>
   <block id="94a9166a0ff55136e38b559d3099942f" category="list-text">NetApp Backup and Recovery Docker 볼륨을 받으세요. 달리다:</block>
   <block id="d09a6e67f757bf6ab00dd35df5db31cb" category="admonition">볼륨 이름은 표준, 개인, 제한 배포 모드에서 다릅니다. 이 예에서는 표준 클라우드 배포를 보여줍니다. 참조하다<block ref="731df046572b68b75f040bb1dced01d2" category="inline-link-rx"></block> .</block>
   <block id="3e964e8f45e1fd19df3c5413fcbd6674" category="list-text">볼륨에 대한 마운트를 얻습니다. 달리다:</block>
@@ -3955,7 +3923,6 @@
   <block id="361cc78877d7de2ea952f510e7626ad4" category="paragraph">이 데이터는 하루에 한 번 자정에 백업되며, 각 파일의 최대 7개 사본이 보관됩니다. 콘솔 에이전트가 여러 온프레미스 ONTAP 시스템을 관리하는 경우 NetApp Backup and Recovery 파일은 먼저 활성화된 시스템의 버킷에 저장됩니다.</block>
   <block id="2be5ff28599e1447ad26486d058560b3" category="paragraph">온프레미스 콘솔 에이전트가 작동을 멈추면 새 콘솔 에이전트를 설치한 다음 NetApp Backup and Recovery 데이터를 새 콘솔 에이전트로 복원해야 합니다.</block>
   <block id="af0d8358ca0559646ed05a1f70fb056c" category="paragraph">시스템이 제대로 작동하는지 확인한 후 새로운 백업 파일을 만드세요.</block>
-  <block id="05eb9ffbcd3a4a40092374a3d60d7ac2" category="paragraph">새로운 콘솔 에이전트를 설치할 때 원래 에이전트와 동일한 소프트웨어 버전을 다운로드하세요.  NetApp Backup and Recovery 데이터베이스가 변경되면 최신 소프트웨어 버전이 이전 데이터베이스 백업과 작동하지 않을 수 있습니다. 당신은 할 수 있습니다<block ref="cf9f37e0e8c15b290b50a2dd76357649" category="inline-link-rx"></block> .</block>
   <block id="5d1e43ba5c03c383925fef923fa745db" category="paragraph">볼륨에 대해 생성된 모든 백업이 표시되어야 합니다.</block>
   <block id="6e16e42b061f3ee3519b7b870fdcf125" category="list-text">*매일*: 예를 들어 3일마다와 같이 설정된 일수마다 반복하는 옵션입니다.</block>
   <block id="e8aab330f851827afe9d27b0aec63d26" category="list-text">*월별*: 1월부터 12월까지, 예를 들어 매월 7일 등 특정 날짜나 여러 날에 공연할 수 있는 옵션이 있습니다.</block>
@@ -4070,7 +4037,6 @@
   <block id="7f04f32c4656d50b5019019cf54c568c" category="list-text">ONTAP 클러스터에 S3 버킷에 액세스할 수 있는 권한이 있는지 확인하세요.</block>
   <block id="8caf5a345895253ff6b6c49a438599d4" category="list-text">표시된 볼륨이 원래 환경에 있던 볼륨과 동일한지 확인하세요.</block>
   <block id="432f26fda10ddec4232e210d763f233e" category="paragraph">NetApp Backup and Recovery Microsoft SQL Server 애플리케이션을 평가합니다. 이 서비스는 현재 백업 보호 정책, 스냅샷, 백업 및 복구 옵션을 포함한 기존 보호 수준을 평가합니다.</block>
-  <block id="1bf1acc6c6a3e3af639e9ae129364ba0" category="paragraph">첫 번째 단계에서는 SnapCenter 에서 호스트 리소스(rsesources)를 가져와서 NetApp Backup and Recovery 인벤토리 페이지에 해당 리소스를 표시합니다. 그 시점에서는 리소스가 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.</block>
   <block id="f0b87199311bf1c15f240b666518084c" category="list-text">AWS:<block ref="e5469c6686b5a2c86b78502f7ea8c335" category="inline-link-rx"></block> .</block>
   <block id="6d641e087ca9cbb2e0778a492ac1066a" category="list-text">하늘빛:<block ref="211ed702bd160a1aa192248c846136e5" category="inline-link-rx"></block> .</block>
   <block id="80720981863bfe0c9cc6702701d24f18" category="list-text">구글 클라우드:<block ref="5aa99f120ab43d5669622268ca1e3fd1" category="inline-link-rx"></block> .</block>
@@ -4428,7 +4394,6 @@
   <block id="efdc15efa02d496331c0b53a11beab72" category="paragraph">이 문제를 해결하려면 게스트 OS에서 VMDK를 수동으로 다시 온라인으로 전환하세요. VMDK가 온라인 상태이면 게스트 파일 복원 세션에 올바른 내용이 표시됩니다.</block>
   <block id="f9364c3689e8fa9d558080e005772cd1" category="section-title">게스트 파일 복원 디스크 연결 작업이 실패했습니다.</block>
   <block id="95c259e43559e78a13dbc7969fdef7cf" category="paragraph">이 문제는 게스트 파일 복원 작업을 시작했지만 VMware 도구가 실행 중이고 게스트 OS 자격 증명이 올바른 경우에도 디스크 연결 작업이 실패할 때 발생합니다. 이런 경우, 다음 오류가 반환됩니다.</block>
-  <block id="9b71c1817815e7cd4130bed94e2ea447" category="paragraph"><block ref="294cedeefde97d4fb81e2aaa200cfe43" prefix="" category="inline-code"></block></block>
   <block id="359361098bd32a62519f56fcb0c584b3" category="paragraph">이 문제를 해결하려면 게스트 OS에서 VMware Tools Windows 서비스를 다시 시작한 다음 게스트 파일 복원 작업을 다시 시도하세요.</block>
   <block id="e2b253374500e2e93f1c334a2bb7ddd4" category="section-title">게스트 파일 복원 세션이 중단된 후에도 백업이 분리되지 않습니다.</block>
   <block id="898c4d9cd797d45ca2066478fd269974" category="paragraph">이 문제는 VM 일치 백업에서 게스트 파일 복원 작업을 수행할 때 발생합니다. 게스트 파일 복원 세션이 활성화되어 있는 동안 동일한 VM에 대해 또 다른 VM 일치 백업이 수행됩니다. 게스트 파일 복원 세션이 24시간 후 수동 또는 자동으로 연결이 끊어지면 해당 세션의 백업은 분리되지 않습니다.</block>
@@ -4595,7 +4560,6 @@
   <block id="55cf8812c6c22803ddfa5fd41279187d" category="list-text">디스크 간</block>
   <block id="0f6d38819f95da81f8bc80258fee7071" category="list-text">디스크에서 오브젝트 스토리지로</block>
   <block id="e3b858c29172bddae0dbb7e461b2f7df" category="list-text">캐스케이딩</block>
-  <block id="6e56df4eb422b0b15187c84ba551237e" category="summary">환경에서 Backup and Recovery를 사용하기 전에 이러한 NetApp Backup and Recovery 제한 사항을 검토하십시오.</block>
   <block id="36f1a2626b3ec6834b4eb361bac96c37" category="doc">NetApp Backup and Recovery for Kubernetes 워크로드의 알려진 제한 사항</block>
   <block id="36c070b302c08836d912ffb6841bb46e" category="section-title">애플리케이션의 보호 정책 변경</block>
   <block id="ad4e872c3df8cab19a9d649f27b25605" category="paragraph">애플리케이션에 연결된 보호 정책을 다른 버킷 또는 2차 복제 대상으로 변경하면 보호 정책이 실패할 수 있습니다.</block>
@@ -4621,7 +4585,6 @@
   <block id="da57866549888e8bceaf30a4db33bfc5" category="list-text">Backup and Recovery에서 워크로드를 검색합니다.</block>
   <block id="63e4e660d97fd26bbffa7cb3968c22c4" category="paragraph">Organization 관리자 또는 Folder 또는 project 관리자는 사용 가능한 워크로드를 검색하고 적절한 project(예: US East 또는 US West)를 선택합니다. 각 워크로드는 선택한 project와 자동으로 연결됩니다.</block>
   <block id="0e8d553f80f80eac9e99c265bf9f4d72" category="list-text">프로젝트에 사용자를 추가합니다.</block>
-  <block id="0da282e170c520798099314d27620ed4" category="paragraph">조직 관리자 또는 폴더/프로젝트 관리자는 워크로드가 있는 프로젝트에 NetApp Console 사용자를 추가합니다. 사용자의 액세스 요구 사항에 따라 조직 뷰어 역할과 NetApp Backup and Recovery 역할을 할당합니다. 적절한 NetApp Backup and Recovery 역할을 가진 사용자는 해당 프로젝트의 새 워크로드에 자동으로 액세스 권한을 얻게 됩니다.</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">관련 정보</block>
   <block id="728d17e7146dcd6218a24c46a1de8943" category="inline-link-macro">NetApp Console ID 및 액세스 관리에 대해 알아보십시오</block>
   <block id="d612358528f4a89a703f161a8c3e4a9e" category="list-text"><block ref="22de56c086dedbed6837db4613efda62" category="inline-link-macro-rx"></block>.</block>
@@ -5057,7 +5020,6 @@
   <block id="cd11b988c9f7b5a4f534d244c8f742a8" category="inline-link">ONTAP 볼륨 워크로드 보호 개요</block>
   <block id="cb64e7530a451b6a29edd3427495ec90" category="paragraph">ONTAP Volumes 워크로드 보호에 대한 자세한 내용은<block ref="c12abefe1b46a590752410462324e2ee" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="19455401d550e37f86235df1de2da367" category="paragraph">이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 보호 정책 개선 사항을 도입합니다.</block>
-  <block id="8832a3317e409faa663d5b3be7a37383" category="list-text">*보호 정책 편집*: 이제 변경이 필요한 경우 Kubernetes 워크로드 보호 정책을 편집할 수 있습니다</block>
   <block id="67c0c04b74d317df3fb38678dfce9d57" category="list-text">*디스크 간 지원*: 이제 디스크 간 백업 아키텍처를 사용하여 Kubernetes 보호 정책을 구성할 수 있습니다.</block>
   <block id="1f22edbdac095058ea8301cd1b0fa03f" category="list-text">*Google Cloud Platform 스토리지 버킷 지원*: 이제 Kubernetes 보호 정책을 구성하여 Google Cloud Platform 스토리지 버킷에 백업할 수 있습니다.</block>
   <block id="55dcb475c806e158ae812c3e721ff829" category="inline-link">NetApp Backup and Recovery에서 보호 정책을 생성하고 관리하기</block>
@@ -5318,4 +5280,41 @@
   <block id="a38244f145eb7bb81ea84601f169276b" category="paragraph">백업 파일에 대해 랜섬웨어 보호가 활성화된 경우(백업 정책에서 Datalock 및 Ransomware protection을 활성화한 경우) 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다. 백업 파일에 대한 랜섬웨어 검사를 권장합니다. (백업 파일의 내용에 액세스하려면 클라우드 공급자로부터 추가 송신 비용이 발생합니다.)</block>
   <block id="936866268a423c45b2ef9ad24698c8e0" category="paragraph">ONTAP 시스템에는 백업 및 복구 기능이 기본적으로 내장되어 있으므로 추가 하드웨어나 미디어 게이트웨이가 필요하지 않습니다. 따라서 백업 작업이 간편하고 비용 효율적입니다. NetApp Console을 사용하면 여러 명의 리소스 관리자나 전문 인력 없이도 3-2-1 백업 변형을 포함한 모든 백업 전략을 간편하게 구현할 수 있습니다.</block>
   <block id="eb93c206074e97dfb7bf08b81a6c72c1" category="list-text">스토리지 VM에 IPv4 NFS 데이터 LIF를 구성하고 볼륨에 대한 NFS 내보내기를 설정해야 합니다. Search &amp; Restore는 NFS 및 SMB/CIFS 볼륨을 모두 지원합니다.</block>
+  <block id="a2d15c88cd74ef2c07cf5a883fe0b88d" category="paragraph">수동으로 활성화하는 방법에 대한 자세한 내용은<block ref="cb48ac5d5b1e506c1ce232053a519e6a" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="b61dac5f94b9ddeb94321e1a35a17efe" category="paragraph">콘솔 에이전트 버전 3.9.40은 RHEL 호스트에 콘솔 에이전트를 수동으로 설치할 때 특정 Red Hat Enterprise Linux 8 및 9 릴리스를 지원합니다. 이는<block ref="10c1911da0601c7d780b4af72d11f3ab" category="inline-link-rx"></block>에 나열된 운영 체제 외에도 추가된 기능입니다. 이러한 최신 RHEL 버전에서는 Docker 엔진 대신 Podman 엔진이 필요합니다. 이전에는 NetApp Backup and Recovery에서 Podman 엔진을 사용할 때 두 가지 제한 사항이 있었지만, 이제 이러한 제한 사항이 모두 해결되었습니다.</block>
+  <block id="28afb94b906782446ccfc717207cf806" category="paragraph">NetApp Backup and Recovery는 이제 SnapLock Compliance 또는 SnapLock Enterprise 보호 모드로 구성된 온프레미스 FlexVol 및 FlexGroup 볼륨 모두를 백업할 수 있습니다. 이 지원을 위해서는 클러스터가 ONTAP 9.14 이상을 실행해야 합니다. SnapLock Enterprise 모드의 FlexVol 볼륨 백업은 ONTAP 9.11.1부터 지원되었습니다. 이전 ONTAP 버전에서는 SnapLock으로 보호된 볼륨의 백업을 지원하지 않습니다.</block>
+  <block id="6a8ed4de7ab1aa813fb6d9a4e2939ec1" category="paragraph"><block ref="a026c5bec08ff7bb5b963e48c0daa63e" category="inline-link-rx"></block>에서 지원되는 볼륨의 전체 목록을 확인하세요.</block>
+  <block id="dc8f8e2a17149271a7db8586e1cda422" category="list-text">진행 중: 인덱싱이 진행 중입니다.</block>
+  <block id="769d056387975f8dc9019bf628646aa9" category="list-text">색인되지 않음: 색인 생성이 시작되지 않았습니다.</block>
+  <block id="feee87f6c7abb4d53e4a9b94fb0dfb31" category="list-text">인덱싱 일시 중지됨: 인덱싱이 일시 중지되었습니다.</block>
+  <block id="a25aee605a3e2d5a74f5276d624b0f5b" category="list-text">오류: 인덱싱 오류가 발생했습니다.</block>
+  <block id="ab7c98eb7b63bf725490a49407c4e35b" category="list-text">비활성화됨: 이 소스에 대해 인덱싱이 활성화되어 있지 않습니다.</block>
+  <block id="42f50deda405c659127ecb5cd695b30b" category="paragraph">이 미리 보기 기능을 사용하려면 Console 에이전트에서 플래그를 활성화해야 합니다. 그런 다음 백업 섹션에서 *Third party Compatible* 객체 스토리지를 선택하여 보호 워크플로에 MinIO 타사 객체 스토리지의 연결 정보를 입력할 수 있습니다.</block>
+  <block id="472faf2431c49adc0b2536c0b6dd5f8d" category="paragraph">이전 릴리스에서는 SnapMirrorto Cloud Resync(SM-C Resync) 지원이 도입되었습니다. 이 기능은 NetApp 환경에서 볼륨 마이그레이션 중 데이터 보호를 간소화합니다. 이번 릴리스에서는 ONTAP S3는 물론 Wasabi 및 MinIO와 같은 다른 S3 호환 공급자에 대한 SM-C Resync 지원이 추가되었습니다.</block>
+  <block id="adbe969e927a15ae116084381be98d67" category="paragraph">이번 NetApp Backup and Recovery 릴리스에서는 Kubernetes 워크로드 검색 및 관리 지원이 추가되었습니다.</block>
+  <block id="26afd870812fc0397b60acfa7ed436c0" category="paragraph">이번 NetApp Backup and Recovery 릴리스에서는 Hyper-V 워크로드 검색 및 관리 지원이 추가되었습니다.</block>
+  <block id="9961d7a185cfa9d439cc427ed38dc48f" category="paragraph">이번 NetApp Backup and Recovery 릴리스에서는 KVM 워크로드 검색 및 관리 지원이 추가되었습니다.</block>
+  <block id="b8b08cc8479793cbf90cf90739d5d44a" category="list-text">*보호 정책 편집*: 이제 필요에 따라 Kubernetes 워크로드 보호 정책을 편집할 수 있습니다.</block>
+  <block id="756c384ea097ecc82b23f490eb2208a9" category="list-text">NetApp Console 웹 사이트에서 사용자 토큰을 획득합니다.</block>
+  <block id="0aebe097f5e5955c53107ce221189235" category="paragraph">다음 링크에서 새로 고침 토큰을 생성했는지 확인하십시오: https://services.cloud.netapp.com/refresh-token/. 새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.</block>
+  <block id="00971dcc6a1f39c384a02f00d3e60974" category="summary">환경에서 Backup and Recovery를 사용하기 전에 이러한 NetApp Backup and Recovery 제한 사항을 검토하십시오.</block>
+  <block id="4897b8cd591825888a626536927740b9" category="paragraph">조직 관리자 또는 폴더/프로젝트 관리자는 워크로드가 있는 프로젝트에 Console 사용자를 추가합니다. 사용자의 액세스 요구 사항에 따라 조직 뷰어 역할과 Backup and Recovery 역할을 할당합니다. 적절한 Backup and Recovery 역할을 가진 사용자는 해당 프로젝트의 새 워크로드에 자동으로 액세스 권한을 얻게 됩니다.</block>
+  <block id="3325ba2bc09d36a530988abb840fc8c2" category="admonition">SnapCenter Server가 이미 등록되어 있는 경우 기존 등록 정보를 업데이트할 수 있습니다.</block>
+  <block id="0a73bc800936bebcd3c8b8e4898bf3e3" category="paragraph">나중에 SnapCenter 리소스를 다시 가져오거나 가져온 SnapCenter 리소스를 편집하여 등록 정보를 업데이트할 수 있습니다.</block>
+  <block id="00c16ea9dbe4f4e4a298cb14dbc7bf03" category="summary">NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요.</block>
+  <block id="3e843348ced3f9e4c35fbe2e1319ecf5" category="paragraph"><block ref="b167760d93d5326c0be83a7248a528cb" prefix="" category="inline-code"></block></block>
+  <block id="18925d044201253060ba6dfa01ea5700" category="paragraph">"Default"가 아닌 다른 IPspace를 사용하는 경우 오브젝트 스토리지에 액세스하기 위해 정적 라우트를 생성해야 할 수 있습니다.</block>
+  <block id="fb7c7bf4cc7539dceb5fac958b277143" category="list-text">기본 IPspace가 아닌 다른 IPspace를 사용하는 경우 오브젝트 스토리지에 액세스하기 위해 정적 라우트를 생성해야 할 수 있습니다.</block>
+  <block id="611a454ad0b8d9c9bf65b6315d891435" category="list-text">참고로, Default와 다른 IPspace를 사용하는 경우 객체 스토리지에 액세스하기 위해 정적 경로를 생성해야 할 수 있습니다.</block>
+  <block id="2947f85112e3c257c3ac83e6fbdafb4e" category="list-text">기본 IPspace가 아닌 다른 IPspace를 사용하는 경우 오브젝트 스토리지에 액세스하기 위해 정적 라우트를 생성해야 할 수 있습니다.</block>
+  <block id="fcfda8ebf2d138d3fcac111b9373c707" category="paragraph">아카이브 스토리지를 사용하려면 관리 노드 IP 액세스가 필요합니다.</block>
+  <block id="432eebe4a7604b59dce3cc920c1188ae" category="list-text">클러스터는 ONTAP 9.11.1 이상 버전을 실행해야 합니다.</block>
+  <block id="39e9a2df2a2b2ec0f86c3e48b198f446" category="list-text">클러스터는 ONTAP 9.12.1 이상 버전을 실행해야 합니다.</block>
+  <block id="75ff6d4c7d81cf2bce3cb6709b5f2544" category="paragraph">NetApp Backup and Recovery를 사용하여 사용자 지정 정책을 생성하는 것 외에도 System Manager 또는 ONTAP 명령줄 인터페이스(CLI)를 사용할 수 있습니다.</block>
+  <block id="2b8bfee882b822ee5f16bca77595ab0f" category="paragraph">새 Console 에이전트를 설치할 때는 기존 에이전트와 동일한 소프트웨어 버전을 다운로드하십시오. NetApp Backup and Recovery 데이터베이스가 변경되면 최신 소프트웨어 버전이 이전 데이터베이스 백업과 호환되지 않을 수 있습니다. <block ref="cf9f37e0e8c15b290b50a2dd76357649" category="inline-link-rx"></block>.</block>
+  <block id="e85a7923d13a33ad929302f3f0390a8b" category="list-text">만약 SnapCenter 일정이 7일을 초과하도록 설정되어 있으면, NetApp Backup and Recovery는 일정을 월간으로 설정합니다. 해당 월 동안 일부 스냅샷이 건너뛰어집니다.</block>
+  <block id="5854806eb7a037bac498023782dd080f" category="paragraph">*예시*: SnapCenter에서 1:00 AM에 시작하여 5시간마다 반복되는 시간별 정책이 있는 경우, 마이그레이션 후 NetApp Backup and Recovery는 일일 5시간 간격(1:00 AM, 6:00 AM, 11:00 AM, 4:00 PM, 9:00 PM)으로 일정을 설정합니다. 일부 시간대는 건너뛰게 됩니다 — 9:00 PM 이후에는 5시간마다 반복하려면 2:00 AM이 되어야 하지만, 항상 1:00 AM이 됩니다.</block>
+  <block id="1f4f4cafd8d76357721d91da817797be" category="paragraph">NetApp Backup and Recovery 컨테이너와 StorageGRID 간의 통신에서 StorageGRID 인증서를 확인해야 하는 경우 다음 단계를 완료하십시오.</block>
+  <block id="c2ced4c78e453bfc0c402989d4c4a226" category="list-text">마운트 지점 디렉토리로 이동합니다. 실행:</block>
+  <block id="287ce13946349495fddc07c65c39c410" category="list-text">root로 Console 에이전트에 로그인합니다. 실행:</block>
 </blocks>

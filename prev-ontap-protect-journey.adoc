@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: prev-ontap-protect-journey.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
 ---
 = NetApp Backup and Recovery 통해 보호 여정을 계획하세요
 :hardbreaks:
@@ -125,7 +125,7 @@ NetApp 에서 제공하는 기본 정책을 사용하여 백업을 만들 수도
 
 NetApp Backup and Recovery UI에서 개체 스토리지 정책에 대한 스냅샷, 복제 및 백업을 생성할 수 있습니다.  섹션을 참조하세요link:prev-ontap-backup-manage.html["새로운 백업 정책 추가"] 자세한 내용은.
 
-NetApp Backup and Recovery 사용하여 사용자 정의 정책을 만드는 것 외에도 System Manager나 ONTAP 명령줄 인터페이스(CLI)를 사용할 수 있습니다.
+NetApp Backup and Recovery를 사용하여 사용자 지정 정책을 생성하는 것 외에도 System Manager 또는 ONTAP 명령줄 인터페이스(CLI)를 사용할 수 있습니다.
 
 * https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["System Manager 또는 ONTAP CLI를 사용하여 스냅샷 정책을 만듭니다."^]
 * https://docs.netapp.com/us-en/ontap/task_dp_create_custom_data_protection_policies.html["System Manager 또는 ONTAP CLI를 사용하여 복제 정책을 만듭니다."^]

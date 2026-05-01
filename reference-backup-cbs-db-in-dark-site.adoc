@@ -67,7 +67,7 @@ NetApp Backup and Recovery 시스템을 작동 상태로 되돌리려면 다음 
 
 === 새로운 온프레미스 Linux 호스트에 새 콘솔 에이전트 설치
 
-새로운 콘솔 에이전트를 설치할 때 원래 에이전트와 동일한 소프트웨어 버전을 다운로드하세요.  NetApp Backup and Recovery 데이터베이스가 변경되면 최신 소프트웨어 버전이 이전 데이터베이스 백업과 작동하지 않을 수 있습니다. 당신은 할 수 있습니다 https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["백업 데이터베이스를 복원한 후 콘솔 에이전트 소프트웨어를 최신 버전으로 업그레이드합니다."^] .
+새 Console 에이전트를 설치할 때는 기존 에이전트와 동일한 소프트웨어 버전을 다운로드하십시오. NetApp Backup and Recovery 데이터베이스가 변경되면 최신 소프트웨어 버전이 이전 데이터베이스 백업과 호환되지 않을 수 있습니다.  https://docs.netapp.com/us-en/console-setup-admin/task-upgrade-connector.html["백업 데이터베이스를 복원한 후 콘솔 에이전트 소프트웨어를 최신 버전으로 업그레이드합니다."^].
 
 . https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["새로운 온프레미스 Linux 호스트에 콘솔 에이전트 설치"^]
 . 방금 만든 관리자 사용자 자격 증명을 사용하여 콘솔에 로그인합니다.

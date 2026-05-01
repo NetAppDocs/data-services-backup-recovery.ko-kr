@@ -48,9 +48,9 @@ API 호출을 할 때 Authorization 헤더에 사용자 토큰을 추가하고 x
 NOTE: 서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 액세스 토큰을 사용해야 합니다. "client_id" 값("Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC")은 고정된 값이므로 변경할 수 없습니다. 이 경우 다음 지침을 따르세요. https://docs.netapp.com/us-en/console-automation/platform/create_service_token.html["서비스 액세스 토큰 생성"^] .
 
 .단계
-. NetApp NetApp Console 웹 사이트에서 사용자 토큰을 얻습니다.
+. NetApp Console 웹 사이트에서 사용자 토큰을 획득합니다.
 +
-다음 링크에서 새로 고침 토큰을 생성하세요: https://services.cloud.netapp.com/refresh-token/.  새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.
+다음 링크에서 새로 고침 토큰을 생성했는지 확인하십시오: https://services.cloud.netapp.com/refresh-token/. 새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.
 
 +
 [source, console]

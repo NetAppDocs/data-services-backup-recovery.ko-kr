@@ -30,7 +30,7 @@ summary: 게스트 파일을 복원하려고 할 때 게스트 파일 복원 세
 
 이 문제는 게스트 파일 복원 작업을 시작했지만 VMware 도구가 실행 중이고 게스트 OS 자격 증명이 올바른 경우에도 디스크 연결 작업이 실패할 때 발생합니다. 이런 경우, 다음 오류가 반환됩니다.
 
-`Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMWare tools is running properly on system and account used is Administrator account, Error is SystemError vix error codes = (3016, 0).`
+`Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMware Tools is running properly on the system and that the account used is an Administrator account. Error is SystemError vix error codes = (3016, 0).`
 
 이 문제를 해결하려면 게스트 OS에서 VMware Tools Windows 서비스를 다시 시작한 다음 게스트 파일 복원 작업을 다시 시도하세요.
 
