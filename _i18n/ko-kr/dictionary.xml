@@ -3526,8 +3526,6 @@
   <block id="00ecaaff8826e844a2ebf56754fad5d6" category="paragraph">검색 및 복원의 경우 콘솔 에이전트를 다음 위치에 설치할 수 있습니다.</block>
   <block id="7c9a067ed7fc3d318d415405ab0cb349" category="list-text">클러스터 요구 사항:</block>
   <block id="042e2868bd27cf0f2d07239f80a976dd" category="list-text">ONTAP 버전은 9.8 이상이어야 합니다.</block>
-  <block id="6f0cd96277bd61a1a3f4c2504033ded7" category="list-text">볼륨이 있는 스토리지 VM(SVM)에는 구성된 데이터 LIF가 있어야 합니다.</block>
-  <block id="aba6991b1b269dad52e52cd4c3998779" category="list-text">볼륨에서 NFS를 활성화해야 합니다(NFS와 SMB/CIFS 볼륨 모두 지원됨).</block>
   <block id="b08d607bff755a82c8c9d9351d968b4a" category="list-text">AWS 요구 사항:</block>
   <block id="69822c6d3eec5c2a5b83f578217d08ce" category="inline-link-macro">모든 권한이 올바르게 구성되었는지 확인하세요.</block>
   <block id="1e7dbc6a754183195338f872192f2c45" category="list-text">콘솔에 권한을 제공하는 사용자 역할에 특정 Amazon Athena, AWS Glue 및 AWS S3 권한을 추가해야 합니다. <block ref="06b194663576cd6f267595be51223fa0" category="inline-link-macro-rx"></block>.</block>
@@ -5319,4 +5317,5 @@
   <block id="fe096dc1f619b5ae2f454275962bf893" category="paragraph">참고로, 객체 스토리지에서 백업 파일을 선택할 때 해당 백업에 대해 랜섬웨어 보호 기능이 활성화되어 있는 경우(백업 정책에서 Datalock 및 랜섬웨어 보호를 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다. 백업 파일에 대한 랜섬웨어 검사를 권장합니다. (백업 파일의 내용에 액세스하려면 클라우드 공급자로부터 추가 송출 비용이 발생합니다.)</block>
   <block id="a38244f145eb7bb81ea84601f169276b" category="paragraph">백업 파일에 대해 랜섬웨어 보호가 활성화된 경우(백업 정책에서 Datalock 및 Ransomware protection을 활성화한 경우) 데이터를 복원하기 전에 백업 파일에 대한 추가 랜섬웨어 검사를 실행하라는 메시지가 표시됩니다. 백업 파일에 대한 랜섬웨어 검사를 권장합니다. (백업 파일의 내용에 액세스하려면 클라우드 공급자로부터 추가 송신 비용이 발생합니다.)</block>
   <block id="936866268a423c45b2ef9ad24698c8e0" category="paragraph">ONTAP 시스템에는 백업 및 복구 기능이 기본적으로 내장되어 있으므로 추가 하드웨어나 미디어 게이트웨이가 필요하지 않습니다. 따라서 백업 작업이 간편하고 비용 효율적입니다. NetApp Console을 사용하면 여러 명의 리소스 관리자나 전문 인력 없이도 3-2-1 백업 변형을 포함한 모든 백업 전략을 간편하게 구현할 수 있습니다.</block>
+  <block id="eb93c206074e97dfb7bf08b81a6c72c1" category="list-text">스토리지 VM에 IPv4 NFS 데이터 LIF를 구성하고 볼륨에 대한 NFS 내보내기를 설정해야 합니다. Search &amp; Restore는 NFS 및 SMB/CIFS 볼륨을 모두 지원합니다.</block>
 </blocks>
