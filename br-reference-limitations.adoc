@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: br-reference-limitations.html 
-keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Microsoft SQL Server database, SAP HANA database 
 summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않는 기능이나 이 릴리스와 올바르게 상호 운용되지 않는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요. 
 ---
 = ONTAP 볼륨에 대한 NetApp Backup and Recovery 의 알려진 제한 사항

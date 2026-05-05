@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: br-limitations-kvm.html 
-keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, KVM, SAP HANA database, virtual machine, vm 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, KVM, SAP HANA database, virtual machine, vm 
 summary: NetApp Backup and Recovery 의 이 릴리스에는 다음과 같은 알려진 제한 사항이 있습니다. 
 ---
 = KVM 워크로드에 대한 NetApp Backup and Recovery 의 알려진 제한 사항

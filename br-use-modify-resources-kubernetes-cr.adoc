@@ -1,0 +1,223 @@
+---
+sidebar: sidebar 
+permalink: br-use-modify-resources-kubernetes-cr.html 
+keywords: Resource modify, transform, restore, Kubernetes, custom resource, Backup and Recovery, NetApp, transformation, transformations, resource, resource transformations, modify 
+summary: NetApp Backup and Recovery에서 복원 작업 중 리소스를 수정합니다. 
+---
+= 사용자 지정 리소스를 사용하여 리소스를 복원할 때 리소스를 수정합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+리소스 변환을 사용하면 리소스를 복원하는 동안 수정할 수 있습니다. 이는 복원된 버전이 원본과 달라야 할 때 유용합니다. 예를 들어 가상 머신을 다른 네트워크로 복원할 때 가상 머신의 IP 주소를 변경하는 경우입니다. 또한 link:br-use-restore-kubernetes-applications.html#restore-kubernetes-applications["웹 UI를 사용하여 리소스를 복원할 때 수정합니다"^]할 수도 있습니다.
+
+*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자 또는 Backup and Recovery 복원 관리자. link:reference-roles.html["NetApp Backup and Recovery 액세스 역할에 대해 알아보세요"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+
+
+
+== 리소스 수정 작동 방식
+
+ `transformations`,  `SnapshotRestore`,  `BackupRestore` 및 기타 복원 리소스의 `AppMirrorRelationship` 필드를 사용하면 복원 프로세스 중에 Kubernetes 리소스를 수정할 수 있습니다. 이는 호스트 이름, 레지스트리 URL, 리소스 제한 또는 환경 변수를 변경하여 애플리케이션 또는 가상 머신을 새 클러스터에 적응시키는 데 유용합니다.
+
+리소스 변환은  https://tools.ietf.org/html/rfc6902["RFC 6902"]JSON Patch 작업과  https://tools.ietf.org/html/rfc6901["RFC 6901"]JSON Pointer 경로를 사용하여 Kubernetes 리소스 내의 특정 필드를 대상으로 지정하고 수정합니다.
+
+다음은 리소스 변환을 포함하는 복원 객체의 기본 구조입니다.
+
+[source, yaml]
+----
+apiVersion: protect.trident.netapp.io/v1
+kind: SnapshotRestore
+metadata:
+  name: my-restore
+  namespace: target-namespace
+spec:
+  appVaultRef: my-vault
+  appArchivePath: /path/to/snapshot
+  namespaceMapping:
+    - source: source-ns
+      destination: target-ns
+  transformations:
+    - resource:
+        kind: ConfigMap       # Required: resource kind
+        group: ""             # Optional: API group (empty for core resources)
+        version: ""           # Optional: API version
+        name: ""              # Optional: specific resource name
+      operations:
+        - op: replace         # Operation type
+          path: "/data/key"   # JSON Pointer path
+          value: "new-value"  # New value (for add/replace/test)
+----
+
+
+=== 지원되는 리소스
+
+다음 기준과 일치하는 리소스에 대해 리소스 변환을 사용할 수 있습니다.
+
+* `kind` (필수): Kubernetes 리소스 종류(예: `ConfigMap`, `Deployment`, `Pod`)
+* `group` (선택 사항): API 그룹(예: `apps`, `route.openshift.io`) - 핵심 리소스의 경우 생략
+* `version` (선택 사항): API 버전(예:  `v1`,  `v1beta1`)
+* `name` (선택 사항): 이름으로 지정된 특정 리소스에만 적용합니다
+
+
+
+NOTE: PersistentVolumeClaims 및 네임스페이스 수정은 현재 지원되지 않습니다.
+
+
+
+=== 지원되는 작업
+
+다음 작업을 사용하여 리소스를 수정할 수 있습니다.
+
+* `add`: 리소스에 값을 추가합니다.
+* `copy`: 한 경로의 값을 다른 경로로 복사합니다.
+* `move`: 리소스 내에서 값을 이동합니다.
+* `remove`: 리소스에서 값을 제거합니다.
+* `replace`: 리소스 내의 값을 바꿉니다.
+* `test`: 작업을 수행하기 전에 테스트하십시오.
+
+
+
+
+== 리소스에 값 추가
+
+ `add` 작업을 사용하여 지정된 경로에 새 필드 또는 값을 추가합니다. 객체 또는 배열에 데이터를 추가할 수 있습니다. 다음 예는 Deployment 리소스에 노드 선택기를 추가합니다.
+
+[source, yaml]
+----
+transformations:
+  - resource:
+      kind: Deployment
+    operations:
+      - op: add
+        path: "/spec/template/spec/nodeSelector"
+        value:
+          "topology.kubernetes.io/zone": "us-east-1a"
+          disktype: "ssd"
+----
+명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+
+[source, bash]
+----
+tridentctl-protect --transformation 'apps,v1,Deployment:add{"path":"/spec/template/spec/nodeSelector","value":{"topology.kubernetes.io/zone":"us-east-1a","disktype":"ssd"}}'
+----
+
+
+== 리소스 내의 값 복사
+
+ `copy` 연산을 사용하여 동일한 리소스 내의 한 경로에서 다른 경로로 값을 복사할 수 있습니다. 원본은 변경되지 않습니다. 다음 예는 ConfigMap 객체의 데이터 키를 복제하는 방법을 보여줍니다.
+
+[source, yaml]
+----
+transformations:
+  - resource:
+      kind: ConfigMap
+    operations:
+      - op: copy
+        from: "/data/source-key"
+        path: "/data/backup-key"
+----
+명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+
+[source, bash]
+----
+tridentctl-protect --transformation ',v1,ConfigMap:copy{"from":"/data/source-key","path":"/data/backup-key"}'
+----
+
+
+== 리소스 내에서 값 이동
+
+ `move` 연산을 사용하여 동일한 리소스 내에서 한 경로에서 다른 경로로 값을 이동할 수 있습니다. 원본은 제거되고 값은 대상에 배치됩니다. 다음 예는 ConfigMap 객체의 데이터 키 이름을 변경하는 방법을 보여줍니다.
+
+[source, yaml]
+----
+transformations:
+  - resource:
+      kind: ConfigMap
+    operations:
+      - op: move
+        from: "/data/OLD_KEY"
+        path: "/data/NEW_KEY"
+----
+명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+
+[source, bash]
+----
+tridentctl-protect --transformation ',v1,ConfigMap:move{"from":"/data/OLD_KEY","path":"/data/NEW_KEY"}'
+----
+
+
+== 리소스에서 값 제거
+
+ `remove` 작업을 사용하여 지정된 경로에서 필드 또는 값을 제거합니다. 다음 예는 ConfigMap 리소스에서 주석을 제거합니다.
+
+[source, yaml]
+----
+transformations:
+  - resource:
+      kind: ConfigMap
+    operations:
+      - op: remove
+        path: "/metadata/annotations/kubectl.kubernetes.io~1last-applied-configuration"
+----
+
+NOTE: 위 예시의 경로에서  `~1`는  `/`에 대한 JSON 포인터 이스케이프 시퀀스입니다.
+
+명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+
+[source, bash]
+----
+tridentctl-protect --transformation ',v1,ConfigMap:remove{"path":"/metadata/annotations/kubectl.kubernetes.io~1last-applied-configuration"}'
+----
+
+
+== 리소스 내의 값을 바꿉니다
+
+ `replace` 작업을 사용하여 지정된 경로에 있는 리소스 내의 기존 값을 바꿉니다. JSON 경로는 이미 존재해야 합니다. 다음 예는 Route 객체의 호스트 이름을 변경합니다.
+
+[source, yaml]
+----
+transformations:
+  - resource:
+      kind: Route
+      group: route.openshift.io
+    operations:
+      - op: replace
+        path: "/spec/host"
+        value: "prod.example.com"
+----
+명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+
+[source, bash]
+----
+tridentctl-protect --transformation 'route.openshift.io,v1,Route:replace{"path":"/spec/host","value":"prod.example.com"}'
+----
+
+
+== 리소스 수정 테스트
+
+ `test` 작업을 사용하여 경로의 값이 예상 값과 일치하는지 테스트합니다. 테스트에 실패하면 전체 수정이 롤백됩니다. 다음 예제는  `database-host`가  `environment`일 때만  `staging`를 업데이트합니다:
+
+[source, yaml]
+----
+transformations:
+  - resource:
+      kind: ConfigMap
+    operations:
+      - op: test
+        path: "/data/environment"
+        value: "staging"
+      - op: replace
+        path: "/data/database-host"
+        value: "prod-db.example.com"
+----
+명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+
+[source, bash]
+----
+tridentctl-protect --transformation ',v1,ConfigMap:test{"path":"/data/environment","value":"staging"},replace{"path":"/data/database-host","value":"prod-db.example.com"}'
+----

@@ -206,6 +206,8 @@ sidebar:
           url: "/br-use-restore-kubernetes-applications-cr.html"
         - title: 고급 사용자 지정 리소스 복원 설정 사용
           url: "/br-use-kubernetes-advanced-restore-settings.html"
+        - title: 사용자 지정 리소스를 사용하여 복원 작업 중 리소스 수정
+          url: "/br-use-modify-resources-kubernetes-cr.html"
       - title: Kubernetes 클러스터 관리
         url: "/br-use-manage-kubernetes-clusters.html"
       - title: Kubernetes 애플리케이션 관리

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: br-limitations.html 
-keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
+keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Microsoft SQL Server database, SAP HANA database 
 summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
 ---
 = Microsoft SQL Server 워크로드에 대한 NetApp Backup and Recovery 의 알려진 제한 사항
