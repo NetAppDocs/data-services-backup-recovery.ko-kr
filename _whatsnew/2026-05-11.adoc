@@ -1,0 +1,50 @@
+= Hyper-V 워크로드 개선 사항
+:allow-uri-read: 
+
+
+
+
+=== Hyper-V 워크로드 개선 사항
+
+이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *SAN 스토리지의 VM 보호*: 이제 SAN 객체 스토리지에 있는 VM을 보호할 수 있습니다.
+* *대체 위치로 복원 기능 향상*: 이제 SAN 스토리지에 있는 VM을 기본 및 보조 위치에서 대체 위치로 복원할 수 있습니다.
+* *게스트 VM으로 파일 및 폴더 복원*: 이제 기본 스토리지의 스냅샷에서 게스트 Windows VM으로 파일과 폴더를 복원할 수 있습니다. 이 기능은 CIFS VM에서만 지원됩니다.
+
+
+Hyper-V 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["Hyper-V 워크로드 보호 개요"] .
+
+
+
+=== KVM 워크로드 개선 사항
+
+이번 릴리스에서 KVM 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+*다른 위치로 복원*: 이제 KVM VM을 다른 대상으로 복원할 수 있습니다(이 기능은 현재 정식으로 제공됩니다).
+
+KVM 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["KVM 워크로드 보호 개요"] .
+
+
+
+=== Oracle Database 워크로드 개선 사항
+
+이번 릴리스에서 Oracle 데이터베이스 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *Oracle AI Database 26ai 지원*: NetApp Backup and Recovery가 이제 Oracle AI Database 26ai를 지원합니다.
+* *백업 검증 지원*: 이제 Oracle 데이터베이스 백업의 무결성을 자동으로 검증하는 백업 정책을 구성할 수 있습니다.
+
+
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle Database 워크로드 보호 개요"]을 참조하십시오.
+
+
+
+=== VMware 워크로드 개선 사항
+
+이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *보호 그룹에 대한 데이터 저장소 스패닝 지원*: 이제 가상 디스크가 여러 데이터 저장소에 걸쳐 있는 가상 머신을 보호할 때 보호 그룹의 동작을 선택할 수 있습니다.
+* *클론 지원*: 이제 운영 및 2차 스토리지에서 가상 머신 스냅샷의 클론을 생성할 수 있습니다.
+
+
+VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .

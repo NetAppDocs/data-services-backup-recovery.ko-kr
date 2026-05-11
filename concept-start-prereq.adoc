@@ -73,7 +73,7 @@ NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 
 
 
 | 필수 소프트웨어 패키지  a| 
-* ASP.NET Core Runtime 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치)
+* ASP.NET Core Runtime 8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치)
 * PowerShell 7.4.13
 
 
@@ -202,6 +202,7 @@ chown -R qemu:qemu <kvm_vm_mount_path> & chmod 771 <kvm_vm_mount_path>
 | Oracle Database 버전  a| 
 * Oracle Database 19c
 * Oracle Database 21c
+* Oracle AI Database 26ai
 
 
 
@@ -260,7 +261,7 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 | Microsoft Hyper-V | 2019, 2022 및 2025 에디션 
 
 
-| ASP.NET Core 런타임 | 8.0.23 Hosting Bundle(및 이후의 모든 8.0.x 패치) 
+| ASP.NET Core 런타임 | 8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치) 
 
 
 | PowerShell | 7.4.13 이상 
@@ -283,7 +284,7 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 | 연결된 스토리지  a| 
 * ONTAP 9.13.1 이상
 * 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템
-* SAN 스토리지(미리 보기)(기본 및 2차 스토리지에서 원래 위치로 백업 및 복원 지원)
+* SAN 스토리지(백업 및 운영 또는 2차 스토리지에서 원래 위치로 복원 시 지원)
 
 
 |===

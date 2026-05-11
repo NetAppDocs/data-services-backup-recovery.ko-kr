@@ -56,8 +56,6 @@ sidebar:
       url: "/br-start-login.html"
     - title: 대시보드에서 보호 상태 보기
       url: "/br-use-dashboard.html"
-    - title: 백업 및 복원을 관리하는 정책 만들기
-      url: "/br-use-policies-create.html"
     - title: ONTAP 볼륨 워크로드 보호
       entries:
       - title: ONTAP 볼륨 워크로드 개요 보호
@@ -106,6 +104,8 @@ sidebar:
         url: "/concept-start-prereq-snapcenter-import.html"
       - title: Microsoft SQL Server 워크로드 알아보기
         url: "/br-start-discover.html"
+      - title: Microsoft SQL Server 워크로드 백업 정책을 생성 및 관리합니다
+        url: "/br-use-policies-mssql-create.html"
       - title: Microsoft SQL Server 워크로드 백업
         url: "/br-use-mssql-backup.html"
       - title: Microsoft SQL Server 워크로드 복원
@@ -126,8 +126,12 @@ sidebar:
         url: "/br-use-vmware-discovery.html"
       - title: VMware 워크로드에 대한 보호 그룹 생성 및 관리
         url: "/br-use-vmware-protection-groups.html"
+      - title: VMware 워크로드 백업 정책 생성 및 관리
+        url: "/br-use-policies-vmware-create.html"
       - title: VMware 워크로드 백업
         url: "/br-use-vmware-backup.html"
+      - title: VMware 워크로드 클론
+        url: "/br-use-vmware-clone.html"
       - title: VMware 워크로드 복원
         entries:
         - title: VMware 가상 머신 복원
@@ -150,6 +154,8 @@ sidebar:
         url: "/br-start-discover-kvm.html"
       - title: KVM 워크로드에 대한 보호 그룹 생성 및 관리
         url: "/br-use-kvm-protection-groups.html"
+      - title: KVM 워크로드 백업 정책 생성 및 관리
+        url: "/br-use-policies-kvm-create.html"
       - title: KVM 워크로드 백업
         url: "/br-use-kvm-backup.html"
       - title: KVM 워크로드 복원
@@ -162,10 +168,16 @@ sidebar:
         url: "/br-start-discover-hyperv.html"
       - title: Hyper-V 워크로드에 대한 보호 그룹 생성 및 관리
         url: "/br-use-hyperv-protection-groups.html"
+      - title: Hyper-V 워크로드 백업 정책 생성 및 관리
+        url: "/br-use-policies-hyper-v-create.html"
       - title: Hyper-V 워크로드 백업
         url: "/br-use-hyperv-backup.html"
       - title: Hyper-V 워크로드 복원
-        url: "/br-use-hyperv-restore.html"
+        entries:
+        - title: Hyper-V 워크로드 복원
+          url: "/br-use-hyperv-restore.html"
+        - title: 파일 및 폴더 복원
+          url: "/br-use-hyper-v-restore-guest-files-and-folders.html"
     - title: Oracle Database 워크로드 보호(미리 보기)
       entries:
       - title: Oracle Database 워크로드 보호 개요
@@ -176,6 +188,8 @@ sidebar:
         url: "/br-start-configure-oracle-database.html"
       - title: Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리
         url: "/br-use-oracle-protection-groups.html"
+      - title: Oracle Database 워크로드 백업 정책을 생성 및 관리합니다
+        url: "/br-use-policies-oracle-create.html"
       - title: Oracle Database 워크로드를 백업합니다
         url: "/br-use-oracle-backup.html"
       - title: Oracle 데이터베이스 워크로드 복제
@@ -194,6 +208,8 @@ sidebar:
         entries:
         - title: Kubernetes 애플리케이션 추가 및 보호
           url: "/br-use-protect-kubernetes-applications.html"
+        - title: Kubernetes 워크로드 백업 정책 생성 및 관리
+          url: "/br-use-policies-kubernetes-create.html"
         - title: 웹 UI를 사용하여 Kubernetes 애플리케이션을 지금 백업합니다
           url: "/br-use-back-up-now-kubernetes-applications-web-ui.html"
         - title: 사용자 지정 리소스를 사용하여 지금 Kubernetes 애플리케이션 백업
