@@ -5029,7 +5029,6 @@
   <block id="3e292ccda5c971a4b3e12f28c1896c96" category="list-text">*백업 아키텍처* 섹션에 정보를 입력하십시오. 목록에서 백업에 사용할 데이터 흐름을 선택하십시오.</block>
   <block id="882709ae2f159dd4483f21419cc1577a" category="list-text">*3-2-1 팬아웃*: 기본 스토리지(디스크)에서 2차 스토리지(디스크)를 거쳐 클라우드(오브젝트 스토어)로 데이터를 분산 저장합니다. ONTAP 간, ONTAP과 오브젝트 스토어 간 구성처럼 서로 다른 스토리지 시스템에 걸쳐 데이터 복사본을 여러 개 생성합니다. 클라우드 하이퍼스케일러 오브젝트 스토어 또는 프라이빗 오브젝트 스토어를 사용할 수 있습니다. 최적의 데이터 보호 및 재해 복구에 적합합니다. 이 옵션은 Amazon FSx for NetApp ONTAP에서는 사용할 수 없습니다.</block>
   <block id="be84ac32aad421d6a1cb46ce683e66b6" category="list-text">*디스크 대 디스크*: 기본 스토리지(디스크)에서 2차 스토리지(디스크)로. ONTAP 대 ONTAP 데이터 보호 전략은 두 ONTAP 시스템 간에 데이터를 복제하여 고가용성과 재해 복구를 보장합니다. 이는 일반적으로 동기식 및 비동기식 복제를 모두 지원하는 SnapMirror를 사용하여 구현됩니다. 이 방법을 통해 데이터는 여러 위치에서 최신 상태로 유지되고 사용 가능하므로 강력한 데이터 보호가 가능합니다.</block>
-  <block id="81c8b39fe11eaceb3d9d1d404c6fcabd" category="list-text">*디스크-오브젝트 스토리지*: 기본 스토리지(디스크)에서 클라우드(오브젝트 스토리지)로. ONTAP 시스템의 데이터를 오브젝트 스토리지 시스템으로 복제합니다. 클라우드 하이퍼스케일러 오브젝트 스토리지 또는 StorageGRID와 같은 프라이빗 오브젝트 스토리지가 될 수 있습니다. 이 방식은 장기 데이터 보존 및 아카이빙에 적합합니다.</block>
   <block id="851135c947a89fc1b09d7dcc201469ab" category="list-text">*로컬 스냅샷*: 선택한 볼륨의 로컬 스냅샷. 워크로드가 실행 중인 운영 볼륨의 읽기 전용 시점 복사본을 생성합니다. 로컬 스냅샷을 사용하여 데이터 손실 또는 손상으로부터 복구하고 재해 복구 목적으로 백업을 생성할 수 있습니다.</block>
   <block id="fbdef52c241b79ead35478ff22576f90" category="list-text">*로컬 스냅샷 설정* 섹션에 대한 정보를 제공합니다.</block>
   <block id="090b970b75ee26b50d8123db3db2ba55" category="list-text">*보조 설정* 섹션(2차 스토리지로 복제)에 필요한 정보를 제공하십시오.</block>
@@ -5552,4 +5551,5 @@
   <block id="160bf2703f3a2319b3965b541340256a" category="sidebar">VMware 파일 및 폴더 복원</block>
   <block id="b5c91904decad9b84ae436053f327229" category="sidebar">VMDK에서 VMware 파일 및 폴더 복원</block>
   <block id="d68e9c9c6cd6479fbac7751c3f91f5a3" category="sidebar">Hyper-V 파일 및 폴더 복원</block>
+  <block id="e193e26700d466b0349ce7e559d96967" category="list-text">*디스크-오브젝트 스토리지*: 기본 스토리지(디스크)에서 클라우드(오브젝트 스토리지)로. ONTAP 시스템의 데이터를 오브젝트 스토리지 시스템으로 복제합니다. 클라우드 스토리지는 클라우드 하이퍼스케일러 오브젝트 스토어 또는 StorageGRID와 같은 프라이빗 오브젝트 스토어일 수 있습니다. 이 방식은 장기 데이터 보존 및 아카이빙에 적합합니다. 이 옵션은 Amazon FSx for NetApp ONTAP에서는 사용할 수 없습니다.</block>
 </blocks>
