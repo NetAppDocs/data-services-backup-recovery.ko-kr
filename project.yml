@@ -136,13 +136,13 @@ sidebar:
         entries:
         - title: VMware 가상 머신 복원
           url: "/br-use-vmware-restore.html"
-        - title: 특정 가상 디스크 복원
+        - title: VMware 가상 디스크 복원
           url: "/br-use-vmware-restore-vmdks-from-backups.html"
-        - title: 파일 및 폴더 복원
+        - title: VMware 파일 및 폴더 복원
           entries:
           - title: 워크플로, 전제 조건 및 제한 사항
             url: "/br-use-vmware-restore-guest-files-and-folders-overview.html"
-          - title: VMDK에서 파일 및 폴더 복원
+          - title: VMDK에서 VMware 파일 및 폴더 복원
             url: "/br-use-vmware-restore-guest-files-and-folders-from-vmdks.html"
           - title: 파일 및 폴더 복원 문제 해결
             url: "/br-use-vmware-guest-file-restore-scenarios-you-might-encounter.html"
@@ -176,7 +176,7 @@ sidebar:
         entries:
         - title: Hyper-V 워크로드 복원
           url: "/br-use-hyperv-restore.html"
-        - title: 파일 및 폴더 복원
+        - title: Hyper-V 파일 및 폴더 복원
           url: "/br-use-hyper-v-restore-guest-files-and-folders.html"
     - title: Oracle Database 워크로드 보호(미리 보기)
       entries:
