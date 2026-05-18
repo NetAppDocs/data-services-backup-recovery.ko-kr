@@ -2775,7 +2775,6 @@
   <block id="e2a74f20d433c85025a6f5807d74682d" category="paragraph">새로운 StorageGRID 클러스터를 선택하거나 생성합니다.  콘솔에서 검색할 수 있도록 StorageGRID 클러스터를 만드는 방법에 대한 자세한 내용은 다음을 참조하세요.<block ref="babf3072d9403ab5e1ffb9e4bb9a27cb" category="inline-link-rx"></block> .</block>
   <block id="85ffdbd09ff5b2ecfdcbea6cb8697013" category="summary">NetApp Backup and Recovery 의 SnapMirror to Cloud Resync 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호와 연속성을 간소화합니다.</block>
   <block id="254385f2eec62c0f2399c9da13dde7f6" category="doc">NetApp Backup and Recovery 에서 SnapMirror 사용하여 볼륨을 Cloud Resync로 마이그레이션</block>
-  <block id="ee9ee6fb5d3eb14594205c52636211ec" category="admonition">이 기능은 2025년 5월에 출시된 NetApp Backup and Recovery 버전 4.0.3부터 사용할 수 있습니다.</block>
   <block id="64d100d00b61364f5c3f3456b1dbbc90" category="paragraph">다음 전제 조건이 충족되었는지 확인하세요.</block>
   <block id="c8f1c31ff80f86ac3f0e5c6f159fae6e" category="list-text">대상 ONTAP 클러스터는 ONTAP 버전 9.16.1 이상을 실행해야 합니다.</block>
   <block id="5baace87d48cf58cc80858703e408f10" category="list-text">이전 Source ONTAP 클러스터는 NetApp Backup and Recovery 사용하여 보호해야 합니다.</block>
@@ -5552,4 +5551,7 @@
   <block id="b5c91904decad9b84ae436053f327229" category="sidebar">VMDK에서 VMware 파일 및 폴더 복원</block>
   <block id="d68e9c9c6cd6479fbac7751c3f91f5a3" category="sidebar">Hyper-V 파일 및 폴더 복원</block>
   <block id="e193e26700d466b0349ce7e559d96967" category="list-text">*디스크-오브젝트 스토리지*: 기본 스토리지(디스크)에서 클라우드(오브젝트 스토리지)로. ONTAP 시스템의 데이터를 오브젝트 스토리지 시스템으로 복제합니다. 클라우드 스토리지는 클라우드 하이퍼스케일러 오브젝트 스토어 또는 StorageGRID와 같은 프라이빗 오브젝트 스토어일 수 있습니다. 이 방식은 장기 데이터 보존 및 아카이빙에 적합합니다. 이 옵션은 Amazon FSx for NetApp ONTAP에서는 사용할 수 없습니다.</block>
+  <block id="be3cd190a86975f6f424dc4b62841598" category="section-title">재해 복구 구성에서 인덱싱 활성화</block>
+  <block id="07df367027530700215f6c0b89225a68" category="paragraph">재해 복구(DR) 구성에서 스토리지 VM 클러스터에 대한 인덱싱을 활성화할 때 Vserver DR의 대상으로 구성된 Vserver에서 해당 작업이 허용되지 않는다는 오류 메시지가 나타납니다. 이 오류에도 불구하고 백엔드 프로세스는<block ref="f97a37281422aa65185ec69709f5c22b" prefix=" " category="inline-code"></block> 소스 스토리지 VM의 상태를 "켜짐"으로 설정합니다. 스토리지 VM DR 정책 스케줄이 실행된 후 이 상태가 대상 스토리지 VM으로 전파됩니다.</block>
+  <block id="f3a85d41d14b1d81bc48b863a2e8b370" category="paragraph">*해결 방법*: 초기 오류 발생 후 스토리지 VM DR 정책 일정이 실행될 때까지 기다린 다음 인덱싱을 다시 활성화해 보세요.</block>
 </blocks>
