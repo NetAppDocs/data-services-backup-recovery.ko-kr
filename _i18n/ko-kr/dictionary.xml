@@ -5173,9 +5173,6 @@
   <block id="ac5cd439e0017b06be1e4642e8b56e41" category="list-text">Backup and Recovery 컨테이너를 다시 시작합니다.</block>
   <block id="1a9463a420291fe177279490d84a12e3" category="list-text">웹 브라우저에서 Backup and Recovery UI를 새로 고침하세요.</block>
   <block id="a0d8143bf8014bb28b405e42d77fe94e" category="admonition">미리 보기 기능을 비활성화하려면 동일한 단계를 따르되 기능 플래그 값을<block ref="68934a3e9455fa72420237eb05902327" prefix=" " category="inline-code"></block>로 설정하십시오.</block>
-  <block id="0914e8028f83c39209dd353fbe4c3cc0" category="section-title">스토리지 VM에 속한 모든 볼륨에 대한 인덱싱을 비활성화합니다</block>
-  <block id="25453b410cc5b5a300cb25323d146096" category="paragraph">각 개별 볼륨에 대해 인덱싱을 비활성화하는 대신 특정 스토리지 VM에 속한 모든 볼륨에 대해 인덱싱을 비활성화하려면 다음 단계를 수행하십시오.</block>
-  <block id="8dff4fed8a1d5381eb2f6576f3f06b7d" category="list-text"><block ref="f75ec94858c3cb7483e22bf2aca20589" prefix=" " category="inline-code"></block>이라는 파일을 다음 내용으로 생성합니다. 예제의 스토리지 VM 이름을 사용자 환경의 스토리지 VM 이름으로 바꿉니다.</block>
   <block id="7577767aaa58a8a7950977e3a65ee191" category="list-text">Backup and Recovery 인덱싱 카탈로그 컨테이너를 다시 시작합니다.</block>
   <block id="e6cce919f01af0ea557dc3414a5f3d13" category="sidebar">미리보기 및 숨겨진 기능 활성화</block>
   <block id="a66cf4720f5d5d39ed0b714a10c544b8" category="paragraph">객체 스토리지에서 백업 파일을 선택할 때 해당 백업에 대해 랜섬웨어 보호 기능이 활성화되어 있는 경우(백업 정책에서 Datalock 및 Ransomware 보호를 활성화한 경우), 데이터를 복원하기 전에 백업 파일에 대한 추가 무결성 검사를 실행하라는 메시지가 표시됩니다. 이 검사를 수행하는 것이 좋습니다.</block>
@@ -5554,4 +5551,9 @@
   <block id="be3cd190a86975f6f424dc4b62841598" category="section-title">재해 복구 구성에서 인덱싱 활성화</block>
   <block id="07df367027530700215f6c0b89225a68" category="paragraph">재해 복구(DR) 구성에서 스토리지 VM 클러스터에 대한 인덱싱을 활성화할 때 Vserver DR의 대상으로 구성된 Vserver에서 해당 작업이 허용되지 않는다는 오류 메시지가 나타납니다. 이 오류에도 불구하고 백엔드 프로세스는<block ref="f97a37281422aa65185ec69709f5c22b" prefix=" " category="inline-code"></block> 소스 스토리지 VM의 상태를 "켜짐"으로 설정합니다. 스토리지 VM DR 정책 스케줄이 실행된 후 이 상태가 대상 스토리지 VM으로 전파됩니다.</block>
   <block id="f3a85d41d14b1d81bc48b863a2e8b370" category="paragraph">*해결 방법*: 초기 오류 발생 후 스토리지 VM DR 정책 일정이 실행될 때까지 기다린 다음 인덱싱을 다시 활성화해 보세요.</block>
+  <block id="17ee1e3baa1892c1f3d00118ea446fca" category="section-title">볼륨에 대한 인덱싱 비활성화</block>
+  <block id="9d0f404c5a1959bdade3f7db9b0dfed5" category="paragraph">다음 옵션 플래그를 사용하여 특정 볼륨 또는 하나 이상의 스토리지 VM에 속하는 모든 볼륨에 대한 인덱싱을 비활성화합니다.</block>
+  <block id="99d6bb7f841b0ddd33dd9e23fe42b4e8" category="list-text"><block ref="2f0729ea8ff63f23144ca016d097072b" prefix="" category="inline-code"></block>: 볼륨을 인덱싱하지 않아야 하는 스토리지 VM의 쉼표로 구분된 목록</block>
+  <block id="a4c2ad915aa7ffe7e12eaa0ec56e0fcb" category="list-text"><block ref="2e56f3828d4fc676b207b81b442eafdd" prefix="" category="inline-code"></block>: 색인에 포함되지 않아야 하는 개별 볼륨의 쉼표로 구분된 목록</block>
+  <block id="2e7ba7a2addeb2881d5673ae4329306b" category="list-text"><block ref="f75ec94858c3cb7483e22bf2aca20589" prefix=" " category="inline-code"></block>이라는 파일을 생성하고 스토리지 VM 및 볼륨 이름을 환경에 맞게 사용자 지정합니다.</block>
 </blocks>
