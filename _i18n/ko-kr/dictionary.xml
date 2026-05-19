@@ -3606,9 +3606,7 @@
   <block id="fd161debce2c53100b7c61aa8b2d7c6b" category="list-text">Google 보관소에 보관된 항목을 복원하는 데 얼마나 걸리나요?</block>
   <block id="efce98c74b9fc5fb1711b2f3d4da8f34" category="list-text">*검색 시간*: 보관소에서 백업 파일을 검색하여 표준 저장소에 넣는 데 걸리는 시간입니다.  이 시기를 "보습" 시기라고도 합니다.  다른 클라우드 공급업체가 제공하는 "가장 차가운" 저장 솔루션과 달리, 밀리초 단위로 데이터에 액세스할 수 있습니다.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">이 작업에 관하여</block>
-  <block id="b92e6028af16604f3b6fd4eade9dfec6" category="summary">인터넷 접속이 불가능한 사이트("개인 모드"라고 함)에서 NetApp Backup and Recovery 사용하는 경우, NetApp Backup and Recovery 구성 데이터는 백업이 저장되는 StorageGRID 또는 ONTAP S3 버킷에 백업됩니다.  나중에 콘솔 에이전트 호스트 시스템에 문제가 발생하면 새로운 콘솔 에이전트를 배포하고 중요한 NetApp Backup and Recovery 데이터를 복원할 수 있습니다.</block>
   <block id="a215e32a572a4f73138eb57df3fb494d" category="doc">다크 사이트에서 NetApp Backup and Recovery 구성 데이터 복원</block>
-  <block id="e49ea1690cc473e646cdffd861381cbc" category="paragraph">인터넷 접속이 불가능한 사이트(개인 모드)에서 NetApp Backup and Recovery 사용하는 경우, NetApp Backup and Recovery 구성 데이터는 백업이 저장되는 StorageGRID 또는 ONTAP S3 버킷에 백업됩니다.  콘솔 에이전트 호스트 시스템에 문제가 있는 경우 새로운 콘솔 에이전트를 배포하고 중요한 NetApp Backup and Recovery 데이터를 복원할 수 있습니다.</block>
   <block id="701ba6e125e8ce791098165f107eb472" category="admonition">이 절차는 ONTAP 볼륨 데이터에만 적용됩니다.</block>
   <block id="28f81c5bbd7730901f36546c0e51e06f" category="paragraph">백업되는 데이터에는 두 가지 유형이 있습니다.</block>
   <block id="8ad7c680cb0d9e95e7294cf3e192be1f" category="list-text">NetApp Backup and Recovery 데이터베이스 - 모든 볼륨, 백업 파일, 백업 정책 및 구성 정보 목록이 포함되어 있습니다.</block>
@@ -3843,7 +3841,6 @@
   <block id="f5b61ddaf24256f9a32421bae22a1e21" category="sidebar">온-프레미스 ONTAP Azure Blob에 백업</block>
   <block id="e8f201c141a8ad9fbe4ea92510b4ca30" category="sidebar">온프레미스 ONTAP Google Cloud에 백업</block>
   <block id="6a2941303bd6f981e2724af76bf3da2e" category="sidebar">온프레미스 ONTAP StorageGRID 에 백업</block>
-  <block id="14873f48c9db88415c7c75e61a0ddd00" category="sidebar">다크 사이트에서 구성 데이터 복원</block>
   <block id="5ee1bd11e1cae9e48854c491affa72a6" category="sidebar">ONTAP 백업 관리</block>
   <block id="0f18ca4c27c34246c6bc09d2bbf775c6" category="sidebar">ONTAP 백업에서 복원</block>
   <block id="c00b274754a2d13242a61b1534660a37" category="sidebar">Microsoft SQL Server 인벤토리 관리</block>
@@ -5557,4 +5554,6 @@
   <block id="2e7ba7a2addeb2881d5673ae4329306b" category="list-text"><block ref="f75ec94858c3cb7483e22bf2aca20589" prefix=" " category="inline-code"></block>이라는 파일을 생성하고 스토리지 VM 및 볼륨 이름을 환경에 맞게 사용자 지정합니다.</block>
   <block id="48be46e5153e88189d804da13793e42d" category="list-text">로컬 스냅샷에서 폴더를 복원하는 것은 지원되지 않습니다.</block>
   <block id="dfad9bc0d0d8b9068168d9197cc59866" category="list-text">복제된 스냅샷이나 객체 스토리지 스냅샷에서 *폴더*를 원래 시스템의 볼륨, 동일한 클라우드 계정을 사용하는 다른 시스템의 볼륨 또는 온프레미스 ONTAP 시스템의 볼륨으로 복원할 수 있습니다. 로컬 스냅샷에서 폴더를 복원하는 것은 지원되지 않습니다.</block>
+  <block id="637d209786fc6476ac3ed36c800de343" category="summary">개인 모드(인터넷 연결 없음)에서 NetApp Backup and Recovery는 백업에 사용되는 것과 동일한 StorageGRID 또는 ONTAP S3 버킷에 구성 데이터를 저장합니다. 콘솔 에이전트 호스트 시스템에 장애가 발생하면 새 콘솔 에이전트를 배포하고 이 데이터를 복원할 수 있습니다.</block>
+  <block id="7bc0231d1aacc728e66087d46a205aab" category="paragraph">_프라이빗 모드_(인터넷 액세스 없음)에서 NetApp Backup and Recovery는 백업에 사용되는 것과 동일한 StorageGRID 또는 ONTAP S3 버킷에 구성 데이터를 저장합니다. Console 에이전트 호스트 시스템에 장애가 발생하면 새 Console 에이전트를 배포하고 이 데이터를 복원할 수 있습니다.</block>
 </blocks>
