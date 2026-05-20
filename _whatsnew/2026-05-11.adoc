@@ -48,3 +48,15 @@ Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.n
 
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
+
+
+
+=== Kubernetes 워크로드 개선 사항
+
+이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *Trident Protect 26.05.1*: 이번 릴리스에는 Trident Protect 26.05.1이 포함되어 있습니다.
+* *VM 기반 앱의 제자리 복원*: 이제 VM 기반 애플리케이션을 원래 네임스페이스 및 원래 클러스터로 복원할 수 있습니다.
+
+
+Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
