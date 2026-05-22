@@ -16,12 +16,6 @@ summary: NetApp Backup and Recovery 하나의 Google 보관 스토리지 클래�
 [role="lead"]
 NetApp Backup and Recovery 하나의 Google 보관 스토리지 클래스와 대부분의 지역을 지원합니다.
 
-[]
-====
-
-NOTE: NetApp Backup and Recovery UI 버전으로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["이전 NetApp Backup and Recovery UI로 전환"] .
-
-====
 
 
 == NetApp Backup and Recovery 에 지원되는 Google 보관 스토리지 클래스
