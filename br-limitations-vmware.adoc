@@ -18,12 +18,7 @@ summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetAp
 
 NetApp Backup and Recovery의 VMware 워크로드에서는 다음과 같은 작업이 지원되지 않습니다.
 
-* 산
-* 마운트 해제
 * vVol 지원
-* NVMe 지원
 * 이메일 통합
-* 정책 편집
-* 보호 그룹 편집
 * 역할 기반 액세스 제어(RBAC) 지원
 
