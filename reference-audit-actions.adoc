@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: reference-audit-actions.html 
+keywords: audit, audit actions, NetApp Console, Backup and Recovery, audit log 
+summary: NetApp Console 감사에서 지원하는 백업 및 복구 작업에 대한 참조입니다. 
+---
+= 감사된 Backup and Recovery 작업
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Console 감사 페이지는 감사 기능의 일환으로 사용자가 Backup and Recovery에서 수행하는 다음 작업을 기록합니다. 감사 이벤트를 보고 필터링하는 방법에 대한 자세한 내용은 Console 설명서의  https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-audit-page["Audit 페이지에서 사용자 활동 감사"^]을(를) 참조하십시오.
+
+NetApp Console은 감사 대상 작업마다 서비스 이름, 에이전트, 리소스, 사용자 및 작업 상태를 기록합니다.
+
+.감사된 Backup and Recovery 작업
+* 백업에서 볼륨 또는 파일을 복원합니다
+* 볼륨을 스냅샷으로 되돌리기
+* 파일 탐색 시작
+* 스냅샷에서 파일 복원
+* 클라우드 자격 증명 등록
+* 클라우드 자격 증명 업데이트
+* 클라우드 자격 증명 삭제
+* 객체 스토리지 버킷 생성
+* 객체 스토리지 버킷 수정
+* 백업 마이그레이션 검증
+* ONTAP 시스템 간 백업 마이그레이션
+* 소스 보호 초기화
+* 보호를 위한 피어 클러스터
+* 대상 보호 초기화
+* 볼륨 복제 시작
+* Cyber Vault 시스템 생성
+* Cyber Vault 시스템 삭제
+* Cyber Vault 액세스 활성화
+* Cyber Vault 액세스 비활성화
+* 임시 스냅샷 생성
+* 볼륨 및 관계 검색
+* 애플리케이션 구성 업데이트
+* 볼륨에 대한 파노라마 보호 활성화
+* 볼륨에 대한 파노라마 보호 수정
+* 시스템의 오브젝트 스토리지 수정
+* 임시 클라우드 백업 생성
+* 시스템 보호 초기화
+* 볼륨에 대한 파노라마 보호 활성화
+* 볼륨에 대한 파노라마 보호 수정
+* 볼륨 백업 메타데이터 새로 고침(예약됨)
+* 볼륨에서 백업 활성화
+* 볼륨에 대한 파노라마 보호 수정
+* ANF 스냅샷 정책 삭제
+* 시스템에서 파노라마 보호 활성화
+* 시스템에서 파노라마 보호 수정
+
+
+
+
+== 추가 정보
+
+* https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-audit-page["Audit 페이지에서 사용자 활동 감사"^]
+

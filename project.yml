@@ -70,6 +70,8 @@ sidebar:
         url: "/prev-ontap-policy-object-advanced-settings.html"
       - title: Cloud Volumes ONTAP Amazon S3에 백업
         url: "/prev-ontap-backup-cvo-aws.html"
+      - title: Cloud Volumes ONTAP을 S3 호환 스토리지에 백업합니다
+        url: "/prev-ontap-backup-cvo-s3-compatible.html"
       - title: Cloud Volumes ONTAP Azure Blob에 백업
         url: "/prev-ontap-backup-cvo-azure.html"
       - title: Google Cloud에 Cloud Volumes ONTAP 백업
@@ -242,6 +244,8 @@ sidebar:
     url: "/br-api-backup-restore.html"
   - title: 참조
     entries:
+    - title: 감사된 Backup and Recovery 작업
+      url: "/reference-audit-actions.html"
     - title: SnapCenter 의 정책과 NetApp Backup and Recovery 의 비교
       url: "/reference-policy-differences-snapcenter.html"
     - title: NetApp Backup and Recovery 역할 및 권한

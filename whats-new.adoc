@@ -18,6 +18,33 @@ NetApp Backup and Recovery 의 새로운 기능을 알아보세요.
 
 
 
+== 2026년 6월 8일
+
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+
+
+=== ONTAP Volumes 워크로드 개선 사항
+
+이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+*S3 호환 클라우드 스토리지 지원*: NetApp Backup and Recovery for Volumes 워크로드가 이제 S3 호환 클라우드 스토리지로의 백업을 지원합니다.
+
+ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
+
+
+
+=== Hyper-V 워크로드 개선 사항
+
+이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *게스트 VM으로 파일 및 폴더 복원 기능 개선*: 이제 기본 또는 2차 스토리지의 스냅샷에서 게스트 Windows VM으로 파일 및 폴더를 복원할 수 있습니다. 이 기능은 CIFS 및 SAN VM에서 지원됩니다.
+
+
+Hyper-V 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["Hyper-V 워크로드 보호 개요"] .
+
+
+
 == 2026년 5월 11일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
