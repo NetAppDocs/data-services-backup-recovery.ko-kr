@@ -5572,7 +5572,6 @@
   <block id="47d7a1c349dd710c7b70de2cc5f8bef1" category="admonition">현재 Wasabi는 S3 호환 객체 스토리지 제공업체 중 유일하게 인증을 받은 업체입니다. 다른 S3 호환 제공업체는 아직 검증되지 않았습니다.</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="811a794fc3af22bb5e0566f56adc0406" category="list-text">S3 호환 스토리지</block>
-  <block id="d0a6d4081b2093e4e5a535bdce1e44c0" category="cell">S3 호환 객체 스토리지의 Cloud Volumes ONTAP</block>
   <block id="29fc78ad7b30ceab82a6fad5327f5e05" category="cell">S3 호환 오브젝트 스토리지</block>
   <block id="d0eb32456912dd737e495d1233503746" category="summary">NetApp Console 감사에서 지원하는 백업 및 복구 작업에 대한 참조입니다.</block>
   <block id="a29588ca393407a53992df452b4d7451" category="doc">감사된 Backup and Recovery 작업</block>
@@ -5615,4 +5614,5 @@
   <block id="0714572f5e60fbb935fc53015369f585" category="list-text"><block ref="0714572f5e60fbb935fc53015369f585" category="inline-link-rx"></block></block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026년 6월 8일</block>
   <block id="83600b516c30dfc55e0311442c5d9002" category="sidebar">Cloud Volumes ONTAP을 S3 호환 스토리지에 백업합니다</block>
+  <block id="3a6182405315948a2b482f267396231c" category="admonition">"온프레미스 ONTAP 시스템"에 대한 언급에는 FAS, AFF 및 ONTAP Select 시스템이 포함됩니다.</block>
 </blocks>
