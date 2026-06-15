@@ -306,7 +306,7 @@ chown -R qemu:qemu <kvm_vm_mount_path> & chmod 771 <kvm_vm_mount_path>
 
 Kubernetes 리소스를 검색하고 Kubernetes 애플리케이션을 보호하려면 특정 요구 사항이 필요합니다.
 
-NetApp Console 요구 사항은 다음을 참조하세요.<<In NetApp Console>> .
+NetApp Console 요구 사항은 <<NetApp Console 준비>>을 참조하십시오.
 
 
 NOTE: NetApp에서는 에이전트 IP 주소가 변경될 경우 발생할 수 있는 문제를 방지하기 위해 Kubernetes 워크로드에 사용하는 Console 에이전트에 고정 IP 주소를 할당할 것을 강력히 권장합니다.

@@ -45,7 +45,7 @@ VPC 게이트웨이 엔드포인트는 이미 VPC에 존재해야 합니다. htt
 
 * 온프레미스 ONTAP에서 타사 S3 호환 오브젝트 스토리지로 크래시 정합성 보장 및 애플리케이션 정합성 보장 스냅샷 백업
 * 핵심 데이터 보호 워크플로: 백업, 복원 및 백업 삭제
-* Wasabi, MinIO, IBM Object Store 및 Apple Object Store를 포함한 S3 호환 공급자에 대해 검증되었습니다
+* Wasabi 객체 스토리지로 테스트 및 검증을 완료했으며, MinIO, IBM Cloud Object Storage 및 Apple Object Store를 사용한 성공적인 배포 사례도 보고되었습니다.
 * NetApp Support는 타사 S3 호환 객체 저장소와 관련된 모든 지원 요청을 접수하고 우선순위를 정합니다.
 
 
