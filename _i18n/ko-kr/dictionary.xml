@@ -384,8 +384,6 @@
   <block id="b76fe15e5efb181107a884a8a169710c" category="section-title">15분 간격이 아닌 일정</block>
   <block id="150bc9b32553d2cdbf1033715f83d268" category="paragraph">특정 시간에 시작하여 15분 간격이 아닌 간격으로 반복되는 SnapCenter 정책 일정이 있는 경우 NetApp Backup and Recovery 해당 일정을 가져오지 않습니다.</block>
   <block id="da5c7a32fb1f34042f2d0d433f50328c" category="paragraph">*해결 방법*: SnapCenter 사용하여 정책이 15분 간격으로 반복되도록 조정합니다.</block>
-  <block id="2d9cb3f69beb79a3c5b8d0153c88c2db" category="section-title">가상화 관리 소프트웨어에 대한 제한된 지원</block>
-  <block id="cb6fc7dd7b45612ba1f18392811f988b" category="paragraph">KVM 워크로드를 보호하는 경우, NetApp Backup and Recovery Apache CloudStack이나 Red Hat OpenShift Virtualization과 같은 가상화 관리 소프트웨어를 사용하는 동안 KVM 워크로드 검색을 지원하지 않습니다.</block>
   <block id="5d8aef9555e5438ddeff623786db2956" category="summary">알려진 제한 사항은 이 제품 릴리스에서 지원하지 않는 기능이나 이 릴리스와 올바르게 상호 운용되지 않는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요.</block>
   <block id="23eb49de2f5ba6e24c6af10a73585797" category="doc">ONTAP 볼륨에 대한 NetApp Backup and Recovery 의 알려진 제한 사항</block>
   <block id="32c27a5a3b9d3ca4a4a83c91adb6b781" category="list-text">NetApp Backup and Recovery Cloud Volumes ONTAP AWS 중국 지역(베이징 및 닝샤 포함)의 개체 저장소에 백업할 수 있습니다. 하지만 먼저 ID 및 액세스 정책을 수동으로 수정해야 할 수도 있습니다.</block>
@@ -1648,7 +1646,6 @@
   <block id="4513150785c046bfbcd37a0b9dcb7a35" category="list-text">"마이그레이션을 계속하시겠습니까?" 상자를 선택하고 *마이그레이션*을 선택합니다.</block>
   <block id="13be03aaa1d065e4e2a3d1cb64d9f254" category="paragraph">인벤토리 페이지에는 새로 관리되는 vCenter 리소스가 표시됩니다.</block>
   <block id="9f292a76282f4f6731d03460bcd3b924" category="doc">NetApp Backup and Recovery 개요를 사용하여 VMware 워크로드 보호</block>
-  <block id="c59e55a8f797ea977bb075c0da4e3733" category="paragraph">NetApp Backup and Recovery 사용하여 VMware VM과 데이터 저장소를 보호하세요.  NetApp Backup and Recovery 빠르고 공간 효율적이며, 충돌 대비 및 VM 대비 일관된 백업 및 복원 작업을 제공합니다. VMware 워크로드를 Amazon Web Services S3 또는 StorageGRID 에 백업하고 온프레미스 VMware 호스트로 VMware 워크로드를 복원할 수 있습니다.</block>
   <block id="13a7ab00fe9ae146021f5c5ab40ca443" category="paragraph">NetApp Backup and Recovery 사용하여 3-2-1 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.</block>
   <block id="eb2d112b017e683992cc9b9b338c90a1" category="paragraph">NetApp Backup and Recovery 사용하면 VMware 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
   <block id="4c90ef6c5dc037251bf65afdeeb1ee6c" category="list-text"><block ref="4c90ef6c5dc037251bf65afdeeb1ee6c" category="inline-link-macro-rx"></block></block>
@@ -4736,7 +4733,6 @@
   <block id="b46d8ca76f6fb8083d6d1c87abd6ef50" category="list-text">KVM 워크로드</block>
   <block id="5c4a8ce913e27612e0af180d6ef12ee6" category="list-text">Hyper-V 워크로드</block>
   <block id="49396edcdc3d3d7e4bec42adc037a5ef" category="list-text">Kubernetes 워크로드</block>
-  <block id="2432a396f38937322a4e606bf0aa7f0a" category="list-text">Microsoft Azure Blob(VMware 워크로드에는 사용할 수 없음)</block>
   <block id="1d57820923cf47d0bb8ab74db80344ab" category="list-text">ONTAP 9.15.1에서는 "찾아보기 및 복원" 옵션을 사용하여 FlexGroup 폴더를 복원할 수 있습니다.</block>
   <block id="5bc860fb25e08cbdf4fb6e1eb9fa16c9" category="paragraph">Oracle 데이터베이스를 검색하면 NetApp Backup and Recovery에서 백업 및 스냅샷을 생성하고 복원하여 데이터베이스를 보호할 수 있습니다.</block>
   <block id="e82e6b5a702d1fc223d9ea698359376e" category="section-title">Oracle 데이터베이스 호스트를 추가하고 리소스를 검색합니다</block>
@@ -5068,7 +5064,6 @@
   <block id="238d7a2bebc2cf898422ec1dbda4a73b" category="paragraph">워크로드는 보호, 거버넌스, 탐지 및 복구를 위해 단일 단위로 관리되는 시스템 내 리소스의 논리적 그룹입니다. Backup and Recovery에서 워크로드는 보호하는 단위입니다. 워크로드의 의미는 데이터 소스에 따라 다릅니다. Kubernetes의 경우 워크로드는 애플리케이션이고, VM 환경의 경우 가상 머신이며, 데이터베이스 환경의 경우 데이터베이스입니다.</block>
   <block id="eb0aff97ddec7b6894c0ea9cc7a6b66c" category="list-text">Google Cloud에서는 새 버킷이 배포되며, <block ref="7c8e47e4f5e61b3b1d7f7769baa8100f" category="inline-link-rx"></block>계정/프로젝트 수준에서 프로비저닝됩니다.</block>
   <block id="3addfc338787d5dc6d9709962161e00d" category="list-text">세 번째 옵션은 NetApp에서 직접 라이센스를 구매하는 것입니다. 자세한 내용은 <block ref="ba0ccbd18ea5b5cc8b06635e1ea19aa1" category="inline-xref-macro-rx"></block> 섹션을 참조하십시오.</block>
-  <block id="09e249805f01ac51656bbbc88c3f5e37" category="list-text">ONTAP S3(VMware 워크로드에는 사용할 수 없음)</block>
   <block id="e9ebab79f1c4e6f0b2fa9bfe92e9381d" category="summary">NetApp Backup and Recovery의 미리 보기 및 숨겨진 기능을 활성화합니다.</block>
   <block id="145966dcf8392a62159a1226e54e749e" category="doc">NetApp Backup and Recovery의 미리 보기 및 숨겨진 기능을 활성화합니다</block>
   <block id="5737194cdc99152eb3d54bca68703776" category="section-title">사용 가능한 미리 보기 기능</block>
@@ -5642,4 +5637,9 @@
   <block id="2b33678c8eba4dacaa294cad350a79f8" category="list-text">vCenter 서버를 새로 고쳐 현재 시간대를 가져오십시오.</block>
   <block id="9044dfb75ff38841e5c3112d327e52cf" category="admonition">Verda GitHub 저장소의 스크립트는 있는 그대로 제공되며 NetApp에서 공식적으로 지원하지 않습니다. Trident Protect 및 백업과 복구 내의 실행 후크 프레임워크만 NetApp에서 공식적으로 지원됩니다.</block>
   <block id="746c4e9758e4e986d2c5f289c1d7e4ed" category="list-text">Wasabi 객체 스토리지로 테스트 및 검증을 완료했으며, MinIO 및 IBM Cloud Object Storage를 사용한 성공적인 구축 사례도 보고되었습니다.</block>
+  <block id="0ea4d3ea6dde327be7585dd707c798c5" category="list-text">페이지 오른쪽 상단에서 워크로드 목록에 *Kubernetes*가 선택되어 있는지 확인하십시오.</block>
+  <block id="ea5b48c7d3f8b0a9e0a12672ffc2b29a" category="list-text">Kubernetes 리소스를 보려면 워크로드 항목에서 *보기*를 선택하십시오.</block>
+  <block id="9a6733678bfc1a6a630c61271f174949" category="paragraph">NetApp Backup and Recovery를 사용하여 VMware VM과 데이터스토어를 보호하세요. NetApp Backup and Recovery는 빠르고 공간 효율적이며, 크래시 일관성 및 VM 일관성을 보장하는 백업 및 복원 작업을 제공합니다. 지원되는 백업 대상으로 VMware 워크로드를 백업하고 온프레미스 VMware 호스트로 VMware 워크로드를 복원할 수 있습니다.</block>
+  <block id="a7ffc4809e4a33a20f30769fc3e62703" category="list-text">S3 호환 스토리지(ONTAP Volumes 워크로드에만 해당)</block>
+  <block id="7229e78ecf33d07a5618d54695f22e2b" category="list-text">Microsoft Azure Blob 스토리지</block>
 </blocks>

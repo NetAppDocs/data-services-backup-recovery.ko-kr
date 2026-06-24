@@ -109,9 +109,3 @@ SnapCenter 호스트에 대한 리소스에 대한 맵 스토리지 클러스터
 특정 시간에 시작하여 15분 간격이 아닌 간격으로 반복되는 SnapCenter 정책 일정이 있는 경우 NetApp Backup and Recovery 해당 일정을 가져오지 않습니다.
 
 *해결 방법*: SnapCenter 사용하여 정책이 15분 간격으로 반복되도록 조정합니다.
-
-
-
-== 가상화 관리 소프트웨어에 대한 제한된 지원
-
-KVM 워크로드를 보호하는 경우, NetApp Backup and Recovery Apache CloudStack이나 Red Hat OpenShift Virtualization과 같은 가상화 관리 소프트웨어를 사용하는 동안 KVM 워크로드 검색을 지원하지 않습니다.
