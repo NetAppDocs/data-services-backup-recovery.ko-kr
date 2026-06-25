@@ -111,7 +111,7 @@ VMware 워크로드의 경우, 이는 기본의 데이터스토어 또는 VM에 
 *** 기타 옵션: 연기 이체를 선택하는 경우 이체는 즉시 이루어지지 않으며 일정을 설정할 수 있습니다.
 
 
-** * SnapMirror 및 SnapVault SMAS 보조 관계*: SQL Server 워크로드에 SnapMirror 및 SnapVault SMAS 보조 관계를 사용합니다.
+** *기존 SnapMirror 및 SyncMirror 보조 관계 사용*: 이 옵션을 활성화하면 기존 SnapMirror 또는 SyncMirror 관계를 사용하여 스냅샷을 지정된 타겟 클러스터로 전송합니다.
 
 
 . *객체 저장소 설정* 섹션(객체 스토리지로 백업)에 필요한 정보를 제공하십시오.
