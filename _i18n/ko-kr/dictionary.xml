@@ -778,7 +778,6 @@
   <block id="e5dd8794e7e239a004607625309c03bb" category="list-text">Kubernetes 워크로드의 경우 다음을 참조하세요.<block ref="bdf340f843cf54500673f62df22d5070" category="inline-link-macro-rx"></block> .</block>
   <block id="47531513e36377c6a5c78be39708d962" category="summary">NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.</block>
   <block id="e902bc2010ef35580633bf1114aee5b3" category="doc">NetApp Backup and Recovery 사용하기 전에 백업 대상을 설정하세요.</block>
-  <block id="8a0933307f827fb9f8c7b526a219880b" category="paragraph">NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">전제 조건</block>
   <block id="1ee0b624eb9dbd226bf2ec0c999c84a7" category="paragraph">시작하기 전에 검토하세요<block ref="2eebb303c5f465d9ddee1afb9c070240" category="inline-link-macro-rx"></block> 귀하의 환경이 준비되었는지 확인하세요.</block>
   <block id="7fada33e4007d6c45f21f39f8f564f62" category="section-title">백업 대상을 준비하세요</block>
@@ -5298,7 +5297,6 @@
   <block id="87e187714ad3406b822e2c0bf109240b" category="summary">Hyper-V VM 스냅샷에서 하나 이상의 파일 또는 폴더를 Windows 게스트 VM으로 복원할 수 있습니다.</block>
   <block id="cd21aa174cd18a8828140ba323628bfb" category="doc">Hyper-V VM 백업에서 파일 및 폴더 복원</block>
   <block id="d822ec23856d26a5af79fad29ce2f55e" category="paragraph">스냅샷에서 가상 디스크를 마운트하고 해당 디스크의 파일과 폴더를 원래(소스) Windows VM으로 복원합니다.</block>
-  <block id="d4bb35603ef1e4c4f849336d35413c6f" category="paragraph">파일과 폴더를 복원하기 전에 NetApp Backup and Recovery에서 소스 VM에 대한 자격 증명을 생성해야 합니다. 이 자격 증명은 복원 프로세스 중에 VM을 인증하는 데 사용됩니다.</block>
   <block id="17a458fd7a6b6ae191ac9219e3b46deb" category="paragraph">가상 디스크를 마운트하여 파일 및 폴더 복원 세션을 열면 해당 세션은 48시간 동안 활성 상태로 유지됩니다.</block>
   <block id="392177f0b4a0bc4b5bc23ef82eee9fff" category="paragraph">복원 성능은 복원 대상 파일 또는 폴더의 크기와 개수에 따라 달라집니다. 동일한 데이터 세트 크기에서, 작은 파일이 많은 경우 큰 파일이 적은 경우보다 복원하는 데 일반적으로 시간이 더 오래 걸립니다.</block>
   <block id="0c1d8f103b8f05dc9e681f213a4140ed" category="paragraph">파일 및 폴더를 복원할 때 다음 사항에 유의하십시오.</block>
@@ -5378,7 +5376,6 @@
   <block id="96cd77faff8587f3ee978f6d738fc506" category="list-text">*검증 서버*: 선택적으로, 목록에서 등록된 Oracle 호스트를 하나 이상 선택하여 오프호스트 검증 서버로 사용할 수 있습니다. 서버를 선택하지 않으면 검증은 소스 데이터베이스 호스트에서 직접 실행됩니다. 그렇지 않으면 Backup and Recovery는 선택한 호스트 중 하나에 스냅샷 클론을 마운트하고 해당 호스트에서 백업을 검증하여 운영 데이터베이스 서버에서 검증 I/O를 격리합니다. 검증 서버는 다음 조건을 충족해야 합니다.</block>
   <block id="a96c5b49f0e2679b8f6884c399905c08" category="list-text">NetApp 플러그인이 설치되어 있어야 합니다</block>
   <block id="aa525d522adb224988fcdcd6f1e78c30" category="list-text">Oracle 데이터베이스 바이너리가 설치되어 있어야 합니다</block>
-  <block id="7ed52864c10e2ddd715752fb3ab3a33f" category="list-text">원본 데이터베이스와 동일한 Oracle 데이터베이스 버전을 사용하십시오</block>
   <block id="ed72ca5994ca086c703a8fad4669ac29" category="list-text">스냅샷이 저장된 스토리지(운영 또는 2차)에 대한 네트워크 액세스 권한이 있어야 합니다</block>
   <block id="a6b9c0ae442c5226d495a5c8fcbaec6c" category="list-text">복제된 볼륨을 마운트하고 Oracle 데이터베이스 DBVERIFY 유틸리티를 실행할 수 있어야 합니다.</block>
   <block id="ee722f1985ae6abb41cf3cea75ae2afd" category="list-text">*최대 전송 속도*: 선택한 호스트에 대한 최대 전송 속도를 설정하려면 *최대 전송 속도 활성화*를 선택하십시오. 대역폭 사용량에 제한을 설정하지 않으려면 *무제한*을 선택하십시오. 전송 속도를 제한하려면 *제한*을 선택하고 객체 스토리지에 백업을 업로드하는 데 할당할 네트워크 대역폭을 1~1,000Mbps 중에서 선택하십시오. 기본적으로 ONTAP는 시스템의 볼륨에서 객체 스토리지로 백업 데이터를 전송하는 데 무제한 대역폭을 사용할 수 있습니다. 백업 트래픽이 워크로드에 영향을 미치는 경우 전송에 할당할 네트워크 대역폭을 줄이십시오.</block>
@@ -5644,4 +5641,6 @@
   <block id="2b4ccece5f6493a03ab0eed818dd5e54" category="list-text">VMware 워크로드를 지원되는 스토리지 공급자에 백업합니다.</block>
   <block id="947289c8d4497907d6f4aedc1502dce8" category="list-text">Google Cloud Storage(ONTAP 볼륨 및 Kubernetes 워크로드에만 해당)</block>
   <block id="0692ea49da3133a6dc624be3e9654369" category="paragraph">클라우드 계정이 관련되지 않은 경우 온프레미스에서 _표준 모드_로 백업 및 복구를 사용할 때 콘솔 에이전트를 교체하고 에이전트에 저장된 구성 데이터를 복원하기 위해 다음 단계를 따를 수도 있습니다(예: NetApp StorageGRID를 백업 대상으로 사용하는 경우).</block>
+  <block id="2be7e1093c386d54e43c7fc0e8de4a1f" category="paragraph">파일과 폴더를 복원하기 전에 NetApp Backup and Recovery에서 소스 VM에 대한 자격 증명을 생성해야 합니다. 이 자격 증명은 복원 프로세스 중에 VM을 인증하는 데 사용됩니다.</block>
+  <block id="9f5917bbc05d835882ed9022aa56ac20" category="list-text">원본 데이터베이스와 동일한 Oracle Database 버전을 사용하십시오.</block>
 </blocks>
