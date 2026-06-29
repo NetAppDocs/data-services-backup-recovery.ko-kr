@@ -2426,10 +2426,6 @@
   <block id="868fb9c55d4ddac7523d9c4697eb9d9f" category="section-title">데이터 암호화를 위한 고객 관리 AWS 키 설정</block>
   <block id="72828ef5ab3d5aa027bfcdd1a9224f67" category="paragraph">온프레미스 클러스터와 S3 버킷 간에 전달되는 데이터를 암호화하기 위해 기본 Amazon S3 암호화 키를 사용하려는 경우, 기본 설치에서 해당 유형의 암호화가 사용되므로 모든 준비가 완료된 것입니다.</block>
   <block id="aa9f769e3ac07b6605a7c510f6467b0d" category="paragraph">대신 기본 키를 사용하는 대신 고객이 관리하는 키를 사용하여 데이터를 암호화하려는 경우 NetApp Backup and Recovery 마법사를 시작하기 전에 암호화 관리 키를 미리 설정해야 합니다.</block>
-  <block id="81d60e20c02d2dc4f1f049ef17d9c0f3" category="inline-link">Cloud Volumes ONTAP 에서 자체 Amazon 암호화 키를 사용하는 방법을 참조하세요.</block>
-  <block id="eb3f4e9630751efd3957882fa3339f53" category="paragraph"><block ref="a7e77aaf059fb9a4b638710225357142" category="inline-link-rx"></block>.</block>
-  <block id="8ceec43667de81f25c5ddfbde5549946" category="inline-link">NetApp Backup and Recovery 에서 자체 Amazon 암호화 키를 사용하는 방법을 참조하세요.</block>
-  <block id="3869dda903236d84654e6efafcb9d188" category="paragraph"><block ref="8fe101e295f009741416862cf90e3f6c" category="inline-link-rx"></block>.</block>
   <block id="486567bdd60f21beefa59174661f6d52" category="section-title">VPC 엔드포인트 인터페이스를 사용하여 개인 연결을 위한 시스템 구성</block>
   <block id="f50abdb59982020e158a4a180050f908" category="paragraph">표준 공용 인터넷 연결을 사용하려는 경우 모든 권한은 콘솔 에이전트에 의해 설정되므로 그 외에는 아무것도 할 필요가 없습니다.</block>
   <block id="26dcafbb92de47e3c098da4f6dfb38ae" category="paragraph">온프레미스 데이터 센터에서 VPC로 인터넷을 통해 보다 안전한 연결을 원하는 경우 백업 활성화 마법사에서 AWS PrivateLink 연결을 선택하는 옵션이 있습니다. 개인 IP 주소를 사용하는 VPC 엔드포인트 인터페이스를 통해 온프레미스 시스템에 연결하기 위해 VPN이나 AWS Direct Connect를 사용하려는 경우 필요합니다.</block>
@@ -5643,4 +5639,7 @@
   <block id="0692ea49da3133a6dc624be3e9654369" category="paragraph">클라우드 계정이 관련되지 않은 경우 온프레미스에서 _표준 모드_로 백업 및 복구를 사용할 때 콘솔 에이전트를 교체하고 에이전트에 저장된 구성 데이터를 복원하기 위해 다음 단계를 따를 수도 있습니다(예: NetApp StorageGRID를 백업 대상으로 사용하는 경우).</block>
   <block id="2be7e1093c386d54e43c7fc0e8de4a1f" category="paragraph">파일과 폴더를 복원하기 전에 NetApp Backup and Recovery에서 소스 VM에 대한 자격 증명을 생성해야 합니다. 이 자격 증명은 복원 프로세스 중에 VM을 인증하는 데 사용됩니다.</block>
   <block id="9f5917bbc05d835882ed9022aa56ac20" category="list-text">원본 데이터베이스와 동일한 Oracle Database 버전을 사용하십시오.</block>
+  <block id="6b181f9b8f3365a62a308265f446f30b" category="admonition">고객 관리 키 암호화는 Amazon FSx for NetApp ONTAP에 대해서만 지원됩니다. Cloud Volumes ONTAP for AWS에서는 지원되지 않습니다.</block>
+  <block id="e46ce594d7f94f0d680627c5f9150ad6" category="inline-link">AWS에서 고객 관리 키 암호화 설정</block>
+  <block id="fe921914a3a58bce833cfd4d4785fb2b" category="paragraph">을 참조하십시오.<block ref="445e5997f02f6fbbedcd2ff2bda158c4" category="inline-link-rx"></block></block>
 </blocks>
