@@ -357,8 +357,8 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 
 | 연결된 스토리지  a| 
 * ONTAP 9.13.1 이상
-* 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템
-* SAN 스토리지(백업 및 운영 또는 2차 스토리지에서 원래 위치로 복원 시 지원)
+* SMB 공유
+* iSCSI 또는 파이버 채널을 통해 연결된 SAN 스토리지
 
 
 |===
@@ -374,5 +374,5 @@ NOTE: Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당
 
 .NetApp ONTAP 구성 요구 사항
 * 기본 ONTAP 시스템(ONTAP 9.14.1 이상)
-* CIFS 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하세요.  를 참조하세요 https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/configure-shares-continuous-availability-task.html["ONTAP 문서"^] 지침을 보려면.
+* SMB 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하십시오. 지침은  https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/configure-shares-continuous-availability-task.html["ONTAP 문서"^]을 참조하십시오.
 

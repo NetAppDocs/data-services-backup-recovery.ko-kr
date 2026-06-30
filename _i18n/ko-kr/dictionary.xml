@@ -1209,13 +1209,8 @@
   <block id="32316833f8e2552223d79fb99979ff7f" category="cell">NetApp Backup and Recovery 임시 스냅샷 생성 작업 실패</block>
   <block id="8c340dc334134096f68b880b42a8692c" category="cell">복제</block>
   <block id="def1939e9c93c839079171f6dd5e3291" category="cell">NetApp Backup and Recovery 임시 복제 작업 실패</block>
-  <block id="08a671649ac55e1aa9d353651e865c93" category="cell">NetApp Backup and Recovery 복제 일시 중지 작업 실패</block>
   <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">아니요</block>
-  <block id="de07da0681d640a8e5bfdf21bac49e81" category="cell">NetApp Backup and Recovery 복제 중단 작업 실패</block>
-  <block id="d275c1564b9f2a250f9bf30d6e8bab26" category="cell">NetApp Backup and Recovery 복제 재동기화 작업 실패</block>
   <block id="9f6cd0f0a12191a75f16414b3b601822" category="cell">NetApp Backup and Recovery 복제 중지 작업 실패</block>
-  <block id="93d1a6c01d156e393187858c16c5c626" category="cell">NetApp Backup and Recovery 복제 역방향 재동기화 작업 실패</block>
-  <block id="594e604651fd901124d237d8caf5c86f" category="cell">NetApp Backup and Recovery 복제 삭제 작업 실패</block>
   <block id="910e8697aa5e0e59e920af3a4cf26b12" category="admonition">ONTAP 9.13.0부터 모든 알림은 Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템에 표시됩니다.  Cloud Volumes ONTAP 9.13.0 및 온프레미스 ONTAP 이 있는 시스템의 경우 "복원 작업이 완료되었지만 경고가 표시됨"과 관련된 알림만 나타납니다.</block>
   <block id="4e1654b110548c12172bd1f4aa2a9b85" category="paragraph">NetApp Backup and Recovery 이메일 알림을 받으려면 알림 설정 페이지에서 알림 심각도 유형을 "중요", "경고", "오류"로 선택해야 합니다.</block>
   <block id="ac92ec63bcc51fd7fbdc332411a1c313" category="inline-link">백업 및 복원 작업에 대한 알림 이메일을 보내는 방법을 알아보세요.</block>
@@ -1872,7 +1867,6 @@
   <block id="523f5e6af5276c06e274c9d76b2d4467" category="admonition">Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당하고 사용량을 정기적으로 모니터링하세요.  필요한 공간은 백업 및 데이터 보호 작업이 얼마나 자주 발생하는지에 따라 달라집니다.  공간이 충분하지 않으면 로그가 생성되지 않습니다.</block>
   <block id="1498907a7069094c1a1b679e2a53087a" category="list-text">기본 ONTAP 시스템(ONTAP 9.14.1 이상)</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP 문서</block>
-  <block id="0a2b6c395fc07f332dac7e7046c239c4" category="list-text">CIFS 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하세요.  를 참조하세요<block ref="5c340db4eb0fc64db199962e418ffbd0" category="inline-link-rx"></block> 지침을 보려면.</block>
   <block id="f6e9a28cc6109da66451b7ed0caaea35" category="list-text">ONTAP S3의 ​​경우 콘솔 에이전트는 인터넷 접속 여부와 관계없이 사내 또는 클라우드 공급자 환경에 배포될 수 있습니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지 사항</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지사항은 저작권 표시, 상표, 특허 등에 대한 정보를 제공합니다.</block>
@@ -4138,8 +4132,6 @@
   <block id="80fd95bd893f8df76c2fa9dd4bad6849" category="cell">임시 볼륨 백업이 성공했습니다.</block>
   <block id="5ed835b77018cbf32fbdfb39bcc25527" category="cell">다중 볼륨 백업에 실패했습니다.</block>
   <block id="0298583ff5a55aeec25dc314bbd47357" category="cell">Cron 작업</block>
-  <block id="f771739629c02b8a1545a40985444450" category="cell">누락된 스냅샷 레이블 확인</block>
-  <block id="39e7a35fbe3bf187f05710b99a1abab5" category="cell">이 시스템에 대한 보안 토큰을 ONTAP 으로 보내지 못했습니다.</block>
   <block id="1da6059b2e40a5d5dcd0f29c0344d522" category="cell">Pub/Sub 이벤트</block>
   <block id="75c3b3bb89bde01f9166a94cbfa98588" category="cell">연결 실패</block>
   <block id="4d40cebef25fff7de69b66a1fd2b91ac" category="cell">예약된 스냅샷을 삭제하지 못했습니다.</block>
@@ -5430,7 +5422,6 @@
   <block id="e77e2a03d88f40058869e1cc3d680930" category="list-text">ASP.NET Core Runtime 8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치)</block>
   <block id="9e75b63d575b523917aa9e47b41b52fb" category="list-text">Oracle AI Database 26ai</block>
   <block id="f9fe5abdb3368e0236fd36a21bb8f840" category="cell">8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치)</block>
-  <block id="55c7dc18349be92e97f9965c696cb850" category="list-text">SAN 스토리지(백업 및 운영 또는 2차 스토리지에서 원래 위치로 복원 시 지원)</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
   <block id="a37ef823bf93d8b834512d7ddfdf36cd" category="sidebar">Microsoft SQL Server 워크로드 백업 정책을 생성 및 관리합니다</block>
   <block id="2287427b367a426395bab449f1e777dc" category="sidebar">VMware 워크로드 백업 정책 생성 및 관리</block>
@@ -5642,4 +5633,15 @@
   <block id="6b181f9b8f3365a62a308265f446f30b" category="admonition">고객 관리 키 암호화는 Amazon FSx for NetApp ONTAP에 대해서만 지원됩니다. Cloud Volumes ONTAP for AWS에서는 지원되지 않습니다.</block>
   <block id="e46ce594d7f94f0d680627c5f9150ad6" category="inline-link">AWS에서 고객 관리 키 암호화 설정</block>
   <block id="fe921914a3a58bce833cfd4d4785fb2b" category="paragraph">을 참조하십시오.<block ref="445e5997f02f6fbbedcd2ff2bda158c4" category="inline-link-rx"></block></block>
+  <block id="a5f837afad6e28e74cc2bc1ddf30b10c" category="cell">스냅샷 정책 / 백업 정책 레이블 불일치</block>
+  <block id="0c1df2a13aa2696a312b568815c83f15" category="cell">이 시스템에 대한 ONTAP의 객체 저장소 자격 증명을 업데이트하지 못했습니다.</block>
+  <block id="14714a38e65ddb4109cc93b0e6a171b9" category="cell">NetApp Backup and Recovery 복제 관계 일시 중지 작업 실패</block>
+  <block id="6532e5d724a28a601ca7648d508d625b" category="cell">NetApp Backup and Recovery 복제 관계 끊김 작업 오류</block>
+  <block id="cb807b65bdf438c727793dce019ff942" category="cell">NetApp Backup and Recovery 복제 관계 재동기화 작업 실패</block>
+  <block id="633255f387c732126e8cdceb4ac9fceb" category="cell">NetApp Backup and Recovery 복제 관계 역방향 재동기화 작업 실패</block>
+  <block id="d59074181d2dab51d18ca27cb4fc47d8" category="cell">NetApp Backup and Recovery 복제 관계 삭제 작업 실패</block>
+  <block id="5df069a4ec3b3f8731b57ed05f942930" category="cell">볼륨 백업 인덱싱에 실패했습니다.</block>
+  <block id="9823593ea29f31b6d988e92cd15483f6" category="list-text">SMB 공유</block>
+  <block id="e3438f0f5d63a3c8de989b98d3095c8d" category="list-text">iSCSI 또는 파이버 채널을 통해 연결된 SAN 스토리지</block>
+  <block id="81bdc0623ea533b24d0e11cb1d26ba25" category="list-text">SMB 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하십시오. 지침은 <block ref="5c340db4eb0fc64db199962e418ffbd0" category="inline-link-rx"></block>을 참조하십시오.</block>
 </blocks>
