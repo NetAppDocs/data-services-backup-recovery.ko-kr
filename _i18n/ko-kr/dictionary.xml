@@ -617,7 +617,6 @@
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">다음 중 하나를 수행하세요.</block>
   <block id="6226950d1b144f972ce9b5d3caea9b42" category="list-text">이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery 에서 *인벤토리* &gt; *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.</block>
   <block id="e7c444e4a1d2f156d71a907145c8a598" category="list-text">*Kubernetes* 워크로드 유형을 선택하세요.</block>
-  <block id="96c35fcba67cbf6710845bcca4668cc2" category="list-text">클러스터 이름을 입력하고 클러스터와 함께 사용할 커넥터를 선택하세요.</block>
   <block id="39b0136210d9abd099b81781cc0a17db" category="list-text">표시되는 명령줄 지침을 따르세요.</block>
   <block id="ed6eabebedff09350cdabab556887c62" category="list-text">쿠버네티스 비밀을 생성하세요</block>
   <block id="6c27e11d1144953d7877449d5adc966d" category="list-text">Helm 저장소 추가</block>
@@ -5644,4 +5643,5 @@
   <block id="e3438f0f5d63a3c8de989b98d3095c8d" category="list-text">iSCSI 또는 파이버 채널을 통해 연결된 SAN 스토리지</block>
   <block id="81bdc0623ea533b24d0e11cb1d26ba25" category="list-text">SMB 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하십시오. 지침은 <block ref="5c340db4eb0fc64db199962e418ffbd0" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="09e4a6980ec8e49e9c338d71a078b029" category="paragraph">마켓플레이스에서 연간 계약을 체결한 경우, 모든 NetApp Backup and Recovery 사용량은 해당 계약에 따라 청구됩니다.</block>
+  <block id="fe336167ccf46f9fb348006254d0f3ee" category="list-text">클러스터 이름을 입력하고 클러스터와 함께 사용할 콘솔 에이전트를 선택하십시오.</block>
 </blocks>
