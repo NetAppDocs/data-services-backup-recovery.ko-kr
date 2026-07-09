@@ -4,6 +4,7 @@
 
 
 
+[[kubernetes-workloads-enhancements]]
 === Kubernetes 워크로드 개선 사항
 
 이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.

@@ -18,6 +18,7 @@ summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetAp
 
 
 
+[[unsupported-actions]]
 == 지원되지 않는 작업
 
 NetApp Backup and Recovery의 Hyper-V 워크로드에서는 다음과 같은 작업이 지원되지 않습니다.

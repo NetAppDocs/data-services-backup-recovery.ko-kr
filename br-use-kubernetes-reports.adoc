@@ -18,6 +18,7 @@ NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고
 
 
 
+[[create-a-protection-report]]
 == 보호 보고서 생성
 
 클러스터의 보호 상태를 확인하려면 보호 보고서를 생성하세요.
@@ -46,6 +47,7 @@ NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고
 
 
 
+[[download-a-protection-report]]
 == 보호 보고서 다운로드
 
 생성된 보호 보고서를 JSON 파일 또는 PDF 문서로 다운로드하여 보고 공유할 수 있습니다.
@@ -63,6 +65,7 @@ NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 보호 보고
 
 
 
+[[view-a-protection-report]]
 == 보호 보고서 보기
 
 NetApp Backup and Recovery에서 보호 보고서의 대화형 세부 정보를 빠르게 확인할 수 있습니다. 작업 요약 정보, 데이터 보호 상태, 구성 세부 정보 등을 볼 수 있습니다.
@@ -78,6 +81,7 @@ NetApp Backup and Recovery에서 보호 보고서의 대화형 세부 정보를 
 
 
 
+[[delete-a-protection-report]]
 == 보호 보고서 삭제
 
 더 이상 필요하지 않은 경우 보호 보고서를 삭제하십시오.

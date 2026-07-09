@@ -20,6 +20,7 @@ summary: NetApp Backup and Recovery에서 Oracle 데이터베이스를 구성하
 
 
 
+[[configure-an-oracle-database]]
 == Oracle 데이터베이스 구성
 
 독립형 또는 클러스터형 Oracle 데이터베이스의 구성을 변경합니다.

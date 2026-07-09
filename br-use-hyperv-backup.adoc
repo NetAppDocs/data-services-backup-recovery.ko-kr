@@ -23,6 +23,7 @@ summary: NetApp 백업 및 복구를 통해 Hyper-V 워크로드를 보호하세
 
 
 
+[[back-up-workloads-now-with-an-on-demand-backup]]
 == 지금 온디맨드 백업으로 워크로드를 백업하세요
 
 시스템을 변경하기 전에 데이터를 보호할 수 있도록 주문형 백업을 사용하세요.

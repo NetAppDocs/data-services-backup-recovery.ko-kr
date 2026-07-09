@@ -58,6 +58,7 @@ NetApp Console은 감사 대상 작업마다 서비스 이름, 에이전트, 리
 
 
 
+[[more-information]]
 == 추가 정보
 
 * https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-audit-page["Audit 페이지에서 사용자 활동 감사"^]

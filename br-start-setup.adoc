@@ -18,6 +18,7 @@ NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여
 
 
 
+[[prepare-the-backup-destination]]
 == 백업 대상을 준비하세요
 
 다음 백업 대상 중 하나 이상을 준비하세요.
@@ -53,6 +54,7 @@ AWS를 백업 대상으로 준비하려면 다음을 수행하세요.
 
 
 
+[[set-up-s3-permissions]]
 == S3 권한 설정
 
 AWS S3 권한 두 세트를 구성해야 합니다.

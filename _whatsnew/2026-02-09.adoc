@@ -4,18 +4,21 @@
 
 
 
+[[microsoft-hyper-v-workloads-supported-in-general-availability-ga]]
 === 일반 공급(GA)에서 지원되는 Microsoft Hyper-V 워크로드
 
 Microsoft Hyper-V 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.
 
 
 
+[[vmware-workloads-supported-in-general-availability-ga]]
 === 일반 출시(GA)에서 지원되는 VMware 워크로드
 
 NetApp Backup and Recovery에서 VMware 워크로드 지원이 이제 정식 출시(GA)되었습니다.
 
 
 
+[[kubernetes-workloads-enhancements]]
 === Kubernetes 워크로드 개선 사항
 
 이번 Kubernetes 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
@@ -31,6 +34,7 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 
 
+[[oracle-database-workloads-enhancements]]
 === Oracle Database 워크로드 개선 사항
 
 이번 Oracle Database 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.

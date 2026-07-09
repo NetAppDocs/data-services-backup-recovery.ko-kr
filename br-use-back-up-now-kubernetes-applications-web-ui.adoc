@@ -21,6 +21,7 @@ NetApp Backup and Recovery를 사용하면 웹 인터페이스를 통해 Kuberne
 
 
 
+[[back-up-a-kubernetes-application-now-using-the-web-ui]]
 == 웹 UI를 사용하여 Kubernetes 애플리케이션을 지금 백업합니다
 
 향후 백업 및 스냅샷을 위한 기준을 설정하거나 최신 데이터가 보호되도록 Kubernetes 애플리케이션의 백업을 수동으로 생성합니다.

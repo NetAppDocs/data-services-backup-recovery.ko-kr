@@ -4,6 +4,7 @@
 
 
 
+[[ontap-volumes-workloads-enhancements]]
 === ONTAP Volumes 워크로드 개선 사항
 
 이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 향상된 기능을 제공합니다.
@@ -20,6 +21,7 @@ ONTAP Volume 워크로드 보호에 대한 자세한 내용은 https://docs.neta
 
 
 
+[[vmware-workloads-enhancements]]
 === VMware 워크로드 개선 사항
 
 이번 릴리스에서 VMware 워크로드는 다음과 같은 향상된 기능을 소개합니다.

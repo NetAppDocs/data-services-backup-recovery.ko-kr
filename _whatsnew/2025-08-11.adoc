@@ -4,6 +4,7 @@
 
 
 
+[[microsoft-sql-server-workload-supported-in-general-availability-ga]]
 === 일반 공급(GA)에서 지원되는 Microsoft SQL Server 워크로드
 
 Microsoft SQL Server 워크로드 지원이 이제 NetApp Backup and Recovery 에서 일반적으로 사용 가능(GA)되었습니다. ONTAP, Cloud Volumes ONTAP 및 Amazon FSx for NetApp ONTAP 스토리지에서 MSSQL 환경을 사용하는 조직은 이제 이 새로운 백업 및 복구 서비스를 활용하여 데이터를 보호할 수 있습니다.
@@ -44,6 +45,7 @@ image:../media/screen-br-dashboard3.png["NetApp Backup and Recovery 보드"]
 
 
 
+[[ontap-volume-workload-enhancements]]
 === ONTAP 볼륨 워크로드 향상
 
 * * ONTAP 볼륨에 대한 다중 폴더 복원*: 지금까지는 찾아보기 및 복원 기능을 통해 한 번에 하나의 폴더나 여러 파일을 복원할 수 있었습니다. NetApp Backup and Recovery 이제 찾아보기 및 복원 기능을 사용하여 여러 폴더를 한 번에 선택할 수 있는 기능을 제공합니다.

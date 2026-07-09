@@ -18,6 +18,7 @@ summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetAp
 
 
 
+[[changing-the-protection-policy-for-an-application]]
 == 애플리케이션의 보호 정책 변경
 
 애플리케이션에 연결된 보호 정책을 다른 버킷 또는 2차 복제 대상으로 변경하면 보호 정책이 실패할 수 있습니다.
@@ -26,6 +27,7 @@ summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetAp
 
 
 
+[[3-2-1-protection-policy-configuration-limitation]]
 == 3-2-1 보호 정책 구성 제한 사항
 
 오브젝트 스토리지 백업이 2차 스토리지로의 복제와 동시에 발생하지 않는 3-2-1 보호 정책을 생성할 때 애플리케이션 보호 시 보호 정책이 멈춥니다.

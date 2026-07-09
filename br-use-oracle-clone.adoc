@@ -20,6 +20,7 @@ NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 시스템의 Or
 
 
 
+[[create-a-clone-of-an-oracle-database]]
 == Oracle 데이터베이스의 클론 생성
 
 기존 스냅샷에서 즉시 클론을 생성합니다. 이 방법을 사용하여 스냅샷에서 지속적으로 새로 고쳐지지 않는 일회성 클론을 생성합니다.
@@ -50,6 +51,7 @@ NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 시스템의 Or
 
 
 
+[[schedule-a-clone-of-an-oracle-database]]
 == Oracle 데이터베이스의 클론 예약
 
 데이터베이스 복제본을 즉시 생성하고 복제본을 지속적으로 새로 고치도록 예약합니다. 이렇게 하면 데이터베이스의 최신 복제본이 생성됩니다. 선택한 일정에 따라 데이터베이스의 최신 상태에서 복제본을 지속적으로 새로 고치려면 이 방법을 사용하십시오.
@@ -77,6 +79,7 @@ NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 시스템의 Or
 
 
 
+[[split-a-clone]]
 == 클론 분할
 
 Oracle 데이터베이스 워크로드의 클론을 분할할 수 있습니다. 클론을 분할하면 클론으로부터 새로운 백업이 생성됩니다. 이 새로운 백업을 사용하여 데이터베이스를 복원할 수 있습니다.
@@ -95,6 +98,7 @@ Oracle 데이터베이스 워크로드의 클론을 분할할 수 있습니다. 
 
 
 
+[[delete-a-clone]]
 == 클론 삭제
 
 Oracle Database 워크로드의 복제본을 삭제할 수 있습니다. 복제본을 삭제하면 객체 저장소에서 제거되어 스토리지 공간이 확보됩니다.

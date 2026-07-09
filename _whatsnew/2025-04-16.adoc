@@ -4,6 +4,7 @@
 
 
 
+[[ui-improvements]]
 === UI 개선
 
 이번 릴리스에서는 인터페이스를 단순화하여 사용자 경험을 향상시킵니다.
@@ -17,12 +18,14 @@
 
 
 
+[[enhanced-volume-dashboard-preview]]
 === 향상된 볼륨 대시보드(미리 보기)
 
 이제 볼륨 대시보드가 10초 이내에 로드되어 훨씬 더 빠르고 효율적인 인터페이스를 제공합니다.  이 미리보기 버전은 일부 고객에게만 제공되며, 이를 통해 이러한 개선 사항을 미리 살펴볼 수 있습니다.
 
 
 
+[[support-for-third-party-wasabi-object-store-preview]]
 === 타사 Wasabi 객체 저장소 지원(미리 보기)
 
 NetApp Backup and Recovery 이제 Wasabi를 중심으로 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.

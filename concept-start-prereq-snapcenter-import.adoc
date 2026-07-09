@@ -18,12 +18,14 @@ Microsoft SQL Server용 SnapCenter 플러그인 서비스에서 NetApp Backup an
 
 
 
+[[create-systems-in-netapp-console-first]]
 == 먼저 NetApp Console 에서 시스템을 만드세요
 
 SnapCenter 에서 리소스를 가져오려면 SnapCenter 에서 가져오기 전에 먼저 온프레미스 SnapCenter 클러스터 스토리지를 모두 콘솔의 시스템 페이지에 추가해야 합니다.  이렇게 하면 호스트 리소스를 올바르게 검색하고 가져올 수 있습니다.
 
 
 
+[[ensure-host-requirements-to-install-the-snapcenter-plug-in]]
 == SnapCenter 플러그인을 설치하기 위한 호스트 요구 사항을 확인하세요.
 
 Microsoft SQL Server용 SnapCenter 플러그인에서 리소스를 가져오려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하기 위한 호스트 요구 사항이 충족되는지 확인하세요.
@@ -32,6 +34,7 @@ SnapCenter 요구 사항을 특별히 확인하세요.link:concept-start-prereq.
 
 
 
+[[disable-user-account-control-remote-restrictions]]
 == 사용자 계정 컨트롤 원격 제한 비활성화
 
 SnapCenter 에서 리소스를 가져오기 전에 SnapCenter Windows 호스트에서 UAC(사용자 계정 컨트롤) 원격 제한을 비활성화하세요.  로컬 관리 계정을 사용하여 SnapCenter 서버 호스트나 SQL 호스트에 원격으로 연결하는 경우 UAC를 비활성화합니다.
@@ -69,6 +72,7 @@ UAC 원격 제한을 비활성화하기 전에 다음 문제를 고려하세요.
 
 
 
+[[method-1-disable-user-account-control-by-using-the-registry-editor]]
 === 방법 1: 레지스트리 편집기를 사용하여 사용자 계정 컨트롤 비활성화
 
 이는 사용자 계정 컨트롤을 비활성화하는 데 사용할 수 있는 방법 중 하나입니다.
@@ -112,6 +116,7 @@ UAC 원격 제한을 비활성화하기 전에 다음 문제를 고려하세요.
 ----
 
 
+[[method-2-disable-user-account-control-by-using-a-powershell-script]]
 === 방법 2: PowerShell 스크립트를 사용하여 사용자 계정 컨트롤 비활성화
 
 이는 사용자 계정 컨트롤을 비활성화하는 데 사용할 수 있는 또 다른 방법입니다.

@@ -20,6 +20,7 @@ NetApp Backup and Recovery의 KVM 워크로드에서는 다음과 같은 작업 
 
 
 
+[[unsupported-actions]]
 == 지원되지 않는 작업
 
 다음 작업은 지원되지 않습니다.
@@ -32,6 +33,7 @@ NetApp Backup and Recovery의 KVM 워크로드에서는 다음과 같은 작업 
 
 
 
+[[unsupported-configurations]]
 == 지원되지 않는 구성
 
 다음 구성은 지원되지 않습니다.
@@ -45,6 +47,7 @@ NetApp Backup and Recovery의 KVM 워크로드에서는 다음과 같은 작업 
 
 
 
+[[troubleshooting-notes]]
 == 문제 해결 참고 사항
 
 NetApp Backup and Recovery를 사용하여 KVM 워크로드를 사용할 때 다음 사항에 유의하십시오.

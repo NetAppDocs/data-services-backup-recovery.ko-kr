@@ -4,6 +4,7 @@
 
 
 
+[[netapp-backup-and-recovery-preview-release]]
 === NetApp Backup and Recovery 미리보기 릴리스
 
 NetApp Backup and Recovery 의 이 Preview 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.

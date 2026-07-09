@@ -20,6 +20,7 @@ NetApp Backup and Recovery KVM 호스트와 가상 머신을 보호하기 전에
 
 
 
+[[add-a-management-platform-kvm-host-and-discover-resources]]
 == 관리 플랫폼, KVM 호스트를 추가하고 리소스를 검색하세요.
 
 관리 플랫폼 및 KVM 호스트 정보를 추가하면 NetApp Backup and Recovery 가 워크로드를 검색할 수 있습니다.
@@ -71,6 +72,7 @@ KVM 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩
 
 
 
+[[continue-to-the-netapp-backup-and-recovery-dashboard]]
 == NetApp Backup and Recovery 보드로 계속
 
 .단계

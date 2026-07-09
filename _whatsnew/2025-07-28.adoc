@@ -4,6 +4,7 @@
 
 
 
+[[kubernetes-workload-support-as-a-preview]]
 === 미리 보기로 Kubernetes 워크로드 지원
 
 이번 NetApp Backup and Recovery 릴리스에서는 Kubernetes 워크로드 검색 및 관리 지원이 추가되었습니다.

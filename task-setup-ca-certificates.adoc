@@ -18,6 +18,7 @@ NetApp Backup and Recovery 와 StorageGRID 또는 ONTAP 간 통신을 활성화�
 
 
 
+[[create-a-security-certificate-for-storagegrid]]
 == StorageGRID 에 대한 보안 인증서 생성
 
 NetApp Backup and Recovery 컨테이너와 StorageGRID 간의 통신에서 StorageGRID 인증서를 확인해야 하는 경우 다음 단계를 완료하십시오.
@@ -83,6 +84,7 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 
 
 
+[[steps-for-cloudmanagercbs-container]]
 === cloudmanager_cbs 컨테이너에 대한 단계
 
 NetApp Backup and Recovery (Cloud Backup Service )에서 StorageGRID Server 인증서 검증을 활성화해야 합니다.
@@ -141,6 +143,7 @@ docker restart cloudmanager_cbs
 
 
 
+[[steps-for-cloudmanagercbscatalog-container]]
 === cloudmanager_cbs_catalog 컨테이너에 대한 단계
 
 다음으로, 카탈로그 서비스에 대한 StorageGRID Server 인증서 검증을 활성화해야 합니다.
@@ -193,6 +196,7 @@ docker restart cloudmanager_cbs_catalog
 
 
 
+[[update-the-console-agent-certificate-with-the-storagegrid-certificate-based-on-the-agent-operating-system]]
 === 에이전트 운영 체제에 따라 StorageGRID 인증서로 콘솔 에이전트 인증서를 업데이트합니다.
 
 
@@ -252,6 +256,7 @@ openssl crl2pkcs7 -nocrl -certfile /etc/pki/tls/certs/ca-bundle.crt | openssl pk
 
 
 
+[[create-a-security-certificate-for-ontap]]
 == ONTAP 에 대한 보안 인증서 생성
 
 NetApp Backup and Recovery 컨테이너와 ONTAP 간의 통신에서 ONTAP 인증서의 유효성을 검사해야 하는 경우 다음 단계를 완료하세요.
@@ -323,6 +328,7 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 
 
 
+[[steps-for-cloudmanagercbs-container]]
 === cloudmanager_cbs 컨테이너에 대한 단계
 
 다음으로 NetApp Backup and Recovery (Cloud Backup Service )에서 ONTAP 서버 인증서 검증을 활성화합니다.
@@ -379,6 +385,7 @@ docker restart cloudmanager_cbs
 
 
 
+[[steps-for-cloudmanagercbscatalog-container]]
 === cloudmanager_cbs_catalog 컨테이너에 대한 단계
 
 카탈로그 서비스에 대해 ONTAP 서버 인증서 검증을 활성화합니다.
@@ -429,6 +436,7 @@ docker restart cloudmanager_cbs_catalog
 
 
 
+[[create-a-certificate-for-both-ontap-and-storagegrid]]
 == ONTAP 과 StorageGRID 에 대한 인증서 생성
 
 ONTAP 과 StorageGRID 모두에 대한 인증서를 활성화해야 하는 경우 구성 파일은 다음과 같습니다.

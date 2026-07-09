@@ -14,6 +14,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
 
 
+[[discover-your-ontap-systems-in-netapp-console]]
 === NetApp Console 에서 ONTAP 시스템을 찾아보세요
 
 소스 온프레미스 ONTAP 시스템과 보조 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템 모두 NetApp Console *시스템* 페이지에서 사용할 수 있어야 합니다.
@@ -22,6 +23,7 @@ ONTAP 클러스터를 준비하는 단계는 다음과 같습니다.
 
 
 
+[[verify-ontap-system-requirements]]
 === ONTAP 시스템 요구 사항 확인
 
 ONTAP 시스템이 다음 요구 사항을 충족하는지 확인하세요.
