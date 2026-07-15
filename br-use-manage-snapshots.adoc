@@ -23,7 +23,7 @@ NetApp Backup and Recovery 에서 Microsoft SQL Server 스냅샷을 삭제하여
 
 로컬 스냅샷만 삭제할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리*를 선택합니다.

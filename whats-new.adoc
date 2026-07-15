@@ -18,6 +18,24 @@ NetApp Backup and Recovery 의 새로운 기능을 알아보세요.
 
 
 
+[[13-july-2026]]
+== 2026년 7월 13일
+
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+
+
+[[ontap-volumes-workloads-enhancements]]
+=== ONTAP Volumes 워크로드 개선 사항
+
+이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+*향상된 멀티 버킷 지원*: ONTAP 9.19.1 이상 버전부터는 시스템당 최대 100개의 버킷을 사용하여 서로 다른 클라우드 공급자에 걸쳐 시스템 내 볼륨을 보호할 수 있습니다.
+
+ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
+
+
+
 [[15-june-2026]]
 == 2026년 6월 15일
 

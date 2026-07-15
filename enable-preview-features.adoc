@@ -16,7 +16,7 @@ summary: NetApp Backup and Recovery의 미리 보기 및 숨겨진 기능을 활
 [role="lead"]
 NetApp Backup and Recovery의 미리 보기 및 숨겨진 기능을 활성화합니다.
 
-*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. link:reference-roles.html["백업 및 복구 역할과 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 
