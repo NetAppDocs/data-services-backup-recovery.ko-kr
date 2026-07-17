@@ -70,8 +70,6 @@ sidebar:
         url: "/prev-ontap-policy-object-advanced-settings.html"
       - title: Cloud Volumes ONTAP Amazon S3에 백업
         url: "/prev-ontap-backup-cvo-aws.html"
-      - title: Cloud Volumes ONTAP을 S3 호환 스토리지에 백업합니다
-        url: "/prev-ontap-backup-cvo-s3-compatible.html"
       - title: Cloud Volumes ONTAP Azure Blob에 백업
         url: "/prev-ontap-backup-cvo-azure.html"
       - title: Google Cloud에 Cloud Volumes ONTAP 백업
@@ -84,6 +82,8 @@ sidebar:
         url: "/prev-ontap-backup-onprem-gcp.html"
       - title: 온프레미스 ONTAP ONTAP S3로 백업
         url: "/prev-ontap-backup-onprem-ontaps3.html"
+      - title: 온프레미스 ONTAP을 S3 호환 스토리지에 백업
+        url: "/prev-ontap-backup-onprem-s3-compatible.html"
       - title: 온프레미스 ONTAP StorageGRID 에 백업
         url: "/prev-ontap-backup-onprem-storagegrid.html"
       - title: SnapMirror 사용하여 볼륨을 Cloud Resync로 마이그레이션
