@@ -1846,7 +1846,6 @@
   <block id="6106f73de41b0409a6e5dd18d2f2baf3" category="list-text">Hyper-V 호스트의 NetApp Hyper-V 플러그인에 최소 1GB RAM 필요</block>
   <block id="6736478116770d132993185ee55b6baf" category="list-text">Hyper-V 호스트의 플러그인을 위한 최소 5GB 설치 및 로그 공간</block>
   <block id="523f5e6af5276c06e274c9d76b2d4467" category="admonition">Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당하고 사용량을 정기적으로 모니터링하세요.  필요한 공간은 백업 및 데이터 보호 작업이 얼마나 자주 발생하는지에 따라 달라집니다.  공간이 충분하지 않으면 로그가 생성되지 않습니다.</block>
-  <block id="1498907a7069094c1a1b679e2a53087a" category="list-text">기본 ONTAP 시스템(ONTAP 9.14.1 이상)</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP 문서</block>
   <block id="f6e9a28cc6109da66451b7ed0caaea35" category="list-text">ONTAP S3의 ​​경우 콘솔 에이전트는 인터넷 접속 여부와 관계없이 사내 또는 클라우드 공급자 환경에 배포될 수 있습니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지 사항</block>
@@ -5640,7 +5639,6 @@
   <block id="ba92b1a20870ba2e4e62480d0f546f50" category="list-text">특정 스토리지 VM 내의 데이터를 검색하려면 먼저 시스템을 선택해야 합니다.</block>
   <block id="e3474dde8545c53e3274ed9c9b64005c" category="paragraph">복원 작업에는 백업 대상 공급자(Amazon Web Services, Microsoft Azure, Google Cloud, 온프레미스), S3 버킷 이름, 스토리지 VM 이름, 소스 볼륨 이름, 대상 볼륨, 스냅샷 레이블, 복구된 객체 수, 파일 이름, 파일 크기, 최종 수정 날짜 및 전체 파일 경로와 같은 세부 정보가 표시됩니다.</block>
   <block id="f9740f6d9a7b17271d0bd9c950beb364" category="paragraph">클론을 독립형 클론 또는 장기 보존형 클론으로 분할할 수 있습니다. 마법사를 통해 스토리지 VM에 포함된 애그리게이트 목록, 크기, 클론된 볼륨의 위치를 확인할 수 있습니다. NetApp Backup and Recovery는 클론을 분할할 충분한 공간이 있는지 여부도 알려줍니다. 클론이 분할되면 해당 클론은 독립적인 데이터베이스로 보호됩니다.</block>
-  <block id="f8a8c54321528bdfeaace1c0344da0e3" category="list-text">서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 사용하려면 ONTAP 9.19.1 이상 버전이 필요합니다(최대 100개 버킷 지원).</block>
   <block id="5f215f7c34f6e7e676381bc568270c08" category="list-text">*복제 대상*: 대상 시스템과 스토리지 VM을 선택합니다. 선택적으로 대상 애그리게이트(FlexGroup 볼륨의 경우 애그리게이트 여러 개)와 복제된 볼륨 이름에 추가될 접두사 또는 접미사를 선택할 수 있습니다.</block>
   <block id="84894d14ff1ffc8ca882274f258dab82" category="doc">NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 데이터를 S3 호환 스토리지로 백업</block>
   <block id="b4e544c2a798b61cb8be540d9a98bdd7" category="paragraph">NetApp Backup and Recovery에서 몇 가지 단계를 완료하여 기본 온프레미스 ONTAP 시스템의 볼륨 데이터를 백업하세요. 백업 데이터를 보조 ONTAP 스토리지 시스템(복제된 볼륨) 또는 S3 호환 스토리지 시스템의 버킷으로, 또는 둘 다로 보낼 수 있습니다.</block>
@@ -5653,4 +5651,7 @@
   <block id="77b3f26262e74232411c4a9845e78dd4" category="paragraph">NetApp Backup and Recovery를 사용하면 찾아보기 및 복원 기능을 통해 ONTAP 데이터를 복원할 수 있습니다. 복원하기 전에 소스 볼륨 이름, 소스 시스템 및 스토리지 VM, 백업 파일 날짜를 기록해 두십시오. ONTAP 스냅샷, 복제된 볼륨 또는 오브젝트 스토리지에 저장된 백업에서 ONTAP 데이터를 복원할 수 있습니다.</block>
   <block id="ddba76f3680bcef2d5a8170c73d395e7" category="list-text">SnapDiff RPC 서버는 스토리지 VM에서 활성화해야 합니다. 콘솔은 시스템에서 인덱싱을 활성화할 때 이 작업을 자동으로 수행합니다. (SnapDiff는 스냅샷 간의 파일 및 디렉터리 차이점을 신속하게 식별하는 기술입니다.)</block>
   <block id="e6932ee3628baaf132027b16f688c205" category="sidebar">온프레미스 ONTAP을 S3 호환 스토리지에 백업</block>
+  <block id="4ad36f854b6d4d49c94081fec1b29de2" category="list-text">ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷(최대 100개 버킷)을 지원할 수 있습니다.</block>
+  <block id="59ebd83b4c20d2b24ac46c96525c37fc" category="list-text">ONTAP 9.13.1 이상 (서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요합니다. 최대 100개 버킷까지 지원 가능)</block>
+  <block id="6a0d2c5dd8e27d910d6ff2158f8d5520" category="list-text">기본 ONTAP 시스템(ONTAP 9.14.1 이상 - 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요하며, 최대 100개의 버킷까지 지원 가능)</block>
 </blocks>
