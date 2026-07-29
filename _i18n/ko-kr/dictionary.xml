@@ -5285,7 +5285,6 @@
   <block id="57c9526981addf2ea70c6ad409673cb5" category="list-text">선택적으로 세션을 삭제하려면 세션의 작업 메뉴 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block>를 열고 *삭제*를 선택하십시오.</block>
   <block id="970e7dbe358429eacf37bb0e37943138" category="list-text">객체 스토리지 백업에서 복원(원본 위치로만 가능)</block>
   <block id="4b59b9c80f0f0e40294e53eb75b4e004" category="list-text">(운영, 2차 스토리지 및 오브젝트 스토리지에서) 원래 위치로 복원</block>
-  <block id="a6f964fecafa0484fc07f1b47496f82c" category="list-text">대체 위치로 복원(운영 및 2차 스토리지에서)</block>
   <block id="bff6f5877ada2718589866425ae83e38" category="doc">NetApp Backup and Recovery에서 Hyper-V 백업 정책을 생성하고 관리합니다</block>
   <block id="7c54de5e880bd010125642ffb949ccad" category="paragraph">NetApp Backup and Recovery를 사용하면 백업 빈도, 백업 수행 시간 및 보존할 백업 파일 수를 제어하는 자체 Hyper-V 백업 정책을 만들 수 있습니다.</block>
   <block id="110202b139c8c8a25346f036c902b4c8" category="list-text">정책 편집</block>
@@ -5436,7 +5435,6 @@
   <block id="860b17c21dae4758109cd6109bb92be4" category="list-text">*게스트 VM으로 파일 및 폴더 복원 기능 개선*: 이제 기본 또는 2차 스토리지의 스냅샷에서 게스트 Windows VM으로 파일 및 폴더를 복원할 수 있습니다. 이 기능은 CIFS 및 SAN VM에서 지원됩니다.</block>
   <block id="3e96e50a62c2cc112989ccd5d4d264aa" category="list-text">재해 복구(DR) 구성에서 파일 및 폴더 복원: 페일오버 후, DR용으로 구성된 스토리지 VM의 볼륨은 기존 SnapMirror 관계를 끊어진 상태로 유지합니다. 임시 SnapMirror RST 관계를 생성하는 파일 또는 폴더 복원 시도는 대상 볼륨에 이미 관계가 존재하기 때문에 ONTAP에서 차단됩니다.</block>
   <block id="d98b87c41bd7151a94b3271b45bd340f" category="paragraph">기본 또는 2차 스토리지의 Hyper-V VM 백업에서 Windows 게스트 VM으로 파일 및 폴더를 복원합니다.</block>
-  <block id="7438f70a76f855b704ba892f9c003542" category="list-text">객체 스토리지에 저장된 백업에서 파일 및 폴더를 복원하는 것은 지원되지 않습니다.</block>
   <block id="7d3d3c20273081b66e3ecec1f0d07f51" category="list-text">복원할 운영 또는 2차 스토리지의 스냅샷을 선택한 다음 *다음*을 선택합니다.</block>
   <block id="3808991f408e2ffd90ae953886ec1e79" category="doc">NetApp Backup and Recovery 요구 사항</block>
   <block id="44b68849dd3e2689fb41242f736a140f" category="paragraph">NetApp Backup and Recovery를 사용하기 전에 NetApp Console과 운영 환경이 다음 요구 사항을 충족하는지 확인하십시오.</block>
@@ -5654,4 +5652,6 @@
   <block id="4ad36f854b6d4d49c94081fec1b29de2" category="list-text">ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷(최대 100개 버킷)을 지원할 수 있습니다.</block>
   <block id="59ebd83b4c20d2b24ac46c96525c37fc" category="list-text">ONTAP 9.13.1 이상 (서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요합니다. 최대 100개 버킷까지 지원 가능)</block>
   <block id="6a0d2c5dd8e27d910d6ff2158f8d5520" category="list-text">기본 ONTAP 시스템(ONTAP 9.14.1 이상 - 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요하며, 최대 100개의 버킷까지 지원 가능)</block>
+  <block id="d2bf4d042aabc15b9ccde353c782a6f2" category="list-text">Microsoft Windows Server 2025를 사용하는 경우 SAN 스토리지에 저장된 2세대 가상 머신 보호는 지원되지 않습니다.</block>
+  <block id="b2d5ba8de92c18cbb9c45e01ad3f5509" category="list-text">다른 위치(기본, 보조 및 오브젝트 저장소)로 복원</block>
 </blocks>
