@@ -73,7 +73,7 @@ NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 �
 NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 에이전트 역할에 대한 특정 권한이 있어야 Azure Synapse Workspace 및 Data Lake Storage 계정에 액세스할 수 있습니다.  아래의 권한을 확인하고, 정책을 수정해야 하는 경우 단계에 따라 진행하세요.
 
 .시작하기 전에
-* 구독을 통해 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse")를 등록해야 합니다. https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["구독을 위해 이 리소스 공급자를 등록하는 방법을 확인하세요."^] .  리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.
+* 구독에 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse"라고 함)를 등록해야 합니다. https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["구독을 위해 이 리소스 공급자를 등록하는 방법을 확인하세요."^]. 리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.
 * 콘솔 에이전트와 Azure Synapse SQL 서비스 간 통신을 위해서는 포트 1433이 열려 있어야 합니다.
 
 

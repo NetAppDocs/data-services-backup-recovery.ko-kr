@@ -2029,7 +2029,6 @@
   <block id="dd67539e70d93b9889e0cb5a77274b0b" category="paragraph">NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 에이전트 역할에 대한 특정 권한이 있어야 Azure Synapse Workspace 및 Data Lake Storage 계정에 액세스할 수 있습니다.  아래의 권한을 확인하고, 정책을 수정해야 하는 경우 단계에 따라 진행하세요.</block>
   <block id="bf49a2af93184828c602f30985ab7b3e" category="list-title">시작하기 전에</block>
   <block id="ad21a85e531f324768ed107500147c11" category="inline-link">구독을 위해 이 리소스 공급자를 등록하는 방법을 확인하세요.</block>
-  <block id="8e735e680b7368147fd11864544dafdc" category="list-text">구독을 통해 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse")를 등록해야 합니다.<block ref="66e7a06283e2f9b1945c2e3b539d5c17" category="inline-link-rx"></block> .  리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.</block>
   <block id="31dc01c9493f1634e02a0b09bd5b59bd" category="list-text">콘솔 에이전트와 Azure Synapse SQL 서비스 간 통신을 위해서는 포트 1433이 열려 있어야 합니다.</block>
   <block id="caf1eee1629cb07ebbce66130fb04f94" category="list-text">콘솔 에이전트 가상 머신에 할당된 역할을 식별합니다.</block>
   <block id="dd7dc066cb6a0b619ef397e8b37b57c3" category="list-text">Azure Portal에서 가상 머신 서비스를 엽니다.</block>
@@ -5645,7 +5644,6 @@
   <block id="ce2f56e5c9015b28eb92d0581ad9a718" category="list-text">*90일 작업 보존*: 이제 Backup and Recovery가 작업 모니터에서 작업 정보를 90일 동안 보존합니다.</block>
   <block id="1a83c2d5d73015e6e971eff46d37e9d8" category="list-text">*SAN VM에 대한 대체 위치 복원 지원*: 이제 SAN 기반 VM 백업을 다른 위치로 복원할 수 있습니다.</block>
   <block id="b7bfbf5f47aa4163507ae71ed18f8b9f" category="list-text">*여러 백업 삭제 지원*: 이제 한 번에 여러 백업을 삭제할 수 있습니다.</block>
-  <block id="7ac62e0d250037c318f5fcf102e2e700" category="list-text">*플러그형 데이터베이스(PDB) 복원 및 복제*: NetApp Console 서비스용 백업 및 복구 기능이 이제 플러그형 데이터베이스 복원 및 복제를 지원합니다.</block>
   <block id="c67660fa166ae58260874bbf6f9c5e4a" category="list-text">*에어갭 리소스에 대한 미리 보기 지원*: NetApp Console 로컬 배포에서 NetApp Backup and Recovery를 실행하는 경우 에어갭 Kubernetes 리소스를 검색, 보호 및 복원할 수 있습니다. 이 기능은 이번 릴리스에서 미리 보기로 제공됩니다.</block>
   <block id="d1c241263c19a21db56b6d9aaeb83ca1" category="paragraph">이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.</block>
   <block id="a33b2a8cf6a943c4ae96728143fee277" category="list-text">*복원 작업을 백업보다 우선 순위 지정*: 이제 가상 머신이나 파일을 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.</block>
@@ -5805,4 +5803,5 @@
   <block id="718879a57c5479ddc9d8c13719835aa2" category="list-text">수동으로 <block ref="547d17b0589ba1ba53549f8ddb830b62" prefix=" " category="inline-code"></block>을 실행한 후 다시 설치하려고 하면 PV가 동일한 이름으로 설치되어 이름 충돌이 발생합니다.</block>
   <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026년 8월 10일</block>
   <block id="874b4474de89858c50d77a501e5764e2" category="sidebar">NetApp Console 로컬 배포 환경에서 볼륨 검색 및 복원 성능 향상</block>
+  <block id="4d92224f9798401488621039f9e4cfa9" category="list-text">구독에 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse"라고 함)를 등록해야 합니다.<block ref="c0f87c4b35b6d93246175aae02f70afd" category="inline-link-rx"></block>. 리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.</block>
 </blocks>
