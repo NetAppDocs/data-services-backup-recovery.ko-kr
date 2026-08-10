@@ -18,6 +18,72 @@ NetApp Backup and Recovery 의 새로운 기능을 알아보세요.
 
 
 
+[[10-august-2026]]
+== 2026년 8월 10일
+
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+
+
+[[general-netapp-backup-and-recovery-enhancements]]
+=== 일반 NetApp Backup and Recovery 기능 향상
+
+* *NetApp Console 로컬 배포 지원*: 이번 NetApp Backup and Recovery 릴리스는 NetApp Console 로컬 배포를 미리 보기 상태로 지원합니다.
+* *90일 작업 보존*: 이제 Backup and Recovery가 작업 모니터에서 작업 정보를 90일 동안 보존합니다.
+
+
+
+
+[[vmware-workloads-enhancements]]
+=== VMware 워크로드 개선 사항
+
+이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *SAN VM에 대한 대체 위치 복원 지원*: 이제 SAN 기반 VM 백업을 다른 위치로 복원할 수 있습니다.
+* *여러 백업 삭제 지원*: 이제 한 번에 여러 백업을 삭제할 수 있습니다.
+
+
+VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
+
+
+
+[[oracle-database-workloads-enhancements]]
+=== Oracle Database 워크로드 개선 사항
+
+이번 릴리스에서 Oracle 데이터베이스 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *플러그형 데이터베이스(PDB) 복원 및 복제*: NetApp Console 서비스용 백업 및 복구 기능이 이제 플러그형 데이터베이스 복원 및 복제를 지원합니다.
+
+
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["Oracle Database 워크로드 보호 개요"]을 참조하십시오.
+
+
+
+[[kubernetes-workloads-enhancements]]
+=== Kubernetes 워크로드 개선 사항
+
+이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *에어갭 리소스에 대한 미리 보기 지원*: NetApp Console 로컬 배포에서 NetApp Backup and Recovery를 실행하는 경우 에어갭 Kubernetes 리소스를 검색, 보호 및 복원할 수 있습니다. 이 기능은 이번 릴리스에서 미리 보기로 제공됩니다.
+
+
+Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
+
+
+
+[[ontap-volumes-workloads-enhancements]]
+=== ONTAP Volumes 워크로드 개선 사항
+
+이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *복원 작업을 백업보다 우선 순위 지정*: 이제 가상 머신이나 파일을 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.
+* *Backup and Recovery 활성화 없이 ONTAP 시스템 및 볼륨 검색*: 이제 Backup and Recovery를 활성화하지 않고도 시스템과 볼륨을 검색할 수 있습니다.
+
+
+ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
+
+
+
 [[13-july-2026]]
 == 2026년 7월 13일
 

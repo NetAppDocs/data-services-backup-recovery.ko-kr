@@ -55,7 +55,7 @@ NOTE: 서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 
 다음 링크에서 새로 고침 토큰을 생성했는지 확인하십시오: https://services.cloud.netapp.com/refresh-token/. 새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.
 
 +
-[source, console]
+[source, shell]
 ----
 curl --location --request POST 'https://netapp-cloud-account.auth0.com/oauth/token?=' \
 --header 'Content-Type: application/json' \
@@ -122,7 +122,7 @@ Header:
 .API 요청
 NetApp Console 계정 ID를 사용하는 것을 볼 수 있습니다. `account-DpTFcxN3` , 콘솔 에이전트 ID `iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients` , 및 사용자 토큰 `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…y6nyhBjwkeMwHc4ValobjUmju2x0xUH48g` 이 명령에서.
 
-[source, console]
+[source, shell]
 ----
 curl --location --request POST 'https://api.bluexp.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v3/backup/working-environment/VsaWorkingEnvironment-99hPYEgk' \
 --header 'x-agent-id: iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients' \
@@ -164,7 +164,7 @@ curl --location --request POST 'https://api.bluexp.netapp.com/account/account-Dp
 }
 ----
 .응답을 모니터링하세요:
-[source, console]
+[source, shell]
 ----
 curl --location --request GET 'https://api.bluexp.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v1/job/1b34b6f6-8f43-40fb-9a52-485b0dfe893a' \
 --header 'x-agent-id: iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients' \

@@ -18,13 +18,22 @@ NetApp Backup and Recovery를 사용하기 전에 NetApp Console과 운영 환�
 
 
 
-[[prepare-netapp-console]]
-== NetApp Console 준비
+[[prepare-to-use-netapp-backup-and-recovery]]
+== NetApp Backup and Recovery 사용 준비
 
-NetApp Backup and Recovery는 NetApp Console을 통해 액세스할 수 있습니다. Backup and Recovery를 위해 Console을 준비하려면 다음을 수행해야 합니다.
+NetApp Console을 통해 NetApp Backup and Recovery에 액세스합니다. NetApp Console 또는 NetApp Console 로컬 배포 사용 여부에 따라 다음 작업을 수행하여 Backup and Recovery를 위한 Console을 준비하십시오.
 
+
+
+[[prepare-to-use-backup-and-recovery-on-netapp-console]]
+=== NetApp Console에서 Backup and Recovery를 사용하기 위한 준비
+
+백업 및 복구를 위해 NetApp Console을 준비하려면 다음을 수행해야 합니다.
+
+* 초기 설정 완료
 * Console 에이전트 추가
 * 스토리지 시스템을 하나 이상 추가합니다
+* 백업 및 복구 활성화
 * Console 조직 및 사용자 역할 구성
 
 
@@ -34,17 +43,15 @@ NetApp Console에 대한 자세한 내용은 https://docs.netapp.com/us-en/conso
 
 
 
-[[complete-initial-netapp-console-setup]]
-=== 초기 NetApp Console 설정 완료
+==== 초기 NetApp Console 설정 완료
 
 아직 완료하지 않았다면 NetApp Console의 초기 설정을 완료하십시오.
 
-https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["NetApp Console(SaaS 애플리케이션) 시작 워크플로"^]
+https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["NetApp Console 시작 워크플로"^]
 
 
 
-[[deploy-a-console-agent]]
-=== Console 에이전트 배포
+==== Console 에이전트 배포
 
 콘솔 에이전트는 스토리지 인프라를 NetApp Console에 연결하기 위해 네트워크에 설치하는 경량 소프트웨어 구성 요소입니다. 이를 통해 고급 스토리지 오케스트레이션, 데이터 서비스 및 안전한 클라우드 통합이 가능합니다.
 
@@ -52,8 +59,7 @@ https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["콘솔 �
 
 
 
-[[add-a-storage-system]]
-=== 스토리지 시스템 추가
+==== 스토리지 시스템 추가
 
 Backup and Recovery에서 워크로드를 보호하려면 먼저 Console에 ONTAP 스토리지 시스템을 추가해야 합니다.
 
@@ -61,12 +67,79 @@ https://docs.netapp.com/us-en/storage-management-ontap-onprem/task-discovering-o
 
 
 
-[[configure-an-organization-and-user-roles]]
-=== 조직 및 사용자 역할 구성
+==== NetApp Console에서 백업 및 복구 활성화
 
-조직, 프로젝트 및 사용자 역할에 대해 알아본 다음 사용자가 작업을 수행하는 데 필요한 적절한 권한을 구성하십시오.
+시스템을 추가할 때 또는 나중에 백업 및 복구 기능을 활성화할 수 있습니다.
 
-리소스 액세스 제어를 위해 조직 및 프로젝트를 사용하는 방법에 대한 자세한 내용은 https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html["NetApp Console 조직에 사용자 추가"]을 참조하십시오.
+link:br-start-enable.html#enable-backup-and-recovery-in-netapp-console["시스템에 대한 백업 및 복구 기능을 활성화합니다."^].
+
+
+
+==== 조직 및 사용자 역할 구성
+
+조직, 프로젝트, 플릿 및 사용자 역할에 대해 알아보고, 사용자가 작업을 수행하는 데 필요한 적절한 권한으로 사용자를 구성합니다.
+
+ https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html["NetApp Console 조직에 사용자 추가"]를 참조하여 리소스 액세스 제어에 대한 정보를 확인하십시오.
+
+ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console 의 NetApp Backup and Recovery 역할"]NetApp Backup and Recovery에서 작업을 수행하는 데 필요한 역할 및 권한에 대한 자세한 내용은 해당 문서를 참조하십시오.
+
+
+
+[[prepare-to-use-backup-and-recovery-on-netapp-console-local-deployment]]
+=== NetApp Console 로컬 배포에서 Backup and Recovery를 사용하기 위한 준비
+
+NetApp Console 로컬 배포 환경에서 NetApp Backup and Recovery를 사용하려면 다음 단계를 수행해야 합니다.
+
+* 초기 NetApp Console 로컬 배포 설정을 완료합니다
+* 사전 등록 신청하기
+* 스토리지 시스템을 하나 이상 추가합니다
+* 백업 및 복구 활성화
+* 사용자에게 리소스 액세스 권한 부여
+
+
+NetApp Console 로컬 배포에서 조직 관리자 또는 슈퍼 관리자 역할이 있어야 이 준비 작업을 완료할 수 있습니다.
+
+NetApp Console 로컬 배포에 대해 자세히 알아보려면  https://docs.netapp.com/us-en/console-local/concept-netapp-console-local.html["NetApp Console 로컬 배포에 대해 알아보십시오."^]을(를) 참조하십시오.
+
+
+
+==== 초기 NetApp Console 로컬 배포 설정을 완료합니다
+
+NetApp Console 로컬 배포를 위한 초기 설정을 아직 완료하지 않았다면 완료하십시오. 초기 설정에는 데이터 서비스(Backup and Recovery 포함) 라이선스 추가가 포함됩니다.
+
+https://docs.netapp.com/us-en/console-local/task-quick-start-console-setup.html["NetApp Console 로컬 배포 시작하기"^]
+
+
+
+==== NetApp Backup and Recovery 미리 보기 등록 신청
+
+NetApp Console 로컬 배포 환경에서 NetApp Backup and Recovery 미리 보기에 등록하십시오.
+
+https://forms.cloud.microsoft/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOmNJwiQYiM5EhCH6-tDLH1hUMzBMVUY4Vk5DNDlRRzlKV1dORUlKQkUwNS4u&route=shorturl["사전 등록 양식을 작성하십시오"^]
+
+
+
+==== 스토리지 시스템 추가
+
+Backup and Recovery에서 워크로드를 보호하려면 먼저 Console에 ONTAP 스토리지 시스템을 추가해야 합니다.
+
+https://docs.netapp.com/us-en/console-local/task-discover-storage.html["NetApp Console 로컬 배포에 스토리지 추가"^]
+
+
+
+==== NetApp Console 로컬 배포에서 백업 및 복구 활성화
+
+시스템을 추가할 때 또는 나중에 백업 및 복구 기능을 활성화할 수 있습니다.
+
+link:br-start-enable.html#enable-backup-and-recovery-in-netapp-console-local-deployment["시스템에 대한 백업 및 복구 기능을 활성화합니다."^].
+
+
+
+==== 사용자에게 리소스 액세스 권한 부여
+
+ID 및 액세스 관리에 대해 알아보고 사용자가 작업을 수행하는 데 필요한 적절한 권한을 구성하십시오.
+
+ https://docs.netapp.com/us-en/console-local/task-iam-fleet-mgmt-get-started.html["NetApp Console 로컬 배포에서 ID 및 액세스 시작하기"]을 참조하여 ID 및 액세스에 대한 정보를 확인하십시오.
 
  https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console 의 NetApp Backup and Recovery 역할"]NetApp Backup and Recovery에서 작업을 수행하는 데 필요한 역할 및 권한에 대한 자세한 내용은 해당 문서를 참조하십시오.
 
@@ -139,8 +212,8 @@ NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 
 
 
 | 필수 소프트웨어 패키지  a| 
-* ASP.NET Core Runtime 8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치)
-* PowerShell 7.4.13
+* ASP.NET Core Runtime 10.0.10 Hosting Bundle
+* PowerShell 7.6.4
 
 
 지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT#welcome["NetApp 상호 운용성 매트릭스 도구"^] .
@@ -261,13 +334,13 @@ NOTE: KVM 워크로드 복원이 성공적으로 완료되도록 하려면 KVM �
 . NFS3 유형으로 볼륨을 마운트하여 다음을 사용하지 않도록 합니다. `nobody` 사용자 및 그룹.
 . 다음 명령을 사용하여 루트가 아닌 사용자를 추가하세요. `qemu` 기존 그룹을 보존하면서 그룹화:
 +
-[source, console]
+[source, shell]
 ----
 usermod -aG qemu <non-root-user>
 ----
 . 다음 명령을 사용하여 마운트 경로의 소유권을 부여합니다. `qemu` 사용자 및 그룹과 마운트 경로에 대한 권한 변경:
 +
-[source, console]
+[source, shell]
 ----
 chown -R qemu:qemu <kvm_vm_mount_path> & chmod 771 <kvm_vm_mount_path>
 ----
@@ -329,8 +402,6 @@ NOTE: ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공�
 
 Kubernetes 리소스를 검색하고 Kubernetes 애플리케이션을 보호하려면 특정 요구 사항이 필요합니다.
 
-NetApp Console 요구 사항은 <<NetApp Console 준비>>을 참조하십시오.
-
 
 NOTE: ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷(최대 100개 버킷)을 지원할 수 있습니다.
 
@@ -338,8 +409,8 @@ NOTE: ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공�
 NOTE: NetApp에서는 에이전트 IP 주소가 변경될 경우 발생할 수 있는 문제를 방지하기 위해 Kubernetes 워크로드에 사용하는 Console 에이전트에 고정 IP 주소를 할당할 것을 강력히 권장합니다.
 
 * 기본 ONTAP 시스템(ASA r2 시스템은 지원되지 않음)
-* NetApp Trident 25.02 이상 버전
-* NetApp Trident Protect 26.05 이상(검색 중에 Kubernetes 클러스터에 설치됨)
+* NetApp Trident 25.06 ~ 26.02.1
+* NetApp Trident Protect 26.06 (검색 중에 Kubernetes 클러스터에 설치됨)
 * Kubernetes 클러스터 - 지원되는 Kubernetes 배포판 및 버전에는 https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-requirements.html["Trident Protect"]에서 지원하는 것들이 포함됩니다.
 +
 ** Kubernetes 클러스터, Trident Protect 커넥터 및 Trident Protect 프록시 간의 아웃바운드 방향에서 TCP 포트 443이 필터링되지 않았는지 확인하십시오.

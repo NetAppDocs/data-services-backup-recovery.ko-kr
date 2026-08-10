@@ -23,7 +23,7 @@ NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를
 [[discover-kubernetes-workloads]]
 == Kubernetes 워크로드를 알아보세요
 
-백업 및 복구 인벤토리에서 사용자 환경의 Kubernetes 워크로드를 검색합니다.  워크로드를 추가하면 NetApp Backup and Recovery 에 Kubernetes 클러스터가 추가됩니다.  그런 다음 애플리케이션을 추가하고 클러스터 리소스를 보호할 수 있습니다.
+Backup and Recovery 인벤토리에서 환경 내 Kubernetes 워크로드를 검색할 수 있습니다. 워크로드를 추가하면 NetApp Backup and Recovery에 Kubernetes 클러스터가 추가됩니다. 그런 다음 애플리케이션을 추가하고 클러스터 리소스를 보호할 수 있습니다. 선택적으로 NetApp Console 로컬 배포를 사용하여 에어갭 로컬 Kubernetes 리소스를 검색할 수도 있습니다.
 
 [NOTE]
 ====
@@ -39,18 +39,45 @@ Trident Protect로 현재 보호되고 있는 클러스터를 검색하면 검�
 
 . *Kubernetes* 워크로드 유형을 선택하세요.
 . 클러스터 이름을 입력하고 클러스터와 함께 사용할 콘솔 에이전트를 선택하십시오.
-. 표시되는 명령줄 지침을 따르세요.
 +
-** Trident Protect 네임스페이스를 생성합니다.
-** 쿠버네티스 비밀을 생성하세요
-** Helm 저장소 추가
-** Trident Protect 및 Trident Protect 커넥터를 설치하거나 업그레이드하십시오
+Backup and Recovery는 선택한 설치 유형에 따라 달라지는 지침을 제공합니다. NetApp Console 로컬 배포를 사용하는 경우 외부 네트워크 연결이 없는 에어갭 리소스를 검색할 수 있는 지침을 선택할 수 있습니다.
+
+. Kubernetes 클러스터에 Trident Protect를 설치하는 방법에 대한 지침을 보려면 설치 유형을 선택하십시오.
 +
-이러한 단계를 거치면 NetApp Backup and Recovery 클러스터와 상호 작용할 수 있습니다.
+** 외부 네트워크에 연결된 클러스터를 찾으려면 *연결됨*을 선택하십시오.
+** 외부 네트워크 연결이 없는 클러스터를 검색하려면 *에어갭*을 선택합니다.
++
+[role="tabbed-block"]
+====
+.연결된 검색
+--
+... Backup and Recovery에 나타나는 명령줄 지침을 따르십시오. 이러한 단계를 통해 Backup and Recovery가 클러스터와 상호 작용할 수 있습니다.
 
 
+--
+.에어갭 검색
+--
+... 개인 Docker 컨테이너 레지스트리의 URL을 입력하십시오. 이 레지스트리는 설치 중에 Trident Protect 및 Trident Protect Connector 이미지를 다운로드하는 데 사용됩니다.
+... 개인 컨테이너 레지스트리에 인증이 필요한 경우 다음 방법 중 하나를 사용하여 레지스트리 자격 증명을 구성하십시오.
++
+**** *노드 수준 인증*: 각 노드의 컨테이너 런타임에 레지스트리 자격 증명을 구성합니다. 구성이 완료되면 모든 파드는 추가적인 Helm 설정 없이 이미지를 가져올 수 있습니다.
+**** *Kubernetes image pull secret*:  `trident-protect` 네임스페이스에 Kubernetes 이미지 풀 시크릿을 생성한 다음, Trident Protect 설치 지침의 Helm 업그레이드 단계에서 해당 시크릿을 참조하십시오.
++
+[source, console]
+----
+--set trident-protect.imagePullSecrets[0].name=<pull-secret-name>
+--set connector.imagePullSecrets[0].name=<pull-secret-name>
+----
 
-. 모든 단계를 완료한 후 *검색*을 선택하세요.
+
+... Backup and Recovery에 나타나는 명령줄 지침을 따르고, Helm 단계에서 이미지 풀 시크릿 정보를 추가하십시오(필요한 경우). 이러한 단계를 통해 Backup and Recovery가 클러스터와 상호 작용할 수 있습니다.
+
+
+--
+====
+
+
+. Trident Protect 설치 단계를 완료한 후 *Discover*를 선택하십시오.
 +
 클러스터가 인벤토리에 추가됩니다.
 
@@ -65,7 +92,7 @@ Trident Protect로 현재 보호되고 있는 클러스터를 검색하면 검�
 NetApp Backup and Recovery 보드를 보려면 다음 단계를 따르세요.
 
 . NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
-. 워크로드 타일(예: Microsoft SQL Server)을 선택합니다.
+. Kubernetes 워크로드 타일을 선택합니다.
 . 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 +

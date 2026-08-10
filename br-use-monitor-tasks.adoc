@@ -247,6 +247,8 @@ NetApp Backup and Recovery 이메일 알림을 받으려면 알림 설정 페이
 
 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["백업 및 복원 작업에 대한 알림 이메일을 보내는 방법을 알아보세요."^].
 
+https://docs.netapp.com/us-en/console-local/task-alert-rules-manage.html["NetApp Console 로컬 배포에서 알림에 대한 알림 규칙 구성"^].
+
 .단계
 . 콘솔 메뉴에서 (image:icon_bell.png["알림 벨"] ).
 . 알림을 확인하세요.

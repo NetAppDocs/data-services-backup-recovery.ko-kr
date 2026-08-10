@@ -20,6 +20,113 @@ Oracle 데이터베이스를 검색하면 NetApp Backup and Recovery에서 백�
 
 
 
+[[configure-dns-for-air-gapped-host-discovery-in-netapp-console-local-deployment]]
+== NetApp Console 로컬 배포에서 에어갭 호스트 검색을 위한 DNS 구성
+
+표준 DNS를 통해 데이터베이스 호스트에 접근할 수 없는 에어갭 환경에서 NetApp Console 로컬 배포를 사용하는 경우, 내부 RKE2 CoreDNS 구성을 일시적으로 수정해야 합니다. 이렇게 하면 노드의 `/etc/hosts`에 항목을 추가하는 것과 유사하게 Pod가 클러스터 내의 특정 호스트 이름을 IP 주소로 확인할 수 있습니다.
+
+
+IMPORTANT: 변경하기 전에 기존 CoreDNS 구성을 확인하여 기존 사용자 지정 설정을 덮어쓰지 않도록 하십시오. RKE2 매니페스트를 사용하여 이 변경 사항을 적용하면 RKE2 운영자와 런타임에서 일관되게 관리됩니다.
+
+.시작하기 전에
+* 가능한 한 HelmChartConfig 파일을 변경 관리 대상에 포함시키십시오.
+* CoreDNS 재정의의 목적이 명확하도록 파일 이름을 알아보기 쉽게 지정하십시오.
+* Corefile에서 예상되는 DNS 레코드가 보이지 않으면 RKE2 서버 로그를 확인하고 매니페스트 파일의 구문을 확인하십시오.
+
+
+.단계
+. 기존 CoreDNS 구성을 확인하여 기존 변경 사항을 덮어쓰지 않도록 하십시오.
++
+[source, shell]
+----
+kubectl -n kube-system get cm rke2-coredns-rke2-coredns -o jsonpath='{.data.Corefile}'
+----
+. 다음 명령 블록을 복사하고 해당  `configBlock`영역을 편집하여 정적 DNS 레코드를 추가하십시오. 이렇게 하면 RKE2 매니페스트 폴더에 HelmChartConfig YAML 파일이 생성되고, RKE2는 이 파일을 자동으로 적용하여 CoreDNS 구성을 재정의합니다.
++
+[source, shell]
+----
+sudo tee /var/lib/rancher/rke2/server/manifests/rke2-coredns-config.yaml >/dev/null <<'YAML'
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: rke2-coredns
+  namespace: kube-system
+spec:
+  # NOTE: This is a HelmChartConfig that *overlays* values onto the rke2-coredns
+  # HelmChart already managed by RKE2. RKE2 watches /var/lib/rancher/rke2/server/manifests
+  # and will re-render the rke2-coredns Helm release whenever this file changes.
+  #
+  # The `servers:` list below REPLACES the chart's default server definition,
+  # so every plugin that was in the stock Corefile must be present here.
+  # Do NOT delete plugins you don't recognize -- they are required for cluster DNS.
+  valuesContent: |-
+    servers:
+    - zones:
+      - zone: .
+      port: 53
+      plugins:
+      - name: errors
+      - name: health
+        configBlock: |-
+          lameduck 10s
+      - name: ready
+      - name: kubernetes
+        parameters: cluster.local in-addr.arpa ip6.arpa
+        configBlock: |-
+          pods insecure
+          fallthrough in-addr.arpa ip6.arpa
+          ttl 30
+      # ───────────────────────── EDIT BELOW ─────────────────────────
+      # Static DNS records for hosts the corporate DNS cannot resolve.
+      # Format:  <IP>  <FQDN>  [optional aliases...]
+      # `fallthrough` MUST stay as the last line -- it lets every other
+      # name go to the upstream resolver via the `forward` plugin below.
+      - name: hosts
+        configBlock: |-
+          1.2.3.4 example.domain.com exampleshortname
+          fallthrough
+      # ───────────────────────── EDIT ABOVE ─────────────────────────
+      - name: prometheus
+        parameters: 0.0.0.0:9153
+      - name: forward
+        parameters: . /etc/resolv.conf
+      - name: cache
+        parameters: 30
+      - name: loop
+      - name: reload
+      - name: loadbalance
+YAML
+sudo chmod 600 /var/lib/rancher/rke2/server/manifests/rke2-coredns-config.yaml
+----
+. CoreDNS가 변경 사항을 반영했는지 확인하십시오.
++
+[source, shell]
+----
+kubectl -n kube-system get cm rke2-coredns-rke2-coredns -o jsonpath='{.data.Corefile}'
+----
++
+몇 분 후에도 변경 사항이 보이지 않으면 CoreDNS 배포를 다시 시작한 다음 Corefile을 다시 확인하십시오.
+
++
+[source, shell]
+----
+kubectl -n kube-system rollout restart deploy/rke2-coredns-rke2-coredns
+----
+. 데이터베이스 호스트를 찾은 후 항목을 삭제해야 하는 경우 다음 단계를 따르십시오.
++
+.. manifests 폴더에서 HelmChartConfig 파일을 삭제합니다.
+.. CoreDNS 배포를 다시 시작합니다.
++
+[source, shell]
+----
+kubectl -n kube-system rollout restart deploy/rke2-coredns-rke2-coredns
+----
+
+
+
+
+
+
 [[add-an-oracle-database-host-and-discover-resources]]
 == Oracle 데이터베이스 호스트를 추가하고 리소스를 검색합니다
 

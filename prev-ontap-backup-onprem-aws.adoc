@@ -376,7 +376,7 @@ NOTE: 고객 관리 키 암호화는 Amazon FSx for NetApp ONTAP에 대해서만
 . AWS 콘솔에서 엔드포인트의 DNS 이름을 얻습니다.
 . VPC S3 엔드포인트에서 인증서를 가져옵니다. 당신은 이것을 이렇게 합니다 https://docs.netapp.com/us-en/console-setup-admin/task-maintain-connectors.html#connect-to-the-linux-vm["콘솔 에이전트를 호스팅하는 VM에 로그인"^] 다음 명령을 실행합니다. 엔드포인트의 DNS 이름을 입력할 때 "*"를 "bucket"으로 바꿔서 처음에 추가합니다.
 +
-[source, console]
+[source, shell]
 ----
 openssl s_client -connect bucket.vpce-0ff5c15df7e00fbab-yxs7lt8v.s3.us-west-2.vpce.amazonaws.com:443 -showcerts
 ----
@@ -396,9 +396,9 @@ GqvbOz/oO2NWLLFCqI+xmkLcMiPrZy+/6Af+HH2mLCM4EsI2b+IpBmPkriWnnxo=
 ----
 . ONTAP 클러스터 CLI에 로그인하고 다음 명령을 사용하여 복사한 인증서를 적용합니다(사용자의 스토리지 VM 이름으로 대체).
 +
-[source, console]
+[source, shell]
 ----
-cluster1::> security certificate install -vserver cluster1 -type server-ca
+security certificate install -vserver cluster1 -type server-ca
 Please enter Certificate: Press <Enter> when done
 ----
 

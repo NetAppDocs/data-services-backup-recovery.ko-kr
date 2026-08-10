@@ -609,15 +609,9 @@
   <block id="dfbbf83657db8e9ef8d6ee3a468873c2" category="doc">NetApp Backup and Recovery 에서 Kubernetes 워크로드를 알아보세요</block>
   <block id="d1b560b331735fdf9cef92794cc2cff2" category="paragraph">NetApp Backup and Recovery Kubernetes 워크로드를 보호하기 전에 이를 검색해야 합니다.</block>
   <block id="f0338e38e7978ec30d1f5eb9b845e843" category="section-title">Kubernetes 워크로드를 알아보세요</block>
-  <block id="a74bdf5d9abca25c000c1902f13999c8" category="paragraph">백업 및 복구 인벤토리에서 사용자 환경의 Kubernetes 워크로드를 검색합니다.  워크로드를 추가하면 NetApp Backup and Recovery 에 Kubernetes 클러스터가 추가됩니다.  그런 다음 애플리케이션을 추가하고 클러스터 리소스를 보호할 수 있습니다.</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">다음 중 하나를 수행하세요.</block>
   <block id="6226950d1b144f972ce9b5d3caea9b42" category="list-text">이미 Kubernetes 워크로드를 검색한 경우 NetApp Backup and Recovery 에서 *인벤토리* &gt; *워크로드*를 선택한 다음 *리소스 검색*을 선택합니다.</block>
   <block id="e7c444e4a1d2f156d71a907145c8a598" category="list-text">*Kubernetes* 워크로드 유형을 선택하세요.</block>
-  <block id="39b0136210d9abd099b81781cc0a17db" category="list-text">표시되는 명령줄 지침을 따르세요.</block>
-  <block id="ed6eabebedff09350cdabab556887c62" category="list-text">쿠버네티스 비밀을 생성하세요</block>
-  <block id="6c27e11d1144953d7877449d5adc966d" category="list-text">Helm 저장소 추가</block>
-  <block id="efa5307bfad4cbe53b6ae3c88baa522e" category="paragraph">이러한 단계를 거치면 NetApp Backup and Recovery 클러스터와 상호 작용할 수 있습니다.</block>
-  <block id="9bac5e7d53677c1fdcf7d275fd58ed60" category="list-text">모든 단계를 완료한 후 *검색*을 선택하세요.</block>
   <block id="6b3946603d5588826f1cd3f2695b8542" category="paragraph">클러스터가 인벤토리에 추가됩니다.</block>
   <block id="95f06f6ac101b19d86ae2a17fb3eb848" category="list-text">연관된 Kubernetes 워크로드에서 *보기*를 선택하면 해당 워크로드에 대한 애플리케이션, 클러스터 및 네임스페이스 목록을 볼 수 있습니다.</block>
   <block id="b0719c20a836424f725e51c9b181748d" category="paragraph">NetApp Backup and Recovery 보드를 보려면 다음 단계를 따르세요.</block>
@@ -688,7 +682,6 @@
   <block id="b7dfb6860d9af743a7d3f0fe2adfde3d" category="list-text">*선택적 사전 설치 검사 건너뛰기*: 선택적 사전 설치 검사를 건너뛰려면 이 상자를 선택하세요.  예를 들어, 가까운 미래에 메모리나 공간 고려사항이 변경될 예정이고 지금 플러그인을 설치하려는 경우 이 작업을 수행할 수 있습니다.</block>
   <block id="2a9ab4f690bade887dade42f4a0f412b" category="inline-link">NetApp Console 배포 모드</block>
   <block id="02a0978d1df3ca052a64d05249709cc3" category="summary">클라우드 공급업체에서 사용량에 따른 지불 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring Your Own License)을 구매하여 NetApp Backup and Recovery 대한 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
-  <block id="d44c500b8ff5c565a7d3b02d14def6a3" category="paragraph">클라우드 공급업체에서 * NetApp Intelligent Services*에 대한 PAYGO(Pay-as-you-go) 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring-Your-Own-License)을 구매하여 NetApp Backup and Recovery 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">계속 읽기 전에 몇 가지 참고 사항을 알려드립니다.</block>
   <block id="0afafddaf42e76b83acff428b8613a7e" category="list-text">NetApp Backup and Recovery BYOL(Bring Your Own License)은 NetApp Console 조직이나 계정과 연결된 모든 시스템에서 사용할 수 있는 플로팅 라이선스입니다.  따라서 기존 BYOL 라이선스에서 충분한 백업 용량을 사용할 수 있는 경우 다른 BYOL 라이선스를 구매할 필요가 없습니다.</block>
   <block id="98ed4c44ab8a3c8a5b08f8e91a585c40" category="list-text">BYOL 라이선스를 사용하는 경우 PAYGO 구독도 함께 구독하는 것이 좋습니다.  BYOL 라이선스에서 허용하는 것보다 많은 데이터를 백업하거나 라이선스 기간이 만료된 경우, 백업은 사용량에 따라 지불하는 구독을 통해 계속 진행되므로 서비스가 중단되지 않습니다.</block>
@@ -721,7 +714,6 @@
   <block id="7744fc20060f2753538eb1cbe03db4f0" category="paragraph">다음 링크를 사용하여 클라우드 공급업체 마켓플레이스에서 NetApp Backup and Recovery 를 구독하세요.</block>
   <block id="14c403304e8650321be08c9edd75c486" category="inline-link">NetApp Intelligent Services 의 가격 세부 정보를 보려면 Marketplace로 이동하세요.</block>
   <block id="782af9afc0728a9389fd837476a88107" category="inline-link">NetApp Intelligent Services 의 가격 세부 정보를 보려면 Marketplace로 이동하세요.</block>
-  <block id="66145e361f72b54aa011f59d543dfb08" category="section-title">연간 계약을 사용하세요</block>
   <block id="e8081693b5a02447f0b48df91b9f65d8" category="paragraph">연간 계약을 구매하면 NetApp Backup and Recovery 매년 지불할 수 있습니다.  1년, 2년, 3년 단위로 이용 가능합니다.</block>
   <block id="2351127acb653fd60dafc73c8efcb79d" category="inline-link">AWS Marketplace 페이지</block>
   <block id="dda622e647d2d5d64503c046c508cc10" category="paragraph">AWS를 사용하면 연간 계약이 두 개 제공됩니다.<block ref="85c21eb306ec4bcbda7252ca6117fc5c" category="inline-link-rx"></block> Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 경우:</block>
@@ -754,7 +746,6 @@
   <block id="ae5c737a541e095839e199ea2ab82f0f" category="paragraph">NetApp Console 에 로그인하려면 NetApp 지원 사이트 자격 증명을 사용하거나 이메일과 비밀번호를 사용하여 NetApp Console 로그인에 가입할 수 있습니다.<block ref="3546779ff62edcb806e94b283f4a603a" category="inline-link-rx"></block> .</block>
   <block id="03169a1f1f9d0a03d15fd58f20cbb63e" category="paragraph">콘솔 에이전트를 추가하려면 백업 및 복구 슈퍼 관리자 역할이 있어야 합니다.</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link">NetApp Console</block>
-  <block id="6a65fb509b9c682f9df5eb122484e2f7" category="list-text">웹 브라우저를 열고 이동하세요<block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block> .</block>
   <block id="0daac1b9cd4c3a240bf2f6b44ba178a1" category="paragraph">NetApp Console 로그인 페이지가 나타납니다.</block>
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">콘솔에 로그인합니다.</block>
   <block id="4d2b18ba50dc1294ccb141fdc1041417" category="inline-link">NetApp Console 표준 모드 시작하기</block>
@@ -3775,7 +3766,6 @@
   <block id="b4ae20208d5c757b694d673276341786" category="paragraph">데이터를 보호하려면 데이터베이스를 복원하세요.</block>
   <block id="3f6fab6bedfff19150a3d6ab054b0391" category="paragraph">지금 Microsoft SQL Server 인스턴스와 데이터베이스를 백업하여 데이터를 즉시 보호할 수 있습니다.</block>
   <block id="2b2261b532e949e52edc443eb38fcb1c" category="admonition">백업 파일에 접근하려면 클라우드 제공업체에 추가 요금을 지불해야 할 수도 있습니다.</block>
-  <block id="d4356e3242caba9699bd9bc147a04798" category="paragraph">복원 페이지(검색 및 복원)에서 필터를 사용하여 스냅샷을 검색하여 리소스를 복원할 수 있습니다. 정확한 이름, 위치 또는 마지막으로 알려진 날짜가 기억나지 않더라도 복원할 수 있습니다.</block>
   <block id="fd7bb5c3777005321645f38a2d07ea27" category="admonition">복원 작업이 완료되지 않으면 작업 모니터에 "실패"가 표시될 때까지 기다린 후 복원 작업을 다시 시도하세요.</block>
   <block id="51e153ee1aa6cdb4ca7796e926180b53" category="admonition">NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.<block ref="e56b09183f5489111204017fecace77e" category="inline-link-macro-rx"></block> .</block>
   <block id="2f52181b09a7c053aed22699e227b9db" category="paragraph">클라우드 공급업체나 인터넷에 연결된 자체 호스트에 콘솔 에이전트를 배포하여 SaaS 환경에서 NetApp Backup and Recovery 사용하면 시스템이 클라우드에 있는 모든 중요한 구성 데이터를 백업하고 보호합니다.  콘솔 에이전트에 문제가 있는 경우 새 콘솔 에이전트를 만들고 시스템을 추가하세요.  백업 세부정보가 자동으로 복원됩니다.</block>
@@ -3918,7 +3908,6 @@
   <block id="d04d7ffd1d421df13a11259032d9191e" category="paragraph">NetApp Backup and Recovery 사용하면 백업 일정 변경, 볼륨 백업 활성화/비활성화, 백업 일시 중지, 백업 삭제, 백업 강제 삭제 등을 통해 Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 백업을 관리할 수 있습니다. 여기에는 스냅샷, 복제된 볼륨, 개체 스토리지의 백업 파일을 포함한 모든 유형의 백업이 포함됩니다. NetApp Backup and Recovery 의 등록을 취소할 수도 있습니다.</block>
   <block id="294441075d63ebaf575b2bea27e26a8b" category="paragraph">볼륨 백업 대시보드에서 현재 백업 중인 모든 볼륨 목록을 볼 수 있습니다. 여기에는 스냅샷, 복제된 볼륨, 개체 스토리지의 백업 파일을 포함한 모든 유형의 백업이 포함됩니다. 현재 백업되지 않은 시스템의 볼륨도 볼 수 있습니다.</block>
   <block id="16733ccec61246c84b6ccea8b096ea96" category="list-text">"기존 보호" 열에서 보호 옵션의 상태를 검토하세요. 3개의 아이콘은 "로컬 스냅샷", "복제된 볼륨", "개체 스토리지의 백업"을 의미합니다.</block>
-  <block id="41164544ff8c92dec6c6202f3c48b888" category="list-text">_백업 전략 정의_ 페이지에서 백업 아키텍처를 선택한 다음 로컬 스냅샷, 복제된 볼륨, 백업 파일에 대한 정책과 기타 세부 정보를 정의합니다. 이 시스템에서 활성화한 초기 볼륨의 백업 옵션에 대한 세부 정보를 확인하세요. 그런 다음 *다음*을 선택하세요.</block>
   <block id="6c93c0ee904d580923385784899b59a3" category="paragraph">정책이 할당된 기존 볼륨에 할당된 백업 정책을 변경할 수 있습니다. 로컬 스냅샷, 복제된 볼륨 및 백업 파일에 대한 정책을 변경할 수 있습니다. 볼륨에 적용하려는 새로운 스냅샷, 복제 또는 백업 정책은 이미 존재해야 합니다.</block>
   <block id="257aa7f9d15bc46fa7c45edeac5b1ab7" category="list-text">_백업 전략 편집_ 페이지에서 로컬 스냅샷, 복제된 볼륨 및 백업 파일에 대한 기존 백업 정책을 변경하고 *다음*을 선택합니다.</block>
   <block id="96f9f5071945e75714c9ffbe54f80851" category="list-text">나타나는 백업 페이지에서 로컬 스냅샷, 복제된 볼륨 또는 백업 파일에 대한 기존 백업 정책을 변경하고 *저장*을 선택합니다.</block>
@@ -4295,7 +4284,6 @@
   <block id="5a3443bdabcca33a88f837ed431e4140" category="list-text">*기존 스냅샷 내보내기*: 이 시스템의 볼륨에 대해 방금 선택한 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 로컬 스냅샷이 있는 경우 이 추가 메시지가 표시됩니다. 볼륨을 가장 완벽하게 보호하기 위해 모든 과거 스냅샷을 백업 파일로 객체 스토리지에 복사하려면 이 확인란을 선택하십시오.</block>
   <block id="fd5c6f657b9b82dc2fc86f506dacc05d" category="list-text">선택적으로 *로컬 스냅샷, 복제 및 백업에서 일치하지 않는 레이블을 자동으로 수정*할 수 있습니다. 이렇게 하면 스냅샷, 복제 및 백업 정책의 레이블과 일치하는 레이블이 지정된 스냅샷이 생성됩니다.</block>
   <block id="a85910c6eeb75a045489c2b16a61b922" category="paragraph">각 아이콘은 해당 백업 유형이 활성화되면 불이 켜지고, 비활성화되면 회색으로 표시됩니다. 각 아이콘 위에 마우스 커서를 올리면 사용 중인 백업 정책과 각 백업 유형에 대한 기타 관련 정보를 확인할 수 있습니다.</block>
-  <block id="ff171d855d9a99655f572a9bb5b1628f" category="list-text">*볼륨* 탭에서 백업을 활성화할 볼륨을 선택하고 작업 메뉴를 선택합니다. <block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 행의 맨 끝에서 *3-2-1 보호 활성화*를 선택하십시오.</block>
   <block id="1ae9b0331f20d420feb95df3c5f492ec" category="list-text">*볼륨* 메뉴에서 정책 설정을 수정하려는 볼륨을 찾고, [작업] 메뉴를 선택합니다. <block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 행의 맨 끝에서 *백업 전략 편집*을 선택합니다.</block>
   <block id="7a8eafe0820d78646db0118a296f0af3" category="paragraph">백업용으로 활성화된 볼륨이 5개 이상인 경우 NetApp Backup and Recovery 한 번에 5개의 볼륨만 초기화합니다. 이 작업이 완료되면 모든 볼륨이 초기화될 때까지 5개씩 그룹으로 나누어 계속 진행됩니다.</block>
   <block id="a3836fe1cde887edc4dd8114527d3364" category="paragraph">볼륨의 객체 저장소에 임시 스냅샷 또는 백업을 생성할 수 있습니다. 임시 복제 볼륨을 생성할 수 없습니다.</block>
@@ -4416,7 +4404,6 @@
   <block id="3f21300a12c48d2767fb3e5b7f83112b" category="doc">NetApp Backup and Recovery for Oracle Database 워크로드의 알려진 제한 사항</block>
   <block id="92342f1ac80ff519b37da9a3148cbbd9" category="summary">보안 강화를 위해 NetApp Backup and Recovery에서 특정 역할에 대한 액세스 권한을 구성하십시오.</block>
   <block id="42481383ace46d9a4716cce3ab760979" category="doc">NetApp Backup and Recovery에서 역할 기반 액세스 제어 설정</block>
-  <block id="c43786d5855026fcdf77809fb14618c9" category="paragraph">보안을 강화하고 리소스 액세스를 제어하려면 NetApp Backup and Recovery에 역할 기반 액세스를 구성하십시오. NetApp Console은 일부 Backup and Recovery 워크로드에 대해 역할 기반 액세스 제어(RBAC)를 지원합니다. 이러한 워크로드에 특정한 관리자 또는 뷰어 역할을 할당할 수 있습니다. 역할 기반 액세스 제어를 아직 지원하지 않는 다른 워크로드는 프로젝트 수준 연결이 지원될 때까지 Backup and Recovery 역할을 가진 모든 사용자가 액세스할 수 있습니다.</block>
   <block id="0095575f49738915ec4332a4cab3f770" category="paragraph">조직 내 리소스에 대한 액세스를 제어하려면 다음 단계를 따르십시오. NetApp Console 메뉴의 *Administration &gt; Identity and access* 페이지에서 변경하십시오.</block>
   <block id="4ce081445a8183fac4f9d6fc6a51691e" category="admonition">다음 단계는 NetApp Console에서 Organization Admin 역할이 할당된 것으로 가정합니다.</block>
   <block id="c9b674f0a38b83f43d155669dc9e1dae" category="list-text">ID 및 액세스 프로젝트 구조를 생성합니다.</block>
@@ -4438,8 +4425,6 @@
   <block id="509c51772921c8ab860f75456880683f" category="list-text"><block ref="a16a606232229e0e62a5010aaabec2ae" category="inline-xref-macro-rx"></block> 백업 작업 전후에 스크립트를 실행합니다. (Kubernetes 워크로드만 해당)</block>
   <block id="1d74d204f5274b499e41d2e0238b7bdd" category="inline-link-macro">새 보호 정책을 생성합니다</block>
   <block id="c7a4eea6d62999931e3442bac0f23c29" category="paragraph">Trident Protect로 현재 보호되고 있는 클러스터를 검색하면 검색 프로세스 중에 Trident Protect에서 사용했던 모든 백업 스케줄이 비활성화됩니다(Trident Protect 백업 스케줄은 Backup and Recovery와 호환되지 않습니다). 클러스터의 애플리케이션을 보호하려면 <block ref="f0814d3538b9ea88d5e27855ca8d3a8e" category="inline-link-macro-rx"></block> 또는 기존 정책에 애플리케이션을 연결하십시오. 필요한 경우 Trident Protect 백업 스케줄을 제거할 수 있습니다.</block>
-  <block id="a44ad7bb8f2123fa1919c8eb91adac29" category="list-text">Trident Protect 네임스페이스를 생성합니다.</block>
-  <block id="75457b35c4c6b70a7664a43e080563ca" category="list-text">Trident Protect 및 Trident Protect 커넥터를 설치하거나 업그레이드하십시오</block>
   <block id="dff3994b6daee1be81638e1c4964af92" category="doc">NetApp Backup and Recovery에서 Oracle Database 워크로드를 검색하세요</block>
   <block id="e242e6f8581d6d11d04b2c80d7a16519" category="inline-link-macro">Oracle Database 워크로드를 살펴보세요</block>
   <block id="ec9157f5af288c671e8006da3677d9c3" category="list-text">Oracle Database 워크로드에 대해서는 <block ref="c9b387ac576fa007292bb17c9c97e163" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
@@ -4635,7 +4620,6 @@
   <block id="dbeedec7ca35d125dd2a7ee8355c41f5" category="section-title">일반 출시(GA)에서 지원되는 VMware 워크로드</block>
   <block id="1fe60033089958dd8dab2fc11925056d" category="section-title">라이선스 용량 초과</block>
   <block id="73b5f5184f0b378b50b42a6e8ceb743c" category="paragraph">라이선스 용량을 초과하면 PAYGO 요금이 적용됩니다. PAYGO 구독이 없으면 새 백업을 생성할 수 없지만 기존 백업은 서비스 보증 없이 복원 가능한 상태로 유지됩니다. 라이선스가 만료되기 전에 반드시 갱신하십시오. 만료된 라이선스는 새 백업을 방지하고 서비스를 중단시킵니다.</block>
-  <block id="d5339ec2460f6dc04a037cc1e0c21e2c" category="list-text">PowerShell 7.4.13</block>
   <block id="5a9e2fbc6e8b2849a76465cd1a86c575" category="doc">일반 공급(GA)에서 지원되는 KVM 워크로드</block>
   <block id="2c4d488d266d9d0655ce2e1451e05b2d" category="paragraph">Kubernetes 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다. 이번 Kubernetes 워크로드 릴리스에는 다음과 같은 향상된 기능도 포함되어 있습니다.</block>
   <block id="2329c3692bdf2d2f098db291ec4e9427" category="paragraph">*보고서 지원*: 이제 NetApp Backup and Recovery로 보호되는 Kubernetes 클러스터 및 애플리케이션에 대한 보호 활동 보고서를 생성할 수 있습니다.</block>
@@ -5238,8 +5222,6 @@
   <block id="0fde83b735dcda0bbb69a0e90ce0981f" category="list-text">필요에 따라 리소스 변환을 추가할 수 있습니다.</block>
   <block id="90f8ed9c2f4259835c05c9de87feb364" category="list-text">완료되면 *복원*을 선택합니다.</block>
   <block id="a1ff2aac5244b20dc12ea8c0b87d23d5" category="list-text">기본 ONTAP 시스템(ASA r2 시스템은 지원되지 않음)</block>
-  <block id="573f06d1963120e22aae7292a8177d4b" category="list-text">NetApp Trident 25.02 이상 버전</block>
-  <block id="c625623a3b3c56ebd1c8d5915f2e3a96" category="list-text">NetApp Trident Protect 26.05 이상(검색 중에 Kubernetes 클러스터에 설치됨)</block>
   <block id="9b6a034e6854c5f27feb3ac185829f8d" category="inline-link">Trident Protect</block>
   <block id="d02c2883bbfa212e02daa2b45bd11760" category="list-text">Kubernetes 클러스터 - 지원되는 Kubernetes 배포판 및 버전에는<block ref="f56ec4bb79bf67d191baea2a353be3ab" category="inline-link-rx"></block>에서 지원하는 것들이 포함됩니다.</block>
   <block id="2966006d3447f3363606a7ddf7d88713" category="section-title">2026년 5월 5일</block>
@@ -5391,7 +5373,6 @@
   <block id="aefd2cbeb423f608e4e14dc18e7cda38" category="section-title">활성 VMDK 마운트 세션 보기</block>
   <block id="a2c3693f6f1b657d3365bb6121bebfc1" category="paragraph">파일이나 폴더를 복원할 때 활성화된 게스트 세션을 확인하세요. 현재 열려 있는 세션이 있는 VMDK가 표시됩니다.</block>
   <block id="29760f5766da0c4d6a0ac770b454e9d0" category="paragraph">열려 있는 VMDK 마운트 세션 목록이 표시됩니다. 연결된 백업, 소스 VM, 마운트 경로 및 기타 정보를 확인할 수 있습니다.</block>
-  <block id="e77e2a03d88f40058869e1cc3d680930" category="list-text">ASP.NET Core Runtime 8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치)</block>
   <block id="9e75b63d575b523917aa9e47b41b52fb" category="list-text">Oracle AI Database 26ai</block>
   <block id="f9fe5abdb3368e0236fd36a21bb8f840" category="cell">8.0.24 Hosting Bundle(및 이후의 모든 8.0.x 패치)</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026년 5월 11일</block>
@@ -5438,8 +5419,6 @@
   <block id="7d3d3c20273081b66e3ecec1f0d07f51" category="list-text">복원할 운영 또는 2차 스토리지의 스냅샷을 선택한 다음 *다음*을 선택합니다.</block>
   <block id="3808991f408e2ffd90ae953886ec1e79" category="doc">NetApp Backup and Recovery 요구 사항</block>
   <block id="44b68849dd3e2689fb41242f736a140f" category="paragraph">NetApp Backup and Recovery를 사용하기 전에 NetApp Console과 운영 환경이 다음 요구 사항을 충족하는지 확인하십시오.</block>
-  <block id="b4d91981598471b84bcf3da4e96f7970" category="section-title">NetApp Console 준비</block>
-  <block id="64450efd5ca18cf6cebe654b9c7c05f3" category="paragraph">NetApp Backup and Recovery는 NetApp Console을 통해 액세스할 수 있습니다. Backup and Recovery를 위해 Console을 준비하려면 다음을 수행해야 합니다.</block>
   <block id="37326d6fc2dae8eb70c8e5c6290c961a" category="list-text">Console 에이전트 추가</block>
   <block id="f7738f6711f0ef1fb3f5a4464e7fcfb4" category="list-text">스토리지 시스템을 하나 이상 추가합니다</block>
   <block id="5fc19bba732118fb6de20131945d3a1f" category="list-text">Console 조직 및 사용자 역할 구성</block>
@@ -5448,8 +5427,6 @@
   <block id="4422b0b5b9637937564bf621f2610c7a" category="paragraph">NetApp Console에 대한 자세한 내용은<block ref="26a35b83e5712f1703b96c54f1ac11b8" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="a859e03fa525c25dee858dad62f9aec0" category="section-title">초기 NetApp Console 설정 완료</block>
   <block id="d1a0bf528dab9557b3add986fac96df8" category="paragraph">아직 완료하지 않았다면 NetApp Console의 초기 설정을 완료하십시오.</block>
-  <block id="91edb8869565e8b84d0bb89e65038d3a" category="inline-link">NetApp Console(SaaS 애플리케이션) 시작 워크플로</block>
-  <block id="19de064230f9802ad2a46adc704c00c1" category="paragraph"><block ref="19de064230f9802ad2a46adc704c00c1" category="inline-link-rx"></block></block>
   <block id="4cdcdd6cc684e8847f57a8c461306706" category="section-title">Console 에이전트 배포</block>
   <block id="41f59680b33ea7227eb6c7e09010d262" category="paragraph">콘솔 에이전트는 스토리지 인프라를 NetApp Console에 연결하기 위해 네트워크에 설치하는 경량 소프트웨어 구성 요소입니다. 이를 통해 고급 스토리지 오케스트레이션, 데이터 서비스 및 안전한 클라우드 통합이 가능합니다.</block>
   <block id="413f5c2acfdfdb1a561ffc22afe211b9" category="paragraph"><block ref="4818e913b60896a6e56bad9a383343fa" category="inline-link-rx"></block> <block ref="e0b8910c1bc5f58f6e1bc7ed243fa39c" category="inline-link-rx"></block></block>
@@ -5458,9 +5435,7 @@
   <block id="d1b29fc7b35be872f620d5d931e8766c" category="inline-link">NetApp Console에서 온프레미스 ONTAP 클러스터 검색</block>
   <block id="7a9a5755110e2914f0ad288a141356cb" category="paragraph"><block ref="7a9a5755110e2914f0ad288a141356cb" category="inline-link-rx"></block></block>
   <block id="e17c2185b4352c73f48a1a8e84f1a8ed" category="section-title">조직 및 사용자 역할 구성</block>
-  <block id="9104b82e5e7be42a60370d0e13b27403" category="paragraph">조직, 프로젝트 및 사용자 역할에 대해 알아본 다음 사용자가 작업을 수행하는 데 필요한 적절한 권한을 구성하십시오.</block>
   <block id="692fa8c1472b3f5b389ae8b229a03338" category="inline-link">NetApp Console 조직에 사용자 추가</block>
-  <block id="6a66c8d307ddd017849b5680e53c609c" category="paragraph">리소스 액세스 제어를 위해 조직 및 프로젝트를 사용하는 방법에 대한 자세한 내용은<block ref="04f37aa952e829e9448a7d043a30911e" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="1ce75b5926383de539d27e838bd74b8a" category="paragraph"><block ref="04b01782baab49091268802b7f1423cb" category="inline-link-rx"></block>NetApp Backup and Recovery에서 작업을 수행하는 데 필요한 역할 및 권한에 대한 자세한 내용은 해당 문서를 참조하십시오.</block>
   <block id="6bb058e639cecc8051a99e8892400bd8" category="section-title">오브젝트 스토리지에 대한 백업 요구사항</block>
   <block id="fbb5639a46ec6a30ce9e9021778a91a2" category="paragraph">객체 스토리지를 백업 대상으로 사용하려면 AWS S3, Google Cloud Storage, Microsoft Azure Blob, StorageGRID 또는 ONTAP 계정과 적절한 액세스 권한이 구성되어 있어야 합니다.</block>
@@ -5560,7 +5535,6 @@
   <block id="d7b53b986ac236d7156eb62ccb254f74" category="list-text">개별 영구 볼륨 청구를 복원하려면 *영구 볼륨 청구* 탭을 선택하십시오.</block>
   <block id="dbdc850e2c6c701a4218daf5d558b642" category="paragraph">백업 및 복구는 복구 지점에 있는 모든 영구 볼륨 클레임을 나열합니다. 복원 작업에 포함할 영구 볼륨 클레임을 선택할 수 있습니다.</block>
   <block id="15957f5a10d7c37b0a0a1daa1c46013a" category="section-title">2026년 6월 15일</block>
-  <block id="eb985c23c2b4157b8059d99e50538799" category="paragraph">NetApp Console 요구 사항은 <block ref="a1e048c2b33797bd5e09f13ddaff6fff" category="inline-xref-macro-rx"></block>을 참조하십시오.</block>
   <block id="11cb5552207ff0aa19a1682353b76f93" category="list-text">*보호 그룹이 이제 호스트 시간대 스케줄링을 사용합니다*: 보호 그룹은 이제 Hyper-V 호스트의 시간대를 사용합니다. 호스트 시간대 스케줄링이 도입되기 전에 생성된 보호 그룹은 이전에 구성된 시간(일반적으로 UTC)을 계속 사용합니다. 이러한 보호 그룹이 Hyper-V 호스트 시간대를 사용하도록 업데이트하려면 스케줄을 다시 생성해야 합니다. 자세한 내용은<block ref="d7b709a60ba856948f2de1f387e47906" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="327e5e3e392a7cf832926cb52870097c" category="list-text">*보호 그룹이 이제 호스트 시간대 스케줄링을 사용합니다*: 보호 그룹은 이제 호스팅 VMware vCenter Server의 시간대를 사용합니다. 호스트 시간대 스케줄링이 도입되기 전에 생성된 보호 그룹은 이전에 구성된 시간대(일반적으로 UTC)에서 계속 실행됩니다. vCenter 시간대를 사용하려면 스케줄을 다시 생성해야 합니다. 자세한 내용은<block ref="5181f9a713551c0880da1b785cb2e8f3" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="d041f642a2d3785a0e94ba8db99dbb87" category="list-text">Hyper-V 워크로드의 경우 예약된 백업 시간은 관리 호스트의 시간대를 기준으로 해석된다는 점에 유의하십시오. 자세한 내용은 <block ref="6abbe22a47895e202e8193141aa3411e" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
@@ -5654,4 +5628,181 @@
   <block id="d2bf4d042aabc15b9ccde353c782a6f2" category="list-text">Microsoft Windows Server 2025를 사용하는 경우 SAN 스토리지에 저장된 2세대 가상 머신 보호는 지원되지 않습니다.</block>
   <block id="b2d5ba8de92c18cbb9c45e01ad3f5509" category="list-text">다른 위치(기본, 보조 및 오브젝트 저장소)로 복원</block>
   <block id="62ff0d9db122207756fd73342a3eb3ad" category="paragraph">NetApp Backup and Recovery는 이제 서로 다른 클라우드 공급자에 걸쳐 최대 100개의 버킷을 사용하여 시스템 내 워크로드를 보호하는 기능을 지원합니다. 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상 버전이 필요합니다.</block>
+  <block id="a804a09090ab946ea48120427df5be47" category="paragraph">표준 DNS를 통해 데이터베이스 호스트에 접근할 수 없는 에어갭 환경에서 NetApp Console 로컬 배포를 사용하는 경우, 내부 RKE2 CoreDNS 구성을 일시적으로 수정해야 합니다. 이렇게 하면 노드의<block ref="ad942c725cd0cae65ca4c63717ec464c" prefix=" " category="inline-code"></block>에 항목을 추가하는 것과 유사하게 Pod가 클러스터 내의 특정 호스트 이름을 IP 주소로 확인할 수 있습니다.</block>
+  <block id="d38c5698c3f0a0cc565d84f0583ddbe8" category="admonition">변경하기 전에 기존 CoreDNS 구성을 확인하여 기존 사용자 지정 설정을 덮어쓰지 않도록 하십시오. RKE2 매니페스트를 사용하여 이 변경 사항을 적용하면 RKE2 운영자와 런타임에서 일관되게 관리됩니다.</block>
+  <block id="0d1c49b7f34131be8c6ddbc862cc359d" category="list-text">가능한 한 HelmChartConfig 파일을 변경 관리 대상에 포함시키십시오.</block>
+  <block id="feb789eaa0d039f7e4fc241b5a35b268" category="list-text">CoreDNS 재정의의 목적이 명확하도록 파일 이름을 알아보기 쉽게 지정하십시오.</block>
+  <block id="1c675544711def39976f57e2f6b7e39d" category="list-text">Corefile에서 예상되는 DNS 레코드가 보이지 않으면 RKE2 서버 로그를 확인하고 매니페스트 파일의 구문을 확인하십시오.</block>
+  <block id="d36d322fa13411cc64a12177b6ad51ce" category="list-text">기존 CoreDNS 구성을 확인하여 기존 변경 사항을 덮어쓰지 않도록 하십시오.</block>
+  <block id="f4edd834d634c666190d7b67f0c12622" category="list-text">다음 명령 블록을 복사하고 해당 <block ref="10e11b33e0776f6cd4b1e675accff1f5" prefix=" " category="inline-code"></block>영역을 편집하여 정적 DNS 레코드를 추가하십시오. 이렇게 하면 RKE2 매니페스트 폴더에 HelmChartConfig YAML 파일이 생성되고, RKE2는 이 파일을 자동으로 적용하여 CoreDNS 구성을 재정의합니다.</block>
+  <block id="b893a4548c6b5490f347a2312c465362" category="list-text">CoreDNS가 변경 사항을 반영했는지 확인하십시오.</block>
+  <block id="ad5eadc57f2e0ed4fdd17752bad0fe52" category="paragraph">몇 분 후에도 변경 사항이 보이지 않으면 CoreDNS 배포를 다시 시작한 다음 Corefile을 다시 확인하십시오.</block>
+  <block id="9e04101c187aa923054a894c988f5aeb" category="list-text">데이터베이스 호스트를 찾은 후 항목을 삭제해야 하는 경우 다음 단계를 따르십시오.</block>
+  <block id="606b05130da19f4457434aa58ba985b8" category="list-text">manifests 폴더에서 HelmChartConfig 파일을 삭제합니다.</block>
+  <block id="5b25c5946d94965af8af242970d2aee2" category="list-text">CoreDNS 배포를 다시 시작합니다.</block>
+  <block id="64c0705ecd150a07e521638d5157a4ec" category="doc">일반 NetApp Backup and Recovery 기능 향상</block>
+  <block id="7700d007f970d2c042d61e3551aa039e" category="list-text">*NetApp Console 로컬 배포 지원*: 이번 NetApp Backup and Recovery 릴리스는 NetApp Console 로컬 배포를 미리 보기 상태로 지원합니다.</block>
+  <block id="ce2f56e5c9015b28eb92d0581ad9a718" category="list-text">*90일 작업 보존*: 이제 Backup and Recovery가 작업 모니터에서 작업 정보를 90일 동안 보존합니다.</block>
+  <block id="1a83c2d5d73015e6e971eff46d37e9d8" category="list-text">*SAN VM에 대한 대체 위치 복원 지원*: 이제 SAN 기반 VM 백업을 다른 위치로 복원할 수 있습니다.</block>
+  <block id="b7bfbf5f47aa4163507ae71ed18f8b9f" category="list-text">*여러 백업 삭제 지원*: 이제 한 번에 여러 백업을 삭제할 수 있습니다.</block>
+  <block id="7ac62e0d250037c318f5fcf102e2e700" category="list-text">*플러그형 데이터베이스(PDB) 복원 및 복제*: NetApp Console 서비스용 백업 및 복구 기능이 이제 플러그형 데이터베이스 복원 및 복제를 지원합니다.</block>
+  <block id="c67660fa166ae58260874bbf6f9c5e4a" category="list-text">*에어갭 리소스에 대한 미리 보기 지원*: NetApp Console 로컬 배포에서 NetApp Backup and Recovery를 실행하는 경우 에어갭 Kubernetes 리소스를 검색, 보호 및 복원할 수 있습니다. 이 기능은 이번 릴리스에서 미리 보기로 제공됩니다.</block>
+  <block id="d1c241263c19a21db56b6d9aaeb83ca1" category="paragraph">이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.</block>
+  <block id="a33b2a8cf6a943c4ae96728143fee277" category="list-text">*복원 작업을 백업보다 우선 순위 지정*: 이제 가상 머신이나 파일을 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.</block>
+  <block id="3c8fad259371a43b707a7a3c64b147f6" category="list-text">*Backup and Recovery 활성화 없이 ONTAP 시스템 및 볼륨 검색*: 이제 Backup and Recovery를 활성화하지 않고도 시스템과 볼륨을 검색할 수 있습니다.</block>
+  <block id="2c6cc6886b730f35083997c1321dcc78" category="list-text">NetApp Console 로컬 배포용 Backup and Recovery 미리 보기 릴리스에서는 오브젝트 스토리지로의 백업이 ONTAP S3 및 StorageGRID 대상에 대해서만 지원됩니다. 이 미리 보기 릴리스에서는 백업 아카이빙이 지원되지 않습니다.</block>
+  <block id="5c09edc1ed9afb140af2607f91da29e1" category="section-title">NetApp Console 로컬 배포용 Backup and Recovery 프리뷰 제한 사항</block>
+  <block id="100ccba98eb51c65bd8c14443e1fd850" category="paragraph">보안을 강화하고 리소스 액세스를 제어하려면 NetApp Backup and Recovery에 역할 기반 액세스를 구성하십시오. NetApp Console은 일부 Backup and Recovery 워크로드에 대해 역할 기반 액세스 제어(RBAC)를 지원합니다. 이러한 워크로드에 특정한 관리자 또는 뷰어 역할을 할당할 수 있습니다. 역할 기반 액세스 제어를 아직 지원하지 않는 다른 워크로드는 프로젝트 수준 또는 플릿 수준 연결이 지원될 때까지 Backup and Recovery 역할을 가진 모든 사용자가 액세스할 수 있습니다.</block>
+  <block id="32e1c572f7e144c1646e5a596a5a1451" category="admonition">NetApp Console은 폴더 내의 리소스를 구성하기 위해 프로젝트를 사용하며, NetApp Console 로컬 배포에서는 프로젝트를 플릿이라고 부릅니다.</block>
+  <block id="4adee4f45a74219d1cd07ce797df9f99" category="paragraph">Backup and Recovery 인벤토리에서 환경 내 Kubernetes 워크로드를 검색할 수 있습니다. 워크로드를 추가하면 NetApp Backup and Recovery에 Kubernetes 클러스터가 추가됩니다. 그런 다음 애플리케이션을 추가하고 클러스터 리소스를 보호할 수 있습니다. 선택적으로 NetApp Console 로컬 배포를 사용하여 에어갭 로컬 Kubernetes 리소스를 검색할 수도 있습니다.</block>
+  <block id="32fd98562c6a156ac87022787c83fd6e" category="paragraph">Backup and Recovery는 선택한 설치 유형에 따라 달라지는 지침을 제공합니다. NetApp Console 로컬 배포를 사용하는 경우 외부 네트워크 연결이 없는 에어갭 리소스를 검색할 수 있는 지침을 선택할 수 있습니다.</block>
+  <block id="c9f1fbd3541e041c7aefce17e569d706" category="list-text">Kubernetes 클러스터에 Trident Protect를 설치하는 방법에 대한 지침을 보려면 설치 유형을 선택하십시오.</block>
+  <block id="eb91a7499802a37e3cd48fa310c15a57" category="list-text">외부 네트워크에 연결된 클러스터를 찾으려면 *연결됨*을 선택하십시오.</block>
+  <block id="42549739c293d276ceebe73a196959c7" category="list-text">외부 네트워크 연결이 없는 클러스터를 검색하려면 *에어갭*을 선택합니다.</block>
+  <block id="c81c81c33dcdd7c4d24b501795cfae12" category="open-title">연결된 검색</block>
+  <block id="b2e76d956d1446ebd1dc9cf7262e7a73" category="list-text">Backup and Recovery에 나타나는 명령줄 지침을 따르십시오. 이러한 단계를 통해 Backup and Recovery가 클러스터와 상호 작용할 수 있습니다.</block>
+  <block id="2b7add97385bfd3948413e32d55ea9b3" category="open-title">에어갭 검색</block>
+  <block id="8e073c87439fbb7907d40a3b2b4f20db" category="list-text">개인 Docker 컨테이너 레지스트리의 URL을 입력하십시오. 이 레지스트리는 설치 중에 Trident Protect 및 Trident Protect Connector 이미지를 다운로드하는 데 사용됩니다.</block>
+  <block id="b40fdc2f50180e3dc294592258666241" category="list-text">개인 컨테이너 레지스트리에 인증이 필요한 경우 다음 방법 중 하나를 사용하여 레지스트리 자격 증명을 구성하십시오.</block>
+  <block id="9a7eca7534aaacf48a2e6ab580310efb" category="list-text">*노드 수준 인증*: 각 노드의 컨테이너 런타임에 레지스트리 자격 증명을 구성합니다. 구성이 완료되면 모든 파드는 추가적인 Helm 설정 없이 이미지를 가져올 수 있습니다.</block>
+  <block id="ccf6fbb85e170dcc8a339f853dd9ecd1" category="list-text">*Kubernetes image pull secret*: <block ref="9a82c7a4099124e5bfaa83e7c5997bd4" prefix=" " category="inline-code"></block> 네임스페이스에 Kubernetes 이미지 풀 시크릿을 생성한 다음, Trident Protect 설치 지침의 Helm 업그레이드 단계에서 해당 시크릿을 참조하십시오.</block>
+  <block id="e83c36aded47a82f3a80094d5e40c8ec" category="list-text">Backup and Recovery에 나타나는 명령줄 지침을 따르고, Helm 단계에서 이미지 풀 시크릿 정보를 추가하십시오(필요한 경우). 이러한 단계를 통해 Backup and Recovery가 클러스터와 상호 작용할 수 있습니다.</block>
+  <block id="b369100bdd2bca7404427091ea1773f0" category="list-text">Trident Protect 설치 단계를 완료한 후 *Discover*를 선택하십시오.</block>
+  <block id="b5f7c930c601cdb6867c5fa448e058de" category="list-text">Kubernetes 워크로드 타일을 선택합니다.</block>
+  <block id="3157af79837d704f357cbe0fb5ca681e" category="section-title">NetApp Console 로컬 배포에서 에어갭 호스트 검색을 위한 DNS 구성</block>
+  <block id="9130f3e76360b4e0b50d62c02b73f297" category="summary">NetApp Console 또는 NetApp Console 로컬 배포에서 시스템의 백업 및 복구를 활성화합니다.</block>
+  <block id="3b1f21f533f4569ccdb069a224c3fc8b" category="doc">볼륨을 보호하기 위해 Backup and Recovery를 활성화합니다.</block>
+  <block id="fce3336a53277a34c72eaf26ae68eb3c" category="paragraph">ONTAP Volumes 워크로드를 보호하려면 NetApp Console 또는 NetApp Console 로컬 배포에서 스토리지 시스템에 대해 NetApp Backup and Recovery를 활성화해야 합니다. 시스템을 추가할 때 또는 나중에 Backup and Recovery를 활성화할 수 있습니다.</block>
+  <block id="64c73d6afa3e4d25eb2bf5b546c3dcf2" category="section-title">NetApp Console에서 백업 및 복구 활성화</block>
+  <block id="cb120e5cd2b396558aacbb18f19389be" category="paragraph">NetApp Console에서 백업 및 복구 서비스를 활성화하십시오.</block>
+  <block id="bd449026fb2b3bf3a1ff4cb4c323ddee" category="list-text">* Volumes * 메뉴를 선택합니다.</block>
+  <block id="afa0bb87d54f156e627003dfa34823a6" category="list-text">볼륨 보호 개요 페이지에서 *백업 설정*을 선택합니다.</block>
+  <block id="204a48efa1a8f290d2951f016919ea7c" category="list-text">백업을 활성화할 시스템을 확인하고 *백업 활성화* 버튼을 선택하십시오.</block>
+  <block id="247ff6666bd29c91fd85627e96b3510b" category="list-text">보호할 소스 볼륨을 선택하고 *다음*을 선택하십시오.</block>
+  <block id="05339b07e52d64122e9141dc4c7ce142" category="list-text">백업 전략 정의 페이지에서 백업 아키텍처를 선택한 다음 로컬 스냅샷, 복제 볼륨 및 백업 파일에 대한 정책 및 기타 세부 정보를 정의합니다. 이 시스템에서 처음 활성화한 볼륨의 백업 옵션에 대한 세부 정보를 참조하십시오. 그런 다음 *다음*을 선택합니다.</block>
+  <block id="99fc855c46d2e6f60c45d31a733d59a3" category="list-text">선택적으로 백업 및 복구 기능이 일치하지 않는 백업, 스냅샷 및 복제 레이블을 자동으로 수정하도록 설정할 수 있습니다.</block>
+  <block id="9f3d5403b8dc8b2031f6b4fc3737cd37" category="list-text">보호한 볼륨은 볼륨 개요 페이지에 표시됩니다.</block>
+  <block id="4b064ddd7a02084e346fa166ed7bb6cb" category="section-title">NetApp Console 로컬 배포에서 백업 및 복구 활성화</block>
+  <block id="14f23530841dd1cfad164a8e134f88ea" category="paragraph">NetApp Console 로컬 배포에서 백업 및 복구 서비스를 활성화하십시오.</block>
+  <block id="388e989dd77f81541d749ac165d92200" category="inline-link">라이센스 취득</block>
+  <block id="eb3ebbfc3ab12363d471b8aec28b7d88" category="paragraph">NetApp Backup and Recovery 라이선스를 취득했는지 확인하십시오. 자세한 내용은<block ref="f655a90fa3a25d2cdc287fbda8576bbe" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="3f8f1a22fc87e0c9826e6b21c5a926be" category="list-text">NetApp Console 메뉴에서 *스토리지 &gt; 플릿*을 선택합니다.</block>
+  <block id="21b2098e073151f4bd9c33b9ffefa2aa" category="list-text">필요한 경우 *선박 추가*를 선택하여 함대 정보를 추가하십시오.</block>
+  <block id="c2dab7efe42335c34a0f152ae2750987" category="list-text">*관리 &gt; 라이선스*를 선택합니다.</block>
+  <block id="ec01ce5d7a75843507cddc0f1e980f6a" category="inline-link">라이선스를 추가합니다</block>
+  <block id="27012ade26486f85495fbb2267fed618" category="list-text">백업 및 복구용 라이선스를 추가하려면 *라이선스 추가*를 선택하십시오. 라이선스 추가에 대한 자세한 내용은<block ref="e9f7bfb753a05c7d1690a9e4e7b2ce56" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="5e62bf511aa053fcc08329f483488665" category="list-text">*Storage* &gt; *Fleets* 를 선택한 다음 *Systems* 메뉴를 엽니다.</block>
+  <block id="3b173fe4c1bd68bf7dd8db9c524dc8a7" category="list-text">시스템을 추가하려면 *추가*를 선택하고 시스템 세부 정보를 입력한 다음 *추가*를 선택하여 새 시스템을 저장하십시오.</block>
+  <block id="07c87e1a7ad1cef370fca4fd17f11406" category="list-text">시스템을 선택하고 클러스터를 선택하십시오. 페이지 오른쪽 정보 패널에서 백업 및 복구 서비스의 *활성화* 버튼을 선택하십시오.</block>
+  <block id="650a46b766c48de5003178d3c64c3e35" category="list-text">*백업 볼륨*을 선택합니다.</block>
+  <block id="c02715a613f1d27ea0d77a20a3d25376" category="paragraph">NetApp Console 또는 NetApp Console(로컬 배포) 사용 여부에 따라, 클라우드 공급업체로부터 *NetApp Intelligent Services*에 대한 종량제(PAYGO) 또는 연간 마켓플레이스 구독을 구매하거나 NetApp에서 BYOL(사용자 라이선스 보유) 라이선스를 구매하여 NetApp Backup and Recovery 라이선스를 취득할 수 있습니다. 시스템에서 NetApp Backup and Recovery를 활성화하고, 운영 데이터의 백업을 생성하고, 백업 데이터를 운영 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
+  <block id="d63e296034547bf26cb0cadf2f6380a7" category="list-text">NetApp Console을 사용하여 Backup and Recovery를 사용하는 경우, 사용량 기반 요금제(PAYGO) 라이선스를 구독하거나 자체 라이선스 구매(BYOL) 라이선스를 구입할 수 있습니다.</block>
+  <block id="4f423dab0b2a066d43aa7c2770125156" category="list-text">NetApp Console 로컬 배포와 함께 Backup and Recovery를 사용하는 경우, BYOL(Bring Your Own License) 라이선스만 구매할 수 있습니다.</block>
+  <block id="c25cac16b9617f72907c0630edc1b01c" category="paragraph">NetApp Backup and Recovery에 대한 라이선스를 설정하십시오.</block>
+  <block id="1ee6f4a6521039e0ae82dbbbba308a27" category="section-title">마켓플레이스 또는 BYOL 라이선스를 통한 연간 계약 사용</block>
+  <block id="f553546046684a79a8a9f772a3ba1d69" category="section-title">NetApp Backup and Recovery 로컬 배포를 위한 라이선스 설정</block>
+  <block id="81f4d3c9ac626f319c4045d07dc88068" category="paragraph">NetApp Console의 온프레미스 버전에 대한 라이선스를 설정합니다.</block>
+  <block id="e686efc70811cf9c1330fb2efbfde349" category="paragraph">NetApp Console 로컬 배포를 사용하여 BYOL 라이선스를 관리할 수 있습니다. 콘솔에서 새 라이선스를 추가하고, 기존 라이선스를 업데이트하고, 라이선스 상태를 확인할 수 있습니다.</block>
+  <block id="703de1576e07d34f2860aa3e1da40baf" category="list-text">NetApp Console을 사용 중인 경우 웹 브라우저를 열고 다음 주소로 이동하십시오.<block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block></block>
+  <block id="5cb1f0001bf54c75c97113f354e00531" category="list-text">NetApp Console 로컬 배포를 사용하는 경우 웹 브라우저를 열고 로컬 Console 배포의 웹 UI IP 주소로 이동하십시오.</block>
+  <block id="7c55093665daac77f8dd76430cb75dfa" category="inline-link">NetApp Console 로컬 배포에서 알림에 대한 알림 규칙 구성</block>
+  <block id="f9bee688793a428e0d9f7ec70aa5e128" category="paragraph"><block ref="d002346fd3a4e505164eb1f97ce43042" category="inline-link-rx"></block>.</block>
+  <block id="8a694efe640190f66766a628dd36f07a" category="list-text">VMware 워크로드를 선택하십시오.</block>
+  <block id="56fa99412e731bf74dfe0e92bfc1a799" category="paragraph">스토리지 공간을 확보하거나 데이터 보존 요건을 충족하기 위해 더 이상 필요하지 않은 로컬 백업을 삭제할 수 있습니다.</block>
+  <block id="4ba79ff2175b296fa6e60a343f55f890" category="list-text">NetApp Backup and Recovery에 로그인하고 홈 화면에서 VMware 워크로드 타일을 선택합니다.</block>
+  <block id="384972b6673da7b24e3d0b2560f6a88f" category="paragraph">VMware 인벤토리 페이지가 나타납니다.</block>
+  <block id="13e9141fa63d8f037f1f9d57eb55d7cd" category="list-text">*가상 머신* 항목을 선택합니다.</block>
+  <block id="e4fa3a00894276c9b73f4a5fbea2b8b6" category="list-text">가상 머신 목록에서 가상 머신을 선택하고 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *보호 세부 정보 보기*를 선택합니다.</block>
+  <block id="48c896058bf313b7b8c3e5d0d059d0b5" category="list-text">관련 스냅샷을 표시할 기간을 선택합니다.</block>
+  <block id="1f6e5768c369e513177719a55ddb10b9" category="list-text">스냅샷을 하나 이상 삭제합니다.</block>
+  <block id="621aa8040403a0524dc805bb41b10d5c" category="open-title">스냅샷 하나 삭제</block>
+  <block id="df9690d930ba43ffe814d178e0dc946f" category="list-text">목록에서 삭제할 스냅샷을 선택하고 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *로컬 스냅샷 삭제*를 선택합니다.</block>
+  <block id="3c6317f4ac9a23c959a2cb8d8e0ac466" category="open-title">여러 스냅샷 삭제</block>
+  <block id="d8fb1204bc24f18b837d45773c94ad3f" category="list-text">삭제하려는 각 스냅샷 왼쪽에 있는 확인란을 선택합니다.</block>
+  <block id="52930d2f80d2c62aee1edf1f424cca24" category="list-text">*선택한 항목 삭제*를 선택합니다.</block>
+  <block id="e73ac3f158df9b045a6b3779d75dd829" category="section-title">NetApp Backup and Recovery 사용 준비</block>
+  <block id="bb5b370bd7de303eeaf48da0ac823498" category="paragraph">NetApp Console을 통해 NetApp Backup and Recovery에 액세스합니다. NetApp Console 또는 NetApp Console 로컬 배포 사용 여부에 따라 다음 작업을 수행하여 Backup and Recovery를 위한 Console을 준비하십시오.</block>
+  <block id="a13a878a01fe30a9dc231ed21ce14d86" category="section-title">NetApp Console에서 Backup and Recovery를 사용하기 위한 준비</block>
+  <block id="9e781c93fe77a834e50a700943322044" category="paragraph">백업 및 복구를 위해 NetApp Console을 준비하려면 다음을 수행해야 합니다.</block>
+  <block id="f6f6e076664f3fcf9fd5ac3712c1c4e3" category="list-text">초기 설정 완료</block>
+  <block id="e114d8cf5b97d8a06057760568b034cd" category="list-text">백업 및 복구 활성화</block>
+  <block id="0b1338766341d9e4efb068789c59087a" category="inline-link">NetApp Console 시작 워크플로</block>
+  <block id="2b5a20633ae8165987b5d83e836bded7" category="paragraph"><block ref="2b5a20633ae8165987b5d83e836bded7" category="inline-link-rx"></block></block>
+  <block id="63cfc085cd8deb50d0fe4aee5d0e650a" category="paragraph">시스템을 추가할 때 또는 나중에 백업 및 복구 기능을 활성화할 수 있습니다.</block>
+  <block id="044b5c77027bf301184b5e0ade8798d5" category="inline-link-macro">시스템에 대한 백업 및 복구 기능을 활성화합니다.</block>
+  <block id="67cb34703319339892e803e99681624a" category="paragraph"><block ref="b42fc317c2ac82fa1e68e771a5aef85a" category="inline-link-macro-rx"></block>.</block>
+  <block id="f5ad467a98dc6a5895620ec9cfd7929a" category="paragraph">조직, 프로젝트, 플릿 및 사용자 역할에 대해 알아보고, 사용자가 작업을 수행하는 데 필요한 적절한 권한으로 사용자를 구성합니다.</block>
+  <block id="d501e17169facc1a138d3fc8e9175373" category="paragraph"><block ref="04f37aa952e829e9448a7d043a30911e" category="inline-link-rx"></block>를 참조하여 리소스 액세스 제어에 대한 정보를 확인하십시오.</block>
+  <block id="232ad6d71a356fe268501304d4498151" category="section-title">NetApp Console 로컬 배포에서 Backup and Recovery를 사용하기 위한 준비</block>
+  <block id="0ba77f30bb461b885a18b790dc1c7fed" category="paragraph">NetApp Console 로컬 배포 환경에서 NetApp Backup and Recovery를 사용하려면 다음 단계를 수행해야 합니다.</block>
+  <block id="5fb18472c65b22e6aed72da32e038aec" category="list-text">초기 NetApp Console 로컬 배포 설정을 완료합니다</block>
+  <block id="1a990df39107b1e639f4fd55a4b39ac5" category="list-text">사전 등록 신청하기</block>
+  <block id="568f1f6b8bbc4b5eee65743da6e30afb" category="list-text">사용자에게 리소스 액세스 권한 부여</block>
+  <block id="5d65636e37c16188531efc5248b04ea4" category="paragraph">NetApp Console 로컬 배포에서 조직 관리자 또는 슈퍼 관리자 역할이 있어야 이 준비 작업을 완료할 수 있습니다.</block>
+  <block id="ac2d7625e323010740bb75ef56225b3d" category="inline-link">NetApp Console 로컬 배포에 대해 알아보십시오.</block>
+  <block id="c62e20f5538087472dc438eb3f0eeca6" category="paragraph">NetApp Console 로컬 배포에 대해 자세히 알아보려면 <block ref="327be2ef9e4468a98c588ef8c879bec6" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
+  <block id="df25e49020c58ef73da6befa0eb72dd2" category="paragraph">NetApp Console 로컬 배포를 위한 초기 설정을 아직 완료하지 않았다면 완료하십시오. 초기 설정에는 데이터 서비스(Backup and Recovery 포함) 라이선스 추가가 포함됩니다.</block>
+  <block id="6c67e4958bd3ecc4ebc2486fe40c9fb6" category="inline-link">NetApp Console 로컬 배포 시작하기</block>
+  <block id="2c6df80c002181573883566420c83445" category="paragraph"><block ref="2c6df80c002181573883566420c83445" category="inline-link-rx"></block></block>
+  <block id="33dff0ff51e9773f32a9999496de90ea" category="section-title">NetApp Backup and Recovery 미리 보기 등록 신청</block>
+  <block id="1081e691742befdfc0131302b893d29c" category="paragraph">NetApp Console 로컬 배포 환경에서 NetApp Backup and Recovery 미리 보기에 등록하십시오.</block>
+  <block id="29baeb7c31a3e708d97805f86fcb505a" category="inline-link">사전 등록 양식을 작성하십시오</block>
+  <block id="4d405e082b9036b99ea8ef4d4c6b3cae" category="paragraph"><block ref="570de0e604bd7f8002cc6704e0146ea7" category="inline-link-rx"></block></block>
+  <block id="a3b49aeb70a4060b1c36c4a694debc5c" category="inline-link">NetApp Console 로컬 배포에 스토리지 추가</block>
+  <block id="de0f709d7b0812e121e9fa6bdb8b87b3" category="paragraph"><block ref="de0f709d7b0812e121e9fa6bdb8b87b3" category="inline-link-rx"></block></block>
+  <block id="5867ad8a560196a64df2278876df70c2" category="paragraph"><block ref="fd61760e9709a64e2426151a909b6045" category="inline-link-macro-rx"></block>.</block>
+  <block id="83524f1d1d58a585ea5008790d8e85cf" category="paragraph">ID 및 액세스 관리에 대해 알아보고 사용자가 작업을 수행하는 데 필요한 적절한 권한을 구성하십시오.</block>
+  <block id="acb0fa18e6cbdd062b1c342d22b5d7e9" category="inline-link">NetApp Console 로컬 배포에서 ID 및 액세스 시작하기</block>
+  <block id="951c1419bc6678a290628918eb471078" category="paragraph"><block ref="ea5b8c83a53307fc473cf87abf76dc05" category="inline-link-rx"></block>을 참조하여 ID 및 액세스에 대한 정보를 확인하십시오.</block>
+  <block id="614c9b8c0079226ae2c76caf00bdc9d7" category="list-text">ASP.NET Core Runtime 10.0.10 Hosting Bundle</block>
+  <block id="2c03c04d013cd18a2b08ffdaa3807fc6" category="list-text">PowerShell 7.6.4</block>
+  <block id="3b93068d4eec990f1969b952fef82849" category="list-text">NetApp Trident 25.06 ~ 26.02.1</block>
+  <block id="c6ee0c0b0d79479e99725d43f4f2b0f8" category="list-text">NetApp Trident Protect 26.06 (검색 중에 Kubernetes 클러스터에 설치됨)</block>
+  <block id="0ac549660d0a9677d9f22785c2d2c924" category="paragraph">지침은 <block ref="2f1950f09c9a71aa668e32b381c98250" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="e75b3a902ee99b25571be4a98b084a31" category="summary">NetApp Backup and Recovery를 활성화하지 않고도 시스템과 볼륨을 검색할 수 있습니다.</block>
+  <block id="bf768851617c703a4014233f58b31de3" category="doc">활성화 없이 ONTAP 시스템 및 볼륨 검색</block>
+  <block id="2887d4ffc35ab6898bed2a982c5423a2" category="paragraph">시스템 및 볼륨은 해당 볼륨에 대한 Backup and Recovery를 활성화할 때 또는 NetApp Backup and Recovery를 활성화하기 전에 검색할 수 있습니다. 활성화하지 않고 볼륨을 검색한 경우, 해당 볼륨에 대한 Backup and Recovery를 활성화하기 전까지는 볼륨을 보호할 수 없습니다.</block>
+  <block id="c05c8d19188da81641764e4d99fba036" category="list-text">*보호 &gt; 백업 및 복구*로 이동합니다.</block>
+  <block id="aade6a4ecb73182997804e0dc7dbdb4b" category="list-text">*볼륨* 타일을 선택합니다.</block>
+  <block id="cd443e02f5cbebd87795406cf9cb796d" category="paragraph">볼륨 대시보드가 나타납니다.</block>
+  <block id="6d2d3f5b63dfbdd66641a095c0ad211b" category="list-text">*시스템 검색*을 선택합니다.</block>
+  <block id="860cf33608268fe2d5a3ed1713fe9107" category="list-text">목록에서 볼륨을 검색하려는 모든 시스템을 선택합니다.</block>
+  <block id="f256471c6761fa054c01bf424427f283" category="paragraph">검색 프로세스가 시작됩니다. 작업 모니터에서 검색 상태와 결과를 확인할 수 있습니다.</block>
+  <block id="8bfcbad5f6e35a5fb200847e49a3e066" category="summary">NetApp Console 로컬 배포 환경에서 카탈로그 인덱스 성능을 향상시킵니다.</block>
+  <block id="1b8e826b73c0743e53c07bcd60fec634" category="doc">NetApp Console 로컬 배포를 사용할 때 볼륨 검색 및 복원 성능 향상</block>
+  <block id="626ff7e0402d85582fdc0561907b9fe6" category="paragraph">클러스터의 기본 스토리지 클래스에서 ONTAP 기반 NFS 공유로 카탈로그 인덱스 스토리지를 마이그레이션하면 NetApp Console 로컬 배포 환경의 카탈로그 성능이 크게 향상됩니다. 인덱스 카탈로그는 검색 및 복원 기능에 사용됩니다. 기본 스토리지를 사용해도 카탈로그는 정상적으로 작동하지만, ONTAP 기반 NFS를 사용하면 검색 및 복원 성능이 눈에 띄게 향상됩니다.</block>
+  <block id="adb346c6a3b4c2c621493a5c3df68916" category="paragraph">시작하기 전에 다음 사항을 준비했는지 확인하십시오.</block>
+  <block id="86f1b6285159d589785ea087767c5ad1" category="list-text">클러스터에 구성된 ONTAP NFS StorageClass 및 ONTAP 시스템의 충분한 용량.</block>
+  <block id="5bd55eb44ebdfd90229d8601c0ee18b7" category="list-text">리소스를 가져오고, 생성하고, 적용하고, 실행하고, 패치하고, 확장하고, 삭제할 수 있는 권한이 있는 클러스터 관리자 자격 증명입니다.</block>
+  <block id="2d6416018a758bac07ba133aba8edfbe" category="list-text">원본 PVC에 있는 데이터의 유효성이 검증된 백업본(마이그레이션 전에 스냅샷을 찍거나 다른 곳에 복사해 두십시오).</block>
+  <block id="60ada73ffb582db867e106e713a19b22" category="floating-title">작업자 수를 줄입니다</block>
+  <block id="2fbb9ae01a9a1d1d00f103cebbc113ba" category="paragraph">워커 배포 목록을 작성하고 각 워커의 복제본 수를 0으로 줄입니다.</block>
+  <block id="4f15c81d8d6f0d7c242aa5a7caaacaeb" category="list-text">카탈로그 워커 배포 목록을 모두 나열합니다.</block>
+  <block id="e525caa32927c48e8f475f147ed69285" category="list-text">모든 워커 배포를 복제본 수 0개로 축소합니다.</block>
+  <block id="94308a11171ffd5f25d06ce5924aaf34" category="list-text">남아 있는 워커 포드가 없는지 확인하십시오.</block>
+  <block id="e48416869ee325cb8ec14ca6aa79059a" category="floating-title">NetApp Console 로컬 배포에 ONTAP 볼륨을 마운트하고 포드에서 복사합니다</block>
+  <block id="38a39e1403e6d98341c4add54dcf2c53" category="list-text">ONTAP NFS 내보내기를 NetApp Console 로컬 배포 OVA를 배포할 때 생성된 VM의 로컬 마운트 지점에 마운트합니다.</block>
+  <block id="b767a193f4efe7e250ea2b6743324418" category="list-text">실행 중인 코디네이터 파드의 데이터를 중간 디렉터리 없이 ONTAP 마운트 위치로 복사합니다. 코디네이터는 반드시 실행 중이어야 합니다.</block>
+  <block id="0d3fdcf062c36d66c6074134cb8fedb3" category="admonition">내용을 하위 디렉터리가 아닌 볼륨 루트에 복사하십시오. ONTAP 볼륨이 새<block ref="98c39705410022b33dadad6bd4b4e449" prefix=" " category="inline-code"></block> 디렉터리입니다. 데이터는 앱이 동일한 경로(예: /opt/netapp/cbs/catalog/shared/cbs/&lt;DATASET_NAME&gt;/...)에서 찾을 수 있도록 볼륨 루트에 있어야 합니다. 다음 명령에서 tar 명령 형식은 디렉터리 내용(dotfiles 포함)을 중첩된<block ref="9e81e7b963c71363e2fb3eefcfecfc0e" prefix=" " category="inline-code"></block> 폴더를 거치지 않고 마운트 루트에 스트리밍합니다.</block>
+  <block id="12d8a9b322a08784194798a9d8f80277" category="list-text">ONTAP NFS 내보내기를 NetApp Console 로컬 배포 환경의 로컬 마운트 지점에 마운트합니다. 나중에 pv.yaml 파일에서 사용할 것과 동일한 서버/경로를 사용하십시오.</block>
+  <block id="8ed7d227f3bbb6ffea13ffbfc6c368b5" category="list-text">Pod의 공유 볼륨을 ONTAP 마운트 위치로 복사합니다.</block>
+  <block id="3db51ef8f1296af2a14290a2c745a8ad" category="list-text">포드 ID와 일치하도록 소유권을 설정합니다.</block>
+  <block id="e213fca4007bf319dd8a71f9e597dfbd" category="list-text">데이터가 볼륨 루트에 복사되었는지 확인하십시오(마운트 바로 아래에 중첩된 "shared/" 폴더가 아닌 "cbs" 폴더가 있어야 합니다).</block>
+  <block id="e8498c948b994ff098aaa8e52531da7e" category="list-text">복사본을 확인한 다음 마운트를 해제하십시오(나중에 pod가 PVC를 통해 마운트합니다).</block>
+  <block id="558bd5dc4964f474c8391676490b6f25" category="list-text">코디네이터를 축소합니다. 예를 들면 다음과 같습니다.</block>
+  <block id="9609c99c56c51052acb8aed3f8f46c04" category="floating-title">기존 PVC 및 PV를 삭제합니다.</block>
+  <block id="5fd4a320b36fd6fc70d429b0bc8335a3" category="list-text">연결된 PV에 대한 정보를 캡처한 다음 기존 PVC 및 PV를 삭제합니다.</block>
+  <block id="5919fc794547c38fbe49ed0dcc8fbd54" category="floating-title">정적 ONTAP PV 및 PVC를 생성합니다.</block>
+  <block id="2a07b5cff72e4d597937f878e0b4d76b" category="list-text">다음과 같은 PV 및 PVC YAML 객체를 생성하십시오.</block>
+  <block id="d3124d17f5a064210152a2174f3da379" category="paragraph">*<block ref="2b7a31ccb2b33fdd062e9e3f10e075d5" prefix="*" category="inline-code"></block>**</block>
+  <block id="bf6a3296a98dd303ceb6ada20b938af0" category="paragraph">*<block ref="88bf8ee4d993e535425148da6a64c1c2" prefix="*" category="inline-code"></block>**</block>
+  <block id="d22a94b0231cd881dea01a8d9bb97cf4" category="list-text">YAML 객체를 적용할 때, 먼저 PV를 적용한 다음 PVC를 적용합니다(PVC의 레이블 선택기가 바인딩되려면 PV가 존재해야 합니다). 그런 다음 PVC 클레임이 바인딩되었는지 확인합니다.</block>
+  <block id="5828c7ac9e00c56c881334dd15e14acd" category="list-text">코디네이터를 1개 복제본으로 확장합니다.</block>
+  <block id="6d8037d122cd0d4fd1490aa574dee37f" category="list-text">작업자를 수동으로 축소했는데 자동으로 해제되지 않은 경우, 수동으로 다시 확대하십시오(작업자는 일반적으로 자동으로 프로비저닝되므로 이 작업이 필요하지 않을 수 있습니다).</block>
+  <block id="9a19304cff6834a89aa2e5a2fcc7b323" category="list-text">마운트 및 데이터 상태를 확인하십시오. 데이터가 존재하고 사용자 및 그룹 10001:10001의 소유인지 확인하십시오.</block>
+  <block id="aafe04b5477e90484ecb5a97ab35b2e5" category="list-text">*반환 정책<block ref="afece4245269582cb2f1009d4fb52047" prefix=" " category="inline-code"></block>:* PVC를 삭제해도 ONTAP 데이터는 지워지지 않습니다. 재프로비저닝을 수행해야 하는 경우, 해제된 PV는 수동으로 정리해야 합니다.</block>
+  <block id="0ca13922f073b075ebe35843a4741a65" category="list-text">*Helm을 동기화 상태로 유지:* PVC는 일반적으로 차트에 의해 렌더링되므로 향후 <block ref="cd01e1bae83933b9c59c914bc71332ac" prefix=" " category="inline-code"></block>이(가) 이를 다시 생성하거나 수정하려고 시도할 수 있습니다. 이 수동 ONTAP PVC를 유지하려면 동일한 값 <block ref="da653f0609e1ee5bf4ad3210bbae68f7" prefix="(" category="inline-code"></block>(크기/액세스 모드 일치)을 차트에 지정하거나 릴리스에서 공유 PVC를 제외하십시오.</block>
+  <block id="718879a57c5479ddc9d8c13719835aa2" category="list-text">수동으로 <block ref="547d17b0589ba1ba53549f8ddb830b62" prefix=" " category="inline-code"></block>을 실행한 후 다시 설치하려고 하면 PV가 동일한 이름으로 설치되어 이름 충돌이 발생합니다.</block>
+  <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026년 8월 10일</block>
+  <block id="874b4474de89858c50d77a501e5764e2" category="sidebar">NetApp Console 로컬 배포 환경에서 볼륨 검색 및 복원 성능 향상</block>
 </blocks>

@@ -52,8 +52,6 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 * 개체 스토리지에서 백업을 복원하면 데이터를 원래 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
 
 
-복원 페이지(검색 및 복원)에서 필터를 사용하여 스냅샷을 검색하여 리소스를 복원할 수 있습니다. 정확한 이름, 위치 또는 마지막으로 알려진 날짜가 기억나지 않더라도 복원할 수 있습니다.
-
 
 
 [[restore-workload-data-from-the-restore-option-search-restore]]

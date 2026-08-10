@@ -12,7 +12,7 @@ NOTE: 복원 작업 중에는 가상 머신(VM)에 대해 생성된 `VirtualMach
 ====
 Trident Protect는 데이터 보호 작업 중에 일관성을 보장하기 위해 KubeVirt 파일 시스템을 자동으로 동결 및 해제합니다. Trident Protect 25.10부터는 Helm 차트 설치 시  `vm.freeze` 매개변수를 사용하여 이 동작을 비활성화할 수 있습니다. 이 매개변수는 기본적으로 활성화되어 있습니다.
 
-[source, console]
+[source, shell]
 ----
 helm install ... --set vm.freeze=false ...
 ----
@@ -22,7 +22,7 @@ helm install ... --set vm.freeze=false ...
 ====
 Trident Protect 24.10.1부터 Trident Protect는 데이터 보호 작업 중에 KubeVirt 파일 시스템을 자동으로 동결 및 해제합니다. 필요에 따라 다음 명령을 사용하여 이 자동 동작을 비활성화할 수 있습니다:
 
-[source, console]
+[source, shell]
 ----
 kubectl set env deployment/trident-protect-controller-manager NEPTUNE_VM_FREEZE=false -n trident-protect
 ----
@@ -34,7 +34,7 @@ Trident Protect 24.10은 데이터 보호 작업 중에 KubeVirt VM 파일 시�
 
 Trident Protect 24.10을 구성하여 link:https://docs.openshift.com/container-platform/4.16/virt/install/installing-virt.html["가상화 구성"^]을(를) 사용한 다음 다음 명령을 사용하여 데이터 보호 작업 중 VM 파일 시스템의 동결 및 해제를 관리할 수 있습니다.
 
-[source, console]
+[source, shell]
 ----
 kubectl set env deployment/trident-protect-controller-manager NEPTUNE_VM_FREEZE=true -n trident-protect
 ----

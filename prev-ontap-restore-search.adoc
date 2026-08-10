@@ -229,7 +229,7 @@ NetApp Backup and Recovery 인덱싱된 카탈로그를 사용할 때 별도의 
 ** `volume name` 카탈로그 파일이 저장될 클러스터의 볼륨입니다.
 ** `/opt/application/netapp/cbs` 마운트되는 경로입니다
 +
-[source, console]
+[source, shell]
 ----
 mount <cluster IP address>:/<volume name> /opt/application/netapp/cbs
 ----
@@ -237,7 +237,7 @@ mount <cluster IP address>:/<volume name> /opt/application/netapp/cbs
 예:
 
 +
-[source, console]
+[source, shell]
 ----
 mount 10.192.24.17:/CATALOG_SCALE_234 /opt/application/netapp/cbs
 ----

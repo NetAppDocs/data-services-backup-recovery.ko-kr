@@ -47,13 +47,13 @@ NetApp Backup and Recovery에 대해 다음과 같은 미리 보기 기능을 �
 . SSH를 사용하여 Console 에이전트에 로그인하십시오.
 . 루트 사용자로 변경:
 +
-[source, console]
+[source, shell]
 ----
 sudo su
 ----
 . Docker에서 Backup and Recovery 볼륨을 찾으세요.
 +
-[source, console]
+[source, shell]
 ----
 docker volume ls | grep cbs
 ----
@@ -67,7 +67,7 @@ local service-manager-2_cloudmanager_cbs_volume
 ----
 . 볼륨의 마운트 지점을 찾으십시오.
 +
-[source, console]
+[source, shell]
 ----
 docker volume inspect service-manager-2_cloudmanager_cbs_volume | grep Mountpoint
 ----
@@ -81,7 +81,7 @@ docker volume inspect service-manager-2_cloudmanager_cbs_volume | grep Mountpoin
 ----
 . 마운트 지점 디렉토리 안에 있는 docker 볼륨 구성 디렉토리로 이동합니다. 예를 들면 다음과 같습니다.
 +
-[source, console]
+[source, shell]
 ----
 cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data/cbs_config
 ----
@@ -106,7 +106,7 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data/cbs_c
 
 . Backup and Recovery 컨테이너를 다시 시작합니다.
 +
-[source, console]
+[source, shell]
 ----
 docker restart cloudmanager_cbs
 ----
@@ -132,13 +132,13 @@ NOTE: 미리 보기 기능을 비활성화하려면 동일한 단계를 따르�
 . SSH를 사용하여 Console 에이전트에 로그인하십시오.
 . 루트 사용자로 변경:
 +
-[source, console]
+[source, shell]
 ----
 sudo su
 ----
 . Docker에서 Backup and Recovery 볼륨을 찾으세요.
 +
-[source, console]
+[source, shell]
 ----
 docker volume ls | grep cbs
 ----
@@ -152,7 +152,7 @@ local service-manager-2_cloudmanager_cbs_volume
 ----
 . 볼륨의 마운트 지점을 찾으십시오.
 +
-[source, console]
+[source, shell]
 ----
 docker volume inspect service-manager-2_cloudmanager_cbs_volume | grep Mountpoint
 ----
@@ -166,7 +166,7 @@ docker volume inspect service-manager-2_cloudmanager_cbs_volume | grep Mountpoin
 ----
 . 마운트 지점 디렉토리 안에 있는 docker 볼륨 구성 디렉토리로 이동합니다. 예를 들면 다음과 같습니다.
 +
-[source, console]
+[source, shell]
 ----
 cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data/cbs_catalog_config
 ----
@@ -183,7 +183,7 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data/cbs_c
 ----
 . Backup and Recovery 인덱싱 카탈로그 컨테이너를 다시 시작합니다.
 +
-[source, console]
+[source, shell]
 ----
 docker restart cloudmanager_cbs_catalog
 ----

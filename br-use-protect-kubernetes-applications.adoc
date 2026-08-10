@@ -126,7 +126,7 @@ NOTE: 목록에서 VM을 선택하면 애플리케이션 정의가 고정됩니�
 ====
 애플리케이션이 이미 생성된 후에 이 주석을 적용해야 하는 경우 다음 명령을 사용할 수 있습니다.
 
-[source, console]
+[source, shell]
 ----
 kubectl annotate application -n <application CR namespace> <application CR name> protect.trident.netapp.io/skip-vm-freeze="true"
 ----
@@ -216,7 +216,7 @@ spec:
 
 . 사용 환경에 맞는 애플리케이션 CR을 생성한 후 CR을 적용합니다. 예를 들면 다음과 같습니다.
 +
-[source, console]
+[source, shell]
 ----
 kubectl apply -f my-app-name.yaml
 ----
