@@ -3267,11 +3267,9 @@
   <block id="e57e5c06a7f562addb87315f013677ab" category="inline-link-macro">Google 보관 저장소에서 복원하는 방법에 대해 자세히 알아보세요.</block>
   <block id="e429a3dcdf9ca5d36834b72490aae784" category="admonition">Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복원하는 경우 높은 우선순위는 지원되지 않습니다.</block>
   <block id="598e51a2b37024d5f553af642c739db8" category="section-title">지원되는 시스템 및 개체 스토리지 공급자를 찾아보고 복원합니다.</block>
-  <block id="bc6bfb0b14fd7cced8ee62c645d8aa17" category="paragraph">*참고:* 모든 유형의 백업 파일에서 볼륨을 복원할 수 있지만, 현재 개체 스토리지의 백업 파일에서만 폴더나 개별 파일을 복원할 수 있습니다.</block>
   <block id="4392d15c8884c7cc66b17ff794eb41d2" category="cell">*객체 저장소에서(백업)*</block>
   <block id="a4e7ccecf7c1ff2d3e2de88d9f7559d4" category="cell">*기본(스냅샷)에서*</block>
   <block id="c1ad4111606308626e152e2bc5089a8b" category="cell">*2차 시스템(복제)에서*</block>
-  <block id="f6bc09197fbc5599ccf48032f3ead672" category="cell">온프레미스 ONTAP 시스템으로</block>
   <block id="56a66e1fc15e989f40186eb5d1841f59" category="paragraph">찾아보기 및 복원의 경우 콘솔 에이전트를 다음 위치에 설치할 수 있습니다.</block>
   <block id="26b66b8e6541c0f2e46ee638955dab17" category="list-text">Amazon S3의 경우 콘솔 에이전트는 AWS 또는 사내에 배포될 수 있습니다.</block>
   <block id="ead25fef0ccdffb4daf4bbf7bcb1dfb5" category="list-text">Azure Blob의 경우 콘솔 에이전트는 Azure 또는 사내에 배포될 수 있습니다.</block>
@@ -5804,4 +5802,6 @@
   <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026년 8월 10일</block>
   <block id="874b4474de89858c50d77a501e5764e2" category="sidebar">NetApp Console 로컬 배포 환경에서 볼륨 검색 및 복원 성능 향상</block>
   <block id="4d92224f9798401488621039f9e4cfa9" category="list-text">구독에 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse"라고 함)를 등록해야 합니다.<block ref="c0f87c4b35b6d93246175aae02f70afd" category="inline-link-rx"></block>. 리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.</block>
+  <block id="309ab91ccf975daed364d3636f21792a" category="paragraph">2차 시스템(복제된 볼륨) 또는 오브젝트 스토리지(백업 파일)에 있는 백업 파일에서 ONTAP 데이터를 다음 시스템으로 복원할 수 있습니다.</block>
+  <block id="e9a171dcb6f5a1441f086b12be8cbc6b" category="cell">S3 호환 오브젝트 저장소</block>
 </blocks>
