@@ -49,7 +49,7 @@ NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참�
 
 NetApp Backup and Recovery 처음 활성화할 때 시스템의 일부 볼륨에서만 백업을 활성화한 경우 나중에 추가 볼륨에서 백업을 활성화할 수 있습니다.
 
-지침은 link:br-start-enable.html["볼륨을 보호하기 위해 Backup and Recovery를 활성화합니다."^]을 참조하십시오.
+지침은 link:br-start-enable.html["NetApp Backup and Recovery를 활성화하여 볼륨을 보호합니다"^]을 참조하십시오.
 
 
 

@@ -4,7 +4,7 @@ permalink: br-use-vmware-restore-guest-files-and-folders-from-vmdks.html
 keywords: restore, guest, files, folders, files and folders, guest VM, windows, linux, VMDK, attach 
 summary: VMDK에서 게스트 VM으로 하나 이상의 파일 또는 폴더를 복원할 수 있습니다. 
 ---
-= 가상 디스크에서 파일 및 폴더 복원
+= NetApp Backup and Recovery에서 VMware 게스트 파일 및 폴더 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,7 +24,7 @@ summary: VMDK에서 게스트 VM으로 하나 이상의 파일 또는 폴더를 
 가상 디스크의 파일이나 폴더를 원래 VM 또는 다른 VM으로 복원할 수 있습니다. 가상 디스크를 원래 VM에 연결하지 않으려면 프록시 VM에 연결할 수도 있습니다.
 
 .시작하기 전에
-* link:br-use-vmware-restore-guest-files-and-folders-overview.html["게스트 파일 및 폴더 복원 시 요구 사항 및 제한 사항"]에서 사전 요구 사항 및 제한 사항을 검토하십시오.
+* link:br-use-vmware-restore-guest-files-and-folders-overview.html["NetApp Backup and Recovery의 VMware 게스트 파일 복원 요구사항"]에서 사전 요구 사항 및 제한 사항을 검토하십시오.
 * 프록시 VM을 사용하여 파일 및 폴더를 복원하려면 파일 및 폴더 복원 프로세스를 시작하기 전에 프록시 VM이 이미 구성되어 있는지 확인하십시오.
 * 파일과 폴더를 복원하려면 NetApp Backup and Recovery에서 소스 가상 디스크와 대상 VM에 대한 자격 증명을 생성해야 합니다. NetApp Backup and Recovery는 파일과 폴더를 복원할 때 이러한 자격 증명을 사용하여 가상 디스크 및 대상 VM에 인증합니다.
 

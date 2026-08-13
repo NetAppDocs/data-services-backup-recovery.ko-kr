@@ -4,7 +4,7 @@ permalink: prev-ontap-protect-migrate-pvc.html
 keywords: migrate, pvc, nfs, storage, performance, persistence 
 summary: NetApp Console 로컬 배포 환경에서 카탈로그 인덱스 성능을 향상시킵니다. 
 ---
-= NetApp Console 로컬 배포를 사용할 때 볼륨 검색 및 복원 성능 향상
+= NetApp Backup and Recovery 로컬 배포 환경에서 검색 및 복원 성능 향상
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

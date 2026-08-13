@@ -4,7 +4,7 @@ permalink: reference-audit-actions.html
 keywords: audit, audit actions, NetApp Console, Backup and Recovery, audit log 
 summary: NetApp Console 감사에서 지원하는 백업 및 복구 작업에 대한 참조입니다. 
 ---
-= 감사된 Backup and Recovery 작업
+= 감사된 NetApp Backup and Recovery 작업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

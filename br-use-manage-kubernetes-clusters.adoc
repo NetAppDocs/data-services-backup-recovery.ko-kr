@@ -4,7 +4,7 @@ permalink: br-use-manage-kubernetes-clusters.html
 keywords: discover, backup and recovery, snapcenter, kubernetes, k8s, clusters, applications, inventory 
 summary: NetApp Backup and Recovery 사용하면 Kubernetes 클러스터를 검색하고 관리하여 클러스터에서 호스팅되는 리소스를 보호할 수 있습니다. 
 ---
-= Kubernetes 클러스터 관리
+= NetApp Backup and Recovery에서 Kubernetes 클러스터를 관리합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

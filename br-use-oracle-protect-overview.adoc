@@ -4,7 +4,7 @@ permalink: br-use-oracle-protect-overview.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 까지 Oracle 가상 머신을 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다. 
 ---
-= Oracle Database 워크로드 보호 개요
+= NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

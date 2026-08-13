@@ -4,7 +4,7 @@ permalink: prev-ontap-protect-journey.html
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
 summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery 통해 보호 여정을 계획하세요
+= NetApp Backup and Recovery의 보호 여정 계획 옵션
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

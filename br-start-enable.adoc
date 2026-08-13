@@ -4,7 +4,7 @@ permalink: br-start-enable.html
 keywords: backup, Backup and Recovery, enable backup, Console, service, local deployment 
 summary: NetApp Console 또는 NetApp Console 로컬 배포에서 시스템의 백업 및 복구를 활성화합니다. 
 ---
-= 볼륨을 보호하기 위해 Backup and Recovery를 활성화합니다.
+= NetApp Backup and Recovery를 활성화하여 볼륨을 보호합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

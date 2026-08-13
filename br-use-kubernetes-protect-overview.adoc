@@ -4,7 +4,7 @@ permalink: br-use-kubernetes-protect-overview.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 온프레미스 ONTAP 시스템에서 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 이르기까지 Kubernetes 애플리케이션과 애플리케이션 데이터를 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다. 
 ---
-= Kubernetes 워크로드 관리 개요
+= NetApp Backup and Recovery를 사용하여 Kubernetes 워크로드를 관리하는 방법에 대해 알아보십시오.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -30,8 +30,8 @@ NetApp Backup and Recovery Kubernetes 워크로드 관리에 다음과 같은 �
 Kubernetes 워크로드 관리와 관련된 다음 작업을 수행할 수 있습니다.
 
 * link:br-start-discover-kubernetes.html["Kubernetes 워크로드를 알아보세요"].
-* link:br-use-manage-kubernetes-clusters.html["Kubernetes 클러스터 관리"].
-* link:br-use-protect-kubernetes-applications.html["Kubernetes 애플리케이션 추가 및 보호"].
-* link:br-use-manage-kubernetes-applications.html["Kubernetes 애플리케이션 관리"].
+* link:br-use-manage-kubernetes-clusters.html["NetApp Backup and Recovery에서 Kubernetes 클러스터를 관리합니다."].
+* link:br-use-protect-kubernetes-applications.html["NetApp Backup and Recovery에서 Kubernetes 애플리케이션 추가 및 보호"].
+* link:br-use-manage-kubernetes-applications.html["NetApp Backup and Recovery에서 Kubernetes 애플리케이션을 관리합니다."].
 * link:br-use-restore-kubernetes-applications.html["Kubernetes 애플리케이션 복원"].
 

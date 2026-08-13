@@ -4,7 +4,7 @@ permalink: br-use-manage-execution-hook-templates.html
 keywords: hooks, execution hooks, exec hooks, hook, execution, script, postscript, prescript, post, pre, run, backup, snapshot, freeze 
 summary: NetApp Backup and Recovery 사용하면 애플리케이션 보호 작업 전이나 후에 작업을 수행하기 위해 실행 후크를 관리할 수 있습니다. 
 ---
-= Kubernetes 워크로드에 대한 NetApp Backup and Recovery 실행 후크 템플릿 관리
+= NetApp Backup and Recovery에서 Kubernetes 실행 후크 템플릿을 관리합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
