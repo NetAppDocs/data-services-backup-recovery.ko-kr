@@ -86,7 +86,7 @@ https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/concept-lic
 다음 링크를 사용하여 클라우드 공급업체 마켓플레이스에서 NetApp Backup and Recovery 를 구독하세요.
 
 * AWS: https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["NetApp Intelligent Services 의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^] .
-* 하늘빛: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["NetApp Intelligent Services 의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^] .
+* Azure: https://marketplace.microsoft.com/en-us/product/netapp.cloud-manager?tab=Overview["NetApp Intelligent Services 의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^].
 * 구글 클라우드: https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["NetApp Intelligent Services 의 가격 세부 정보를 보려면 Marketplace로 이동하세요."^] .
 
 
@@ -114,7 +114,7 @@ AWS를 사용하면 연간 계약이 두 개 제공됩니다. https://aws.amazon
 
 
 
-Azure를 사용하면 연간 계약 2개를 이용할 수 있습니다. https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["Azure Marketplace 페이지"^] Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템의 경우:
+Azure를 사용하는 경우 Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템에 대해  https://marketplace.microsoft.com/en-us/product/netapp.netapp-bluexp["Azure Marketplace 페이지"^]에서 두 가지 연간 계약 옵션이 제공됩니다.
 
 * Cloud Volumes ONTAP 데이터와 온프레미스 ONTAP 데이터를 백업할 수 있는 "클라우드 백업" 플랜입니다.
 +

@@ -173,7 +173,7 @@ Azure와 콘솔 모두에 대한 라이선스 요구 사항을 확인해야 합�
 
 * 클러스터에 대한 NetApp Backup and Recovery 활성화하려면 먼저 Azure에서 PAYGO(Pay-as-you-go) 콘솔 마켓플레이스 상품을 구독하거나 NetApp 에서 NetApp Backup and Recovery BYOL 라이선스를 구매하여 활성화해야 합니다.  이러한 라이선스는 귀하의 계정에 적용되며 여러 시스템에서 사용할 수 있습니다.
 +
-** NetApp Backup and Recovery PAYGO 라이선싱의 경우 구독이 필요합니다. https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace에서 제공하는 NetApp Console"^] .  NetApp Backup and Recovery 대한 청구는 이 구독을 통해 이루어집니다.
+** NetApp Backup and Recovery PAYGO 라이선스를 사용하려면  https://marketplace.microsoft.com/en-us/product/netapp.cloud-manager?tab=Overview["Azure Marketplace에서 제공하는 NetApp Console"^]을(를) 구독해야 합니다. NetApp Backup and Recovery 요금은 이 구독을 통해 청구됩니다.
 ** NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 용량 동안 서비스를 사용할 수 있도록 하는 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"].
 
 
