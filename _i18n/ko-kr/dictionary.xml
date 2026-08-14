@@ -677,26 +677,15 @@
   <block id="628bc160a519e5ae69b6c8aa88610900" category="list-text">*클러스터의 모든 호스트 추가*: 검색 중에 클러스터의 모든 호스트를 NetApp Backup and Recovery 에 추가하려면 이 상자를 선택합니다.</block>
   <block id="b7dfb6860d9af743a7d3f0fe2adfde3d" category="list-text">*선택적 사전 설치 검사 건너뛰기*: 선택적 사전 설치 검사를 건너뛰려면 이 상자를 선택하세요.  예를 들어, 가까운 미래에 메모리나 공간 고려사항이 변경될 예정이고 지금 플러그인을 설치하려는 경우 이 작업을 수행할 수 있습니다.</block>
   <block id="2a9ab4f690bade887dade42f4a0f412b" category="inline-link">NetApp Console 배포 모드</block>
-  <block id="02a0978d1df3ca052a64d05249709cc3" category="summary">클라우드 공급업체에서 사용량에 따른 지불 또는 연간 마켓플레이스 구독을 구매하거나 NetApp 에서 BYOL(Bring Your Own License)을 구매하여 NetApp Backup and Recovery 대한 라이선스를 받을 수 있습니다.  시스템에서 NetApp Backup and Recovery 활성화하고, 프로덕션 데이터의 백업을 생성하고, 백업 데이터를 프로덕션 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
-  <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">계속 읽기 전에 몇 가지 참고 사항을 알려드립니다.</block>
   <block id="0afafddaf42e76b83acff428b8613a7e" category="list-text">NetApp Backup and Recovery BYOL(Bring Your Own License)은 NetApp Console 조직이나 계정과 연결된 모든 시스템에서 사용할 수 있는 플로팅 라이선스입니다.  따라서 기존 BYOL 라이선스에서 충분한 백업 용량을 사용할 수 있는 경우 다른 BYOL 라이선스를 구매할 필요가 없습니다.</block>
-  <block id="98ed4c44ab8a3c8a5b08f8e91a585c40" category="list-text">BYOL 라이선스를 사용하는 경우 PAYGO 구독도 함께 구독하는 것이 좋습니다.  BYOL 라이선스에서 허용하는 것보다 많은 데이터를 백업하거나 라이선스 기간이 만료된 경우, 백업은 사용량에 따라 지불하는 구독을 통해 계속 진행되므로 서비스가 중단되지 않습니다.</block>
   <block id="31f730de563a8876975a231ee55bc4d7" category="list-text">온프레미스 ONTAP 데이터를 StorageGRID 에 백업할 때는 BYOL 라이선스가 필요하지만 클라우드 공급자 스토리지 공간에는 비용이 들지 않습니다.</block>
   <block id="a19866903a3ec5f04991a0a8cddba809" category="inline-link-macro">NetApp Backup and Recovery 사용과 관련된 비용에 대해 자세히 알아보세요.</block>
   <block id="c286e932d30112d9d8d5bbd32a601120" category="paragraph"><block ref="c286e932d30112d9d8d5bbd32a601120" category="inline-link-macro-rx"></block></block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">30일 무료 체험</block>
-  <block id="5c90c4146c60ec1de207d739570727f4" category="paragraph">클라우드 공급업체의 마켓플레이스에서 * NetApp Intelligent Services *에 대한 종량제 구독에 가입하면 NetApp Backup and Recovery 30일 무료 평가판을 이용할 수 있습니다.  무료 체험판은 마켓플레이스 목록에 가입하는 시점부터 시작됩니다.  Cloud Volumes ONTAP 시스템을 배포할 때 마켓플레이스 구독료를 지불한 후 10일 후에 NetApp Backup and Recovery 무료 평가판을 시작하면 무료 평가판을 사용할 수 있는 기간이 20일 남습니다.</block>
   <block id="3bda37bfd2c4e1de30fe6dc83a6b5161" category="inline-link-macro">시스템에서 NetApp Backup and Recovery 등록 취소</block>
-  <block id="bf1d645798cca16870d01c4291e32232" category="paragraph">무료 체험 기간이 종료되면 중단 없이 자동으로 PAYGO 구독으로 전환됩니다.  NetApp Backup and Recovery 계속 사용하지 않기로 결정한 경우<block ref="d386fd58d02a020da97ae73badd35eec" category="inline-link-macro-rx"></block> 체험판이 종료되기 전에 신청하시면 요금이 청구되지 않습니다.</block>
   <block id="8d4d6551ee286317b2a4f297766952f5" category="section-title">무료 체험 종료</block>
-  <block id="6e2ca457da511ed9f33e436ba447bd20" category="paragraph">무료 평가판이 종료된 후에도 NetApp Backup and Recovery 계속 사용하려면 유료 구독을 설정해야 합니다.  NetApp Console 인터페이스에서 청구 섹션으로 이동하여 요구 사항에 맞는 구독 플랜을 선택하면 됩니다.  NetApp Backup and Recovery 계속 사용하고 싶지 않으시면 무료 평가판을 종료하실 수 있습니다.</block>
-  <block id="d512d1c3dcc8425bf55d8cf433aeb7fe" category="paragraph">유료 플랜에 가입하지 않고 무료 체험 기간을 종료하는 경우, 무료 체험 기간이 종료된 후 60일이 지나면 데이터가 자동으로 삭제됩니다. 선택적으로 시스템에서 귀하의 데이터를 즉시 삭제할 수 있습니다.</block>
-  <block id="304ebe491249439866719a481b2c1f8f" category="list-text">NetApp Backup and Recovery 랜딩 페이지에서 *무료 평가판 보기*를 선택합니다.</block>
   <block id="93fc967afa4fe1863c2b23f94955bb42" category="list-text">*무료 체험 종료*를 선택하세요.</block>
-  <block id="e5c5290b0a5e919e86eb32abf4823612" category="list-text">*무료 체험 종료 후 즉시 데이터 삭제*를 선택하면 데이터가 즉시 삭제됩니다.</block>
   <block id="5d85e0c470da58b1efab48b84e308a0b" category="list-text">상자에 *체험판 종료*를 입력하세요.</block>
-  <block id="599188bc76d650bfca3dc06eda5883ba" category="list-text">확인하려면 *끝*을 선택하세요.</block>
-  <block id="b859d3bf6860d3407e06ede252614a4c" category="section-title">NetApp Backup and Recovery PAYGO 구독을 사용하세요</block>
   <block id="a4afc1eb46bd689c898689a130322269" category="paragraph">사용량에 따른 요금 지불의 경우, 단일 구독으로 시간당 객체 스토리지 비용과 NetApp 백업 라이선스 비용을 클라우드 제공업체에 지불합니다.  무료 평가판이 있거나 자체 라이선스를 가져오는 경우(BYOL)에도 Marketplace에서 * NetApp Intelligent Services*를 구독해야 합니다.</block>
   <block id="dcb73ed45cf0756ddb50a72607921a55" category="list-text">구독하면 무료 체험 기간이 종료된 후에도 서비스가 중단되지 않습니다. 체험 기간이 종료되면 백업한 데이터 양에 따라 시간당 요금이 청구됩니다.</block>
   <block id="09734c1f0feb893a640f1a5c4dad5854" category="list-text">BYOL 라이선스에서 허용하는 것보다 많은 데이터를 백업하는 경우, 데이터 백업 및 복원 작업은 사용량에 따른 요금제 구독을 통해 계속 진행됩니다.  예를 들어, 10TiB BYOL 라이선스가 있는 경우 10TiB를 초과하는 모든 용량은 PAYGO 구독을 통해 요금이 청구됩니다.</block>
@@ -723,13 +712,11 @@
   <block id="f201c550f444b5128aeb063bf930d1e2" category="inline-link">구독을 Azure 자격 증명과 연결합니다.</block>
   <block id="bb2a4ab21c5ccf409e44b59faacde869" category="paragraph">이 옵션을 사용하려면 Marketplace 페이지에서 구독을 설정한 다음<block ref="ee52880e3726e54668f91a4b65aa4b29" category="inline-link-rx"></block> . 콘솔에서 Azure 자격 증명에 활성 구독을 하나만 할당할 수 있으므로 이 연간 계약 구독을 사용하여 Cloud Volumes ONTAP 시스템에 대한 비용도 지불해야 합니다.</block>
   <block id="78cb5753f269296b8cbe81558d864e4f" category="paragraph">GCP를 사용하는 경우 NetApp 영업 담당자에게 문의하여 연간 계약을 구매하세요.  해당 계약은 Google Cloud Marketplace에서 비공개 제안으로 제공됩니다.</block>
-  <block id="f795b2e1a1434e0b0c432d97df55b423" category="section-title">NetApp Backup and Recovery BYOL 라이선스 사용</block>
   <block id="70af97100aa32faf0090b5c729f50df0" category="paragraph">NetApp 의 BYOL(Bring Your Own License)은 1년, 2년 또는 3년 기간을 제공합니다. 백업되는 소스 ONTAP 볼륨의 논리적 사용 용량(효율성 고려 전)을 기준으로 계산된, 보호하는 데이터에 대해서만 비용을 지불합니다.  이 용량은 프런트엔드 테라바이트(FETB)라고도 합니다.</block>
   <block id="b323a5cd735592858ae199d4fb24a0ed" category="paragraph">BYOL NetApp Backup and Recovery 라이선스는 NetApp Console 조직 또는 계정과 연결된 모든 시스템에서 총 용량이 공유되는 플로팅 라이선스입니다.  ONTAP 시스템의 경우 CLI 명령을 실행하여 필요한 용량을 대략적으로 추정할 수 있습니다.<block ref="2a47fed7b3c4b7d59e03f10c018cf5cc" prefix=" " category="inline-code"></block> 백업하려는 볼륨에 대해서.</block>
   <block id="0e1664404f2f5bf6df7854c143d822d8" category="paragraph">NetApp Backup and Recovery BYOL 라이선스가 없는 경우 콘솔 오른쪽 하단에 있는 채팅 아이콘을 클릭하여 라이선스를 구매하세요.</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">자세한 내용은 여기를 참조하세요</block>
   <block id="44f0b39025659271b58ac6522acd1947" category="paragraph">선택적으로, 사용하지 않을 Cloud Volumes ONTAP 용 노드 기반 라이선스가 할당되지 않은 경우 동일한 달러 환산 가치와 동일한 만료 날짜를 갖는 NetApp Backup and Recovery 라이선스로 전환할 수 있습니다.<block ref="75023a227952ebf9289e6265901bd994" category="inline-link-rx"></block> .</block>
-  <block id="7ca2437ae36844293233999dbc49cda6" category="paragraph">NetApp Console 사용하여 BYOL 라이선스를 관리합니다.  콘솔에서 새로운 라이선스를 추가하고, 기존 라이선스를 업데이트하고, 라이선스 상태를 볼 수 있습니다.</block>
   <block id="053b4884f108724f51751445f3fa132f" category="inline-link">라이선스 추가에 대해 알아보세요</block>
   <block id="ecc3952d3e2cfa4951474032864c7c9a" category="paragraph"><block ref="b3309669576eb9e10c25cb147fe4e7a8" category="inline-link-rx"></block>.</block>
   <block id="31c503d495627df1adea02e470ba00e6" category="summary">NetApp Console 사용하여 NetApp Backup and Recovery 서비스에 로그인합니다.</block>
@@ -5617,13 +5604,7 @@
   <block id="07c87e1a7ad1cef370fca4fd17f11406" category="list-text">시스템을 선택하고 클러스터를 선택하십시오. 페이지 오른쪽 정보 패널에서 백업 및 복구 서비스의 *활성화* 버튼을 선택하십시오.</block>
   <block id="650a46b766c48de5003178d3c64c3e35" category="list-text">*백업 볼륨*을 선택합니다.</block>
   <block id="c02715a613f1d27ea0d77a20a3d25376" category="paragraph">NetApp Console 또는 NetApp Console(로컬 배포) 사용 여부에 따라, 클라우드 공급업체로부터 *NetApp Intelligent Services*에 대한 종량제(PAYGO) 또는 연간 마켓플레이스 구독을 구매하거나 NetApp에서 BYOL(사용자 라이선스 보유) 라이선스를 구매하여 NetApp Backup and Recovery 라이선스를 취득할 수 있습니다. 시스템에서 NetApp Backup and Recovery를 활성화하고, 운영 데이터의 백업을 생성하고, 백업 데이터를 운영 시스템으로 복원하려면 유효한 라이선스가 필요합니다.</block>
-  <block id="d63e296034547bf26cb0cadf2f6380a7" category="list-text">NetApp Console을 사용하여 Backup and Recovery를 사용하는 경우, 사용량 기반 요금제(PAYGO) 라이선스를 구독하거나 자체 라이선스 구매(BYOL) 라이선스를 구입할 수 있습니다.</block>
   <block id="4f423dab0b2a066d43aa7c2770125156" category="list-text">NetApp Console 로컬 배포와 함께 Backup and Recovery를 사용하는 경우, BYOL(Bring Your Own License) 라이선스만 구매할 수 있습니다.</block>
-  <block id="c25cac16b9617f72907c0630edc1b01c" category="paragraph">NetApp Backup and Recovery에 대한 라이선스를 설정하십시오.</block>
-  <block id="1ee6f4a6521039e0ae82dbbbba308a27" category="section-title">마켓플레이스 또는 BYOL 라이선스를 통한 연간 계약 사용</block>
-  <block id="f553546046684a79a8a9f772a3ba1d69" category="section-title">NetApp Backup and Recovery 로컬 배포를 위한 라이선스 설정</block>
-  <block id="81f4d3c9ac626f319c4045d07dc88068" category="paragraph">NetApp Console의 온프레미스 버전에 대한 라이선스를 설정합니다.</block>
-  <block id="e686efc70811cf9c1330fb2efbfde349" category="paragraph">NetApp Console 로컬 배포를 사용하여 BYOL 라이선스를 관리할 수 있습니다. 콘솔에서 새 라이선스를 추가하고, 기존 라이선스를 업데이트하고, 라이선스 상태를 확인할 수 있습니다.</block>
   <block id="703de1576e07d34f2860aa3e1da40baf" category="list-text">NetApp Console을 사용 중인 경우 웹 브라우저를 열고 다음 주소로 이동하십시오.<block ref="d6205946f936217747639e85e1340e8f" category="inline-link-rx"></block></block>
   <block id="5cb1f0001bf54c75c97113f354e00531" category="list-text">NetApp Console 로컬 배포를 사용하는 경우 웹 브라우저를 열고 로컬 Console 배포의 웹 UI IP 주소로 이동하십시오.</block>
   <block id="7c55093665daac77f8dd76430cb75dfa" category="inline-link">NetApp Console 로컬 배포에서 알림에 대한 알림 규칙 구성</block>
@@ -5809,4 +5790,30 @@
   <block id="053401f3d9ace97002dd341287d9ebb1" category="list-text">Azure:<block ref="f4515f843bc62e0cde60bea0de056fd5" category="inline-link-rx"></block>.</block>
   <block id="a76ddbef42127fde7d9134d4314bebdd" category="paragraph">Azure를 사용하는 경우 Cloud Volumes ONTAP 및 온프레미스 ONTAP 시스템에 대해 <block ref="25abf8f644a5c025c626f91c32f89a15" category="inline-link-rx"></block>에서 두 가지 연간 계약 옵션이 제공됩니다.</block>
   <block id="55226b5c9d4512e179f5677e92c03e76" category="list-text">NetApp Backup and Recovery PAYGO 라이선스를 사용하려면 <block ref="404638c3cd4ff4f928bcc623b020a5df" category="inline-link-rx"></block>을(를) 구독해야 합니다. NetApp Backup and Recovery 요금은 이 구독을 통해 청구됩니다.</block>
+  <block id="2f5c0cdf23fd1d83e8957259864d7504" category="summary">NetApp Backup and Recovery 라이선스는 클라우드 공급업체에서 종량제 또는 연간 마켓플레이스 구독을 구매하거나 NetApp에서 BYOL(Bring-Your-Own-License)을 구매하여 취득할 수 있습니다.</block>
+  <block id="5efdbe70fa40d9f38adfb6f4b09b9950" category="paragraph">라이선스 작동 방식에 대한 몇 가지 참고 사항:</block>
+  <block id="4ecebde206e234cc155e8a344bd3bba8" category="list-text">ONTAP Volumes 워크로드를 사용하는 경우 라이선스 없이도 볼륨을 검색하고 복원할 수 있습니다. 하지만 볼륨을 보호(백업)해야 하는 경우에는 라이선스를 구매해야 합니다.</block>
+  <block id="8ac0c776ec80b47063ea03e1287a8a48" category="list-text">NetApp Console에서 BYOL 라이선스를 사용하는 경우, 종량제(PAYGO) 구독도 함께 가입하는 것이 좋습니다. BYOL 라이선스에서 허용된 용량을 초과하여 데이터를 백업하거나 라이선스 기간이 만료되더라도, 종량제(PAYGO) 구독을 통해 백업이 계속되므로 서비스 중단이 발생하지 않습니다.</block>
+  <block id="dd1244bc2b4c33b486f92809fd26eae2" category="paragraph">NetApp Backup and Recovery에는 세 가지 라이선스 옵션이 있습니다.</block>
+  <block id="5a7ebe04758dcbebfc8904dfdffebbc0" category="list-text">NetApp에서 BYOL(Bring-Your-Own-License)이라고도 하는 직접 라이센스를 구매합니다. 이 옵션은 NetApp Console과 Console 로컬 배포 모두에 적용됩니다.</block>
+  <block id="eb5d26d67b856ebf71b998adb69af3de" category="list-text">하이퍼스케일러 마켓플레이스에서 연간 계약을 구매하십시오. 이 옵션은 NetApp Console에만 적용됩니다.</block>
+  <block id="a76b9ce0651abc0570c1ff416f15f0b5" category="list-text">하이퍼스케일러 마켓플레이스에서 사용량 기반(PAYGO) 라이선스를 구독합니다. 이 옵션은 NetApp Console에만 적용됩니다.</block>
+  <block id="633001bd3e29e073a9170c112245d8eb" category="paragraph">ONTAP Volumes 워크로드를 제외한 모든 라이선스가 없는 워크로드에 대해 NetApp Backup and Recovery 30일 무료 평가판을 사용할 수 있습니다. 워크로드를 사용하기 시작할 때, 리소스를 검색하기 전에 평가판을 시작할 수 있습니다. 평가판을 시작하면 NetApp Backup and Recovery 홈 페이지의 *무료 평가판*에서 평가판 상태와 사용 용량을 확인할 수 있습니다.</block>
+  <block id="a1c09b267b15d9abb4abc0a353f38d9e" category="paragraph">NetApp Backup and Recovery에 로그인하면 나타나는 홈 페이지에서 언제든지 워크로드에 대한 무료 평가판을 종료할 수 있습니다. 무료 평가판 기간이 종료된 후에도 NetApp Backup and Recovery를 계속 사용하려면 NetApp Console 인터페이스의 *Licenses and subscriptions* 섹션에서 유료 구독을 설정해야 합니다. NetApp Backup and Recovery를 더 이상 사용하지 않으려면 유료 플랜을 구독하지 않고도 무료 평가판을 종료할 수 있습니다. 평가판 기간이 종료되기 전에 <block ref="d386fd58d02a020da97ae73badd35eec" category="inline-link-macro-rx"></block> 종료하면 요금이 부과되지 않습니다.</block>
+  <block id="0aac3c6dd03cf6d4e8ca51d69072f150" category="list-text">NetApp Backup and Recovery 홈 페이지에서 *무료 체험* 항목 아래에 종료할 무료 체험판을 선택하십시오.</block>
+  <block id="7b6b8ad5edbe17678fa98a5ef86c7fb9" category="list-text">확인하려면 *체험 종료*를 선택합니다.</block>
+  <block id="a9d2203ef3099da24a574d6c0c78c420" category="section-title">BYOL 라이선스 사용</block>
+  <block id="317dca095a5aeada6a0b52d1d48e704b" category="paragraph">NetApp Console 또는 Console 로컬 배포를 사용하여 BYOL 라이선스를 관리할 수 있습니다. 콘솔에서 새 라이선스를 추가하고, 기존 라이선스를 업데이트하고, 라이선스 상태를 확인할 수 있습니다.</block>
+  <block id="14d6933e870fc5ba7090e0dd8e19090f" category="section-title">마켓플레이스 라이선스를 사용합니다(NetApp Console에만 적용됨)</block>
+  <block id="cfe9e403b5c5bc984ca85f982761e1f5" category="section-title">NetApp Backup and Recovery PAYGO 구독 사용(NetApp Console에만 해당)</block>
+  <block id="5a474070d931997b2be1cddaf1854c05" category="section-title">라이센스가 만료되면 어떻게 됩니까?</block>
+  <block id="083677780056e9fc5dae49e6a71d0358" category="paragraph">백업 및 복구 라이선스가 만료되면:</block>
+  <block id="f2e3a4590b9900025cd853f75bfa6758" category="list-text">기존 백업 정책에 따른 백업 및 복원은 계속해서 작동합니다.</block>
+  <block id="32b82b9e3d79607ecd0f2b1e699a015d" category="list-text">새로운 백업 정책을 생성하거나 추가 워크로드 및 데이터 저장소로 보호 범위를 확장할 수 없습니다.</block>
+  <block id="17f9b4552ffa5050f9c2883f166c9bcf" category="list-text">새로운 백업 및 복구 기능과 향상된 기능을 사용할 수 없습니다.</block>
+  <block id="ed463bcf7129e69f84536ce086c5ca71" category="list-text">NetApp 기술 지원의 백업 및 복구 관련 기술 지원은 더 이상 제공되지 않습니다.</block>
+  <block id="9dbe18255749234b9167dd6f2487c4c3" category="paragraph">다음 용도로 라이선스를 갱신하십시오:</block>
+  <block id="e925e590a02502efcacb9c27366f2977" category="list-text">데이터베이스, 가상 머신 및 Kubernetes 워크로드의 애플리케이션 정합성 보장 백업을 위한 정책을 포함하여 백업 정책을 생성하고 수정합니다.</block>
+  <block id="bd0fc1d90d95f8259fbb2a77c47166c8" category="list-text">새로운 백업 및 복구 기능과 향상된 기능을 사용합니다.</block>
+  <block id="f724a122832f4cd3fdfc151421f7e241" category="list-text">NetApp 기술 지원을 계속 받으십시오.</block>
 </blocks>

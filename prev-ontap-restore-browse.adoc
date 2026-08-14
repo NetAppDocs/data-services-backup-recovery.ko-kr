@@ -57,7 +57,7 @@ NOTE: Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복�
 
  a| 
 * 온프레미스 ONTAP 시스템
-* Cloud Volumes ONTAP
+* AWS의 Cloud Volumes ONTAP
 
 
 
@@ -72,7 +72,7 @@ NOTE: Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복�
 
  a| 
 * 온프레미스 ONTAP 시스템
-* Cloud Volumes ONTAP
+* Azure의 Cloud Volumes ONTAP
 
 
 
@@ -87,7 +87,7 @@ NOTE: Azure 보관 저장소에서 StorageGRID 시스템으로 데이터를 복�
 
  a| 
 * 온프레미스 ONTAP 시스템
-* Cloud Volumes ONTAP
+* Google의 Cloud Volumes ONTAP
 
 
 
