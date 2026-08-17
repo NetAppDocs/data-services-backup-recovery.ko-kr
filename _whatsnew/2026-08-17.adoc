@@ -1,0 +1,44 @@
+= Hyper-V 워크로드 개선 사항
+:allow-uri-read: 
+
+
+
+
+[[hyper-v-workloads-enhancements]]
+=== Hyper-V 워크로드 개선 사항
+
+이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+*오브젝트 스토리지 백업을 다른 위치로 복원*: 이제 Hyper-V 가상 머신, 파일 및 폴더를 오브젝트 스토리지에서 다른 스토리지 위치로 복원할 수 있습니다.
+
+Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용하여 Hyper-V 워크로드를 보호하는 방법에 대해 알아보십시오."]를 참조하십시오.
+
+
+
+[[kubernetes-workloads-enhancements]]
+=== Kubernetes 워크로드 개선 사항
+
+이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *Trident Protect 26.08*: 이번 릴리스에는 Trident Protect 26.08가 포함되어 있습니다.
+* *백업 재시도*: 이제 Kubernetes 보호 정책의 고급 설정에서 백업 재시도를 활성화하고 재시도 횟수 및 재시도 간격을 구성할 수 있습니다.
+* *부분 백업 성공*: 이제 Kubernetes 보호 정책의 고급 설정을 통해 개별 리소스에 장애가 발생하더라도 백업을 계속 진행하여 백업 작업이 부분적으로 성공한 것으로 처리할 수 있습니다. 이를 통해 백업 작업 중 일부 리소스에 장애가 발생하더라도 백업된 리소스를 복원할 수 있습니다.
+* *크래시 일관성 및 VM 일관성 백업*: NetApp Console용 백업 및 복구 서비스는 이제 크래시 일관성 또는 VM 일관성 백업이나 스냅샷을 생성하는 보호 정책 구성을 지원합니다. 또한 보호 작업 중에 VM을 일시 중지하는 방법을 사용자 지정할 수 있습니다.
+* *콘솔 에이전트 IP 주소 변경 시 Kubernetes 클러스터 재연결*: NetApp Console 서비스용 Backup and Recovery를 사용하면 이제 에이전트의 IP 주소가 변경될 경우 클러스터를 콘솔 에이전트에 다시 연결할 수 있습니다.
+* *클러스터 새 콘솔 에이전트로 마이그레이션*: NetApp Console 서비스용 Backup and Recovery를 사용하면 기존 에이전트에 장애가 발생하거나 삭제된 경우 클러스터를 새 콘솔 에이전트로 마이그레이션하여 애플리케이션 보호 기능을 중단 없이 유지할 수 있습니다.
+
+
+Kubernetes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["NetApp Backup and Recovery를 사용하여 Kubernetes 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하세요.
+
+
+
+[[oracle-database-workloads-enhancement]]
+=== Oracle Database 워크로드 향상
+
+이번 릴리스에서 Oracle 데이터베이스 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+* *플러그형 데이터베이스(PDB) 복원*: 이제 개별 플러그형 데이터베이스(PDB) 및 PDB 테이블스페이스를 복원할 수 있으며, 특정 시점 복구도 가능합니다.
+* *플러그형 데이터베이스(PDB) 복제*: 이제 기존 대상 컨테이너 데이터베이스(CDB)에 단일 PDB를 복제할 수 있으며, 전체 컨테이너 데이터베이스를 복제할 때 선택적으로 PDB를 제외할 수도 있습니다.
+
+
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.

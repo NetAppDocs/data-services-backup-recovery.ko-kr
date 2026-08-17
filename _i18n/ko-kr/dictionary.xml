@@ -4860,7 +4860,6 @@
   <block id="a1f316919d6ee6dc4555dd8c215dd639" category="list-text">VM 간 복원(다른 Linux VM으로 복원)을 위해서는 대상 VM에서 SSH가 실행 중이어야 합니다.</block>
   <block id="0904d2f230fc0f0277b7da11a64a4fdb" category="list-text">운영 체제가 다른 게스트 간에는 파일이나 폴더를 복원할 수 없습니다(다른 VM으로 복원할 경우 대상 OS 유형은 소스 OS 유형과 동일해야 합니다).</block>
   <block id="dbbb5df4d99995be20065b232a8370ff" category="list-text">*대상 스토리지* 섹션(오브젝트 스토리지에서 복원할 때만 표시됨):</block>
-  <block id="60dda7eb5d8d89865794c9953a4b00ab" category="list-text">*기본 스토리지 위치 변경*: 소스 스토리지 위치에 접근할 수 없거나 용량이 가득 찬 경우 오브젝트 스토어 백업을 다른 스토리지 VM으로 복원하려면 이 옵션을 활성화하십시오. 사용할 다른 클러스터, 스토리지 VM 또는 애그리게이트를 선택하십시오.</block>
   <block id="b07f4d391521e556166d0e8a85f249d6" category="admonition">NetApp에서는 에이전트 IP 주소가 변경될 경우 발생할 수 있는 문제를 방지하기 위해 Kubernetes 워크로드에 사용하는 Console 에이전트에 고정 IP 주소를 할당할 것을 강력히 권장합니다.</block>
   <block id="1873f6028647ed72cee9a7bccf68c491" category="summary">NetApp Backup and Recovery를 사용하면 찾아보기 및 복원 기능을 통해 ONTAP 데이터를 복원할 수 있습니다.</block>
   <block id="9b0b495cd3a28a2977dbab61bc1cbce8" category="summary">검색 및 복원 기능을 사용하여 ONTAP 백업 파일에서 볼륨, 폴더 또는 파일을 복구할 수 있습니다.</block>
@@ -5180,7 +5179,6 @@
   <block id="f21c672ce008bffc75e9cebaa985c8b8" category="paragraph">열려 있는 가상 디스크 마운트 세션 목록이 표시됩니다.</block>
   <block id="da51d3c21777acf76b87932de6839d64" category="list-text">선택적으로 세션을 사용하여 게스트 VM에 파일과 폴더를 복원하려면 세션의 작업 메뉴 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block>를 열고 *파일 및 폴더 복원*을 선택하십시오.</block>
   <block id="57c9526981addf2ea70c6ad409673cb5" category="list-text">선택적으로 세션을 삭제하려면 세션의 작업 메뉴 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block>를 열고 *삭제*를 선택하십시오.</block>
-  <block id="970e7dbe358429eacf37bb0e37943138" category="list-text">객체 스토리지 백업에서 복원(원본 위치로만 가능)</block>
   <block id="4b59b9c80f0f0e40294e53eb75b4e004" category="list-text">(운영, 2차 스토리지 및 오브젝트 스토리지에서) 원래 위치로 복원</block>
   <block id="bff6f5877ada2718589866425ae83e38" category="doc">NetApp Backup and Recovery에서 Hyper-V 백업 정책을 생성하고 관리합니다</block>
   <block id="7c54de5e880bd010125642ffb949ccad" category="paragraph">NetApp Backup and Recovery를 사용하면 백업 빈도, 백업 수행 시간 및 보존할 백업 파일 수를 제어하는 자체 Hyper-V 백업 정책을 만들 수 있습니다.</block>
@@ -5816,4 +5814,22 @@
   <block id="e925e590a02502efcacb9c27366f2977" category="list-text">데이터베이스, 가상 머신 및 Kubernetes 워크로드의 애플리케이션 정합성 보장 백업을 위한 정책을 포함하여 백업 정책을 생성하고 수정합니다.</block>
   <block id="bd0fc1d90d95f8259fbb2a77c47166c8" category="list-text">새로운 백업 및 복구 기능과 향상된 기능을 사용합니다.</block>
   <block id="f724a122832f4cd3fdfc151421f7e241" category="list-text">NetApp 기술 지원을 계속 받으십시오.</block>
+  <block id="d649bc1632422c59f70f207f44b9bd46" category="paragraph">이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.</block>
+  <block id="f24ced363c199d867c90ec2cb7734252" category="paragraph">*오브젝트 스토리지 백업을 다른 위치로 복원*: 이제 Hyper-V 가상 머신, 파일 및 폴더를 오브젝트 스토리지에서 다른 스토리지 위치로 복원할 수 있습니다.</block>
+  <block id="9836134eb11f1353834ea33101d25681" category="inline-link">NetApp Backup and Recovery를 사용하여 Hyper-V 워크로드를 보호하는 방법에 대해 알아보십시오.</block>
+  <block id="02b4e2b0b1ffdd4b0919e2e3430f47a2" category="paragraph">Hyper-V 워크로드 보호에 대한 자세한 내용은<block ref="ff9e4811de6c06d1343d50a5a2fb4ef4" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="d7a71b14f458c01c992ae6ab1d9419fb" category="list-text">*Trident Protect 26.08*: 이번 릴리스에는 Trident Protect 26.08가 포함되어 있습니다.</block>
+  <block id="a246bba4bc1bf6be5dbc5f0eef6fa916" category="list-text">*백업 재시도*: 이제 Kubernetes 보호 정책의 고급 설정에서 백업 재시도를 활성화하고 재시도 횟수 및 재시도 간격을 구성할 수 있습니다.</block>
+  <block id="af4a914ceb04d24e26988f7034d17a6a" category="list-text">*부분 백업 성공*: 이제 Kubernetes 보호 정책의 고급 설정을 통해 개별 리소스에 장애가 발생하더라도 백업을 계속 진행하여 백업 작업이 부분적으로 성공한 것으로 처리할 수 있습니다. 이를 통해 백업 작업 중 일부 리소스에 장애가 발생하더라도 백업된 리소스를 복원할 수 있습니다.</block>
+  <block id="51d0bd2fc2cb031a5bd97ec4521df850" category="list-text">*크래시 일관성 및 VM 일관성 백업*: NetApp Console용 백업 및 복구 서비스는 이제 크래시 일관성 또는 VM 일관성 백업이나 스냅샷을 생성하는 보호 정책 구성을 지원합니다. 또한 보호 작업 중에 VM을 일시 중지하는 방법을 사용자 지정할 수 있습니다.</block>
+  <block id="f1aeeb7adfac5302d8957879854e8855" category="list-text">*콘솔 에이전트 IP 주소 변경 시 Kubernetes 클러스터 재연결*: NetApp Console 서비스용 Backup and Recovery를 사용하면 이제 에이전트의 IP 주소가 변경될 경우 클러스터를 콘솔 에이전트에 다시 연결할 수 있습니다.</block>
+  <block id="137aac5acf6a89b5f2b8d01617331ec5" category="list-text">*클러스터 새 콘솔 에이전트로 마이그레이션*: NetApp Console 서비스용 Backup and Recovery를 사용하면 기존 에이전트에 장애가 발생하거나 삭제된 경우 클러스터를 새 콘솔 에이전트로 마이그레이션하여 애플리케이션 보호 기능을 중단 없이 유지할 수 있습니다.</block>
+  <block id="5bac8342d3d15811fd4569a62898855c" category="inline-link">NetApp Backup and Recovery를 사용하여 Kubernetes 워크로드를 보호하는 방법에 대해 알아보십시오.</block>
+  <block id="9768ac88d7eeb5d6d2192e590de89bb4" category="paragraph">Kubernetes 워크로드 보호에 대한 자세한 내용은<block ref="1288e5e7d4fc4b4cb3f5e18b91f79147" category="inline-link-rx"></block>을 참조하세요.</block>
+  <block id="c85cd7cc7711f70f8bc51d35495063e2" category="section-title">Oracle Database 워크로드 향상</block>
+  <block id="26d43fe933dfc83c3004371ec611ca0f" category="list-text">*플러그형 데이터베이스(PDB) 복원*: 이제 개별 플러그형 데이터베이스(PDB) 및 PDB 테이블스페이스를 복원할 수 있으며, 특정 시점 복구도 가능합니다.</block>
+  <block id="ba1d750ea9570e1e14902f85cdd21fbd" category="list-text">*플러그형 데이터베이스(PDB) 복제*: 이제 기존 대상 컨테이너 데이터베이스(CDB)에 단일 PDB를 복제할 수 있으며, 전체 컨테이너 데이터베이스를 복제할 때 선택적으로 PDB를 제외할 수도 있습니다.</block>
+  <block id="c7b95907073ba49194dd07ae01b56f96" category="list-text">*대상 저장소* 섹션(오브젝트 저장소에서 복원할 때만 표시됨)에서:</block>
+  <block id="f771ab6fc3300e0b07bde061e3f606f7" category="list-text">*기본 저장 위치 변경*: 소스 저장 위치에 접근할 수 없거나 용량이 가득 찬 경우 오브젝트 저장소 백업을 다른 위치로 복원하려면 이 옵션을 활성화하십시오. 사용할 다른 클러스터, 스토리지 VM 또는 애그리게이트를 선택하십시오.</block>
+  <block id="7c3780c8bbc09e634d77ec9249acfb5c" category="section-title">2026년 8월 17일</block>
 </blocks>
