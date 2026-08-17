@@ -409,8 +409,8 @@ NOTE: ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공�
 NOTE: NetApp에서는 에이전트 IP 주소가 변경될 경우 발생할 수 있는 문제를 방지하기 위해 Kubernetes 워크로드에 사용하는 Console 에이전트에 고정 IP 주소를 할당할 것을 강력히 권장합니다.
 
 * 기본 ONTAP 시스템(ASA r2 시스템은 지원되지 않음)
-* NetApp Trident 25.06 ~ 26.02.1
-* NetApp Trident Protect 26.06 (검색 중에 Kubernetes 클러스터에 설치됨)
+* NetApp Trident 25.06~26.06
+* NetApp Trident Protect 26.08 이상(검색 중에 Kubernetes 클러스터에 설치됨)
 * Kubernetes 클러스터 - 지원되는 Kubernetes 배포판 및 버전에는 https://docs.netapp.com/us-en/trident/trident-protect/trident-protect-requirements.html["Trident Protect"]에서 지원하는 것들이 포함됩니다.
 +
 ** Kubernetes 클러스터, Trident Protect 커넥터 및 Trident Protect 프록시 간의 아웃바운드 방향에서 TCP 포트 443이 필터링되지 않았는지 확인하십시오.

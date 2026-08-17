@@ -1463,10 +1463,6 @@
   <block id="3ce2a491ae98ac2e9d6b23907b1dcd27" category="list-text">*객체 저장소에서 보관 스토리지로 백업을 계층화*: 보관 스토리지(예: AWS Glacier)로 백업을 계층화하려는 경우 계층 옵션과 보관할 일수를 선택합니다.</block>
   <block id="a4ddb079e754d05f977f299ecb91e78e" category="list-text">*백업 대상*: 등록된 개체 스토리지 대상을 선택하세요.  백업 환경 내에서 대상에 액세스할 수 있는지 확인하세요.</block>
   <block id="749ef9bfd50fd41baeffea89c1ed7056" category="list-text">*공급자*: * StorageGRID*를 선택하세요.</block>
-  <block id="40f2be2919d2f491fc533133b0784afb" category="section-title">정책에서 고급 설정 구성</block>
-  <block id="5a0e602c662c4aadb0e187c46db2f1be" category="list-text">*정책 &gt; 고급* 설정 섹션에서 *고급 작업 선택* 메뉴를 선택하여 고급 설정 목록에서 선택합니다.</block>
-  <block id="e9dbaabb96bed2c8d241fb55527037d6" category="list-text">보고 싶거나 변경하고 싶은 설정을 활성화한 다음 *수락*을 선택하세요.</block>
-  <block id="13c1455885d16af64f1bb96c4e48680a" category="list-text">다음 정보를 제공하세요.</block>
   <block id="ebc38593846bd56262189cdea41159c0" category="admonition">스냅샷 빈도를 1시간으로 설정하면 최대 지연 시간과 재시도 횟수는 45분을 초과해서는 안 됩니다.</block>
   <block id="febcf1de845ae5c111f7fe2fdf9a0023" category="list-text">*랜섬웨어 검사*: 각 버킷에서 랜섬웨어 검사를 활성화할지 여부를 선택합니다. 이를 위해서는 개체 스토리지에 DataLock 잠금이 필요합니다. 검사 빈도를 일 단위로 입력하세요. 이 옵션은 AWS 및 Microsoft Azure 개체 스토리지에 적용됩니다. 클라우드 제공업체에 따라 이 옵션을 사용하면 추가 요금이 부과될 수 있습니다.</block>
   <block id="5c9b86ff3ed09d60fd7e04707b95622a" category="paragraph">또한 다음 옵션을 구성하세요.</block>
@@ -5189,7 +5185,6 @@
   <block id="f7b0b716a4d4de499a271912b85547c3" category="list-text">*백업 후 아카이브 로그 정리*: 로그 백업이 활성화된 경우, 이 기능을 선택적으로 활성화하여 NetApp Backup and Recovery에서 Oracle 아카이브 로그를 보관하는 기간을 제한할 수 있습니다. 보존 기간과 NetApp Backup and Recovery에서 아카이브 로그를 삭제해야 하는 위치를 선택할 수 있습니다.</block>
   <block id="588a429e835850f3df8205535e7b98e2" category="list-text">*공급자*: Kubernetes 애플리케이션 리소스를 호스팅하는 스토리지 공급자를 선택하고 공급자 인증을 위한 자격 증명을 입력합니다.</block>
   <block id="5f635536567962115552d73c6587c483" category="list-text">*무결성 검사 활성화*: 객체 스토리지에 대한 무결성 검사(스냅샷 잠금)를 활성화할지 여부를 선택합니다. 이를 통해 백업의 유효성과 복원 가능성을 보장할 수 있습니다. 무결성 검사 빈도는 기본적으로 7일로 설정되어 있습니다. 백업이 수정되거나 삭제되는 것을 방지하려면 *무결성 검사* 옵션을 선택하십시오. 검사는 최신 스냅샷에 대해서만 수행됩니다. 최신 스냅샷에 대한 무결성 검사를 활성화 또는 비활성화할 수 있습니다.</block>
-  <block id="c0801323bf0a74b01c384bdda3518dd5" category="paragraph">정책에서 고급 설정을 선택적으로 구성할 수 있습니다. 이러한 옵션은 모든 백업 아키텍처 및 스토리지 대상에 사용할 수 있습니다. 사용 가능한 고급 옵션은 페이지 상단에서 선택한 워크로드에 따라 다르므로 여기에 설명된 일부 옵션은 모든 워크로드에 적용되지 않을 수 있습니다.</block>
   <block id="6a4ad7a285f68160638ebf2d62693e0b" category="list-text">*VM 설정*:</block>
   <block id="3000cf6903596d6eddfc672177a67f40" category="list-text">*애플리케이션 정합성 보장 스냅샷 사용*: 애플리케이션 정합성 보장 스냅샷을 생성하려면 이 옵션을 활성화하십시오. 이 기능을 사용하려면 VM에서 Hyper-V 통합 서비스와 VSS가 모두 실행 중이어야 합니다. 두 서비스 중 하나라도 실행 중이 아니면 충돌 시에도 정합성 보장 백업이 수행됩니다. 애플리케이션 정합성 보장을 활성화하면 백업 시간과 스토리지 사용량이 모두 증가할 수 있습니다. 또한 VM의 게스트 메모리(RAM)는 애플리케이션 정합성 보장 스냅샷에 포함되지 않습니다.</block>
   <block id="250dc6eb1ac44efaa2d588f670d05490" category="list-text">*백업 재시도*: 작업 실패 또는 중단 시 재시도하려면 *실패 시 작업 재시도 활성화*를 선택하십시오. 스냅샷 및 백업 작업의 최대 재시도 횟수와 재시도 시간 간격을 입력하십시오. 재시도 횟수는 10회 미만이어야 합니다.</block>
@@ -5656,8 +5651,6 @@
   <block id="951c1419bc6678a290628918eb471078" category="paragraph"><block ref="ea5b8c83a53307fc473cf87abf76dc05" category="inline-link-rx"></block>을 참조하여 ID 및 액세스에 대한 정보를 확인하십시오.</block>
   <block id="614c9b8c0079226ae2c76caf00bdc9d7" category="list-text">ASP.NET Core Runtime 10.0.10 Hosting Bundle</block>
   <block id="2c03c04d013cd18a2b08ffdaa3807fc6" category="list-text">PowerShell 7.6.4</block>
-  <block id="3b93068d4eec990f1969b952fef82849" category="list-text">NetApp Trident 25.06 ~ 26.02.1</block>
-  <block id="c6ee0c0b0d79479e99725d43f4f2b0f8" category="list-text">NetApp Trident Protect 26.06 (검색 중에 Kubernetes 클러스터에 설치됨)</block>
   <block id="e75b3a902ee99b25571be4a98b084a31" category="summary">NetApp Backup and Recovery를 활성화하지 않고도 시스템과 볼륨을 검색할 수 있습니다.</block>
   <block id="bf768851617c703a4014233f58b31de3" category="doc">활성화 없이 ONTAP 시스템 및 볼륨 검색</block>
   <block id="2887d4ffc35ab6898bed2a982c5423a2" category="paragraph">시스템 및 볼륨은 해당 볼륨에 대한 Backup and Recovery를 활성화할 때 또는 NetApp Backup and Recovery를 활성화하기 전에 검색할 수 있습니다. 활성화하지 않고 볼륨을 검색한 경우, 해당 볼륨에 대한 Backup and Recovery를 활성화하기 전까지는 볼륨을 보호할 수 없습니다.</block>
@@ -5832,4 +5825,34 @@
   <block id="c7b95907073ba49194dd07ae01b56f96" category="list-text">*대상 저장소* 섹션(오브젝트 저장소에서 복원할 때만 표시됨)에서:</block>
   <block id="f771ab6fc3300e0b07bde061e3f606f7" category="list-text">*기본 저장 위치 변경*: 소스 저장 위치에 접근할 수 없거나 용량이 가득 찬 경우 오브젝트 저장소 백업을 다른 위치로 복원하려면 이 옵션을 활성화하십시오. 사용할 다른 클러스터, 스토리지 VM 또는 애그리게이트를 선택하십시오.</block>
   <block id="7c3780c8bbc09e634d77ec9249acfb5c" category="section-title">2026년 8월 17일</block>
+  <block id="6319d2a187c14a056a2451e457680ac9" category="section-title">Kubernetes 클러스터를 콘솔 에이전트에 다시 연결</block>
+  <block id="57f5244800d20c454a8ae6a99f0c2690" category="paragraph">콘솔 에이전트의 IP 주소가 변경되면(예: 재시작 후) Kubernetes 클러스터가 에이전트와의 연결을 잃게 되므로 다시 연결해야 합니다.</block>
+  <block id="5be36b04c01bb2ce7d5c47828c04d62f" category="list-text">연결이 끊어진 Kubernetes 클러스터를 선택하고 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *클러스터 수정* &gt; *클러스터 다시 연결*을 선택합니다.</block>
+  <block id="375ee855bb819796d52335f7855a9da5" category="list-text">클러스터 재연결 대화 상자에서 명령줄 지침을 복사하여 클러스터에서 실행하십시오.</block>
+  <block id="ba2444c182512882ef30cd6d790a989d" category="paragraph">명령 실행이 완료되면 클러스터가 자동으로 다시 연결됩니다.</block>
+  <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">*닫기*를 선택합니다.</block>
+  <block id="145531d0ec6b6e87e457833c515d18eb" category="section-title">Kubernetes 클러스터를 새 콘솔 에이전트로 마이그레이션</block>
+  <block id="1b486f8a72df0cfb12154c0df2fd8aeb" category="paragraph">콘솔 에이전트가 삭제되거나 사용할 수 없게 된 경우, 애플리케이션 보호가 중단되지 않도록 해당 에이전트를 사용하는 모든 클러스터를 새 에이전트로 마이그레이션하십시오.</block>
+  <block id="71a73d38aa411b8cf3ac97aaed6598a9" category="inline-link">새 콘솔 에이전트를 배포합니다.</block>
+  <block id="33a9e40bf5b5a104de590c6bff396f18" category="list-text"><block ref="33a9e40bf5b5a104de590c6bff396f18" category="inline-link-rx"></block></block>
+  <block id="d9242f3eedaff2dd2340291d99231a47" category="inline-link-macro">정책을 편집합니다</block>
+  <block id="fa3b348cc9530bb5ac015d82e4e040e1" category="list-text">새 콘솔 에이전트와 함께 사용할 보호 정책을 선택하고<block ref="76486ada0fcb46ea61a3a5b5982e0538" category="inline-link-macro-rx"></block>, 해당 보호 정책을 새 콘솔 에이전트와 연결합니다.</block>
+  <block id="c4c6fed90845c12d98d007fabe47faee" category="list-text">연결이 끊긴 Kubernetes 클러스터를 선택하고 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *클러스터 수정* &gt; *에이전트 관리*를 선택합니다.</block>
+  <block id="015618238817546f4ea79a394e3efe47" category="list-text">목록에서 새 콘솔 에이전트를 선택합니다.</block>
+  <block id="3d792ac4e0cb4d4880f9939229e42792" category="list-text">에이전트 정보를 검토하여 새 Console 에이전트가 이 클러스터의 보호된 애플리케이션에서 사용하는 시스템, 백업 대상 및 보조 대상에 액세스할 수 있는지 확인하십시오.</block>
+  <block id="ee0747c1045ece83b008c6a99da98042" category="list-text">각 섹션의 명령줄 지침을 복사하고 클러스터에서 해당 명령을 실행하십시오.</block>
+  <block id="3f4860c454843e96c570a7a7e08c6fc5" category="paragraph">이 명령은 Kubernetes 시크릿을 다시 생성하고, Trident Protect를 새 콘솔 에이전트로 리디렉션하며, 설정을 다시 로드합니다. 명령 실행이 완료되면 클러스터는 새 콘솔 에이전트를 사용하게 됩니다.</block>
+  <block id="507751f4ca984ea347c86a3935fe5f62" category="list-text">선택적으로 정책에서 고급 설정을 구성할 수 있습니다.</block>
+  <block id="5cac079a880c4090fb111d3d7dc5ac2f" category="list-text">완료되면 *생성*을 선택합니다.</block>
+  <block id="a05902bc3173c2d2f35fa06f3fc2b475" category="list-text">편집이 완료되면 *완료*를 선택합니다.</block>
+  <block id="83cb560a6d582d4380d5e101891dd816" category="list-text">확인 대화 상자에서 정책 이름을 입력하여 변경 사항을 확인합니다.</block>
+  <block id="28039d0c99b854c578ceb6eafae747f0" category="paragraph">변경 사항을 저장하면 이 정책의 적용을 받는 모든 애플리케이션에 영향을 미칩니다.</block>
+  <block id="db4719fc900debc3b840d973bdd5da13" category="list-text">*완료*를 선택하여 확인합니다.</block>
+  <block id="51f2e38f4d3b411fb5624e01d4b82ac9" category="list-text">*백업 재시도*: 오류 또는 중단 발생 시 특정 횟수만큼 작업을 재시도하려면 *백업 재시도* 섹션을 확장하고 스냅샷 및 백업 작업의 최대 재시도 횟수와 재시도 시간 간격을 입력하십시오.</block>
+  <block id="684680301d935dbb141d7b78ed7ac836" category="list-text">*부분 성공*: 이 옵션을 활성화하면 백업 및 복구 기능이 모든 리소스를 백업하는 데 실패하더라도 백업 작업이 성공적으로 완료될 수 있습니다.</block>
+  <block id="3f0ce7e1f58d47249ae783e782637dbe" category="list-text">*VM 구성*: 필요한 백업 일관성 유형을 선택하십시오.</block>
+  <block id="159c9eb77d7689e3c9929376462e4e72" category="list-text">*크래시 일관성 백업*: 스냅샷 또는 백업을 생성하기 전에 VM을 일시 정지하지 않으려면 이 옵션을 선택하십시오. 스냅샷 또는 백업은 크래시 일관성을 유지하며, 스냅샷 또는 백업 시점의 시스템 메모리는 캡처되지 않습니다.</block>
+  <block id="e2b89730d92fc1a6537f9f1a6d260320" category="list-text">*VM 일관성 백업*: 스냅샷 또는 백업을 수행하기 전에 VM을 일시 정지하려면 이 옵션을 선택하십시오. 이렇게 하면 VM의 전체 상태(메모리 포함)가 캡처되어 VM 일관성을 유지하는 백업이 제공됩니다. 선택적으로 *동시에 처리할 수 있는 최대 VM 수*에서 Backup and Recovery가 동시에 일시 정지하고 백업할 수 있는 VM 수를 지정할 수 있습니다. *모든 VM 일시 정지* 옵션을 활성화하면 Backup and Recovery가 모든 VM을 동시에 일시 정지하고 백업을 시작한 다음 모든 백업 작업이 완료되면 모든 VM을 일시 정지 해제합니다.</block>
+  <block id="39fb697df37b9cc018d60de1a0ca0c05" category="list-text">NetApp Trident 25.06~26.06</block>
+  <block id="b1e4f0956582086a73a58e751c8e6b5d" category="list-text">NetApp Trident Protect 26.08 이상(검색 중에 Kubernetes 클러스터에 설치됨)</block>
 </blocks>
