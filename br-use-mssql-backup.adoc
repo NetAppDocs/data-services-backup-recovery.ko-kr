@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: br-use-mssql-backup.html 
-keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
-summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 및 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 
+keywords: backing up, back up, backup, cloud volumes ontap, aws, azure, storagegrid, back up volumes, cloud backup, on-premises ontap, onprem, applications, backup and recovery 
+summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 및 StorageGRID에 백업하여 데이터를 안전하게 보호하십시오. 
 ---
 = NetApp Backup and Recovery 사용하여 Microsoft SQL Server 워크로드 백업
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이
 
 
 [role="lead"]
-온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이션 데이터를 Amazon Web Services, Microsoft Azure 또는 StorageGRID 로 백업합니다.  시스템은 자동으로 백업을 생성하고 이를 클라우드 계정의 개체 저장소에 저장하여 데이터를 보호합니다.
+온프레미스 ONTAP 시스템의 Microsoft SQL Server 워크로드를 Amazon Web Services, Microsoft Azure 또는 StorageGRID에 백업합니다.
 
-* 일정에 따라 작업 부하를 백업하려면 백업 및 복원 작업을 관리하는 정책을 만듭니다. 보다link:br-use-policies-create.html["정책 생성"] 지침을 보려면.
+* 워크로드를 예약된 일정에 따라 백업하고 백업 및 복원 작업을 관리하는 정책을 생성합니다. 지침은 link:br-use-policies-create.html["정책 생성"]을 참조하십시오.
 * 백업을 시작하기 전에 검색된 호스트에 대한 로그 디렉터리를 구성합니다.
-* 지금 워크로드를 백업하세요(지금 주문형 백업을 생성하세요).
+* 온디맨드 백업을 생성하여 워크로드를 즉시 백업합니다.
 
 
 
@@ -28,7 +28,7 @@ summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이
 
 백업을 시작하기 전에 워크로드의 보호 상태를 확인하세요.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할과 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -44,7 +44,7 @@ summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이
 
 작업 부하를 백업하기 전에 작업 상태를 추적하기 위해 검색된 호스트에 대한 활동 로그 경로를 설정합니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -53,7 +53,7 @@ summary: 온프레미스 ONTAP 시스템의 Microsoft SQL Server 애플리케이
 . 호스트를 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *로그 디렉토리 구성*.
 . 호스트 경로를 입력하거나 호스트나 노드 목록을 탐색하여 호스트 로그를 저장할 위치를 찾으세요.
-. 로그를 저장할 곳을 선택하세요.
+. 로그를 저장할 호스트 또는 노드를 선택하십시오.
 +
 
 NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러스터 인스턴스 또는 독립 실행형)에 따라 다릅니다.
@@ -68,7 +68,7 @@ NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러�
 
 여러 작업 부하에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다.  보호 그룹은 작업 부하를 논리적으로 그룹화한 것입니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -81,7 +81,7 @@ NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러�
 . *다음*을 선택하세요.
 . 보호 그룹에 적용할 *백업 정책*을 선택합니다.
 +
-정책을 만들려면 *새 정책 만들기*를 선택하고 메시지에 따라 정책을 만드세요.  보다link:br-use-policies-create.html["정책 생성"] 자세한 내용은.
+정책을 생성하려면 *새 정책 생성*을 선택하고 안내에 따라 진행하십시오. 자세한 내용은 link:br-use-policies-create.html["정책 생성"]을 참조하십시오.
 
 . *다음*을 선택하세요.
 . 구성을 검토하세요.
@@ -95,16 +95,16 @@ NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러�
 
 데이터를 보호하려면 시스템을 변경하기 전에 주문형 백업을 실행하세요.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
-. 메뉴에서 *인벤토리*를 선택하세요.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보호 세부 정보를 보려면 작업 부하를 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
-. *보호 그룹*, *인스턴스* 또는 *데이터베이스* 탭을 선택합니다.
+. *보호 그룹*, *인스턴스*, 또는 *데이터베이스* 탭을 선택하십시오.
 . 백업할 인스턴스나 데이터베이스를 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *지금 뒤로 물러나세요*.
-. 백업에 적용할 정책을 선택하세요.
+. 백업에 적용할 정책을 선택하십시오.
 . 일정 단계를 선택하세요.
 . *지금 백업*을 선택하세요.
 
@@ -116,13 +116,13 @@ NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러�
 
 유지 관리 또는 문제 해결 중에 백업을 일시적으로 중지하려면 일정을 일시 중단합니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보호 세부 정보를 보려면 작업 부하를 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
-. *보호 그룹*, *인스턴스* 또는 *데이터베이스* 탭을 선택합니다.
+. *보호 그룹*, *인스턴스*, 또는 *데이터베이스* 탭을 선택하십시오.
 . 일시 중단하려는 보호 그룹, 인스턴스 또는 데이터베이스를 선택합니다.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *일시 중지*.
 
@@ -134,7 +134,7 @@ NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러�
 
 보호 그룹을 삭제하면 해당 보호 그룹과 관련된 모든 백업 일정이 제거됩니다. 더 이상 필요하지 않은 경우 보호 그룹을 삭제할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -151,13 +151,13 @@ NOTE: 표시되는 필드는 선택한 배포 모델(예: 장애 조치 클러�
 
 더 이상 백업하지 않으려는 경우 또는 NetApp Backup and Recovery 에서 워크로드 관리를 중지하려는 경우 워크로드에서 보호 기능을 제거할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . 보호 세부 정보를 보려면 작업 부하를 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
-. *보호 그룹*, *인스턴스* 또는 *데이터베이스* 탭을 선택합니다.
+. *보호 그룹*, *인스턴스*, 또는 *데이터베이스* 탭을 선택하십시오.
 . 보호 그룹, 인스턴스 또는 데이터베이스를 선택하세요.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *보호 기능을 제거합니다*.
 . 보호 제거 대화 상자에서 백업과 메타데이터를 보관할지 아니면 삭제할지 선택합니다.

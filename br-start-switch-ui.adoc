@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-start-switch-ui.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: 다양한 NetApp Backup and Recovery 워크로드 간에 전환할 수 있습니다.  일부 워크로드는 다른 UI를 사용합니다. 
+summary: NetApp Backup and Recovery는 다양한 워크로드 유형을 지원하며, 일부 워크로드는 다른 사용자 인터페이스를 사용합니다. 워크로드 전환기를 사용하여 워크로드 간에 전환할 수 있습니다. 
 ---
-= 다양한 NetApp Backup and Recovery 워크로드로 전환
+= 다른 NetApp Backup and Recovery 워크로드로 전환
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 다양한 NetApp Backup and Recovery 워크로드 간에 전환할 수 
 
 
 [role="lead"]
-다양한 NetApp Backup and Recovery 워크로드 간에 전환할 수 있습니다.
+NetApp Backup and Recovery는 다양한 워크로드 유형을 지원하며, 일부 워크로드는 다른 사용자 인터페이스를 사용합니다. 워크로드 전환기를 사용하여 워크로드 간에 전환할 수 있습니다.
 
 
 

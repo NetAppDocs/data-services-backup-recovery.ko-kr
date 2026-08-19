@@ -14,9 +14,9 @@ summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetAp
 
 
 [role="lead"]
-이 버전에서 작동하지 않거나 제대로 작동하지 않는 플랫폼, 장치 또는 기능은 다음과 같습니다.  이러한 제한 사항을 주의 깊게 읽으십시오.
+NetApp Backup and Recovery에서 Oracle 데이터베이스 워크로드에 대한 현재 제한 사항 및 지원되지 않는 작업을 검토하십시오.
 
-NetApp Backup and Recovery의 Oracle Database 워크로드 미리 보기 버전에서는 다음 작업이 지원되지 않습니다.
+NetApp Backup and Recovery 미리 보기 릴리스에서는 Oracle 데이터베이스 워크로드에 대해 다음과 같은 작업이 지원되지 않습니다.
 
 * NetApp Console 로컬 배포용 Backup and Recovery 미리 보기 릴리스에서는 오브젝트 스토리지로의 백업이 ONTAP S3 및 StorageGRID 대상에 대해서만 지원됩니다. 이 미리 보기 릴리스에서는 백업 아카이빙이 지원되지 않습니다.
 * 오프라인 백업

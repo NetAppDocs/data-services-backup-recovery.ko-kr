@@ -14,11 +14,11 @@ summary: NetApp Backup and Recovery 볼륨, 데이터베이스, 가상 머신, K
 
 
 [role="lead"]
-NetApp Backup and Recovery 볼륨, 데이터베이스, 가상 머신, Kubernetes 워크로드를 포함한 모든 ONTAP 워크로드에 대해 효율적이고 안전하며 비용 효율적인 데이터 보호를 제공하는 데이터 서비스입니다.
+이 개요를 통해 NetApp Backup and Recovery가 ONTAP 워크로드를 보호하는 방법, 지원하는 워크로드 및 백업 대상, 라이선스 및 비용에 대해 알아보십시오.
 
 워크로드는 보호, 거버넌스, 탐지 및 복구를 위해 단일 단위로 관리되는 시스템 내 리소스의 논리적 그룹입니다. Backup and Recovery에서 워크로드는 보호하는 단위입니다. 워크로드의 의미는 데이터 소스에 따라 다릅니다. Kubernetes의 경우 워크로드는 애플리케이션이고, VM 환경의 경우 가상 머신이며, 데이터베이스 환경의 경우 데이터베이스입니다.
 
-ONTAP 시스템에는 백업 및 복구 기능이 기본적으로 내장되어 있으므로 추가 하드웨어나 미디어 게이트웨이가 필요하지 않습니다. 따라서 백업 작업이 간편하고 비용 효율적입니다. NetApp Console을 사용하면 여러 명의 리소스 관리자나 전문 인력 없이도 3-2-1 백업 변형을 포함한 모든 백업 전략을 간편하게 구현할 수 있습니다.
+ONTAP 시스템에는 백업 및 복구 기능이 기본적으로 내장되어 있으므로 추가 하드웨어나 미디어 게이트웨이가 필요하지 않습니다. 따라서 백업 작업이 간편하고 비용 효율적입니다. NetApp Console을 사용하면 여러 리소스 관리자나 전문 인력 없이도 3-2-1 백업 변형의 전체 스펙트럼을 포함한 모든 백업 전략을 간편하게 구현할 수 있습니다.
 
 
 
@@ -244,7 +244,7 @@ NOTE: 보조 스토리지에서 객체 스토리지로의 변환뿐 아니라 �
 백업 사본은 NetApp Console 클라우드 계정에 만드는 개체 저장소에 저장됩니다.  클러스터 또는 시스템당 하나의 개체 저장소가 있으며 콘솔은 다음과 같이 개체 저장소의 이름을 지정합니다. `netapp-backup-clusteruuid` .  이 개체 저장소를 삭제하지 마십시오.
 
 * AWS에서는 NetApp Console 사용하여 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에.
-* Azure에서 NetApp Console Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹이나 기존 리소스 그룹을 사용합니다. https://docs.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent["Blob 데이터에 대한 공개 액세스를 차단합니다."] 기본적으로.
+* Azure에서 NetApp Console은 Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹 또는 기존 리소스 그룹을 사용합니다. Console은  https://docs.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent["Blob 데이터에 대한 공개 액세스를 차단합니다."]기본적으로 이 리소스를 사용합니다.
 * StorageGRID 에서 콘솔은 객체 저장소 버킷에 대한 기존 저장소 계정을 사용합니다.
 * ONTAP S3에서 콘솔은 S3 버킷에 대한 기존 사용자 계정을 사용합니다.
 
@@ -260,8 +260,8 @@ NOTE: 보조 스토리지에서 객체 스토리지로의 변환뿐 아니라 �
 
 
 
-[[terms-that-might-help-you-with-netapp-backup-and-recovery]]
-== NetApp Backup and Recovery 에 도움이 될 수 있는 용어
+[[terms-for-netapp-backup-and-recovery]]
+== NetApp Backup and Recovery 이용 약관
 
 보호와 관련된 용어를 이해하는 것이 도움이 될 수 있습니다.
 

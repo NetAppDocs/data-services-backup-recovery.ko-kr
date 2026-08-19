@@ -4,7 +4,7 @@ permalink: prev-ontap-backup-cvo-azure.html
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
 summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery 사용하여 Cloud Volumes ONTAP 데이터를 Azure Blob 스토리지에 백업합니다.
+= NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP를 Azure Blob 스토리지에 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 
 
 [role="lead"]
-NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 Cloud Volumes ONTAP 시스템에서 Azure Blob 스토리지로 볼륨 데이터를 백업하세요.
+NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP 시스템의 볼륨 데이터를 Azure Blob 스토리지에 백업하십시오.
 
 
 NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
@@ -51,7 +51,7 @@ NetApp Backup and Recovery PAYGO 라이선싱의 경우 NetApp Backup and Recove
 
 NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 용량 동안 서비스를 사용할 수 있도록 하는 NetApp 의 일련 번호가 필요합니다. link:br-start-licensing.html["BYOL 라이선스를 관리하는 방법을 알아보세요"].  콘솔 에이전트와 Cloud Volumes ONTAP 시스템이 다크 사이트("비공개 모드")에 배포되는 경우 BYOL 라이선스를 사용해야 합니다.
 
-백업이 저장될 저장 공간에 대한 Microsoft Azure 구독이 필요합니다.
+백업 파일이 저장될 스토리지 공간을 위한 Azure 구독도 필요합니다.
 
 
 
@@ -70,7 +70,7 @@ NetApp Backup and Recovery BYOL 라이선스의 경우, 라이선스 기간과 �
 [[verify-or-add-permissions-to-the-console-agent]]
 === 콘솔 에이전트에 대한 권한을 확인하거나 추가합니다.
 
-NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 에이전트 역할에 대한 특정 권한이 있어야 Azure Synapse Workspace 및 Data Lake Storage 계정에 액세스할 수 있습니다.  아래의 권한을 확인하고, 정책을 수정해야 하는 경우 단계에 따라 진행하세요.
+NetApp Backup and Recovery 검색 및 복원 기능을 사용하려면 콘솔 에이전트 역할에 Azure Synapse 작업 영역 및 Azure Data Lake Storage 계정에 액세스할 수 있는 특정 권한이 포함되어야 합니다. 아래 권한을 참조하고 필요한 경우 정책을 수정하는 단계를 따르십시오.
 
 .시작하기 전에
 * 구독에 Azure Synapse Analytics 리소스 공급자("Microsoft.Synapse"라고 함)를 등록해야 합니다. https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider["구독을 위해 이 리소스 공급자를 등록하는 방법을 확인하세요."^]. 리소스 공급자를 등록하려면 구독 *소유자* 또는 *기여자*여야 합니다.
@@ -195,7 +195,7 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 [[enable-netapp-backup-and-recovery-on-cloud-volumes-ontap]]
 == Cloud Volumes ONTAP 에서 NetApp Backup and Recovery 활성화
 
-NetApp Backup and Recovery 활성화하는 것은 쉽습니다.  단계는 기존 Cloud Volumes ONTAP 시스템이 있는지 아니면 새 시스템이 있는지에 따라 약간씩 다릅니다.
+NetApp Backup and Recovery를 새 Cloud Volumes ONTAP 시스템 또는 기존 Cloud Volumes ONTAP 시스템에서 활성화할 수 있습니다. 각 옵션에 따라 단계가 약간씩 다릅니다.
 
 *새 시스템에서 NetApp Backup and Recovery 활성화*
 
@@ -236,7 +236,7 @@ NOTE: 리소스 그룹의 이름을 선택하려면 Cloud Volumes ONTAP 배포�
 [[activate-backups-on-your-ontap-volumes]]
 == ONTAP 볼륨에서 백업 활성화
 
-언제든지 온프레미스 시스템에서 직접 백업을 활성화하세요.
+Cloud Volumes ONTAP 시스템에서 언제든지 직접 백업을 활성화할 수 있습니다.
 
 마법사가 다음의 주요 단계를 안내합니다.
 
@@ -253,9 +253,9 @@ NOTE: 리소스 그룹의 이름을 선택하려면 Cloud Volumes ONTAP 배포�
 === 마법사 시작
 
 .단계
-. 다음 방법 중 하나를 사용하여 백업 및 복구 활성화 마법사에 액세스하세요.
+. 다음 방법 중 하나를 사용하여 백업 및 복구 활성화 마법사에 액세스하십시오.
 +
-** 콘솔의 *시스템* 페이지에서 시스템을 선택하고 오른쪽 패널의 백업 및 복구 옆에 있는 *활성화 > 백업 볼륨*을 선택합니다.
+** 콘솔의 *시스템* 페이지에서 시스템을 선택하고 오른쪽 패널의 백업 및 복구 옆에 있는 *사용 > 백업 볼륨*을 선택합니다.
 +
 백업을 위한 Azure 대상이 *시스템* 페이지에 시스템으로 존재하는 경우 ONTAP 클러스터를 Azure Blob 개체 스토리지로 끌어다 놓을 수 있습니다.
 
@@ -263,7 +263,7 @@ NOTE: 리소스 그룹의 이름을 선택하려면 Cloud Volumes ONTAP 배포�
 
 
 +
-마법사의 소개 페이지에는 로컬 스냅샷, 복제, 백업을 포함한 보호 옵션이 표시됩니다.  이 단계에서 두 번째 옵션을 선택한 경우, 하나의 볼륨이 선택된 상태로 백업 전략 정의 페이지가 나타납니다.
+마법사의 소개 페이지에는 로컬 스냅샷, 복제 및 백업을 포함한 보호 옵션이 표시됩니다. 이 단계에서 두 번째 옵션을 사용한 경우, 하나의 볼륨이 선택된 상태로 백업 전략 정의 페이지가 나타납니다.
 
 . 다음 옵션을 계속 진행하세요.
 +
@@ -398,7 +398,7 @@ TIP: 백업 파일이 수정되거나 삭제되는 것을 방지하려면 30일 
 
 +
 
-NOTE: 기존 Microsoft 저장소 계정을 선택한 경우 암호화 정보가 이미 제공되므로 지금 입력할 필요가 없습니다.
+NOTE: 기존 Azure 스토리지 계정을 선택한 경우 암호화 정보가 이미 있으므로 지금 입력할 필요가 없습니다.
 
 +
 ** *네트워킹*: IP 공간을 선택하고 개인 엔드포인트를 사용할지 여부를 선택합니다.  개인 엔드포인트는 기본적으로 비활성화되어 있습니다.
@@ -450,7 +450,7 @@ NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다. 복제된
 
 기본적으로 NetApp Backup and Recovery 비용 최적화를 위해 로컬 중복성(LRS)을 사용하여 Blob 컨테이너를 프로비저닝합니다.  서로 다른 영역 간에 데이터가 복제되도록 하려면 이 설정을 영역 중복성(ZRS)으로 변경할 수 있습니다.  Microsoft 지침을 참조하세요. https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["저장소 계정 복제 방식 변경"^] .
 
-볼륨 백업 대시보드가 표시되어 백업 상태를 모니터링할 수 있습니다.
+볼륨 백업 대시보드가 나타나 백업 상태를 모니터링할 수 있습니다.
 
 다음을 사용하여 백업 및 복원 작업의 상태를 모니터링할 수도 있습니다.link:br-use-monitor-tasks.html["작업 모니터링 페이지"] .
 
@@ -459,7 +459,7 @@ NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다. 복제된
 [[show-the-api-commands]]
 === API 명령 표시
 
-백업 및 복구 활성화 마법사에서 사용되는 API 명령을 표시하고 선택적으로 복사할 수 있습니다.  향후 시스템에서 백업 활성화를 자동화하려면 이 작업을 수행하는 것이 좋습니다.
+백업 및 복구 활성화 마법사에서 사용되는 API 명령을 표시하고 필요에 따라 복사해 두는 것이 좋습니다. 이렇게 하면 향후 시스템에서 백업 활성화를 자동화할 수 있습니다.
 
 .단계
 . 백업 및 복구 활성화 마법사에서 *API 요청 보기*를 선택합니다.

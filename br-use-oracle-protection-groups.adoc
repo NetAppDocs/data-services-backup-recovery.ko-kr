@@ -14,13 +14,13 @@ summary: NetApp Backup and Recovery에서 Oracle Database 워크로드용 보호
 
 
 [role="lead"]
-Oracle Database 리소스 세트에 대한 백업 작업을 관리하기 위해 보호 그룹을 만듭니다.  보호 그룹은 함께 보호하려는 데이터베이스와 같은 리소스의 논리적 그룹입니다.  Oracle 데이터베이스를 백업하려면 보호 그룹을 만들어야 합니다.
+Oracle 데이터베이스 리소스에 대한 백업 작업을 관리하기 위해 보호 그룹을 생성합니다. 보호 그룹은 데이터베이스 등 함께 보호하려는 리소스를 논리적으로 그룹화한 것입니다.
 
 보호 그룹과 관련된 다음 작업을 수행할 수 있습니다.
 
 * 보호 그룹을 만듭니다.
 * 보호 세부 정보를 확인하세요.
-* 지금 바로 보호 그룹을 백업하세요. link:br-use-kvm-backup.html["지금 바로 Oracle Database 워크로드를 백업하세요"]을 참조하십시오.
+* 지금 바로 보호 그룹을 백업하세요. link:br-use-oracle-backup.html["지금 바로 Oracle Database 워크로드를 백업하세요"]을 참조하십시오.
 * 보호 그룹을 삭제합니다.
 
 
@@ -29,7 +29,7 @@ Oracle Database 리소스 세트에 대한 백업 작업을 관리하기 위해 
 [[create-a-protection-group]]
 == 보호 그룹 생성
 
-보호하려는 VM과 스토리지 풀을 보호 그룹으로 그룹화합니다.
+보호하려는 Oracle 데이터베이스 리소스를 보호 그룹으로 묶으십시오.
 
 *필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
@@ -40,7 +40,7 @@ Oracle Database 리소스 세트에 대한 백업 작업을 관리하기 위해 
 . *보호 그룹* 탭을 선택하세요.
 . *보호 그룹 만들기*를 선택합니다.
 . 보호 그룹의 이름을 입력하세요.
-. 보호 그룹에 포함할 VM 또는 스토리지 풀을 선택합니다.
+. 보호 그룹에 포함할 데이터베이스를 선택하십시오.
 . *다음*을 선택하세요.
 . 보호 그룹에 적용할 *백업 정책*을 선택합니다.
 +

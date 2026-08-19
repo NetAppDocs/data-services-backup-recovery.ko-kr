@@ -14,24 +14,24 @@ summary: NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에
 
 
 [role="lead"]
-NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에 먼저 검색해야 합니다.
+NetApp Backup and Recovery에서 Hyper-V 가상 머신을 검색하여 보호 정책으로 보호할 수 있습니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자. link:reference-roles.html["백업 및 복구 역할 및 권한"]에 대해 알아보기. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 
 [[add-a-hyper-v-host-and-discover-resources]]
 == Hyper-V 호스트를 추가하고 리소스를 검색합니다.
 
-Hyper-V 호스트 정보를 추가하고 NetApp Backup and Recovery 가상 머신을 검색하도록 합니다.  각 콘솔 에이전트 내에서 리소스를 검색할 시스템을 선택합니다.
+NetApp Backup and Recovery에서 가상 머신을 검색할 수 있도록 Hyper-V 호스트 정보를 추가하십시오. 각 콘솔 에이전트에서 리소스를 검색할 시스템을 선택하십시오.
 
 
 NOTE: Hyper-V 호스트를 추가하고 리소스를 검색하면 NetApp Backup and Recovery 가 NetApp Hyper-V 플러그인과 NetApp SnapCenter Windows FileSystem 플러그인을 Hyper-V 호스트에 설치하여 가상 머신을 관리하고 보호하는 데 도움을 줍니다.
 
 .단계
-. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
+. NetApp 콘솔 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
 +
-NetApp Backup and Recovery 에 처음 로그인하는 경우 콘솔에 이미 시스템이 있지만 리소스를 검색하지 못한 경우 "새로운 NetApp Backup and Recovery 에 오신 것을 환영합니다" 랜딩 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.
+NetApp Backup and Recovery에 처음 로그인하는 경우, 콘솔에 시스템이 이미 등록되어 있지만 리소스를 검색하지 않은 상태라면 "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 랜딩 페이지가 표시되고 *리소스 검색* 옵션이 제공됩니다.
 
 . *리소스 검색*을 선택하세요.
 . 다음 정보를 입력하세요:
@@ -64,8 +64,8 @@ NetApp Backup and Recovery 리소스를 검색한 후 인벤토리 페이지에�
 == NetApp Backup and Recovery 보드로 계속
 
 .단계
-. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
-. 워크로드 타일(예: Microsoft SQL Server)을 선택합니다.
+. NetApp 콘솔 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
+. Hyper-V 워크로드 타일을 선택합니다.
 . 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 

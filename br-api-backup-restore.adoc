@@ -4,7 +4,7 @@ permalink: br-api-backup-restore.html
 keywords: api, apis, rest, restful, authorization, getting started, body, header, token, reference, expired token, expires, expired, token expired, list apis 
 summary: 웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 RESTful API를 통해서도 사용할 수 있습니다. 
 ---
-= NetApp Backup and Recovery REST API를 사용하여 자동화
+= NetApp Backup and Recovery를 REST API로 자동화합니다
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,20 @@ summary: 웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 REST
 
 
 [role="lead"]
-웹 UI를 통해 제공되는 NetApp Backup and Recovery 기능은 백업 및 복구 REST API를 통해서도 사용할 수 있습니다.
+NetApp Backup and Recovery REST API를 사용하여 웹 UI에서 사용할 수 있는 백업 및 복원 작업을 자동화할 수 있습니다.
 
-NetApp Backup and Recovery 에는 10가지 범주의 엔드포인트가 정의되어 있습니다.
+NetApp Backup and Recovery는 10가지 엔드포인트 범주를 정의합니다.
 
-* `backup`- 클라우드 및 온프레미스 리소스의 백업 작업을 관리하고 백업 데이터의 세부 정보를 검색합니다.
-* `catalog`- 쿼리(검색 및 복원)를 기반으로 파일의 색인된 카탈로그 검색을 관리합니다.
+* `backup` - 클라우드 및 온프레미스 리소스에 대한 백업 작업을 관리하고 백업 데이터 세부 정보를 검색합니다.
+* `catalog` - 쿼리를 기반으로 파일에 대한 색인화된 카탈로그 검색을 관리합니다(검색 및 복원).
 * `cloud`- NetApp Console 에서 다양한 클라우드 공급자 리소스에 대한 정보를 검색합니다.
-* `job`- NetApp Console 데이터베이스에서 작업 세부 정보 항목을 관리합니다.
-* `license`- NetApp Console 에서 시스템의 라이센스 유효성을 검색합니다.
+* `job` - NetApp Console 데이터베이스의 작업 세부 정보 항목을 관리합니다
+* `license` - NetApp Console에서 시스템 라이선스 상태를 검색합니다.
 * `ransomware scan`- 특정 백업 파일에 대한 랜섬웨어 검사를 시작합니다.
 * `restore`- 볼륨, 파일 및 폴더 수준 복원 작업을 수행할 수 있습니다.
 * `sfr`- 단일 파일 수준 복원 작업(찾아보기 및 복원)을 위해 백업 파일에서 파일을 검색합니다.
-* `storagegrid`- StorageGRID 서버에 대한 세부 정보를 검색하고 StorageGRID 서버를 검색할 수 있습니다.
-* `system`- 백업 정책을 관리하고 시스템과 연관된 대상 개체 저장소를 구성합니다.
+* `storagegrid` - StorageGRID 서버에 대한 세부 정보를 검색하고 StorageGRID 서버를 찾을 수 있도록 합니다.
+* `system` - 백업 정책을 관리하고 시스템과 연결된 대상 오브젝트 저장소를 구성합니다.
 
 
 
@@ -42,17 +42,17 @@ NetApp Backup and Recovery 에는 10가지 범주의 엔드포인트가 정의�
 [[getting-started]]
 == 시작하기
 
-NetApp Backup and Recovery API를 시작하려면 사용자 토큰, NetApp Console 계정 ID, 콘솔 에이전트 ID를 얻어야 합니다.
+NetApp Backup and Recovery API를 시작하려면 사용자 토큰, NetApp Console 계정 ID 및 Console 에이전트 ID를 받아야 합니다.
 
-API 호출을 할 때 Authorization 헤더에 사용자 토큰을 추가하고 x-agent-id 헤더에 콘솔 에이전트 ID를 추가합니다.  API에서는 NetApp Console 계정 ID를 사용해야 합니다.
+API 호출 시 사용자 토큰을  `Authorization` 헤더에 포함하고 Console 에이전트 ID를  `x-agent-id` 헤더에 포함하십시오. API 요청에 NetApp Console 계정 ID를 포함하십시오.
 
 
-NOTE: 서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 액세스 토큰을 사용해야 합니다. "client_id" 값("Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC")은 고정된 값이므로 변경할 수 없습니다. 이 경우 다음 지침을 따르세요. https://docs.netapp.com/us-en/console-automation/platform/create_service_token.html["서비스 액세스 토큰 생성"^] .
+NOTE: 서비스 계정을 사용하는 경우 사용자 토큰 대신 서비스 액세스 토큰을 사용하십시오.  `client_id` (`Mu0V1ywgYteI6w1MbD15fKfVIUrNXGWC`의 값은 고정되어 있으며 변경할 수 없습니다. 이 경우 여기의 지침을 따르십시오:  https://docs.netapp.com/us-en/console-automation/platform/create_service_token.html["서비스 액세스 토큰 생성"^].
 
 .단계
-. NetApp Console 웹 사이트에서 사용자 토큰을 획득합니다.
+. NetApp Console 웹사이트에서 사용자 토큰을 받으십시오.
 +
-다음 링크에서 새로 고침 토큰을 생성했는지 확인하십시오: https://services.cloud.netapp.com/refresh-token/. 새로 고침 토큰은 사용자 토큰을 생성하는 데 사용되는 영숫자 문자열입니다.
+다음 링크에서 갱신 토큰을 생성하십시오: https://services.cloud.netapp.com/refresh-token/. 갱신 토큰은 사용자 토큰을 생성하는 데 사용하는 영숫자 문자열입니다.
 
 +
 [source, shell]
@@ -67,7 +67,7 @@ curl --location --request POST 'https://netapp-cloud-account.auth0.com/oauth/tok
 ----
 +
 
-NOTE: NetApp Console 웹 사이트의 사용자 토큰에는 만료 날짜가 있습니다. API 응답에는 토큰이 만료되는 시점을 나타내는 "expires_in" 필드가 포함되어 있습니다.  토큰을 새로 고치려면 이 API를 다시 호출해야 합니다.
+NOTE: NetApp Console 웹사이트에서 발급받은 사용자 토큰은 만료됩니다. API 응답에는  `expires_in`토큰 만료일을 나타내는 필드가 포함되어 있습니다. 토큰을 갱신하려면 이 API를 다시 호출하십시오.
 
 . NetApp Console 계정 ID를 얻으세요.
 +
@@ -80,7 +80,7 @@ Header:
 -H 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR
 ----
 +
-이 API는 다음과 같은 응답을 반환합니다. *[0].[ accountPublicId]*의 출력을 구문 분석하여 계정 ID를 검색할 수 있습니다.
+이 API는 다음과 같은 응답을 반환합니다. *[0].[accountPublicId]*에서 계정 ID를 검색합니다.
 
 +
 [source, json]
@@ -96,7 +96,7 @@ Header:
   "userRole": "Role-1"
 }
 ----
-. 콘솔 에이전트 ID가 포함된 x-agent-id를 가져옵니다.
+.  `x-agent-id` 헤더 값을 가져옵니다. 이 값에는 Console 에이전트 ID가 포함되어 있습니다.
 +
 [source, console]
 ----
@@ -108,7 +108,7 @@ Header:
   -H 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5…………
 ----
 +
-*occm.[0].[agent].[agentId]*의 출력을 구문 분석하여 응답에서 에이전트 ID를 검색할 수 있습니다.
+*occm.[0].[agent].[agentId]*를 파싱하여 응답에서 에이전트 ID를 검색합니다.
 
 
 
@@ -117,7 +117,7 @@ Header:
 [[example-using-the-apis]]
 == API를 사용한 예
 
-다음 예제에서는 Azure 클라우드의 East-US-2 지역에서 일일, 시간별, 주별 레이블이 설정되고, 보관 기간이 180일로 설정된 새 정책이 있는 시스템에서 NetApp Backup and Recovery 활성화하기 위한 API 호출을 보여줍니다.  이렇게 하면 시스템 백업만 가능하고 볼륨은 백업되지 않습니다.
+다음 예는 새 정책이 적용된 시스템에서 NetApp Backup and Recovery를 활성화하는 API 호출을 보여줍니다. 이 정책에는 일별, 시간별, 주별 레이블이 있으며, 미국 동부 2 Azure 지역에서 180일 후에 아카이브됩니다. 이 요청은 시스템에서 백업을 활성화하지만 볼륨은 백업하지 않습니다.
 
 .API 요청
 NetApp Console 계정 ID를 사용하는 것을 볼 수 있습니다. `account-DpTFcxN3` , 콘솔 에이전트 ID `iZwFFeVCZjWnzGlw8RgD0QQNANZvpP7Iclients` , 및 사용자 토큰 `Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5rSXlPVFUzUWpZek1E…y6nyhBjwkeMwHc4ValobjUmju2x0xUH48g` 이 명령에서.
@@ -156,14 +156,14 @@ curl --location --request POST 'https://api.bluexp.netapp.com/account/account-Dp
     }
   }
 ----
-.응답은 모니터링할 수 있는 작업 ID입니다.
+.응답에는 모니터링할 수 있는 작업 ID가 포함되어 있습니다.
 [source, json]
 ----
 {
  "job-id": "1b34b6f6-8f43-40fb-9a52-485b0dfe893a"
 }
 ----
-.응답을 모니터링하세요:
+.작업 상태를 모니터링합니다.
 [source, shell]
 ----
 curl --location --request GET 'https://api.bluexp.netapp.com/account/account-DpTFcxN3/providers/cloudmanager_cbs/api/v1/job/1b34b6f6-8f43-40fb-9a52-485b0dfe893a' \
@@ -187,7 +187,7 @@ curl --location --request GET 'https://api.bluexp.netapp.com/account/account-DpT
   ]
 }
 ----
-."상태"가 "완료"가 될 때까지 모니터링합니다.
+.<code>상태</code>가 <code>COMPLETED</code>가 될 때까지 모니터링합니다.
 [source, json]
 ----
 {

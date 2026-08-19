@@ -4,7 +4,7 @@ permalink: br-use-restore-kubernetes-applications-cr.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: NetApp Backup and Recovery 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다. 
 ---
-= 사용자 지정 리소스를 사용하여 NetApp Backup and Recovery로 Kubernetes 애플리케이션을 복원합니다.
+= 사용자 지정 리소스를 사용하여 Kubernetes 애플리케이션 복원
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 사용하면 보호 정책으로 보호한 �
 
 
 [role="lead"]
-사용자 지정 리소스를 사용하여 스냅샷 또는 백업에서 애플리케이션을 복원할 수 있습니다. 기존 스냅샷에서 복원하면 동일한 클러스터에 애플리케이션을 복원할 때 더 빠릅니다.
+사용자 지정 리소스를 사용하여 스냅샷 또는 백업에서 애플리케이션을 복원할 수 있습니다. 기존 스냅샷에서 복원하는 경우, 애플리케이션을 동일한 클러스터에 복원하면 일반적으로 더 빠릅니다.
 
 [NOTE]
 ====
@@ -34,7 +34,7 @@ BackupRestore CR을 사용하여 다른 네임스페이스로 백업을 복원�
 [NOTE]
 ====
 * 기존 리소스가 있는 다른 네임스페이스로 백업을 복원해도 백업에 포함된 리소스와 이름이 같은 리소스는 변경되지 않습니다. 백업의 모든 리소스를 복원하려면 대상 네임스페이스를 삭제하고 다시 생성하거나 새 네임스페이스로 백업을 복원해야 합니다.
-* CR을 사용하여 새 네임스페이스로 복원할 경우, CR을 적용하기 전에 대상 네임스페이스를 수동으로 생성해야 합니다. NetApp Backup and Recovery는 CLI를 사용할 때만 네임스페이스를 자동으로 생성합니다.
+* CR을 사용하여 새 네임스페이스로 복원할 경우, CR을 적용하기 전에 대상 네임스페이스를 수동으로 생성해야 합니다. 백업 및 복구는 CLI를 사용할 때만 네임스페이스를 자동으로 생성합니다.
 
 
 ====
@@ -307,7 +307,7 @@ kubectl get backups <BACKUP_NAME> -n my-app-namespace -o jsonpath='{.status.appA
 ----
 +
 
-NOTE: BackupRestore CR을 사용할 수 없는 경우 2단계에서 언급한 명령을 사용하여 백업 내용을 볼 수 있습니다.
+NOTE: BackupRestore CR을 사용할 수 없는 경우 2단계의 명령을 사용하여 백업 내용을 볼 수 있습니다.
 
 ** *spec.namespaceMapping*: 복원 작업의 소스 네임스페이스를 타겟 네임스페이스로 매핑합니다.  `my-source-namespace` 및  `my-destination-namespace`를 사용자 환경의 정보로 교체하십시오.
 +

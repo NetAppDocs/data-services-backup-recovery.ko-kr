@@ -14,11 +14,11 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 
 
 [role="lead"]
-온프레미스 ONTAP 시스템의 VMware VM과 데이터 저장소를 Amazon Web Services, Azure NetApp Files 또는 StorageGRID 로 백업하여 데이터가 보호되도록 하세요. 백업은 자동으로 생성되어 퍼블릭 또는 프라이빗 클라우드 계정의 개체 저장소에 저장됩니다.
+온프레미스 ONTAP 시스템의 VMware VM 및 데이터스토어를 Amazon Web Services, Azure NetApp Files 또는 StorageGRID에 백업하여 데이터를 보호하십시오. 백업은 자동으로 생성되어 공용 또는 프라이빗 클라우드 계정의 오브젝트 스토어에 저장됩니다.
 
 * 워크로드를 예약된 시간에 백업하려면 백업 및 복원 작업을 관리하는 정책을 생성하십시오. link:br-use-policies-create.html["보호 정책 생성"]를 참조하십시오.
 * 리소스 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 생성합니다. 자세한 내용은 link:br-use-vmware-protection-groups.html["보호 그룹 생성 및 관리"]를 참조하십시오.
-* 지금 워크로드를 백업하세요(지금 주문형 백업을 생성하세요).
+* 온디맨드 백업을 생성하여 지금 바로 워크로드를 백업하십시오.
 
 
 
@@ -31,7 +31,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 *필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
-. 백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.
+. NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
 . VMware 워크로드를 선택하십시오.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *자세히 보기*.
 . *Protection Groups*, *Datastores*, *Virtual machines* 또는 *Tags* 메뉴 제목을 선택하십시오.

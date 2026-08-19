@@ -4,7 +4,7 @@ permalink: reference-policy-differences-snapcenter.html
 keywords: backup policy, backup policies, snapcenter, migration 
 summary: NetApp Backup and Recovery 에서 사용되는 정책과 SnapCenter 에서 사용되는 정책 사이에는 몇 가지 차이점이 있습니다. 
 ---
-= SnapCenter 의 정책과 NetApp Backup and Recovery 정책 비교
+= SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Backup and Recovery 에서 사용되는 정책과 SnapCenter 에
 
 
 [role="lead"]
-SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에는 몇 가지 차이점이 있으며, 이는 SnapCenter 에서 리소스와 정책을 가져온 후에 표시되는 내용에 영향을 줄 수 있습니다.
+이 참조 자료를 사용하여 가져온 리소스 및 정책에 영향을 미칠 수 있는 SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점을 이해하십시오.
 
 
 
@@ -27,7 +27,7 @@ SnapCenter 다음과 같은 일정 계층을 사용합니다.
 * *월별*: 1월부터 12월까지, 예를 들어 매월 7일 등 특정 날짜나 여러 날에 공연할 수 있는 옵션이 있습니다.
 
 
-NetApp Backup and Recovery 다음과 같은 약간 다른 일정 계층을 사용합니다.
+NetApp Backup and Recovery는 다음과 같은 스케줄 계층을 사용하며, 각 계층은 약간씩 다릅니다.
 
 * *매시간*: 15분 간격으로만 스냅샷을 수행합니다. 예를 들어, 60보다 짧은 1시간 또는 15분 간격으로 스냅샷을 수행합니다.
 * *매일*: 하루 중 시간(0-23)이며, 예를 들어 오전 10시에 시작하며, 몇 시간마다 수행할지 선택할 수 있습니다.
@@ -50,7 +50,7 @@ SnapCenter 에서 리소스에 동일한 일정 계층을 사용하여 여러 �
 [[imported-snapcenter-daily-schedules]]
 == SnapCenter 일일 일정 가져오기
 
-NetApp Backup and Recovery SnapCenter 일정을 다음과 같이 조정합니다.
+NetApp Backup and Recovery는 SnapCenter 일정을 다음과 같이 조정합니다.
 
 * SnapCenter 일정이 7일 이하로 설정된 경우 NetApp Backup and Recovery 일정을 주별로 설정합니다. 주중에는 일부 스냅샷이 건너뜁니다.
 +

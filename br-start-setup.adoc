@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-start-setup.html 
 keywords: backup, back up, restore, recovery, aws, azure 
-summary: NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요. 
+summary: StorageGRID, AWS, Azure 등 오프사이트 위치를 준비하고 백업 대상으로 사용할 수 있도록 필요한 권한을 구성하십시오. 
 ---
-= NetApp Backup and Recovery 사용하기 전에 백업 대상을 설정하세요.
+= 백업 대상 위치를 설정합니다
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여 백업 대상을 설정하세요.
+StorageGRID, AWS, Azure 등 오프사이트 위치를 준비하고 백업 대상으로 사용할 수 있도록 필요한 권한을 구성하십시오.
 
 시작하기 전에 검토하세요link:concept-start-prereq.html["전제 조건"] 귀하의 환경이 준비되었는지 확인하세요.
 
@@ -25,32 +25,32 @@ NetApp Backup and Recovery 사용하기 전에 몇 가지 단계를 수행하여
 
 * NetApp StorageGRID.
 +
-참조하다 https://docs.netapp.com/us-en/storage-management-storagegrid/task-discover-storagegrid.html["StorageGRID 알아보세요"^] .
+을 참조하십시오 https://docs.netapp.com/us-en/storage-management-storagegrid/task-discover-storagegrid.html["StorageGRID 알아보세요"^].
 
 +
-참조하다 https://docs.netapp.com/us-en/storagegrid/index.html["StorageGRID 문서"^] StorageGRID 에 대한 자세한 내용은 다음을 참조하세요.
+StorageGRID에 대한 자세한 내용은 https://docs.netapp.com/us-en/storagegrid/index.html["StorageGRID 문서"^]을 참조하십시오.
 
-* 아마존 웹 서비스.  참조하다 https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Amazon S3 문서"^] .
+* Amazon Web Services.  https://docs.netapp.com/us-en/storage-management-s3-storage/index.html["Amazon S3 문서"^]을 참조하십시오.
 +
 AWS를 백업 대상으로 준비하려면 다음을 수행하세요.
 
 +
 ** AWS에 계정을 설정합니다.
 ** 다음 섹션에 나열된 AWS에서 S3 권한을 구성합니다.
-** 콘솔에서 AWS 스토리지를 관리하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Amazon S3 버킷 관리"^] .
+** 콘솔에서 AWS 스토리지를 관리하는 방법에 대한 자세한 내용은  https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Amazon S3 버킷 관리"^]을 참조하십시오.
 
 
 * 마이크로소프트 애저.
 +
-** 참조하다 https://docs.netapp.com/us-en/storage-management-azure-netapp-files/index.html["Azure NetApp Files 설명서"^] .
+** 을 참조하십시오 https://docs.netapp.com/us-en/storage-management-blob-storage/index.html["Azure Blob storage 설명서"^].
 ** Azure에 계정을 설정합니다.
 ** 구성 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Azure 권한"^] Azure에서.
-** 콘솔에서 Azure 저장소를 관리하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["Azure 저장소 계정 관리"^] .
+** 콘솔에서 Azure 스토리지를 관리하는 방법에 대한 자세한 내용은  https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["Azure 저장소 계정 관리"^]을 참조하십시오.
 
 
 
 
-백업 대상지 자체에서 옵션을 구성한 후 나중에 NetApp Backup and Recovery 에서 백업 대상으로 구성하게 됩니다.  NetApp Backup and Recovery 에서 백업 대상을 구성하는 방법에 대한 자세한 내용은 다음을 참조하세요.link:br-start-discover-backup-targets.html["백업 대상 검색"] .
+백업 대상 자체에서 옵션을 구성한 후에는 NetApp Backup and Recovery에서 해당 대상을 백업 대상으로 구성해야 합니다. NetApp Backup and Recovery에서 백업 대상을 구성하는 방법에 대한 자세한 내용은 link:br-start-discover-backup-targets.html["백업 대상 검색"]을 참조하십시오.
 
 
 
@@ -71,7 +71,7 @@ NOTE: AWS 중국 리전에서 백업을 생성할 때 IAM 정책의 모든 _Reso
 
 . 서비스를 활성화하면 백업 마법사가 액세스 키와 비밀 키를 입력하라는 메시지를 표시합니다.  이러한 자격 증명은 ONTAP 클러스터에 전달되어 ONTAP S3 버킷에 데이터를 백업하고 복원할 수 있도록 합니다.  이를 위해서는 다음 권한이 있는 IAM 사용자를 만들어야 합니다.
 +
-를 참조하세요 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html["AWS 설명서: IAM 사용자에게 권한을 위임하는 역할 생성"^] .
+을 참조하십시오 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html["AWS 설명서: IAM 사용자에게 권한을 위임하는 역할 생성"^].
 
 +
 [%collapsible]

@@ -14,9 +14,9 @@ summary: NetApp Console 감사에서 지원하는 백업 및 복구 작업에 �
 
 
 [role="lead"]
-NetApp Console 감사 페이지는 감사 기능의 일환으로 사용자가 Backup and Recovery에서 수행하는 다음 작업을 기록합니다. 감사 이벤트를 보고 필터링하는 방법에 대한 자세한 내용은 Console 설명서의  https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-audit-page["Audit 페이지에서 사용자 활동 감사"^]을(를) 참조하십시오.
+이 참조를 사용하여 NetApp Console의 감사 페이지에 기록되는 NetApp Backup and Recovery 작업을 확인할 수 있습니다. 감사 이벤트 보기 및 필터링에 대한 자세한 내용은 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-audit-page["Audit 페이지에서 사용자 활동 감사"^] NetApp Console 설명서를 참조하십시오.
 
-NetApp Console은 감사 대상 작업마다 서비스 이름, 에이전트, 리소스, 사용자 및 작업 상태를 기록합니다.
+감사 대상 작업마다 NetApp Console은 서비스 이름, 에이전트, 리소스, 사용자 및 작업 상태를 기록합니다.
 
 .감사된 Backup and Recovery 작업
 * 백업에서 볼륨 또는 파일을 복원합니다

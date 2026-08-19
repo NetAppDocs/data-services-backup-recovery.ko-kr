@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 가상 머신 워크�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 운영 또는 2차 스냅샷에서 VMware 가상 머신의 쓰기 가능한 클론을 생성할 수 있습니다. VM 클론을 사용하면 운영 데이터에 영향을 주지 않고 테스트, 통합 및 교육을 위한 가상 머신을 생성하고 관리할 수 있습니다.
+NetApp Backup and Recovery를 사용하여 기본 또는 보조 스냅샷에서 VMware 가상 머신의 쓰기 가능한 복제본을 생성할 수 있습니다. 테스트, 통합 및 교육을 위해 운영 데이터에 영향을 주지 않고 복제된 가상 머신을 생성하고 관리할 수 있습니다.
 
 *필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 

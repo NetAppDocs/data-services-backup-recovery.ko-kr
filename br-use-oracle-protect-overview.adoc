@@ -4,7 +4,7 @@ permalink: br-use-oracle-protect-overview.html
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
 summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 까지 Oracle 가상 머신을 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다. 
 ---
-= NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오.
+= NetApp Backup and Recovery로 Oracle 데이터베이스 워크로드를 보호합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Az
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스와 로그를 보호하세요. 빠르고 공간 효율적이며, 크래시 일관성 및 데이터베이스 일관성을 보장하는 백업 및 복원 기능을 제공합니다. Oracle Database 워크로드를 AWS S3, NetApp StorageGRID, Azure Blob Storage 또는 ONTAP S3에 백업하고, 온프레미스 Oracle 호스트에 복원할 수 있습니다.
+NetApp Backup and Recovery를 사용하여 빠르고 공간 효율적이며, 충돌 시에도 정합성 보장 및 데이터베이스 정합성 보장 백업 및 복원을 통해 Oracle 데이터베이스 워크로드와 로그를 보호하십시오. 워크로드를 AWS S3, StorageGRID, Azure Blob 또는 ONTAP S3에 백업하고 온프레미스 Oracle 호스트에 복원할 수 있습니다.
 
 NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
 

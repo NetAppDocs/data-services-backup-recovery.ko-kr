@@ -4,7 +4,7 @@ permalink: br-use-vmware-protect-overview.html
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
 summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery를 사용한 VMware 보호 워크플로
+= NetApp Backup and Recovery로 VMware 워크로드를 보호합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,16 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하여 VMware VM과 데이터스토어를 보호하세요. NetApp Backup and Recovery는 빠르고 공간 효율적이며, 크래시 일관성 및 VM 일관성을 보장하는 백업 및 복원 작업을 제공합니다. 지원되는 백업 대상으로 VMware 워크로드를 백업하고 온프레미스 VMware 호스트로 VMware 워크로드를 복원할 수 있습니다.
+NetApp Backup and Recovery를 사용하여 VMware VM 및 데이터스토어를 보호하십시오. 빠르고 공간 효율적이며, 크래시 일관성 및 VM 일관성을 유지하는 백업을 생성하고, 지원되는 백업 대상에 저장한 다음, VMware 워크로드를 온프레미스 VMware 호스트로 복원할 수 있습니다.
 
 
 NOTE: 이 버전의 NetApp Backup and Recovery VMware vCenter만 지원하며 vVols 이나 vVols 의 VM을 검색하지 않습니다.
 
-NetApp Backup and Recovery 사용하여 3-2-1 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
+NetApp 백업 및 복구를 사용하여 소스 데이터의 복사본 3개를 서로 다른 스토리지 시스템 2개에, 그리고 복사본 1개를 클라우드에 저장하는 3-2-1 전략을 구현하십시오. 3-2-1 접근 방식의 이점은 다음과 같습니다.
 
 * 여러 개의 데이터 사본을 보관하여 내부 및 외부 사이버 보안 위협으로부터 보호합니다.
 * 다양한 유형의 미디어를 사용하면 한 유형의 미디어가 실패하더라도 복구하는 데 도움이 됩니다.
-* 온사이트 사본에서 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.
+* 온사이트 복사본에서 신속하게 복원할 수 있으며, 온사이트 복사본이 손상된 경우 오프사이트 복사본을 사용할 수 있습니다.
 
 
 NetApp Backup and Recovery 사용하면 VMware 워크로드와 관련된 다음 작업을 수행할 수 있습니다.

@@ -4,7 +4,7 @@ permalink: prev-ontap-protect-journey.html
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
 summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
 ---
-= NetApp Backup and Recovery의 보호 여정 계획 옵션
+= NetApp Backup and Recovery에서 ONTAP 볼륨 보호 계획
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하면 소스 볼륨의 복사본을 최대 3개까지 만들어 데이터를 보호할 수 있습니다.  볼륨에서 백업 및 복구를 활성화할 때 선택할 수 있는 옵션이 많으므로 준비할 수 있도록 선택 사항을 검토해야 합니다.
+이 페이지를 사용하여 NetApp Backup and Recovery로 ONTAP 볼륨을 보호하는 방법을 계획하십시오. 백업 및 복구를 활성화하기 전에 보호 방법, 아키텍처, 정책, 오브젝트 스토리지 옵션 및 Console 에이전트 배포 모드를 검토하십시오.
 
 
 NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .
@@ -33,7 +33,7 @@ NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참�
 [[which-protection-features-will-you-use]]
 == 어떤 보호 기능을 사용하시겠습니까?
 
-사용할 기능을 선택하기 전에 각 기능의 기능과 제공되는 보호 유형에 대한 간단한 설명을 확인해 보세요.
+사용할 기능을 선택하기 전에 각 기능의 역할과 제공하는 보호 유형에 대한 간략한 설명을 드리겠습니다.
 
 [cols="20,70"]
 |===
@@ -48,7 +48,7 @@ NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참�
 
 | 클라우드 백업 | 보호 및 장기 보관 목적으로 데이터를 클라우드에 백업합니다.  필요한 경우 백업에서 볼륨, 폴더 또는 개별 파일을 동일하거나 다른 시스템으로 복원할 수 있습니다. 
 |===
-스냅샷은 모든 백업 방법의 기반이며, 백업 및 복구 서비스를 사용하려면 필수입니다. 스냅샷은 볼륨의 읽기 전용 특정 시점 이미지입니다. 이미지는 최소한의 저장 공간을 사용하고 마지막 스냅샷이 만들어진 이후 파일의 변경 사항만 기록하므로 성능 오버헤드가 무시할 수 있을 정도입니다.  볼륨에 생성된 스냅샷은 복제된 볼륨과 백업 파일을 소스 볼륨의 변경 사항과 동기화하는 데 사용됩니다(그림 참조).
+스냅샷은 모든 백업 방법의 기본이며, 백업 및 복구 서비스를 사용하기 위해 필수적입니다. 스냅샷은 볼륨의 읽기 전용 시점 이미지입니다. 이 이미지는 마지막 스냅샷 생성 이후 파일 변경 사항만 기록하므로 스토리지 공간을 최소한으로 사용하고 성능 오버헤드도 거의 없습니다. 그림에서 보는 것처럼, 볼륨에 생성된 스냅샷은 복제된 볼륨과 백업 파일을 소스 볼륨의 변경 사항과 동기화된 상태로 유지하는 데 사용됩니다.
 
 image:diagram-321-overview.png["백업 파일이 소스 시스템에 스냅샷으로, 보조 스토리지 시스템에 복제된 볼륨으로, 개체 스토리지에 백업 파일로 존재하는 방식을 보여주는 다이어그램입니다."]
 
@@ -68,7 +68,7 @@ NOTE: 복제된 볼륨이나 백업 파일을 처음 만들 때는 소스 데이
 
 다음 표는 세 가지 백업 방법을 일반적으로 비교한 것입니다.  일반적으로 개체 스토리지 공간은 온프레미스 디스크 스토리지보다 비용이 저렴하지만, 클라우드에서 데이터를 자주 복원할 것으로 생각된다면 클라우드 공급업체의 이탈 수수료로 인해 절감액이 일부 줄어들 수 있습니다.  클라우드에 있는 백업 파일에서 데이터를 얼마나 자주 복원해야 하는지 파악해야 합니다.
 
-이러한 기준 외에도 클라우드 스토리지는 *Datalock and Ransomware protection* 기능을 사용하면 추가적인 보안 옵션을 제공하며, 오래된 백업 파일을 보관용 스토리지 클래스로 선택하면 추가적인 비용 절감 효과를 얻을 수 있습니다. link:prev-ontap-policy-object-options.html["DataLock 및 랜섬웨어 보호와 보관 스토리지 설정에 대해 자세히 알아보세요."].
+이러한 기준 외에도 클라우드 스토리지는 *DataLock 및 랜섬웨어 보호* 기능을 사용하면 추가적인 보안 옵션을 제공하며, 오래된 백업 파일을 위한 아카이브 스토리지 클래스를 선택하면 추가적인 비용 절감 효과를 얻을 수 있습니다. link:prev-ontap-policy-object-options.html["DataLock 및 랜섬웨어 보호와 보관 스토리지 설정에 대해 자세히 알아보세요."].
 
 [cols="18,18,22,18,22"]
 |===
@@ -114,10 +114,10 @@ image:diagram-321-cascade-detailed.png["볼륨의 스냅샷을 사용하여 복�
 |===
 
 
-[[will-you-use-the-default-policies-for-snapshots-replications-and-backups]]
+[[will-you-use-the-default-policies-for-snapshots-replication-and-backups]]
 == 스냅샷, 복제 및 백업에 기본 정책을 사용하시겠습니까?
 
-NetApp 에서 제공하는 기본 정책을 사용하여 백업을 만들 수도 있고, 사용자 정의 정책을 만들 수도 있습니다.  활성화 마법사를 사용하여 볼륨의 백업 및 복구 서비스를 활성화하면 기본 정책과 시스템(Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템)에 이미 있는 다른 정책 중에서 선택할 수 있습니다.  기존 정책과 다른 정책을 사용하려면 활성화 마법사를 시작하기 전이나 사용하는 동안 정책을 만들 수 있습니다.
+NetApp에서 제공하는 기본 정책을 사용하여 백업을 생성하거나 사용자 지정 정책을 생성할 수 있습니다. 활성화 마법사를 사용하여 볼륨에 대한 백업 및 복구 서비스를 활성화할 때 기본 정책과 시스템에 이미 존재하는 다른 정책(Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템) 중에서 선택할 수 있습니다. 기존 정책과 다른 정책을 사용하려면 활성화 마법사를 시작하기 전이나 마법사를 사용하는 동안 정책을 생성할 수 있습니다.
 
 * 기본 스냅샷 정책은 매시간, 매일, 매주 스냅샷을 생성하여 매시간 6개, 매일 2개, 매주 2개의 스냅샷을 보관합니다.
 * 기본 복제 정책은 일일 및 주간 스냅샷을 복제하여 일일 스냅샷 7개와 주간 스냅샷 52개를 보관합니다.
@@ -126,7 +126,7 @@ NetApp 에서 제공하는 기본 정책을 사용하여 백업을 만들 수도
 
 복제 또는 백업에 대한 사용자 지정 정책을 생성하는 경우 정책 레이블(예: "매일" 또는 "매주")이 스냅샷 정책이나 복제된 볼륨에 있는 레이블과 일치해야 하며 백업 파일이 생성되지 않습니다.
 
-NetApp Backup and Recovery UI에서 개체 스토리지 정책에 대한 스냅샷, 복제 및 백업을 생성할 수 있습니다.  섹션을 참조하세요link:prev-ontap-backup-manage.html["새로운 백업 정책 추가"] 자세한 내용은.
+NetApp Backup and Recovery UI에서 스냅샷, 복제 및 오브젝트 스토리지 백업 정책을 생성할 수 있습니다. 자세한 내용은 link:prev-ontap-backup-manage.html["새로운 백업 정책 추가"]을 참조하십시오.
 
 NetApp Backup and Recovery를 사용하여 사용자 지정 정책을 생성하는 것 외에도 System Manager 또는 ONTAP 명령줄 인터페이스(CLI)를 사용할 수 있습니다.
 
@@ -169,7 +169,7 @@ NOTE: 클라우드 관계에 대한 백업에는 볼트 정책만 사용할 수 
 [[where-do-my-policies-reside]]
 == 내 보험은 어디에 있나요?
 
-백업 정책은 사용하려는 백업 아키텍처(팬아웃 또는 캐스케이딩)에 따라 다른 위치에 있습니다.  복제 정책과 백업 정책은 동일한 방식으로 설계되지 않았습니다. 복제는 두 개의 ONTAP 스토리지 시스템을 쌍으로 구성하고 개체에 대한 백업은 스토리지 공급자를 대상으로 사용하기 때문입니다.
+백업 정책은 팬아웃 아키텍처 또는 캐스케이드 아키텍처 사용 여부에 따라 다른 위치에 저장됩니다. 복제 정책과 백업 정책은 복제가 두 개의 ONTAP 스토리지 시스템을 쌍으로 연결하는 반면, 오브젝트에 대한 백업은 스토리지 공급자를 대상으로 사용하기 때문에 설계 방식이 다릅니다.
 
 * 스냅샷 정책은 항상 기본 스토리지 시스템에 있습니다.
 * 복제 정책은 항상 보조 스토리지 시스템에 있습니다.
@@ -188,7 +188,7 @@ NOTE: 클라우드 관계에 대한 백업에는 볼트 정책만 사용할 수 
 
 | *종속* | 주요한 | 반성 | 반성 
 |===
-따라서 계단식 아키텍처를 사용할 때 사용자 지정 정책을 만들 계획이라면 복제 볼륨이 생성될 보조 시스템에서 복제 및 개체 정책에 대한 백업을 만들어야 합니다.  팬아웃 아키텍처를 사용할 때 사용자 지정 정책을 만들 계획이라면 복제 볼륨이 생성될 보조 시스템에서 복제 정책을 만들고 기본 시스템에서 개체 정책으로 백업을 만들어야 합니다.
+캐스케이드 아키텍처를 사용할 때 사용자 지정 정책을 생성하려면 복제된 볼륨이 생성될 2차 시스템에 복제 정책과 오브젝트 백업 정책을 생성해야 합니다. 팬아웃 아키텍처를 사용할 때 사용자 지정 정책을 생성하려면 복제된 볼륨이 생성될 2차 시스템에 복제 정책을 생성하고 기본 시스템에 오브젝트 백업 정책을 생성해야 합니다.
 
 모든 ONTAP 시스템에 존재하는 기본 정책을 사용한다면 아무런 문제가 없습니다.
 
@@ -197,7 +197,7 @@ NOTE: 클라우드 관계에 대한 백업에는 볼트 정책만 사용할 수 
 [[do-you-want-to-create-your-own-object-storage-container]]
 == 자체 객체 스토리지 컨테이너를 만들고 싶습니까?
 
-시스템의 개체 스토리지에 백업 파일을 만들면 기본적으로 백업 및 복구 서비스는 사용자가 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다.  AWS 또는 GCP 버킷의 이름은 기본적으로 "netapp-backup-<uuid>"로 지정됩니다.  Azure Blob 저장소 계정의 이름은 "netappbackup<uuid>"입니다.
+시스템의 오브젝트 스토리지에 백업 파일을 생성하면 기본적으로 백업 및 복구 서비스는 구성된 오브젝트 스토리지 계정에 백업 파일용 컨테이너(버킷 또는 스토리지 계정)를 생성합니다. AWS 또는 GCP 버킷의 기본 이름은 "netapp-backup-<uuid>"입니다. Azure Blob 스토리지 계정의 이름은 "netappbackup<uuid>"입니다.
 
 특정 접두사를 사용하거나 특수 속성을 지정하려면 개체 공급자 계정에서 직접 컨테이너를 만들 수 있습니다.  자체 컨테이너를 만들려면 활성화 마법사를 시작하기 전에 컨테이너를 만들어야 합니다.  NetApp Backup and Recovery 모든 버킷을 사용하고 버킷을 공유할 수 있습니다.  백업 활성화 마법사는 선택한 계정과 자격 증명에 대해 프로비저닝된 컨테이너를 자동으로 검색하므로 사용할 컨테이너를 선택할 수 있습니다.
 
@@ -236,7 +236,7 @@ NOTE: Azure에서 백업 대상으로 사용할 컨테이너를 생성할 때 �
 [[which-console-agent-deployment-mode-are-you-using]]
 == 어떤 콘솔 에이전트 배포 모드를 사용하고 있습니까?
 
-이미 콘솔을 사용하여 저장소를 관리하고 있다면 콘솔 에이전트가 이미 설치되어 있습니다.  NetApp Backup and Recovery 와 동일한 콘솔 에이전트를 사용할 계획이라면 준비가 완료된 것입니다.  다른 콘솔 에이전트를 사용해야 하는 경우 백업 및 복구 구현을 시작하기 전에 해당 에이전트를 설치해야 합니다.
+이미 콘솔을 사용하여 스토리지를 관리하고 있다면 콘솔 에이전트가 이미 설치되어 있습니다. NetApp Backup and Recovery에서 동일한 콘솔 에이전트를 사용하려는 경우 모든 준비가 완료된 것입니다. 다른 콘솔 에이전트를 사용해야 하는 경우 백업 및 복구 구현을 시작하기 전에 설치하십시오.
 
 NetApp Console 비즈니스 및 보안 요구 사항을 충족하는 방식으로 콘솔을 사용할 수 있도록 다양한 배포 모드를 제공합니다.  _표준 모드_는 콘솔 SaaS 계층을 활용하여 모든 기능을 제공하는 반면, _제한 모드_와 _개인 모드_는 연결 제한이 있는 조직에서 사용할 수 있습니다.
 
@@ -247,7 +247,7 @@ https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Con
 [[support-for-sites-with-full-internet-connectivity]]
 === 인터넷 연결이 완벽하게 가능한 사이트 지원
 
-NetApp Backup and Recovery 완전한 인터넷 연결(표준 모드 또는 SaaS 모드라고도 함)이 있는 사이트에서 사용하는 경우 콘솔에서 관리하는 모든 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템에 복제된 볼륨을 만들 수 있으며, 지원되는 모든 클라우드 공급자의 개체 스토리지에 백업 파일을 만들 수 있습니다. link:concept-backup-to-cloud.html["지원되는 백업 대상의 전체 목록을 확인하세요."].
+NetApp Backup and Recovery를 인터넷 연결이 완벽한 사이트(표준 모드 또는 SaaS 모드라고도 함)에서 사용하는 경우 Console에서 관리하는 모든 온프레미스 ONTAP 또는 Cloud Volumes ONTAP 시스템에 복제된 볼륨을 생성할 수 있으며 지원되는 모든 클라우드 공급자의 오브젝트 스토리지에 백업 파일을 생성할 수 있습니다. link:concept-backup-to-cloud.html["지원되는 백업 대상의 전체 목록을 확인하세요."].
 
 유효한 콘솔 에이전트 위치 목록을 보려면 백업 파일을 만들려는 클라우드 공급자의 다음 백업 절차 중 하나를 참조하세요.  콘솔 에이전트를 Linux 시스템에 수동으로 설치하거나 특정 클라우드 공급자에 배포해야 하는 몇 가지 제한 사항이 있습니다.
 
@@ -282,6 +282,6 @@ NetApp Backup and Recovery 인터넷 연결이 없는 사이트(_개인 모드_ 
 
 NOTE: BlueXP 개인 모드(레거시 BlueXP 인터페이스)는 일반적으로 인터넷 연결이 없고 AWS Secret Cloud, AWS Top Secret Cloud, Azure IL6를 포함하는 보안 클라우드 지역이 있는 온프레미스 환경에서 사용됩니다. NetApp 기존 BlueXP 인터페이스를 통해 이러한 환경을 계속 지원합니다. 레거시 BlueXP 인터페이스의 개인 모드 설명서는 다음을 참조하세요. https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP 개인 모드에 대한 PDF 문서"] .
 
-* 로컬 온프레미스 ONTAP 시스템의 데이터를 로컬 NetApp StorageGRID 시스템으로 백업할 수 있습니다. link:prev-ontap-backup-onprem-storagegrid.html["온프레미스 ONTAP 데이터를 StorageGRID 에 백업"].
+* 로컬 온프레미스 ONTAP 시스템의 데이터를 로컬 StorageGRID 시스템으로 백업할 수 있습니다. link:prev-ontap-backup-onprem-storagegrid.html["온프레미스 ONTAP 데이터를 StorageGRID 에 백업"].
 * 로컬 온프레미스 ONTAP 시스템의 데이터를 S3 개체 스토리지에 대해 구성된 로컬 온프레미스 ONTAP 시스템이나 Cloud Volumes ONTAP 시스템으로 백업할 수 있습니다. link:prev-ontap-backup-onprem-ontaps3.html["온프레미스 ONTAP 데이터를 ONTAP S3에 백업"].
 

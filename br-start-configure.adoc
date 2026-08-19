@@ -14,9 +14,9 @@ summary: NetApp Backup and Recovery 구성하려면 몇 가지 단계를 완료�
 
 
 [role="lead"]
-NetApp Console 설정한 후 백업 및 복구 설정을 구성합니다.  호스트 리소스에 대한 자격 증명을 추가하고, SnapCenter 리소스를 가져오고, 로그 디렉토리를 구성하고, VMware vCenter 설정을 지정합니다.  데이터를 백업하거나 복구하기 전에 다음 단계를 완료하세요.
+워크로드에 대한 자격 증명을 추가하고, 기존 인프라와 통합하고, 백업 및 복원 작업을 준비하도록 Backup and Recovery 설정을 구성합니다.
 
-* <<호스트 리소스에 대한 자격 증명 추가>> NetApp Backup and Recovery가 인증해야 하는 모든 Windows, Microsoft SQL Server, Oracle Database 또는 Linux 호스트에 적용됩니다. 여기에는 파일이나 폴더를 복원할 때 사용되는 게스트 OS 자격 증명이 포함됩니다.
+* <<호스트 리소스에 대한 자격 증명 추가>> Windows, Microsoft SQL Server, Oracle Database 및 Linux 호스트용 자격 증명으로, NetApp Backup and Recovery가 인증해야 하는 호스트에 사용됩니다. 여기에는 파일이나 폴더를 복원할 때 사용되는 게스트 OS 자격 증명이 포함됩니다.
 * <<VMware vCenter 설정 유지>>.
 * <<SnapCenter 호스트 리소스 가져오기 및 관리>>. (Microsoft SQL Server 워크로드에만 해당)
 * <<KVM 관리 플랫폼을 추가하세요>>. (KVM 워크로드에만 해당)
@@ -49,13 +49,13 @@ NetApp Console 설정한 후 백업 및 복구 설정을 구성합니다.  호�
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
 . *자격 증명*의 아래쪽 화살표를 선택하세요.
 . *새 자격 증명 추가*를 선택합니다.
-. 자격 증명 정보를 입력하세요. 선택한 인증 모드에 따라 표시되는 필드가 다릅니다. 필드에 대한 자세한 정보를 보려면 정보 *i* 아이콘 위에 마우스를 올리세요.
+. 자격 증명 정보를 입력합니다. 선택한 인증 모드에 따라 다른 필드가 나타납니다. 필드에 대한 자세한 정보를 보려면 정보 *i* 아이콘 위에 마우스를 올려 놓으십시오.
 +
 ** *자격 증명 이름*: 자격 증명의 이름을 입력하세요.
 ** *인증 모드*: *Windows*, *Microsoft SQL*, *Oracle Database*, 또는 *Linux* 중에서 선택하십시오.
 +
 
-TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Server 모두에 대한 자격 증명을 입력해야 하므로 두 세트의 자격 증명을 추가해야 합니다.
+TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Server 모두에 대한 자격 증명을 입력해야 하므로 두 세트의 자격 증명이 필요합니다.
 
 +
 [role="tabbed-block"]
@@ -138,7 +138,7 @@ TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Serve
 [[maintain-vmware-vcenter-settings]]
 == VMware vCenter 설정 유지
 
-백업을 위한 워크로드를 검색하려면 VMware vCenter 자격 증명을 제공합니다.  자격 증명이 없으면 VMware vCenter Server 워크로드에 액세스하고 관리할 수 있는 권한을 부여하여 자격 증명을 만드세요.
+백업할 워크로드를 검색하려면 VMware vCenter Server 자격 증명을 제공하십시오. 자격 증명이 없는 경우 VMware vCenter Server 워크로드에 액세스하고 관리할 수 있는 권한으로 자격 증명을 생성하십시오.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
@@ -146,7 +146,7 @@ TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Serve
 . *vCenter 추가*를 선택합니다.
 . VMware vCenter Server 정보를 입력합니다.
 +
-** *vCenter FQDN 또는 IP 주소*: VMware vCenter Server의 FQDN 이름 또는 IP 주소를 입력합니다.
+** *vCenter FQDN 또는 IP 주소*: VMware vCenter 서버의 FQDN 또는 IP 주소를 입력하십시오.
 ** *사용자 이름* 및 *비밀번호*: VMware vCenter Server의 사용자 이름과 비밀번호를 입력하세요.
 ** *포트*: VMware vCenter Server의 포트 번호를 입력하세요.
 ** *프로토콜*: *HTTP* 또는 *HTTPS*를 선택하세요.
@@ -247,7 +247,7 @@ SnapCenter 에서 가져오기 페이지에는 이전에 가져온 모든 항목
 [[add-a-kvm-management-platform]]
 == KVM 관리 플랫폼을 추가하세요
 
-Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는 경우, NetApp Backup and Recovery 와 통합해야 합니다.
+Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는 경우, NetApp Backup and Recovery와 통합하여 Backup and Recovery가 관리되는 KVM 호스트 및 VM을 검색하고 보호할 수 있도록 하십시오.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
@@ -255,7 +255,7 @@ Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는
 . *관리 플랫폼 자격 증명 추가*를 선택하세요.
 . 다음 정보를 입력하세요:
 +
-** *관리 플랫폼 IP 주소 또는 FQDN*: 관리 플랫폼의 IP 주소 또는 정규화된 도메인 이름을 입력하십시오.
+** *관리 플랫폼 IP 주소 또는 FQDN*: 관리 플랫폼의 IP 주소 또는 FQDN을 입력하십시오.
 ** *API 키*: API 요청 인증에 사용할 API 키를 입력하세요.
 ** *비밀 키*: API 요청 인증에 사용할 비밀 키를 입력하세요.
 ** *포트*: 백업 및 복구와 관리 플랫폼 간의 통신에 사용할 포트를 입력하십시오.
@@ -270,7 +270,7 @@ Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는
 [[configure-log-directories-in-snapshots-for-windows-hosts]]
 == Windows 호스트의 스냅샷에서 로그 디렉토리 구성
 
-Windows 호스트에 대한 정책을 만들기 전에 Windows 호스트의 스냅샷에서 로그 디렉터리를 구성해야 합니다.  로그 디렉토리는 백업 프로세스 중에 생성되는 로그를 저장하는 데 사용됩니다.
+Windows 호스트용 정책을 생성하기 전에 백업 프로세스 중에 생성된 로그를 저장하기 위해 스냅샷에서 로그 디렉토리를 구성하십시오.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -310,18 +310,18 @@ NOTE: 여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호�
 [[create-a-resource-transformation-template]]
 == 리소스 변환 템플릿을 생성합니다
 
-리소스를 복원할 때 수행하는 일반적인 변환을 저장하기 위해 리소스 변환 템플릿을 생성하십시오.
+복원 작업 중에 리소스에 적용하는 일반적인 변환을 저장하기 위해 리소스 변환 템플릿을 생성합니다.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
-. 아래쪽 화살표를 선택하여 *Resource modifer template* 섹션을 확장하세요.
+. 아래쪽 화살표를 선택하여 *리소스 변환 템플릿* 섹션을 확장합니다.
 . *템플릿 만들기*를 선택합니다.
 . 리소스 변환 템플릿의 이름을 입력합니다.
 . 선택적으로 템플릿 설명을 입력합니다.
 . 대상 리소스를 설명하십시오.
 +
 .. 리소스 종류(예: Pod 또는 Deployment)를 입력하세요. 이 필드는 필수입니다.
-.. 선택적으로 리소스 그룹, 버전, 이름을 입력합니다.
+.. 선택적으로 리소스 그룹, 버전 및 이름을 입력할 수 있습니다.
 
 
 . 작업 구축:

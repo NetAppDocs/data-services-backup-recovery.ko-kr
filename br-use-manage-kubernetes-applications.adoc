@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: br-use-manage-kubernetes-applications.html 
-keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, snapcenter 
-summary: NetApp Backup and Recovery 사용하면 Kubernetes 애플리케이션과 관련 리소스의 보호를 해제하고 삭제할 수 있습니다. 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, on-premises, applications, virtual machines, backup and recovery, snapcenter 
+summary: NetApp Backup and Recovery에서 Kubernetes 애플리케이션과 관련 보호 데이터를 관리합니다. 
 ---
 = NetApp Backup and Recovery에서 Kubernetes 애플리케이션을 관리합니다.
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 사용하면 Kubernetes 애플리케이션�
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하면 Kubernetes 애플리케이션과 관련 리소스의 보호를 해제하고 삭제할 수 있습니다.
+필요한 경우 Kubernetes 애플리케이션의 보호를 해제하거나 삭제하고 복원 지점을 제거합니다.
 
 .필수 NetApp Console 역할
 조직 관리자 또는 SnapCenter 관리자. link:reference-roles.html["NetApp Backup and Recovery 액세스 역할에 대해 알아보세요"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
@@ -24,16 +24,16 @@ NetApp Backup and Recovery 사용하면 Kubernetes 애플리케이션과 관련 
 [[unprotect-a-kubernetes-application]]
 == Kubernetes 애플리케이션 보호 해제
 
-더 이상 보호하고 싶지 않은 애플리케이션의 보호를 해제할 수 있습니다. 애플리케이션의 보호를 해제하면 NetApp Backup and Recovery 해당 애플리케이션의 보호를 중단하지만 연관된 모든 백업과 스냅샷은 보관합니다.
+더 이상 보호할 필요가 없는 애플리케이션은 보호 해제할 수 있습니다. 애플리케이션 보호 해제를 하면 NetApp Backup and Recovery는 해당 애플리케이션에 대한 보호를 중지하지만 연결된 모든 백업 및 스냅샷은 유지합니다.
 
 
-NOTE: 애플리케이션에 대한 보호 작업이 실행 중인 동안에는 해당 애플리케이션의 보호를 해제할 수 없습니다. 작업이 완료될 때까지 기다리거나 임시 해결책으로 <<Kubernetes 애플리케이션의 복원 지점을 제거합니다,복원 지점을 제거합니다>> 실행 중인 보호 작업에서 사용하는 방법을 사용하십시오. 그런 다음 애플리케이션의 보호를 해제할 수 있습니다.
+NOTE: 보호 작업이 진행 중인 동안에는 애플리케이션의 보호를 해제할 수 없습니다. 작업이 완료될 때까지 기다리거나, 실행 중인 보호 작업에 사용된 복원 지점을 제거하십시오. 그런 다음 애플리케이션의 보호를 해제할 수 있습니다.
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리*를 선택합니다.
-. Kubernetes 인스턴스를 선택하고 *보기*를 선택하여 해당 인스턴스와 연결된 리소스를 확인합니다.
+. Kubernetes 인스턴스를 선택하고 *보기*를 선택하여 해당 인스턴스와 연결된 리소스를 엽니다.
 . *응용 프로그램* 탭을 선택하세요.
-. 애플리케이션 목록에서 보호를 해제할 애플리케이션을 선택하고 관련된 작업 메뉴를 선택합니다.
+. 애플리케이션 목록에서 보호를 해제할 애플리케이션을 선택하고 해당 작업 메뉴를 선택합니다.
 . *보호 해제*를 선택하세요.
 . 공지사항을 읽고 준비가 되면 *보호 해제*를 선택하세요.
 
@@ -43,15 +43,15 @@ NOTE: 애플리케이션에 대한 보호 작업이 실행 중인 동안에는 �
 [[delete-a-kubernetes-application]]
 == Kubernetes 애플리케이션 삭제
 
-더 이상 필요 없는 애플리케이션을 삭제하세요.  NetApp Backup and Recovery 삭제된 애플리케이션의 보호를 중지하고 모든 백업과 스냅샷을 제거합니다.
+더 이상 필요하지 않은 애플리케이션을 삭제하십시오. NetApp Backup and Recovery는 삭제된 애플리케이션에 대한 보호 기능을 중지하고 모든 백업 및 스냅샷을 제거합니다.
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리*를 선택합니다.
-. Kubernetes 인스턴스를 선택하고 *보기*를 선택하여 해당 인스턴스와 연결된 리소스를 확인합니다.
+. Kubernetes 인스턴스를 선택하고 *보기*를 선택하여 해당 인스턴스와 연결된 리소스를 엽니다.
 . *응용 프로그램* 탭을 선택하세요.
-. 애플리케이션 목록에서 삭제하려는 애플리케이션을 선택하고 관련된 작업 메뉴를 선택합니다.
+. 애플리케이션 목록에서 삭제하려는 애플리케이션을 선택하고 해당 애플리케이션의 [작업] 메뉴를 선택합니다.
 . *삭제*를 선택하세요.
-. *스냅샷 및 백업 삭제*를 활성화하면 애플리케이션의 모든 스냅샷과 백업이 제거됩니다.
+. 애플리케이션의 모든 스냅샷과 백업을 삭제하려면 *스냅샷 및 백업 삭제*를 활성화하십시오.
 +
 
 CAUTION: 이러한 스냅샷과 백업을 사용하여 더 이상 애플리케이션을 복원할 수 없습니다.
@@ -64,13 +64,10 @@ CAUTION: 이러한 스냅샷과 백업을 사용하여 더 이상 애플리케�
 [[remove-a-restore-point-for-a-kubernetes-application]]
 == Kubernetes 애플리케이션의 복원 지점을 제거합니다
 
-애플리케이션의 보호 기능을 해제해야 하는데 현재 보호 작업이 실행 중인 경우 해당 애플리케이션의 복원 지점을 제거해야 할 수도 있습니다.
+보호 작업이 진행 중인 동안 애플리케이션의 보호를 해제해야 하는 경우 해당 애플리케이션의 복원 지점을 제거하십시오.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.
-. 목록에서 Kubernetes 애플리케이션을 선택하고 해당 애플리케이션에 대해 *View and Restore*를 선택합니다.
-+
-복원 지점 목록이 나타납니다.
-
-. 삭제할 복구 지점을 선택하고 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *복구 지점 삭제*를 선택하여 삭제합니다.
+. 목록에서 Kubernetes 애플리케이션을 선택하고 *보기 및 복원*을 선택하여 복원 지점을 엽니다.
+. 삭제하려는 복구 지점을 선택하고 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *복구 지점 삭제*를 선택하여 삭제합니다.
 

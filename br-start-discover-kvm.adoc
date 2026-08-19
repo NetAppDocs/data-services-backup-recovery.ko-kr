@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 워크로드를 보호하기 위해 먼저 �
 
 
 [role="lead"]
-NetApp Backup and Recovery KVM 호스트와 가상 머신을 보호하기 전에 먼저 이를 검색해야 합니다. KVM 호스트와 가상 머신을 백업 및 복구에 추가하려면 먼저 Apache CloudStack과 같은 관리 플랫폼에서 관리해야 합니다.
+NetApp Backup and Recovery에서 KVM 호스트와 가상 머신을 검색하여 보호 정책으로 보호할 수 있습니다. 검색하기 전에 KVM 환경은 Apache CloudStack 등의 관리 플랫폼에서 관리되어야 합니다.
 
 *필수 콘솔 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
 
@@ -26,10 +26,10 @@ NetApp Backup and Recovery KVM 호스트와 가상 머신을 보호하기 전에
 관리 플랫폼 및 KVM 호스트 정보를 추가하면 NetApp Backup and Recovery 가 워크로드를 검색할 수 있습니다.
 
 .단계
-. NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
+. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
 . *워크로드*에서 *KVM* 타일을 선택하세요.
 +
-NetApp Backup and Recovery에 처음 로그인하고 콘솔에 시스템은 있지만 검색된 리소스가 없는 경우, "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 페이지가 나타나고 "리소스 검색" 옵션이 표시됩니다.
+NetApp Backup and Recovery에 처음 로그인하는 경우, 콘솔에 시스템은 있지만 검색된 리소스가 없는 경우 "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.
 
 . *리소스 검색*을 선택하세요.
 . 다음 정보를 입력하세요:
@@ -39,7 +39,7 @@ NetApp Backup and Recovery에 처음 로그인하고 콘솔에 시스템은 있�
 +
 ... 다음 정보를 입력하세요:
 +
-**** *관리 플랫폼 IP 주소 또는 FQDN*: 관리 플랫폼의 IP 주소 또는 정규화된 도메인 이름을 입력하십시오.
+**** *관리 플랫폼 IP 주소 또는 FQDN*: 관리 플랫폼의 IP 주소 또는 FQDN을 입력하십시오.
 **** *API 키*: API 요청 인증에 사용할 API 키를 입력하세요.
 **** *비밀 키*: API 요청 인증에 사용할 비밀 키를 입력하세요.
 **** *포트*: 백업 및 복구와 관리 플랫폼 간의 통신에 사용할 포트를 입력하십시오.
@@ -77,7 +77,7 @@ KVM 작업 부하가 인벤토리 페이지의 작업 부하 목록에 표시됩
 
 .단계
 . NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
-. 워크로드 타일(예: Microsoft SQL Server)을 선택합니다.
+. KVM 워크로드 타일을 선택하십시오.
 . 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
 . 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
 

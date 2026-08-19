@@ -14,9 +14,9 @@ summary: NetApp Backup and Recovery 의 이 릴리스에는 다음과 같은 알
 
 
 [role="lead"]
-이 버전에서 작동하지 않거나 제대로 작동하지 않는 플랫폼, 장치 또는 기능은 다음과 같습니다.  이러한 제한 사항을 주의 깊게 읽으십시오.
+NetApp Backup and Recovery에서 KVM 워크로드에 대한 현재 제한 사항을 검토하십시오.
 
-NetApp Backup and Recovery의 KVM 워크로드에서는 다음과 같은 작업 및 구성이 지원되지 않습니다.
+NetApp Backup and Recovery의 KVM 워크로드에 대해 다음과 같은 지원되지 않는 작업 및 구성이 적용됩니다.
 
 
 
@@ -51,7 +51,7 @@ NetApp Backup and Recovery의 KVM 워크로드에서는 다음과 같은 작업 
 [[troubleshooting-notes]]
 == 문제 해결 참고 사항
 
-NetApp Backup and Recovery를 사용하여 KVM 워크로드를 사용할 때 다음 사항에 유의하십시오.
+NetApp Backup and Recovery에서 KVM 워크로드를 사용할 때 다음 사항에 유의하십시오.
 
-* 보호 대상 가상 머신에서 QEMU Guest Agent가 실행 중이 아니면 백업이 실패할 수 있습니다. 해결 방법으로 백업을 시작하기 전에 가상 머신에서 `qemu-guest-agent` 데몬이 실행 중인지 확인하십시오.
+* 보호 대상 가상 머신에서 QEMU 게스트 에이전트가 실행 중이 아니면 백업이 실패할 수 있습니다. 이 문제를 방지하려면 백업을 시작하기 전에 가상 머신에서  `qemu-guest-agent` 데몬이 실행 중인지 확인하십시오.
 

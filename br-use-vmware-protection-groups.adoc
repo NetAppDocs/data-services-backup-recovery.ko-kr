@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 에서 VMware 워크로드에 대한 보호 
 
 
 [role="lead"]
-작업 부하 집합에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 만듭니다. 보호 그룹은 함께 보호하려는 VM 및 데이터 저장소와 같은 리소스의 논리적 그룹입니다.
+일련의 워크로드에 대한 백업 및 복원 작업을 관리하기 위해 보호 그룹을 생성합니다. 보호 그룹은 VM 및 데이터스토어 등 함께 보호하려는 리소스를 논리적으로 그룹화한 것입니다.
 
 보호 그룹과 관련된 다음 작업을 수행할 수 있습니다.
 
@@ -32,7 +32,7 @@ summary: NetApp Backup and Recovery 에서 VMware 워크로드에 대한 보호 
 
 보호 그룹에 추가할 리소스를 선택할 때 데이터 저장소, 가상 머신 또는 vSphere 태그별로 구성할 수 있습니다.
 
-태그 기반 보호(vSphere 태그 사용)는 NetApp Backup and Recovery에서 보호 그룹 관리를 간소화합니다.
+vSphere 태그를 사용한 태그 기반 보호 기능은 NetApp Backup and Recovery에서 보호 그룹 관리를 간소화합니다.
 
 태그 기반 보호를 사용하면 다음과 같은 몇 가지 이점이 있습니다.
 
@@ -56,7 +56,7 @@ summary: NetApp Backup and Recovery 에서 VMware 워크로드에 대한 보호 
 .시작하기 전에
 * 사용 중인 환경에서 지원되는 버전의 VMware vSphere를 사용하고 있는지 확인하십시오.
 * 태그 기반 보호 그룹을 생성할 때, 보호하려는 가상 머신과 데이터스토어가 이미 vCenter의 하나 이상의 vSphere 태그와 연결되어 있는지 확인하십시오.
-* VMware 워크로드의 경우 예약된 백업 시간은 관리 호스트의 시간대를 기준으로 해석된다는 점에 유의하십시오. 자세한 내용은 link:br-use-policies-vmware-create.html["NetApp Backup and Recovery에서 VMware 백업 정책을 생성하고 관리합니다"]을 참조하십시오.
+* VMware 워크로드의 경우 예약된 백업 시간은 관리 호스트의 시간대를 사용합니다. 자세한 내용은 link:br-use-policies-vmware-create.html["NetApp Backup and Recovery에서 VMware 백업 정책을 생성하고 관리합니다"]을 참조하십시오.
 
 
 .단계
@@ -172,7 +172,7 @@ NOTE: 보호 그룹 이름을 수정하거나, 가상 머신을 추가 또는 �
 [[delete-a-protection-group]]
 == 보호 그룹 삭제
 
-보호 그룹을 삭제하면 해당 그룹과 해당 그룹의 모든 백업 일정이 제거됩니다.  더 이상 필요하지 않은 보호 그룹을 삭제하세요.
+보호 그룹을 삭제하면 해당 보호 그룹과 그룹에 연결된 모든 백업 일정이 제거됩니다. 더 이상 필요하지 않은 보호 그룹은 삭제하십시오.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.

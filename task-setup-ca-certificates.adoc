@@ -4,7 +4,7 @@ permalink: task-setup-ca-certificates.html
 keywords: cloud backup, backup and recovery, backup, restore, certificates, protection, security, storagegrid, backup, back up 
 summary: NetApp Backup and Recovery 와 StorageGRID 또는 ONTAP 간 통신을 활성화하기 위해 보안 인증서를 만듭니다. 
 ---
-= NetApp Backup and Recovery를 위한 보안 인증서 설정
+= NetApp Backup and Recovery용 CA 인증서를 설정합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,16 @@ summary: NetApp Backup and Recovery 와 StorageGRID 또는 ONTAP 간 통신을 �
 
 
 [role="lead"]
-NetApp Backup and Recovery 와 StorageGRID 또는 ONTAP 간 통신을 활성화하기 위해 보안 인증서를 만듭니다.
+NetApp Backup and Recovery가 StorageGRID 또는 ONTAP에 대한 보안 연결을 검증할 수 있도록 CA 인증서를 설정합니다. 환경 및 보호하려는 시스템에 해당하는 단계를 따르십시오.
 
 
 
-[[create-a-security-certificate-for-storagegrid]]
-== StorageGRID 에 대한 보안 인증서 생성
+[[create-a-ca-certificate-for-storagegrid]]
+== StorageGRID에 대한 CA 인증서 생성
 
 NetApp Backup and Recovery 컨테이너와 StorageGRID 간의 통신에서 StorageGRID 인증서를 확인해야 하는 경우 다음 단계를 완료하십시오.
 
-생성된 인증서에는 NetApp Backup and Recovery 에서 백업을 활성화할 때 제공한 이름과 동일한 CN 및 주체 대체 이름이 있어야 합니다.
+생성된 인증서는 백업을 활성화할 때 NetApp Backup and Recovery에서 제공한 것과 동일한 일반 이름(CN) 및 주체 대체 이름(Subject Alternative Name)을 사용해야 합니다.
 
 .단계
 . StorageGRID 설명서의 단계에 따라 StorageGRID 인증서를 생성하세요.
@@ -31,13 +31,13 @@ NetApp Backup and Recovery 컨테이너와 StorageGRID 간의 통신에서 Stora
 https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-load-balancer-endpoints.html#attach-certificate["인증서 구성에 대한 StorageGRID 정보"]
 
 . 아직 StorageGRID 인증서로 업데이트하지 않았다면 업데이트하세요.
-. 루트 사용자로 콘솔 에이전트에 로그인합니다. 달리다:
+. 루트 사용자로 Console 에이전트에 로그인합니다. 다음 명령을 실행합니다.
 +
 [source, shell]
 ----
 sudo su
 ----
-. NetApp Backup and Recovery (Cloud Backup Service) Docker 볼륨을 가져옵니다. 달리다:
+. NetApp Backup and Recovery(Cloud Backup Service) Docker 볼륨을 찾습니다. 다음 명령을 실행합니다.
 +
 [source, shell]
 ----
@@ -79,32 +79,32 @@ NOTE: 마운트 지점은 표준, 개인 및 제한 배포 모드마다 다릅�
 ----
 cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 ----
-. StorageGRID 인증서가 루트 CA와 중간 CA에 의해 서명된 경우 다음을 추가합니다. `pem` 두 파일을 하나의 파일로 통합 `sgws.crt` 현재 위치에서. 이 파일에 리프 인증서를 추가하지 마세요.
+. StorageGRID 인증서가 루트 CA와 중간 CA에 의해 서명된 경우, 두  `pem` 파일을 현재 위치에서  `sgws.crt`라는 이름의 단일 파일로 병합하십시오. 리프 인증서는 이 파일에 추가하지 마십시오.
 
 
 
 
-[[steps-for-cloudmanagercbs-container]]
-=== cloudmanager_cbs 컨테이너에 대한 단계
+[[steps-for-the-cloudmanagercbs-container]]
+=== cloudmanager_cbs 컨테이너 단계
 
-NetApp Backup and Recovery (Cloud Backup Service )에서 StorageGRID Server 인증서 검증을 활성화해야 합니다.
+NetApp Backup and Recovery (Cloud Backup Service)에서 StorageGRID 서버 인증서 검증을 활성화합니다.
 
-. 이전 단계에서 얻은 Docker 볼륨으로 디렉토리를 변경합니다.
+. 이전 단계에서 찾은 Docker 볼륨으로 변경합니다.
 +
 [source, shell]
 ----
 cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 ----
-. 디렉토리를 config 디렉토리로 변경합니다.
+. 구성 디렉토리로 변경합니다.
 +
 [source, shell]
 ----
 cd cbs_config
 ----
-. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같이 구성 파일을 만들고 저장합니다.
+. 배포 환경에 따라 아래와 같이 구성 파일을 생성하고 다음 이름 중 하나로 저장하십시오.
 +
-** `production-customer.json`표준 모드 및 제한 모드 배포에 사용됩니다.
-** `darksite-customer.json`개인 모드 배포에 사용됩니다.
+** `production-customer.json` 표준 모드 및 제한 모드 배포용
+** `darksite-customer.json` 프라이빗 모드 배포용
 +
 참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console 배포 모드"] .
 
@@ -143,12 +143,12 @@ docker restart cloudmanager_cbs
 
 
 
-[[steps-for-cloudmanagercbscatalog-container]]
-=== cloudmanager_cbs_catalog 컨테이너에 대한 단계
+[[steps-for-the-cloudmanagercbscatalog-container]]
+=== cloudmanager_cbs_catalog 컨테이너의 단계
 
-다음으로, 카탈로그 서비스에 대한 StorageGRID Server 인증서 검증을 활성화해야 합니다.
+다음으로, 카탈로그 서비스에 대해 StorageGRID 서버 인증서 확인을 활성화하십시오.
 
-. Docker 볼륨으로 디렉토리를 변경합니다.
+. Docker 볼륨으로 변경합니다.
 +
 [source, shell]
 ----
@@ -160,10 +160,10 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 ----
 cd cbs_catalog_config
 ----
-. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같이 구성 파일을 만듭니다.
+. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같은 구성 파일을 생성하십시오.
 +
-** `production-customer.json`표준 모드 및 제한 모드 배포에 사용됩니다.
-** `darksite-customer.json`개인 모드 배포에 사용됩니다.
+** `production-customer.json` 표준 모드 및 제한 모드 배포용
+** `darksite-customer.json` 프라이빗 모드 배포용
 +
 참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console 배포 모드"] .
 
@@ -203,7 +203,7 @@ docker restart cloudmanager_cbs_catalog
 
 ==== 우분투
 
-. SGWS 인증서를 복사하세요 `/usr/local/share/ca-certificates` . 다음은 그 예입니다.
+. SGWS 인증서를  `/usr/local/share/ca-certificates`에 복사하십시오. 다음은 예시입니다.
 +
 [source, shell]
 ----
@@ -212,7 +212,7 @@ cp /config/sgws.crt /usr/local/share/ca-certificates/
 +
 어디 `sgws.crt` 루트 CA 인증서입니다.
 
-. 호스트 인증서를 StorageGRID 인증서로 업데이트합니다. 달리다
+. StorageGRID 인증서로 호스트 인증서를 업데이트합니다. 실행:
 +
 [source, shell]
 ----
@@ -256,12 +256,12 @@ openssl crl2pkcs7 -nocrl -certfile /etc/pki/tls/certs/ca-bundle.crt | openssl pk
 
 
 
-[[create-a-security-certificate-for-ontap]]
-== ONTAP 에 대한 보안 인증서 생성
+[[create-a-ca-certificate-for-ontap]]
+== ONTAP에 대한 CA 인증서 생성
 
-NetApp Backup and Recovery 컨테이너와 ONTAP 간의 통신에서 ONTAP 인증서의 유효성을 검사해야 하는 경우 다음 단계를 완료하세요.
+NetApp Backup and Recovery 컨테이너와 ONTAP 간의 통신이 ONTAP 인증서를 검증해야 하는 경우 다음 단계를 완료하십시오.
 
-NetApp Backup and Recovery 클러스터 관리 IP를 사용하여 ONTAP 에 연결합니다. 인증서의 주체 대체 이름에 클러스터의 IP 주소를 입력합니다. 시스템 관리자 UI를 사용하여 CSR을 생성할 때 이 단계를 지정하세요.
+NetApp Backup and Recovery는 클러스터 관리 IP 주소를 사용하여 ONTAP에 연결합니다. 인증서의 주체 대체 이름(Subject Alternative Name) 필드에 클러스터 IP 주소를 입력하십시오. System Manager에서 CSR을 생성할 때 이 값을 지정하십시오.
 
 시스템 관리자 설명서를 사용하여 ONTAP 에 대한 새로운 CA 인증서를 만듭니다.
 
@@ -276,7 +276,7 @@ NetApp Backup and Recovery 클러스터 관리 IP를 사용하여 ONTAP 에 연�
 ----
 sudo su
 ----
-. NetApp Backup and Recovery Docker 볼륨을 받으세요. 달리다:
+. NetApp Backup and Recovery Docker 볼륨을 찾습니다. 실행:
 +
 [source, shell]
 ----
@@ -294,7 +294,7 @@ local service-manager-2_cloudmanager_cbs_volume
 
 NOTE: 볼륨 이름은 표준, 개인, 제한 배포 모드에서 다릅니다. 이 예에서는 표준 클라우드 배포를 보여줍니다. 참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console 배포 모드"] .
 
-. 볼륨에 대한 마운트를 얻습니다. 달리다:
+. 볼륨의 마운트 지점을 찾습니다. 실행:
 +
 [source, shell]
 ----
@@ -312,7 +312,7 @@ docker volume inspect service-manager-2_cloudmanager_cbs_volume | grep Mountpoin
 
 NOTE: 마운트 지점은 표준, 개인 및 제한 배포 모드마다 다릅니다. 이 예에서는 표준 클라우드 배포를 보여줍니다. 참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console 배포 모드"] .
 
-. 마운트 지점 디렉토리로 변경합니다. 달리다:
+. 마운트 지점 디렉토리로 이동합니다. 실행:
 +
 [source, shell]
 ----
@@ -328,12 +328,12 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 
 
 
-[[steps-for-cloudmanagercbs-container]]
-=== cloudmanager_cbs 컨테이너에 대한 단계
+[[steps-for-the-cloudmanagercbs-container]]
+=== cloudmanager_cbs 컨테이너 단계
 
-다음으로 NetApp Backup and Recovery (Cloud Backup Service )에서 ONTAP 서버 인증서 검증을 활성화합니다.
+다음으로, NetApp Backup and Recovery(Cloud Backup Service)에서 ONTAP 서버 인증서 검증을 활성화합니다.
 
-. 이전 단계에서 얻은 Docker 볼륨으로 디렉토리를 변경합니다.
+. 이전 단계에서 찾은 Docker 볼륨으로 변경합니다.
 +
 [source, shell]
 ----
@@ -345,10 +345,10 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 ----
 cd cbs_config
 ----
-. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같이 구성 파일을 만듭니다.
+. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같은 구성 파일을 생성하십시오.
 +
-** `production-customer.json`표준 모드 및 제한 모드 배포에 사용됩니다.
-** `darksite-customer.json`개인 모드 배포에 사용됩니다.
+** `production-customer.json` 표준 모드 및 제한 모드 배포용
+** `darksite-customer.json` 프라이빗 모드 배포용
 +
 참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console 배포 모드"] .
 
@@ -385,12 +385,12 @@ docker restart cloudmanager_cbs
 
 
 
-[[steps-for-cloudmanagercbscatalog-container]]
-=== cloudmanager_cbs_catalog 컨테이너에 대한 단계
+[[steps-for-the-cloudmanagercbscatalog-container]]
+=== cloudmanager_cbs_catalog 컨테이너의 단계
 
-카탈로그 서비스에 대해 ONTAP 서버 인증서 검증을 활성화합니다.
+카탈로그 서비스에 대한 ONTAP 서버 인증서 확인을 활성화합니다.
 
-. Docker 볼륨으로 디렉토리를 변경합니다. 달리다:
+. Docker 볼륨으로 변경합니다. 실행:
 +
 [source, shell]
 ----
@@ -402,10 +402,10 @@ cd /var/lib/docker/volumes/service-manager-2_cloudmanager_cbs_volume/_data
 ----
 cd cbs_catalog_config
 ----
-. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같이 구성 파일을 만듭니다.
+. 배포 환경에 따라 다음 이름 중 하나를 사용하여 아래와 같은 구성 파일을 생성하십시오.
 +
-** `production-customer.json`표준 모드 및 제한 모드 배포에 사용됩니다.
-** `darksite-customer.json`개인 모드 배포에 사용됩니다.
+** `production-customer.json` 표준 모드 및 제한 모드 배포용
+** `darksite-customer.json` 프라이빗 모드 배포용
 +
 참조하다 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Console 배포 모드"] .
 

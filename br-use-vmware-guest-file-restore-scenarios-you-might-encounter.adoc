@@ -4,7 +4,7 @@ permalink: br-use-vmware-guest-file-restore-scenarios-you-might-encounter.html
 keywords:  
 summary: 게스트 파일을 복원하려고 할 때 게스트 파일 복원 세션이 비어 있거나, 게스트 파일 복원 디스크 연결 작업이 실패하거나, 게스트 파일 복원 세션이 중단된 후 백업이 분리되지 않는 경우가 발생할 수 있습니다. 
 ---
-= NetApp Backup and Recovery에서 게스트 파일 복원 문제 해결
+= NetApp Backup and Recovery에서 VMware 게스트 파일 복구 문제 해결
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 게스트 파일을 복원하려고 할 때 게스트 파일 복원 세
 
 
 [role="lead"]
-게스트 파일을 복원하려고 할 때 다음과 같은 시나리오가 발생할 수 있습니다.
+게스트 파일 복원 중 문제가 발생하면 다음 시나리오를 사용하여 문제를 파악하고 해결하십시오.
 
 
 
@@ -30,11 +30,11 @@ summary: 게스트 파일을 복원하려고 할 때 게스트 파일 복원 세
 [[guest-file-restore-attach-disk-operation-fails]]
 == 게스트 파일 복원 디스크 연결 작업이 실패했습니다.
 
-이 문제는 게스트 파일 복원 작업을 시작했지만 VMware 도구가 실행 중이고 게스트 OS 자격 증명이 올바른 경우에도 디스크 연결 작업이 실패할 때 발생합니다. 이런 경우, 다음 오류가 반환됩니다.
+이 문제는 게스트 파일 복원 작업을 시작했지만 VMware Tools가 실행 중이고 게스트 OS 자격 증명이 올바르더라도 디스크 연결 작업이 실패할 때 발생합니다. 이러한 상황이 발생하면 다음과 같은 오류 메시지가 반환됩니다.
 
 `Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMware Tools is running properly on the system and that the account used is an Administrator account. Error is SystemError vix error codes = (3016, 0).`
 
-이 문제를 해결하려면 게스트 OS에서 VMware Tools Windows 서비스를 다시 시작한 다음 게스트 파일 복원 작업을 다시 시도하세요.
+이 문제를 해결하려면 게스트 운영 체제에서 VMware Tools Windows 서비스를 다시 시작한 다음 게스트 파일 복원 작업을 다시 시도하십시오.
 
 
 

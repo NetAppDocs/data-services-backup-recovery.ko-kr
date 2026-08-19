@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 �
 
 
 [role="lead"]
-복구 작업을 수행하기 위해 제어된 상태에서 데이터베이스에 액세스해야 하는 경우 Oracle 데이터베이스 복구 지점을 마운트할 수 있습니다. 백업 및 복구 작업 메타데이터를 RMAN 복구 카탈로그에 저장해야 하는데 메타데이터를 자동으로 카탈로그에 추가하는 옵션이 활성화되어 있지 않은 경우 복구 지점을 수동으로 카탈로그에 추가하십시오.
+복구 작업을 위해 제어된 상태로 데이터베이스에 액세스해야 할 때 Oracle Database 복구 지점을 마운트합니다. 자동 카탈로그 생성이 비활성화된 경우 RMAN 복구 카탈로그에서 복구 지점 메타데이터를 수동으로 카탈로그화할 수 있습니다.
 
 
 
@@ -52,7 +52,7 @@ summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 �
 
 
 [[unmount-an-oracle-database-recovery-point]]
-== Oracle 데이터베이스 복구 지점을 마운트 해제합니다
+== Oracle Database 복구 지점 마운트 해제
 
 더 이상 해당 데이터베이스에 대한 변경 사항을 볼 필요가 없으면 복구 지점을 마운트 해제합니다.
 
@@ -73,7 +73,7 @@ summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 �
 
 
 [[catalog-an-oracle-database-recovery-point]]
-== Oracle 데이터베이스 복구 지점 카탈로그 작성
+== Oracle 데이터베이스 복구 지점 카탈로그화
 
 백업 및 복구 작업 메타데이터를 보존해야 하는 경우 복구 지점을 수동으로 카탈로그화합니다. 메타데이터는 데이터베이스에 대해 선택한 *RMAN 카탈로그 구성* 설정(기본적으로 대상 제어 파일)에 따라 저장됩니다. 연결된 보호 정책에서 자동 카탈로그화가 비활성화된 경우에만 수동으로 카탈로그화해야 합니다.
 

@@ -14,7 +14,7 @@ summary: 주석, 네임스페이스 설정 및 스토리지 옵션을 사용하�
 
 
 [role="lead"]
-주석, 네임스페이스 설정, 스토리지 옵션과 같은 고급 설정을 사용하여 특정 요구 사항에 맞게 복원 작업을 사용자 지정할 수 있습니다.
+어노테이션, 네임스페이스 설정 및 스토리지 옵션을 사용하여 환경에 맞게 Kubernetes 복원 작업을 사용자 지정할 수 있습니다.
 
 
 
@@ -113,14 +113,14 @@ Helm을 사용하여  `--create-namespace` 플래그로 소스 애플리케이�
 [[supported-fields]]
 == 지원되는 필드
 
-이 섹션에서는 복원 작업에 사용할 수 있는 추가 필드에 대해 설명합니다.
+이 섹션에서는 복원 작업에 필요한 추가 필드에 대해 설명합니다.
 
 
 
 [[storage-class-mapping]]
 === 스토리지 클래스 매핑
 
- `spec.storageClassMapping` 속성은 소스 애플리케이션에 있는 스토리지 클래스를 대상 클러스터의 새 스토리지 클래스로 매핑하는 방법을 정의합니다. 이 속성은 스토리지 클래스가 다른 클러스터 간에 애플리케이션을 마이그레이션하거나 BackupRestore 작업의 스토리지 백엔드를 변경할 때 사용할 수 있습니다.
+이  `spec.storageClassMapping` 속성은 소스 애플리케이션의 스토리지 클래스를 대상 클러스터의 새 스토리지 클래스에 매핑합니다. 스토리지 클래스가 다른 클러스터 간에 애플리케이션을 마이그레이션하거나 BackupRestore 작업의 스토리지 백엔드를 변경할 때 이 필드를 사용하십시오.
 
 *예:*
 
@@ -137,18 +137,18 @@ storageClassMapping:
 [[supported-annotations]]
 == 지원되는 주석
 
-이 섹션에서는 시스템의 다양한 동작을 구성하는 데 지원되는 어노테이션 목록을 제공합니다. 사용자가 어노테이션을 명시적으로 설정하지 않으면 시스템은 기본값을 사용합니다.
+이 섹션에서는 시스템의 다양한 동작을 구성하는 데 지원되는 어노테이션 목록을 제공합니다. 어노테이션을 명시적으로 설정하지 않으면 시스템은 기본값을 사용합니다.
 
 [cols="1,1,3,1"]
 |===
 | 주석 | 유형 | 설명 | 기본값 
 
 
-| protect.trident.netapp.io/data-mover-timeout-sec | 문자열 | 데이터 이동기 작동이 정지될 수 있는 최대 허용 시간(초)입니다. | "300" 
+| protect.trident.netapp.io/data-mover-timeout-sec | 문자열 | 데이터 이동 작업이 정지된 상태로 유지될 수 있는 최대 시간(초). | "300" 
 
 
 | protect.trident.netapp.io/kopia-content-cache-size-limit-mb | 문자열 | Kopia 콘텐츠 캐시의 최대 크기 제한(메가바이트)입니다. | "1000" 
 
 
-| protect.trident.netapp.io/pvc-bind-timeout-sec | 문자열 | 새로 생성된 PersistentVolumeClaims(PVC)가  `Bound` 단계에 도달하기까지 기다리는 최대 시간(초)입니다. 이 시간이 지나면 작업이 실패합니다. 모든 복원 CR 유형(BackupRestore, BackupInplaceRestore, SnapshotRestore, SnapshotInplaceRestore)에 적용됩니다. 스토리지 백엔드 또는 클러스터에서 더 많은 시간이 필요한 경우 더 높은 값을 사용하십시오. | "1200" (20분) 
+| protect.trident.netapp.io/pvc-bind-timeout-sec | 문자열 | 새로 생성된 PersistentVolumeClaims(PVC)가 해당  `Bound` 단계에 도달하기까지 기다리는 최대 시간(초)입니다. 이 시간이 지나면 작업이 실패합니다. 모든 복원 CR 유형(BackupRestore, BackupInplaceRestore, SnapshotRestore, SnapshotInplaceRestore)에 적용됩니다. 스토리지 백엔드 또는 클러스터에서 더 많은 시간이 필요한 경우 더 높은 값을 사용하십시오. | "1200" (20분) 
 |===

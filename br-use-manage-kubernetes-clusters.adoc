@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 사용하면 Kubernetes 클러스터를 검�
 
 
 [role="lead"]
-NetApp Backup and Recovery 사용하면 Kubernetes 클러스터를 검색하고 관리하여 클러스터에서 호스팅되는 리소스를 보호할 수 있습니다.
+Kubernetes 클러스터를 검색하고 관리하여 호스팅된 리소스를 보호합니다.
 
 .필수 NetApp Console 역할
 조직 관리자 또는 SnapCenter 관리자. link:reference-roles.html["NetApp Backup and Recovery 액세스 역할에 대해 알아보세요"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
@@ -31,9 +31,9 @@ NOTE: Kubernetes 클러스터를 검색하려면 다음을 참조하세요.link:
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리* > *클러스터*를 선택합니다.
-. 클러스터 목록에서 편집하려는 클러스터를 선택하고 연관된 작업 메뉴를 선택합니다.
+. 클러스터 목록에서 편집하려는 클러스터를 선택하고 해당 클러스터와 연결된 작업 메뉴를 선택합니다.
 . *클러스터 편집*을 선택하세요.
-. 클러스터 이름을 필요에 따라 변경하세요. 클러스터 이름은 검색 과정에서 Helm 명령에 사용한 이름과 일치해야 합니다.
+. 클러스터 이름을 필요한 대로 변경하십시오. 클러스터 이름은 검색 과정에서 Helm 명령에 사용한 이름과 일치해야 합니다.
 . *완료*를 선택하세요.
 
 
@@ -46,7 +46,7 @@ Kubernetes 클러스터 보호를 중지하려면 보호를 비활성화하고 �
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리* > *클러스터*를 선택합니다.
-. 클러스터 목록에서 편집하려는 클러스터를 선택하고 연관된 작업 메뉴를 선택합니다.
+. 클러스터 목록에서 제거할 클러스터를 선택하고 해당 작업 메뉴를 선택합니다.
 . *클러스터 제거*를 선택합니다.
 . 확인 대화 상자에서 정보를 검토하고 *제거*를 선택하세요.
 
@@ -78,7 +78,7 @@ Trident Protect 26.05 이상을 실행하는 Kubernetes 클러스터의 경우 N
 
 .단계
 . NetApp Backup and Recovery 에서 *인벤토리* > *클러스터*를 선택합니다.
-. 연결이 끊어진 Kubernetes 클러스터를 선택하고 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *클러스터 수정* > *클러스터 다시 연결*을 선택합니다.
+. 연결이 끊긴 Kubernetes 클러스터를 선택하고 작업 아이콘 image:../media/icon-action.png["작업 옵션"] > *클러스터 수정* > *클러스터 다시 연결*을 선택합니다.
 . 클러스터 재연결 대화 상자에서 명령줄 지침을 복사하여 클러스터에서 실행하십시오.
 +
 명령 실행이 완료되면 클러스터가 자동으로 다시 연결됩니다.
@@ -95,7 +95,7 @@ Trident Protect 26.05 이상을 실행하는 Kubernetes 클러스터의 경우 N
 
 .시작하기 전에
 * https://docs.netapp.com/us-en/console-setup-admin/concept-agent-install-options.html["새 콘솔 에이전트를 배포합니다."^]
-* 새 콘솔 에이전트와 함께 사용할 보호 정책을 선택하고link:br-use-policies-kubernetes-create.html#edit-a-policy["정책을 편집합니다"^], 해당 보호 정책을 새 콘솔 에이전트와 연결합니다.
+* 새 Console 에이전트와 함께 사용할 보호 정책을 선택하고 link:br-use-policies-kubernetes-create.html#edit-a-policy["정책을 편집합니다"^] 해당 보호 정책을 새 Console 에이전트와 연결합니다.
 
 
 .단계

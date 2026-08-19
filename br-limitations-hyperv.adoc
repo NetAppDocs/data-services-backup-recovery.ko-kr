@@ -14,18 +14,18 @@ summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetAp
 
 
 [role="lead"]
-이 버전에서 작동하지 않거나 제대로 작동하지 않는 플랫폼, 장치 또는 기능은 다음과 같습니다.  이러한 제한 사항을 주의 깊게 읽으십시오.
+NetApp Backup and Recovery에서 Hyper-V 워크로드에 대한 현재 제한 사항 및 지원되지 않는 작업을 검토하십시오.
 
 
 
 [[unsupported-actions]]
 == 지원되지 않는 작업
 
-NetApp Backup and Recovery의 Hyper-V 워크로드에서는 다음과 같은 작업이 지원되지 않습니다.
+NetApp Backup and Recovery에서 Hyper-V 워크로드에 대해 다음 작업은 지원되지 않습니다.
 
 * NetApp Console 로컬 배포용 Backup and Recovery 미리 보기 릴리스에서는 오브젝트 스토리지로의 백업이 ONTAP S3 및 StorageGRID 대상에 대해서만 지원됩니다. 이 미리 보기 릴리스에서는 백업 아카이빙이 지원되지 않습니다.
 * Microsoft Windows Server 2025를 사용하는 경우 SAN 스토리지에 저장된 2세대 가상 머신 보호는 지원되지 않습니다.
-* 여러 Hyper-V 호스트의 VM을 사용하여 리소스 그룹 만들기
-* 디스크 스패닝(여러 CIFS 공유에 걸쳐)
+* 여러 Hyper-V 호스트의 VM을 사용하여 리소스 그룹 생성
+* 여러 CIFS 공유에 걸쳐 스패닝 디스크 사용
 * Hyper-V의 "프로세서 호환성" 설정과 관계없이 CPU 제조사가 다른 시스템(Intel과 AMD 또는 그 반대) 간에는 가상 머신이나 가상 머신 데이터를 복원할 수 없습니다. 이 설정은 동일 제조사의 서로 다른 세대 프로세서(예: Intel 대 Intel 또는 AMD 대 AMD) 간의 호환성만 지원합니다.
 
