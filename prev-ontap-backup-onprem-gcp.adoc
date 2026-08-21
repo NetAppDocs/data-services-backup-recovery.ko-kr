@@ -382,7 +382,7 @@ cloudkms.keyRings.setIamPolicy
 [[select-the-volumes-that-you-want-to-back-up]]
 === 백업할 볼륨을 선택하세요
 
-보호할 볼륨을 선택하세요.  보호된 볼륨은 다음 중 하나 이상을 갖춘 볼륨입니다. 스냅샷 정책, 복제 정책, 개체 정책으로의 백업.
+보호할 볼륨을 선택하세요.  보호된 볼륨은 스냅샷 정책, 복제 정책, 개체 정책에 대한 백업 중 하나 이상을 갖춘 볼륨입니다.
 
 FlexVol 또는 FlexGroup 볼륨을 보호하도록 선택할 수 있습니다. 그러나 시스템 백업을 활성화할 때 이러한 볼륨을 혼합하여 선택할 수는 없습니다.  방법을 확인하세요link:prev-ontap-backup-manage.html["시스템의 추가 볼륨에 대한 백업을 활성화합니다."] (FlexVol 또는 FlexGroup) 초기 볼륨에 대한 백업을 구성한 후.
 

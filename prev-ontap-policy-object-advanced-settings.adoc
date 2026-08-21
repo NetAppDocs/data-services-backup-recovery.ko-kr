@@ -17,7 +17,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 NetApp Backup and Recovery를 활성화한 후 고급 설정 페이지를 사용하여 각 ONTAP 시스템에 대한 클러스터 수준 백업-오브젝트 스토리지 설정을 변경할 수 있습니다. 대역폭, 기록 스냅샷 내보내기, 연간 스냅샷 삭제 및 랜섬웨어 검사 설정을 조정할 수 있습니다.
 
 
-NOTE: 이러한 설정은 백업-객체 저장소에만 사용할 수 있습니다.  이러한 설정은 스냅샷이나 복제 설정에 영향을 미치지 않습니다.
+NOTE: 이 설정은 오브젝트 스토리지 백업에만 사용할 수 있습니다. 이러한 설정은 스냅샷 또는 복제 설정에는 영향을 미치지 않습니다.
 
 
 NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참조하세요.link:br-start-switch-ui.html["다양한 NetApp Backup and Recovery 워크로드로 전환"] .

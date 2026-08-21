@@ -64,7 +64,7 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 * *인벤토리 페이지에서*: 이 옵션을 사용하면 이름, 위치, 마지막 유효 날짜를 알고 있는 특정 리소스를 복원할 수 있습니다.  목록을 탐색하여 리소스를 찾으세요.
 
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 

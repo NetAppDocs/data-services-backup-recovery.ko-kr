@@ -51,7 +51,7 @@ vSphere 태그를 사용한 태그 기반 보호 기능은 NetApp Backup and Rec
 
 함께 백업 및 복원할 리소스를 구성하는 보호 그룹을 생성합니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .시작하기 전에
 * 사용 중인 환경에서 지원되는 버전의 VMware vSphere를 사용하고 있는지 확인하십시오.

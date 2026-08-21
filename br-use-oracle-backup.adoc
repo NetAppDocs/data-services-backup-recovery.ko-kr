@@ -31,7 +31,7 @@ NOTE: 일정에 따라 보호 그룹이나 단일 데이터베이스를 백업�
 
 데이터를 보호하기 위해 시스템 변경 전에 필요 시 백업을 생성하십시오.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.
@@ -57,7 +57,7 @@ NOTE: NetApp Backup and Recovery 백업 그룹과 보호 그룹 모두에 동일
 
 데이터를 보호하기 위해 시스템 변경 전에 필요 시 백업을 생성하십시오.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Console 메뉴에서 *보호 > 백업 및 복구*를 선택합니다.

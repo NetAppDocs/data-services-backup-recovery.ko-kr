@@ -28,7 +28,7 @@ summary: NetApp 백업 및 복구를 통해 Hyper-V 워크로드를 보호하세
 
 시스템 변경을 수행하기 전에 온디맨드 백업을 사용하여 데이터를 보호하십시오.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.

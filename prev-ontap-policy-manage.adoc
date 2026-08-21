@@ -23,7 +23,7 @@ NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참�
 
 제공된 기본 백업 정책에 대해 알아보려면 다음을 참조하세요.link:prev-ontap-protect-journey.html["보호 여정을 계획하세요"] .
 
-NetApp Backup and Recovery ONTAP 데이터에 대한 스냅샷, 복제, 개체 스토리지 백업의 세 가지 유형의 백업을 제공합니다.  해당 정책은 사용하는 아키텍처와 백업 유형에 따라 서로 다른 위치에 있습니다.
+NetApp Backup and Recovery는 ONTAP 데이터에 대해 스냅샷, 복제, 오브젝트 스토리지 백업의 세 가지 유형의 백업을 제공합니다. 이러한 백업 정책은 사용 중인 아키텍처와 백업 유형에 따라 서로 다른 위치에 저장됩니다.
 
 [cols="25,25,25,25"]
 |===
@@ -206,4 +206,4 @@ NOTE: 복제 및 백업 정책의 프로세스는 동일합니다.
 
 System Manager 또는 ONTAP CLI를 사용하여 정책을 만드는 방법에 대한 지침은 다음을 참조하세요.
 
-https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["시스템 관리자를 사용하여 스냅샷 정책 만들기"^] https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["ONTAP CLI를 사용하여 스냅샷 정책 만들기"^] https://docs.netapp.com/us-en/ontap/task_dp_create_custom_data_protection_policies.html["System Manager를 사용하여 복제 정책 만들기"^] https://docs.netapp.com/us-en/ontap/data-protection/create-custom-replication-policy-concept.html["ONTAP CLI를 사용하여 복제 정책 생성"^] https://docs.netapp.com/us-en/ontap/task_dp_back_up_to_cloud.html#create-a-custom-cloud-backup-policy["System Manager를 사용하여 개체 스토리지 정책에 대한 백업을 만듭니다."^] https://docs.netapp.com/us-en/ontap-cli-9131/snapmirror-policy-create.html#description["ONTAP CLI를 사용하여 개체 스토리지 정책에 대한 백업을 만듭니다."^]
+https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html["System Manager를 사용하여 스냅샷 정책 생성"^] https://docs.netapp.com/us-en/ontap/data-protection/create-snapshot-policy-task.html["ONTAP CLI를 사용하여 스냅샷 정책 생성"^] https://docs.netapp.com/us-en/ontap/task_dp_create_custom_data_protection_policies.html["System Manager를 사용하여 복제 정책 만들기"^] https://docs.netapp.com/us-en/ontap/data-protection/create-custom-replication-policy-concept.html["ONTAP CLI를 사용하여 복제 정책 생성"^] https://docs.netapp.com/us-en/ontap/task_dp_back_up_to_cloud.html#create-a-custom-cloud-backup-policy["System Manager를 사용하여 개체 스토리지 정책에 대한 백업을 만듭니다."^] https://docs.netapp.com/us-en/ontap-cli-9131/snapmirror-policy-create.html#description["ONTAP CLI를 사용하여 개체 스토리지 정책에 대한 백업을 만듭니다."^]

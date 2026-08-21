@@ -32,7 +32,7 @@ summary: NetApp Backup and Recovery 에서 KVM 워크로드에 대한 보호 그
 
 보호하려는 VM과 스토리지 풀을 보호 그룹으로 묶습니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.

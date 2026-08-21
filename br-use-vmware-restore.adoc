@@ -59,7 +59,7 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 
 VMware 워크로드를 복원하려면 복원 옵션을 사용하십시오. 스냅샷은 이름 또는 필터를 사용하여 검색할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.

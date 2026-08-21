@@ -25,8 +25,9 @@ NetApp Backup and Recovery는 데이터 보호 중에 KubeVirt와 같은 애플�
 
 
 ====
-.필수 NetApp Console 역할
-조직 관리자 또는 SnapCenter 관리자. link:reference-roles.html["NetApp Backup and Recovery 액세스 역할에 대해 알아보세요"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할*
+
+백업 및 복구 최고 관리자, 백업 및 복구 백업 관리자, 또는 백업 및 복구 복원 관리자. link:reference-roles.html["NetApp Backup and Recovery 액세스 역할에 대해 알아보세요"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 

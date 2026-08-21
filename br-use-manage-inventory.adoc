@@ -49,7 +49,7 @@ Microsoft SQL Server 호스트, 인스턴스 및 데이터베이스를 보고 �
 
 호스트 정보를 관리하여 올바른 호스트가 보호되도록 하십시오. 필요에 따라 호스트 정보를 보고, 편집하고, 삭제할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자 또는 백업 및 복구 클론 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자, Backup and Recovery 백업 관리자, Backup and Recovery 복원 관리자 또는 Backup and Recovery 클론 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 * 로그 디렉터리를 구성하십시오. 자세한 내용은 link:br-start-setup.html["NetApp Backup and Recovery 설정 구성"]을 참조하십시오.
 * 일정을 중단하다
@@ -69,7 +69,7 @@ TIP: 호스트를 관리하려면 호스트 열에서 "관리되지 않음" 상�
 
 NetApp Backup and Recovery 에서 호스트를 관리한 후에는 SnapCenter 해당 호스트의 리소스를 더 이상 관리하지 않습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어 또는 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . 메뉴에서 *인벤토리*를 선택하세요.
@@ -145,7 +145,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정을 변�
 * 지금 백업하세요
 
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 
@@ -255,7 +255,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정을 변�
 
 정책을 변경하고, 새로운 정책을 만들고, 일정을 설정하고, 보존 설정을 지정할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -275,7 +275,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정을 변�
 
 데이터 복구가 필요할 때 데이터베이스를 복원합니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -295,7 +295,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정을 변�
 
 정책을 변경하고, 새로운 정책을 만들고, 일정을 설정하고, 보존 설정을 지정할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -315,7 +315,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정을 변�
 
 지금 Microsoft SQL Server 인스턴스와 데이터베이스를 백업하여 데이터를 즉시 보호할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.

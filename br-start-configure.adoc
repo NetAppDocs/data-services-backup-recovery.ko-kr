@@ -25,8 +25,6 @@ summary: NetApp Backup and Recovery 구성하려면 몇 가지 단계를 완료�
 * <<리소스 변환 템플릿을 생성합니다>> 리소스를 복원하면서 수정할 수 있습니다.
 
 
-*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 link:reference-roles.html["백업 및 복구 역할과 권한"]을 참조하십시오. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
-
 
 
 [[add-credentials-for-host-resources]]
@@ -44,6 +42,8 @@ summary: NetApp Backup and Recovery 구성하려면 몇 가지 단계를 완료�
 * Oracle 데이터베이스 자격 증명
 * Linux 호스트 자격 증명
 
+
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. link:reference-roles.html["백업 및 복구 역할과 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
@@ -122,6 +122,8 @@ TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Serve
 
 나중에 생성한 모든 계정 정보의 비밀번호를 수정할 수 있습니다.
 
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. link:reference-roles.html["백업 및 복구 역할과 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
 . 아래쪽 화살표를 선택하여 *자격 증명* 섹션을 확장합니다.
@@ -139,6 +141,8 @@ TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Serve
 == VMware vCenter 설정 유지
 
 백업할 워크로드를 검색하려면 VMware vCenter Server 자격 증명을 제공하십시오. 자격 증명이 없는 경우 VMware vCenter Server 워크로드에 액세스하고 관리할 수 있는 권한으로 자격 증명을 생성하십시오.
+
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. link:reference-roles.html["백업 및 복구 역할과 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
@@ -167,6 +171,8 @@ TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Serve
 * SnapCenter 서버 애플리케이션 및 호스트 리소스 가져오기
 * 선택한 SnapCenter 호스트 리소스 관리
 
+
+*필수 NetApp Console 역할* Backup and Recovery super admin 또는 Backup and Recovery 백업 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우, Cloud Volumes ONTAP Admin 역할도 필요합니다. link:reference-roles.html["백업 및 복구 역할과 권한"]에 대해 자세히 알아보십시오. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 
@@ -249,6 +255,8 @@ SnapCenter 에서 가져오기 페이지에는 이전에 가져온 모든 항목
 
 Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는 경우, NetApp Backup and Recovery와 통합하여 Backup and Recovery가 관리되는 KVM 호스트 및 VM을 검색하고 보호할 수 있도록 하십시오.
 
+*필수 NetApp Console 역할* Backup and Recovery super admin 또는 Backup and Recovery 백업 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우, Cloud Volumes ONTAP Admin 역할도 필요합니다. link:reference-roles.html["백업 및 복구 역할과 권한"]에 대해 자세히 알아보십시오. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
 . 아래쪽 화살표를 선택하여 *관리 플랫폼* 섹션을 확장하세요.
@@ -271,6 +279,8 @@ Apache CloudStack 관리 플랫폼을 사용하여 KVM 리소스를 관리하는
 == Windows 호스트의 스냅샷에서 로그 디렉토리 구성
 
 Windows 호스트용 정책을 생성하기 전에 백업 프로세스 중에 생성된 로그를 저장하기 위해 스냅샷에서 로그 디렉토리를 구성하십시오.
+
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 link:reference-roles.html["백업 및 복구 역할과 권한"]을 참조하십시오. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^]
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *인벤토리*를 선택합니다.
@@ -311,6 +321,8 @@ NOTE: 여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호�
 == 리소스 변환 템플릿을 생성합니다
 
 복원 작업 중에 리소스에 적용하는 일반적인 변환을 저장하기 위해 리소스 변환 템플릿을 생성합니다.
+
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 link:reference-roles.html["백업 및 복구 역할과 권한"]을 참조하십시오. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^]
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.

@@ -376,7 +376,6 @@
   <block id="5e5c52eb046d9534a5304cfb91b3736a" category="list-text">클러스터가 ONTAP 9.13.1 이상을 실행하는 경우 FlexGroup 볼륨 백업은 DataLock 및 랜섬웨어 보호 기능을 사용할 수 있습니다.</block>
   <block id="09f886550e235192e436c0e4a062288b" category="list-text">SVM-DR 볼륨 백업은 다음과 같은 제한 사항과 함께 지원됩니다.</block>
   <block id="ed09c1b67736709db40a3664c46e855a" category="list-text">백업은 ONTAP 보조에서만 지원됩니다.</block>
-  <block id="d587577f2a166dd11688b6c30c3d3cf9" category="list-text">볼륨에 적용되는 스냅샷 정책은 NetApp Backup and Recovery 에서 인식하는 일일, 주간, 월간 등의 정책 중 하나여야 합니다. 기본 "sm_created" 정책(*모든 스냅샷 미러링*에 사용됨)은 인식되지 않으며 DP 볼륨은 백업 가능한 볼륨 목록에 표시되지 않습니다.</block>
   <block id="27e92fcddc23071f7a376e1c06fa20d6" category="list-text">MetroCluster 지원:</block>
   <block id="a1e9108dbd21ffa07a61d3c3e7ecf506" category="list-text">ONTAP 9.12.0 및 이전 버전을 사용하는 경우 백업은 ONTAP 보조 시스템에서만 지원됩니다.</block>
   <block id="3dd0180637528cde8671a0c957cf90da" category="list-text">SM-BC 구성은 지원되지 않습니다.</block>
@@ -522,7 +521,6 @@
   <block id="65aa0e52587b5f59eb26af06ddeef28a" category="list-text">*완료*를 선택하세요.</block>
   <block id="6d655e5ab4c22c9a5dd1c7b3cc53bcd4" category="summary">NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에 먼저 검색해야 합니다.</block>
   <block id="ebe1fa7e8a9f4c3139f8657f10a169ee" category="doc">NetApp Backup and Recovery 에서 Hyper-V 워크로드를 알아보세요</block>
-  <block id="02389fe69365606d1e090c58a1a6ccb3" category="paragraph">*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요<block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block> .<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="ccb99cc37b628cd3d05ccf85f8c0c579" category="section-title">Hyper-V 호스트를 추가하고 리소스를 검색합니다.</block>
   <block id="6512c2901e9f9eae6ce40754ef6845cb" category="admonition">Hyper-V 호스트를 추가하고 리소스를 검색하면 NetApp Backup and Recovery 가 NetApp Hyper-V 플러그인과 NetApp SnapCenter Windows FileSystem 플러그인을 Hyper-V 호스트에 설치하여 가상 머신을 관리하고 보호하는 데 도움을 줍니다.</block>
   <block id="dd38712b98e7db15ffc7ca4ac996020c" category="list-text">NetApp Console 메뉴에서 *보호* &gt; *백업 및 복구*를 선택합니다.</block>
@@ -701,7 +699,6 @@
   <block id="663b8460da445a8bdcdacd5586794a5a" category="inline-link-macro">정책 생성</block>
   <block id="05b46e53cea9fa986faee5585257dc74" category="list-text">일정에 따라 작업 부하를 백업하려면 백업 및 복원 작업을 제어하는 정책을 만듭니다.  보다<block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block> 지침을 보려면.</block>
   <block id="7eb85b9ab846044a4d26b2851ea3e18c" category="section-title">지금 온디맨드 백업으로 워크로드를 백업하세요</block>
-  <block id="62bc49b7db8523d3243d25f81a8028ad" category="paragraph">*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="13ed80e7f4035afba1bfc9687795be5e" category="list-text">메뉴에서 *인벤토리*를 선택하세요.</block>
   <block id="291d091c1411150a9bc3fc401cfdfba6" category="list-text">보호 세부 정보를 보려면 작업 부하를 선택하세요.</block>
   <block id="7a770d938aba1440464532a20ae420f2" category="list-text">작업 아이콘을 선택하세요<block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *자세히 보기*.</block>
@@ -755,7 +752,6 @@
   <block id="3850249b64193fae9627627088cec7a4" category="list-text">로컬 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.</block>
   <block id="b0ea04995bb7a05b4310a459f5315a78" category="list-text">복제된 워크로드에서 복원하는 경우 워크로드를 원래 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.</block>
   <block id="4967eb3bddc1aeeafa7fa83be9252bb4" category="section-title">복원 옵션(검색 및 복원)에서 작업 부하 데이터 복원</block>
-  <block id="d1e52fcdb63677c060eb2093a79135fe" category="paragraph">*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="f0b7d058add557b4607545e73a9337e1" category="list-text">NetApp Backup and Recovery 메뉴에서 *복원*을 선택합니다.</block>
   <block id="29020414ea8232d236539005c93e656b" category="list-text">이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *Hyper-V*를 선택합니다.</block>
   <block id="7dd676e6cf5a1d7d0e7086f82a5a3719" category="paragraph">검색 기준에 맞는 스냅샷 목록이 나타납니다.</block>
@@ -767,8 +763,6 @@
   <block id="abfc7c0c366258e23e15cd12a5f89811" category="open-title">원래 위치로 복원</block>
   <block id="f6987a32d735b6271ff912d44965c894" category="list-text">*복원 후 옵션*:</block>
   <block id="7372225e7abae430b5d3b91b0083eed6" category="list-text">*추신*: 복원 작업 후 실행해야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력합니다.</block>
-  <block id="8dee103972185c1aba0e0c814961a8db" category="list-text">*알림* 섹션:</block>
-  <block id="d705348f84095bf9f266942da2cf2b84" category="list-text">*이메일 알림 사용*: 복구 작업에 대한 이메일 알림을 받으려면 이 옵션을 선택하고, 어떤 유형의 알림을 받을지 지정합니다.</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">*복원*을 선택하세요.</block>
   <block id="4c931104d6ff5fdc2a76bdfc6fba4662" category="summary">온프레미스 ONTAP 시스템에서 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 이르기까지 Kubernetes 애플리케이션과 애플리케이션 데이터를 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다.</block>
   <block id="47cae08dce34f06a5f1a2add5c4d92c4" category="inline-image-macro">Kubernetes 워크로드에 대한 백업 및 복구 아키텍처 다이어그램</block>
@@ -809,9 +803,7 @@
   <block id="e71db3dcefde23f3505bd780d11437a6" category="list-text">모든 애플리케이션에서 이 동작을 비활성화하려면 다음을 참조하세요.<block ref="cdee12d0fdecb470fee17a09aa7ec297" category="inline-link-rx"></block> .</block>
   <block id="2fd92693952062fc00d949899370185d" category="inline-link">응용 프로그램 정의</block>
   <block id="036aac0642f3af1dc8d2725fea34ffc0" category="list-text">특정 애플리케이션에 대해 이 동작을 비활성화하려면 다음을 참조하세요.<block ref="f71f47db01d2016b07aab53f31e42ddd" category="inline-link-rx"></block> .</block>
-  <block id="1c0afd8bffbeea6059a5f5fedd5fe377" category="paragraph-title">필수 NetApp Console 역할</block>
   <block id="190614cb93ffed593d4a6f4d71007421" category="inline-link-macro">NetApp Backup and Recovery 액세스 역할에 대해 알아보세요</block>
-  <block id="2002c1158400585ea330a03ddd71d32e" category="paragraph">조직 관리자 또는 SnapCenter 관리자. <block ref="0f393d0ed3fe42bcd53eff5ef49bfe77" category="inline-link-macro-rx"></block> .<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="83fbf1604bedff410ea11872b40ab9f0" category="section-title">실행 후크의 유형</block>
   <block id="9c6a9cc04a4d5840a5d237b232190a35" category="list-text">사전 스냅샷</block>
   <block id="65db6b15c7f05c97a1647c11699053e3" category="list-text">스냅샷 이후</block>
@@ -879,7 +871,6 @@
   <block id="40596958221d9e7275ed2d84874e8433" category="list-text">준회원 자격 증명</block>
   <block id="8e991c6ccf41cea57080dd6b693e3d7c" category="list-text">자격 증명 연결 해제</block>
   <block id="0e2386ee61a52478d5ac90e50e96c567" category="list-text">지금 백업하세요</block>
-  <block id="3b2d27c432f30117a0f2fbbeb5548ca5" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="b22d1168135f7bc32726518d37d83a8e" category="section-title">데이터베이스 인스턴스 보호</block>
   <block id="dce0570aa6d4093c9a1b9592fd36392a" category="list-text">보고 싶은 작업 부하를 선택하고 *보기*를 선택하세요.</block>
   <block id="968e1e1e0d9bdbc5d123e7fe52928ccf" category="list-text">*인스턴스* 탭을 선택합니다.</block>
@@ -1172,9 +1163,6 @@
   <block id="e9bde7b168cf5fbb3d9d5b297ca8bfb2" category="list-text">*복구 없이 스냅샷에서 복원*을 선택합니다.</block>
   <block id="002b8c566162a2cd02c4e355805ac3f6" category="paragraph">일치하는 스냅샷이 표시됩니다.</block>
   <block id="98b2af096c36f02920b21c788a2a0dc6" category="list-text">*목적지 설정*:</block>
-  <block id="12c0707880528cef62d0f97d7a498d1a" category="list-text">전체 데이터베이스를 복원할지 아니면 데이터베이스의 테이블스페이스만 복원할지 선택합니다.</block>
-  <block id="78847577cebd91850d891ed95fe6bce3" category="list-text">*제어 파일*: 선택적으로 이 옵션을 활성화하면 데이터베이스 제어 파일도 복원됩니다.</block>
-  <block id="c553388e0d00fbbbe3216bca495bedb5" category="list-text">선택적으로, 이 옵션을 활성화하고 복원 작업 전에 실행해야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력합니다.</block>
   <block id="f3d19f008b19feab896904cb50b1a321" category="list-text">*추신*: 선택적으로 이 옵션을 활성화하고 복원 작업 이후에 실행되어야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력합니다.</block>
   <block id="b82be1f9be4e926901513f5106f48a87" category="summary">NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다.</block>
   <block id="e10aa0ad03a30aedbdc16bf5e8954db5" category="admonition">이러한 옵션과 구성 섹션 중 일부는 모든 워크로드에 사용할 수 없습니다.</block>
@@ -1227,7 +1215,6 @@
   <block id="fb6e9d876191a4c0c156e739e377be59" category="section-title">정책 편집</block>
   <block id="f985f1951686384a15ea5ddf855b3cab" category="paragraph">정책을 편집할 때 다른 보호 수준을 추가할 수 있지만, 보호 수준을 제거할 수는 없습니다.  예를 들어, 정책이 로컬 스냅샷만 보호하는 경우 보조 스토리지에 복제를 추가하거나 개체 스토리지에 백업을 추가할 수 있습니다.  로컬 스냅샷과 복제가 있는 경우 개체 스토리지를 추가할 수 있습니다.  하지만 로컬 스냅샷, 복제 및 개체 스토리지가 있는 경우 이러한 수준 중 하나를 제거할 수 없습니다.</block>
   <block id="f28c1acceb60dde3fa2b864db8f83957" category="paragraph">개체 스토리지에 백업하는 정책을 편집하는 경우 보관을 활성화할 수 있습니다.</block>
-  <block id="14230adaf41f6db735e7845098461fcb" category="paragraph">백업 및 복구의 최고 관리자.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block> .</block>
   <block id="c3be1ab29368bfca9929503e6810fe39" category="list-text">*정책* 옵션을 선택하세요.</block>
   <block id="5d7cb595562fb7decc7d53373bf00ebe" category="list-text">편집할 정책을 선택하세요.</block>
   <block id="e76c2b523f1a9b957f5d1a4b239018e5" category="list-text">*작업*을 선택하세요<block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하고 *편집*을 선택하세요.</block>
@@ -1627,7 +1614,6 @@
   <block id="279860fbcfaa6a21c8cc8d5f6caec531" category="list-text">이미 콘솔 에이전트가 있다면 준비가 완료된 것입니다.  *다음*을 선택하세요.</block>
   <block id="378a7c9293e3238cf8dc268c9f98d2a1" category="list-text">아직 콘솔 에이전트가 없으면 *콘솔 에이전트 추가* 옵션이 나타납니다.  참조하다<block ref="9fa9ecad0fff4855b8674bbd19f98b10" category="inline-xref-macro-rx"></block> .</block>
   <block id="cf91ffe6a0830c1180e10ae661bd5c8f" category="section-title">백업할 볼륨을 선택하세요</block>
-  <block id="51c1c5aa077ac8366955ff0cfc3e181a" category="paragraph">보호할 볼륨을 선택하세요.  보호된 볼륨은 다음 중 하나 이상을 갖춘 볼륨입니다. 스냅샷 정책, 복제 정책, 개체 정책으로의 백업.</block>
   <block id="bade104de773419f0c559bd71478cc40" category="inline-link-macro">시스템의 추가 볼륨에 대한 백업을 활성화합니다.</block>
   <block id="7b58ae9806fd4e9bf78fdc8568395ab6" category="paragraph">FlexVol 또는 FlexGroup 볼륨을 보호하도록 선택할 수 있습니다. 그러나 시스템 백업을 활성화할 때 이러한 볼륨을 혼합하여 선택할 수는 없습니다.  방법을 확인하세요<block ref="7239f8ae1ce8c5a40d4003de7480554a" category="inline-link-macro-rx"></block> (FlexVol 또는 FlexGroup) 초기 볼륨에 대한 백업을 구성한 후.</block>
   <block id="e9dfd7a5bc1d9c55d3cafeb50c863440" category="list-text">한 번에 하나의 FlexGroup 볼륨에서만 백업을 활성화할 수 있습니다.</block>
@@ -1638,7 +1624,6 @@
   <block id="631d9018e253b4c43bff1d2433a04b6a" category="list-text">개별 볼륨을 백업하려면 각 볼륨의 상자를 선택하세요.</block>
   <block id="e86c0bbd7ee4d15caae7a8ecccbed461" category="section-title">백업 전략 정의</block>
   <block id="e531ad80bfdacf5f99b3e54ca953ed6e" category="paragraph">백업 전략을 정의하려면 다음 옵션을 설정해야 합니다.</block>
-  <block id="a2a7cb13e3427eafd599ad3ae356d511" category="list-text">로컬 스냅샷, 복제 및 개체 스토리지 백업 등 백업 옵션 중 하나 또는 전부를 원하는지 여부</block>
   <block id="2d242bb36ec91b32005f9296ff03a912" category="list-text">아키텍처</block>
   <block id="9c18b37abd6362037200982f09170052" category="list-text">로컬 스냅샷 정책</block>
   <block id="c23466225c738566b462c4c3dd7dc384" category="list-text">복제 대상 및 정책</block>
@@ -1736,7 +1721,6 @@
   <block id="88a7904e700f31e4cf7bb57f46eb7a09" category="list-text">백업을 시작하려면 다음을 계속하세요.<block ref="cf0309d29ec4628c69a24a15a021ad35" category="inline-xref-macro-rx"></block> .</block>
   <block id="b96778e4cd2c48436423057f2b9568a3" category="paragraph">백업을 위한 Azure 대상이 *시스템* 페이지에 시스템으로 존재하는 경우 ONTAP 클러스터를 Azure Blob 개체 스토리지로 끌어다 놓을 수 있습니다.</block>
   <block id="a2b724613c39ef29deebeb977e432480" category="list-text">백업 및 복구 막대에서 *볼륨*을 선택합니다.  볼륨 탭에서 *작업*을 선택하세요.<block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하고 단일 볼륨(이미 복제나 개체 스토리지 백업이 활성화되지 않은 볼륨)에 대해 *백업 활성화*를 선택합니다.</block>
-  <block id="2ce2db49b07d0bd2d1dada807c65d175" category="paragraph">보호할 볼륨을 선택하세요.  보호된 볼륨은 다음 중 하나 이상을 갖춘 볼륨입니다. 스냅샷 정책, 복제 정책, 개체 백업 정책.</block>
   <block id="c3694a048dbc829bb10fdffdf4d06cfe" category="list-text">첫 번째 볼륨을 선택한 후에는 모든 FlexVol 볼륨을 선택할 수 있습니다.  (FlexGroup 볼륨은 한 번에 하나씩만 선택할 수 있습니다.)  기존의 모든 FlexVol 볼륨을 백업하려면 먼저 볼륨 하나를 선택한 다음 제목 행의 상자를 선택합니다.</block>
   <block id="421239975ac0190f099c7d9e7999845f" category="list-text">로컬 스냅샷, 복제 및 개체 스토리지 백업 등 백업 옵션 중 하나 또는 전부를 원하는지 여부</block>
   <block id="c261701c0a638fff16b256b7172f9ad8" category="list-text">*로컬 스냅샷*: 기존 스냅샷 정책을 선택하거나 새로 만듭니다.</block>
@@ -1758,7 +1742,6 @@
   <block id="397c2eb57e908a7a0dfd7a5b9a549eb3" category="inline-link">Azure 개인 엔드포인트 사용에 대해 알아보세요</block>
   <block id="d141f0c2447307010bfe69b567dcec15" category="list-text">선택적으로, 이전에 구성한 Azure 개인 엔드포인트를 사용할지 여부를 선택합니다.<block ref="8692a626a666ec68cdf3ab557e9f55c0" category="inline-link-rx"></block> .</block>
   <block id="6f016177210af1e863aa59b8f2e97752" category="list-text">*백업 정책*: 기존의 개체 저장소 백업 정책을 선택합니다.</block>
-  <block id="dfa0e65275e79a512c005617a18e8851" category="list-text">선택적으로 *스냅샷 정책 레이블을 복제 및 백업 정책 레이블과 자동으로 동기화* 확인란을 선택합니다.  이렇게 하면 복제 및 백업 정책의 레이블과 일치하는 레이블이 있는 스냅샷이 생성됩니다.</block>
   <block id="ffec7ec0cd271a5f8e4f646a0028cabb" category="paragraph">대상 클러스터에 복제된 볼륨이 생성되어 기본 볼륨과 동기화됩니다.</block>
   <block id="fd8e00004c8fa188a1fbd959a0eb17ba" category="paragraph">입력한 리소스 그룹에 Blob 스토리지 컨테이너가 생성되고, 백업 파일이 여기에 저장됩니다.</block>
   <block id="a384f6970ddbfebee596f46795e91c90" category="paragraph">기본적으로 NetApp Backup and Recovery 비용 최적화를 위해 로컬 중복성(LRS)을 사용하여 Blob 컨테이너를 프로비저닝합니다.  서로 다른 영역 간에 데이터가 복제되도록 하려면 이 설정을 영역 중복성(ZRS)으로 변경할 수 있습니다.  Microsoft 지침을 참조하세요.<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block> .</block>
@@ -1842,8 +1825,6 @@
   <block id="309939239d7103f08e00804428d22284" category="paragraph">고객이 직접 관리하는 키를 사용하려는 경우:</block>
   <block id="db058563d6eb243b453d48635769d049" category="list-text">HSM(하드웨어 지원)과 소프트웨어 생성 키가 모두 지원됩니다.</block>
   <block id="2b3b83fb44538b632325042aba519ab5" category="list-text">지역 키만 지원되고 글로벌 키는 지원되지 않습니다.</block>
-  <block id="cc54d40dc91fd9f2adf463d5e6a20e64" category="paragraph">선택한 볼륨에 이미 스냅샷이나 복제 정책이 적용된 경우 나중에 선택하는 정책이 기존 정책을 덮어씁니다.</block>
-  <block id="1605cf9a721d88df92a0b71e1a8b76fe" category="admonition">선택한 볼륨에 이 단계에서 선택한 정책과 다른 스냅샷 및 복제 정책이 있는 경우 기존 정책이 덮어쓰여집니다.</block>
   <block id="ce182ee406d8f3ee95a365ecbd21b287" category="list-text">*공급자*: *Google Cloud*를 선택하세요.</block>
   <block id="da0548d3a8553d8564284dcd029706f5" category="list-text">*암호화 키*: 새 Google 버킷을 만든 경우 공급업체에서 제공한 암호화 키 정보를 입력하세요.  데이터 암호화를 관리하기 위해 기본 Google Cloud 암호화 키를 사용할지, 아니면 Google 계정에서 고객이 관리하는 키를 선택할지 선택하세요.</block>
   <block id="b3aa83b2922f617a64fa1875bdb6aad9" category="admonition">기존 Google Cloud 버킷을 선택한 경우 암호화 정보가 이미 제공되므로 지금 입력할 필요가 없습니다.</block>
@@ -1886,8 +1867,6 @@
   <block id="2df585918dfe79cb1c0f8dfb403b8933" category="paragraph">언제든지 주문형 백업을 만들어 볼륨의 현재 상태를 캡처할 수 있습니다.  이 기능은 볼륨에 매우 중요한 변경 사항이 적용되었고 해당 데이터를 보호하기 위해 다음에 예약된 백업을 기다리고 싶지 않은 경우에 유용할 수 있습니다.  이 기능을 사용하면 현재 백업되지 않고 있는 볼륨에 대한 백업을 생성하여 현재 상태를 캡처할 수도 있습니다.</block>
   <block id="75f0ab2aa06321fc5a92c205273b43b6" category="paragraph">백업 이름에는 타임스탬프가 포함되어 있으므로 다른 예약된 백업과 주문형 백업을 구별할 수 있습니다.</block>
   <block id="6ee3062ac668cf28f71bf489fd741bcd" category="inline-link-macro">DataLock 및 랜섬웨어 보호에 대해 자세히 알아보세요</block>
-  <block id="34654042ecfc4226d89a0eec5901d43e" category="inline-link">ONTAP CLI를 사용하여 스냅샷을 삭제하는 방법을 알아보세요.</block>
-  <block id="4786401e865ef261720869019898fa6c" category="paragraph">임시 백업을 생성하면 소스 볼륨에 스냅샷이 생성됩니다.  이 스냅샷은 일반 스냅샷 일정에 포함되지 않으므로 회전하지 않습니다.  백업이 완료되면 소스 볼륨에서 이 스냅샷을 수동으로 삭제할 수 있습니다.  이를 통해 이 스냅샷과 관련된 블록을 해제할 수 있습니다.  스냅샷의 이름은 다음으로 시작합니다.<block ref="3fbd2a9ee3863b8841029b21d6bf8e89" prefix=" " category="inline-code"></block> .<block ref="7e565776b86561f26a3208af24c76dc9" category="inline-link-rx"></block> .</block>
   <block id="a7ddc69bf51887dfb9d3f72e57328bff" category="admonition">데이터 보호 볼륨에서는 주문형 볼륨 백업이 지원되지 않습니다.</block>
   <block id="a3a79b7922be865cd616e69067801948" category="list-text">*볼륨* 탭에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 볼륨에 대해 *백업* &gt; *임시 백업 만들기*를 선택합니다.</block>
   <block id="bcaabcee4e1c8919ebfda54851da87e4" category="paragraph">백업이 생성될 때까지 해당 볼륨의 백업 상태 열은 "진행 중"으로 표시됩니다.</block>
@@ -2155,7 +2134,6 @@
   <block id="8bdfdad72ee7298056198e1b5d8fb704" category="list-text">노드의 클러스터 간 LIF는 객체 저장소에 액세스할 수 있습니다.</block>
   <block id="7dfd82301201229d10d2b7f30a3a9e1e" category="paragraph">Private Google Access 또는 Private Service Connect를 사용하는 경우 DNS 서버가 다음을 가리키도록 구성되었는지 확인하세요.<block ref="3f4ca1d8ed90e1a3c0451eb42e58e5ef" prefix=" " category="inline-code"></block> 올바른 내부(개인) IP 주소로.</block>
   <block id="a62451f46dc42982cf209550cb11486e" category="list-text">필요한 경우 방화벽 규칙을 업데이트하여 ONTAP 에서 포트 443을 통해 개체 스토리지로 NetApp Backup and Recovery 연결을 허용하고, 스토리지 VM에서 포트 53(TCP/UDP)을 통해 DNS 서버로 이름 확인 트래픽을 허용합니다.</block>
-  <block id="8b7d5c44d9577dfc1c061905392bd3f1" category="list-text">*로컬 스냅샷*: 개체 스토리지에 복제나 백업을 수행하는 경우 로컬 스냅샷을 만들어야 합니다.</block>
   <block id="6726285215cd3fb82b2bc565d1c05a91" category="list-text">*계단식*: 정보는 기본 저장소에서 보조 저장소로, 보조 저장소에서 개체 저장소로 흐릅니다.</block>
   <block id="62f87cf8c16c2da5d5b4f260c306b995" category="paragraph">새로운 버킷을 만들거나 이미 만든 버킷을 선택하세요.</block>
   <block id="a7ac655633c5fce489e564d5265f26b9" category="admonition">추가적인 비용 최적화를 위해 이전 백업 파일을 Google Cloud Archive 스토리지에 계층화하려면 버킷에 적절한 수명 주기 규칙이 있는지 확인하세요.</block>
@@ -2226,7 +2204,6 @@
   <block id="114e1e484d37f8ec51f8c9bd144982c0" category="list-text">*계단식*: 백업 데이터는 기본 시스템에서 보조 시스템으로 흐르고, 보조 시스템에서 개체 스토리지로 흐릅니다.</block>
   <block id="2b9ff2b52d8ab869fa0fe6ca5039e723" category="list-text">*팬아웃*: 백업 데이터는 기본 시스템에서 보조 시스템으로 흐르고, 기본 시스템에서 개체 스토리지로 흐릅니다.</block>
   <block id="bb259e1451f14e6ee7317954d4ae3d1f" category="inline-link">&lt;block ref="9548712dac96ee54830150eacbdaba5e" prefix=" " category='inline-code'/&gt;에 대한 ONTAP CLI</block>
-  <block id="1a9240d843443385061b2272dcfbfff0" category="admonition">스냅샷을 활성화하기 전에 사용자 정의 정책을 만들려면 시스템 관리자 또는 ONTAP CLI를 사용할 수 있습니다.<block ref="21daf815c4decbf3cba733c88297587b" prefix=" " category="inline-code"></block> 명령.  참조하다<block ref="ec3ed4692ea8e2ea03ef1cb28143229e" category="inline-link-rx"></block> .</block>
   <block id="ee885caa95dc922f4f4ba9860f7342f6" category="admonition">백업 및 복구를 사용하여 사용자 지정 정책을 만들려면 다음을 참조하세요.<block ref="d9904d3bd7927987056edc09c02007e9" category="inline-link-macro-rx"></block> .</block>
   <block id="18fca8639648ce6584848958e6930ab7" category="list-text">*복제*: *복제*를 선택한 경우 다음 옵션을 설정합니다.</block>
   <block id="f7a5b18ef1b37d992674325263d195c7" category="list-text">*공급자*: * ONTAP S3*를 선택하세요.</block>
@@ -2236,7 +2213,6 @@
   <block id="bb248f7221f98ec46ba72866b8f97fb1" category="admonition">올바른 IP 공간을 선택하면 NetApp Backup and Recovery ONTAP 에서 ONTAP S3 개체 스토리지로의 연결을 설정할 수 있습니다.</block>
   <block id="0773e77bb0db21a781b5bbb39f7a4ee7" category="list-text">*백업 정책*: 기존 백업 정책을 선택하거나 새 백업 정책을 만듭니다.</block>
   <block id="c14db437f776a13459f3d49279cc036d" category="admonition">System Manager나 ONTAP CLI를 사용하여 정책을 만들 수 있습니다.  ONTAP CLI를 사용하여 사용자 정의 정책을 생성하려면<block ref="21daf815c4decbf3cba733c88297587b" prefix=" " category="inline-code"></block> 명령, 참조<block ref="ec3ed4692ea8e2ea03ef1cb28143229e" category="inline-link-rx"></block> .</block>
-  <block id="682f8e921eb37ddb3e47689c62db0a2e" category="list-text">선택적으로 *스냅샷 정책 레이블을 복제 및 백업 정책 레이블과 자동으로 동기화* 확인란을 선택합니다.  이렇게 하면 복제 및 백업 정책의 레이블과 일치하는 레이블이 있는 스냅샷이 생성됩니다.  정책이 일치하지 않으면 백업이 생성되지 않습니다.</block>
   <block id="da89f84b672c457d24c04269e668b99b" category="summary">NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 온프레미스 기본 ONTAP 시스템의 볼륨 데이터를 보조 스토리지 시스템과 NetApp StorageGRID 시스템의 개체 스토리지로 백업을 시작하세요.</block>
   <block id="7118c1a3bbb6dabf070fc402ff8a9fd3" category="doc">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 데이터를 StorageGRID 에 백업합니다.</block>
   <block id="3fa08464a9a599a3c36d5915624e40cf" category="paragraph">다음 이미지는 온프레미스 ONTAP 시스템을 StorageGRID 에 백업할 때 필요한 각 구성 요소와 이들 간에 준비해야 하는 연결을 보여줍니다.</block>
@@ -2376,7 +2352,6 @@
   <block id="8d2d3fb9cf8aa026f491048ab9fdf368" category="list-text">작업 모니터 페이지에서 재동기화 프로세스를 모니터링합니다.</block>
   <block id="5affede8c37588de6401be95e2404da0" category="doc">NetApp Backup and Recovery 사용하여 ONTAP 볼륨에 대한 백업 정책 관리</block>
   <block id="d683b5a068fd3bc0acd433ee36b8e172" category="paragraph">제공된 기본 백업 정책에 대해 알아보려면 다음을 참조하세요.<block ref="586d9517f9118e1d4d7dcfa262c8e08f" category="inline-link-macro-rx"></block> .</block>
-  <block id="359dca3cc1bb628956893ac834156c53" category="paragraph">NetApp Backup and Recovery ONTAP 데이터에 대한 스냅샷, 복제, 개체 스토리지 백업의 세 가지 유형의 백업을 제공합니다.  해당 정책은 사용하는 아키텍처와 백업 유형에 따라 서로 다른 위치에 있습니다.</block>
   <block id="9c2cf3d903ec11e031aac200337d550f" category="cell">스냅샷 정책 저장 위치</block>
   <block id="03cef7774b631377e1518e05ea03e5f0" category="cell">복제 정책 저장 위치</block>
   <block id="47678324688906f6896f307bc4023541" category="cell">개체 정책 저장 위치로 백업</block>
@@ -2445,14 +2420,10 @@
   <block id="7c8a6ef0dcbcbfb263df1c751ccb1918" category="list-text">정책 관리 페이지에서 정책을 선택하고 *작업*을 선택합니다.<block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하고 *스냅샷 정책 삭제*를 선택합니다.</block>
   <block id="9c83e144e5481ac6766f4055e566594d" category="section-title">더 많은 정보를 찾아보세요</block>
   <block id="739525550bd3f8378558eb1d87764bde" category="paragraph">System Manager 또는 ONTAP CLI를 사용하여 정책을 만드는 방법에 대한 지침은 다음을 참조하세요.</block>
-  <block id="4a7bfaa61b260e84e240b222e517825e" category="inline-link">시스템 관리자를 사용하여 스냅샷 정책 만들기</block>
-  <block id="18f722142cf1242ec6d2b1e76122b14a" category="inline-link">ONTAP CLI를 사용하여 스냅샷 정책 만들기</block>
   <block id="c614d93309389f7373130aa7f9186f5d" category="inline-link">System Manager를 사용하여 복제 정책 만들기</block>
   <block id="8a95d969b59555a0a73e2a674b580a6e" category="inline-link">ONTAP CLI를 사용하여 복제 정책 생성</block>
   <block id="9d089a52567a29f4f420f7f2f76246ac" category="inline-link">System Manager를 사용하여 개체 스토리지 정책에 대한 백업을 만듭니다.</block>
   <block id="fb258284d7569744ca758873d339532b" category="inline-link">ONTAP CLI를 사용하여 개체 스토리지 정책에 대한 백업을 만듭니다.</block>
-  <block id="bc7ba4c7d62d6d4917e638edbc43dbb5" category="paragraph"><block ref="1d5508fcd8027e26b48962bd984558d5" category="inline-link-rx"></block> <block ref="25d9216966497b44f1274c2fdc3f62ee" category="inline-link-rx"></block> <block ref="6a671fae687ae09ed6ec2eb759a70329" category="inline-link-rx"></block> <block ref="76f9b86225921137bc166f71caebf3f1" category="inline-link-rx"></block> <block ref="ab2445e139747cf732d46d877cc62a64" category="inline-link-rx"></block> <block ref="9c225a8772c7b3c40b62701739b123cf" category="inline-link-rx"></block></block>
-  <block id="2f5538c2e34ba12aae307adeb8e9361f" category="admonition">이러한 설정은 백업-객체 저장소에만 사용할 수 있습니다.  이러한 설정은 스냅샷이나 복제 설정에 영향을 미치지 않습니다.</block>
   <block id="c7097337eab210464618620268aa80bc" category="paragraph">고급 설정 페이지에서 다음 옵션을 변경할 수 있습니다.</block>
   <block id="90262b49b516aea0770d54c5389860ab" category="list-text">"연간" 스냅샷이 소스 시스템에서 제거되는지 여부 변경</block>
   <block id="6866e75c6eebeffef8ecc7e577b86a5c" category="list-text">예약된 검사를 포함하여 시스템에 대한 랜섬웨어 검사 활성화 또는 비활성화</block>
@@ -2481,7 +2452,6 @@
   <block id="d18386c60f5f586cbc0c07b572754bc0" category="admonition">이러한 정책 설정은 개체 저장소 백업에만 적용됩니다.  이러한 설정은 스냅샷이나 복제 정책에 영향을 미치지 않습니다.</block>
   <block id="a2e6f50bd5494a56ee0794883aeee5e5" category="section-title">백업 일정 옵션</block>
   <block id="8ccbaa98d8631f522e71476bfd3fcd37" category="paragraph">NetApp Backup and Recovery 사용하면 각 시스템(클러스터)에 대해 고유한 일정을 적용하여 여러 백업 정책을 만들 수 있습니다.  서로 다른 복구 지점 목표(RPO)를 가진 볼륨에 서로 다른 백업 정책을 할당할 수 있습니다.</block>
-  <block id="5b4bf3566416dd4da103a5b88e54f6e1" category="paragraph">각 백업 정책에는 백업 파일에 적용할 수 있는 _레이블 및 보존_ 섹션이 제공됩니다.  볼륨에 적용된 스냅샷 정책은 NetApp Backup and Recovery 에서 인식하는 정책 중 하나여야 하며, 그렇지 않으면 백업 파일이 생성되지 않습니다.</block>
   <block id="dca086ae01946b6cf950f1291d93aac6" category="paragraph">일정에는 레이블과 보존 값의 두 부분이 있습니다.</block>
   <block id="3b190b83ddc2ee9e610caa6dc209fbaf" category="list-text">*레이블*은 볼륨에서 백업 파일이 생성(또는 업데이트)되는 빈도를 정의합니다.  다음 유형의 라벨 중에서 선택할 수 있습니다.</block>
   <block id="5a35ddef63d61c71445e13d3c9588a2d" category="list-text">*시간별*, *일별*, *주별*, *월별*, *연간* 기간 중 하나 또는 여러 기간을 조합하여 선택할 수 있습니다.</block>
@@ -3366,7 +3336,6 @@
   <block id="bd45d990ee6243026d43e7ba09d9dcc7" category="list-text">SnapCenter Plug-in for VMware vSphere 에서 기존 보호 정책, 스냅샷, 백업 및 복원 옵션을 가져옵니다.</block>
   <block id="c7216ade1ce2641cd0b5ceae5c192aea" category="paragraph">스냅샷이나 복제 볼륨을 생성하는 데에는 비용이 들지 않습니다. 스냅샷과 복제 볼륨을 저장하는 데 필요한 디스크 공간 외에는 비용이 들지 않습니다.</block>
   <block id="ec5903fe264ba75792e588ee687f9158" category="paragraph">백업 라이선스는 개체 스토리지에서 백업하고 복원하는 데만 필요합니다. 스냅샷과 복제 볼륨을 만드는 데는 라이선스가 필요하지 않습니다.</block>
-  <block id="0f3f39435676ffeef4ba4ef82d2d4b94" category="list-text">*기존 스냅샷을 백업 사본으로 개체 스토리지로 내보내기*: 이 시스템의 볼륨에 대한 로컬 스냅샷이 이 시스템에 대해 방금 선택한 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 경우 이 추가 프롬프트가 표시됩니다. 볼륨에 대한 가장 완벽한 보호를 보장하기 위해 모든 이전 스냅샷을 백업 파일로 개체 스토리지에 복사하려면 이 상자를 선택하세요.</block>
   <block id="b26fafb8754488cba5d1c6f4c35f4b89" category="paragraph">NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다. 복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다. 이후 전송에는 스냅샷에 포함된 기본 스토리지 시스템 데이터의 차등 사본이 포함됩니다.</block>
   <block id="bb5dc31143cea02e04349aa386dc4c27" category="paragraph">NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다. 복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다. 이후 전송에는 스냅샷에 포함된 기본 저장소 데이터의 차등 사본이 포함됩니다.</block>
   <block id="294441075d63ebaf575b2bea27e26a8b" category="paragraph">볼륨 백업 대시보드에서 현재 백업 중인 모든 볼륨 목록을 볼 수 있습니다. 여기에는 스냅샷, 복제된 볼륨, 개체 스토리지의 백업 파일을 포함한 모든 유형의 백업이 포함됩니다. 현재 백업되지 않은 시스템의 볼륨도 볼 수 있습니다.</block>
@@ -3381,7 +3350,6 @@
   <block id="7c5de50c41f0a8634817597808c6df4b" category="paragraph">NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다. 복제된 볼륨과 백업 파일의 기준 전송에는 기본 스토리지 시스템 데이터의 전체 사본이 포함됩니다. 이후 전송에는 스냅샷에 포함된 기본 데이터의 차등 사본이 포함됩니다.</block>
   <block id="d35a77cfe575d13394b221b746fe1f0b" category="paragraph">클러스터에 대한 NetApp Backup and Recovery 활성화하려면 먼저 NetApp 에서 NetApp Backup and Recovery BYOL 라이선스를 구매하고 활성화해야 합니다. 라이선스는 개체 스토리지에 대한 백업 및 복원을 위한 것이며, 스냅샷이나 복제 볼륨을 생성하는 데는 라이선스가 필요하지 않습니다. 이 라이선스는 해당 계정에 대한 것이며 여러 시스템에서 사용할 수 있습니다.</block>
   <block id="4ae0ae424ac8104b3b6379720f5d11c7" category="list-text">*로컬 스냅샷*: 로컬 스냅샷을 생성합니다.</block>
-  <block id="45f89ff96066abe8d4fab644a72cff53" category="list-text">*기존 스냅샷을 백업 파일로 개체 스토리지로 내보내기*: 방금 선택한 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 이 시스템의 볼륨에 대한 로컬 스냅샷이 있는 경우 이 추가 메시지가 표시됩니다. 볼륨에 대한 가장 완벽한 보호를 보장하기 위해 모든 이전 스냅샷을 백업 파일로 개체 스토리지에 복사하려면 이 상자를 선택하세요.</block>
   <block id="3a4f7228272f3d796e47dc3105df1408" category="paragraph">NetApp Backup and Recovery 볼륨의 초기 백업을 시작합니다. 복제된 볼륨과 백업 파일의 기준선 전송에는 소스 데이터의 전체 사본이 포함됩니다. 이후 전송에는 스냅샷에 포함된 기본 저장소 데이터의 차등 사본이 포함됩니다.</block>
   <block id="33b4029bcdc81d3d05791f1403584ca0" category="paragraph">스냅샷, 복제 및 개체 스토리지에 대한 백업을 관리하는 정책을 만들 수 있습니다.</block>
   <block id="6a765f5fb9e687173df4e2b03937673d" category="paragraph">3-2-1 전략의 일부에는 *기본* 스토리지 시스템의 볼륨 스냅샷을 만드는 것이 포함됩니다.</block>
@@ -3412,11 +3380,9 @@
   <block id="4d9a28db017266e35e5d4203c8c74098" category="list-text">개체 스토리지의 로컬 스냅샷, 복제된 볼륨 또는 백업된 볼륨에서 특정 시점의 데이터를 복원합니다.</block>
   <block id="45374e4c2372e5efe029c3622265209a" category="list-text">_스냅샷_은 소스 시스템의 소스 볼륨에 상주합니다.</block>
   <block id="30e07a9dd02dd98f372bd162ec8456ef" category="paragraph">시스템에 대해 NetApp Backup and Recovery 활성화하면 처음에 선택한 모든 볼륨이 선택한 정책을 사용하여 백업됩니다. 스냅샷, 복제된 볼륨, 백업 파일에 대해 별도의 정책을 선택할 수 있습니다. 서로 다른 복구 지점 목표(RPO)를 가진 특정 볼륨에 서로 다른 백업 정책을 할당하려는 경우 해당 클러스터에 대한 추가 정책을 만들고 NetApp Backup and Recovery 활성화된 후 해당 정책을 다른 볼륨에 할당할 수 있습니다.</block>
-  <block id="fa3dd3bcafecb630044b7d1eddb7cd43" category="admonition">볼륨에 적용된 스냅샷 정책에는 복제 정책과 개체 정책에 사용하는 레이블 중 하나가 있어야 합니다. 일치하는 라벨이 발견되지 않으면 백업 파일이 생성되지 않습니다. 예를 들어, "주간" 복제 볼륨과 백업 파일을 생성하려면 "주간" 스냅샷을 생성하는 스냅샷 정책을 사용해야 합니다.</block>
   <block id="9e813756b5af6bc196c66209061d9d1a" category="paragraph">예약된 랜섬웨어 보호 검사는 기본적으로 활성화되어 있습니다. 검사 빈도의 기본 설정은 7일입니다. 스캔은 최신 스냅샷에서만 수행됩니다. 예약된 검사는 비용을 절감하기 위해 비활성화할 수 있습니다. 고급 설정 페이지의 옵션을 사용하면 최신 스냅샷에 대한 예약된 랜섬웨어 검사를 활성화하거나 비활성화할 수 있습니다. 이 기능을 활성화하면 기본적으로 매주 검사가 수행됩니다. 일정을 며칠이나 몇 주로 변경하거나 비활성화하여 비용을 절감할 수 있습니다.</block>
   <block id="02c75a95538b43e9e819f0d1b0cc19f2" category="list-text">스냅샷 -&gt; 복원된 볼륨</block>
   <block id="68601916ccf016a3cbb9b91a847005f5" category="paragraph">보조 시스템(복제된 볼륨) 또는 개체 스토리지(백업 파일)에 있는 백업 파일에서 ONTAP 데이터를 다음 시스템으로 복원할 수 있습니다. 스냅샷은 소스 시스템에 저장되며 동일한 시스템으로만 복원할 수 있습니다.</block>
-  <block id="2b3e9f7492129e1cad66eb9ef0df47d2" category="paragraph">*위치* 열은 백업 파일(스냅샷)이 *로컬*(소스 시스템의 스냅샷), *보조*(보조 ONTAP 시스템의 복제된 볼륨), *개체 스토리지*(개체 스토리지의 백업 파일)인지 여부를 보여줍니다. 복원할 파일을 선택하세요.</block>
   <block id="8ba8feef9dc91a81337c3e1c3f636d2e" category="admonition">지금은 개체 스토리지의 백업 파일에서만 폴더나 개별 파일을 복원할 수 있습니다. 현재 로컬 스냅샷이나 보조 시스템(복제된 볼륨)에 있는 백업 파일에서 파일과 폴더를 복원하는 것은 지원되지 않습니다.</block>
   <block id="49b1bd86131611255094bea2f77118b7" category="paragraph">장착된 볼륨의 경우 다음 크기 조정 지침을 사용하세요.</block>
   <block id="aa45cf8d923bfb8185fed2178e78d921" category="list-text">300MB/s 디스크 처리량의 권장 AFF 스토리지입니다. 처리량이 낮아지면 검색 및 기타 작업에 영향을 미칩니다.</block>
@@ -3696,7 +3662,6 @@
   <block id="59d7aa0f1f316dd1d14b5bbe02d4d985" category="list-text">*암호화*: 새 버킷을 생성한 경우 공급자로부터 받은 암호화 키 정보를 입력하십시오. 데이터 암호화를 관리할 때 기본 AWS 암호화 키를 사용할지, 아니면 AWS 계정에서 직접 관리하는 고객 키를 사용할지 선택하세요. <block ref="d92909932e1ff9d87b508ff8380d446c" category="inline-link-rx"></block>).</block>
   <block id="5cf85684b99a8b0df0187c0fddfe9241" category="list-text">*네트워킹*: 이 공급자에 대한 네트워킹 옵션을 구성합니다.</block>
   <block id="5a3443bdabcca33a88f837ed431e4140" category="list-text">*기존 스냅샷 내보내기*: 이 시스템의 볼륨에 대해 방금 선택한 백업 일정 레이블(예: 매일, 매주 등)과 일치하는 로컬 스냅샷이 있는 경우 이 추가 메시지가 표시됩니다. 볼륨을 가장 완벽하게 보호하기 위해 모든 과거 스냅샷을 백업 파일로 객체 스토리지에 복사하려면 이 확인란을 선택하십시오.</block>
-  <block id="fd5c6f657b9b82dc2fc86f506dacc05d" category="list-text">선택적으로 *로컬 스냅샷, 복제 및 백업에서 일치하지 않는 레이블을 자동으로 수정*할 수 있습니다. 이렇게 하면 스냅샷, 복제 및 백업 정책의 레이블과 일치하는 레이블이 지정된 스냅샷이 생성됩니다.</block>
   <block id="a85910c6eeb75a045489c2b16a61b922" category="paragraph">각 아이콘은 해당 백업 유형이 활성화되면 불이 켜지고, 비활성화되면 회색으로 표시됩니다. 각 아이콘 위에 마우스 커서를 올리면 사용 중인 백업 정책과 각 백업 유형에 대한 기타 관련 정보를 확인할 수 있습니다.</block>
   <block id="1ae9b0331f20d420feb95df3c5f492ec" category="list-text">*볼륨* 메뉴에서 정책 설정을 수정하려는 볼륨을 찾고, [작업] 메뉴를 선택합니다. <block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block> 해당 행의 맨 끝에서 *백업 전략 편집*을 선택합니다.</block>
   <block id="7a8eafe0820d78646db0118a296f0af3" category="paragraph">백업용으로 활성화된 볼륨이 5개 이상인 경우 NetApp Backup and Recovery 한 번에 5개의 볼륨만 초기화합니다. 이 작업이 완료되면 모든 볼륨이 초기화될 때까지 5개씩 그룹으로 나누어 계속 진행됩니다.</block>
@@ -3898,7 +3863,6 @@
   <block id="62a3e51100215ef17a24383d5729e00e" category="paragraph">NetApp Backup and Recovery를 사용하면 Oracle Database 워크로드와 관련된 다음과 같은 작업을 수행할 수 있습니다.</block>
   <block id="c9b387ac576fa007292bb17c9c97e163" category="list-text"><block ref="c9b387ac576fa007292bb17c9c97e163" category="inline-link-macro-rx"></block></block>
   <block id="0c455356b172e0f15e2d62ca94bfa5c6" category="inline-link-macro">Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리</block>
-  <block id="ce4ef45ffb0bf8da9fa1877ae859c0e3" category="list-text"><block ref="ce4ef45ffb0bf8da9fa1877ae859c0e3" category="inline-link-macro-rx"></block></block>
   <block id="88ed72683238588c2440ec4dd0ab3eca" category="inline-link-macro">Oracle Database 워크로드를 백업합니다</block>
   <block id="0d34b4ba574939ced489d0243500c926" category="list-text"><block ref="0d34b4ba574939ced489d0243500c926" category="inline-link-macro-rx"></block></block>
   <block id="7e96e8e02dab57292bff1e9f31e0c7df" category="inline-link-macro">Oracle Database 워크로드 복원</block>
@@ -4045,8 +4009,6 @@
   <block id="250bd2e0fd20f197756f90da65d7b032" category="paragraph">스냅샷이 두 개 이상의 위치에 저장된 경우 *스냅샷 위치 선택*이 나타납니다.</block>
   <block id="59b1d9c0faeccb050b2ae82254459fd3" category="list-text">사용할 스냅샷 위치를 선택하고 * 다음 * 을 선택합니다.</block>
   <block id="b2fe9cdb3dfb44588722f86420682e65" category="list-text">*고급 옵션* 페이지에서 다음을 수행하십시오.</block>
-  <block id="20decfe57e54a87359cea95bba79c274" category="list-text">이전에 사양 파일을 저장한 경우, 해당 파일을 업로드하여 복제된 데이터베이스 설정을 사용자 지정할 수 있습니다. 또한 데이터베이스 스냅샷에 대한 기본 사양 파일을 다운로드할 수도 있습니다.</block>
-  <block id="3c7b24476512ff19d3887cbbaf0c549e" category="list-text">*Recovery scope* 섹션에서 복제본을 생성할 때 복원할 데이터를 제한하는 방법을 선택하고 선택한 옵션에 필요한 정보를 입력하십시오. *None*을 선택하면 모든 데이터가 복원됩니다.</block>
   <block id="3360c6db4a303d4e7db0bf74d740c00f" category="list-text">*Prescripts and postscripts* 섹션에서 *Prescript* 및 *Postscript* 옵션 중 하나 또는 둘 다를 활성화하여 클론 작업이 시작되기 전이나 완료된 후에 스크립트를 실행할 수 있습니다. 각 옵션에 대해 전체 스크립트 경로와 필요한 인수를 입력하십시오.</block>
   <block id="50059824044533f44d3ae954c21388e4" category="section-title">Oracle 데이터베이스의 클론 예약</block>
   <block id="beed2b8d7c8943c45007114d3902e342" category="list-text">*복원 지점 선택* 페이지의 *복제 원본* 섹션에서 *즉시 스냅샷 및 복제*를 선택합니다.</block>
@@ -4807,19 +4769,9 @@
   <block id="81bdc0623ea533b24d0e11cb1d26ba25" category="list-text">SMB 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하십시오. 지침은 <block ref="5c340db4eb0fc64db199962e418ffbd0" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="09e4a6980ec8e49e9c338d71a078b029" category="paragraph">마켓플레이스에서 연간 계약을 체결한 경우, 모든 NetApp Backup and Recovery 사용량은 해당 계약에 따라 청구됩니다.</block>
   <block id="fe336167ccf46f9fb348006254d0f3ee" category="list-text">클러스터 이름을 입력하고 클러스터와 함께 사용할 콘솔 에이전트를 선택하십시오.</block>
-  <block id="c1ec49703505f57531225059c7c36779" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>을 참조하십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="6dd3c7c1ba8e65da85c3e2fe08fa8a94" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="44371de0a029c248f1a90987cb1f4534" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>을 참조하십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block></block>
-  <block id="00175b45adeb2fd0dadf3cbebb6a6e1a" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자 또는 백업 및 복구 클론 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="245c869d7d516179ee0d44de43c6a4dc" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어 또는 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="8d7814801e68bc09e7c15034344e4fb2" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="52d42f2d4b51510352e6a5d5264a2324" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. <block ref="0f393d0ed3fe42bcd53eff5ef49bfe77" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="1f878dc7bdb71ee28c2c50bc232dfae8" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="795e84085ddc80428b97bda253086f11" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="9e29ab9466f0bd217537f14714daa46c" category="paragraph">백업 및 복구 최고 관리자 권한입니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="f086ad71d827eb87743f472c780e2446" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="e5b682be117d99f07d8f1223cbe827ea" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="6077c15fad6f07f1de9a676f2c04e33a" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="de2e4685966d24481dfab35c95ad44dc" category="section-title">2026년 7월 13일</block>
   <block id="66591c0e71be05bd24e1869944b92db6" category="doc">모든 워크로드에 대한 향상된 멀티 버킷 지원</block>
   <block id="9bf2c1ebc9be74ae2e995a0a4dab1fec" category="paragraph">NetApp Backup and Recovery에 대한 자세한 내용은 <block ref="a026c5bec08ff7bb5b963e48c0daa63e" category="inline-link-rx"></block>을 참조하십시오.</block>
@@ -5187,7 +5139,6 @@
   <block id="d04c100aa8e9be0aa91497c899b0ae70" category="list-text">FlexGroup 볼륨은 한 번에 하나씩만 복제 대상으로 선택할 수 있습니다. 각 FlexGroup 볼륨에 대해 백업을 별도로 활성화해야 합니다.</block>
   <block id="0a1be80c0c91abdd10a795c65987cc4c" category="paragraph">FlexVol 볼륨에는 이러한 제한이 없습니다. 시스템의 모든 FlexVol 볼륨을 선택하고 동일한 백업 정책을 할당할 수 있습니다.</block>
   <block id="8e46cbca822594e1ba592a2db6c34e21" category="list-text">SnapMirror 레이블<block ref="b17c9a947d4e38d7975718380fab6b7a" prefix=" " category="inline-code"></block> 및<block ref="02d69a40f5f4cdc817176fabd085b511" prefix=" " category="inline-code"></block>과(와) 관련된 관계는 클라우드에 백업되지 않습니다.</block>
-  <block id="747364ba6f56a1a04ae28c582a967699" category="list-text">SnapMirror 대상 볼륨에 스냅샷의 로컬 복사본을 생성하는 경우(사용된 SnapMirror 레이블과 관계없이) 이러한 스냅샷은 백업으로 클라우드로 이동되지 않습니다. NetApp Backup and Recovery에서 스냅샷을 백업할 수 있도록 소스 DP 볼륨에 원하는 레이블이 포함된 스냅샷 정책을 생성해야 합니다.</block>
   <block id="bc8f35b9487526460c11bfe34f51c19b" category="list-text">FlexGroup 볼륨 백업은 아카이브 스토리지로 이동할 수 없습니다.</block>
   <block id="48bd35dd5aa1abd5561ff77719e85e73" category="list-text">ONTAP 9.12.1 GA 이상 버전을 사용하는 경우, 주 시스템에 연결된 상태에서 백업이 지원됩니다. 전체 백업 구성이 2차 시스템으로 전송되므로 전환 후에도 클라우드 백업이 자동으로 계속됩니다. 2차 시스템에서 백업을 설정할 필요가 없습니다(실제로 설정하지 않도록 제한되어 있습니다).</block>
   <block id="c005b36a6e6d88a6fc0763aa6caae7fb" category="list-text">데이터 보호 볼륨에서는 *지금 백업* 버튼을 사용한 임시 볼륨 백업이 지원되지 않습니다.</block>
@@ -5232,7 +5183,6 @@
   <block id="730acae7684dfbf79ddf6b1f05ea9f75" category="list-text">*버킷 이름*: ONTAP S3 버킷 이름을 입력하십시오.</block>
   <block id="6caed87fa2992f2b01dad7a3a9dc41eb" category="list-text">대상을 선택하고 오른쪽에서 *작업* <block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 선택한 다음 *자격 증명 변경*을 선택합니다.</block>
   <block id="d15ce5f7b11589a195af27e9552d666f" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 가상 머신을 검색하여 보호 정책으로 보호할 수 있습니다.</block>
-  <block id="c9c9b6894824e1360b072d40ca321caf" category="paragraph">*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자. <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>에 대해 알아보기.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="b2d7b24c3bf71ab6e29740c4642ffafe" category="paragraph">NetApp Backup and Recovery에서 가상 머신을 검색할 수 있도록 Hyper-V 호스트 정보를 추가하십시오. 각 콘솔 에이전트에서 리소스를 검색할 시스템을 선택하십시오.</block>
   <block id="b7f882b06eddf2dfd9de57436d956c2c" category="list-text">NetApp 콘솔 메뉴에서 *보호* &gt; *백업 및 복구*를 선택합니다.</block>
   <block id="c4aea5e44a79c8aa4bb534878de9f3a0" category="paragraph">NetApp Backup and Recovery에 처음 로그인하는 경우, 콘솔에 시스템이 이미 등록되어 있지만 리소스를 검색하지 않은 상태라면 "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 랜딩 페이지가 표시되고 *리소스 검색* 옵션이 제공됩니다.</block>
@@ -5335,7 +5285,6 @@
   <block id="3a732dfd8979773d840d4c6a5ee6932a" category="list-text">올바른 애플리케이션이 선택되었는지 확인하십시오.</block>
   <block id="0637f2b7220c73c5814a06cee1e66d5f" category="doc">백업 및 복구 대시보드에서 보호 상태 보기</block>
   <block id="91f5072da96b77071890dfb731705999" category="paragraph">워크로드의 상태를 모니터링하여 보호 문제를 식별하고 경고에 대응하십시오. NetApp Backup and Recovery 대시보드에서 백업 및 복원 상태를 확인하고 시스템, 보호, 작업 및 복원 요약을 검토할 수 있습니다.</block>
-  <block id="7ae67c349587ebebec87539ad1c32c81" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="7dfe2693eef41656f0a4c43066a6950b" category="paragraph">작업 요약에서 완료된 작업, 실행 중인 작업 또는 실패한 작업의 총 수를 확인하십시오.</block>
   <block id="6ae76fe3d05c0e154dbdbb441c9548ac" category="list-text">각 작업 배포에 대해 필터를 변경하여 지난 30일, 지난 7일, 지난 24시간 또는 지난 1년 등 기간을 기준으로 실패한 작업, 실행 중인 작업 및 완료된 작업의 요약을 표시합니다.</block>
   <block id="63e0a49e4c65e31bda356b573f1ed3f9" category="list-text">실패한 작업, 실행 중인 작업 및 완료된 작업에 대한 자세한 내용을 보려면 *작업 모니터링 보기*를 선택하십시오.</block>
@@ -5514,9 +5463,7 @@
   <block id="2539f8afd971a66035d430f5ec9a298a" category="paragraph">온프레미스 ONTAP 시스템의 Microsoft SQL Server 워크로드를 Amazon Web Services, Microsoft Azure 또는 StorageGRID에 백업합니다.</block>
   <block id="c55df281a65ee03a6dadde4fb2f5e3f2" category="list-text">워크로드를 예약된 일정에 따라 백업하고 백업 및 복원 작업을 관리하는 정책을 생성합니다. 지침은 <block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="2143b36441bbedcc5ffffdb891cdbe87" category="list-text">온디맨드 백업을 생성하여 워크로드를 즉시 백업합니다.</block>
-  <block id="ae6c4b05836ceed04fe1a2ba7cec8e7f" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="d29168feb6ab8e25e22d38717cab5984" category="list-text">로그를 저장할 호스트 또는 노드를 선택하십시오.</block>
-  <block id="29d718441b51de48b372dda920c034fd" category="paragraph">*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
   <block id="e7c80d2a8befd39ab680e911906dab86" category="paragraph">정책을 생성하려면 *새 정책 생성*을 선택하고 안내에 따라 진행하십시오. 자세한 내용은 <block ref="08bf6451e8be54326517c755d3e4cd23" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="e0e2d998b14d6c84eb3802685f83612a" category="list-text">*보호 그룹*, *인스턴스*, 또는 *데이터베이스* 탭을 선택하십시오.</block>
   <block id="c6cf32207591675034ca7c2e36587a50" category="list-text">백업에 적용할 정책을 선택하십시오.</block>
@@ -5608,8 +5555,6 @@
   <block id="27bb0e289edab1132883935e52645683" category="paragraph">Oracle 데이터베이스 워크로드를 복원할 때 다음과 같은 현상이 발생합니다.</block>
   <block id="4e3fce457d1a9a8459a6a5ea98a6e9fc" category="paragraph">필요에 따라 Oracle 데이터베이스를 특정 시점, 특정 시스템 변경 번호(SCN) 또는 마지막으로 정상 작동했던 상태로 복원할 수 있습니다. 스냅샷에서 데이터베이스를 복원하고 자동 복구 프로세스를 건너뛸 수도 있습니다. 예를 들어 수동으로 복구를 수행하려는 경우에 유용합니다. 데이터베이스는 이름 또는 특정 필터를 사용하여 검색할 수 있습니다.</block>
   <block id="4c82cd55e9c216695cfce74c86a368dd" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
-  <block id="c474e9933ac445797696e2191d49f062" category="list-text">스크립트 실행 시간 제한 값을 선택하십시오. 스크립트가 이 시간 내에 실행되지 않으면 복원 작업은 계속 진행됩니다.</block>
-  <block id="94bb7dbadec1bf9c4708c5b400353e87" category="list-text">*복구 후 데이터베이스 또는 컨테이너 데이터베이스를 READ-WRITE 모드로 열기*: 복원 작업이 완료되면 Backup and Recovery에서 데이터베이스에 대해 READ-WRITE 모드를 활성화합니다.</block>
   <block id="37141d7af0dc9b5fc98cbb0382dab44e" category="paragraph">이번 미리 보기 릴리스에서는 Oracle 데이터베이스 워크로드에서 사용할 수 없습니다.</block>
   <block id="31f78782ca396cf4a28f08976d81c51b" category="paragraph">NetApp Backup and Recovery를 사용하여 백업 빈도, 일정 및 보존 기간을 제어하는 Hyper-V 백업 정책을 생성할 수 있습니다.</block>
   <block id="69447293a8590769734416cbc1de503e" category="list-text">*3-2-1 팬아웃*: 기본 스토리지(디스크)에서 2차 스토리지(디스크)를 거쳐 클라우드(오브젝트 스토어)로 데이터를 전송합니다. ONTAP 간, ONTAP에서 오브젝트 스토어로의 구성 등 서로 다른 스토리지 시스템에 걸쳐 데이터 복사본을 여러 개 생성합니다. 클라우드 공급자의 오브젝트 스토어 또는 자체 오브젝트 스토어를 사용할 수 있습니다. 최적의 데이터 보호 및 재해 복구에 적합합니다. 이 옵션은 Amazon FSx for NetApp ONTAP에는 사용할 수 없습니다.</block>
@@ -5795,7 +5740,6 @@
   <block id="3d2bab3d4f2d57db34fabaeda49c774c" category="list-text">볼륨 적합성 여부를 확인합니다. 시스템은 볼륨이 재동기화에 적합한지 확인합니다. 볼륨이 적합하지 않은 경우 공통 스냅샷 기준이 충족되지 않았음을 의미합니다.</block>
   <block id="5c11396ac879be51a75ae297e460911d" category="paragraph">NetApp Backup and Recovery에서는 기본 백업 정책을 사용하거나 ONTAP 볼륨에 대한 사용자 지정 정책을 생성할 수 있습니다. 정책은 백업 빈도, 백업 시점 및 보존 기간을 제어합니다.</block>
   <block id="9ae1ce5f908bcca832becc340fb5245f" category="paragraph">활성화 마법사를 사용하여 볼륨에 대한 백업 및 복구 서비스를 활성화할 때 기본 정책과 시스템에 이미 존재하는 다른 정책(Cloud Volumes ONTAP 또는 온프레미스 ONTAP 시스템) 중에서 선택할 수 있습니다. 기존 정책과 다른 정책을 사용하려면 활성화 마법사를 사용하기 전이나 사용하는 동안 정책을 생성할 수 있습니다.</block>
-  <block id="70e81c1519bde456d929e65b4e444cc3" category="list-text">정책 관리 페이지에서 *정책 생성* &gt; *스냅샷 정책 생성*을 선택합니다.</block>
   <block id="1536d738bfa2fc9da5f86a0afa864bc0" category="list-text">정책 관리 페이지에서 *정책 생성* &gt; *복제 정책 생성*을 선택합니다.</block>
   <block id="3b4ec10ee7384a2d8000f420be1002ea" category="list-text">정책 관리 페이지에서 *정책 생성* &gt; *백업 정책 생성*을 선택합니다.</block>
   <block id="2e61b3d4958d5889782a20b21e7a4917" category="doc">NetApp Backup and Recovery에서 오브젝트 백업 고급 설정 관리</block>
@@ -5930,4 +5874,76 @@
   <block id="74c57c6e2fe5772a23c00b3f6235a6fd" category="paragraph">카탈로그 서비스에 대한 ONTAP 서버 인증서 확인을 활성화합니다.</block>
   <block id="fb15b4874677cad58f8618e6f738a955" category="list-text">Docker 볼륨으로 변경합니다. 실행:</block>
   <block id="97800d7777f06226529ba6da27a80393" category="paragraph">NetApp Backup and Recovery의 새로운 기능, 개선 사항 및 버그 수정 사항에 대해 알아보십시오.</block>
+  <block id="6ced7632c3b12a58dc567ff698cafc4e" category="list-text">데이터베이스를 특정 시점 또는 SCN으로 복원하여 불완전 복구를 수행한 후, 나중에 해당 복구 이전 시점으로 복원해야 하는 경우 복원 대상 설정에서 *제어 파일*도 선택해야 합니다. 제어 파일을 복원하지 않으면 데이터베이스를 이전 불완전 복구 시점보다 이전 시점으로 복원할 수 없습니다.</block>
+  <block id="cc48b2a3deb4974d05e24d22a06a4a3e" category="list-text">SnapMirror 타겟 볼륨에 스냅샷의 로컬 복사본을 생성하는 경우(사용된 SnapMirror 레이블과 관계없이) 이러한 스냅샷은 백업으로 클라우드로 이동되지 않습니다. NetApp Backup and Recovery에서 스냅샷을 백업할 수 있도록 소스 DP 볼륨에 원하는 레이블이 포함된 스냅샷 정책을 생성해야 합니다.</block>
+  <block id="758dbb9a669ecda5104bffb2df64f24c" category="list-text">볼륨에 적용된 스냅샷 정책은 일별, 주별, 월별 등 NetApp Backup and Recovery에서 인식하는 정책 중 하나여야 합니다. 기본 정책인 "sm_created"(*모든 스냅샷 미러링*에 사용됨)는 인식되지 않으며, 이 경우 DP 볼륨은 백업 가능한 볼륨 목록에 표시되지 않습니다.</block>
+  <block id="ea30aa7cd6ed1668956e501860886490" category="paragraph">*필수 NetApp Console 역할* Backup and Recovery super admin 또는 Backup and Recovery 백업 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우, Cloud Volumes ONTAP Admin 역할도 필요합니다. <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>에 대해 자세히 알아보십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="10da519ff92f824ca97336ad9b4a08e7" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>을 참조하십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block></block>
+  <block id="c3a291a73ba59b4d94eb6db3eaa2ff85" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>에 대해 알아보기.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="347406b3488a309d40aa38be005f1183" category="paragraph">*필수 NetApp Console 역할*</block>
+  <block id="7c8daaee4590bb73b54a5663b1a3a5fc" category="paragraph">백업 및 복구 최고 관리자 또는 백업 및 복구 백업 관리자. <block ref="0f393d0ed3fe42bcd53eff5ef49bfe77" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="e88385c744c67365d19fe37f07225708" category="paragraph">*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자, Backup and Recovery 백업 관리자, Backup and Recovery 복원 관리자, Backup and Recovery 클론 관리자 또는 Backup and Recovery 백업 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="564fd1170f3092b060c1cbc528cca32d" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="992aa2d8b0062f403cbf3d3a1b203ce9" category="paragraph">백업 및 복구 최고 관리자, 백업 및 복구 백업 관리자, 또는 백업 및 복구 복원 관리자. <block ref="0f393d0ed3fe42bcd53eff5ef49bfe77" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="cbb73033231757e619e153377a9db1e2" category="paragraph">*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자, Backup and Recovery 백업 관리자, Backup and Recovery 복원 관리자 또는 Backup and Recovery 클론 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="3d573d5b6deb497b79f5b4eb6120d8d2" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="76bb051af67c57c45686816e2358f0ed" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="48581c2684fab807e94bda181c201389" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="6b9298c3572b2f52ac7ac8cdd54f4b16" category="paragraph">백업 및 복구 최고 관리자 권한입니다. <block ref="0f393d0ed3fe42bcd53eff5ef49bfe77" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="b6843261e21dcd949adfd0e3a8266096" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="2c0b085ebd95dcec22e3a367d800bcae" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자 또는 백업 및 복구 복원 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>을 참조하십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block></block>
+  <block id="733f1bc64b5fdff2e5d7cfed5bdbe254" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="b2fac50398cc9650a6761bae424bd2c8" category="paragraph">*필수 NetApp Console 역할* Backup and Recovery 수퍼 관리자 또는 Backup and Recovery 백업 관리자 역할입니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우, Cloud Volumes ONTAP Admin 역할도 필요합니다. <block ref="12964e9f6d86f445e6ad568e453a77e2" category="inline-link-macro-rx"></block>에 대해 알아보십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block></block>
+  <block id="d33112fbbb8102c759b078e5935499af" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 클론 관리자 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="3718717110a944f12063e6951dd43689" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 클론 관리자 역할.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="8cddf22cdc234d64fb00c8001a383b6d" category="list-text">원본 데이터베이스가 컨테이너 데이터베이스(CDB)인 경우, *복제 유형* 섹션에서 다음 중 하나를 선택하십시오.</block>
+  <block id="73f98e8ea105f20f3b43d3010ad80a8e" category="list-text">*완전한 데이터베이스 복제*: 모든 PDB를 포함하여 컨테이너 데이터베이스 전체를 복제합니다.</block>
+  <block id="2a682420415a6cc91008f7c027323013" category="list-text">*PDB 클론*: 컨테이너 데이터베이스 백업에서 특정 PDB를 기존 대상 컨테이너 데이터베이스로 복제합니다.</block>
+  <block id="677bd14687e2f3c9654053a2a6b8b177" category="list-text">선택적으로, 멀티테넌트 데이터베이스 전체를 복제하는 경우 *전체 데이터베이스 복제 설정*에서 복제에서 제외할 PDB를 하나 이상 선택할 수 있습니다(PDB$SEED는 항상 제외됨). 이 섹션은 단일 테넌트 데이터베이스를 복제할 때는 나타나지 않습니다.</block>
+  <block id="3236a3ead2580cd69a0c1bbe76714443" category="list-text">이전에 사양 파일을 저장한 경우, *대상 데이터베이스 매개변수 사용자 지정* 옵션을 활성화하여 해당 파일을 업로드하고 복제된 데이터베이스 설정을 사용자 지정할 수 있습니다. 또한 데이터베이스 스냅샷에 대한 기본 사양 파일을 다운로드할 수도 있습니다.</block>
+  <block id="b8dffce975466e9aee10a5740c7051ca" category="list-text">*복구 범위* 섹션에서 아카이브 로그를 사용하여 클론을 복구하는 옵션을 선택하고 필요한 세부 정보를 입력합니다. *없음*을 선택하면 복구가 건너뛰어집니다(클론은 아카이브 로그의 변경 사항을 적용하지 않고 스냅샷에서 생성됩니다). *없음*은 PDB 클론에는 사용할 수 없습니다.</block>
+  <block id="cab19a0ec02714b738f3cbdbbe75e358" category="admonition">즉시 스냅샷을 생성하고 새로 고침 일정을 설정하여 클론을 만드는 기능은 전체 데이터베이스 클론에만 적용됩니다. PDB 클론에는 이 기능을 사용할 수 없습니다.</block>
+  <block id="2a89654f2e87daae0211a674ae5febfc" category="inline-link-macro">Oracle Database 워크로드에 대한 보호 그룹 관리</block>
+  <block id="0a6313cec6301ae98c94e73ba522078e" category="list-text"><block ref="0a6313cec6301ae98c94e73ba522078e" category="inline-link-macro-rx"></block></block>
+  <block id="ef28f96440f72809a7152ffc66dd809c" category="list-text"><block ref="ef28f96440f72809a7152ffc66dd809c" category="inline-link-macro-rx"></block></block>
+  <block id="5527c64bc2c020672e46509a73b4e2a3" category="paragraph">PDB 또는 PDB 테이블스페이스를 특정 시점이나 SCN으로 복원하는 경우:</block>
+  <block id="51c644b83084bd09a324c54def440e42" category="list-text">PDB는 하나만 선택하십시오. 특정 시점 복구는 여러 개의 PDB를 복원하는 것과 호환되지 않습니다.</block>
+  <block id="d07bbaca1491351524d765cd27b2e463" category="list-text">PDB$SEED는 특정 시점 복구를 위해 선택할 수 없습니다.</block>
+  <block id="271fc080f7f715ac8f2462be5414bfba" category="list-text">제어 파일 복원은 PDB 또는 테이블스페이스의 특정 시점 복구와 함께 사용할 수 없습니다.</block>
+  <block id="1de84049759abb6734a6922f26da254f" category="list-text">데이터 백업과 필요한 로그 백업이 카탈로그에 등록되었는지 확인하십시오.</block>
+  <block id="4422040316e7063d2b6eeee89d2cb610" category="list-text">복원할 항목을 선택하십시오:</block>
+  <block id="edaeb35620b1bfb1682cb9dc8b30993d" category="list-text">전체 데이터베이스 또는 컨테이너 데이터베이스(CDB)를 복원하려면 *모든 데이터 파일*을 선택하십시오.</block>
+  <block id="6ef18b5f7ddc8dccec3f8cfc05180417" category="list-text">컨테이너의 다른 PDB에 영향을 주지 않고 CDB에서 하나 이상의 PDB를 복원하려면 *플러그형 데이터베이스(PDB)*를 선택합니다. 그런 다음 목록에서 PDB를 선택합니다.</block>
+  <block id="c9bba403aa1a3b775c98bb8fe83a6a86" category="list-text">특정 PDB 테이블스페이스를 복원하려면 *플러그형 데이터베이스(PDB) 테이블스페이스*(CDB가 아닌 데이터베이스의 경우 *테이블스페이스*로 표시됨)를 선택합니다. 그런 다음 PDB와 테이블스페이스를 선택합니다.</block>
+  <block id="91cf6e173caf9f208d009579fae3cfba" category="list-text">선택적으로 *제어 파일* 옵션을 활성화하여 데이터베이스 제어 파일도 복원할 수 있습니다. 이 옵션은 PDB 또는 PDB 테이블스페이스의 특정 시점 복구 또는 SCN 복구에는 사용할 수 없습니다.</block>
+  <block id="4b49aa44ab53622375dd4e4de6f229e3" category="list-text">선택적으로, *복원 및 복구에 필요한 경우 데이터베이스 상태 변경* 옵션을 활성화하면 Backup and Recovery가 복구 유형에 따라 데이터베이스 상태를 관리할 수 있습니다.</block>
+  <block id="4fb05c33c01facc6c181bfeee40ec5ec" category="list-text">선택적으로 *제자리 복원 강제 실행* 옵션을 활성화하면 SAN/ASM 데이터베이스에 대해 외부 파일 유효성 검사 단계를 건너뛰고 더 빠른 복원 방법을 사용할 수 있습니다. 데이터베이스와 ASM 디스크 그룹은 백업 생성 시점으로 복원됩니다.</block>
+  <block id="4efc67368dfd729f9c295744e484fac3" category="list-text">특정 시점 또는 SCN으로 PDB 또는 PDB 테이블스페이스를 복원하는 경우 외부 아카이브 로그 파일 위치를 지정하십시오. RMAN이 복구를 수행하기 위해 보조 인스턴스를 생성할 위치를 입력하십시오. "/"로 시작하는 파일 시스템 경로 또는 "+"로 시작하는 ASM 디스크 그룹을 입력하십시오. 텍스트 입력 필드 옆에 있는 "더하기" 및 "빼기" 버튼을 사용하여 위치를 추가하거나 제거하십시오.</block>
+  <block id="d76fe5c3d527bffb082aae2a4d6b5558" category="list-text">선택적으로 *복구 후 데이터베이스 또는 컨테이너 데이터베이스를 READ-WRITE 모드로 열기* 옵션을 활성화하여 복원 후 데이터베이스를 READ-WRITE 모드로 열 수 있습니다. 이렇게 하면 복원된 테이블스페이스가 온라인 상태가 됩니다.</block>
+  <block id="9470d5c114013f8b3d728de1df5dd487" category="list-text">*사전 및 사후 스크립트*:</block>
+  <block id="17902e09130187fca130b259322f6340" category="list-text">*사전 명령*: 선택적으로 이 옵션을 활성화하고 복원 작업 전에 실행해야 하는 스크립트의 전체 경로와 스크립트가 사용하는 인수를 입력하십시오.</block>
+  <block id="a4aa2f0da5fe920e49b4efa7582a1089" category="list-text">스크립트 실행 시간 제한 값을 선택합니다. 스크립트가 이 시간 내에 실행되지 않으면 복원 작업은 계속 진행됩니다.</block>
+  <block id="808c0184b1d838fe3f6240a02adeedf3" category="paragraph">백업 및 복구 최고 관리자 또는 백업 및 복구 백업 관리자.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="3079e07efcec8dc4c03ec09df82c5810" category="paragraph">백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 권한이 필요합니다. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="24bd8e8186e76baf41a1a139a325a041" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세한 내용은 <block ref="c66026e4383ae9f791b566ffeb2b3bc3" category="inline-link-macro-rx"></block>을 참조하십시오.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block></block>
+  <block id="69a43e53caadcedb493c59719fb671f3" category="paragraph">*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다.<block ref="8d054a08e0e901ba9c326f172eb3627b" category="inline-link-rx"></block>.</block>
+  <block id="a833b9bd73e803116825184a502ff988" category="list-text">선택적으로 *로컬 스냅샷, 복제 및 백업에서 일치하지 않는 레이블을 자동으로 수정* 옵션을 선택할 수 있습니다. 이 옵션을 선택하면 스냅샷, 복제 및 백업 정책의 레이블과 일치하는 레이블이 지정된 스냅샷이 생성됩니다.</block>
+  <block id="13c6aaa719abfb2f3c46b10b2329a40f" category="paragraph">보호할 볼륨을 선택하십시오. 보호되는 볼륨은 스냅샷 정책, 복제 정책, 오브젝트 백업 정책 중 하나 이상이 적용된 볼륨입니다.</block>
+  <block id="7bef56f7beea569a702a02cf02b7d4e0" category="list-text">선택적으로 *스냅샷 정책 레이블을 복제 및 백업 정책 레이블과 자동으로 동기화* 옵션을 선택할 수 있습니다. 이 옵션을 선택하면 복제 및 백업 정책의 레이블과 일치하는 레이블이 지정된 스냅샷이 생성됩니다.</block>
+  <block id="70e465a4a9e185e99e11abd5a960c4dc" category="paragraph">선택한 볼륨에 이미 스냅샷 또는 복제 정책이 적용된 경우, 나중에 선택하는 정책이 기존 정책을 덮어쓴다는 점에 유의하십시오.</block>
+  <block id="aec57e41584c2d59fb62acc9b2a636d5" category="inline-link">ONTAP CLI를 사용하여 스냅샷을 삭제하는 방법을 알아보세요.</block>
+  <block id="e8e5aa2d2654a73a37c1fee8d91ad22c" category="paragraph">임시 백업을 생성하면 소스 볼륨에 스냅샷이 생성됩니다.  이 스냅샷은 일반 스냅샷 일정에 포함되지 않으므로 자동으로 삭제되지 않습니다.  백업이 완료되면 소스 볼륨에서 이 스냅샷을 수동으로 삭제하는 것이 좋습니다.  이렇게 하면 해당 스냅샷과 관련된 블록을 해제할 수 있습니다.  스냅샷 이름은 <block ref="3fbd2a9ee3863b8841029b21d6bf8e89" prefix=" " category="inline-code"></block>.<block ref="ae9edb2f9eb9d8f71a20a16489812232" category="inline-link-rx"></block>으로 시작합니다.</block>
+  <block id="4bf0252f0808b817ffeeb0f58c63a727" category="list-text">*로컬 스냅샷*: 기존 스냅샷 정책을 선택하거나 새 정책을 생성합니다.</block>
+  <block id="5682a1986e8832ff7ea051903e5ac9fb" category="admonition">스냅샷을 활성화하기 전에 사용자 지정 정책을 생성하려면 시스템 관리자 또는 ONTAP CLI<block ref="21daf815c4decbf3cba733c88297587b" prefix=" " category="inline-code"></block> 명령을 사용할 수 있습니다. 자세한 내용은<block ref="ec3ed4692ea8e2ea03ef1cb28143229e" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="fc912dae2c2fbcc999c8e1a9c57ab7b9" category="list-text">*기존 스냅샷을 오브젝트 스토리지에 백업 파일로 내보내기*: 이 시스템의 볼륨에 대해 방금 선택한 백업 일정 레이블(예: 일별, 주별 등)과 일치하는 로컬 스냅샷이 있는 경우 이 추가 메시지가 표시됩니다. 모든 과거 스냅샷을 오브젝트 스토리지에 백업 파일로 복사하여 볼륨을 가장 완벽하게 보호하려면 이 확인란을 선택하십시오.</block>
+  <block id="a947e7a2036119e5ebe9a76bbc637f52" category="list-text">선택적으로 *스냅샷 정책 레이블을 복제 및 백업 정책 레이블과 자동으로 동기화* 옵션을 선택할 수 있습니다. 이 옵션을 선택하면 복제 및 백업 정책의 레이블과 일치하는 레이블이 지정된 스냅샷이 생성됩니다. 정책이 일치하지 않으면 백업이 생성되지 않습니다.</block>
+  <block id="1cca5a906b432b9e2e6a4efafff6dc35" category="paragraph">NetApp Backup and Recovery는 ONTAP 데이터에 대해 스냅샷, 복제, 오브젝트 스토리지 백업의 세 가지 유형의 백업을 제공합니다. 이러한 백업 정책은 사용 중인 아키텍처와 백업 유형에 따라 서로 다른 위치에 저장됩니다.</block>
+  <block id="9d582a10262b8b8510b9ae9b16886849" category="list-text">정책 관리 페이지에서 *정책 생성* &gt; *스냅샷 정책 생성*을 선택합니다.</block>
+  <block id="3477dac7879a3f44096cb4f68455f180" category="inline-link">System Manager를 사용하여 스냅샷 정책 생성</block>
+  <block id="d4c627b86ea7fcc97aab9ca0d343fcbe" category="inline-link">ONTAP CLI를 사용하여 스냅샷 정책 생성</block>
+  <block id="4171790834a17f92e35176a29fd09458" category="paragraph"><block ref="244560fcf5d380e290ecd4b178a412c9" category="inline-link-rx"></block> <block ref="d8ea6acc45a89d2ab361031769419dd5" category="inline-link-rx"></block> <block ref="6a671fae687ae09ed6ec2eb759a70329" category="inline-link-rx"></block> <block ref="76f9b86225921137bc166f71caebf3f1" category="inline-link-rx"></block> <block ref="ab2445e139747cf732d46d877cc62a64" category="inline-link-rx"></block> <block ref="9c225a8772c7b3c40b62701739b123cf" category="inline-link-rx"></block></block>
+  <block id="32fe9a563ca84556ad18ae2933089bed" category="admonition">이 설정은 오브젝트 스토리지 백업에만 사용할 수 있습니다. 이러한 설정은 스냅샷 또는 복제 설정에는 영향을 미치지 않습니다.</block>
+  <block id="96700d751785d80f017bf85fc1a4a76c" category="paragraph">각 백업 정책에는 백업 파일에 적용할 수 있는 _레이블 및 보존_ 섹션이 있습니다. 볼륨에 적용된 스냅샷 정책은 NetApp Backup and Recovery에서 인식하는 정책 중 하나여야 하며, 그렇지 않으면 백업 파일이 생성되지 않습니다.</block>
+  <block id="6f8cf279072f687ab049a6dc930dfa1d" category="admonition">볼륨에 적용되는 스냅샷 정책에는 복제 정책 및 오브젝트에 백업 정책에서 사용하는 레이블 중 하나가 포함되어야 합니다.  일치하는 레이블을 찾을 수 없는 경우 백업 파일이 생성되지 않습니다.  예를 들어 "weekly" 복제 볼륨과 백업 파일을 생성하려면 "weekly" 스냅샷을 생성하는 스냅샷 정책을 사용해야 합니다.</block>
+  <block id="3853002b75aefc21d388f510cae8f516" category="paragraph">*위치* 열에는 백업 파일(스냅샷)이 *로컬*(소스 시스템의 스냅샷), *보조*(보조 ONTAP 시스템의 복제된 볼륨) 또는 *오브젝트 스토리지*(오브젝트 스토리지의 백업 파일)인지 여부가 표시됩니다. 복원할 파일을 선택하십시오.</block>
 </blocks>

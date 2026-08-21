@@ -16,7 +16,7 @@ summary: 워크로드 상태를 모니터링하면 워크로드 보호에 문제
 [role="lead"]
 워크로드의 상태를 모니터링하여 보호 문제를 식별하고 경고에 대응하십시오. NetApp Backup and Recovery 대시보드에서 백업 및 복원 상태를 확인하고 시스템, 보호, 작업 및 복원 요약을 검토할 수 있습니다.
 
-*필수 NetApp Console 역할* 스토리지 뷰어, 백업 및 복구 슈퍼 관리자, 백업 및 복구 백업 관리자, 백업 및 복구 복원 관리자, 백업 및 복구 클론 관리자 또는 백업 및 복구 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 자세히 알아보기 link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+*필수 NetApp Console 역할* Backup and Recovery 슈퍼 관리자, Backup and Recovery 백업 관리자, Backup and Recovery 복원 관리자, Backup and Recovery 클론 관리자 또는 Backup and Recovery 백업 뷰어 역할. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. link:reference-roles.html["백업 및 복구 역할 및 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계
 . NetApp 콘솔 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.

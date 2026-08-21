@@ -16,7 +16,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 [role="lead"]
 ONTAP 시스템에서 실행되는 VMware 데이터스토어와 VM을 보호하려면 먼저 NetApp Backup and Recovery에서 해당 항목을 검색해야 합니다. 이미 SnapCenter Plug-in for VMware vSphere가 설치되어 있는 경우 백업 데이터와 정책을 가져올 수도 있습니다.
 
-*필수 콘솔 역할* 백업 및 복구 슈퍼 관리자.  에 대해 알아보세요link:reference-roles.html["백업 및 복구 역할과 권한"] . https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^] .
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. link:reference-roles.html["백업 및 복구 역할과 권한"]에 대해 알아보기. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 
 

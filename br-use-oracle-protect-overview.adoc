@@ -26,7 +26,8 @@ NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 
 NetApp Backup and Recovery를 사용하면 Oracle Database 워크로드와 관련된 다음과 같은 작업을 수행할 수 있습니다.
 
 * link:br-start-discover-oracle.html["Oracle Database 워크로드를 살펴보세요"]
-* link:br-use-oracle-protection-groups.html["Oracle Database 워크로드에 대한 보호 그룹 생성 및 관리"]
+* link:br-use-oracle-protection-groups.html["Oracle Database 워크로드에 대한 보호 그룹 관리"]
 * link:br-use-oracle-backup.html["Oracle Database 워크로드를 백업합니다"]
+* link:br-use-oracle-clone.html["Oracle 데이터베이스 워크로드 복제"]
 * link:br-use-oracle-restore.html["Oracle Database 워크로드 복원"]
 
