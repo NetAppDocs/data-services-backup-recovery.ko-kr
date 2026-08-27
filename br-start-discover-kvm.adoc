@@ -25,6 +25,9 @@ NetApp Backup and Recovery에서 KVM 호스트와 가상 머신을 검색하여 
 
 관리 플랫폼 및 KVM 호스트 정보를 추가하면 NetApp Backup and Recovery 가 워크로드를 검색할 수 있습니다.
 
+
+NOTE: 스토리지 시스템을 NetApp Console에 추가한 후에는 리소스를 검색하기 전에 몇 분 정도 기다리십시오. 스토리지 시스템을 추가한 직후에 리소스를 검색하면 검색이 실패할 수 있습니다.
+
 .단계
 . NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
 . *워크로드*에서 *KVM* 타일을 선택하세요.
