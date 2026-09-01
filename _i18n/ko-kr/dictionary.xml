@@ -5627,7 +5627,6 @@
   <block id="e90dd1da7e3beb4b00ec4d71a841c82a" category="paragraph">게스트 파일 복원 기능을 사용하여 Windows 또는 Linux 게스트 운영 체제의 가상 머신 디스크(VMDK)에서 파일이나 폴더를 복원할 수 있습니다.</block>
   <block id="7d11f0d164b3c2f24ac6ebba24d776fd" category="section-title">게스트 파일 복원 워크플로</block>
   <block id="132ce8102afdf85562e35cc5b0159f1e" category="paragraph">게스트 파일 복원에는 다음 단계가 포함됩니다.</block>
-  <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">VMware Tools가 설치되어 실행 중이어야 합니다.</block>
   <block id="b7617062b51a8726ceb7fc1cef74fb14" category="paragraph">NetApp Backup and Recovery는 VMware 툴의 정보를 사용하여 VMware 게스트 OS에 연결을 설정합니다.</block>
   <block id="b3e82e6ed4e9c1fea48b8efb84514fc0" category="list-text">연결하는 가상 디스크는 NetApp Backup and Recovery 백업에 포함되어 있어야 합니다.</block>
   <block id="7882721ef3524a68e1e9dab8597db0a1" category="list-text">영어 이외의 문자로 이름이 지정된 파일의 경우, 단일 파일로 복원하는 것이 아니라 디렉터리 형태로 복원해야 합니다.</block>
@@ -5960,4 +5959,6 @@
   <block id="e9595cd472d344aa937e119b35d5ad88" category="list-text">Amazon S3에서 복원할 때는 대상 볼륨이 위치할 ONTAP 클러스터의 IPspace를 선택하고, ONTAP 클러스터가 S3 버킷에 액세스할 수 있도록 생성한 사용자의 액세스 키와 비밀 키를 입력하고, 선택적으로 안전한 데이터 전송을 위해 프라이빗 VPC 엔드포인트를 선택합니다. 프라이빗 VPC 엔드포인트를 사용하는 경우, 구성된 프록시 연결보다 우선합니다.</block>
   <block id="abefb361c80a6971ec2a25acc5be3b04" category="list-text">Amazon S3에서 복원할 때는 대상 볼륨이 위치할 ONTAP 클러스터의 IPspace를 선택하고, ONTAP 클러스터가 S3 버킷에 액세스할 수 있도록 생성한 사용자의 액세스 키와 비밀 키를 입력합니다. 또한, 선택적으로 안전한 데이터 전송을 위해 프라이빗 VPC 엔드포인트를 선택할 수 있습니다. 프라이빗 VPC 엔드포인트를 사용하는 경우, 구성된 프록시 연결보다 우선합니다. <block ref="f17b430f3a657465dd612b247a0f776f" category="inline-link-macro-rx"></block>.</block>
   <block id="bc2daf193cd172b36617e5109a2ade38" category="admonition">스토리지 시스템을 NetApp Console에 추가한 후에는 리소스를 검색하기 전에 몇 분 정도 기다리십시오. 스토리지 시스템을 추가한 직후에 리소스를 검색하면 검색이 실패할 수 있습니다.</block>
+  <block id="47e1adf864d09fb0e60489239284fdcf" category="list-text">VMware ESXi 서버에서 양방향 통신을 위해 443번 포트(HTTPS)가 열려 있어야 합니다.</block>
+  <block id="b8b48a359182777f9c1858fe64bd41cf" category="list-text">VMware Tools가 게스트 OS에 설치되어 실행 중이어야 합니다.</block>
 </blocks>
