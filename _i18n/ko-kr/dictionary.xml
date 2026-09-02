@@ -4782,17 +4782,13 @@
   <block id="d2bf4d042aabc15b9ccde353c782a6f2" category="list-text">Microsoft Windows Server 2025를 사용하는 경우 SAN 스토리지에 저장된 2세대 가상 머신 보호는 지원되지 않습니다.</block>
   <block id="b2d5ba8de92c18cbb9c45e01ad3f5509" category="list-text">다른 위치(기본, 보조 및 오브젝트 저장소)로 복원</block>
   <block id="62ff0d9db122207756fd73342a3eb3ad" category="paragraph">NetApp Backup and Recovery는 이제 서로 다른 클라우드 공급자에 걸쳐 최대 100개의 버킷을 사용하여 시스템 내 워크로드를 보호하는 기능을 지원합니다. 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상 버전이 필요합니다.</block>
-  <block id="a804a09090ab946ea48120427df5be47" category="paragraph">표준 DNS를 통해 데이터베이스 호스트에 접근할 수 없는 에어갭 환경에서 NetApp Console 로컬 배포를 사용하는 경우, 내부 RKE2 CoreDNS 구성을 일시적으로 수정해야 합니다. 이렇게 하면 노드의<block ref="ad942c725cd0cae65ca4c63717ec464c" prefix=" " category="inline-code"></block>에 항목을 추가하는 것과 유사하게 Pod가 클러스터 내의 특정 호스트 이름을 IP 주소로 확인할 수 있습니다.</block>
-  <block id="d38c5698c3f0a0cc565d84f0583ddbe8" category="admonition">변경하기 전에 기존 CoreDNS 구성을 확인하여 기존 사용자 지정 설정을 덮어쓰지 않도록 하십시오. RKE2 매니페스트를 사용하여 이 변경 사항을 적용하면 RKE2 운영자와 런타임에서 일관되게 관리됩니다.</block>
   <block id="0d1c49b7f34131be8c6ddbc862cc359d" category="list-text">가능한 한 HelmChartConfig 파일을 변경 관리 대상에 포함시키십시오.</block>
   <block id="feb789eaa0d039f7e4fc241b5a35b268" category="list-text">CoreDNS 재정의의 목적이 명확하도록 파일 이름을 알아보기 쉽게 지정하십시오.</block>
   <block id="1c675544711def39976f57e2f6b7e39d" category="list-text">Corefile에서 예상되는 DNS 레코드가 보이지 않으면 RKE2 서버 로그를 확인하고 매니페스트 파일의 구문을 확인하십시오.</block>
   <block id="d36d322fa13411cc64a12177b6ad51ce" category="list-text">기존 CoreDNS 구성을 확인하여 기존 변경 사항을 덮어쓰지 않도록 하십시오.</block>
-  <block id="f4edd834d634c666190d7b67f0c12622" category="list-text">다음 명령 블록을 복사하고 해당 <block ref="10e11b33e0776f6cd4b1e675accff1f5" prefix=" " category="inline-code"></block>영역을 편집하여 정적 DNS 레코드를 추가하십시오. 이렇게 하면 RKE2 매니페스트 폴더에 HelmChartConfig YAML 파일이 생성되고, RKE2는 이 파일을 자동으로 적용하여 CoreDNS 구성을 재정의합니다.</block>
   <block id="b893a4548c6b5490f347a2312c465362" category="list-text">CoreDNS가 변경 사항을 반영했는지 확인하십시오.</block>
   <block id="ad5eadc57f2e0ed4fdd17752bad0fe52" category="paragraph">몇 분 후에도 변경 사항이 보이지 않으면 CoreDNS 배포를 다시 시작한 다음 Corefile을 다시 확인하십시오.</block>
   <block id="9e04101c187aa923054a894c988f5aeb" category="list-text">데이터베이스 호스트를 찾은 후 항목을 삭제해야 하는 경우 다음 단계를 따르십시오.</block>
-  <block id="606b05130da19f4457434aa58ba985b8" category="list-text">manifests 폴더에서 HelmChartConfig 파일을 삭제합니다.</block>
   <block id="5b25c5946d94965af8af242970d2aee2" category="list-text">CoreDNS 배포를 다시 시작합니다.</block>
   <block id="64c0705ecd150a07e521638d5157a4ec" category="doc">일반 NetApp Backup and Recovery 기능 향상</block>
   <block id="7700d007f970d2c042d61e3551aa039e" category="list-text">*NetApp Console 로컬 배포 지원*: 이번 NetApp Backup and Recovery 릴리스는 NetApp Console 로컬 배포를 미리 보기 상태로 지원합니다.</block>
@@ -5961,4 +5957,27 @@
   <block id="bc2daf193cd172b36617e5109a2ade38" category="admonition">스토리지 시스템을 NetApp Console에 추가한 후에는 리소스를 검색하기 전에 몇 분 정도 기다리십시오. 스토리지 시스템을 추가한 직후에 리소스를 검색하면 검색이 실패할 수 있습니다.</block>
   <block id="47e1adf864d09fb0e60489239284fdcf" category="list-text">VMware ESXi 서버에서 양방향 통신을 위해 443번 포트(HTTPS)가 열려 있어야 합니다.</block>
   <block id="b8b48a359182777f9c1858fe64bd41cf" category="list-text">VMware Tools가 게스트 OS에 설치되어 실행 중이어야 합니다.</block>
+  <block id="30683bd981424213f9f341084dacc328" category="paragraph">NetApp Console 로컬 배포를 표준 DNS를 통해 데이터베이스 호스트에 접근할 수 없는 에어갭 환경에서 사용하는 경우, 내부 RKE2 CoreDNS 구성을 일시적으로 수정해야 합니다. 이렇게 하면 노드의<block ref="ad942c725cd0cae65ca4c63717ec464c" prefix=" " category="inline-code"></block>에 항목을 추가하는 것과 유사하게 Pod가 클러스터 내의 특정 호스트 이름을 IP 주소로 확인할 수 있습니다.</block>
+  <block id="68916b141cb1549e4306b1426107693e" category="admonition">변경하기 전에, 기존의 사용자 지정을 덮어쓰지 않도록 기존 CoreDNS 구성과 기존<block ref="821b85d65c91bb0224e76904b78ee646" prefix=" " category="inline-code"></block> HelmChartConfig를 모두 확인하십시오. 대부분의 NetApp Console 로컬 배포 노드에는 이 파일이 이미 존재하며 리소스 요청이 이미 포함되어 있습니다. 파일이 이미 존재하는 경우 파일을 다시 생성하지 말고, 대신 기존<block ref="f15029ddf2ec349489f6a578bf8ff002" prefix=" " category="inline-code"></block>에 <block ref="d2c09282f70bae1fe87ea34edd824858" prefix=" " category="inline-code"></block> 블록만 추가하십시오. RKE2 operator 및 runtime에 의해 일관되게 계속 관리되도록 RKE2 manifest를 사용하여 이 변경 사항을 적용하십시오.</block>
+  <block id="c83678dcc36ba7a58a3d2e313cdc5cb2" category="list-text">HelmChartConfig 파일이 존재하는지 확인하십시오.</block>
+  <block id="7cbf1254454bfb83ecf45d67569bb210" category="open-title">파일이 존재하는 경우</block>
+  <block id="dd8b91d84403e7c4c2df5612c3deb788" category="list-text">다음 스크립트를 실행하여 기존 HelmChartConfig 파일에 <block ref="d2c09282f70bae1fe87ea34edd824858" prefix=" " category="inline-code"></block> 블록을 추가하십시오.</block>
+  <block id="df5298d33ab8b68cf08a5d8265ae6e02" category="list-text">HelmChartConfig 파일에 <block ref="d2c09282f70bae1fe87ea34edd824858" prefix=" " category="inline-code"></block> 블록을 추가한 것 외에 다른 변경 사항이 없는지 확인하십시오.</block>
+  <block id="a405e148dd89c6d878f7202bd0acac46" category="open-title">파일이 존재하지 않는 경우</block>
+  <block id="f545e4267a4d131a69797e4afd537a05" category="list-text">다음 스크립트의 <block ref="10e11b33e0776f6cd4b1e675accff1f5" prefix=" " category="inline-code"></block> 영역을 편집하고 정적 DNS 레코드를 추가하십시오. 이렇게 하면 RKE2 매니페스트 폴더에 HelmChartConfig YAML 파일이 생성되며, RKE2가 자동으로 이 파일을 적용하여 CoreDNS 구성을 재정의합니다.</block>
+  <block id="1c0fab9d442597478403d8226e5a2d16" category="list-text">스크립트를 복사하여 실행합니다.</block>
+  <block id="e56134bb955e879714d813d368a791ce" category="open-title">기존 파일에 내용을 추가한 경우</block>
+  <block id="492165cbd490b6e6832804b381c9e69e" category="list-text">백업된 파일을 복원하거나 파일 내에서 해당<block ref="d2c09282f70bae1fe87ea34edd824858" prefix=" " category="inline-code"></block> 블록만 삭제합니다.</block>
+  <block id="7d20cae7d54370385d0972a25df82057" category="paragraph">해당 파일에는 기존 RKE2 리소스 튜닝 정보가 포함되어 있으므로 삭제하지 마십시오.</block>
+  <block id="86c39cd0104d9ef70cce9b5b29ee92f1" category="list-text">파일을 복원한 후 호스트 항목을 삭제하십시오. 오래된 항목은 호스트 검색 및 예약 백업 문제를 일으킬 수 있습니다.</block>
+  <block id="cbfe0ed3153804b7d4fc2498c31941a1" category="open-title">새 파일을 만들었다면</block>
+  <block id="0e5396fa21718b76cbd3c1a11136c9dc" category="list-text">manifests 폴더에서 HelmChartConfig 파일을 삭제합니다.</block>
+  <block id="251aaa9a6d6dee8d3e892c83b282de62" category="list-text">파일을 삭제한 후에는 호스트 항목을 제거하십시오. 오래된 항목은 호스트 검색 및 예약된 백업 문제를 일으킬 수 있습니다.</block>
+  <block id="9fb67925a7099f4959311f91b028441f" category="section-title">가용성 그룹 정보 관리</block>
+  <block id="e5e0bae15d01ae8a68af97e8ee4181d1" category="paragraph">가용성 그룹 정보를 관리하여 리소스를 보호하고, 보호 설정을 편집하고, 백업을 실행합니다.</block>
+  <block id="984cf8529e178e40665ddc1a3284488c" category="section-title">가용성 그룹 보호</block>
+  <block id="b49fedaec38028e3cfd9d84a3c135474" category="paragraph">가용성 그룹에 정책을 할당하여 리소스 보호 일정 및 보존 기간을 관리합니다.</block>
+  <block id="f4c9691991fd542b1f48cc8fcbdef656" category="list-text">*가용성 그룹* 탭을 선택합니다.</block>
+  <block id="65fa180bca046084f17003e06ddb0b9f" category="list-text">가용성 그룹을 선택합니다.</block>
+  <block id="129dd3dd8cd4324317ed888dd78c8d3e" category="list-text">*보호 그룹*, *가용성 그룹*, *인스턴스* 또는 *데이터베이스* 탭을 선택하십시오.</block>
 </blocks>
