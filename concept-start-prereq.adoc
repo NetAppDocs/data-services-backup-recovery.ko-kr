@@ -123,7 +123,7 @@ https://forms.cloud.microsoft/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOmN
 
 Backup and Recovery에서 워크로드를 보호하려면 먼저 Console에 ONTAP 스토리지 시스템을 추가해야 합니다.
 
-https://docs.netapp.com/us-en/console-local/task-discover-storage.html["NetApp Console 로컬 배포에 스토리지 추가"^]
+https://docs.netapp.com/us-en/console-local/task-add-systems.html["NetApp Console 로컬 배포에 스토리지 추가"^]
 
 
 
