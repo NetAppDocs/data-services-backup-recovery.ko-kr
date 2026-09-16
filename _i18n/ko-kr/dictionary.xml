@@ -1258,8 +1258,6 @@
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">백업 삭제</block>
   <block id="d1980609675dd3ea40abaebd4a0989d8" category="doc">NetApp Backup and Recovery 사용하여 VMware 워크로드 백업</block>
   <block id="f1e9f00ae199ca6520d1d2e98102cd84" category="doc">NetApp Backup and Recovery 통해 VMware 워크로드를 알아보세요</block>
-  <block id="dcd2ed119bd25caa1d2e5fbbadd0e260" category="section-title">VMware 워크로드를 검색하고 선택적으로 SnapCenter 리소스를 가져옵니다.</block>
-  <block id="20224d78d1f591aa6ed092cd19c23642" category="paragraph">온프레미스 SnapCenter Plug-in for VMware vSphere 에서 NetApp Backup and Recovery 인벤토리로 VMware NFS 및 VMFS 데이터스토어와 VM을 가져올 수 있습니다.</block>
   <block id="02bff5613eedf1bcc6846345d0b55fbd" category="admonition">이 버전의 NetApp Backup and Recovery VMware vCenter만 지원하며 vVols 이나 vVols 의 VM을 검색하지 않습니다.</block>
   <block id="fee320715a193861e4f6dc2068899465" category="paragraph">가져오기 프로세스 동안 NetApp Backup and Recovery 다음 작업을 수행합니다.</block>
   <block id="bd8db3845afb35c10e4abfbdf5709291" category="list-text">vCenter 서버에 대한 안전한 SSH 액세스를 활성화합니다.</block>
@@ -1268,35 +1266,21 @@
   <block id="f3cd1cfa60b70ab3833f6ec373ec8327" category="list-text">데이터베이스 액세스를 구성합니다.</block>
   <block id="ed39d64277006cf603e473c457526c25" category="list-text">VMware vCenter, 데이터 저장소 및 VM을 검색합니다.</block>
   <block id="9ebd805e73003051d15b45a35a4e54e5" category="list-text">NetApp Backup and Recovery 인벤토리 페이지에서 검색된 리소스를 표시합니다.</block>
-  <block id="48f6d5cbb866129c890c2677a75d46eb" category="list-text">SnapCenter Plug-in for VMware vSphere 이미 있는 경우 NetApp Backup and NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and NetApp Backup and Recovery 로 가져오세요.</block>
-  <block id="b758229c4311907d27297d6e3812db06" category="admonition">SnapCenter 플러그인이 이미 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 확인하세요. 예를 들어, SnapCenter 에서 가져오기 전에 먼저 NetApp Console 에서 모든 온프레미스 SnapCenter 클러스터 스토리지에 대한 시스템을 만들어야 합니다.  보다<block ref="29f325191bf25e28eb924274ef794dd1" category="inline-link-macro-rx"></block> .</block>
   <block id="36b36cfb3f6fc12df63c864d8e7b40a1" category="list-text">SnapCenter 플러그인이 없는 경우에도 vCenter를 수동으로 추가하고 검색을 수행하여 시스템 내에서 워크로드를 검색할 수 있습니다.</block>
-  <block id="e3ee523018b6799a0939043eefc9098c" category="section-title">SnapCenter 플러그인이 아직 설치되지 않은 경우 vCenter를 추가하고 리소스를 검색합니다.</block>
   <block id="7248204ed2d72c7c934127b7789c6157" category="list-text">*작업 유형*: *VMware*를 선택하세요.</block>
-  <block id="8d2f5acbe9ae8a7ad87b9b825c0e5f29" category="list-text">*vCenter 설정*: 새로운 vCenter를 추가합니다. 새로운 vCenter를 추가하려면 vCenter FQDN 또는 IP 주소, 사용자 이름, 비밀번호, 포트 및 프로토콜을 입력하세요.</block>
-  <block id="1b7ab9fadabd410c692af601b6da1bd2" category="list-text">*호스트 등록*: VMware에서는 필요하지 않습니다.</block>
-  <block id="448e3bbdf47805516f7b529afcbedb47" category="section-title">SnapCenter 플러그인이 이미 설치되어 있는 경우 VMware 리소스용 SnapCenter 플러그인을 NetApp Backup and Recovery 로 가져옵니다.</block>
-  <block id="d7df5d5a7771d8964d3ad312a019f2a7" category="list-text">검색 중에 SnapCenter 플러그인에서 리소스를 가져오는 옵션을 선택하세요.</block>
   <block id="d0a37c5f3a756f70f149387e5e024455" category="list-text">검색 후 인벤토리 페이지에서 SnapCenter 플러그인 리소스를 가져오기 위한 옵션을 선택합니다.</block>
-  <block id="72512ee3dbbd33b6b0e82862f004f7b4" category="list-text">검색 후 설정 메뉴에서 SnapCenter 플러그인 리소스를 가져오는 옵션을 선택합니다. 자세한 내용은 다음을 참조하세요.<block ref="97d5ee4c1307bc47ebfffa62683db47d" category="inline-link-macro-rx"></block> . VMware에서는 지원되지 않습니다.</block>
   <block id="e68d5688d8ed4428f4698c24ecebe981" category="paragraph">이 섹션에서는 두 부분으로 구성된 프로세스를 설명합니다.</block>
   <block id="c6f071c40c15c848457f973025ccd0a6" category="list-text">SnapCenter 플러그인에서 vCenter 메타데이터를 가져옵니다. 가져온 vCenter 리소스는 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.</block>
-  <block id="cf47887931a3e51685acecf1df31898e" category="list-text">NetApp Backup and Recovery 에서 선택한 vCenter, VM 및 데이터 저장소 관리를 시작합니다.  관리를 시작하면 NetApp Backup and Recovery 인벤토리 페이지에서 vCenter를 "관리됨"으로 표시하고 가져온 리소스를 백업하고 복구할 수 있습니다.  NetApp Backup and Recovery 에서 관리를 시작한 후에는 SnapCenter 플러그인에서 해당 리소스를 더 이상 관리할 수 없습니다.</block>
   <block id="53624320c75e524d23062b211afde11a" category="section-title">SnapCenter 플러그인에서 vCenter 메타데이터 가져오기</block>
   <block id="a0db4035e526ed9a7d3ab3f54948a1a1" category="paragraph">첫 번째 단계에서는 SnapCenter 플러그인에서 vCenter 메타데이터를 가져옵니다. 이 시점에서는 리소스가 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.</block>
   <block id="d15a40324af88049d2add38cd8f56009" category="admonition">SnapCenter 플러그인에서 vCenter 메타데이터를 가져온 후에는 NetApp Backup and Recovery 자동으로 보호 관리를 수행하지 않습니다.  이렇게 하려면 NetApp Backup and Recovery 에서 가져온 리소스를 관리하도록 명시적으로 선택해야 합니다.  이렇게 하면 NetApp Backup and Recovery 통해 해당 리소스를 백업할 준비가 됩니다.</block>
-  <block id="4fa4bcc2a1f0d681fb390d96f9891a59" category="list-text">가져오기 필드에서 *VMware용 SnapCenter 플러그인*을 선택합니다.</block>
   <block id="45ff731338448b957095de0f0c3fcd1f" category="list-text">*VMware vCenter 자격 증명*을 입력하세요:</block>
   <block id="87015fc1c283283c06b5b6f139ba1403" category="list-text">*vCenter IP/호스트 이름*: NetApp Backup and Recovery 로 가져오려는 vCenter의 FQDN 또는 IP 주소를 입력합니다.</block>
   <block id="83232179998a0e4df8a7fec8b01b073d" category="list-text">*vCenter 포트 번호*: vCenter의 포트 번호를 입력하세요.</block>
   <block id="bf44275a582b218f2c18fd73a1b49f7d" category="list-text">*vCenter 사용자 이름* 및 *비밀번호*: vCenter의 사용자 이름과 비밀번호를 입력하세요.</block>
-  <block id="0e262289f889681dd134476e46394c9b" category="list-text">*커넥터*: vCenter에 대한 콘솔 에이전트를 선택합니다.</block>
-  <block id="f8ccd2c36b2459b541ae637dac832e19" category="list-text">* SnapCenter 플러그인 호스트 자격 증명*을 입력하세요:</block>
-  <block id="60b1a925906e7fb4348924a6fdd9149b" category="list-text">*새로운 자격 증명 추가*: 기존 SnapCenter 플러그인 호스트 자격 증명이 없으면 새 자격 증명을 추가할 수 있습니다. 자격 증명 이름, 인증 모드, 사용자 이름 및 비밀번호를 입력하세요.</block>
   <block id="7c2e72fe3815fa111632e0f221695e03" category="list-text">*가져오기*를 선택하여 항목을 검증하고 SnapCenter 플러그인을 등록하세요.</block>
   <block id="17ffe2e72fe7b5b93cc83ba3b6aa34c1" category="paragraph">인벤토리 페이지에서는 NetApp Backup and Recovery 에서 vCenter를 관리되지 않는 것으로 표시하지만, 명시적으로 관리하도록 선택할 때까지는 표시되지 않습니다.</block>
   <block id="25c0a491dae6caf57d57d941f0eb08d9" category="section-title">SnapCenter 플러그인에서 가져온 리소스 관리</block>
-  <block id="4513150785c046bfbcd37a0b9dcb7a35" category="list-text">"마이그레이션을 계속하시겠습니까?" 상자를 선택하고 *마이그레이션*을 선택합니다.</block>
   <block id="13be03aaa1d065e4e2a3d1cb64d9f254" category="paragraph">인벤토리 페이지에는 새로 관리되는 vCenter 리소스가 표시됩니다.</block>
   <block id="eb2d112b017e683992cc9b9b338c90a1" category="paragraph">NetApp Backup and Recovery 사용하면 VMware 워크로드와 관련된 다음 작업을 수행할 수 있습니다.</block>
   <block id="4c90ef6c5dc037251bf65afdeeb1ee6c" category="list-text"><block ref="4c90ef6c5dc037251bf65afdeeb1ee6c" category="inline-link-macro-rx"></block></block>
@@ -3587,12 +3571,7 @@
   <block id="24e30755a36f1f0fbf2585a3d6fcea00" category="list-text">*워크로드*에서 *KVM* 타일을 선택하세요.</block>
   <block id="99c78c9137cee80ce48d764854f4f37d" category="paragraph">NetApp Backup and Recovery에 처음 로그인하고 콘솔에 시스템은 있지만 검색된 리소스가 없는 경우, "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 페이지가 나타나고 "리소스 검색" 옵션이 표시됩니다.</block>
   <block id="72caa651e04c375669fa47d6d7c97bd8" category="list-text">아직 관리 플랫폼을 백업 및 복구와 통합하지 않았다면 *관리 플랫폼 추가*를 선택하십시오.</block>
-  <block id="e48c46f67dcc12e71756d8f1484fd1e5" category="list-text">*KVM 설정*: 다음 정보를 입력하여 새 KVM 호스트를 추가하세요.</block>
   <block id="1379fbf6716203ac9b069e9dcb1b630e" category="list-text">*KVM FQDN 또는 IP 주소*: 호스트의 FQDN 또는 IP 주소를 입력하십시오.</block>
-  <block id="a3b2bf747985ecc6d947647708117a50" category="list-text">*자격 증명*: KVM 호스트의 사용자 이름과 비밀번호를 입력하십시오.</block>
-  <block id="9bf19b226e98ad82718a06ed1be0ccff" category="list-text">*콘솔 에이전트*: 백업 및 복구와 KVM 호스트 간의 통신에 사용할 콘솔 에이전트를 선택하십시오.</block>
-  <block id="255d844db697f34dcf46b6abb2370218" category="list-text">*포트 번호*: 백업 및 복구 기능과 KVM 호스트 간의 통신에 사용할 포트를 입력하십시오.</block>
-  <block id="cba87e6c48ee4064103429e66f87d737" category="list-text">*관리 플랫폼*: KVM 호스트가 관리형이고 백업 및 복구에 관리 플랫폼을 추가한 경우 목록에서 관리 플랫폼을 선택하십시오.</block>
   <block id="1ab61c2a203a782ffd6293f052fa3198" category="list-text">*워크로드*에서 *Oracle* 타일을 선택하십시오.</block>
   <block id="7f924709b4be1415b21d2f13de8768fc" category="section-title">보호 그룹을 편집합니다</block>
   <block id="d866b8b94a3e8b940c5c063a7cf79472" category="paragraph">보호 그룹을 편집하여 이름이나 설정을 변경하세요. 보호 그룹에 속한 리소스가 변경된 경우 보호 그룹을 편집해야 할 수 있습니다.</block>
@@ -5169,7 +5148,6 @@
   <block id="d15ce5f7b11589a195af27e9552d666f" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 가상 머신을 검색하여 보호 정책으로 보호할 수 있습니다.</block>
   <block id="b2d7b24c3bf71ab6e29740c4642ffafe" category="paragraph">NetApp Backup and Recovery에서 가상 머신을 검색할 수 있도록 Hyper-V 호스트 정보를 추가하십시오. 각 콘솔 에이전트에서 리소스를 검색할 시스템을 선택하십시오.</block>
   <block id="b7f882b06eddf2dfd9de57436d956c2c" category="list-text">NetApp 콘솔 메뉴에서 *보호* &gt; *백업 및 복구*를 선택합니다.</block>
-  <block id="c4aea5e44a79c8aa4bb534878de9f3a0" category="paragraph">NetApp Backup and Recovery에 처음 로그인하는 경우, 콘솔에 시스템이 이미 등록되어 있지만 리소스를 검색하지 않은 상태라면 "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 랜딩 페이지가 표시되고 *리소스 검색* 옵션이 제공됩니다.</block>
   <block id="f449ed9853e04fc0b05aaa0a461c94c1" category="list-text">Hyper-V 워크로드 타일을 선택합니다.</block>
   <block id="c8c0b636c4dc30cad0d464be2b47090d" category="paragraph">NetApp Backup and Recovery에서 Kubernetes 클러스터와 해당 워크로드를 검색하여 보호 정책으로 보호할 수 있습니다.</block>
   <block id="6604e60d4f1c2e3c6bc9c63d2ee97067" category="paragraph">Backup and Recovery 인벤토리에서 환경 내 Kubernetes 클러스터 및 워크로드를 검색할 수 있습니다. 클러스터를 추가하면 NetApp Backup and Recovery에 등록하여 애플리케이션 및 리소스를 검색하고 보호할 수 있습니다. 선택적으로 NetApp Console 로컬 배포를 사용하여 에어갭으로 격리된 로컬 Kubernetes 리소스를 검색할 수도 있습니다.</block>
@@ -5177,7 +5155,6 @@
   <block id="b5db886dbc4143a50071b971de05c3b6" category="paragraph">Backup and Recovery는 선택한 설치 유형에 따라 변경되는 지침을 제공합니다. NetApp Console 로컬 배포를 사용하는 경우 외부 네트워크 연결이 없는 에어갭 리소스를 검색하는 지침을 선택할 수 있습니다.</block>
   <block id="992e1a79c40146226d531b2d54202029" category="paragraph">NetApp Backup and Recovery 대시보드를 보고 검색된 리소스를 확인하려면 다음 단계를 따르십시오.</block>
   <block id="d25cc2a23f6d490aa6ca66c1fc0a6982" category="paragraph">NetApp Backup and Recovery에서 KVM 호스트와 가상 머신을 검색하여 보호 정책으로 보호할 수 있습니다. 검색하기 전에 KVM 환경은 Apache CloudStack 등의 관리 플랫폼에서 관리되어야 합니다.</block>
-  <block id="64d1830b55112fb89c5efe473a488759" category="paragraph">NetApp Backup and Recovery에 처음 로그인하는 경우, 콘솔에 시스템은 있지만 검색된 리소스가 없는 경우 "새로운 NetApp Backup and Recovery에 오신 것을 환영합니다" 페이지가 나타나고 *리소스 검색* 옵션이 표시됩니다.</block>
   <block id="d6a34cddcbce1ef6f28243118f9d171b" category="list-text">KVM 워크로드 타일을 선택하십시오.</block>
   <block id="e3720b1dee4abe1712504428b0c4eee1" category="summary">NetApp Backup and Recovery는 워크로드를 보호하기 전에 먼저 워크로드를 검색해야 합니다.</block>
   <block id="27f6c9f669ba02aa92df4193fd4d3367" category="paragraph">NetApp Backup and Recovery에서 Oracle Database 워크로드를 검색하여 백업 및 스냅샷으로 보호할 수 있습니다.</block>
@@ -5591,9 +5568,6 @@
   <block id="3dd3ba4b63229b475a20f7cd9addb146" category="paragraph">온프레미스 ONTAP 시스템의 VMware VM 및 데이터스토어를 Amazon Web Services, Azure NetApp Files 또는 StorageGRID에 백업하여 데이터를 보호하십시오. 백업은 자동으로 생성되어 공용 또는 프라이빗 클라우드 계정의 오브젝트 스토어에 저장됩니다.</block>
   <block id="39e8552d644f5836bb606e9f024f8213" category="list-text">온디맨드 백업을 생성하여 지금 바로 워크로드를 백업하십시오.</block>
   <block id="67815c5b8fc21f4677397c47a093cc04" category="paragraph">NetApp Backup and Recovery를 사용하여 기본 또는 보조 스냅샷에서 VMware 가상 머신의 쓰기 가능한 복제본을 생성할 수 있습니다. 테스트, 통합 및 교육을 위해 운영 데이터에 영향을 주지 않고 복제된 가상 머신을 생성하고 관리할 수 있습니다.</block>
-  <block id="0235c606522ad40f43092e88c70da6f4" category="paragraph">ONTAP 시스템에서 실행되는 VMware 데이터스토어와 VM을 보호하려면 먼저 NetApp Backup and Recovery에서 해당 항목을 검색해야 합니다. 이미 SnapCenter Plug-in for VMware vSphere가 설치되어 있는 경우 백업 데이터와 정책을 가져올 수도 있습니다.</block>
-  <block id="df1070d1677eb4e0f80ad6ffbd180001" category="paragraph">아직 SnapCenter Plug-in for VMware vSphere가 설치되어 있지 않은 경우, NetApp Backup and Recovery에서 워크로드를 검색할 수 있도록 vCenter 정보를 추가하십시오. 각 NetApp Console 에이전트 내에서 워크로드를 검색할 시스템을 선택하십시오.</block>
-  <block id="f0edd8cd666348783317b3a12c204778" category="paragraph">이미 SnapCenter Plug-in for VMware가 설치되어 있는 경우 다음 단계를 따라 SnapCenter Plug-in 리소스를 NetApp Backup and Recovery로 가져오십시오. 콘솔은 플러그인에서 ESXi 호스트, 데이터스토어, VM 및 스케줄을 검색하므로 해당 정보를 다시 생성할 필요가 없습니다.</block>
   <block id="79f1b2505db34bcc40686f104f76593a" category="admonition">SnapCenter 플러그인이 이미 등록되어 있는 경우 기존 등록 정보를 업데이트할 수 있습니다.</block>
   <block id="2a1d91f94990e0b54f21a4a5400e5f85" category="paragraph">SnapCenter Plug-in for VMware vSphere에서 vCenter 메타데이터를 가져온 후, NetApp Backup and Recovery에서 리소스를 관리하십시오. 해당 리소스를 관리하도록 선택하면, NetApp Backup and Recovery에서 가져온 리소스를 백업 및 복구할 수 있습니다. NetApp Backup and Recovery에서 관리를 시작한 후에는 더 이상 SnapCenter Plug-in에서 해당 리소스를 관리하지 않습니다.</block>
   <block id="974ab6deb29dd728f277f1b504bbbd65" category="paragraph">리소스 관리를 선택하면 NetApp Backup and Recovery가 SnapCenter Plug-in for VMware에서 리소스, VM 및 정책을 가져옵니다. 리소스 그룹, 정책 및 스냅샷은 플러그인에서 마이그레이션되어 NetApp Backup and Recovery에서 관리됩니다.</block>
@@ -5947,7 +5921,6 @@
   <block id="02164fcf87ac25e7b1e8147e2943b53e" category="paragraph">ONTAP 9.13.0 이상을 사용하는 Cloud Volumes ONTAP 시스템 또는 ONTAP 9.14.1을 실행하는 온프레미스 ONTAP 시스템으로 클라우드 백업을 복원할 때 _빠른 복원_ 작업을 수행할 수 있는 옵션이 제공됩니다. 빠른 복원은 가능한 한 빨리 볼륨에 액세스할 수 있도록 해야 하는 재해 복구 상황에 적합합니다. 빠른 복원은 전체 백업 파일을 복원하는 대신 백업 파일의 메타데이터를 볼륨으로 복원합니다. 빠른 복원은 성능이나 지연 시간에 민감한 애플리케이션에는 권장되지 않으며, 아카이브 스토리지에 저장된 백업에는 지원되지 않습니다.</block>
   <block id="a73fb6eabf726bf5ee3f07c45ffe0012" category="list-text">선택적으로 *기존 작업 대기열보다 이 복원 작업 우선 순위 지정*을 활성화하여 이 복원 작업에 더 높은 우선순위를 부여할 수 있습니다. 이 옵션을 활성화하면 이 복원 작업이 진행될 수 있도록 다른 실행 중인 작업이 일시 중지되거나 지연될 수 있습니다.</block>
   <block id="5f02d8d1cae515b7bc981f8e3a14acc4" category="paragraph">복원 대시보드로 돌아가면 복원 작업의 진행 상황을 확인할 수 있습니다.</block>
-  <block id="0cf2d9f20f0932bf7e81cfd6634a5ced" category="list-text">*호스트 등록*: 호스트의 FQDN 또는 IP 주소, 자격 증명, 콘솔 에이전트 및 포트 번호를 입력하여 새 Hyper-V 호스트를 추가합니다. 콘솔 에이전트에서 FQDN을 확인할 수 없는 경우 IP 주소를 대신 사용하십시오. 페일오버 클러스터의 경우 클러스터 관리 IP 주소를 입력하십시오.</block>
   <block id="5d2f99cd43d814823b35af3f0ece474e" category="paragraph">NetApp Backup and Recovery를 사용하여 CIFS 공유에 호스팅된 독립 실행형 Hyper-V VM, 장애 조치 클러스터 인스턴스 및 SCVMM 프로비저닝 VM을 백업하고 복원합니다.</block>
   <block id="ae9414d83e17965302547068ba4057f3" category="list-text">독립형 호스트 및 장애 조치 클러스터 구성이 지원됩니다.</block>
   <block id="1ee017b4f9f2424d881f97ae99e7a740" category="admonition">백업 또는 복원 데이터 전송에 프라이빗 VPC 엔드포인트를 사용하는 경우, 구성된 프록시 연결보다 해당 엔드포인트가 우선 순위를 갖습니다.</block>
@@ -5981,4 +5954,57 @@
   <block id="129dd3dd8cd4324317ed888dd78c8d3e" category="list-text">*보호 그룹*, *가용성 그룹*, *인스턴스* 또는 *데이터베이스* 탭을 선택하십시오.</block>
   <block id="6c2c266ca065311d4804d34cd534ac61" category="paragraph">아카이브 저장소에서 볼륨이나 파일을 복원하는 데 추가 시간이 소요될 수 있습니다.  백업 및 복구 기능이 선택한 우선순위에 따라 복원을 재시도하는 동안 작업 모니터에서 해당 작업은 *진행 중*으로 표시됩니다.  *작업 모니터*에서 복원 진행 상황을 모니터링하십시오. 모든 재시도 후 작업이 *완료됨* 또는 *실패함*과 같은 최종 상태에 도달하면 복원이 완료된 것입니다.  작업이 최종적으로 실패하지 않는 한 다른 복원 작업을 시작하지 마십시오.</block>
   <block id="534cf708a73e1e3ff80e4b70322d78d6" category="paragraph"><block ref="534cf708a73e1e3ff80e4b70322d78d6" category="inline-link-rx"></block></block>
+  <block id="6c302dca9120d9212ecda9d1ad1f74c9" category="paragraph">이번 릴리스에서는 KVM, Hyper-V 및 VMware 워크로드에 다음과 같은 개선 사항이 도입되었습니다.</block>
+  <block id="0898522d58ded515e98cbdbeae0b2894" category="paragraph">*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 등록할 때 이제 백업 및 복구에 이미 추가한 자격 증명을 사용할 수 있습니다.</block>
+  <block id="51b1f28526e9e7dfdb39548a8b5d4ac0" category="paragraph">*VM에 대한 디스크 보호 기능 확장*: CIFS 구성의 경우, 백업 및 복구 기능은 이제 보호 그룹에 속한 각 VM에 연결된 모든 디스크를 보호할 수 있도록 지원합니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템(스패닝 디스크)에 분산된 파일과 단일 위치에만 있는 파일이 모두 포함됩니다.</block>
+  <block id="1e62d1b5255654e86ebb8b223345252a" category="section-title">ONTAP Volumes 워크로드 향상</block>
+  <block id="705eb27960b89edebb2b2269e939009b" category="paragraph">이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 미리 보기 개선 사항을 도입합니다.</block>
+  <block id="921187f214ef75f0b99f59d69af64c46" category="paragraph">*일일 백업 데이터 전송 보고서*: NetApp Backup and Recovery for Volumes에 이제 보고서 탭에서 이용 가능한 일일 백업 데이터 전송 보고서가 포함되어 있어 환경 전반의 일일 백업 및 복제 데이터 전송 활동을 확인할 수 있습니다. 전체 계정 또는 선택한 스토리지 시스템에 대한 보고서를 생성하고, 날짜 범위 및 보호 유형별로 필터링한 후 CSV 파일로 다운로드할 수 있습니다.</block>
+  <block id="6ca40fed8a7133003ac7b662160a7e13" category="paragraph">ONTAP Volumes 워크로드 보호에 대한 자세한 내용은<block ref="2a59f28eae334d4c500755e30c1cf84e" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="6670366d68c7a8ab46f10d0e7683eeb5" category="list-text">*Hyper-V 설정*: 다음을 수행하십시오.</block>
+  <block id="da0e1eca92a9eb1111443e96b8196d3a" category="list-text">Hyper-V 호스트를 새로 추가하려면 호스트의 FQDN 또는 IP 주소를 입력하고 콘솔 에이전트와 자격 증명을 선택하십시오. 콘솔 에이전트에서 FQDN을 확인할 수 없는 경우 대신 IP 주소를 사용하십시오. 장애 조치 클러스터의 경우 클러스터 관리 IP 주소를 입력하십시오.</block>
+  <block id="fabdd9e2388c21b1d1588e5f54160735" category="list-text">*고급 설정*: 선택적으로 NetApp Hyper-V 플러그인의 설치 경로를 입력할 수 있습니다.</block>
+  <block id="c3b6f25d711d6680de1b5933b93726d7" category="list-text">*KVM 설정*: 다음을 수행합니다.</block>
+  <block id="893154d2bbfb66474661f9a0545a1144" category="list-text">이 KVM 호스트에 대한 자격 증명을 아직 저장하지 않았다면 *자격 증명 추가*를 선택하십시오.</block>
+  <block id="d6c9f02ce1679400431070286136d97d" category="list-text">다음 정보를 입력하여 새 KVM 호스트를 추가하십시오.</block>
+  <block id="8b215f293605af71d0430a32a7e80999" category="list-text">*에이전트*: 백업 및 복구와 KVM 호스트 간의 통신에 사용할 콘솔 에이전트를 선택하십시오.</block>
+  <block id="a9c837a95e737168ee3ce1e980c47216" category="list-text">*자격 증명*: KVM 호스트에 사용할 저장된 자격 증명을 선택하십시오.</block>
+  <block id="d41a581fc85315dff70aff8313ea3257" category="list-text">*고급 설정*: 선택적으로 KVM 호스트와 통신할 포트를 입력하고 목록에서 호스트의 관리 플랫폼을 선택할 수 있습니다.</block>
+  <block id="6ba9f255707f8a2103b20486c4949029" category="list-text">스패닝 디스크에 대한 동작 방식을 선택하십시오. 현재는 *항상 모든 스패닝 디스크 포함*이 지원됩니다.</block>
+  <block id="f3a516904e0ccca6ef2462dfb7ce6d13" category="admonition">CIFS 구성의 경우, Backup and Recovery는 보호 그룹에 속한 각 VM에 연결된 모든 디스크를 자동으로 보호합니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템에 분산된 파일(스패닝 디스크)과 단일 위치에만 있는 파일(비스패닝 디스크)이 모두 포함됩니다. SAN 구성의 경우, 모든 비스패닝 디스크가 보호 그룹에 포함됩니다.</block>
+  <block id="eb66f05eb35d497da0a423fd13838c97" category="paragraph">선택적으로 *새 정책 생성*을 선택하여 새로운 보호 정책을 생성할 수 있습니다. 정책을 선택하면 정책 세부 정보가 표시됩니다.</block>
+  <block id="c2a9493df2887bffbf4d321961143b50" category="paragraph">ONTAP 시스템에서 실행되는 VMware 데이터스토어와 VM을 보호하려면 먼저 NetApp Backup and Recovery에서 해당 항목을 검색해야 합니다. SnapCenter에서 백업 데이터와 정책을 가져올 수도 있습니다.</block>
+  <block id="56ed800e3e95a86a0d288e29e284d3d6" category="section-title">VMware 워크로드를 검색하고 필요에 따라 SnapCenter Plug-in 리소스를 가져옵니다</block>
+  <block id="e8b6f1046eb45e0d7c556fe91f209ff5" category="paragraph">온프레미스 SnapCenter Plug-in for VMware vSphere를 사용하는 경우 VMware 데이터스토어 및 리소스 VM을 NetApp Backup and Recovery로 가져올 수 있습니다.</block>
+  <block id="cb84b0bbbd691a54a50154950c0e836d" category="admonition">NetApp Backup and Recovery는 VMware vCenter만 지원하며 vVols 또는 vVols의 VM을 검색하지 않습니다.</block>
+  <block id="2be89f2d64b748bc3ddbd4eda10bc1c4" category="list-text">이미 SnapCenter 또는 SnapCenter Plug-in for VMware vSphere를 보유하고 있는 경우, NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and Recovery로 가져오십시오.</block>
+  <block id="59f63937cd6da6ec7cfb13fb8668ed43" category="admonition">이미 SnapCenter Plug-in이 있는 경우, SnapCenter에서 가져오기 전에 사전 요구사항을 충족했는지 확인하십시오. 예를 들어, SnapCenter에서 가져오기 전에 먼저 모든 온프레미스 SnapCenter 클러스터 스토리지에 대한 시스템을 NetApp Console에 생성해야 합니다. <block ref="29f325191bf25e28eb924274ef794dd1" category="inline-link-macro-rx"></block>을 참조하십시오. SnapCenter 호스트에서 직접 데이터를 가져오려면 <block ref="ee998d05cd5af30cbe5fb785a79b4f67" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="9fa2560b9a95740336ffcc8454846563" category="section-title">SnapCenter 플러그인을 사용하지 않는 경우 vCenter를 추가하고 리소스를 검색하십시오.</block>
+  <block id="4845b75256c82f5f32280991198ad08e" category="paragraph">SnapCenter Plug-in for VMware가 설치되어 있지 않은 경우, NetApp Backup and Recovery에서 워크로드를 검색할 수 있도록 vCenter 정보를 추가하십시오. 각 Console 에이전트 내에서 워크로드를 검색할 시스템을 선택하십시오.</block>
+  <block id="18246d81fb68cd2343a12805d2791031" category="list-text">*vCenter 설정*: 다음을 수행하십시오.</block>
+  <block id="6719804654c600651d2cad23ec96bd88" category="list-text">이 vCenter 서버에 대한 자격 증명을 아직 저장하지 않은 경우 *자격 증명 추가*를 선택하십시오.</block>
+  <block id="4ba860007747821205fc10f3946288e4" category="list-text">이 vCenter에서 사용할 Console 에이전트를 선택합니다.</block>
+  <block id="2e0a4ddd33096232c5d4c768a8314cd9" category="list-text">계정에 사용할 도메인, 사용자 이름 및 비밀번호를 입력하십시오.</block>
+  <block id="06ddb25ccec51579cae2ff34e996f429" category="list-text">vCenter FQDN 또는 IP 주소를 입력하고, Console 에이전트를 선택한 다음, vCenter에 인증하는 데 사용할 자격 증명을 선택합니다.</block>
+  <block id="877a5658dfd839a5b12966f868d9de69" category="list-text">*고급 설정*: 선택적으로 vCenter와의 통신에 사용할 포트를 입력하고 자체 서명 인증서 사용을 활성화할 수 있습니다. 자체 서명 인증서는 프로덕션 환경에서는 권장되지 않습니다.</block>
+  <block id="d732956918570635dce1b2dd5dac6327" category="section-title">SnapCenter Plug-in for VMware 리소스를 NetApp Backup and Recovery로 가져오기</block>
+  <block id="9dec481cd8405cdbd8356bddea37a828" category="paragraph">NetApp SnapCenter Plug-in for VMware의 리소스를 NetApp Backup and Recovery로 가져옵니다. 가져오기 과정에서 Console이 ESXi 호스트, 데이터스토어, VM 및 일정을 자동으로 검색하므로 수동으로 다시 생성할 필요가 없습니다.</block>
+  <block id="eaaa8108cf51c6d618f2e2a4a0d4279b" category="list-text">검색 중에 SnapCenter 플러그인에서 리소스를 가져오는 옵션을 선택하십시오.</block>
+  <block id="987a4493afe0cd7f8a796c3201ef8369" category="list-text">검색 후 설정 메뉴에서 SnapCenter 플러그인 리소스를 가져오는 옵션을 선택하십시오. 자세한 내용은 <block ref="97d5ee4c1307bc47ebfffa62683db47d" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="8505a079b03207a95c1bee8a5bb91488" category="list-text">선택한 vCenters, VM 및 데이터스토어의 관리를 NetApp Backup and Recovery에서 시작합니다. 관리를 시작하면 NetApp Backup and Recovery가 인벤토리 페이지에서 vCenter에 "관리됨" 레이블을 지정하고 가져온 리소스를 백업 및 복구할 수 있습니다. NetApp Backup and Recovery에서 관리를 시작하면 더 이상 SnapCenter 플러그인을 사용하여 해당 리소스를 관리하지 않습니다.</block>
+  <block id="376ec8b3e51e6597fb939c31a3fe0e59" category="list-text">*설정*을 선택합니다.</block>
+  <block id="dde557737b6adddb3b5ac63ab390444f" category="list-text">* SnapCenter 에서 가져오기 &gt; SnapCenter 에서 가져오기*를 선택합니다.</block>
+  <block id="0b1c2288e02f81a5abc6efc0ad82c503" category="list-text">가져오기 원본 필드에서 *SnapCenter Plug-in for VMware (SCV)*를 선택합니다.</block>
+  <block id="a9cd412f9615bdc45608d80d697cbdf9" category="list-text">*SnapCenter Plug-in for VMware 호스트 자격 증명*을 입력하십시오.</block>
+  <block id="a0bfb2f62b787250e030fdf21138a6fd" category="list-text">*IP 주소*: SnapCenter Plug-in for VMware vSphere의 IP 주소를 입력합니다.</block>
+  <block id="a74ddb6f976bda860df11538fe8899ce" category="list-text">*포트 번호*: 플러그인에 사용할 포트 번호를 입력하십시오.</block>
+  <block id="17dd94ceb07f426452a46f98fc5f7178" category="list-text">*사용자 이름* 및 *비밀번호*: OVA 배포 중에 생성한 사용자 이름과 비밀번호를 입력하십시오.</block>
+  <block id="a446374c4c4c3fc2ce33e7d1111ab1b9" category="list-text">*SSH 암호*: SSH가 활성화된 경우 루트 사용자의 SSH 암호를 입력하십시오.</block>
+  <block id="5950f420ea00b053ec6dda54548967ec" category="list-text">*에이전트*: 플러그인과 함께 사용할 콘솔 에이전트를 선택합니다.</block>
+  <block id="89e0000dd56bdf10ae2847acdff0e6dd" category="list-text">*새 자격 증명 추가*: 기존 vCenter 자격 증명이 없는 경우 새 자격 증명을 추가할 수 있습니다. 다음 정보를 입력하십시오.</block>
+  <block id="0af523844bb81bb0f65da936b7af72a6" category="list-text">*자격 증명 이름*: 새 자격 증명 세트의 이름을 입력하십시오.</block>
+  <block id="92e781ed9b2cbb1d2bb902abf023729d" category="list-text">"마이그레이션을 계속하시겠습니까?" 확인란을 선택하고 *관리*를 선택합니다.</block>
+  <block id="8ec423cb544f5a4931b35174a601686c" category="cell"><block ref="a1eba06bd1db60b0b7acd47a98fdd405" prefix="" category="inline-code"></block></block>
+  <block id="def96a092a0c6947fcdadafb96edb659" category="cell">NetApp Backup and Recovery for Volumes의 Reports 탭 아래에 있는 일일 백업 데이터 전송 보고서를 활성화합니다. 이 보고서는 사용자 환경 전체의 일일 백업 및 복제 데이터 전송 작업 정보를 제공합니다.</block>
+  <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026년 9월 16일</block>
 </blocks>
