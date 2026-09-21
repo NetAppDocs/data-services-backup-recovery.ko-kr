@@ -36,6 +36,7 @@ NOTE: 이 단계는 NetApp Console에서 조직 관리자 역할이 할당된 �
 +
 *** *Organization admin* 및 *Backup and Recovery super admin*: 이러한 역할을 가진 사용자는 조직 전체의 모든 리소스를 볼 수 있으며, Backup and Recovery 워크로드를 검색하고 프로젝트(예: US East 또는 US West)에 할당할 수 있습니다.
 *** *폴더 또는 프로젝트 관리자* 및 *Backup and Recovery 슈퍼 관리자*: 이러한 역할을 가진 사용자는 할당된 폴더 또는 프로젝트의 리소스만 볼 수 있지만, Backup and Recovery 워크로드를 검색하고 해당 프로젝트에 할당할 수 있습니다.
+*** *기타 백업 및 복구 역할*: 백업 및 복구 뷰어 또는 백업 및 복구 클론 관리자 등 사용자에게 필요한 특정 백업 및 복구 역할을 할당합니다. 이러한 역할을 통해 사용자는 리소스 보기, 워크로드 보호, 클론 생성 및 복원 등 일상적인 작업을 수행할 수 있습니다. 백업 및 복구 역할은 플랫폼 수준 역할과 별도로 할당합니다. 자세한 내용은 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console 의 NetApp Backup and Recovery 역할"^]을 참조하십시오.
 
 
 .. 대체 옵션:
@@ -46,7 +47,7 @@ NOTE: 이 단계는 NetApp Console에서 조직 관리자 역할이 할당된 �
 
 . Backup and Recovery에서 워크로드를 검색합니다.
 +
-조직 관리자, 폴더 관리자 또는 프로젝트 관리자는 사용 가능한 워크로드를 검색하고 미국 동부 또는 미국 서부 등 적절한 프로젝트를 선택합니다. 각 워크로드는 선택한 프로젝트와 자동으로 연결됩니다.
+조직 관리자, 폴더 관리자 또는 프로젝트 관리자는 사용 가능한 워크로드를 검색하고 US East 또는 US West 등 적절한 프로젝트를 선택합니다. 각 워크로드는 선택한 프로젝트와 자동으로 연결됩니다. Kubernetes 클러스터의 경우, 검색 중에 클러스터와 연결할 폴더 또는 프로젝트를 선택적으로 지정할 수 있습니다.
 
 . 프로젝트에 사용자를 추가합니다.
 +
@@ -59,6 +60,9 @@ NOTE: 이 단계는 NetApp Console에서 조직 관리자 역할이 할당된 �
 [[related-information]]
 == 관련 정보
 
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-identity-and-access-management.html["NetApp Console ID 및 액세스 관리에 대해 알아보십시오"^].
-* link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console 의 NetApp Backup and Recovery 역할"^].
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-identity-and-access-management.html["NetApp Console ID 및 액세스 관리에 대해 알아보십시오"^]
+* link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console 의 NetApp Backup and Recovery 역할"^]
+* link:reference-roles.html["NetApp Backup and Recovery 역할 및 권한"]
+* link:br-start-discover-kubernetes.html["Kubernetes 워크로드를 알아보세요"]
+* link:br-use-manage-kubernetes-access-control.html["Kubernetes 리소스에 대한 액세스 관리"]
 

@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: br-use-manage-kubernetes-access-control.html 
+keywords: backup, back up, restore, recovery, kubernetes, k8s, access control, rbac, iam, folder, project 
+summary: NetApp Console 폴더, 프로젝트 및 역할을 사용하여 NetApp Backup and Recovery에서 Kubernetes 리소스에 대한 액세스를 관리합니다. 
+---
+= Kubernetes 리소스 액세스 관리
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Backup and Recovery에서 Kubernetes 리소스에 대한 액세스를 클러스터 또는 리소스 수준에서 관리할 수 있습니다. 클러스터 리소스에 대한 액세스는 NetApp Console에서 검색 중에 클러스터를 폴더 또는 프로젝트와 연결하고 사용자에게 적절한 역할을 할당하여 관리할 수 있습니다. 네임스페이스 수준에서 리소스 액세스는 네임스페이스를 프로젝트 또는 폴더와 연결된 IAM 리소스로 등록하여 관리할 수 있습니다.
+
+클러스터를 IAM 폴더 또는 프로젝트와 연결하는 방법에 대한 자세한 내용은 link:br-start-discover-kubernetes.html["Kubernetes 워크로드를 알아보세요"]을 참조하십시오.
+
+Kubernetes 리소스에 대한 Backup and Recovery 네임스페이스 수준 리소스 액세스는 액세스 제어를 위해 네임스페이스를 등록할 때 네임스페이스와 연결하는 폴더 또는 프로젝트에 의해 제어됩니다. 네임스페이스가 폴더 또는 프로젝트와 연결되면 해당 범위에 대한 적절한 NetApp Console 및 Backup and Recovery 역할을 가진 사용자는 네임스페이스와 보호된 리소스에 액세스할 수 있습니다.
+
+
+
+[[backup-and-recovery-roles-and-what-they-allow-with-kubernetes-workloads]]
+== 백업 및 복구 역할과 Kubernetes 워크로드에서 이러한 역할이 제공하는 기능
+
+폴더 또는 프로젝트와 연결된 Kubernetes 클러스터 또는 네임스페이스의 경우, 사용자가 해당 폴더 또는 프로젝트에 대해 보유한 특정 Backup and Recovery 역할에 따라 사용자가 수행할 수 있는 작업이 결정됩니다. Backup and Recovery 역할에 대한 자세한 내용은 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-backup-rec-roles.html["NetApp Console의 Backup and Recovery 역할"^]을 참조하십시오.
+
+
+NOTE: 백업 및 복구 클론 관리자 역할은 Kubernetes 워크로드에서 사용되지 않습니다.
+
+[cols="1,2,2"]
+|===
+| 역할 | 보기 액세스 범위 | 허용된 조치 
+
+
+| 백업 및 복구 최고 관리자 | 범위 내 클러스터, 네임스페이스 및 애플리케이션에 대한 전체 보기 | 애플리케이션 보기, 생성, 보호(보호 생성/제거) 및 복원 
+
+
+| Backup and Recovery 뷰어 | 범위 내에 있는 클러스터 및 네임스페이스만 표시 | 보기 전용입니다. 생성, 보호 또는 복원할 수 없습니다. 
+
+
+| 백업 및 복구 백업 관리자 | 범위 내 클러스터, 네임스페이스 및 애플리케이션에 대한 전체 보기 | 애플리케이션 보기, 생성 및 보호(보호 생성/제거)가 가능합니다. 복원은 불가능합니다. 
+
+
+| 백업 및 복구 복원 관리자 | 범위 내 클러스터, 네임스페이스 및 애플리케이션에 대한 전체 보기 | 보기 및 복원만 가능합니다. 애플리케이션이나 보호 정책을 생성할 수 없습니다. 
+|===
+
+
+[[associate-a-kubernetes-namespace-with-a-folder-or-project]]
+== Kubernetes 네임스페이스를 폴더 또는 프로젝트와 연결합니다
+
+폴더 또는 프로젝트와 네임스페이스를 연결하여 해당 범위에 액세스 제어가 적용되도록 합니다.
+
+*필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자. Cloud Volumes ONTAP 클러스터에 저장된 데이터를 보호하는 경우 Cloud Volumes ONTAP 관리자 역할도 필요합니다. 다음에 대해 알아보십시오. link:reference-roles.html["백업 및 복구 역할과 권한"]. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
+
+.단계
+. NetApp Console 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
+. *워크로드*에서 *Kubernetes* 타일을 선택합니다.
+. 인벤토리에서 *네임스페이스* 메뉴를 선택합니다.
+. 액세스 제어에 등록할 네임스페이스를 하나 이상 선택하고 각각의 확인란을 활성화하십시오.
+. *액세스 제어를 위해 등록*을 선택합니다.
+. 선택적으로 폴더 또는 프로젝트를 선택하여 이 네임스페이스에 대한 액세스 제어가 적용될 위치를 지정할 수 있습니다. 폴더 또는 프로젝트를 선택하지 않으면 네임스페이스 IAM 리소스는 등록되지만 폴더 또는 프로젝트에는 추가되지 않습니다.
++
+** *폴더*: 이 옵션을 선택하여 폴더 수준에서 네임스페이스 리소스에 대한 사용자 액세스를 제어하고, 목록에서 폴더를 선택합니다.
++
+
+NOTE: Kubernetes 클러스터 또는 네임스페이스가 폴더와 연결된 경우, 사용자는 오른쪽 상단의 프로젝트 선택기에서 선택한 프로젝트에 대한 *Backup and Recovery viewer* 역할도 필요합니다. 이 프로젝트 수준 액세스 권한을 통해 사용자는 Backup and Recovery 홈 페이지를 열 수 있습니다. 폴더 수준에서 할당된 역할(예: Backup and Recovery backup admin)은 사용자가 워크로드 페이지에 들어간 후 수행할 수 있는 작업을 결정하지만, 페이지 자체에 대한 액세스 권한을 부여하지는 않습니다.
+
+** *프로젝트*: 이 옵션을 선택하면 프로젝트 수준에서 네임스페이스 리소스에 대한 사용자 액세스를 제어할 수 있으며, 목록에서 프로젝트를 선택할 수 있습니다.
++
+https://docs.netapp.com/us-en/console-setup-admin/concept-identity-and-access-management.html#netapp-console-organizational-components["더 알아보기"^] NetApp Console의 조직 구성 요소에 대한 내용입니다.
+
+
+
+. *등록*을 선택합니다.
+
+
+
+
+[[related-information]]
+== 관련 정보
+
+* link:br-start-discover-kubernetes.html["Kubernetes 워크로드를 알아보세요"]
+* link:br-rbac-setup.html["NetApp Backup and Recovery에서 역할 기반 액세스 제어 설정"]
+* link:reference-roles.html["NetApp Backup and Recovery 역할 및 권한"]
+

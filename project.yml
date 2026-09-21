@@ -232,10 +232,14 @@ sidebar:
           url: "/br-use-kubernetes-advanced-restore-settings.html"
         - title: 사용자 지정 리소스를 사용하여 복원 작업 중 리소스 수정
           url: "/br-use-modify-resources-kubernetes-cr.html"
+        - title: 가상 머신 기반 애플리케이션에서 파일 및 폴더 복원 또는 다운로드
+          url: "/br-use-restore-kubernetes-files-folders.html"
       - title: Kubernetes 클러스터 관리
         url: "/br-use-manage-kubernetes-clusters.html"
       - title: Kubernetes 애플리케이션 관리
         url: "/br-use-manage-kubernetes-applications.html"
+      - title: Kubernetes 리소스 액세스 관리
+        url: "/br-use-manage-kubernetes-access-control.html"
       - title: Kubernetes 워크로드에 대한 실행 후크 템플릿 관리
         url: "/br-use-manage-execution-hook-templates.html"
       - title: 보호 보고서 생성 및 관리

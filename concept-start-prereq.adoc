@@ -416,6 +416,7 @@ NOTE: NetApp에서는 에이전트 IP 주소가 변경될 경우 발생할 수 �
 ** Kubernetes 클러스터, Trident Protect 커넥터 및 Trident Protect 프록시 간의 아웃바운드 방향에서 TCP 포트 443이 필터링되지 않았는지 확인하십시오.
 
 
+* 가상 머신 기반 애플리케이션에서 파일과 폴더를 복원하려면 SSH가 필요합니다. 대상 Linux 호스트에서 SSH 서비스가 활성화되어 있는지, 그리고 대상 Windows 호스트에 OpenSSH 서버가 설치되어 있고 활성화되어 있는지 확인하십시오.
 
 
 

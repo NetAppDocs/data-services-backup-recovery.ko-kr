@@ -16,10 +16,7 @@ summary: NetApp Backup and Recovery 의 새로운 기능을 알아보세요.
 [role="lead"]
 NetApp Backup and Recovery의 새로운 기능, 개선 사항 및 버그 수정 사항에 대해 알아보십시오.
 
-
-
-[[16-september-2026]]
-== 2026년 9월 16일
+<<<<<<< HEAD == 16 September 2026
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
@@ -64,30 +61,32 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
+[]
+====
+== 2026년 9월 21일
+
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
+
+* *Trident Protect 26.09*: 이번 릴리스에는 Trident Protect 26.09가 포함되어 있습니다.
+* *클러스터 및 네임스페이스 수준의 역할 기반 액세스 제어*: Kubernetes 클러스터 검색 중에 새 클러스터와 연결할 프로젝트 또는 폴더를 선택하여 리소스에 대한 액세스를 제어할 수 있습니다. 특정 네임스페이스를 등록하여 액세스 제어를 수행할 수도 있습니다. 이를 통해 클러스터 또는 네임스페이스 수준에서 더욱 세밀한 액세스 제어가 가능합니다.
+* *파일 및 폴더 복원*: 이제 Kubernetes VM 기반 애플리케이션 백업에서 특정 파일 및 폴더를 복원하거나 다운로드할 수 있습니다.
 
 
-[[17-august-2026]]
+Kubernetes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["NetApp Backup and Recovery를 사용하여 Kubernetes 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하세요. >>>>>>> 13d089e3cffcfba837d21c436e1c43e2f3068e74
+
 == 2026년 8월 17일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[hyper-v-workloads-enhancements]]
-=== Hyper-V 워크로드 개선 사항
-
-이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Hyper-V 워크로드 개선 사항 이번 릴리스에서는 Hyper-V 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 *오브젝트 스토리지 백업을 다른 위치로 복원*: 이제 Hyper-V 가상 머신, 파일 및 폴더를 오브젝트 스토리지에서 다른 스토리지 위치로 복원할 수 있습니다.
 
 Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용하여 Hyper-V 워크로드를 보호하는 방법에 대해 알아보십시오."]를 참조하십시오.
 
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 * *Trident Protect 26.08*: 이번 릴리스에는 Trident Protect 26.08가 포함되어 있습니다.
 * *백업 재시도*: 이제 Kubernetes 보호 정책의 고급 설정에서 백업 재시도를 활성화하고 재시도 횟수 및 재시도 간격을 구성할 수 있습니다.
@@ -99,12 +98,7 @@ Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.co
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["NetApp Backup and Recovery를 사용하여 Kubernetes 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하세요.
 
-
-
-[[oracle-database-workloads-enhancement]]
-=== Oracle Database 워크로드 향상
-
-이번 릴리스에서 Oracle 데이터베이스 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Oracle Database 워크로드 개선 사항 이번 릴리스에서는 Oracle Database 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 * *플러그형 데이터베이스(PDB) 복원*: 이제 개별 플러그형 데이터베이스(PDB) 및 PDB 테이블스페이스를 복원할 수 있으며, 특정 시점 복구도 가능합니다.
 * *플러그형 데이터베이스(PDB) 복제*: 이제 기존 대상 컨테이너 데이터베이스(CDB)에 단일 PDB를 복제할 수 있으며, 전체 컨테이너 데이터베이스를 복제할 때 선택적으로 PDB를 제외할 수도 있습니다.
@@ -112,28 +106,17 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[10-august-2026]]
 == 2026년 8월 10일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[general-netapp-backup-and-recovery-enhancements]]
-=== 일반 NetApp Backup and Recovery 기능 향상
+=== 일반 NetApp Backup and Recovery 개선 사항
 
 * *NetApp Console 로컬 배포 지원*: 이번 NetApp Backup and Recovery 릴리스는 NetApp Console 로컬 배포를 미리 보기 상태로 지원합니다.
 * *90일 작업 보존*: 이제 Backup and Recovery가 작업 모니터에서 작업 정보를 90일 동안 보존합니다.
 
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다:
 
 * *SAN VM에 대한 대체 위치 복원 지원*: 이제 SAN 기반 VM 백업을 다른 위치로 복원할 수 있습니다.
 * *여러 백업 삭제 지원*: 이제 한 번에 여러 백업을 삭제할 수 있습니다.
@@ -141,24 +124,14 @@ Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.n
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 * *에어갭 리소스에 대한 미리 보기 지원*: NetApp Console 로컬 배포에서 NetApp Backup and Recovery를 실행하는 경우 에어갭 Kubernetes 리소스를 검색, 보호 및 복원할 수 있습니다. 이 기능은 이번 릴리스에서 미리 보기로 제공됩니다.
 
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[ontap-volumes-workloads-enhancements]]
-=== ONTAP Volumes 워크로드 개선 사항
-
-이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== ONTAP Volumes 워크로드 개선 사항 이번 릴리스에서는 ONTAP Volumes 워크로드에 다음과 같은 개선 사항이 도입되었습니다:
 
 * *복원 작업을 백업보다 우선 순위 지정*: 이제 가상 머신이나 파일을 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.
 * *Backup and Recovery 활성화 없이 ONTAP 시스템 및 볼륨 검색*: 이제 Backup and Recovery를 활성화하지 않고도 시스템과 볼륨을 검색할 수 있습니다.
@@ -166,35 +139,19 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
 
-
-
-[[13-july-2026]]
 == 2026년 7월 13일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[enhanced-multi-bucket-support-for-all-workloads]]
-=== 모든 워크로드에 대한 향상된 멀티 버킷 지원
-
-NetApp Backup and Recovery는 이제 서로 다른 클라우드 공급자에 걸쳐 최대 100개의 버킷을 사용하여 시스템 내 워크로드를 보호하는 기능을 지원합니다. 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상 버전이 필요합니다.
+=== 모든 워크로드에 대한 향상된 멀티 버킷 지원 NetApp Backup and Recovery가 이제 서로 다른 클라우드 공급자에 걸쳐 최대 100개의 버킷으로 시스템 내 워크로드를 보호할 수 있도록 지원합니다. 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상 버전이 필요합니다.
 
 NetApp Backup and Recovery에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/concept-backup-to-cloud.html["NetApp Backup and Recovery 에 대해 알아보세요"]을 참조하십시오.
 
-
-
-[[15-june-2026]]
 == 2026년 6월 15일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 * *Trident Protect 26.06*: 이번 릴리스에는 Trident Protect 26.06가 포함되어 있습니다.
 * *복원 중 애플리케이션 생성 건너뛰기*: 이제 복원 작업 중 애플리케이션 사용자 지정 리소스 개체의 자동 생성을 건너뛸 수 있습니다. 이렇게 하면 애플리케이션 인벤토리에 불필요한 항목이 줄어듭니다.
@@ -204,30 +161,17 @@ NetApp Backup and Recovery에 대한 자세한 내용은  https://docs.netapp.co
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[08-june-2026]]
 == 2026년 6월 8일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[ontap-volumes-workloads-enhancements]]
-=== ONTAP Volumes 워크로드 개선 사항
-
-이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== ONTAP Volumes 워크로드 개선 사항 이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
 *S3 호환 클라우드 스토리지 지원*: NetApp Backup and Recovery for Volumes 워크로드가 이제 S3 호환 클라우드 스토리지로의 백업을 지원합니다.
 
 ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
 
-
-
-[[hyper-v-workloads-enhancements]]
-=== Hyper-V 워크로드 개선 사항
-
-이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Hyper-V 워크로드 개선 사항 이번 릴리스에서는 Hyper-V 워크로드에 다음과 같은 개선 사항이 도입되었습니다:
 
 * *게스트 VM으로 파일 및 폴더 복원 기능 개선*: 이제 기본 또는 2차 스토리지의 스냅샷에서 게스트 Windows VM으로 파일 및 폴더를 복원할 수 있습니다. 이 기능은 CIFS 및 SAN VM에서 지원됩니다.
 * *보호 그룹이 이제 호스트 시간대 스케줄링을 사용합니다*: 보호 그룹은 이제 Hyper-V 호스트의 시간대를 사용합니다. 호스트 시간대 스케줄링이 도입되기 전에 생성된 보호 그룹은 이전에 구성된 시간(일반적으로 UTC)을 계속 사용합니다. 이러한 보호 그룹이 Hyper-V 호스트 시간대를 사용하도록 업데이트하려면 스케줄을 다시 생성해야 합니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protection-groups.html["Hyper-V 워크로드에 대한 보호 그룹 생성 및 관리"]을 참조하십시오.
@@ -235,31 +179,18 @@ ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.net
 
 Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용한 Hyper-V 보호 워크플로"]를 참조하십시오.
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입합니다.
 
 * *보호 그룹이 이제 호스트 시간대 스케줄링을 사용합니다*: 보호 그룹은 이제 호스팅 VMware vCenter Server의 시간대를 사용합니다. 호스트 시간대 스케줄링이 도입되기 전에 생성된 보호 그룹은 이전에 구성된 시간대(일반적으로 UTC)에서 계속 실행됩니다. vCenter 시간대를 사용하려면 스케줄을 다시 생성해야 합니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protection-groups.html["VMware 워크로드에 대한 보호 그룹 생성 및 관리"]을 참조하십시오.
 
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[11-may-2026]]
 == 2026년 5월 11일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[hyper-v-workloads-enhancements]]
-=== Hyper-V 워크로드 개선 사항
-
-이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Hyper-V 워크로드 개선 사항 이번 릴리스에서는 Hyper-V 워크로드에 다음과 같은 개선 사항이 도입되었습니다:
 
 * *SAN 스토리지의 VM 보호*: 이제 SAN 객체 스토리지에 있는 VM을 보호할 수 있습니다.
 * *대체 위치로 복원 기능 향상*: 이제 SAN 스토리지에 있는 VM을 기본 및 보조 위치에서 대체 위치로 복원할 수 있습니다.
@@ -268,23 +199,13 @@ VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세�
 
 Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용한 Hyper-V 보호 워크플로"]를 참조하십시오.
 
-
-
-[[kvm-workloads-enhancements]]
-=== KVM 워크로드 개선 사항
-
-이번 릴리스에서 KVM 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== KVM 워크로드 개선 사항 이번 릴리스에서는 KVM 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 *다른 위치로 복원*: 이제 KVM VM을 다른 대상으로 복원할 수 있습니다(이 기능은 현재 정식으로 제공됩니다).
 
 KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["NetApp Backup and Recovery를 사용하여 KVM 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[oracle-database-workloads-enhancements]]
-=== Oracle Database 워크로드 개선 사항
-
-이번 릴리스에서 Oracle 데이터베이스 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Oracle Database 워크로드 개선 사항 이번 릴리스에서 Oracle Database 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
 * *Oracle AI Database 26ai 지원*: NetApp Backup and Recovery가 이제 Oracle AI Database 26ai를 지원합니다.
 * *백업 검증 지원*: 이제 Oracle 데이터베이스 백업의 무결성을 자동으로 검증하는 백업 정책을 구성할 수 있습니다.
@@ -292,12 +213,7 @@ KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/u
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다:
 
 * *보호 그룹에 대한 데이터 저장소 스패닝 지원*: 이제 가상 디스크가 여러 데이터 저장소에 걸쳐 있는 가상 머신을 보호할 때 보호 그룹의 동작을 선택할 수 있습니다.
 * *클론 지원*: 이제 운영 및 2차 스토리지에서 가상 머신 스냅샷의 클론을 생성할 수 있습니다.
@@ -305,12 +221,7 @@ Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.n
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 * *Trident Protect 26.05.1*: 이번 릴리스에는 Trident Protect 26.05.1이 포함되어 있습니다.
 * *VM 기반 앱의 제자리 복원*: 이제 VM 기반 애플리케이션을 원래 네임스페이스 및 원래 클러스터로 복원할 수 있습니다.
@@ -318,19 +229,11 @@ VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세�
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[05-may-2026]]
 == 2026년 5월 5일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
 * *Trident Protect 26.05*: 이번 릴리스에는 Trident Protect 26.05가 포함되어 있습니다.
 * *백업 및 복구에서 Trident Protect 업그레이드*: Kubernetes 클러스터에서 Trident Protect 26.05 이상을 실행 중인 경우 이제 백업 및 복구에서 직접 Trident Protect를 업그레이드할 수 있습니다.
@@ -341,48 +244,27 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[20-april-2026]]
 == 2026년 4월 20일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입합니다.
 
 *ASA r2 SAN 지원*: VMware 워크로드에서 이제 NetApp ASA r2 SAN 전용 환경에서 호스팅되는 VMFS 데이터스토어의 VM 보호를 지원합니다.
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[13-april-2026]]
 == 2026년 4월 13일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[ontap-volumes-workloads-enhancements]]
-=== ONTAP Volumes 워크로드 개선 사항
-
-이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== ONTAP Volumes 워크로드 개선 사항 이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
 *NetApp MetroCluster 액티브/액티브 구성 지원*: 이제 NetApp Backup and Recovery for Volumes 워크로드에서 액티브-액티브 구성의 MetroCluster를 지원합니다.
 
 ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
 
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 릴리스에서 Kubernetes 워크로드는 다음과 같은 보호 정책 개선 사항을 도입합니다.
+=== Kubernetes 워크로드 개선 사항 이번 릴리스에서는 Kubernetes 워크로드에 다음과 같은 보호 정책 개선 사항이 도입되었습니다.
 
 * *보호 정책 편집*: 이제 필요에 따라 Kubernetes 워크로드 보호 정책을 편집할 수 있습니다.
 * *디스크 간 지원*: 이제 디스크 간 백업 아키텍처를 사용하여 Kubernetes 보호 정책을 구성할 수 있습니다.
@@ -393,12 +275,7 @@ ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.net
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[hyper-v-workloads-enhancements]]
-=== Hyper-V 워크로드 개선 사항
-
-이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Hyper-V 워크로드 개선 사항 이번 릴리스에서는 Hyper-V 워크로드에 다음과 같은 개선 사항이 도입되었습니다:
 
 * *작업 처리 기능 개선*: NetApp Backup and Recovery가 이제 여러 개의 동시 작업을 더욱 효율적으로 처리합니다.
 * *SAN 지원(미리 보기)*: 이제 NetApp Backup and Recovery가 SAN 스토리지에 저장된 Hyper-V VM 보호를 지원합니다.
@@ -406,12 +283,7 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용한 Hyper-V 보호 워크플로"]를 참조하십시오.
 
-
-
-[[kvm-workloads-enhancements]]
-=== KVM 워크로드 개선 사항
-
-이번 릴리스에서 KVM 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== KVM 워크로드 개선 사항 이번 릴리스에서는 KVM 워크로드에 다음과 같은 개선 사항이 도입되었습니다:
 
 * *작업 처리 기능 개선*: NetApp Backup and Recovery가 이제 여러 개의 동시 작업을 더욱 효율적으로 처리합니다.
 * *대체 위치로 복원(미리 보기)*: 이제 KVM VM을 대체 대상으로 복원할 수 있습니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-restore.html["NetApp Backup and Recovery 사용하여 KVM 가상 머신 복원"]를 참조하십시오.
@@ -419,12 +291,7 @@ Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.co
 
 KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["NetApp Backup and Recovery를 사용하여 KVM 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다:
 
 * *태그 기반 보호*: VMware 워크로드용 백업 및 복구는 이제 NFS 및 VMFS 볼륨에 저장된 VM에 대한 태그 기반 보호를 지원하므로 개별 VM 또는 데이터스토어 대신 vCenter 태그를 기반으로 보호 그룹을 구성할 수 있습니다. vCenter에서 VM 및 데이터스토어에 태그를 지정하면 백업 및 복구가 자동으로 해당 항목을 검색하고 수동 그룹 유지 관리 없이 향후 백업에 포함합니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protection-groups.html["보호 그룹 생성 및 관리"]을 참조하십시오.
 * *대체 스토리지 시스템으로 복원*: 이제 원래(운영) 스토리지 시스템을 완전히 사용할 수 없는 경우에도 가상 머신을 대체 스토리지 시스템으로 복원할 수 있습니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-restore.html["VMware 워크로드 복원"]를 참조하십시오.
@@ -436,19 +303,11 @@ KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/u
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[31-march-2026]]
 == 2026년 3월 31일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[oracle-database-workloads-enhancements]]
-=== Oracle Database 워크로드 개선 사항
-
-이번 릴리스에서 Oracle Database 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== Oracle Database 워크로드 개선 사항 이번 릴리스에서 Oracle Database 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
 * *클러스터형 호스트 지원*: 이제 Oracle Automatic Storage Management(ASM)를 사용하고 VMFS 파일 시스템의 VMDK를 사용하여 배포된 Oracle Real Application Clusters(RAC) 데이터베이스를 검색하고 보호할 수 있습니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-discover-oracle.html["Oracle Database 워크로드를 살펴보세요"]를 참조하십시오.
 * *RMAN 카탈로그 지원*: 이제 Backup and Recovery를 구성하여 보호 메타데이터를 RMAN 복구 카탈로그에 저장할 수 있으며, 이를 통해 대상 제어 파일이 손실될 경우 중복성과 장기 보존이 가능합니다. 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-configure-oracle-database.html["Oracle 데이터베이스 구성"]를 참조하십시오.
@@ -456,37 +315,21 @@ VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세�
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[16-march-2026]]
 == 2026년 3월 16일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다:
 
 *일정 계층별 VM 일관성 지원*: 이제 VMware 워크로드에 대한 보호 정책을 구성할 때 특정 일정 계층에 대해 VM 일관성 및 애플리케이션 일관성 백업을 활성화할 수 있습니다. 연간, 월간 및 주간 계층이 지원됩니다.
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[09-march-2026]]
 == 2026년 3월 9일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[ontap-volumes-workloads-enhancements]]
-=== ONTAP Volumes 워크로드 개선 사항
-
-이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 향상된 기능을 제공합니다.
+=== ONTAP Volumes 워크로드 개선 사항 이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 향상된 기능을 제공합니다.
 
 * *원본 위치로 복원*: 이제 로컬 스냅샷 및 복제된 스냅샷의 파일을 원본 위치뿐만 아니라 다른 위치로도 복원할 수 있습니다.
 * *시간별 볼륨 검색*: 이제 Dashboard에서 새로운 볼륨을 더 빠르게 검색하고 새로 고칩니다.
@@ -498,12 +341,7 @@ VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세�
 
 ONTAP Volume 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 볼륨 워크로드 보호 개요"]를 참조하십시오.
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 릴리스에서 VMware 워크로드는 다음과 같은 향상된 기능을 소개합니다.
+=== VMware 워크로드 개선 사항 이번 릴리스에서 VMware 워크로드는 다음과 같은 향상된 기능을 제공합니다:
 
 * *객체 저장소에서 게스트 데이터 복원*: 이제 객체 저장소에서 게스트 파일과 폴더를 복원할 수 있습니다.
 * *VMFS/NFS 빠른 복원*: 이제 다른 위치로 복원할 때 빠른 복원 옵션을 활성화할 수 있습니다. 이 옵션을 활성화하면 오브젝트 저장소에서 VM 메타데이터(파일, LUN 및 네임스페이스)만 검색되므로 전체 복원보다 볼륨을 더 빠르게 사용할 수 있습니다.
@@ -512,60 +350,29 @@ ONTAP Volume 워크로드 보호에 대한 자세한 내용은 https://docs.neta
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[23-february-2026]]
 == 2026년 2월 23일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[kvm-workloads-supported-in-general-availability-ga]]
-=== 일반 공급(GA)에서 지원되는 KVM 워크로드
-
-NetApp Backup and Recovery에서 KVM 워크로드 지원이 이제 정식 출시(GA)되었습니다.
+=== 정식 버전(GA)에서 지원되는 KVM 워크로드 이제 NetApp Backup and Recovery에서 KVM 워크로드 지원을 정식 버전(GA)으로 이용할 수 있습니다.
 
 KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["NetApp Backup and Recovery를 사용하여 KVM 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[kubernetes-workloads-supported-in-general-availability-ga]]
-=== 일반 공급(GA)에서 지원되는 Kubernetes 워크로드
-
-Kubernetes 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다. 이번 Kubernetes 워크로드 릴리스에는 다음과 같은 향상된 기능도 포함되어 있습니다.
+=== Kubernetes 워크로드 지원 (일반 공급, GA) Kubernetes 워크로드 지원이 이제 NetApp Backup and Recovery에서 일반 공급(GA)되었습니다. 이번 Kubernetes 워크로드 릴리스에서는 다음과 같은 향상된 기능도 제공됩니다.
 
 *보고서 지원*: 이제 NetApp Backup and Recovery로 보호되는 Kubernetes 클러스터 및 애플리케이션에 대한 보호 활동 보고서를 생성할 수 있습니다.
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[09-february-2026]]
 == 2026년 2월 9일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
+=== Microsoft Hyper-V 워크로드는 정식 출시(GA)에서 지원됩니다. Microsoft Hyper-V 워크로드 지원이 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.
 
+=== 정식 버전(GA)에서 지원되는 VMware 워크로드 이제 NetApp Backup and Recovery에서 VMware 워크로드 지원을 정식 버전(GA)으로 이용할 수 있습니다.
 
-[[microsoft-hyper-v-workloads-supported-in-general-availability-ga]]
-=== 일반 공급(GA)에서 지원되는 Microsoft Hyper-V 워크로드
-
-Microsoft Hyper-V 워크로드 지원이 이제 NetApp Backup and Recovery에서 정식 출시(GA)되었습니다.
-
-
-
-[[vmware-workloads-supported-in-general-availability-ga]]
-=== 일반 출시(GA)에서 지원되는 VMware 워크로드
-
-NetApp Backup and Recovery에서 VMware 워크로드 지원이 이제 정식 출시(GA)되었습니다.
-
-
-
-[[kubernetes-workloads-enhancements]]
-=== Kubernetes 워크로드 개선 사항
-
-이번 Kubernetes 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== Kubernetes 워크로드 개선 사항 이번 Kubernetes 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * *CR 워크플로우 지원*: 이제 NetApp Backup and Recovery 웹 UI뿐만 아니라 CR을 사용하여 일반적인 보호 작업을 수행할 수 있습니다.
 * *클러스터 마이그레이션*: 이제 Trident Protect로 보호되는 기존 Kubernetes 클러스터를 Backup and Recovery에 추가할 수 있습니다.
@@ -576,12 +383,7 @@ NetApp Backup and Recovery에서 VMware 워크로드 지원이 이제 정식 출
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[oracle-database-workloads-enhancements]]
-=== Oracle Database 워크로드 개선 사항
-
-이번 Oracle Database 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== Oracle Database 워크로드 개선 사항 이번 Oracle Database 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * *루트 권한이 없는 사용자 지원*: 이제 루트 권한이 없는 사용자도 백업, 복원 및 복제 작업을 수행할 수 있어 보안 및 규정 준수가 향상됩니다.
 * *클론 지원*: 이제 ASM 라이브러리 v2를 사용하여 운영 및 2차 NAS, SAN 및 ASM 환경 전반에 걸쳐 클론 기능을 지원하여 통합 보호 워크플로를 구현할 수 있습니다.
@@ -603,30 +405,17 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[19-january-2026]]
 == 2026년 1월 19일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[ontap-volume-workloads-enhancements]]
-=== ONTAP 볼륨 워크로드 개선 사항
-
-ONTAP 볼륨 워크로드의 이번 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== ONTAP 볼륨 워크로드 개선 사항 이번 ONTAP 볼륨 워크로드 릴리스에서는 다음과 같은 개선된 기능이 도입되었습니다.
 
 *다중 버킷 지원*: (비공개 미리 보기) ONTAP 9.17.1 이상 버전부터 시스템 내 볼륨을 서로 다른 클라우드 공급자에 걸쳐 시스템당 최대 6개의 버킷으로 보호할 수 있습니다.
 
 link:https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-manage.html["NetApp Backup and Recovery 사용하여 ONTAP 볼륨 데이터를 백업하는 방법에 대해 자세히 알아보세요."].
 
-
-
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
-
-이번 VMware 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== VMware 워크로드 개선 사항 이번 VMware 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * NetApp Backup and Recovery에서 VMware 워크로드 지원이 이제 정식 출시(GA)되었습니다.
 * 이제 게스트 OS 파일과 폴더를 복원할 수 있습니다.
@@ -634,12 +423,7 @@ link:https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-back
 
 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-restore-guest-files-and-folders-overview.html["게스트 파일 및 폴더 복원에 대해 자세히 알아보세요."].
 
-
-
-[[hyper-v-workloads-preview-enhancements]]
-=== Hyper-V 워크로드 미리 보기 개선 사항
-
-이번 Hyper-V 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== Hyper-V 워크로드 미리 보기 기능 향상 이번 Hyper-V 워크로드 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * 이제 Hyper-V VM 백업 및 스냅샷을 다른 위치로 복원할 수 있습니다. 이 기능을 사용하여 서로 다른 Hyper-V 호스트에서 VM 버전을 관리할 수 있습니다.
 * NetApp Backup and Recovery는 이제 System Center Virtual Machine Manager(SCVMM)로 프로비저닝되고 CIFS 공유에서 호스팅되는 Hyper-V 가상 머신을 지원합니다.
@@ -651,28 +435,17 @@ NOTE: 이번 릴리스에서는 작업 메뉴의 *업그레이드* 옵션을 사
 
 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-restore.html["NetApp Backup and Recovery 사용하여 Hyper-V VM을 복원하는 방법에 대해 자세히 알아보세요."].
 
-
-
-[[kvm-workloads-preview-enhancements]]
 === KVM 워크로드 미리 보기 개선 사항
 
 KVM 워크로드 미리 보기 기능은 이제 Apache CloudStack에서 관리하는 KVM 호스트 및 가상 머신을 보호합니다.
 
 KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["NetApp Backup and Recovery를 사용하여 KVM 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[08-december-2025]]
 == 2025년 12월 8일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[vmware-workloads-preview-enhancements]]
-=== VMware 워크로드 미리보기 개선 사항
-
-VMware 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 기능이 도입되었습니다.
+=== VMware 워크로드 미리 보기 기능 향상 VMware 워크로드 미리 보기 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * 이제 백업과 스냅샷을 대체 위치로 복원할 수 있습니다. 이 기능은 다양한 VMware vCenter 배포, VMware ESXi 호스트 또는 VMware 데이터 저장소에서 VM 버전을 관리하려는 경우에 유용합니다.
 
@@ -684,33 +457,21 @@ link:br-use-vmware-restore.html["NetApp Backup and Recovery 사용하여 VMware 
 
 link:br-use-vmware-restore-vmdks-from-backups.html["NetApp Backup and Recovery 사용하여 VMware 가상 디스크를 복원하는 방법에 대해 자세히 알아보세요."].
 
-
-
-[[06-october-2025]]
 == 2025년 10월 6일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[bluexp-backup-and-recovery-is-now-netapp-backup-and-recovery]]
-=== BlueXP backup and recovery 이제 NetApp Backup and Recovery 입니다.
+=== BlueXP 백업 및 복구는 이제 NetApp Backup and Recovery입니다
 
 BlueXP backup and recovery NetApp Backup and Recovery 로 이름이 변경되었습니다.
 
-
-
-[[bluexp-is-now-netapp-console]]
-=== BlueXP 는 이제 NetApp Console 입니다.
+=== BlueXP는 이제 NetApp Console입니다
 
 강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp Console 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp Data Services 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 높은 보안성과 규정 준수를 갖춘 간소화된 관리를 제공합니다.
 
 변경된 내용에 대한 자세한 내용은 다음을 참조하세요.link:https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console 릴리스 노트."]
 
-
-
-[[hyper-v-workload-support-as-a-private-preview]]
-=== Hyper-V 워크로드 지원(개인 미리 보기)
+=== Hyper-V 워크로드 지원은 비공개 미리 보기로 제공됩니다.
 
 이번 NetApp Backup and Recovery 릴리스에서는 Hyper-V 워크로드 검색 및 관리 지원이 추가되었습니다.
 
@@ -724,10 +485,7 @@ BlueXP backup and recovery NetApp Backup and Recovery 로 이름이 변경되었
 
 Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용한 Hyper-V 보호 워크플로"]를 참조하십시오.
 
-
-
-[[kvm-workload-support-as-a-private-preview]]
-=== 비공개 미리보기로 제공되는 KVM 워크로드 지원
+=== KVM 워크로드 지원(프라이빗 프리뷰)
 
 이번 NetApp Backup and Recovery 릴리스에서는 KVM 워크로드 검색 및 관리 지원이 추가되었습니다.
 
@@ -741,12 +499,7 @@ Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.co
 
 KVM 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kvm-protect-overview.html["NetApp Backup and Recovery를 사용하여 KVM 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[kubernetes-preview-enhancements]]
-=== Kubernetes 미리보기 개선 사항
-
-Kubernetes 워크로드의 미리보기 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== Kubernetes 미리 보기 기능 향상 Kubernetes 워크로드 미리 보기 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * 3-2-1 팬아웃 백업 아키텍처 지원
 * 백업 대상으로 ONTAP S3 지원
@@ -765,12 +518,7 @@ Kubernetes 워크로드의 미리보기 릴리스에서는 다음과 같은 향�
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[vmware-preview-enhancements]]
-=== VMware 미리보기 개선 사항
-
-VMware 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 기능이 도입되었습니다.
+=== VMware 미리 보기 기능 향상 VMware 워크로드 미리 보기 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
 
 * 개체 저장소에서 복원 지원
 * NetApp Console 보드에 이제 VMware 워크로드 상태 정보가 표시됩니다.
@@ -783,10 +531,7 @@ VMware 워크로드의 미리보기 릴리스에는 다음과 같은 향상된 �
 
 VMware 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-protect-overview.html["VMware 워크로드 보호 개요"] .
 
-
-
-[[oracle-database-workload-support-as-a-private-preview]]
-=== Oracle Database 워크로드 지원을 개인 미리보기로 제공
+=== Oracle Database 워크로드 지원(프라이빗 미리보기)
 
 NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크로드 검색 및 관리에 대한 지원이 도입되었습니다.
 
@@ -802,26 +547,15 @@ NetApp Backup and Recovery 의 이번 릴리스에서는 Oracle Database 워크�
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
 
-
-
-[[ontap-volume-workload-enhancements]]
-=== ONTAP 볼륨 워크로드 향상
-
-ONTAP 볼륨 워크로드의 이번 릴리스에서는 다음과 같은 향상된 기능이 도입되었습니다.
+=== ONTAP 볼륨 워크로드 개선 사항 이번 ONTAP 볼륨 워크로드 릴리스에서는 다음과 같은 개선된 기능이 도입되었습니다.
 
 ONTAP 9.17.1 이상부터 DataLock이 Google Cloud Platform에서 지원됩니다. 이는 Amazon AWS, Microsoft Azure 및 NetApp StorageGRID 통한 기존 DataLock 지원을 보완합니다.
 
-
-
-[[25-august-2025]]
 == 2025년 8월 25일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[support-for-protecting-vmware-workloads-in-preview]]
-=== Preview에서 VMware 워크로드 보호 지원
+=== 미리 보기에서 VMware 워크로드 보호 지원
 
 이 릴리스에서는 VMware 워크로드를 보호하기 위한 미리보기 지원이 추가되었습니다. 온프레미스 ONTAP 시스템의 VMware VM과 데이터스토어를 Amazon Web Services와 StorageGRID 로 백업합니다.
 
@@ -830,10 +564,7 @@ NOTE: VMware 워크로드 보호에 대한 문서는 기술 미리보기로 제�
 
 link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery 사용하여 VMware 워크로드를 보호하는 방법에 대해 자세히 알아보세요."].
 
-
-
-[[high-performance-indexing-for-aws-azure-and-gcp-is-generally-available]]
-=== AWS, Azure 및 GCP에 대한 고성능 인덱싱이 일반적으로 제공됩니다.
+AWS, Azure 및 GCP용 고성능 인덱싱 기능이 정식 출시되었습니다.
 
 2025년 2월, AWS, Azure, GCP를 위한 고성능 인덱싱(Indexed Catalog v2) 미리보기를 발표했습니다. 이 기능은 현재 일반적으로 사용 가능합니다(GA). 2025년 6월부터 모든 _신규_ 고객에게 기본적으로 제공되었습니다. 이번 릴리스부터 모든 고객이 지원을 받을 수 있습니다. 고성능 인덱싱은 개체 스토리지에 보호된 워크로드에 대한 백업 및 복원 작업의 성능을 개선합니다.
 
@@ -843,16 +574,10 @@ link:br-use-vmware-protect-overview.html["NetApp Backup and Recovery 사용하�
 * 기존 고객인 경우 UI의 복원 섹션으로 이동하여 재인덱싱을 활성화할 수 있습니다.
 
 
-
-
-[[12-august-2025]]
 == 2025년 8월 12일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[microsoft-sql-server-workload-supported-in-general-availability-ga]]
 === 일반 공급(GA)에서 지원되는 Microsoft SQL Server 워크로드
 
 NetApp Backup and Recovery에서 Microsoft SQL Server 워크로드 지원이 정식 출시(GA)되었습니다. ONTAP, Cloud Volumes ONTAP 및 Amazon FSx for NetApp ONTAP 스토리지에서 MSSQL 환경을 사용하는 기업은 이제 이 새로운 Backup and Recovery 서비스를 활용하여 데이터를 보호할 수 있습니다.
@@ -891,10 +616,7 @@ image:../media/screen-br-dashboard3.png["NetApp Backup and Recovery 보드"]
 
 
 
-
-
-[[ontap-volume-workload-enhancements]]
-=== ONTAP 볼륨 워크로드 향상
+ONTAP 볼륨 워크로드 개선 사항
 
 * * ONTAP 볼륨에 대한 다중 폴더 복원*: 지금까지는 찾아보기 및 복원 기능을 통해 한 번에 하나의 폴더나 여러 파일을 복원할 수 있었습니다. NetApp Backup and Recovery 이제 찾아보기 및 복원 기능을 사용하여 여러 폴더를 한 번에 선택할 수 있는 기능을 제공합니다.
 * *삭제된 볼륨의 백업 보기 및 관리*: NetApp Backup and Recovery 보드는 이제 ONTAP 에서 삭제된 볼륨을 표시하고 관리하는 옵션을 제공합니다. 이를 통해 ONTAP 에 더 이상 존재하지 않는 볼륨의 백업을 보고 삭제할 수 있습니다.
@@ -906,17 +628,11 @@ CAUTION: 이 옵션은 신중하게 사용하고 극단적인 정리가 필요�
 
 참조하다 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["ONTAP 워크로드 보호"] .
 
-
-
-[[28-july-2025]]
 == 2025년 7월 28일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[kubernetes-workload-support-as-a-preview]]
-=== 미리 보기로 Kubernetes 워크로드 지원
+=== Kubernetes 워크로드 지원(미리 보기)
 
 이번 NetApp Backup and Recovery 릴리스에서는 Kubernetes 워크로드 검색 및 관리 지원이 추가되었습니다.
 
@@ -931,16 +647,10 @@ CAUTION: 이 옵션은 신중하게 사용하고 극단적인 정리가 필요�
 
 Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["Kubernetes 워크로드 보호 개요"] .
 
-
-
-[[14-july-2025]]
 == 2025년 7월 14일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[enhanced-ontap-volume-dashboard]]
 === 향상된 ONTAP 볼륨 대시보드
 
 2025년 4월, 훨씬 더 빠르고 효율적인 향상된 ONTAP 볼륨 대시보드의 미리보기를 출시했습니다.
@@ -951,10 +661,7 @@ Kubernetes 워크로드 보호에 대한 자세한 내용은 다음을 참조하
 
 자세한 내용은 다음을 참조하세요.link:br-use-dashboard.html["대시보드에서 보호 상태 보기"] .
 
-
-
-[[microsoft-sql-server-workload-support-as-a-public-technology-preview]]
-=== 공개 기술 미리 보기로서 Microsoft SQL Server 워크로드 지원
+=== Microsoft SQL Server 워크로드 지원(공개 기술 미리 보기)
 
 NetApp Backup and Recovery 의 이번 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
 
@@ -977,19 +684,11 @@ NOTE: Microsoft SQL Server 워크로드 보호에 대한 이 문서는 기술 �
 
 Microsoft SQL Server 작업 부하 보호에 대한 자세한 내용은 다음을 참조하세요.link:br-use-mssql-protect-overview.html["Microsoft SQL Server 워크로드 보호 개요"] .
 
-
-
-[[09-june-2025]]
 == 2025년 6월 9일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[indexed-catalog-support-updates]]
-=== 색인된 카탈로그 지원 업데이트
-
-2025년 2월, 데이터를 복원하는 검색 및 복원 방법에서 사용할 수 있는 업데이트된 인덱싱 기능(인덱싱된 카탈로그 v2)을 출시했습니다. 이전 릴리스에서는 온프레미스 환경에서 데이터 인덱싱 성능이 크게 향상되었습니다. 이 릴리스를 통해 인덱싱 카탈로그를 이제 Amazon Web Services, Microsoft Azure, Google Cloud Platform(GCP) 환경에서 사용할 수 있습니다.
+=== 인덱스 카탈로그 지원 업데이트 2025년 2월, 데이터 복원 시 검색 및 복원 방법을 사용하는 업데이트된 인덱싱 기능(인덱스 카탈로그 v2)을 출시했습니다. 이전 릴리스에서는 온프레미스 환경에서 데이터 인덱싱 성능이 크게 향상되었습니다. 이번 릴리스를 통해 인덱싱 카탈로그를 이제 Amazon Web Services, Microsoft Azure 및 Google Cloud Platform(GCP) 환경에서도 사용할 수 있게 되었습니다.
 
 신규 고객의 경우 모든 신규 환경에서 Indexed Catalog v2가 기본적으로 활성화됩니다. 기존 고객인 경우 Indexed Catalog v2를 활용하기 위해 환경을 다시 인덱싱할 수 있습니다.
 
@@ -1000,10 +699,7 @@ Microsoft SQL Server 작업 부하 보호에 대한 자세한 내용은 다음�
 
 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["검색 및 복원에 대한 인덱싱 활성화"] .
 
-
-
-[[azure-private-link-endpoints-and-service-endpoints]]
-=== Azure 개인 링크 엔드포인트 및 서비스 엔드포인트
+=== Azure 프라이빗 링크 엔드포인트 및 서비스 엔드포인트
 
 일반적으로 NetApp Backup and Recovery 클라우드 공급자와 개인 엔드포인트를 설정하여 보호 작업을 처리합니다. 이 릴리스에서는 NetApp Backup and Recovery 자동으로 개인 엔드포인트를 생성하거나 비활성화할 수 있는 선택적 설정이 도입되었습니다. 개인 엔드포인트 생성 프로세스를 더 많이 제어하고 싶은 경우 이 기능이 유용할 수 있습니다.
 
@@ -1011,33 +707,21 @@ Microsoft SQL Server 작업 부하 보호에 대한 자세한 내용은 다음�
 
 이 설정을 비활성화하면 NetApp Backup and Recovery 제대로 작동하도록 개인 엔드포인트를 수동으로 만들어야 합니다. 적절한 연결 없이는 백업 및 복구 작업을 성공적으로 수행하지 못할 수 있습니다.
 
-
-
-[[support-for-snapmirror-to-cloud-resync-on-ontap-s3]]
-=== ONTAP S3에서 SnapMirror to Cloud Resync 지원
+ONTAP S3에서 클라우드로의 SnapMirror 재동기화 지원
 
 이전 릴리스에서는 SnapMirrorto Cloud Resync(SM-C Resync) 지원이 도입되었습니다. 이 기능은 NetApp 환경에서 볼륨 마이그레이션 중 데이터 보호를 간소화합니다. 이번 릴리스에서는 ONTAP S3는 물론 Wasabi 및 MinIO와 같은 다른 S3 호환 공급자에 대한 SM-C Resync 지원이 추가되었습니다.
 
-
-
-[[bring-your-own-bucket-for-storagegrid]]
-=== StorageGRID 용 자체 버킷 가져오기
+=== StorageGRID에 대한 자체 버킷 가져오기
 
 작업 환경의 개체 스토리지에 백업 파일을 만들면 기본적으로 NetApp Backup and Recovery 구성한 개체 스토리지 계정에 백업 파일에 대한 컨테이너(버킷 또는 스토리지 계정)를 만듭니다. 이전에는 이를 재정의하여 Amazon S3, Azure Blob Storage, Google Cloud Storage에 대한 자체 컨테이너를 지정할 수 있었습니다. 이 릴리스를 사용하면 이제 자체 StorageGRID 개체 스토리지 컨테이너를 가져올 수 있습니다.
 
 보다 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-journey.html["나만의 객체 스토리지 컨테이너를 만드세요"] .
 
-
-
-[[13-may-2025]]
 == 2025년 5월 13일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[snapmirror-to-cloud-resync-for-volume-migrations]]
-=== 볼륨 마이그레이션을 위한 SnapMirror to Cloud Resync
+=== SnapMirror to Cloud Resync(볼륨 마이그레이션용)
 
 SnapMirror to Cloud Resync 기능은 NetApp 환경에서 볼륨 마이그레이션 중에 데이터 보호와 연속성을 간소화합니다. SnapMirror Logical Replication(LRSE)을 사용하여 볼륨을 온프레미스 NetApp 배포에서 다른 배포로 또는 Cloud Volumes ONTAP 과 같은 클라우드 기반 솔루션으로 마이그레이션하는 경우 SnapMirror to Cloud Resync를 통해 기존 클라우드 백업이 손상되지 않고 작동 상태를 유지하도록 보장합니다.
 
@@ -1047,10 +731,7 @@ SnapMirror to Cloud Resync는 여러 환경 간에 백업 연속성을 유지함
 
 재동기화 작업을 수행하는 방법에 대한 자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-migrate-resync.html["SnapMirror 사용하여 볼륨을 Cloud Resync로 마이그레이션"] .
 
-
-
-[[support-for-third-party-minio-object-store-preview]]
-=== 타사 MinIO 객체 저장소 지원(미리 보기)
+=== 타사 MinIO 오브젝트 저장소 지원 (미리 보기)
 
 NetApp Backup and Recovery 이제 MinIO에 중점을 두고 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.
 
@@ -1075,17 +756,11 @@ IMPORTANT: 이 기능은 실제 운영 환경에서는 사용하면 안 됩니�
 
 이 미리 보기 기능을 사용하려면 Console 에이전트에서 플래그를 활성화해야 합니다. 그런 다음 백업 섹션에서 *Third party Compatible* 객체 스토리지를 선택하여 보호 워크플로에 MinIO 타사 객체 스토리지의 연결 정보를 입력할 수 있습니다.
 
-
-
-[[16-april-2025]]
 == 2025년 4월 16일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[ui-improvements]]
-=== UI 개선
+=== UI 개선 사항
 
 이번 릴리스에서는 인터페이스를 단순화하여 사용자 경험을 향상시킵니다.
 
@@ -1096,23 +771,15 @@ IMPORTANT: 이 기능은 실제 운영 환경에서는 사용하면 안 됩니�
 * 작업 환경 활성화 프로세스 동안 대화 상자에 로딩 아이콘이 표시되어 검색 프로세스가 완료될 때까지 피드백을 제공하여 시스템 운영의 투명성과 신뢰도를 높입니다.
 
 
-
-
-[[enhanced-volume-dashboard-preview]]
-=== 향상된 볼륨 대시보드(미리 보기)
+=== 향상된 볼륨 대시보드 (미리 보기)
 
 이제 볼륨 대시보드가 10초 이내에 로드되어 훨씬 더 빠르고 효율적인 인터페이스를 제공합니다.  이 미리보기 버전은 일부 고객에게만 제공되며, 이를 통해 이러한 개선 사항을 미리 살펴볼 수 있습니다.
 
-
-
-[[support-for-third-party-wasabi-object-store-preview]]
-=== 타사 Wasabi 객체 저장소 지원(미리 보기)
+=== 타사 Wasabi 오브젝트 저장소 지원 (미리 보기)
 
 NetApp Backup and Recovery 이제 Wasabi를 중심으로 타사 개체 저장소에 대한 지원을 확장했습니다.  이 새로운 미리보기 기능을 사용하면 백업 및 복구 요구 사항에 맞게 모든 S3 호환 개체 저장소를 활용할 수 있습니다.
 
-
-
-==== 와사비 시작하기
+==== Wasabi 시작하기
 
 타사 스토리지를 오브젝트 저장소로 사용하려면 Console 에이전트에서 플래그를 활성화해야 합니다. 그런 다음 타사 오브젝트 저장소의 연결 정보를 입력하고 Backup and Recovery 워크플로에 통합할 수 있습니다.
 
@@ -1139,8 +806,6 @@ vi default.json
 .결과
 컨테이너가 다시 켜지면 NetApp Backup and Recovery UI를 엽니다.  백업을 시작하거나 백업 전략을 편집하면 AWS, Microsoft Azure, Google Cloud, StorageGRID, ONTAP S3의 ​​다른 백업 공급자와 함께 새로운 공급자 "S3 호환"이 나열됩니다.
 
-
-
 ==== 미리보기 모드 제한 사항
 
 이 기능은 아직 미리보기 단계에 있지만 다음과 같은 제한 사항을 고려하세요.
@@ -1155,52 +820,31 @@ vi default.json
 
 이 미리 보기 기간 동안 새로운 기능을 살펴보고 전체 기능이 출시되기 전에 타사 개체 저장소와의 통합에 대한 피드백을 제공해 주시기 바랍니다.
 
-
-
-[[17-march-2025]]
 == 2025년 3월 17일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[smb-snapshot-browsing]]
-=== SMB 스냅샷 검색
+=== SMB 스냅샷 탐색
 
 이 NetApp Backup and Recovery 업데이트는 SMB 환경에서 고객이 로컬 스냅샷을 탐색하지 못하는 문제를 해결했습니다.
 
-
-
-[[aws-govcloud-environment-update]]
 === AWS GovCloud 환경 업데이트
 
 이 NetApp Backup and Recovery 업데이트는 TLS 인증서 오류로 인해 UI가 AWS GovCloud 환경에 연결되지 못하는 문제를 해결했습니다.  이 문제는 IP 주소 대신 콘솔 에이전트 호스트 이름을 사용하여 해결되었습니다.
 
-
-
-[[backup-policy-retention-limits]]
 === 백업 정책 보존 한도
 
 이전에는 NetApp Backup and Recovery UI가 백업을 999개 사본으로 제한했지만 CLI에서는 더 많은 사본을 허용했습니다.  이제 백업 정책에 최대 4,000개의 볼륨을 첨부하고 백업 정책에 첨부되지 않은 볼륨을 1,018개까지 포함할 수 있습니다.  이 업데이트에는 이러한 제한을 초과하지 않도록 하는 추가 검증이 포함되어 있습니다.
 
-
-
-[[snapmirror-cloud-resync]]
 === SnapMirror 클라우드 재동기화
 
 이 업데이트는 SnapMirror 관계가 삭제된 후 지원되지 않는 ONTAP 버전에 대해 NetApp Backup and Recovery 에서 SnapMirror Cloud 재동기화를 시작할 수 없도록 보장합니다.
 
-
-
-[[21-february-2025]]
 == 2025년 2월 21일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[high-performance-indexing]]
-=== 고성능 인덱싱
+고성능 인덱싱
 
 NetApp Backup and Recovery 소스 시스템의 데이터 인덱싱을 보다 효율적으로 만들어 주는 업데이트된 인덱싱 기능을 도입했습니다.  새로운 인덱싱 기능에는 UI 업데이트, 데이터 복원을 위한 검색 및 복원 방법의 성능 개선, 글로벌 검색 기능 업그레이드, 확장성 향상 등이 포함됩니다.
 
@@ -1234,9 +878,6 @@ NetApp Backup and Recovery 소스 시스템의 데이터 인덱싱을 보다 효
 * 기준 색인에 걸리는 최대 시간은 7일 미만입니다.  실제 시간은 환경에 따라 달라집니다.
 
 
-
-
-[[global-search-performance-improvements]]
 === 글로벌 검색 성능 개선
 
 이번 릴리스에는 글로벌 검색 성능이 향상되었습니다.  이제 진행률 표시기와 더 자세한 검색 결과를 볼 수 있습니다. 여기에는 파일 수와 검색에 걸린 시간이 포함됩니다.  검색 및 인덱싱을 위한 전용 컨테이너를 통해 글로벌 검색을 5분 이내에 완료할 수 있습니다.
@@ -1247,17 +888,11 @@ NetApp Backup and Recovery 소스 시스템의 데이터 인덱싱을 보다 효
 * 새로운 인덱싱 기능은 FlexVols의 스냅샷에만 작동하고 FlexGroups의 스냅샷에는 작동하지 않습니다.
 
 
-
-
-[[13-february-2025]]
 == 2025년 2월 13일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[netapp-backup-and-recovery-preview-release]]
-=== NetApp Backup and Recovery 미리보기 릴리스
+=== NetApp Backup and Recovery 미리 보기 릴리스
 
 NetApp Backup and Recovery 의 이 Preview 릴리스에서는 NetApp Backup and Recovery 에서 익숙한 3-2-1 보호 전략을 사용하여 Microsoft SQL Server 워크로드를 관리할 수 있는 업데이트된 사용자 인터페이스를 제공합니다. 이 새로운 버전을 사용하면 이러한 워크로드를 기본 스토리지에 백업하고, 보조 스토리지에 복제하고, 클라우드 개체 스토리지에 백업할 수 있습니다.
 
@@ -1272,28 +907,17 @@ NetApp Backup and Recovery Preview 2025 버전에는 다음과 같은 업데이�
 * 이 버전을 사용하면 SnapCenter 워크로드를 NetApp Backup and Recovery 로 가져올 수 있습니다.
 
 
-
-
-[[22-november-2024]]
 == 2024년 11월 22일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[snaplock-compliance-and-snaplock-enterprise-protection-modes]]
 === SnapLock Compliance 및 SnapLock Enterprise 보호 모드
 
 NetApp Backup and Recovery는 이제 SnapLock Compliance 또는 SnapLock Enterprise 보호 모드로 구성된 온프레미스 FlexVol 및 FlexGroup 볼륨 모두를 백업할 수 있습니다. 이 지원을 위해서는 클러스터가 ONTAP 9.14 이상을 실행해야 합니다. SnapLock Enterprise 모드의 FlexVol 볼륨 백업은 ONTAP 9.11.1부터 지원되었습니다. 이전 ONTAP 버전에서는 SnapLock으로 보호된 볼륨의 백업을 지원하지 않습니다.
 
  https://docs.netapp.com/us-en/data-services-backup-recovery/concept-backup-to-cloud.html["NetApp Backup and Recovery 에 대해 알아보세요"]에서 지원되는 볼륨의 전체 목록을 확인하세요.
 
-
-
-[[indexing-for-search-restore-process-on-volumes-page]]
-=== 볼륨 페이지에서 검색 및 복원 프로세스에 대한 인덱싱
-
-검색 및 복원을 사용하려면 먼저 볼륨 데이터를 복원하려는 각 소스 시스템에서 "인덱싱"을 활성화해야 합니다.  이를 통해 색인된 카탈로그는 모든 볼륨의 백업 파일을 추적할 수 있습니다.  이제 볼륨 페이지에 인덱싱 상태가 표시됩니다.
+=== 볼륨 페이지의 검색 및 복원 프로세스를 위한 인덱싱 검색 및 복원 기능을 사용하려면 먼저 볼륨 데이터를 복원할 각 소스 시스템에서 "인덱싱"을 활성화해야 합니다. 이렇게 하면 인덱싱된 카탈로그가 모든 볼륨의 백업 파일을 추적할 수 있습니다. 이제 볼륨 페이지에 인덱싱 상태가 표시됩니다.
 
 * 색인됨: 볼륨이 색인되었습니다.
 * 진행 중: 인덱싱이 진행 중입니다.
@@ -1303,29 +927,18 @@ NetApp Backup and Recovery는 이제 SnapLock Compliance 또는 SnapLock Enterpr
 * 비활성화됨: 이 소스에 대해 인덱싱이 활성화되어 있지 않습니다.
 
 
-
-
-[[27-september-2024]]
 == 2024년 9월 27일
 
 이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
 
-
-
-[[podman-support-on-rhel-8-or-9-with-browse-and-restore]]
-=== RHEL 8 또는 9에서 탐색 및 복원을 통한 Podman 지원
-
-NetApp Backup and Recovery 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다.  이는 NetApp Backup and Recovery 찾아보기 및 복원 방법에 적용됩니다.
+=== RHEL 8 또는 9에서 찾아보기 및 복원 기능을 통한 Podman 지원 NetApp Backup and Recovery는 이제 Podman 엔진을 사용하여 Red Hat Enterprise Linux(RHEL) 버전 8 및 9에서 파일 및 폴더 복원을 지원합니다. 이는 NetApp Backup and Recovery 찾아보기 및 복원 방식에 적용됩니다.
 
 콘솔 에이전트 버전 3.9.40은 RHEL 호스트에 콘솔 에이전트를 수동으로 설치할 때 특정 Red Hat Enterprise Linux 8 및 9 릴리스를 지원합니다. 이는 https://docs.netapp.com/us-en/console-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["호스트 요구 사항"^]에 나열된 운영 체제 외에도 추가된 기능입니다. 이러한 최신 RHEL 버전에서는 Docker 엔진 대신 Podman 엔진이 필요합니다. 이전에는 NetApp Backup and Recovery에서 Podman 엔진을 사용할 때 두 가지 제한 사항이 있었지만, 이제 이러한 제한 사항이 모두 해결되었습니다.
 
 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."].
 
-
-
-[[faster-catalog-indexing-improves-search-and-restore]]
-=== 더 빠른 카탈로그 인덱싱으로 검색 및 복원이 개선됩니다.
-
-이번 릴리스에는 기준 색인 작업을 훨씬 더 빠르게 완료하는 개선된 카탈로그 색인이 포함되어 있습니다.  더 빠른 인덱싱을 통해 검색 및 복원 기능을 더욱 빠르게 사용할 수 있습니다.
+=== 카탈로그 색인 생성 속도 향상으로 검색 및 복원 기능 개선 이번 릴리스에는 카탈로그 기본 색인 생성을 훨씬 빠르게 완료하는 개선된 카탈로그 색인이 포함되어 있습니다. 색인 생성 속도 향상으로 검색 및 복원 기능을 더욱 신속하게 사용할 수 있습니다.
 
 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-restore.html["백업 파일에서 ONTAP 데이터 복원에 대해 자세히 알아보세요."].
+
+====
