@@ -5921,7 +5921,6 @@
   <block id="6c2c266ca065311d4804d34cd534ac61" category="paragraph">아카이브 저장소에서 볼륨이나 파일을 복원하는 데 추가 시간이 소요될 수 있습니다.  백업 및 복구 기능이 선택한 우선순위에 따라 복원을 재시도하는 동안 작업 모니터에서 해당 작업은 *진행 중*으로 표시됩니다.  *작업 모니터*에서 복원 진행 상황을 모니터링하십시오. 모든 재시도 후 작업이 *완료됨* 또는 *실패함*과 같은 최종 상태에 도달하면 복원이 완료된 것입니다.  작업이 최종적으로 실패하지 않는 한 다른 복원 작업을 시작하지 마십시오.</block>
   <block id="534cf708a73e1e3ff80e4b70322d78d6" category="paragraph"><block ref="534cf708a73e1e3ff80e4b70322d78d6" category="inline-link-rx"></block></block>
   <block id="6c302dca9120d9212ecda9d1ad1f74c9" category="paragraph">이번 릴리스에서는 KVM, Hyper-V 및 VMware 워크로드에 다음과 같은 개선 사항이 도입되었습니다.</block>
-  <block id="0898522d58ded515e98cbdbeae0b2894" category="paragraph">*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 등록할 때 이제 백업 및 복구에 이미 추가한 자격 증명을 사용할 수 있습니다.</block>
   <block id="51b1f28526e9e7dfdb39548a8b5d4ac0" category="paragraph">*VM에 대한 디스크 보호 기능 확장*: CIFS 구성의 경우, 백업 및 복구 기능은 이제 보호 그룹에 속한 각 VM에 연결된 모든 디스크를 보호할 수 있도록 지원합니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템(스패닝 디스크)에 분산된 파일과 단일 위치에만 있는 파일이 모두 포함됩니다.</block>
   <block id="1e62d1b5255654e86ebb8b223345252a" category="section-title">ONTAP Volumes 워크로드 향상</block>
   <block id="705eb27960b89edebb2b2269e939009b" category="paragraph">이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 미리 보기 개선 사항을 도입합니다.</block>
@@ -6104,4 +6103,7 @@
   <block id="6cdd743b39af79062eb92fec70569354" category="section-title">2025년 2월 13일</block>
   <block id="008c6d012aabba0e44e2b94f8259635c" category="section-title">2024년 11월 22일</block>
   <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="section-title">2024년 9월 27일</block>
+  <block id="1f5228fb8e4d751814a84ea17a1c4929" category="doc">일반 NetApp Backup and Recovery 기능 향상</block>
+  <block id="36d329847d8e5ae441cfdb0f4e5f6e2f" category="paragraph">*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 검색할 때 Backup and Recovery에 이미 추가한 자격 증명을 사용할 수 있습니다.</block>
+  <block id="ffe23fba63447ec89bcdd7bc0c48257f" category="section-title">Hyper-V 워크로드 향상</block>
 </blocks>

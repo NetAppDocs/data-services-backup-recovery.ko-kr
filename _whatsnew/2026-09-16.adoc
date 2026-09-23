@@ -4,17 +4,17 @@
 
 
 
-[[general-netapp-backup-and-recovery-enhancements]]
+[[general-netapp-backup-and-recovery-enhancement]]
 === 일반 NetApp Backup and Recovery 기능 향상
 
 이번 릴리스에서는 KVM, Hyper-V 및 VMware 워크로드에 다음과 같은 개선 사항이 도입되었습니다.
 
-*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 등록할 때 이제 백업 및 복구에 이미 추가한 자격 증명을 사용할 수 있습니다.
+*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 검색할 때 Backup and Recovery에 이미 추가한 자격 증명을 사용할 수 있습니다.
 
 
 
-[[hyper-v-workloads-enhancements]]
-=== Hyper-V 워크로드 개선 사항
+[[hyper-v-workloads-enhancement]]
+=== Hyper-V 워크로드 향상
 
 이번 릴리스에서 Hyper-V 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
