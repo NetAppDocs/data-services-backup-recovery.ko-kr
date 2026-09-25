@@ -4747,7 +4747,6 @@
   <block id="b7bfbf5f47aa4163507ae71ed18f8b9f" category="list-text">*여러 백업 삭제 지원*: 이제 한 번에 여러 백업을 삭제할 수 있습니다.</block>
   <block id="c67660fa166ae58260874bbf6f9c5e4a" category="list-text">*에어갭 리소스에 대한 미리 보기 지원*: NetApp Console 로컬 배포에서 NetApp Backup and Recovery를 실행하는 경우 에어갭 Kubernetes 리소스를 검색, 보호 및 복원할 수 있습니다. 이 기능은 이번 릴리스에서 미리 보기로 제공됩니다.</block>
   <block id="d1c241263c19a21db56b6d9aaeb83ca1" category="paragraph">이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 개선 사항을 도입했습니다.</block>
-  <block id="a33b2a8cf6a943c4ae96728143fee277" category="list-text">*복원 작업을 백업보다 우선 순위 지정*: 이제 가상 머신이나 파일을 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.</block>
   <block id="3c8fad259371a43b707a7a3c64b147f6" category="list-text">*Backup and Recovery 활성화 없이 ONTAP 시스템 및 볼륨 검색*: 이제 Backup and Recovery를 활성화하지 않고도 시스템과 볼륨을 검색할 수 있습니다.</block>
   <block id="2c6cc6886b730f35083997c1321dcc78" category="list-text">NetApp Console 로컬 배포용 Backup and Recovery 미리 보기 릴리스에서는 오브젝트 스토리지로의 백업이 ONTAP S3 및 StorageGRID 대상에 대해서만 지원됩니다. 이 미리 보기 릴리스에서는 백업 아카이빙이 지원되지 않습니다.</block>
   <block id="5c09edc1ed9afb140af2607f91da29e1" category="section-title">NetApp Console 로컬 배포용 Backup and Recovery 프리뷰 제한 사항</block>
@@ -6106,4 +6105,5 @@
   <block id="1f5228fb8e4d751814a84ea17a1c4929" category="doc">일반 NetApp Backup and Recovery 기능 향상</block>
   <block id="36d329847d8e5ae441cfdb0f4e5f6e2f" category="paragraph">*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 검색할 때 Backup and Recovery에 이미 추가한 자격 증명을 사용할 수 있습니다.</block>
   <block id="ffe23fba63447ec89bcdd7bc0c48257f" category="section-title">Hyper-V 워크로드 향상</block>
+  <block id="8dbaebd91b282de2115c0933e53cc8b1" category="list-text">*복원 작업을 백업보다 우선 순위 지정*: 이제 볼륨, 파일 또는 폴더를 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.</block>
 </blocks>
