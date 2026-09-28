@@ -5971,7 +5971,6 @@
   <block id="8ec423cb544f5a4931b35174a601686c" category="cell"><block ref="a1eba06bd1db60b0b7acd47a98fdd405" prefix="" category="inline-code"></block></block>
   <block id="def96a092a0c6947fcdadafb96edb659" category="cell">NetApp Backup and Recovery for Volumes의 Reports 탭 아래에 있는 일일 백업 데이터 전송 보고서를 활성화합니다. 이 보고서는 사용자 환경 전체의 일일 백업 및 복제 데이터 전송 작업 정보를 제공합니다.</block>
   <block id="200e15de6a3939fa4dda17a8836f5233" category="list-text">*Trident Protect 26.09*: 이번 릴리스에는 Trident Protect 26.09가 포함되어 있습니다.</block>
-  <block id="6e2d39e3670c746bf336eaad2e07b214" category="list-text">*클러스터 및 네임스페이스 수준의 역할 기반 액세스 제어*: Kubernetes 클러스터 검색 중에 새 클러스터와 연결할 프로젝트 또는 폴더를 선택하여 리소스에 대한 액세스를 제어할 수 있습니다. 특정 네임스페이스를 등록하여 액세스 제어를 수행할 수도 있습니다. 이를 통해 클러스터 또는 네임스페이스 수준에서 더욱 세밀한 액세스 제어가 가능합니다.</block>
   <block id="bc9e0a0c6dd42dbca705164e269a3b81" category="list-text">*파일 및 폴더 복원*: 이제 Kubernetes VM 기반 애플리케이션 백업에서 특정 파일 및 폴더를 복원하거나 다운로드할 수 있습니다.</block>
   <block id="0eae5eefe564ecf4ccbc3e8d5990e3e5" category="list-text">*기타 백업 및 복구 역할*: 백업 및 복구 뷰어 또는 백업 및 복구 클론 관리자 등 사용자에게 필요한 특정 백업 및 복구 역할을 할당합니다. 이러한 역할을 통해 사용자는 리소스 보기, 워크로드 보호, 클론 생성 및 복원 등 일상적인 작업을 수행할 수 있습니다. 백업 및 복구 역할은 플랫폼 수준 역할과 별도로 할당합니다. 자세한 내용은 <block ref="8432e361253dad22d74ca5fd3ad3c136" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="495d694fb4e6c9ffefefeddb8fb2c749" category="paragraph">조직 관리자, 폴더 관리자 또는 프로젝트 관리자는 사용 가능한 워크로드를 검색하고 US East 또는 US West 등 적절한 프로젝트를 선택합니다. 각 워크로드는 선택한 프로젝트와 자동으로 연결됩니다. Kubernetes 클러스터의 경우, 검색 중에 클러스터와 연결할 폴더 또는 프로젝트를 선택적으로 지정할 수 있습니다.</block>
@@ -6106,4 +6105,13 @@
   <block id="36d329847d8e5ae441cfdb0f4e5f6e2f" category="paragraph">*VM 호스트 검색 중 자격 증명 선택*: KVM, Hyper-V 또는 VMware 호스트를 검색할 때 Backup and Recovery에 이미 추가한 자격 증명을 사용할 수 있습니다.</block>
   <block id="ffe23fba63447ec89bcdd7bc0c48257f" category="section-title">Hyper-V 워크로드 향상</block>
   <block id="8dbaebd91b282de2115c0933e53cc8b1" category="list-text">*복원 작업을 백업보다 우선 순위 지정*: 이제 볼륨, 파일 또는 폴더를 복원할 때 복원 작업을 백업 작업보다 우선 순위로 지정할 수 있습니다.</block>
+  <block id="419cd2b7ee4c4a768ccdb742a76a6d51" category="paragraph">*다크 사이트 지원 강화*: NetApp Backup and Recovery for dark sites는 이제 NetApp Backup and Recovery와 동일한 ONTAP Volumes 데이터 보호 기능을 제공합니다. 이 개선 사항에는 업데이트된 백업, 복원 및 작업 관리 서비스와 새로운 메타데이터 데이터베이스가 포함됩니다. 업그레이드 시 기존 데이터베이스 데이터는 자동으로 보존되고 마이그레이션됩니다. 업그레이드 후 감사 로그를 검토하여 마이그레이션이 성공적으로 완료되었는지 확인하십시오. NetApp Backup and Recovery for dark sites는 ONTAP Volumes 워크로드만 지원합니다.</block>
+  <block id="fc56ab1b23274c05b12ad0c8dc80ef1c" category="list-text">*클러스터 및 네임스페이스 수준의 역할 기반 액세스 제어(RBAC)*: Kubernetes 클러스터 검색 중에 새 클러스터와 연결할 프로젝트 또는 폴더를 선택하여 리소스에 대한 액세스를 제어할 수 있습니다. 특정 네임스페이스를 등록하여 액세스 제어를 수행할 수도 있습니다. 이를 통해 클러스터 또는 네임스페이스 수준에서 더욱 세밀한 액세스 제어가 가능합니다.</block>
+  <block id="f7afeeafbf15177ad50522c2abcfb502" category="paragraph">*콘솔 역할 기반 액세스 제어(RBAC) 지원*: Hyper-V, KVM 및 VMware 워크로드가 이제 NetApp Console 프레임워크의 RBAC 기능을 지원하여 개별 Hyper-V, KVM 또는 VMware 호스트에 대한 액세스를 관리할 수 있습니다.</block>
+  <block id="ba79eaf594c940e1fe41ef7be1d90de0" category="inline-link">NetApp Backup and Recovery에서 RBAC 사용에 대해 자세히 알아보세요.</block>
+  <block id="c0efbe51bb7620993fb42a308c6ad8b2" category="paragraph"><block ref="d7adec871f52434e6c062a1e94dd0f14" category="inline-link-rx"></block>.</block>
+  <block id="fd2c958c800e793ec18ea2546e033c24" category="paragraph">*Google Cloud NetApp Volumes Flex Unified 지원*: VMware 워크로드용 NetApp Backup and Recovery에서 이제 Google Cloud NetApp Volumes의 Flex Unified 서비스 수준을 지원합니다. Flex Unified는 ONTAP 모드에서만 지원됩니다.</block>
+  <block id="af77598cf52235180b19bf359e518fc2" category="paragraph">VMware 워크로드 보호에 대한 자세한 내용은<block ref="d7977b9c562cb95be37532b996678207" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="b97cd70ddadb686487dcde47c3a4791d" category="list-text">Google Cloud NetApp Volumes(ONTAP 모드 및 Flex Unified 서비스 수준)</block>
+  <block id="e133e28734ec4222b7f45792925cee97" category="section-title">2026년 9월 28일</block>
 </blocks>

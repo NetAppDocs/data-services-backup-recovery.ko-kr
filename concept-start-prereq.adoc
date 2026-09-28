@@ -277,8 +277,9 @@ VMware 워크로드를 검색하고 보호하려면 특정 요구 사항이 필�
 
 | 연결된 스토리지  a| 
 * ONTAP 9.13.1 이상 (서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요합니다. 최대 100개 버킷까지 지원 가능)
-* 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템
 * ASA r2 SAN 전용 시스템(ONTAP 9.17.1 이상 필요)
+* 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템
+* Google Cloud NetApp Volumes(ONTAP 모드 및 Flex Unified 서비스 수준)
 
 
 |===
