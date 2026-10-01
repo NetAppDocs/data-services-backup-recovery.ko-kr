@@ -1,15 +1,19 @@
-= ONTAP Volumes 워크로드 향상
+= ONTAP Volumes 워크로드 개선 사항
 :allow-uri-read: 
 
 
 
 
-[[ontap-volumes-workloads-enhancement]]
-=== ONTAP Volumes 워크로드 향상
+[[ontap-volumes-workloads-enhancements]]
+=== ONTAP Volumes 워크로드 개선 사항
 
 이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 미리 보기 개선 사항을 도입합니다.
 
-*다크 사이트 지원 강화*: NetApp Backup and Recovery for dark sites는 이제 NetApp Backup and Recovery와 동일한 ONTAP Volumes 데이터 보호 기능을 제공합니다. 이 개선 사항에는 업데이트된 백업, 복원 및 작업 관리 서비스와 새로운 메타데이터 데이터베이스가 포함됩니다. 업그레이드 시 기존 데이터베이스 데이터는 자동으로 보존되고 마이그레이션됩니다. 업그레이드 후 감사 로그를 검토하여 마이그레이션이 성공적으로 완료되었는지 확인하십시오. NetApp Backup and Recovery for dark sites는 ONTAP Volumes 워크로드만 지원합니다.
+* *다크 사이트 지원 강화*: NetApp Backup and Recovery for dark sites는 이제 NetApp Backup and Recovery와 동일한 ONTAP Volumes 데이터 보호 기능을 제공합니다. 이 개선 사항에는 업데이트된 백업, 복원 및 작업 관리 서비스와 새로운 메타데이터 데이터베이스가 포함됩니다. 업그레이드 시 기존 데이터베이스 데이터는 자동으로 보존되고 마이그레이션됩니다. 업그레이드 후 감사 로그를 검토하여 마이그레이션이 성공적으로 완료되었는지 확인하십시오. NetApp Backup and Recovery for dark sites는 ONTAP Volumes 워크로드만 지원합니다.
+* *볼륨 복원 작업 취소*: 이제 작업 모니터링 페이지에서 진행 중인 ONTAP 볼륨 복원 작업을 취소할 수 있어, 실행 시간이 길거나 속도가 느린 작업을 더욱 쉽게 관리할 수 있습니다.
+* *볼륨 인덱싱 상태 보고 기능 개선*: ONTAP Volumes 대시보드는 이제 인덱싱 대상이 아닌 볼륨 및 스냅샷 복사본에 대해 `Not Applicable` 상태를 도입하여 인덱싱 상태를 더욱 정확하게 보고합니다.  `Not Indexed` 상태는 이제 인덱싱 대기 중인 볼륨에만 사용되며, 볼륨 세부 정보에서는 스냅샷별 인덱싱 상태와 함께 볼륨 또는 스냅샷 복사본이 인덱싱되지 않는 이유를 설명하는 마우스 오버 텍스트가 표시됩니다.
+* *NetApp AFX 지원*: 이제 2노드 및 4노드 NetApp AFX 클러스터에서 호스팅되는 볼륨을 보호할 수 있습니다.
+
 
 ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery를 사용한 ONTAP 볼륨 보호에 대해 알아보십시오"]를 참조하십시오.
 
