@@ -1704,10 +1704,7 @@
   <block id="c261701c0a638fff16b256b7172f9ad8" category="list-text">*로컬 스냅샷*: 기존 스냅샷 정책을 선택하거나 새로 만듭니다.</block>
   <block id="b18210e92f4a87b1f7c6722188562864" category="admonition">복제를 활성화하기 전에 사용자 지정 정책을 생성하려면 다음을 참조하세요.<block ref="d9904d3bd7927987056edc09c02007e9" category="inline-link-macro-rx"></block> .</block>
   <block id="af14ed236e1187cb69e6b99e4332efba" category="list-text">*공급자*: *Microsoft Azure*를 선택하세요.</block>
-  <block id="308ae624df45c66718b6d2cb73b83d14" category="list-text">*공급자 설정*: 공급자 세부 정보를 입력하세요.</block>
-  <block id="e850b416e9c74abb2c30ff149c33b965" category="paragraph">백업이 저장될 지역을 입력하세요.  이는 Cloud Volumes ONTAP 시스템이 있는 지역과 다른 지역일 수 있습니다.</block>
   <block id="e90f61567d45b4aa5a1f884395480afd" category="paragraph">새로운 저장 계정을 만들거나 기존 계정을 선택하세요.</block>
-  <block id="fbbde4256c2fb5bda7558a46213f5d5a" category="paragraph">백업을 저장하는 데 사용되는 Azure 구독을 입력하세요.  이는 Cloud Volumes ONTAP 시스템이 있는 구독과 다를 수 있습니다.</block>
   <block id="4516b0da13e1509d57f15deb85fd4416" category="paragraph">Blob 컨테이너를 관리하는 자체 리소스 그룹을 만들거나 리소스 그룹 유형과 그룹을 선택하세요.</block>
   <block id="933cc9e4a85b592d8fa25352508f2035" category="admonition">백업 파일이 수정되거나 삭제되는 것을 방지하려면 30일 보존 기간을 설정하고 변경 불가능한 저장소를 활성화하여 저장소 계정을 생성했는지 확인하세요.</block>
   <block id="fea7328886ae797091b7afcd97768302" category="admonition">추가적인 비용 최적화를 위해 이전 백업 파일을 Azure Archive Storage에 계층화하려면 스토리지 계정에 적절한 수명 주기 규칙이 있는지 확인하세요.</block>
@@ -4572,8 +4569,6 @@
   <block id="1ce75b5926383de539d27e838bd74b8a" category="paragraph"><block ref="04b01782baab49091268802b7f1423cb" category="inline-link-rx"></block>NetApp Backup and Recovery에서 작업을 수행하는 데 필요한 역할 및 권한에 대한 자세한 내용은 해당 문서를 참조하십시오.</block>
   <block id="6bb058e639cecc8051a99e8892400bd8" category="section-title">오브젝트 스토리지에 대한 백업 요구사항</block>
   <block id="fc0cba16e06b834a59ea2732ce15d74a" category="section-title">ONTAP 볼륨 워크로드 보호를 위한 요구 사항</block>
-  <block id="0b0bee32bf0c7158fbba14e4b17f1e23" category="paragraph">NetApp Backup and Recovery for ONTAP 볼륨 워크로드를 사용하려면 다음과 같은 호스트 시스템, 공간 및 크기 조정 요구 사항을 충족해야 합니다.</block>
-  <block id="f17da14a026a5974537cf1303ac53974" category="list-text">ONTAP 9.8 이상이 필요합니다.</block>
   <block id="45b096193f4470968c1063df19d1c253" category="list-text">온프레미스 ONTAP 인스턴스에 ONTAP One 라이센스가 활성화되어 있어야 합니다.</block>
   <block id="ddaa1c8bd07bda0816a8b44d87c10997" category="paragraph">지원되는 기능, 볼륨 유형, 백업 및 복원 대상 등에 대한 자세한 내용은 <block ref="1d638e05920fe33426fac4dc6285a639" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
   <block id="ba0f269b2bdb85161db3fe51338e6a7b" category="cell">데이터베이스 호스트</block>
@@ -4683,8 +4678,6 @@
   <block id="ea5b48c7d3f8b0a9e0a12672ffc2b29a" category="list-text">Kubernetes 리소스를 보려면 워크로드 항목에서 *보기*를 선택하십시오.</block>
   <block id="a7ffc4809e4a33a20f30769fc3e62703" category="list-text">S3 호환 스토리지(ONTAP Volumes 워크로드에만 해당)</block>
   <block id="7229e78ecf33d07a5618d54695f22e2b" category="list-text">Microsoft Azure Blob 스토리지</block>
-  <block id="df9ce829d97bcaaccefd13ad9443c5fe" category="list-text">FlexGroup 볼륨 보호에는 ONTAP 9.12.1 이상이 필요합니다. 자세한 내용은 <block ref="a1845bf1ef98236015caabc5bbd8f351" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
-  <block id="bc75b0ab08d9eba6d835f75a9dc3780f" category="list-text">S3 호환 객체 스토리지에 백업하거나 복원하려면 ONTAP 9.17.1 이상이 필요합니다.</block>
   <block id="6e61da6259c2e5766003325feb7a477a" category="list-text">보호할 소스 볼륨을 선택할 때 SnapLock 설정이 일치하는 볼륨만 선택할 수 있습니다. 선택하는 볼륨은 모두 SnapLock 기능이 활성화되어 있거나 모두 SnapLock 기능이 비활성화되어 있어야 합니다.</block>
   <block id="fa428977bbfd079a1a152d734ac0da9a" category="list-text">*기존 SnapMirror 및 SyncMirror 보조 관계 사용*: 이 옵션을 활성화하면 기존 SnapMirror 또는 SyncMirror 관계를 사용하여 스냅샷을 지정된 타겟 클러스터로 전송합니다.</block>
   <block id="2d86afc1dea874d04cb6b44f9329cb39" category="list-text">*VMware 워크로드*:</block>
@@ -6140,4 +6133,43 @@
   <block id="30144384865c9bc036707d99163c215c" category="cell">로컬 스냅샷에서 동일한 볼륨으로 파일 및 폴더 복원</block>
   <block id="b6a5b73bc90d7aa324c49f4f91a911c2" category="list-text">목록에서 작업을 선택하고, 작업 메뉴 <block ref="2a0f14b836fbf833847542e256b2473a" category="inline-image-macro-rx" type="image"></block>를 선택한 다음, *복원 취소* 작업을 선택합니다.</block>
   <block id="67221d952a3dfa81a9eee1d6fc312266" category="list-text">확인 대화 상자에서 *복원 취소*를 선택합니다.</block>
+  <block id="2ae03161c414273a2c4ef1fbfecc2c18" category="paragraph">ONTAP 볼륨 워크로드에 NetApp Backup and Recovery를 사용하려면 다음과 같은 필수 조건을 충족해야 합니다.</block>
+  <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">기능</block>
+  <block id="35d371dfd4ffcaa6df33332c8e851cb6" category="cell">필수 ONTAP 버전</block>
+  <block id="041dd7a51404fc5dc5a87c2a0bc90b15" category="cell">9.8 이상</block>
+  <block id="5d373d06bd6c55f7acd2cd162140309b" category="cell">FlexGroup 볼륨 보호(자세한 내용은 <block ref="a1845bf1ef98236015caabc5bbd8f351" category="inline-link-macro-rx"></block> 참조)</block>
+  <block id="384264f87c50753f2eb17ca87ee9effa" category="cell">9.12.1 이상</block>
+  <block id="7302e093b366701b61b9e7ea1cf0d501" category="cell">Cloud Volumes ONTAP을 보호할 때 Azure 버킷에 Microsoft Entra ID 인증을 사용하십시오.</block>
+  <block id="5d4f2555064c941936a870946b60b493" category="cell">9.16.1 이상</block>
+  <block id="a3f248f0b42b591c55de4315dfe33cbf" category="cell">S3 호환 오브젝트 스토리지에 백업 또는 복원</block>
+  <block id="a48a0937fc12df9714feb4f90708686d" category="cell">9.17.1 이상</block>
+  <block id="8e8029d7ebad3152861cb8a5f298ff52" category="cell">서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 사용할 수 있습니다(최대 100개 버킷)</block>
+  <block id="33bb0fb1eb1d7544e65ed467aa0cf274" category="cell">9.19.1 이상</block>
+  <block id="9ca7107af6688cc44a1bcc2ce2046b03" category="cell"><block ref="85f823e464828e8803d4ef0669c47bde" prefix="" category="inline-code"></block></block>
+  <block id="f4d8d86297c910edd07515360629dc8b" category="inline-link-macro">Cloud Volumes ONTAP를 Azure Blob 스토리지에 백업합니다.</block>
+  <block id="afdef63d55a31f83b0472ea15938d9cd" category="cell">Azure 오브젝트 스토리지에 대해 스토리지 계정 액세스 키 대신 Microsoft Entra ID 관리 ID 인증을 사용하는 옵션을 활성화합니다. ONTAP 9.16.1 이상 버전이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다. 자세한 내용은 <block ref="233a4aa6c0a23fa528a31eee71ed15ac" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="abe72bc586e5883f1af04cf80727dc68" category="list-text">최소 ONTAP 9.8이며, ONTAP 9.8P13 이상 버전을 권장합니다. Azure 오브젝트 스토리지에 Microsoft Entra ID 인증을 사용하는 경우 ONTAP 9.16.1 이상 버전이 필요합니다.</block>
+  <block id="0c4cf99159d4cd1b532e2ab5e24174cb" category="section-title">Azure 오브젝트 저장소에서 Microsoft Entra ID 인증을 사용하기 위한 요구 사항</block>
+  <block id="42920e377000a5bd5c1d6ca781abb0d8" category="paragraph">Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, Azure 오브젝트 스토리지 버킷을 생성하거나 기존 Azure 버킷 구성을 편집할 때 Azure 오브젝트 스토리지에 대한 Microsoft Entra ID 인증을 활성화할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상 버전이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.</block>
+  <block id="19491804ac62048a8e851071df62ae81" category="admonition">동일한 Cloud Volumes ONTAP 시스템 내에서 서로 다른 오브젝트 저장소 구성에 대해 서로 다른 인증 방법을 사용할 수 있지만, 오브젝트 저장소 구성을 Microsoft Entra ID를 사용하도록 변경한 후에는 스토리지 계정 키를 사용하는 방식으로 되돌릴 수 없습니다.</block>
+  <block id="f423e3045bb39879808f640f6d3edc7a" category="list-text">Cloud Volumes ONTAP 시스템에서 "use-azure-msi-cvo" 기능 플래그가 활성화되어 있는지 확인하십시오. 자세한 내용은 <block ref="6da975d9d27e80cef2a7d63b105961f2" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="393b26469137541bfe97a83dd8809ccc" category="list-text">Bring Your Own Bucket 백업 전략 옵션만 지원됩니다. Azure 스토리지 계정이 이미 존재하고 계정과 동일한 이름의 컨테이너가 포함되어 있는지 확인하십시오.</block>
+  <block id="c25166e827f3d8e40a7dc77175109dd0" category="list-text">Azure 스토리지 계정의 IAM 설정에서 <block ref="43a75a85e4a5f4ca31d88a3753adbcea" prefix=" " category="inline-code"></block> 역할이 Azure 에이전트와 Cloud Volumes ONTAP 시스템 모두에 할당되었는지 확인하십시오. <block ref="7a97177198173bd0b74d0f70c9d953e3" prefix=" " category="inline-code"></block> 정책 옵션을 사용하는 경우 스토리지 계정에서 버전 관리를 활성화하고 <block ref="74d42a47b950c356be555335ad7b2450" prefix=" " category="inline-code"></block> 역할을 Azure 에이전트와 Cloud Volumes ONTAP 시스템 모두에 할당하십시오.</block>
+  <block id="61368bcd5b5179392ffa4405c00d249e" category="inline-link-macro">이미 구성된 Azure 버킷에 대해 Entra ID로 전환</block>
+  <block id="958d06d551680ecc2de50098779cabaf" category="inline-xref">백업 전략을 정의하세요</block>
+  <block id="1334bf370e99b217dfa24707a8013ec8" category="paragraph">환경이 이러한 요구 사항을 충족하는 경우 <block ref="d43a54f1761f010f98e5f729a40650ea" category="inline-xref-macro-rx"></block> 시 새 Azure 오브젝트 스토리지 버킷의 인증 유형으로 <block ref="0248eceb183034c82899c7bc91d5d37c" prefix=" " category="inline-code"></block>을 선택할 수 있습니다. ONTAP Volumes *Backup settings* 페이지에서 <block ref="6d99e488f0e600fabd6ff47eb61bcf0f" category="inline-link-macro-rx"></block>할 수도 있습니다.</block>
+  <block id="77811f9b1ddfb0aa2879a2000b2513b6" category="section-title">데이터 암호화에 고객 관리 키를 사용하기 위한 요구사항</block>
+  <block id="e1517d7086bafd3d92eae75445613f32" category="list-text">*백업 전략 정의* 페이지에서 다음 옵션 중 하나 또는 전부를 선택하십시오. 기본적으로 세 가지 옵션 모두 선택되어 있습니다:</block>
+  <block id="5741e8ce61ad7e2079c4958447deef4f" category="list-text">*백업 대상 설정*: 기존 백업 대상을 사용하도록 선택하여 목록에서 하나를 선택하거나, 새 백업 대상을 구성하도록 선택합니다.</block>
+  <block id="aa67358cced63c3ab92e847061153bda" category="list-text">*공급자 설정*: 버킷 생성 및 인증 옵션 등 공급자 세부 정보를 입력하십시오:</block>
+  <block id="f3c92ea169084b24ee7f57949a25e6bc" category="list-text">*새 버킷 생성*: NetApp Backup and Recovery는 공급자 환경에 버킷을 생성합니다.</block>
+  <block id="9dfa550facaa156053152c7480a78e8a" category="list-text">*Bring Your Own Bucket*: 이미 생성한 기존 버킷을 사용하십시오.</block>
+  <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-xref">요구사항</block>
+  <block id="760f22cd63d8ba2af5510c6c9a156865" category="list-text">*인증 방법*: Azure 인증에 스토리지 계정 액세스 키 또는 Microsoft Entra ID를 사용할지 선택하십시오. 환경이 Entra ID <block ref="ddbcf24f8793bd718ad1413287a068f4" category="inline-xref-macro-rx"></block>을(를) 충족하는 경우에만 *Entra ID*를 선택할 수 있습니다. *스토리지 계정 액세스 키*를 선택하는 경우 다음을 선택하십시오:</block>
+  <block id="03628d2a24f98121695c37a42df64ac7" category="list-text">백업을 저장하는 데 사용할 Azure 구독을 선택하십시오. 이 구독은 Cloud Volumes ONTAP 시스템이 있는 구독과 다를 수 있습니다.</block>
+  <block id="2b6fad0bbaa44587d9b5ac0ac2031ce4" category="section-title">Azure 오브젝트 저장소 구성을 Microsoft Entra ID 인증으로 전환합니다.</block>
+  <block id="53a4f9c26971c8e33aa0fba4358ddb67" category="paragraph">Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, 기존 Azure 버킷 구성을 편집할 때 Azure 오브젝트 스토리지에 대한 Microsoft Entra ID 인증으로 전환할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상 버전이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.</block>
+  <block id="969defc1889ccc6f8ee630d878ad0cf6" category="paragraph">환경이 Entra ID 사용을 위한 <block ref="fea8710e19d17f9dcce7cbc75ce18f8b" category="inline-link-macro-rx"></block>을(를) 충족하는지 확인하십시오.</block>
+  <block id="b7653fde2d6e0a6d514915930b0db4bd" category="list-text">*인증 방법* 섹션을 펼치십시오.</block>
+  <block id="68bc12754c0710946a9eaa7fa64fb06b" category="list-text">*Entra ID(관리 ID)*를 선택합니다.</block>
 </blocks>

@@ -38,6 +38,9 @@ NetApp Backup and Recovery에 대해 다음과 같은 미리 보기 기능을 �
 
 
 | `"data-transfer-report": true` | NetApp Backup and Recovery for Volumes의 Reports 탭 아래에 있는 일일 백업 데이터 전송 보고서를 활성화합니다. 이 보고서는 사용자 환경 전체의 일일 백업 및 복제 데이터 전송 작업 정보를 제공합니다. 
+
+
+| `"use-azure-msi-cvo": true` | Azure 오브젝트 스토리지에 대해 스토리지 계정 액세스 키 대신 Microsoft Entra ID 관리 ID 인증을 사용하는 옵션을 활성화합니다. ONTAP 9.16.1 이상 버전이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다. 자세한 내용은 link:prev-ontap-backup-cvo-azure.html["Cloud Volumes ONTAP를 Azure Blob 스토리지에 백업합니다."]을(를) 참조하십시오. 
 |===
 
 

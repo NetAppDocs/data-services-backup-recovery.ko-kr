@@ -154,3 +154,22 @@ TIP: 랜섬웨어 검사를 활성화하면 클라우드 제공업체에 따라 
 . 검사를 실행할 빈도를 일 또는 주 단위로 설정합니다.
 . *적용*을 선택하세요.
 
+
+
+
+[[switch-an-azure-object-store-configuration-to-microsoft-entra-id-authentication]]
+== Azure 오브젝트 저장소 구성을 Microsoft Entra ID 인증으로 전환합니다.
+
+Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, 기존 Azure 버킷 구성을 편집할 때 Azure 오브젝트 스토리지에 대한 Microsoft Entra ID 인증으로 전환할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상 버전이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.
+
+.시작하기 전에
+환경이 Entra ID 사용을 위한 link:prev-ontap-backup-cvo-azure.html#anchor-entraid["요구사항"^]을(를) 충족하는지 확인하십시오.
+
+.단계
+. *볼륨* 탭에서 *백업 설정*을 선택합니다.
+. _백업 설정 페이지_에서 시스템에 대해 image:icon-actions-horizontal.gif["더 많은 아이콘"]을 선택하고 *고급 설정 구성 > 공급자 설정*을 선택합니다.
+. 결과 페이지 상단에서 설정을 변경해야 하는 버킷을 선택하십시오.
+. *인증 방법* 섹션을 펼치십시오.
+. *Entra ID(관리 ID)*를 선택합니다.
+. *적용*을 선택하세요.
+
