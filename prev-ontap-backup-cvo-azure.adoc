@@ -64,6 +64,7 @@ Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 �
 
 NOTE: 동일한 Cloud Volumes ONTAP 시스템 내에서 서로 다른 오브젝트 저장소 구성에 대해 서로 다른 인증 방법을 사용할 수 있지만, 오브젝트 저장소 구성을 Microsoft Entra ID를 사용하도록 변경한 후에는 스토리지 계정 키를 사용하는 방식으로 되돌릴 수 없습니다.
 
+* Cloud Volumes ONTAP 시스템과 콘솔 에이전트는 모두 Azure에 있어야 합니다.
 * Cloud Volumes ONTAP 시스템에서 "use-azure-msi-cvo" 기능 플래그가 활성화되어 있는지 확인하십시오. 자세한 내용은 link:enable-preview-features.html["미리보기 기능 활성화"]을(를) 참조하십시오.
 * Bring Your Own Bucket 백업 전략 옵션만 지원됩니다. Azure 스토리지 계정이 이미 존재하고 계정과 동일한 이름의 컨테이너가 포함되어 있는지 확인하십시오.
 * Azure 스토리지 계정의 IAM 설정에서  `Storage Blob Data Contributor` 역할이 Azure 에이전트와 Cloud Volumes ONTAP 시스템 모두에 할당되었는지 확인하십시오.  `Object lock` 정책 옵션을 사용하는 경우 스토리지 계정에서 버전 관리를 활성화하고  `Storage Blob Data Owner` 역할을 Azure 에이전트와 Cloud Volumes ONTAP 시스템 모두에 할당하십시오.
