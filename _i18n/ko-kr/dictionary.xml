@@ -6175,4 +6175,5 @@
   <block id="3a273880b40ea51e4b60121d32145e13" category="list-text"><block ref="f75ec94858c3cb7483e22bf2aca20589" prefix=" " category="inline-code"></block>이라는 이름의 파일을 생성하고 환경에 맞게 스토리지 VM 이름과 볼륨 ID를 사용자 지정합니다:</block>
   <block id="a940e8044fb83a96d0472abdc71d61e8" category="list-text">Cloud Volumes ONTAP 시스템과 콘솔 에이전트는 모두 Azure에 있어야 합니다.</block>
   <block id="389c52d9a18d68d9dd6a3eb24bc88982" category="list-text">*Cloud Volumes ONTAP Azure Entra ID 지원*: Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, 이제 Azure 오브젝트 스토리지 버킷 구성에 Microsoft Entra ID 인증을 사용할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.</block>
+  <block id="82d1d9da33b9c6cae173365156457fff" category="section-title">VMware 워크로드 향상</block>
 </blocks>

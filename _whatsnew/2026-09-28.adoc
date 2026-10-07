@@ -20,15 +20,14 @@ https://docs.netapp.com/us-en/data-services-backup-recovery/br-rbac-setup.html["
 
 이번 릴리스에서 ONTAP Volumes 워크로드는 다음과 같은 미리 보기 개선 사항을 도입합니다.
 
-* *Cloud Volumes ONTAP Azure Entra ID 지원*: Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, 이제 Azure 오브젝트 스토리지 버킷 구성에 Microsoft Entra ID 인증을 사용할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.
-
+*Cloud Volumes ONTAP Azure Entra ID 지원*: Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, 이제 Azure 오브젝트 스토리지 버킷 구성에 Microsoft Entra ID 인증을 사용할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.
 
 ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery를 사용한 ONTAP 볼륨 보호에 대해 알아보십시오"]를 참조하십시오.
 
 
 
-[[vmware-workloads-enhancements]]
-=== VMware 워크로드 개선 사항
+[[vmware-workloads-enhancement]]
+=== VMware 워크로드 향상
 
 이번 릴리스에서 VMware 워크로드는 다음과 같은 개선 사항을 도입했습니다.
 
