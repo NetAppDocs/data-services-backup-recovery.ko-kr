@@ -1143,7 +1143,6 @@
   <block id="efe1918d405691fc9d90b1a6589911df" category="list-text">로컬 스냅샷에서 데이터베이스를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.</block>
   <block id="b3460ca65bf39006b718d394a43c3ebf" category="list-text">복제된 저장소에서 복원하면 원래 위치로 복원할 수 있습니다.</block>
   <block id="3ac9aabbf91084676e4b67aa8a398c20" category="list-text">개체 스토리지에서 백업을 복원하면 데이터를 소스 스토리지나 온프레미스 ONTAP 시스템으로 복원하고 해당 위치에서 데이터베이스를 복구할 수 있습니다.</block>
-  <block id="de8e79d7f6fb2709000846a84f9a1628" category="paragraph">복원 페이지(검색 및 복원이라고도 함)에서는 정확한 이름, 데이터베이스가 있는 위치 또는 마지막으로 양호한 상태였던 날짜를 기억하지 못하더라도 데이터베이스를 복원할 수 있습니다.  필터를 사용하여 데이터베이스를 검색할 수 있습니다.</block>
   <block id="f7b6484db67a5a5ebaa0cd7c631c837f" category="section-title">Oracle 데이터베이스 복원</block>
   <block id="2d2e2835608dd4c300d9727603452421" category="list-text">이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *Oracle*을 선택합니다.</block>
   <block id="71fcd2352c7b3f1be0c4680747f8cd92" category="list-text">복원하려는 데이터베이스의 이름을 입력하거나 복원하려는 데이터베이스가 있는 데이터베이스 호스트를 필터링합니다.</block>
@@ -5813,7 +5812,6 @@
   <block id="0a6313cec6301ae98c94e73ba522078e" category="list-text"><block ref="0a6313cec6301ae98c94e73ba522078e" category="inline-link-macro-rx"></block></block>
   <block id="ef28f96440f72809a7152ffc66dd809c" category="list-text"><block ref="ef28f96440f72809a7152ffc66dd809c" category="inline-link-macro-rx"></block></block>
   <block id="51c644b83084bd09a324c54def440e42" category="list-text">PDB는 하나만 선택하십시오. 특정 시점 복구는 여러 개의 PDB를 복원하는 것과 호환되지 않습니다.</block>
-  <block id="1de84049759abb6734a6922f26da254f" category="list-text">데이터 백업과 필요한 로그 백업이 카탈로그에 등록되었는지 확인하십시오.</block>
   <block id="4422040316e7063d2b6eeee89d2cb610" category="list-text">복원할 항목을 선택하십시오:</block>
   <block id="edaeb35620b1bfb1682cb9dc8b30993d" category="list-text">전체 데이터베이스 또는 컨테이너 데이터베이스(CDB)를 복원하려면 *모든 데이터 파일*을 선택하십시오.</block>
   <block id="6ef18b5f7ddc8dccec3f8cfc05180417" category="list-text">컨테이너의 다른 PDB에 영향을 주지 않고 CDB에서 하나 이상의 PDB를 복원하려면 *플러그형 데이터베이스(PDB)*를 선택합니다. 그런 다음 목록에서 PDB를 선택합니다.</block>
@@ -5848,12 +5846,8 @@
   <block id="6d26fc4748876aad896b3483365ea28f" category="list-text"><block ref="d77f3c9db249e472a92ac4b41ecc4805" prefix="" category="inline-code"></block>은(는) 특정 시점 복구를 위해 선택할 수 없습니다.</block>
   <block id="bba24b3818e297fabc67f6f7560b0988" category="list-text">제어 파일 복원은 PDB 또는 PDB 테이블스페이스의 특정 시점 복구와 함께 사용할 수 없습니다.</block>
   <block id="08b60260a4bc5ba792144d142c950168" category="list-text"><block ref="fa177138f94a7ea01f549b1aa7893d03" prefix=" " category="inline-code"></block>, <block ref="2000a37455e46fd15ee265c2382b9741" prefix=" " category="inline-code"></block>, 및 <block ref="269940bcad6fddf5c68d3e67f767c3d1" prefix=" " category="inline-code"></block> 테이블스페이스는 선택할 수 없습니다.</block>
-  <block id="9919b7cad46288ca29f8fb296dd13536" category="list-text">데이터 백업 및 필수 로그 백업이 카탈로그에 등록되었는지 확인하십시오.</block>
   <block id="0b375c92f006ebc34ffb21da222ac752" category="paragraph">지정된 날짜 및 시간에 가장 가까운 스냅샷이 표시됩니다.</block>
-  <block id="cdb77aa4c72bd58fc3f38eb99937d3d7" category="list-text">선택적으로 *로그 백업 보기*를 선택하여 관련 로그 백업을 확인할 수 있습니다.</block>
-  <block id="21df2c5f3ea31de3417da5d6b7a5af6f" category="list-text">로그 백업이 마운트되었는지 확인하십시오.</block>
   <block id="fe30a881b5d0622f2e579194115dc323" category="list-text">스냅샷이 여러 위치에 저장된 경우 사용할 소스 위치를 선택하고 위치 세부 정보를 추가하거나 검토하십시오.</block>
-  <block id="1a0861850bbff5a4629682768903a6a8" category="paragraph">지정된 SCN에 대한 가장 최근의 스냅샷이 표시됩니다.</block>
   <block id="190cbdc2fe368e8cdb928c64072a855e" category="paragraph">최신 스냅샷이 표시됩니다. 복원 작업은 사용 가능한 모든 로그 백업을 사용하여 마지막으로 정상 작동했던 상태를 복구합니다.</block>
   <block id="f7e9cc07ffeb39b44af9c81fc95ee80a" category="paragraph">이 옵션을 선택하면 데이터베이스가 스냅샷에서 복원되지만 복구는 건너뜁니다(로그 백업은 적용되지 않음).</block>
   <block id="12c36d7d5c6e22f7d7de9e842bd09185" category="paragraph">사용 가능한 스냅샷이 표시됩니다.</block>
@@ -5862,7 +5856,6 @@
   <block id="a6bd46b772365e5b6c3e3ebcfb5d88ce" category="list-text">RAC 데이터베이스의 경우 복원을 실행할 RAC 노드를 선택하십시오. 이 옵션은 RAC 데이터베이스에만 나타납니다.</block>
   <block id="f788e090e936649cf2c5c0ff154c27a9" category="list-text">선택적으로 *제어 파일* 옵션을 활성화하면 데이터베이스 제어 파일도 복원할 수 있습니다. 이 옵션은 PDB 또는 PDB 테이블스페이스의 특정 시점 복구 또는 SCN 복구에는 사용할 수 없습니다.</block>
   <block id="79d30138f764cb5a18ef350673cd0630" category="list-text">선택적으로, 백업 후 새 데이터 파일이 추가되었거나 LVM 디스크 그룹에서 LUN이 추가, 삭제 또는 재생성된 경우 인플레이스 복원을 수행하려면 *Force in place restore* 옵션을 활성화하십시오. 이 옵션을 활성화하면 외부 파일 검사가 무시되고, 선택한 복원 옵션을 사용하여 데이터베이스 복구가 진행됩니다.</block>
-  <block id="7c47104cd2fa4267b0939b38c887b1e1" category="list-text">PDB 또는 테이블스페이스를 특정 시점이나 SCN으로 복원할 때 아카이브 로그가 구성된 위치에 없는 경우 *외부 아카이브 로그 파일 위치* 필드에 외부 아카이브 로그 파일 위치를 지정하십시오. <block ref="6666cd76f96956469e7be39d750cc7d9" prefix=" " category="inline-code"></block>로 시작하는 파일 시스템 경로 또는 <block ref="26b17225b626fb9238849fd60eabdf60" prefix=" " category="inline-code"></block>로 시작하는 ASM 디스크 그룹을 입력하십시오. 텍스트 입력 필드 옆에 있는 "더하기" 및 "빼기" 버튼을 사용하여 위치를 추가하거나 제거하십시오. 이 필드는 복구 없이 스냅샷에서 복원하는 경우에는 나타나지 않습니다.</block>
   <block id="4a2e39bd630275c8eae0d833bd13f831" category="list-text">선택적으로 * 복구 후 데이터베이스 또는 컨테이너 데이터베이스를 읽기/쓰기 모드로 열기* 옵션을 활성화하고 복원 범위와 일치하는 하위 옵션을 선택하십시오(복구 없이 스냅샷에서 복원하는 경우에는 이러한 옵션이 나타나지 않습니다).</block>
   <block id="1598545f145b423567a9960785cf8619" category="list-text">*모든 데이터 파일*: 복구 후 데이터베이스 또는 컨테이너 데이터베이스를 READ-WRITE 모드로 엽니다.</block>
   <block id="ebdcd90fa368ddf5616f4eacd06110a8" category="list-text">*PDB 또는 PDB 테이블스페이스*: 복구 후 플러그형 데이터베이스를 읽기/쓰기 모드로 엽니다.</block>
@@ -5921,7 +5914,6 @@
   <block id="a9c837a95e737168ee3ce1e980c47216" category="list-text">*자격 증명*: KVM 호스트에 사용할 저장된 자격 증명을 선택하십시오.</block>
   <block id="d41a581fc85315dff70aff8313ea3257" category="list-text">*고급 설정*: 선택적으로 KVM 호스트와 통신할 포트를 입력하고 목록에서 호스트의 관리 플랫폼을 선택할 수 있습니다.</block>
   <block id="6ba9f255707f8a2103b20486c4949029" category="list-text">스패닝 디스크에 대한 동작 방식을 선택하십시오. 현재는 *항상 모든 스패닝 디스크 포함*이 지원됩니다.</block>
-  <block id="f3a516904e0ccca6ef2462dfb7ce6d13" category="admonition">CIFS 구성의 경우, Backup and Recovery는 보호 그룹에 속한 각 VM에 연결된 모든 디스크를 자동으로 보호합니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템에 분산된 파일(스패닝 디스크)과 단일 위치에만 있는 파일(비스패닝 디스크)이 모두 포함됩니다. SAN 구성의 경우, 모든 비스패닝 디스크가 보호 그룹에 포함됩니다.</block>
   <block id="eb66f05eb35d497da0a423fd13838c97" category="paragraph">선택적으로 *새 정책 생성*을 선택하여 새로운 보호 정책을 생성할 수 있습니다. 정책을 선택하면 정책 세부 정보가 표시됩니다.</block>
   <block id="c2a9493df2887bffbf4d321961143b50" category="paragraph">ONTAP 시스템에서 실행되는 VMware 데이터스토어와 VM을 보호하려면 먼저 NetApp Backup and Recovery에서 해당 항목을 검색해야 합니다. SnapCenter에서 백업 데이터와 정책을 가져올 수도 있습니다.</block>
   <block id="56ed800e3e95a86a0d288e29e284d3d6" category="section-title">VMware 워크로드를 검색하고 필요에 따라 SnapCenter Plug-in 리소스를 가져옵니다</block>
@@ -6176,4 +6168,27 @@
   <block id="a940e8044fb83a96d0472abdc71d61e8" category="list-text">Cloud Volumes ONTAP 시스템과 콘솔 에이전트는 모두 Azure에 있어야 합니다.</block>
   <block id="389c52d9a18d68d9dd6a3eb24bc88982" category="list-text">*Cloud Volumes ONTAP Azure Entra ID 지원*: Azure 인증에 스토리지 계정 액세스 키를 사용하지 않으려는 경우, 이제 Azure 오브젝트 스토리지 버킷 구성에 Microsoft Entra ID 인증을 사용할 수 있습니다. 이 옵션은 ONTAP 9.16.1 이상이 실행되는 Azure 시스템의 Cloud Volumes ONTAP에서 지원됩니다.</block>
   <block id="82d1d9da33b9c6cae173365156457fff" category="section-title">VMware 워크로드 향상</block>
+  <block id="b77bf9dc680cf2db1d8b3d5f6156585b" category="list-text">*NetApp MetroCluster 지원*: 이제 NetApp Backup and Recovery를 사용하여 NetApp MetroCluster로 미러링된 Hyper-V VM을 보호할 수 있습니다.</block>
+  <block id="7ed9eebaad97e0f936b753873e6ff586" category="list-text">*SAN VM용 스패닝 디스크 보호*: CIFS 및 SAN 구성의 경우, 이제 보호 그룹의 각 VM에 연결된 모든 디스크를 보호할 수 있습니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템에 분산된 파일(스패닝 디스크)과 단일 위치로 제한된 파일이 포함됩니다.</block>
+  <block id="82dd01a289cf98e9d962781faec1018b" category="paragraph">*자동 아카이브 로그 관리*: 데이터베이스 복원 및 복제 작업 중에 NetApp Backup and Recovery는 필요한 아카이브 로그를 자동으로 검색하여 마운트하고, 작업이 완료되면 마운트를 해제합니다. 기본, 보조 및 오브젝트 스토리지 로그 소스가 지원됩니다.</block>
+  <block id="5f1a7ddd55d2a0b34003e08fe7cacdaf" category="section-title">Microsoft SQL Server 워크로드 향상</block>
+  <block id="32d770e78ed41453037389dce2e33d9c" category="paragraph">이번 릴리스에서 Microsoft SQL Server 워크로드는 다음과 같은 개선 사항을 도입했습니다:</block>
+  <block id="92337d8e70dfe880909b2051333e2fe4" category="paragraph">*라이선스 변경 사항*: 디스크 간 또는 디스크 간 팬아웃 아키텍처를 사용하는 백업에는 더 이상 요금이 부과되지 않습니다. 요금은 3-2-1 또는 디스크-오브젝트 스토리지 아키텍처를 사용하는 백업을 포함하여 오브젝트 스토리지에 대한 백업에만 적용됩니다.</block>
+  <block id="2f75ea4c51ce88400f5201fdeb2ccb9d" category="inline-link">NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 워크로드를 보호하는 방법에 대해 알아보십시오.</block>
+  <block id="a5e96f4320434690f042cf906acacdcd" category="paragraph">Microsoft SQL Server 워크로드 보호에 대한 자세한 내용은 <block ref="36e999a623e2068d9719d9ca1143b559" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
+  <block id="fb45f68d5333e580b42206cf36659ecd" category="list-text">Microsoft SQL Server 워크로드를 보호할 경우 오브젝트 스토리지에 대한 백업에 대해서만 비용이 청구됩니다(예: 3-2-1 백업 아키텍처 또는 디스크-오브젝트 스토리지를 사용하는 경우).</block>
+  <block id="7065e852c4b6888b4e74708a90ddb20d" category="list-text">Oracle Database 워크로드는 미리 보기 릴리스 상태이므로 라이선스가 필요하지 않습니다.</block>
+  <block id="e28980c3ae4b3c703cc7a4f8d25ecda7" category="admonition">CIFS 및 SAN 구성의 경우 Backup and Recovery는 보호 그룹의 각 VM에 연결된 모든 디스크를 자동으로 보호합니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템에 분산된 파일(스패닝 디스크)과 단일 위치에 제한된 파일(비 스패닝 디스크)이 포함됩니다.</block>
+  <block id="c138f0fc5add74f3ad77a943271dcc42" category="section-title">사용 가능한 Oracle Database 복원 지점에 대한 정보를 확인하십시오</block>
+  <block id="b8294ceea04597d2d60f5b28b3b3f610" category="paragraph">SCN 번호 및 관련 데이터베이스 인카네이션을 포함하여 사용 가능한 복원 지점을 확인하십시오.</block>
+  <block id="e55e7c5f94a5f9a43478bf91d01e8053" category="admonition">Oracle Database는 <block ref="d25b8c1b3f7ba3e06913b87e4360ec6d" prefix=" " category="inline-code"></block> 옵션을 사용하여 데이터베이스를 열 때마다 새 데이터베이스 인카네이션을 생성합니다. NetApp Backup and Recovery는 복원 지점을 검토하거나 특정 SCN으로 복원할 때 관련 데이터베이스 인카네이션 목록을 표시합니다.</block>
+  <block id="bd3847966f48b6808bad35d652e79b8b" category="list-text">백업 및 복구 메뉴에서 *인벤토리*를 선택합니다.</block>
+  <block id="770e9d2ddce6214aa3a89285f53f6579" category="list-text">Oracle Database 워크로드에 대해 *뷰*를 선택합니다.</block>
+  <block id="4a2205c1af5bce054c0536c538540831" category="list-text">복원 지점을 보려는 데이터베이스의 *작업* <block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 선택하고 *보호 세부 정보 보기*를 선택합니다.</block>
+  <block id="3300f2655fe420c86cc828285fa0c124" category="list-text">사용 가능한 복원 지점과 각 복원 지점과 관련된 SCN 번호 및 데이터베이스 인카네이션을 검토하십시오.</block>
+  <block id="402afb3450325e60e5ac66aa3a09b855" category="list-text">선택적으로, 사용 가능한 SCN 및 관련 데이터베이스 인카네이션을 확인하려면 <block ref="c12704870bf071e0e07ed4d97d800d3f" category="inline-xref-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="eec1bb4eef0bc2471da6d24624c8e7af" category="paragraph">지정된 SCN과 가장 일치하는 스냅샷이 표시됩니다. 여러 데이터베이스 인카네이션이 SCN과 일치하는 경우 일치하는 모든 인카네이션이 표시됩니다.</block>
+  <block id="004ae5ca2de3ea160e921da76ac388d7" category="list-text">검색 결과와 일치하는 데이터베이스 인카네이션이 여러 개 있는 경우, 올바른 인카네이션이 포함된 스냅샷을 선택하십시오.</block>
+  <block id="38eb0a9d79c02f31a9749c6e9e2b5e32" category="list-text">PDB 또는 테이블스페이스를 특정 시점이나 SCN으로 복원할 때 아카이브 로그가 구성된 위치에 없는 경우 *외부 아카이브 로그 파일 위치 지정* 필드에 외부 아카이브 로그 파일 위치를 지정하십시오. <block ref="6666cd76f96956469e7be39d750cc7d9" prefix=" " category="inline-code"></block>로 시작하는 파일 시스템 경로 또는 <block ref="26b17225b626fb9238849fd60eabdf60" prefix=" " category="inline-code"></block>로 시작하는 ASM 디스크 그룹을 입력하십시오. 텍스트 입력 필드 옆에 있는 "더하기" 및 "빼기" 버튼을 사용하여 위치를 추가하거나 제거하십시오. 이 필드는 복구 없이 스냅샷에서 복원하는 경우에는 나타나지 않습니다.</block>
+  <block id="e019cb225a4644922cdd06575b099710" category="section-title">2026년 10월 12일</block>
 </blocks>

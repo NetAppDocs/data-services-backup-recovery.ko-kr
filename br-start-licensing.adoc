@@ -18,6 +18,8 @@ NetApp 콘솔 또는 NetApp 콘솔 로컬 배포에서 마켓플레이스 구독
 
 라이선스 작동 방식에 대한 몇 가지 참고 사항:
 
+* Microsoft SQL Server 워크로드를 보호할 경우 오브젝트 스토리지에 대한 백업에 대해서만 비용이 청구됩니다(예: 3-2-1 백업 아키텍처 또는 디스크-오브젝트 스토리지를 사용하는 경우).
+* Oracle Database 워크로드는 미리 보기 릴리스 상태이므로 라이선스가 필요하지 않습니다.
 * ONTAP Volumes 워크로드를 사용하는 경우 라이선스 없이도 볼륨을 검색하고 복원할 수 있습니다. 하지만 볼륨을 보호(백업)해야 하는 경우에는 라이선스를 구매해야 합니다.
 * NetApp Console 로컬 배포와 함께 Backup and Recovery를 사용하는 경우, BYOL(Bring Your Own License) 라이선스만 구매할 수 있습니다.
 * NetApp Backup and Recovery BYOL(Bring Your Own License)은 NetApp Console 조직이나 계정과 연결된 모든 시스템에서 사용할 수 있는 플로팅 라이선스입니다.  따라서 기존 BYOL 라이선스에서 충분한 백업 용량을 사용할 수 있는 경우 다른 BYOL 라이선스를 구매할 필요가 없습니다.
