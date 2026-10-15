@@ -263,6 +263,18 @@ NOTE: NetApp 스토리지에 프로비저닝된 패스스루 디스크 또는 VH
 |===
 
 
+[[required-permissions-for-microsoft-sql-server-host-discovery]]
+=== Microsoft SQL Server 호스트 검색에 필요한 권한
+
+SQL Server 호스트를 검색하면 NetApp Backup and Recovery는 해당 호스트에 Microsoft SQL Server용 NetApp SnapCenter 플러그인을 설치합니다. 대신 플러그인을 수동으로 설치하도록 선택할 수도 있습니다. 자동 설치를 선택하는 경우, Backup and Recovery가 플러그인을 설치할 수 있도록 검색 중에 제공하는 호스트 자격 증명에 다음 멤버십 및 권한이 있어야 합니다.
+
+* Microsoft SQL Server 인스턴스의  `sysadmin`고정 서버 수준 역할 멤버십
+* Windows 로컬 관리자 그룹의 구성원 자격
+* 호스트에 로그인할 수 있는 권한
+
+
+
+
 [[requirements-for-protecting-vmware-workloads]]
 == VMware 워크로드 보호를 위한 요구 사항
 
@@ -411,6 +423,33 @@ NOTE: ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공�
 
 
 |===
+
+
+[[required-permissions-for-oracle-database-host-discovery]]
+=== Oracle Database 호스트 검색에 필요한 권한
+
+Oracle Database 호스트를 검색하면 NetApp Backup and Recovery는 암호 기반 SSH를 사용하여 호스트에 NetApp Oracle Database 플러그인을 설치합니다. 대신 플러그인을 수동으로 설치할 수도 있습니다. 플러그인 설치에는 특정 권한이 필요합니다.
+
+
+
+==== 자동 플러그인 설치를 사용하는 경우의 요구 사항
+
+Backup and Recovery가 NetApp Oracle Database 플러그인을 설치할 수 있도록 검색 중에 제공하는 호스트 자격 증명에는 다음 권한이 있어야 합니다:
+
+* 루트 권한 또는 루트가 아닌 사용자의 경우 sudo 액세스가 필요합니다. 호스트 검색 중에 sudo 액세스 권한을 부여하려면 *호스트 등록* 섹션에서 루트가 아닌 자격 증명을 선택한 다음 *sudoers 구성*을 선택하고 지침을 따르십시오. 루트 자격 증명을 사용하는 경우에는 이 단계가 필요하지 않습니다.
+* Java JVM에 대한 실행 권한.
+
+
+
+
+==== 플러그인을 수동으로 설치할 경우 필요한 사항
+
+플러그인을 수동으로 설치하는 경우, 설치에 사용되는 계정에는 다음과 같은 권한이 있어야 합니다:
+
+* 루트 권한 또는 루트가 아닌 사용자의 sudo 권한.
+* Java JVM에 대한 실행 권한.
+
+
 
 
 [[requirements-for-protecting-kubernetes-applications]]

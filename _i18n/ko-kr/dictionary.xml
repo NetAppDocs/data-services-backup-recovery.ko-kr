@@ -584,7 +584,6 @@
   <block id="afedbe20f6822f0dee210eea973a9560" category="list-text">*작업 유형*: 이 버전에서는 Microsoft SQL Server만 사용할 수 있습니다.</block>
   <block id="8ced46662b7c39f90c1b2041834e629b" category="list-text">*vCenter 설정*: 기존 vCenter를 선택하거나 새 vCenter를 추가합니다. 새로운 vCenter를 추가하려면 vCenter FQDN 또는 IP 주소, 사용자 이름, 비밀번호, 포트 및 프로토콜을 입력하세요.</block>
   <block id="757f6c0f45e5e6c857597da9d0a937d1" category="admonition">vCenter 정보를 입력하는 경우 vCenter 설정과 호스트 등록에 대한 정보를 모두 입력합니다.  여기에 vCenter 정보를 추가하거나 입력한 경우 다음으로 고급 설정에서 플러그인 정보도 추가해야 합니다.</block>
-  <block id="2b6e241b6ca02934c3d70cbf729b2190" category="list-text">*호스트 등록*: *자격 증명 추가*를 선택하고 검색하려는 워크로드가 포함된 호스트에 대한 정보를 입력합니다.</block>
   <block id="9c4b59ad81bef49107c1a8eb04473a44" category="admonition">vCenter 서버가 아닌 독립형 서버를 추가하는 경우 호스트 정보만 입력하세요.</block>
   <block id="180f20972969fa31108736a33e1febee" category="list-text">고급 설정을 계속합니다.</block>
   <block id="4f95933eb191bec1d5fda6d14b048ae9" category="list-text">워크로드 리소스 검색 페이지에서 다음 정보를 입력합니다.</block>
@@ -4714,7 +4713,6 @@
   <block id="4ad36f854b6d4d49c94081fec1b29de2" category="list-text">ONTAP 9.19.1 이상 버전이 있어야 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷(최대 100개 버킷)을 지원할 수 있습니다.</block>
   <block id="59ebd83b4c20d2b24ac46c96525c37fc" category="list-text">ONTAP 9.13.1 이상 (서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요합니다. 최대 100개 버킷까지 지원 가능)</block>
   <block id="6a0d2c5dd8e27d910d6ff2158f8d5520" category="list-text">기본 ONTAP 시스템(ONTAP 9.14.1 이상 - 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요하며, 최대 100개의 버킷까지 지원 가능)</block>
-  <block id="d2bf4d042aabc15b9ccde353c782a6f2" category="list-text">Microsoft Windows Server 2025를 사용하는 경우 SAN 스토리지에 저장된 2세대 가상 머신 보호는 지원되지 않습니다.</block>
   <block id="b2d5ba8de92c18cbb9c45e01ad3f5509" category="list-text">다른 위치(기본, 보조 및 오브젝트 저장소)로 복원</block>
   <block id="62ff0d9db122207756fd73342a3eb3ad" category="paragraph">NetApp Backup and Recovery는 이제 서로 다른 클라우드 공급자에 걸쳐 최대 100개의 버킷을 사용하여 시스템 내 워크로드를 보호하는 기능을 지원합니다. 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상 버전이 필요합니다.</block>
   <block id="0d1c49b7f34131be8c6ddbc862cc359d" category="list-text">가능한 한 HelmChartConfig 파일을 변경 관리 대상에 포함시키십시오.</block>
@@ -5017,7 +5015,6 @@
   <block id="6dee314e5a8212befbbb5550bcd8c82f" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 워크로드에 대한 현재 제한 사항 및 지원되지 않는 작업을 검토하십시오.</block>
   <block id="2320ca4680a90af67c892bc394770545" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 워크로드에 대해 다음 작업은 지원되지 않습니다.</block>
   <block id="5ef97381ee778e6a2856d655b0f66fc2" category="list-text">여러 Hyper-V 호스트의 VM을 사용하여 리소스 그룹 생성</block>
-  <block id="4b1cae8294562e32be20bab07c14f9bc" category="list-text">여러 CIFS 공유에 걸쳐 스패닝 디스크 사용</block>
   <block id="38ac42adbbba8d3dccfd49459843843b" category="paragraph">NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 현재 제한 사항 및 해결 방법을 검토하십시오.</block>
   <block id="c5e627d3d20d62858bf75231e8a6b069" category="section-title">NetApp Console 로컬 배포를 위한 Backup and Recovery 미리 보기의 제한 사항</block>
   <block id="e5d90e82b6c24e7b1bf837dd1bcb3d30" category="paragraph">애플리케이션의 보호 정책을 변경하여 다른 버킷이나 보조 복제 대상을 사용하도록 설정하면 보호가 실패할 수 있습니다.</block>
@@ -5130,9 +5127,7 @@
   <block id="ab01805ccfe371fe51580a961290e0c4" category="paragraph">VMware 환경을 사용하는 경우 이 단계는 선택 사항입니다.</block>
   <block id="9b42846cd9771e997a08e3200d79e8e3" category="admonition">vCenter 정보를 입력하는 경우 vCenter 설정과 호스트 등록 정보를 모두 입력해야 합니다. vCenter 정보를 여기에 추가하거나 입력한 경우, 다음 단계인 고급 설정에서 플러그인 정보도 추가해야 합니다.</block>
   <block id="6e895abe8a9bc049bbd4b4acc199426d" category="section-title">검색 중에 고급 설정 옵션을 지정하고 플러그인을 설치합니다.</block>
-  <block id="b5c6b1b5218957aa87aa0f5da8f67efc" category="paragraph">고급 설정을 사용하면 등록할 모든 서버에 플러그인 에이전트를 수동으로 설치할 수 있습니다. 이를 통해 모든 SnapCenter 워크로드를 NetApp Backup and Recovery로 가져와 백업 및 복원을 관리할 수 있습니다. NetApp Backup and Recovery에서 플러그인 설치에 필요한 단계를 안내합니다.</block>
   <block id="05ec5e0d0ed90b0c5620cefe19c46d67" category="list-text">'리소스 살펴보기' 페이지에서 오른쪽의 아래쪽 화살표를 선택하여 '고급 설정'으로 이동합니다.</block>
-  <block id="0a51d763335c94619b1bad74ea3fa23d" category="list-text">*플러그인 포트 번호를 입력하십시오*: 플러그인이 사용하는 포트 번호를 입력하십시오.</block>
   <block id="8cd0810025b90e56e30a8cd2c7647649" category="list-text">*설치 경로*: 플러그인이 설치될 경로를 입력하십시오.</block>
   <block id="9d0a0f1f3ed9f239f57d8c5056d68fae" category="list-text">SnapCenter 에이전트를 수동으로 설치하려면 다음 옵션을 선택하십시오.</block>
   <block id="51b2f0bb496d4976f9362c52c90bc7cb" category="list-text">*수동 설치 사용*: 플러그인을 수동으로 설치하려면 이 옵션을 선택하십시오.</block>
@@ -6193,4 +6188,25 @@
   <block id="54ea8878308d39d6d78a01f24a278aa1" category="list-text">*작업 모니터 사용자 지정 날짜 범위 필터링*: 이제 작업 모니터의 달력에서 사용자 지정 시작일과 종료일을 선택하여 지난 90일간의 작업을 검색할 수 있습니다.</block>
   <block id="61065205211a8d57175713e9b45b8198" category="paragraph">이 패널을 사용하여 모든 리소스에 대한 자유 텍스트 검색을 입력할 수 있습니다(예: "볼륨 1" 또는 "애플리케이션 3"). 또한 드롭다운 메뉴의 항목에 따라 작업 목록을 필터링할 수도 있습니다. 기간을 검색할 수도 있습니다.</block>
   <block id="9598a4f2b418f0c49368419070383673" category="paragraph">기간을 검색할 때는 *사용자 지정 범위*를 선택하여 달력에서 시작일과 종료일을 선택하십시오.</block>
+  <block id="2b8abfeb97d865eaa0365ae5ea904375" category="list-text">*호스트 등록*: 다음 정보를 입력하십시오:</block>
+  <block id="2262ff21634c9674e4ff5f4c74bda8cd" category="list-text">호스트의 FQDN 또는 IP 주소</block>
+  <block id="8c212cb55c136cbf08fbff8301a57f9e" category="list-text">호스트가 Backup and Recovery와 통신하는 데 사용하는 콘솔 에이전트</block>
+  <block id="ffffc5b40a52bf8078bfaa777967b249" category="list-text">호스트에 저장된 자격 증명</block>
+  <block id="ff35c388a5cbf8ae8f8807f67d1462b3" category="paragraph">이 호스트에 대한 자격 증명을 NetApp Backup and Recovery에 아직 추가하지 않은 경우 *자격 증명 추가*를 선택하고 호스트에 대한 자격 증명 정보를 입력하십시오.</block>
+  <block id="0984a9b22a15a2ae7667031dd00e4230" category="paragraph">고급 설정을 사용하면 등록되는 모든 서버에 Microsoft SQL Server용 NetApp SnapCenter 플러그인을 수동으로 설치할 수 있습니다. 이렇게 하면 모든 SnapCenter 워크로드를 NetApp Backup and Recovery로 가져와서 백업 및 복원을 관리할 수 있습니다. NetApp Backup and Recovery는 플러그인 설치에 필요한 단계를 보여줍니다.</block>
+  <block id="ca670126755dcd34f80e41c964315abf" category="list-text">*플러그인 포트*: 플러그인이 사용하는 포트 번호를 입력하십시오.</block>
+  <block id="2f613600ce95cea85557e892bb8ce093" category="section-title">Microsoft SQL Server 호스트 검색에 필요한 권한</block>
+  <block id="d39410ece499dd7cb49c6305b59c92f2" category="paragraph">SQL Server 호스트를 검색하면 NetApp Backup and Recovery는 해당 호스트에 Microsoft SQL Server용 NetApp SnapCenter 플러그인을 설치합니다. 대신 플러그인을 수동으로 설치하도록 선택할 수도 있습니다. 자동 설치를 선택하는 경우, Backup and Recovery가 플러그인을 설치할 수 있도록 검색 중에 제공하는 호스트 자격 증명에 다음 멤버십 및 권한이 있어야 합니다.</block>
+  <block id="bc6f4ea338b05255900e4b0506829f4c" category="list-text">Microsoft SQL Server 인스턴스의 <block ref="48a365b4ce1e322a55ae9017f3daf0c0" prefix=" " category="inline-code"></block>고정 서버 수준 역할 멤버십</block>
+  <block id="85e3de057dc6005479930eb6aa5b2f79" category="list-text">Windows 로컬 관리자 그룹의 구성원 자격</block>
+  <block id="2ff43e2a2d5b0aa3489389af408c838a" category="list-text">호스트에 로그인할 수 있는 권한</block>
+  <block id="80d46fed65051869c8128d0c98118592" category="section-title">Oracle Database 호스트 검색에 필요한 권한</block>
+  <block id="79358627f2feaa4d2338391a918789ac" category="paragraph">Oracle Database 호스트를 검색하면 NetApp Backup and Recovery는 암호 기반 SSH를 사용하여 호스트에 NetApp Oracle Database 플러그인을 설치합니다. 대신 플러그인을 수동으로 설치할 수도 있습니다. 플러그인 설치에는 특정 권한이 필요합니다.</block>
+  <block id="168489ecd7560d51be74b06b631df49c" category="section-title">자동 플러그인 설치를 사용하는 경우의 요구 사항</block>
+  <block id="41727149db11b5b52863b15d5def9886" category="paragraph">Backup and Recovery가 NetApp Oracle Database 플러그인을 설치할 수 있도록 검색 중에 제공하는 호스트 자격 증명에는 다음 권한이 있어야 합니다:</block>
+  <block id="1da21a47453ca95a01bd9ec124a97558" category="list-text">루트 권한 또는 루트가 아닌 사용자의 경우 sudo 액세스가 필요합니다. 호스트 검색 중에 sudo 액세스 권한을 부여하려면 *호스트 등록* 섹션에서 루트가 아닌 자격 증명을 선택한 다음 *sudoers 구성*을 선택하고 지침을 따르십시오. 루트 자격 증명을 사용하는 경우에는 이 단계가 필요하지 않습니다.</block>
+  <block id="8086df899fb70153c36c060c18be25c4" category="list-text">Java JVM에 대한 실행 권한.</block>
+  <block id="3e3321c0918c1d68c43253c427d52a85" category="section-title">플러그인을 수동으로 설치할 경우 필요한 사항</block>
+  <block id="bd6c005addd81d8409ae4c84d588f53d" category="paragraph">플러그인을 수동으로 설치하는 경우, 설치에 사용되는 계정에는 다음과 같은 권한이 있어야 합니다:</block>
+  <block id="901e5d2cf1e185b371f3c54154d4da3c" category="list-text">루트 권한 또는 루트가 아닌 사용자의 sudo 권한.</block>
 </blocks>
