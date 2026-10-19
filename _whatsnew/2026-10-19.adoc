@@ -1,0 +1,14 @@
+= Oracle Database 워크로드 향상
+:allow-uri-read: 
+
+
+
+
+[[oracle-database-workloads-enhancement]]
+=== Oracle Database 워크로드 향상
+
+이번 릴리스에서 Oracle Database 워크로드는 다음과 같은 개선 사항을 도입했습니다.
+
+*Oracle Data Guard 지원*: NetApp Backup and Recovery는 이제 고가용성을 위해 Oracle Data Guard를 사용하는 기본 및 대기 데이터베이스를 보호하기 위한 보호 그룹 사용을 지원합니다.
+
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.

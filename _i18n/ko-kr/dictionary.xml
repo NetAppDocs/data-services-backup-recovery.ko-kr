@@ -5013,7 +5013,6 @@
   <block id="c234b1583acaea4fed0749d70c41d549" category="listing-title">&lt;code&gt;상태&lt;/code&gt;가 &lt;code&gt;COMPLETED&lt;/code&gt;가 될 때까지 모니터링합니다.</block>
   <block id="6dee314e5a8212befbbb5550bcd8c82f" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 워크로드에 대한 현재 제한 사항 및 지원되지 않는 작업을 검토하십시오.</block>
   <block id="2320ca4680a90af67c892bc394770545" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 워크로드에 대해 다음 작업은 지원되지 않습니다.</block>
-  <block id="5ef97381ee778e6a2856d655b0f66fc2" category="list-text">여러 Hyper-V 호스트의 VM을 사용하여 리소스 그룹 생성</block>
   <block id="38ac42adbbba8d3dccfd49459843843b" category="paragraph">NetApp Backup and Recovery에서 Kubernetes 워크로드에 대한 현재 제한 사항 및 해결 방법을 검토하십시오.</block>
   <block id="c5e627d3d20d62858bf75231e8a6b069" category="section-title">NetApp Console 로컬 배포를 위한 Backup and Recovery 미리 보기의 제한 사항</block>
   <block id="e5d90e82b6c24e7b1bf837dd1bcb3d30" category="paragraph">애플리케이션의 보호 정책을 변경하여 다른 버킷이나 보조 복제 대상을 사용하도록 설정하면 보호가 실패할 수 있습니다.</block>
@@ -5110,7 +5109,6 @@
   <block id="0da8b01ff90ac6c56d271760e3cae180" category="list-text">Oracle Database 호스트의 sudoers 파일에 선택한 비루트 사용자를 추가하는 방법에 대한 지침을 보려면 *sudoers 구성*을 선택하십시오.</block>
   <block id="91acd102eb682e81c6d3b35f15584ce9" category="paragraph">NetApp Backup and Recovery는 SSH를 통해 각 호스트에 연결하여 플러그인을 자동으로 설치합니다. 다음 중 하나에 해당하는 경우 *수동 설치 사용*을 활성화하십시오.</block>
   <block id="f4de6ef110c2809c2cea661247d6cb3b" category="admonition">리소스를 추가하는 데 몇 분 정도 소요될 수 있습니다. 진행 상황을 확인하려면 인벤토리 페이지 하단의 상태 대화 상자에서 *진행 상황 추적*을 선택하거나 왼쪽 탐색 메뉴에서 *모니터링*을 선택하십시오.</block>
-  <block id="f3436bbdd5970784a88deadec1e68fca" category="paragraph">Oracle Database 워크로드는 인벤토리 페이지의 워크로드 목록에 나타납니다.</block>
   <block id="967daf4999f1b34597e41a06dcbebb8d" category="list-text">워크로드 타일을 선택하십시오(예: Oracle Database).</block>
   <block id="f23a00db51eb125b74f1083a222aa335" category="list-text">데이터 보호 상태를 검토하십시오. 위험에 처한 워크로드 또는 보호된 워크로드의 수는 새로 발견, 보호 및 백업된 워크로드 수에 따라 증가합니다.</block>
   <block id="481bf56c7b5ff0737dc345dbd4230f02" category="paragraph">NetApp Backup and Recovery에서 Microsoft SQL Server 워크로드를 검색하여 보호하고 복원할 수 있습니다. 이미 SnapCenter를 사용하고 있는 경우 기존 백업 데이터 및 정책을 가져올 수도 있습니다.</block>
@@ -6201,15 +6199,29 @@
   <block id="2ff43e2a2d5b0aa3489389af408c838a" category="list-text">호스트에 로그인할 수 있는 권한</block>
   <block id="80d46fed65051869c8128d0c98118592" category="section-title">Oracle Database 호스트 검색에 필요한 권한</block>
   <block id="79358627f2feaa4d2338391a918789ac" category="paragraph">Oracle Database 호스트를 검색하면 NetApp Backup and Recovery는 암호 기반 SSH를 사용하여 호스트에 NetApp Oracle Database 플러그인을 설치합니다. 대신 플러그인을 수동으로 설치할 수도 있습니다. 플러그인 설치에는 특정 권한이 필요합니다.</block>
-  <block id="168489ecd7560d51be74b06b631df49c" category="section-title">자동 플러그인 설치를 사용하는 경우의 요구 사항</block>
   <block id="41727149db11b5b52863b15d5def9886" category="paragraph">Backup and Recovery가 NetApp Oracle Database 플러그인을 설치할 수 있도록 검색 중에 제공하는 호스트 자격 증명에는 다음 권한이 있어야 합니다:</block>
-  <block id="1da21a47453ca95a01bd9ec124a97558" category="list-text">루트 권한 또는 루트가 아닌 사용자의 경우 sudo 액세스가 필요합니다. 호스트 검색 중에 sudo 액세스 권한을 부여하려면 *호스트 등록* 섹션에서 루트가 아닌 자격 증명을 선택한 다음 *sudoers 구성*을 선택하고 지침을 따르십시오. 루트 자격 증명을 사용하는 경우에는 이 단계가 필요하지 않습니다.</block>
   <block id="8086df899fb70153c36c060c18be25c4" category="list-text">Java JVM에 대한 실행 권한.</block>
-  <block id="3e3321c0918c1d68c43253c427d52a85" category="section-title">플러그인을 수동으로 설치할 경우 필요한 사항</block>
-  <block id="bd6c005addd81d8409ae4c84d588f53d" category="paragraph">플러그인을 수동으로 설치하는 경우, 설치에 사용되는 계정에는 다음과 같은 권한이 있어야 합니다:</block>
-  <block id="901e5d2cf1e185b371f3c54154d4da3c" category="list-text">루트 권한 또는 루트가 아닌 사용자의 sudo 권한.</block>
   <block id="061c095c759eb7e64dd46465f3c7a817" category="paragraph">Backup and Recovery에서 ONTAP 시스템을 검색하기 전에 다음 사항을 확인하십시오:</block>
   <block id="5df6bd1a45bdd2a4028f468e490de21e" category="list-text">온프레미스 ONTAP 인스턴스에 ONTAP One 라이선스가 활성화되어 있는지 확인하십시오.</block>
   <block id="74fbbc0e09dfc08bd2ae9fa2fa257555" category="list-text">ONTAP 시스템 검색에 사용하는 ONTAP 사용자의<block ref="dc647eb65e6711e155375218212b3964" prefix=" " category="inline-code"></block> 로그인 방법으로 AMQP 애플리케이션이 활성화되어 있는지 확인하십시오. 이렇게 하면 예약된 백업 작업이 Job Monitor에 표시됩니다. 사용자 관리 지침은<block ref="08349f0e2e31cf6e59517a8789874b25" category="inline-link-rx"></block> 참조하십시오.</block>
   <block id="2a6990e4544c8a19dcf0e20cd83f5c68" category="paragraph">일부 ONTAP 기능에는 특정 ONTAP 버전이 필요합니다:</block>
+  <block id="b81cecd98ea4b4f80df7b99bd8f7480e" category="paragraph">*Oracle Data Guard 지원*: NetApp Backup and Recovery는 이제 고가용성을 위해 Oracle Data Guard를 사용하는 기본 및 대기 데이터베이스를 보호하기 위한 보호 그룹 사용을 지원합니다.</block>
+  <block id="a1f64a2f11ad0edebf465c430dceffb3" category="list-text">NetApp Backup and Recovery는 현재 FlexGroup 볼륨에 호스팅된 Hyper-V LUN 보호를 지원하지 않습니다.</block>
+  <block id="2ff849b2bfb227ca5861a726eac745c4" category="list-text">여러 Hyper-V 호스트의 VM으로 리소스 그룹을 만들 수는 없습니다.</block>
+  <block id="d4877862cff89c6cc177b4a6402a008d" category="paragraph">Oracle 데이터베이스 호스트는 인벤토리 페이지의 워크로드 목록에 나타납니다.</block>
+  <block id="0b988f352bf3178a56bb9dbb7aa6f591" category="section-title">Oracle 데이터베이스 인벤토리 보기</block>
+  <block id="13b17d82aa76831194bc5fedd9ef5155" category="paragraph">백업 및 복구 인벤토리에서 발견한 Oracle 데이터베이스 리소스에 대한 세부 정보를 검토하십시오.</block>
+  <block id="ef09861f0e356e1256cc79b90af82a9c" category="list-text">검색된 Oracle 데이터베이스 호스트를 보려면 *호스트* 탭을 선택하십시오.</block>
+  <block id="acb5a0c1d6543fd64291bcd931b0212a" category="paragraph">이 보기를 사용하면 각 호스트 이름, 각 호스트에서 호스팅하는 데이터베이스 수, 배포 모델(예: 클러스터, Oracle Data Guard 또는 독립 실행형) 및 기타 정보 등의 세부 정보를 확인할 수 있습니다.</block>
+  <block id="5ef22a9f4e63d5ea6dccdceaf60cc129" category="list-text">Oracle 데이터베이스 리소스를 보호하기 위해 생성된 보호 그룹을 보려면 *보호 그룹* 탭을 선택하십시오.</block>
+  <block id="4636080fe3dd6af1a05f50e6b8612fcd" category="list-text">각 Oracle Database 호스트에서 호스팅하는 데이터베이스를 보려면 *데이터베이스* 탭을 선택하십시오.</block>
+  <block id="88b5a8e3aeecbee62ee44ae9949af352" category="paragraph">이 보기에서는 각 데이터베이스가 단일 인스턴스인지, 클러스터 또는 고가용성 구성의 일부인지 등 자세한 정보를 보여줍니다.</block>
+  <block id="c567e32a931e50ea00e322c45bada4f9" category="list-text">보호 그룹에 적용할 *백업 정책*을 선택하십시오. Oracle Data Guard 구성의 일부인 데이터베이스를 포함하는 경우, Data Guard 옵션이 활성화된 백업 정책을 선택하십시오.</block>
+  <block id="e07c044b43b8ab05fce956dd78928ec0" category="list-text">*Data Guard 설정*: 정책에서 Data Guard 설정을 활성화할지 여부를 선택하고, Oracle Data Guard 배포 환경에서 데이터베이스를 보호할 때 기본, 보조 또는 기본 및 보조 데이터베이스를 모두 백업할지 여부를 선택합니다. Oracle Data Guard 배포 환경에서는 보호 그룹을 사용하여 데이터베이스를 보호할 수 있습니다.</block>
+  <block id="debe14f2792fef47d8b9076e14c82cb3" category="section-title">플러그인 설치 요구 사항</block>
+  <block id="3cf57a2a4d07542c89b05ad643bb219e" category="list-text">SSH를 사용하여 호스트에 로그인할 수 있는 기능.</block>
+  <block id="1bcf5153145f75a86a1ad16ea9b03c7a" category="list-text">루트 권한 또는 루트가 아닌 사용자의 경우 sudo 액세스가 필요합니다.</block>
+  <block id="5b82c5e93eb556ac924b1e6909752359" category="list-text">호스트 검색 중에 sudo 액세스 권한을 부여하려면 *호스트 등록* 섹션에서 루트가 아닌 자격 증명을 선택한 다음 *sudoers 구성*을 선택하고 지침을 따르십시오. 루트 자격 증명을 사용하는 경우에는 이 단계가 필요하지 않습니다. 수동 설치 시에는 이 단계가 필요하지 않습니다.</block>
+  <block id="41550faf0c68179011d757996fd6d047" category="list-text">Oracle 데이터베이스 사용자에게는 <block ref="4811df2c83bee7ee3a883640cc4d80af" prefix="" category="inline-code"></block> 권한이 필요합니다.</block>
+  <block id="5d3eb6919efa937c33d95e081b5ac2fc" category="section-title">2026년 10월 19일</block>
 </blocks>
