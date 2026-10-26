@@ -506,15 +506,6 @@
   <block id="7db92dd7efdf06d451de19b3781f8e9c" category="list-text">*태그*: S3 버킷에 대한 태그를 선택합니다.  태그는 S3 리소스를 구성하고 관리하는 데 사용할 수 있는 키-값 쌍입니다.</block>
   <block id="2e0fcab1edb478e0ed60f14f18213876" category="list-text">*암호화*: S3 버킷의 암호화 유형을 선택합니다.  옵션은 AWS S3 관리 키 또는 AWS Key Management Service 키입니다.  AWS Key Management Service 키를 선택하는 경우 키 ID를 제공해야 합니다.</block>
   <block id="041e82a49e6bf584cd99d83e1bafb066" category="list-text">*리소스 그룹*: Azure 리소스 그룹의 이름을 선택합니다.</block>
-  <block id="ae35608efd65bb3b4a4c91d9eb59142d" category="list-text">*인스턴스 세부 정보*:</block>
-  <block id="fc20d9e6ed90928d9ec3cbce5033eb69" category="list-text">*버킷 이름*: StorageGRID 버킷의 이름을 입력하세요.</block>
-  <block id="fb0a62ab3a9d8a07269344d7b23f7f5a" category="list-text">*지역*: 버킷의 StorageGRID 지역을 입력하세요.</block>
-  <block id="b7fd04780555fe4dcbc36171fb2c2e75" category="list-text">*버전 관리 활성화*: StorageGRID 버킷에 대한 버전 관리를 활성화하려면 이 옵션을 선택합니다.  버전 관리를 사용하면 버킷에 있는 객체의 여러 버전을 보관할 수 있으며, 이는 백업 및 복구 목적으로 유용할 수 있습니다.</block>
-  <block id="dd72147c676f5569cdd5fff6ac028f32" category="list-text">*객체 잠금*: StorageGRID 버킷에 대한 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰이는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  이 기능은 버킷을 생성할 때만 활성화할 수 있으며 나중에 끌 수 없습니다.</block>
-  <block id="6031dc56db006b45d651306df278faab" category="list-text">*용량*: StorageGRID 버킷의 용량을 입력하세요.  이는 버킷에 저장할 수 있는 최대 데이터 양입니다.</block>
-  <block id="c6321a7b8f7062e1faad1738a74c7b18" category="list-text">*용량*: ONTAP S3 버킷의 용량을 입력하세요.  이는 버킷에 저장할 수 있는 최대 데이터 양입니다.</block>
-  <block id="12ea5f17a4629e89577f5d94a91cf1b0" category="list-text">*버전 관리 활성화*: ONTAP S3 버킷의 버전 관리를 활성화하려면 이 옵션을 선택합니다.  버전 관리를 사용하면 버킷에 있는 객체의 여러 버전을 보관할 수 있으며, 이는 백업 및 복구 목적으로 유용할 수 있습니다.</block>
-  <block id="121844aa2e3824e5ec649efe8e79f965" category="list-text">*객체 잠금*: ONTAP S3 버킷에 대한 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰이는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  이 기능은 버킷을 생성할 때만 활성화할 수 있으며 나중에 끌 수 없습니다.</block>
   <block id="b4f88e9494ba01afc4abc87164a307eb" category="section-title">백업 대상의 자격 증명 변경</block>
   <block id="784e8d94d56b7cca4512442d67485233" category="paragraph">백업 대상에 액세스하는 데 필요한 자격 증명을 입력하세요.</block>
   <block id="500085ef4daa2d41e99c68f5d7ced622" category="list-text">백업 대상에 대한 새로운 자격 증명을 입력합니다.  정보는 선택한 백업 대상 유형에 따라 다릅니다.</block>
@@ -1158,7 +1149,6 @@
   <block id="e9bde7b168cf5fbb3d9d5b297ca8bfb2" category="list-text">*복구 없이 스냅샷에서 복원*을 선택합니다.</block>
   <block id="f3d19f008b19feab896904cb50b1a321" category="list-text">*추신*: 선택적으로 이 옵션을 활성화하고 복원 작업 이후에 실행되어야 하는 스크립트의 전체 경로와 스크립트가 취하는 인수를 입력합니다.</block>
   <block id="b82be1f9be4e926901513f5106f48a87" category="summary">NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다.</block>
-  <block id="e10aa0ad03a30aedbdc16bf5e8954db5" category="admonition">이러한 옵션과 구성 섹션 중 일부는 모든 워크로드에 사용할 수 없습니다.</block>
   <block id="f32ce25b9d7e6b0f57abe3fec295f863" category="inline-link-macro">SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점</block>
   <block id="5ccfa6adf604407ae2c4559222331c92" category="paragraph">SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에 약간의 차이가 발생할 수 있습니다.  보다<block ref="323b251497d754074219cdf246ce74d7" category="inline-link-macro-rx"></block> .</block>
   <block id="bd47823121834a26ffa455589637515d" category="paragraph">정책과 관련하여 다음과 같은 목표를 달성할 수 있습니다.</block>
@@ -1897,7 +1887,6 @@
   <block id="6520b079587db54a07f00ca17e5ebf3f" category="admonition">백업이 있는 시스템이나 클러스터를 삭제하려는 경우 시스템을 삭제하기 *전에* 백업을 삭제해야 합니다.  NetApp Backup and Recovery 시스템을 삭제할 때 자동으로 백업을 삭제하지 않으며, 현재 UI에서는 시스템이 삭제된 후 백업을 삭제하는 기능을 지원하지 않습니다.  남은 백업에 대해서는 계속해서 개체 스토리지 비용이 청구됩니다.</block>
   <block id="62fcab4349f4ca0402c709f1892d15bf" category="section-title">시스템의 모든 백업 파일을 삭제합니다.</block>
   <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-xref">여기에 설명된 대로</block>
-  <block id="390711dbf9b1194e9b19351d96031550" category="paragraph">시스템의 개체 스토리지에 있는 모든 백업을 삭제해도 해당 시스템의 볼륨에 대한 향후 백업은 비활성화되지 않습니다.  시스템의 모든 볼륨에 대한 백업 생성을 중지하려면 백업을 비활성화할 수 있습니다.<block ref="f79da60ab60aec0656411209a64eca6e" category="inline-xref-macro-rx"></block> .</block>
   <block id="29e9cf7ef22475594ad87c1e6e2499e4" category="list-text">선택하다<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 모든 백업을 삭제하려는 시스템의 경우 *모든 백업 삭제*를 선택합니다.</block>
   <block id="5eb0ad26e5b73df4b25640fc4cecc8b5" category="list-text">확인 대화 상자에서 시스템 이름을 입력합니다.</block>
   <block id="b2efc38b6f353a6ab5275e1b97a3207b" category="list-text">*고급 설정*을 선택하세요.</block>
@@ -1918,21 +1907,9 @@
   <block id="1173c80b35af26bafcc4b74670bfa9c8" category="inline-link">거기에서 볼륨을 삭제하세요</block>
   <block id="8e219be71b8bc390ef2ad2ec3a99ccae" category="paragraph">NetApp Backup and Recovery 사용자 인터페이스에서 소스 볼륨을 삭제할 수 없습니다.  하지만 콘솔 *시스템* 페이지에서 볼륨 세부 정보 페이지를 열 수 있습니다.<block ref="65a826e779230e29e5ca1795b6b89aba" category="inline-link-rx"></block> .</block>
   <block id="07351083dae4540a45ff30e023e217c2" category="list-text">*볼륨* 탭에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 소스 볼륨의 경우 *백업* &gt; *관계 삭제*를 선택합니다.</block>
-  <block id="97966562c30303c0bc168db1ef4e82e6" category="section-title">시스템에 대한 NetApp Backup and Recovery 비활성화</block>
   <block id="8764d766d622ae40812776b15d742a79" category="inline-xref">백업을 삭제하다</block>
   <block id="150316ac807c8abc9de05ff5720178a5" category="paragraph">백업에 사용되는 용량에 대한 개체 스토리지 비용은 클라우드 공급자가 계속 청구합니다.<block ref="f0fba6094ff5354e1300b0446d643e3c" category="inline-xref-macro-rx"></block> .</block>
-  <block id="a0fb50abe315f82d405a6dfa5e9af373" category="list-text">_백업 설정 페이지_에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 백업을 비활성화하려는 시스템의 경우 *백업 비활성화*를 선택하세요.</block>
-  <block id="ea2a76f4405b6e362502ec8a74d85774" category="list-text">확인 대화 상자에서 *비활성화*를 선택합니다.</block>
-  <block id="8f7dcbf976c2b6952c4600f157324198" category="admonition">백업이 비활성화되어 있는 동안 해당 시스템에는 *백업 활성화* 버튼이 나타납니다.  해당 시스템의 백업 기능을 다시 활성화하려면 이 버튼을 선택하면 됩니다.</block>
   <block id="c7f20e0601efa026bf0dd9479de3f55e" category="section-title">시스템에 대한 NetApp Backup and Recovery 등록 취소</block>
-  <block id="36d567455db793edde5264e68c28c75a" category="paragraph">더 이상 백업 기능을 사용하지 않고 해당 시스템에서 백업에 대한 요금이 청구되는 것을 원하지 않는 경우 해당 시스템의 NetApp Backup and Recovery 등록을 취소할 수 있습니다.  일반적으로 이 기능은 시스템을 삭제할 계획이고 백업 서비스를 취소하려는 경우에 사용됩니다.</block>
-  <block id="15c7aac94228eb0c1ad110f50335500c" category="paragraph">클러스터 백업이 저장되는 대상 개체 저장소를 변경하려는 경우에도 이 기능을 사용할 수 있습니다.  시스템의 NetApp Backup and Recovery 등록을 취소한 후, 새로운 클라우드 공급자 정보를 사용하여 해당 클러스터에 대해 NetApp Backup and Recovery 활성화할 수 있습니다.</block>
-  <block id="28b9d28e040edb153420aaa034a386c1" category="paragraph">NetApp Backup and Recovery 등록 취소하려면 다음 단계를 순서대로 수행해야 합니다.</block>
-  <block id="39b3af400d3ca8b2d3d8dca4f75cd99e" category="list-text">시스템에 대한 NetApp Backup and Recovery 비활성화</block>
-  <block id="59aea9f6f5073dc62e11916d7a07492f" category="list-text">해당 시스템의 모든 백업을 삭제합니다.</block>
-  <block id="f7ae31ad4a6513f59e6103af4d0c2230" category="paragraph">이 두 가지 작업이 완료될 때까지 등록 취소 옵션을 사용할 수 없습니다.</block>
-  <block id="1c87fb51fed9ca5989cc401564c7fcb2" category="list-text">_백업 설정 페이지_에서 다음을 선택하세요.<block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block> 백업 서비스를 등록 취소하려는 시스템의 경우 *등록 취소*를 선택하세요.</block>
-  <block id="7c89aa28480fddd6d4128cbe73ba1804" category="list-text">확인 대화 상자에서 *등록 취소*를 선택하세요.</block>
   <block id="cb261d232a70015577ae3c5052a9ba56" category="doc">NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 데이터를 Amazon S3에 백업하세요.</block>
   <block id="0c0bf2caafe0a0bcf95f58c110265658" category="admonition">"온프레미스 ONTAP 시스템"에는 FAS, AFF 및 ONTAP Select 시스템이 포함됩니다.</block>
   <block id="e1e487d9ff52c7741cc25ee4b1ff06ea" category="section-title">연결 방법을 식별하세요</block>
@@ -4079,7 +4056,6 @@
   <block id="cab9c79c2324192af6049aa8cd78508d" category="list-text">*대체 스토리지 시스템으로 복원*: 이제 원래(운영) 스토리지 시스템을 완전히 사용할 수 없는 경우에도 가상 머신을 대체 스토리지 시스템으로 복원할 수 있습니다. 자세한 내용은<block ref="f3d02f39d5e1822fd83675aa2d7843de" category="inline-link-rx"></block>를 참조하십시오.</block>
   <block id="9486b4129634e76f84d1e52fbd1b3326" category="inline-link">파일 및 폴더 복원</block>
   <block id="19e7d45c6bedb302dc81dcad6024f1c3" category="list-text">*Linux VM에 파일 복원*: 이제 VM 파일과 폴더를 Linux VM에 복원할 수 있습니다. 자세한 내용은<block ref="d14b743b42535a5def60386aae0617f3" category="inline-link-rx"></block>를 참조하십시오.</block>
-  <block id="e75ea37e96b8396fc26e7835fb754851" category="list-text">사용 가능한 백업 타겟 유형 중 하나를 선택합니다. *AWS*, *Azure*, *StorageGRID*, *ONTAP S3* 또는 *GCP*.</block>
   <block id="c6ef992c54853d072b258e289ef08dd0" category="list-text">(AWS 및 Azure 백업 타겟에만 해당) *자격 증명 위치 선택* 섹션에서 자격 증명이 있는 위치를 선택한 다음 자격 증명을 연결하는 방법을 선택합니다.</block>
   <block id="3d138696a1e858f52942d736c24c1bd5" category="list-text">GCP의 경우:</block>
   <block id="b2f385fda6ddca9e16bfe40b90994155" category="list-text">*자격 증명 이름*: Google Cloud 자격 증명 이름을 입력합니다.</block>
@@ -4088,7 +4064,6 @@
   <block id="b054d8e2a18fe4e350f13d024953aa8f" category="list-text">*버킷 이름*: Google Cloud 버킷의 이름을 입력합니다.</block>
   <block id="d4e12036c5885fe3db728e0ff90b2385" category="list-text">*GCP 프로젝트*: Google Cloud 프로젝트 이름을 선택합니다.</block>
   <block id="c4366421a636f973ac0a44746588f3f0" category="list-text">*버킷 지역*: Google Cloud 버킷의 지역을 선택합니다.</block>
-  <block id="7a39559ae62ff6325a41e1d2e21ae805" category="list-text">*객체 잠금*: 이 옵션을 선택하면 해당 버킷의 객체에 대한 보존 기간을 설정할 수 있습니다. 보존 기간이 적용되는 동안에는 객체를 수정하거나 삭제할 수 없으며, 기간이 만료될 때까지 변경이 불가능합니다. 버킷에 대해 이 옵션을 활성화하면 비활성화할 수 없습니다.</block>
   <block id="8e3ed50707ba6a187fccaa3ddd0a90cb" category="list-text">*Original location* 창을 선택하십시오. 원본 위치로 복원하면 *Destination settings* 섹션을 확장하여 대상 설정을 볼 수 있지만 변경할 수는 없습니다.</block>
   <block id="bd388205d06a997206a3077f6f06b20b" category="section-title">KVM 가상 머신 복원</block>
   <block id="bcc1225a04b96d25ceeaa1d2157718ae" category="list-text">*복원 후 옵션* 섹션에서 *가상 머신 다시 시작* 옵션을 활성화하여 복원 작업이 완료된 후 VM을 다시 시작하십시오.</block>
@@ -4196,7 +4171,6 @@
   <block id="24a354b4e93e0d1659baa023a11ddcda" category="inline-xref">볼륨의 모든 백업 파일을 삭제합니다</block>
   <block id="6a9a9c5f060efdfcbe5e8180b067f48a" category="admonition">백업 관계가 삭제된 후에는 개별 볼륨 백업 파일을 삭제할 수 없습니다. 하지만, <block ref="3808038aea69a954ce325a28d1d98875" category="inline-xref-macro-rx"></block>.</block>
   <block id="a251d9e6fa7397f3631b218bdece2a5c" category="admonition">백업 관계가 삭제된 후에는 개별 볼륨 백업 파일을 삭제할 수 없습니다. 하지만 <block ref="3808038aea69a954ce325a28d1d98875" category="inline-xref-macro-rx"></block>. 볼륨에 대한 백업 관계를 삭제해야 하는 경우 먼저 볼륨에 대한 백업을 삭제한 다음 백업 관계를 삭제하십시오.</block>
-  <block id="015c04742dc48d5005ee2eea17467386" category="paragraph">시스템에 대해 NetApp Backup and Recovery를 비활성화하면 기존 백업을 삭제하지 않고 모든 볼륨에 대한 백업 및 복원이 일시 중지됩니다. 이를 통해 이 시스템에서 백업 서비스 등록을 취소하지 않고 일정 기간 동안 모든 백업 및 복원 작업을 일시 중지할 수 있습니다.</block>
   <block id="ac702e35e5d377649ce818c63f8cb9d6" category="paragraph">백업 및 복원 중에 작업별 데이터 이동 시간 초과(초)를 설정하려면 어노테이션<block ref="f49fa3f76b2a4fcdf04dff369d417d84" prefix=" " category="inline-code"></block>을 사용하십시오. 이 어노테이션은 데이터 이동기가 작업 진행을 기다리는 시간을 지정하며, 이 시간이 지나면 시간 초과됩니다. 이는 전송 중단(예: 네트워크 문제로 볼륨 데이터 복원이 진행되지 않는 경우)을 감지하고 처리하는 데 유용합니다.</block>
   <block id="aaaf3fb2db80e20e6d50218f16d99f4f" category="paragraph">복원 및 페일오버 중에 대상 네임스페이스 레이블과 주석은 소스와 일치하도록 업데이트됩니다. 소스의 키가 대상 키에 추가되거나 덮어쓰여지고, 대상에만 존재하는 키는 변경되지 않고 그대로 유지됩니다.</block>
   <block id="a0c960e39999d3e07d43b18aadea4f7e" category="admonition">Red Hat OpenShift에서 네임스페이스 어노테이션은 복원된 Pod가 올바른 보안 컨텍스트 제약 조건과 권한을 받도록 보장하여 볼륨에 액세스하고 권한 오류 없이 실행할 수 있도록 하므로 중요합니다. 자세한 내용은 <block ref="842acfa178c0bbf09e368bf9db0716b8" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
@@ -5072,7 +5046,6 @@
   <block id="0a7db0b8fe12008946ac8fe978e3d69e" category="list-text">아래쪽 화살표를 선택하여 *리소스 변환 템플릿* 섹션을 확장합니다.</block>
   <block id="9c517bfc321114ff54423e43965367b4" category="list-text">선택적으로 리소스 그룹, 버전 및 이름을 입력할 수 있습니다.</block>
   <block id="523b43a20131df6f47ff988233d2eecd" category="paragraph">AWS S3, Azure Blob Storage, Google Cloud Storage 또는 StorageGRID 등의 오프사이트 백업 타겟을 검색하거나 수동으로 추가하여 기본 환경 외부에 백업을 저장할 수 있습니다.</block>
-  <block id="d4db6d6e4928ad83f42d61e0861bc45d" category="paragraph">NetApp Backup and Recovery를 사용하기 전에 백업 대상(Amazon Web Services(AWS) S3, Microsoft Azure Blob Storage, Google Cloud Storage 또는 StorageGRID)을 구성하십시오.</block>
   <block id="23896f5c70301b948b1aa5b4b36cd20a" category="paragraph">스토리지 계정에 액세스할 수 있는 자격 증명을 제공하십시오. NetApp Backup and Recovery는 이러한 자격 증명을 사용하여 백업 대상 버킷을 검색하고 액세스 권한을 확인합니다.</block>
   <block id="83a41f03292d1a2eb5d1e5c3c3e82bdd" category="list-text">NetApp Backup and Recovery 메뉴에서 *백업 대상*을 선택합니다.</block>
   <block id="71e713e318f2ad1741f1abee4f606656" category="list-text">*액세스 키*: AWS 액세스 키를 입력하십시오.</block>
@@ -5084,10 +5057,6 @@
   <block id="655cc3b0e95dc40ab8723703833d5cb3" category="list-text">*구독*: Azure 구독 이름을 선택합니다.</block>
   <block id="c1c1ad906518844255c02a6eb2fa8196" category="list-text">*스토리지 계정 이름*: Azure Blob Storage 계정의 이름을 입력합니다.</block>
   <block id="f0f386af9d4c467951d13eabc4185ca7" category="list-text">*Azure 지역*: 스토리지 계정에 사용할 Azure 지역을 입력합니다.</block>
-  <block id="87d2d0ed9aedfdd167b4264a369336ba" category="list-text">*성능 유형*: Azure Blob Storage 계정에 대해 표준 또는 프리미엄 성능 유형을 선택하여 필요한 성능 수준을 지정합니다.</block>
-  <block id="29fbc2167fb971b5bdee4e572372b0a4" category="list-text">*암호화*: Azure Blob Storage 계정에 사용할 암호화 유형을 선택합니다. 옵션은 Microsoft 관리 키 또는 고객 관리 키입니다. 고객 관리 키를 선택하는 경우 키 자격 증명 모음 이름과 키 이름을 제공해야 합니다.</block>
-  <block id="a59d53d7e7ab6a12c16a345297a65da7" category="list-text">*백업 대상*: StorageGRID 백업 대상의 이름을 선택하십시오.</block>
-  <block id="bdd4e66322e60cca57b3bd09ad13e871" category="list-text">*백업 대상*: ONTAP S3 백업 대상의 이름을 선택하십시오.</block>
   <block id="730acae7684dfbf79ddf6b1f05ea9f75" category="list-text">*버킷 이름*: ONTAP S3 버킷 이름을 입력하십시오.</block>
   <block id="6caed87fa2992f2b01dad7a3a9dc41eb" category="list-text">대상을 선택하고 오른쪽에서 *작업* <block ref="29668165f4efcae1e525eece87489e44" category="inline-image-macro-rx" type="image"></block> 아이콘을 선택한 다음 *자격 증명 변경*을 선택합니다.</block>
   <block id="d15ce5f7b11589a195af27e9552d666f" category="paragraph">NetApp Backup and Recovery에서 Hyper-V 가상 머신을 검색하여 보호 정책으로 보호할 수 있습니다.</block>
@@ -6224,4 +6193,78 @@
   <block id="5b82c5e93eb556ac924b1e6909752359" category="list-text">호스트 검색 중에 sudo 액세스 권한을 부여하려면 *호스트 등록* 섹션에서 루트가 아닌 자격 증명을 선택한 다음 *sudoers 구성*을 선택하고 지침을 따르십시오. 루트 자격 증명을 사용하는 경우에는 이 단계가 필요하지 않습니다. 수동 설치 시에는 이 단계가 필요하지 않습니다.</block>
   <block id="41550faf0c68179011d757996fd6d047" category="list-text">Oracle 데이터베이스 사용자에게는 <block ref="4811df2c83bee7ee3a883640cc4d80af" prefix="" category="inline-code"></block> 권한이 필요합니다.</block>
   <block id="5d3eb6919efa937c33d95e081b5ac2fc" category="section-title">2026년 10월 19일</block>
+  <block id="d2ebbd36608739936bb939c9de72a23a" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 Kubernetes 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다:</block>
+  <block id="cc7c8e0fe116e37f04e0ad62644d821b" category="list-text">*Trident Protect 26.10*: 이번 릴리스에는 Trident Protect 26.10가 포함되어 있습니다.</block>
+  <block id="ca663f12e620da9687b7846a60e5d2e7" category="list-text">*ontap-nas-economy 및 ontap-san-economy 드라이버 지원*: 이제 NetApp Trident<block ref="caafdf62a2c609bfa5316118231a1007" prefix=" " category="inline-code"></block> 드라이버(Qtree) 및 <block ref="3016c12c1db45f14c80c9c1731b9c26a" prefix=" " category="inline-code"></block> 드라이버(LUN)로 프로비저닝된 영구 볼륨 클레임(PVC)을 보호할 수 있습니다. 이코노미 드라이버를 사용하여 PVC를 보호하면 기본 FlexVol 또는 LUN 전체가 보호됩니다. 이러한 백업에서 개별 PVC를 복원할 수 있습니다.</block>
+  <block id="d3ea67062b764fc121c2313921544714" category="list-text">*Kubernetes 인식 알림*: NetApp Console은 이제 Kubernetes 알림을 볼륨당 한 번이 아닌 Kubernetes 애플리케이션당 한 번씩 보냅니다.</block>
+  <block id="56763801785ca9815df36fb133a8847a" category="list-text">*볼륨 그룹 스냅샷 지원*: 이제 Kubernetes 애플리케이션을 정의할 때 볼륨 그룹을 생성할 수 있습니다. 볼륨 그룹을 사용하면 여러 볼륨을 함께 스냅샷하여 크래시 일관성을 유지하는 세트를 만들 수 있으므로 그룹 내 모든 볼륨에서 데이터 일관성을 보장합니다.</block>
+  <block id="1d458bfacd6d519628c6da6c1cb44452" category="list-text">*S3 호환 오브젝트 스토리지 지원*: 이제 백업 대상 자격 증명을 추가하고 보호 정책을 구성하여 Kubernetes 애플리케이션 리소스 및 데이터를 S3 호환 오브젝트 스토리지에 백업할 수 있습니다.</block>
+  <block id="c49afcf4c9d7fb7f9e3e56e33e3ed3a8" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 ONTAP Volumes 워크로드에 다음과 같은 향상된 기능을 제공합니다:</block>
+  <block id="c087f837ef797de43d9ebd1a7d125236" category="list-text">*보호 보고서*: NetApp Backup and Recovery는 이제 ONTAP Volumes 워크로드에 대한 확장 보고서 생성 및 다운로드를 지원합니다.</block>
+  <block id="b9ba826047adb428b13135e4a8370ce8" category="list-text">*ONTAP 시스템 등록 해제 시 백업 보존 여부 선택*: NetApp Backup and Recovery에서 ONTAP 시스템 등록을 해제할 때, 이전에 백업한 데이터를 삭제할지 또는 복원용으로 보존할지 선택할 수 있습니다. NetApp Backup and Recovery 설명서에는 시스템 등록 해제 후 보존된 데이터를 복원하는 방법에 대한 지침이 포함되어 있습니다.</block>
+  <block id="147e4e035d3742c8a163c4282707c86d" category="inline-link">시스템에 대한 Backup and Recovery 등록 해제</block>
+  <block id="113ea0f6ada6e0a0faeef3e476b36daa" category="paragraph">더 자세한 내용은 다음을 참조하십시오<block ref="d430b7e541ef6ef0ab6b72278c77300c" category="inline-link-rx"></block>.</block>
+  <block id="4218ebde887e47d99313814e89fca1dc" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 Oracle 데이터베이스 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="d2a0591e201dfac56fdea850632dc8e3" category="paragraph">*다른 위치로 복원*: NetApp Backup and Recovery는 이제 Oracle 데이터베이스를 다른 위치(다른 등록된 호스트)로 복원하는 기능을 지원합니다.</block>
+  <block id="497cd988427d83c8811290c97c318790" category="paragraph">NetApp Backup and Recovery를 사용하기 전에 백업 대상(Amazon Web Services(AWS) S3, ONTAP S3, S3 호환 오브젝트 스토리지, Microsoft Azure Blob Storage, Google Cloud Storage 또는 StorageGRID)을 구성하십시오.</block>
+  <block id="512c8a19583567b0c60a6d4046e3fc9d" category="list-text">사용 가능한 백업 대상 유형 중 하나를 선택합니다: *AWS*, *Azure*, *StorageGRID*, *ONTAP S3*, *S3 호환* 또는 *GCP*.</block>
+  <block id="4828de8adc4e9d7efea3fb6a81a07cac" category="list-text">S3 호환의 경우:</block>
+  <block id="229cde11dc3a1e8e2c7d01739e81a8cc" category="list-text">*자격 증명 이름*: S3와 호환되는 자격 증명 이름을 입력하십시오.</block>
+  <block id="f5e327b49bbb21e98940f0e794efac25" category="list-text">*게이트웨이 노드 FQDN*: S3 호환 게이트웨이 노드의 FQDN을 입력하십시오.</block>
+  <block id="4f4d1f557a30e4b8b6b0ad1b2f14fee9" category="list-text">*포트*: S3 호환 포트 번호를 입력하십시오.</block>
+  <block id="f40f98161e8527be6da60ccfc954e485" category="list-text">*액세스 키*: S3 호환 액세스 키를 입력하십시오.</block>
+  <block id="544dcb1b29d755ccb0cd04844b0c85a8" category="list-text">*비밀 키*: S3 호환 비밀 키를 입력하십시오.</block>
+  <block id="35ab23dfe4dfebb961a6643c98501af8" category="list-text">*GCP 프로젝트*: Google Cloud 프로젝트 이름을 입력하세요.</block>
+  <block id="faa21d68908d97d45895575e1ccfb06c" category="list-text">*인스턴스 세부 정보*: 다음 정보를 추가하십시오:</block>
+  <block id="89942d61d62ce975085dbc1a223193cf" category="list-text">*오브젝트 잠금*: 버킷에 대한 오브젝트 잠금을 활성화하려면 이 옵션을 선택합니다. 오브젝트 잠금은 지정된 보존 기간 동안 오브젝트가 삭제되거나 덮어쓰이는 것을 방지하여 추가적인 데이터 보호 계층을 제공합니다. 이 기능은 버킷 생성 시에만 활성화할 수 있으며, 나중에는 비활성화할 수 없습니다.</block>
+  <block id="603cc6c27a8469c81813bfebca168e93" category="list-text">*암호화*: Azure Blob Storage 계정의 암호화 유형을 선택합니다. Microsoft 관리 키 또는 고객 관리 키 중에서 선택할 수 있습니다. 고객 관리 키를 선택하는 경우 암호화 키와 암호화 ID를 모두 제공해야 합니다.</block>
+  <block id="1c8f409ecfd750e9ab731c44e8cf83b4" category="list-text">*자격 증명 이름*: 이 버킷의 백업 대상에 인증하는 데 사용할 자격 증명을 선택하십시오.</block>
+  <block id="c193c9ebe64e85f3f8bffd1dae7b1b49" category="list-text">*버킷 이름*: 새 StorageGRID 버킷의 이름을 입력하십시오.</block>
+  <block id="f6d09036b60b1acbf448ef32db03bec9" category="list-text">*오브젝트 잠금*: 버킷에 대한 오브젝트 잠금을 활성화하려면 이 옵션을 선택합니다. 오브젝트 잠금은 지정된 보존 기간 동안 오브젝트가 삭제되거나 덮어쓰이는 것을 방지하여 추가적인 데이터 보호 계층을 제공합니다. 버킷을 생성할 때만 이를 활성화할 수 있으며 나중에 해제할 수 없습니다.</block>
+  <block id="ac2a1e88d9a3d9f15c0797a4a25eb69b" category="list-text">*버킷 이름*: 새 S3 호환 버킷의 이름을 입력하십시오.</block>
+  <block id="99fb4aae942ff1af2bfc554e10a731d2" category="admonition">애플리케이션에서 Qtree로 파티션된 FlexVol 볼륨을 사용하는 경우, 애플리케이션을 보호하면 해당 애플리케이션에 속한 모든 FlexVol 볼륨의 모든 Qtree가 보호됩니다.</block>
+  <block id="fb7cdb707e234b2e8272fc581163dfff" category="list-text">선택적으로 *볼륨 그룹* 영역에서 레이블 선택기를 사용하여 볼륨 그룹을 정의할 수 있습니다. 쉼표로 구분된 각 레이블의 리소스는 크래시 일관성 세트로 보호됩니다.</block>
+  <block id="6a59150c4b9633c51fe2d270250c6749" category="list-text">선택적으로 *볼륨 그룹* 영역에서 선택한 VM의 디스크를 크래시 정합성 볼륨 그룹으로 함께 보호하는 옵션을 활성화할 수 있습니다(VM당 하나의 볼륨 그룹).</block>
+  <block id="fa316da11f02e062f57f24ae76cebc99" category="paragraph">시스템의 오브젝트 스토리지에 있는 모든 백업을 삭제해도 이 시스템의 볼륨에 대한 향후 백업이 비활성화되지는 않습니다. 시스템의 모든 볼륨에 대한 백업 생성을 중지하려면 백업을 일시 중지할 수 있습니다<block ref="627bc8b5a101988e015458f90d7fd491" category="inline-xref-macro-rx"></block>.</block>
+  <block id="cd2e1afe7aab66c663a0c7c824b8efe9" category="section-title">시스템의 모든 백업 일시 중지</block>
+  <block id="f910b8416a243dfc4c6b5c21357aa42a" category="paragraph">시스템의 모든 백업을 일시 중지하면 기존 백업을 삭제하지 않고 시스템의 모든 볼륨에 대한 백업 활동이 일시 중지됩니다. 백업을 일시 중지해도 해당 시스템에서 백업 서비스가 등록 해제되지는 않습니다.</block>
+  <block id="16e073461cf907aa3388d4dd6cc76b33" category="list-text">_백업 설정 페이지_에서 백업을 일시 중지하려는 시스템에 대해 <block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block>을(를) 선택하고 *모든 백업 일시 중지*를 선택합니다.</block>
+  <block id="45fce289f1a8c83302b5f4d872ce0be8" category="list-text">확인 대화 상자에서 *일시 중지*를 선택합니다.</block>
+  <block id="93922475d8b2d2f399fffc2f6502c7ff" category="paragraph">시스템에 대한 NetApp Backup and Recovery 등록을 해제하면 스토리지 시스템의 향후 백업이 중지되고 NetApp Backup and Recovery에서 제거됩니다. 이 과정에서 기존 백업을 유지할지 삭제할지 선택할 수 있습니다.</block>
+  <block id="b9acdfb3fe6814689f798ee5ba478262" category="inline-link-macro">ONTAP CLI를 사용하여 ONTAP 데이터를 복원합니다.</block>
+  <block id="6b49e32c5370aa75037ea90ff889e18a" category="list-text">기존 백업을 복원하려면 <block ref="ca224e7fbcd3a58dec3d0008f9be881e" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="55599fb6b927f75020d253ee0e5a1c92" category="list-text">*백업 설정*을 선택하세요.</block>
+  <block id="7a51161327000ec76e9bd8e138468625" category="list-text">백업 설정 페이지에서 시스템의 <block ref="3ca8d030cf9d4a36f5b783e677ebccee" category="inline-image-macro-rx" type="image"></block>를 선택하고 *백업 등록 해제*를 선택합니다.</block>
+  <block id="ed09bad7864ec765b3bccff9b87f25fb" category="list-text">다음 옵션 중 하나를 선택하십시오.</block>
+  <block id="4bc8fd684d21298394914dc8f59016a2" category="list-text">*백업 비활성화*: 향후 백업을 중지하고, 오브젝트 저장소 백업 관계를 삭제하며, 기존 백업은 오브젝트 저장소에 유지합니다. 시스템 등록이 해제된 후에는 ONTAP CLI를 통해서만 해당 백업을 복원할 수 있습니다.</block>
+  <block id="ff65356755d54101e749f5bb8d6390a5" category="list-text">*백업 비활성화 및 삭제*: 향후 백업을 중지하고, 오브젝트 저장소 백업 관계를 삭제하고, 기존 백업을 삭제합니다. 단계가 실패하더라도 작업을 계속하려면 *백업 비활성화/삭제 중 오류 무시*를 선택할 수 있습니다.</block>
+  <block id="dfee6097752e7129482df13f43e0d016" category="list-text">*시스템 이름을 입력하여 확인하세요* 칸에 시스템 이름을 입력하십시오.</block>
+  <block id="6f53822dc138caffe0db3d1b7228eb76" category="list-text">*보호 보고서 백업 확인*에서 필요한 보고서를 모두 저장했는지 확인하십시오.</block>
+  <block id="0e99a50f987d33fb61f7174388ec5bf7" category="list-text">*확인 및 등록 취소*를 선택합니다.</block>
+  <block id="128b9b68bc952926898e9cb180142a2f" category="list-text">작업이 완료될 때까지 작업 모니터에서 해당 작업을 모니터링하십시오.</block>
+  <block id="f34901277d832930a7715899d8aab192" category="admonition">시스템 등록을 해제해도 ONTAP의 시스템 볼륨, 스냅샷 구성 또는 복제 관계는 변경되지 않습니다.</block>
+  <block id="c697b002591b1081640514a7d1737556" category="summary">경우에 따라 ONTAP 데이터를 복원하기 위해 ONTAP CLI를 사용해야 할 수도 있습니다.</block>
+  <block id="f01e63e1a85b954f51ca4a6e068eb6b7" category="paragraph">백업 및 복구 웹 UI를 사용하여 일부 ONTAP 데이터를 복원하지 못할 수 있습니다. 이는 시스템 등록을 해제한 후에도 백업을 유지했거나, 더 이상 존재하지 않는 관계를 통해 백업이 생성된 경우에 발생할 수 있습니다. 이러한 경우 ONTAP CLI를 사용하여 백업을 복원하십시오.</block>
+  <block id="ec86bd3101749b0341e24ffb93a6a492" category="list-text">타겟 클러스터의 ONTAP CLI에 액세스할 수 있는지, 그리고 복원할 백업 복사본이 무엇인지 알고 있는지 확인하십시오.</block>
+  <block id="75416dfe2ceb2c6cb8491b2cb515feb5" category="list-text">다른 ONTAP 클러스터로 복원하는 경우, 해당 클러스터는 이미 동일한 오브젝트 스토어에 액세스할 수 있어야 합니다. 필요한 경우 복원하기 전에 타겟 클러스터에서 오브젝트 스토어를 구성하십시오.</block>
+  <block id="a54f62a8dcb41305536a5acf09464352" category="list-text">시스템 등록을 해제하기 전에 새 백업 관계가 생성된 경우, NetApp Backup and Recovery는 새 백업이 생성된 후 최대 1시간 동안 이전 스냅샷을 계속 표시할 수 있습니다. 이 새로 고침 시간 동안 이전 스냅샷에 대한 UI 기반 복원이 실패할 수 있습니다.</block>
+  <block id="fdd4155863226ecb841ae09602e4c668" category="list-text">백업 보고서를 다운로드하세요.</block>
+  <block id="29a4dbbef911b88bedf19bdfa84b4263" category="list-text">보고서에서 복원하려는 볼륨을 찾고 필요한 백업 복사본의 엔드포인트 항목을 찾으십시오:</block>
+  <block id="e01874ecf753c8cb1de8f34c4dfb8d80" category="list-text">이전 관계에서 생성된 오래된 백업의 경우 *엔드포인트 UUID 기록* 값을 사용하십시오.</block>
+  <block id="645c3c66102fc66596a98bd5dc33b8ef" category="list-text">현재 관계의 백업을 생성하려면 *엔드포인트 UUID* 값을 사용하십시오.</block>
+  <block id="8a73294528d93a1f59eecd121d51ff0d" category="paragraph">각 기록 항목은 다음 형식을 사용합니다<block ref="55e85e3ccf753c88d658ef791c8f6cde" prefix=" " category="inline-code"></block>. 복원하려는 백업의 버킷 이름과 엔드포인트 UUID를 기록하십시오.</block>
+  <block id="5fba4a68d61bc5f7f7e6554abf272e41" category="list-text">ONTAP 클러스터 CLI에 연결하고 진단 모드로 진입합니다:</block>
+  <block id="0da552512b372f563014f14813cf9885" category="list-text">타겟 데이터 보호(DP) 볼륨을 생성합니다:</block>
+  <block id="8f626d1139a53068fec0fdc5498c1ab6" category="list-text">기록한 버킷 및 엔드포인트 UUID에 대해 사용 가능한 스냅샷 목록을 표시합니다:</block>
+  <block id="9b8ba9c9dbbe51510f9dfbdab292ff32" category="admonition">이 명령은 ONTAP이 해당 버킷 및 엔드포인트에 대해 추적하는 스냅샷만 나열합니다. 수동으로 다른 버킷으로 이동된 스냅샷은 나열하지 않습니다.</block>
+  <block id="8e2984dd6db099579064ed18ea316672" category="list-text">백업이 생성된 후 오브젝트 저장소 자격 증명이 변경된 경우, 계속 진행하기 전에 오브젝트 저장소 구성을 업데이트하십시오:</block>
+  <block id="85b4448e71f07ab48dbb54cf4df1d355" category="list-text">선택한 스냅샷을 오브젝트 스토리지에서 대상 DP 볼륨으로 복원합니다:</block>
+  <block id="3770b537731b467947d113336d70a371" category="paragraph">이 작업의 ONTAP 명령에 대한 자세한 내용은 다음 ONTAP 문서를 참조하십시오:</block>
+  <block id="4784dd0ffa42c3d1b43b0afd079dfc17" category="inline-link">volume create</block>
+  <block id="0fa851dd782b19eb7cc49215ec058fa8" category="list-text"><block ref="0fa851dd782b19eb7cc49215ec058fa8" category="inline-link-rx"></block></block>
+  <block id="83360a1eaef3ed445d1e195bce123d01" category="inline-link">snapmirror object-store config modify</block>
+  <block id="64a789f9359deaaa5d68c54fd43daf3a" category="list-text"><block ref="64a789f9359deaaa5d68c54fd43daf3a" category="inline-link-rx"></block></block>
+  <block id="5b18e7c216c868ae1b7c4df44ba6df58" category="inline-link">snapmirror restore</block>
+  <block id="399d4101cbf520dcec67f680dbf4ad81" category="list-text"><block ref="399d4101cbf520dcec67f680dbf4ad81" category="inline-link-rx"></block></block>
+  <block id="b0609734250ba6ba4d0839963ce55146" category="section-title">2026년 10월 26일</block>
 </blocks>

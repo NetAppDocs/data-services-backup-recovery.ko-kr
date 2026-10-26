@@ -104,6 +104,8 @@ sidebar:
           url: "/prev-ontap-restore-search.html"
         - title: 찾아보기 및 복원을 사용하여 ONTAP 데이터 복원
           url: "/prev-ontap-restore-browse.html"
+        - title: ONTAP CLI를 사용하여 ONTAP 데이터를 복원합니다.
+          url: "/prev-ontap-restore-cli.html"
     - title: Microsoft SQL Server 워크로드 보호
       entries:
       - title: NetApp Backup and Recovery의 Microsoft SQL Server 보호 워크플로

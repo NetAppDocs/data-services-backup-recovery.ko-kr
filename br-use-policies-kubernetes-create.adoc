@@ -14,9 +14,6 @@ summary: NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관�
 [role="lead"]
 NetApp Backup and Recovery를 사용하여 백업 빈도, 일정 및 보존 기간을 제어하는 Kubernetes 백업 정책을 생성할 수 있습니다.
 
-
-NOTE: 이러한 옵션과 구성 섹션 중 일부는 모든 워크로드에 사용할 수 없습니다.
-
 SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에 약간의 차이가 발생할 수 있습니다.  보다link:reference-policy-differences-snapcenter.html["SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점"] .
 
 정책과 관련하여 다음과 같은 목표를 달성할 수 있습니다.

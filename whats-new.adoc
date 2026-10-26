@@ -18,6 +18,55 @@ NetApp Backup and Recovery의 새로운 기능, 개선 사항 및 버그 수정 
 
 
 
+[[26-october-2026]]
+== 2026년 10월 26일
+
+이 NetApp Backup and Recovery 릴리스에는 다음과 같은 업데이트가 포함되어 있습니다.
+
+
+
+[[kubernetes-workloads-enhancements]]
+=== Kubernetes 워크로드 개선 사항
+
+이번 릴리스에서 NetApp Backup and Recovery는 Kubernetes 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다:
+
+* *Trident Protect 26.10*: 이번 릴리스에는 Trident Protect 26.10가 포함되어 있습니다.
+* *ontap-nas-economy 및 ontap-san-economy 드라이버 지원*: 이제 NetApp Trident `ontap-nas-economy` 드라이버(Qtree) 및  `ontap-san-economy` 드라이버(LUN)로 프로비저닝된 영구 볼륨 클레임(PVC)을 보호할 수 있습니다. 이코노미 드라이버를 사용하여 PVC를 보호하면 기본 FlexVol 또는 LUN 전체가 보호됩니다. 이러한 백업에서 개별 PVC를 복원할 수 있습니다.
+* *Kubernetes 인식 알림*: NetApp Console은 이제 Kubernetes 알림을 볼륨당 한 번이 아닌 Kubernetes 애플리케이션당 한 번씩 보냅니다.
+* *볼륨 그룹 스냅샷 지원*: 이제 Kubernetes 애플리케이션을 정의할 때 볼륨 그룹을 생성할 수 있습니다. 볼륨 그룹을 사용하면 여러 볼륨을 함께 스냅샷하여 크래시 일관성을 유지하는 세트를 만들 수 있으므로 그룹 내 모든 볼륨에서 데이터 일관성을 보장합니다.
+* *S3 호환 오브젝트 스토리지 지원*: 이제 백업 대상 자격 증명을 추가하고 보호 정책을 구성하여 Kubernetes 애플리케이션 리소스 및 데이터를 S3 호환 오브젝트 스토리지에 백업할 수 있습니다.
+
+
+Kubernetes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-kubernetes-protect-overview.html["NetApp Backup and Recovery를 사용하여 Kubernetes 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하세요.
+
+
+
+[[ontap-volumes-workloads-enhancements]]
+=== ONTAP Volumes 워크로드 개선 사항
+
+이번 릴리스에서 NetApp Backup and Recovery는 ONTAP Volumes 워크로드에 다음과 같은 향상된 기능을 제공합니다:
+
+* *보호 보고서*: NetApp Backup and Recovery는 이제 ONTAP Volumes 워크로드에 대한 확장 보고서 생성 및 다운로드를 지원합니다.
+* *ONTAP 시스템 등록 해제 시 백업 보존 여부 선택*: NetApp Backup and Recovery에서 ONTAP 시스템 등록을 해제할 때, 이전에 백업한 데이터를 삭제할지 또는 복원용으로 보존할지 선택할 수 있습니다. NetApp Backup and Recovery 설명서에는 시스템 등록 해제 후 보존된 데이터를 복원하는 방법에 대한 지침이 포함되어 있습니다.
+
+
+더 자세한 내용은 다음을 참조하십시오 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-backup-manage.html#unregister-netapp-backup-and-recovery-for-a-system["시스템에 대한 Backup and Recovery 등록 해제"^].
+
+ONTAP Volumes 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/prev-ontap-protect-overview.html["NetApp Backup and Recovery를 사용한 ONTAP 볼륨 보호에 대해 알아보십시오"]를 참조하십시오.
+
+
+
+[[oracle-database-workloads-enhancement]]
+=== Oracle Database 워크로드 향상
+
+이번 릴리스에서 NetApp Backup and Recovery는 Oracle 데이터베이스 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다.
+
+*다른 위치로 복원*: NetApp Backup and Recovery는 이제 Oracle 데이터베이스를 다른 위치(다른 등록된 호스트)로 복원하는 기능을 지원합니다.
+
+Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
+
+
+
 [[19-october-2026]]
 == 2026년 10월 19일
 
