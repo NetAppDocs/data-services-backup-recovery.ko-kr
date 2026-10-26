@@ -6196,15 +6196,12 @@
   <block id="d2ebbd36608739936bb939c9de72a23a" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 Kubernetes 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다:</block>
   <block id="cc7c8e0fe116e37f04e0ad62644d821b" category="list-text">*Trident Protect 26.10*: 이번 릴리스에는 Trident Protect 26.10가 포함되어 있습니다.</block>
   <block id="ca663f12e620da9687b7846a60e5d2e7" category="list-text">*ontap-nas-economy 및 ontap-san-economy 드라이버 지원*: 이제 NetApp Trident<block ref="caafdf62a2c609bfa5316118231a1007" prefix=" " category="inline-code"></block> 드라이버(Qtree) 및 <block ref="3016c12c1db45f14c80c9c1731b9c26a" prefix=" " category="inline-code"></block> 드라이버(LUN)로 프로비저닝된 영구 볼륨 클레임(PVC)을 보호할 수 있습니다. 이코노미 드라이버를 사용하여 PVC를 보호하면 기본 FlexVol 또는 LUN 전체가 보호됩니다. 이러한 백업에서 개별 PVC를 복원할 수 있습니다.</block>
-  <block id="d3ea67062b764fc121c2313921544714" category="list-text">*Kubernetes 인식 알림*: NetApp Console은 이제 Kubernetes 알림을 볼륨당 한 번이 아닌 Kubernetes 애플리케이션당 한 번씩 보냅니다.</block>
   <block id="56763801785ca9815df36fb133a8847a" category="list-text">*볼륨 그룹 스냅샷 지원*: 이제 Kubernetes 애플리케이션을 정의할 때 볼륨 그룹을 생성할 수 있습니다. 볼륨 그룹을 사용하면 여러 볼륨을 함께 스냅샷하여 크래시 일관성을 유지하는 세트를 만들 수 있으므로 그룹 내 모든 볼륨에서 데이터 일관성을 보장합니다.</block>
   <block id="1d458bfacd6d519628c6da6c1cb44452" category="list-text">*S3 호환 오브젝트 스토리지 지원*: 이제 백업 대상 자격 증명을 추가하고 보호 정책을 구성하여 Kubernetes 애플리케이션 리소스 및 데이터를 S3 호환 오브젝트 스토리지에 백업할 수 있습니다.</block>
   <block id="c49afcf4c9d7fb7f9e3e56e33e3ed3a8" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 ONTAP Volumes 워크로드에 다음과 같은 향상된 기능을 제공합니다:</block>
   <block id="c087f837ef797de43d9ebd1a7d125236" category="list-text">*보호 보고서*: NetApp Backup and Recovery는 이제 ONTAP Volumes 워크로드에 대한 확장 보고서 생성 및 다운로드를 지원합니다.</block>
-  <block id="b9ba826047adb428b13135e4a8370ce8" category="list-text">*ONTAP 시스템 등록 해제 시 백업 보존 여부 선택*: NetApp Backup and Recovery에서 ONTAP 시스템 등록을 해제할 때, 이전에 백업한 데이터를 삭제할지 또는 복원용으로 보존할지 선택할 수 있습니다. NetApp Backup and Recovery 설명서에는 시스템 등록 해제 후 보존된 데이터를 복원하는 방법에 대한 지침이 포함되어 있습니다.</block>
   <block id="147e4e035d3742c8a163c4282707c86d" category="inline-link">시스템에 대한 Backup and Recovery 등록 해제</block>
   <block id="113ea0f6ada6e0a0faeef3e476b36daa" category="paragraph">더 자세한 내용은 다음을 참조하십시오<block ref="d430b7e541ef6ef0ab6b72278c77300c" category="inline-link-rx"></block>.</block>
-  <block id="4218ebde887e47d99313814e89fca1dc" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 Oracle 데이터베이스 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다.</block>
   <block id="d2a0591e201dfac56fdea850632dc8e3" category="paragraph">*다른 위치로 복원*: NetApp Backup and Recovery는 이제 Oracle 데이터베이스를 다른 위치(다른 등록된 호스트)로 복원하는 기능을 지원합니다.</block>
   <block id="497cd988427d83c8811290c97c318790" category="paragraph">NetApp Backup and Recovery를 사용하기 전에 백업 대상(Amazon Web Services(AWS) S3, ONTAP S3, S3 호환 오브젝트 스토리지, Microsoft Azure Blob Storage, Google Cloud Storage 또는 StorageGRID)을 구성하십시오.</block>
   <block id="512c8a19583567b0c60a6d4046e3fc9d" category="list-text">사용 가능한 백업 대상 유형 중 하나를 선택합니다: *AWS*, *Azure*, *StorageGRID*, *ONTAP S3*, *S3 호환* 또는 *GCP*.</block>
@@ -6267,4 +6264,10 @@
   <block id="5b18e7c216c868ae1b7c4df44ba6df58" category="inline-link">snapmirror restore</block>
   <block id="399d4101cbf520dcec67f680dbf4ad81" category="list-text"><block ref="399d4101cbf520dcec67f680dbf4ad81" category="inline-link-rx"></block></block>
   <block id="b0609734250ba6ba4d0839963ce55146" category="section-title">2026년 10월 26일</block>
+  <block id="4a8e16ca8f9ac4cf8211bb73ba343c77" category="list-text">*Kubernetes 인식 알림*: 이제 알림이 볼륨당 한 번이 아닌 Kubernetes 애플리케이션당 한 번 전송됩니다.</block>
+  <block id="63de886f7a210d9ff98f81faf2fdfe35" category="paragraph">Kubernetes 워크로드 보호에 대한 자세한 내용은<block ref="9502c762ebba5ed034c7cd34473d06a9" category="inline-link-rx"></block>을 참조하세요.</block>
+  <block id="5f26b02e379625a9c6c7ab3ff61f6ac2" category="list-text">*ONTAP 시스템 등록 해제 시 백업 유지*: NetApp Backup and Recovery에서 ONTAP 시스템 등록을 해제할 때, 이전에 백업한 데이터를 삭제할지 또는 복원용으로 유지할지 선택할 수 있습니다. NetApp Backup and Recovery 설명서에는 시스템 등록 해제 후 유지된 데이터를 복원하기 위해 ONTAP CLI를 사용하는 방법에 대한 지침이 포함되어 있습니다.</block>
+  <block id="6d572acb72c5f88a011bfcc18bed3f7c" category="paragraph">ONTAP Volumes 워크로드 보호에 대한 자세한 내용은<block ref="24d237f3bd3266db09db22a59e1e6ebf" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="f43f719a34848bc68a0e2e9868d020db" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 Oracle Database 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="98c9ad4f11120c6a90c4a25b439d1228" category="paragraph">Oracle Database 워크로드 보호에 대한 자세한 내용은<block ref="ce12149fe5cc827258d1b858aab8e2cc" category="inline-link-rx"></block>을 참조하십시오.</block>
 </blocks>
