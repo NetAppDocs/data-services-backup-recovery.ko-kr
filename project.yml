@@ -36,6 +36,8 @@ sidebar:
       url: "/concept-backup-to-cloud.html"
     - title: NetApp Backup and Recovery 요구 사항
       url: "/concept-start-prereq.html"
+    - title: 지원되는 백업 및 복원 대상
+      url: "/br-start-sources-destinations.html"
     - title: 라이선스 설정
       url: "/br-start-licensing.html"
     - title: 보안 인증서를 설정합니다
@@ -58,7 +60,7 @@ sidebar:
       url: "/br-use-dashboard.html"
     - title: ONTAP 볼륨 워크로드 보호
       entries:
-      - title: ONTAP 볼륨용 NetApp Backup and Recovery에 대해 알아봅니다
+      - title: ONTAP 볼륨 워크로드 개요 보호
         url: "/prev-ontap-protect-overview.html"
       - title: NetApp Backup and Recovery를 활성화하여 볼륨을 보호합니다
         url: "/br-start-enable.html"
