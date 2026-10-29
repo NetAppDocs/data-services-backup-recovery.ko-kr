@@ -5966,12 +5966,9 @@
   <block id="0b988f352bf3178a56bb9dbb7aa6f591" category="section-title">Oracle 데이터베이스 인벤토리 보기</block>
   <block id="13b17d82aa76831194bc5fedd9ef5155" category="paragraph">백업 및 복구 인벤토리에서 발견한 Oracle 데이터베이스 리소스에 대한 세부 정보를 검토하십시오.</block>
   <block id="ef09861f0e356e1256cc79b90af82a9c" category="list-text">검색된 Oracle 데이터베이스 호스트를 보려면 *호스트* 탭을 선택하십시오.</block>
-  <block id="acb5a0c1d6543fd64291bcd931b0212a" category="paragraph">이 보기를 사용하면 각 호스트 이름, 각 호스트에서 호스팅하는 데이터베이스 수, 배포 모델(예: 클러스터, Oracle Data Guard 또는 독립 실행형) 및 기타 정보 등의 세부 정보를 확인할 수 있습니다.</block>
   <block id="5ef22a9f4e63d5ea6dccdceaf60cc129" category="list-text">Oracle 데이터베이스 리소스를 보호하기 위해 생성된 보호 그룹을 보려면 *보호 그룹* 탭을 선택하십시오.</block>
   <block id="4636080fe3dd6af1a05f50e6b8612fcd" category="list-text">각 Oracle Database 호스트에서 호스팅하는 데이터베이스를 보려면 *데이터베이스* 탭을 선택하십시오.</block>
   <block id="88b5a8e3aeecbee62ee44ae9949af352" category="paragraph">이 보기에서는 각 데이터베이스가 단일 인스턴스인지, 클러스터 또는 고가용성 구성의 일부인지 등 자세한 정보를 보여줍니다.</block>
-  <block id="c567e32a931e50ea00e322c45bada4f9" category="list-text">보호 그룹에 적용할 *백업 정책*을 선택하십시오. Oracle Data Guard 구성의 일부인 데이터베이스를 포함하는 경우, Data Guard 옵션이 활성화된 백업 정책을 선택하십시오.</block>
-  <block id="e07c044b43b8ab05fce956dd78928ec0" category="list-text">*Data Guard 설정*: 정책에서 Data Guard 설정을 활성화할지 여부를 선택하고, Oracle Data Guard 배포 환경에서 데이터베이스를 보호할 때 기본, 보조 또는 기본 및 보조 데이터베이스를 모두 백업할지 여부를 선택합니다. Oracle Data Guard 배포 환경에서는 보호 그룹을 사용하여 데이터베이스를 보호할 수 있습니다.</block>
   <block id="debe14f2792fef47d8b9076e14c82cb3" category="section-title">플러그인 설치 요구 사항</block>
   <block id="3cf57a2a4d07542c89b05ad643bb219e" category="list-text">SSH를 사용하여 호스트에 로그인할 수 있는 기능.</block>
   <block id="1bcf5153145f75a86a1ad16ea9b03c7a" category="list-text">루트 권한 또는 루트가 아닌 사용자의 경우 sudo 액세스가 필요합니다.</block>
@@ -6275,4 +6272,30 @@
   <block id="84618cfc7eb2bbb4efbbd7209a02b83b" category="list-text"><block ref="84618cfc7eb2bbb4efbbd7209a02b83b" category="inline-link-macro-rx"></block></block>
   <block id="37f041132ba68784c19dbe8a3c6a5d54" category="list-text"><block ref="37f041132ba68784c19dbe8a3c6a5d54" category="inline-link-macro-rx"></block></block>
   <block id="dbc0ac8fb1f3ed243ea3e89e9cfc4781" category="sidebar">지원되는 백업 및 복원 대상</block>
+  <block id="e92c60b9dce59b8a708c12a44c8cd00c" category="list-text">현재 Oracle Data Guard 구성에서 대기 중인 데이터베이스를 원래 위치로 복원하는 것은 지원되지 않습니다. 대신 다른 위치로 복원하십시오.</block>
+  <block id="d0ea0d089a51f4912e025340deac9c94" category="list-text">RAC를 사용하는 Oracle Data Guard 구성 및 Oracle Active Data Guard 구성은 지원되지 않습니다.</block>
+  <block id="8ead40bfdf058563a49a6088340c0a5e" category="admonition">데이터베이스가 Oracle Data Guard 구성에 있는 경우 기본 호스트와 대기 호스트를 별도의 호스트로 추가하십시오.</block>
+  <block id="cb3202cc77d4d07b32f7413c59f5764b" category="paragraph">이 보기를 사용하면 각 호스트 이름, 각 호스트에서 호스팅하는 데이터베이스 수, 배포 모델(예: 클러스터, Data Guard 또는 독립 실행형) 및 기타 정보 등의 세부 정보를 확인할 수 있습니다.</block>
+  <block id="024c370a5e2df8680dde3adb456bc63b" category="paragraph">Oracle Data Guard 데이터베이스는 *Data Guard Primary* 또는 *Data Guard Standby*로 표시됩니다. 대기 데이터베이스는 기본적으로 숨겨져 있습니다. 이를 표시하려면 *유형* 필터에서 *Data Guard Standby*를 선택하십시오. 각 Oracle Data Guard 데이터베이스 이름은 Oracle SID 뒤에 대괄호 안에 데이터베이스 이름이 오는 형식으로 표시됩니다(예: <block ref="6a829caf0294d3176c613fc594dbcc91" prefix=" " category="inline-code"></block>).</block>
+  <block id="a4acb54c369f0c50a25853f5f2d72387" category="paragraph">스위치오버 또는 페일오버 후에는 *호스트* 탭을 선택한 다음 영향을 받는 호스트에 대해 *새로 고침*을 선택하여 표시된 역할을 업데이트하십시오.</block>
+  <block id="8e3defa486fd6395b3186f053883b5d7" category="admonition">Oracle Data Guard 데이터베이스의 경우 NetApp Backup and Recovery는 백업 시작 시 각 데이터베이스의 현재 역할을 확인하고 정책의 *Data Guard 설정*을 따릅니다. 스위치오버 또는 페일오버 후에는 다음 백업에서 새로운 역할을 사용합니다.</block>
+  <block id="848e936049005dc765ef08314cfe45b8" category="admonition">Oracle Data Guard 구성에서 보호된 기본 데이터베이스 또는 보호된 물리적 대기 데이터베이스를 복제할 수 있습니다. 복제본은 독립 실행형 데이터베이스이며 Oracle Data Guard 구성의 일부가 아닙니다. 대기 데이터베이스를 복제하면 호스트를 새로 고칠 때까지 새 데이터베이스가 *Data Guard Standby*로 표시됩니다. 호스트를 새로 고치면 일반 데이터베이스로 표시됩니다.</block>
+  <block id="326535fa9507ec810eb8c39ff9808048" category="section-title">Oracle Data Guard 지원</block>
+  <block id="f8524f96f354b3f8d4fca9e30727bfd6" category="paragraph">NetApp Backup and Recovery는 단일 인스턴스 기본 데이터베이스와 마운트된 상태의 물리적 대기 데이터베이스 하나를 포함하는 Oracle Data Guard 구성을 보호할 수 있습니다.</block>
+  <block id="2ef07622f2dfb8abf76b043b142d62c6" category="section-title">지원되는 작업</block>
+  <block id="75089d6e1e93d883e04ed0b3a24ca3c9" category="paragraph">대기 데이터베이스는 기본적으로 목록에 표시되지 않습니다. 목록을 보려면 *Data Guard 대기 데이터베이스 표시*를 선택하십시오. Oracle Data Guard 구성의 일부인 데이터베이스를 선택하면 NetApp Backup and Recovery도 동일한 구성에 있는 다른 데이터베이스를 추가합니다. 해당 데이터베이스가 검색되고 보호 가능하며 다른 보호 그룹에 속해 있지 않은 경우에만 추가됩니다.</block>
+  <block id="03d1a38bd67097c9f65b44addd6c10b1" category="inline-link-macro">Oracle Database 백업 정책 생성 및 관리</block>
+  <block id="8f7f8bda280de96a8d2ea204f01f0e79" category="list-text">보호 그룹에 적용할 *백업 정책*을 선택하십시오. 그룹에 Oracle Data Guard 데이터베이스가 포함된 경우 정책의 *Data Guard 설정*을 사용하여 백업할 데이터베이스를 선택하십시오. <block ref="dbb202f56fddd64d485e7ab84741d680" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="cb4a9fdc969151f53f537c85ddd4e60a" category="admonition">보호 그룹을 생성한 후 대기 호스트를 추가하는 경우, 보호 그룹을 편집하고 저장하십시오. NetApp Backup and Recovery는 대기 호스트를 자동으로 추가합니다. 대기 호스트에서는 대기 데이터베이스만 그룹에 추가하십시오. 해당 호스트에서 다른 백업 유형이 필요한 다른 데이터베이스가 있으면 해당 호스트의 백업이 실패합니다.</block>
+  <block id="d5ead59a8fc743551f9007e24cadba9a" category="paragraph">*Oracle Data Guard 데이터베이스 복원에 대한 중요 참고 사항*</block>
+  <block id="616672565c96137c7a96fd54acc8e9da" category="list-text">복원하기 전에 데이터베이스 역할이 최신 상태인지 확인하십시오. 스위치오버 또는 페일오버가 발생한 경우 *호스트* 탭을 선택하고 해당 호스트에 대해 *새로 고침*을 먼저 선택하십시오. 사용 가능한 복원 옵션은 현재 데이터베이스의 역할에 따라 다릅니다.</block>
+  <block id="b211c3a6078492ed458135e880352629" category="list-text">데이터베이스가 현재 대기 상태인 경우, 백업 당시의 역할과 관계없이 원래 위치로 복원할 수 없습니다. 다른 위치로 복원하십시오.</block>
+  <block id="d93c32f5f94e7a9c136c20e11c78def2" category="list-text">데이터베이스가 현재 대기 상태인 경우 2차 스토리지 또는 오브젝트 스토리지에만 존재하는 스냅샷을 복원할 수 없습니다.</block>
+  <block id="368ff82501bf375fe962ae7b3740bb7b" category="list-text">데이터베이스가 대기 상태일 때 생성된 백업은 데이터베이스가 기본 상태가 된 후 원래 위치로 복원할 수 있습니다.</block>
+  <block id="ae3633e4eb4a82b89a3980ff858610f1" category="admonition">기본 데이터베이스를 복원해도 대기 데이터베이스는 변경되지 않습니다. 특정 시점 또는 SCN 복원 후 <block ref="d25b8c1b3f7ba3e06913b87e4360ec6d" prefix=" " category="inline-code"></block>을(를) 사용하여 기본 데이터베이스를 열면 새 데이터베이스 인카네이션이 시작됩니다. 대기 데이터베이스에 이미 해당 시점 이후의 리두가 적용된 경우, 대기 데이터베이스의 리두 적용이 오류와 함께 중지되고 대기 데이터베이스는 이전 상태를 유지합니다. 보호를 재개하려면 복원 후 Oracle 툴을 사용하여 대기 데이터베이스를 다시 설정하십시오.</block>
+  <block id="a593f44359692a4c6bb8088242bffe01" category="list-text">*Data Guard 설정*: *Data Guard 설정 활성화*를 선택하여 백업할 Oracle Data Guard 데이터베이스를 선택하십시오:</block>
+  <block id="030c52c41fd1981a36ae43013d3e78c3" category="list-text">*기본 및 대기 백업 모두 수행* (기본값)</block>
+  <block id="5af099efa04197b8148cd4c53d100646" category="list-text">*기본 시스템에만 백업합니다*</block>
+  <block id="e2d9ce30ebfec7057c448e8a44f805e1" category="list-text">*대기 모드에서만 백업*</block>
+  <block id="ec521975a51b13a00e3d392d7acdf5f5" category="paragraph">*Data Guard 설정*을 활성화하지 않으면 기본 데이터베이스와 대기 데이터베이스 모두 백업됩니다. 리소스에 정책을 할당한 후에는 *Data Guard 설정*을 비활성화할 수 없습니다.</block>
 </blocks>

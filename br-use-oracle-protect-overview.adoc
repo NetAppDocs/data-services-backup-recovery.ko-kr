@@ -23,6 +23,18 @@ NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 
 * 온사이트 사본에서 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.
 
 
+
+
+[[oracle-data-guard-support]]
+== Oracle Data Guard 지원
+
+NetApp Backup and Recovery는 단일 인스턴스 기본 데이터베이스와 마운트된 상태의 물리적 대기 데이터베이스 하나를 포함하는 Oracle Data Guard 구성을 보호할 수 있습니다.
+
+
+
+[[supported-tasks]]
+== 지원되는 작업
+
 NetApp Backup and Recovery를 사용하면 Oracle Database 워크로드와 관련된 다음과 같은 작업을 수행할 수 있습니다.
 
 * link:br-start-discover-oracle.html["Oracle Database 워크로드를 살펴보세요"]

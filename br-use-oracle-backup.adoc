@@ -71,3 +71,6 @@ NOTE: NetApp Backup and Recovery 백업 그룹과 보호 그룹 모두에 동일
 . 일정 단계를 선택하세요.
 . *백업*을 선택하세요.
 
+
+
+NOTE: Oracle Data Guard 데이터베이스의 경우 NetApp Backup and Recovery는 백업 시작 시 각 데이터베이스의 현재 역할을 확인하고 정책의 *Data Guard 설정*을 따릅니다. 스위치오버 또는 페일오버 후에는 다음 백업에서 새로운 역할을 사용합니다.
