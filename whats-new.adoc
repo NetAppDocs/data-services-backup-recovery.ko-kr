@@ -92,6 +92,17 @@ Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.n
 
 
 
+[[general-netapp-backup-and-recovery-enhancement]]
+=== 일반 NetApp Backup and Recovery 기능 향상
+
+이번 릴리스에서 NetApp Backup and Recovery는 모든 워크로드에 대해 다음과 같은 라이선스 개선 사항을 도입했습니다:
+
+*라이선스 변경 사항*: 디스크 간 또는 디스크 간 팬아웃 아키텍처를 사용하는 백업에는 더 이상 요금이 부과되지 않습니다. 요금은 3-2-1 또는 디스크-오브젝트 스토리지 아키텍처를 사용하는 백업을 포함하여 오브젝트 스토리지에 대한 백업에만 적용됩니다.
+
+라이선스에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-licensing.html["NetApp Backup and Recovery 에 대한 라이선싱 설정"]을(를) 참조하십시오.
+
+
+
 [[hyper-v-workloads-enhancements]]
 === Hyper-V 워크로드 개선 사항
 
@@ -113,17 +124,6 @@ Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.co
 *자동 아카이브 로그 관리*: 데이터베이스 복원 및 복제 작업 중에 NetApp Backup and Recovery는 필요한 아카이브 로그를 자동으로 검색하여 마운트하고, 작업이 완료되면 마운트를 해제합니다. 기본, 보조 및 오브젝트 스토리지 로그 소스가 지원됩니다.
 
 Oracle Database 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-oracle-protect-overview.html["NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드를 보호하는 방법에 대해 알아보십시오."]을 참조하십시오.
-
-
-
-[[microsoft-sql-server-workloads-enhancement]]
-=== Microsoft SQL Server 워크로드 향상
-
-이번 릴리스에서 Microsoft SQL Server 워크로드는 다음과 같은 개선 사항을 도입했습니다:
-
-*라이선스 변경 사항*: 디스크 간 또는 디스크 간 팬아웃 아키텍처를 사용하는 백업에는 더 이상 요금이 부과되지 않습니다. 요금은 3-2-1 또는 디스크-오브젝트 스토리지 아키텍처를 사용하는 백업을 포함하여 오브젝트 스토리지에 대한 백업에만 적용됩니다.
-
-Microsoft SQL Server 워크로드 보호에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-mssql-protect-overview.html["NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 워크로드를 보호하는 방법에 대해 알아보십시오."]을(를) 참조하십시오.
 
 
 

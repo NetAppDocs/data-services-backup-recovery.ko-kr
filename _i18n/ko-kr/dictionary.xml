@@ -5917,11 +5917,7 @@
   <block id="b77bf9dc680cf2db1d8b3d5f6156585b" category="list-text">*NetApp MetroCluster 지원*: 이제 NetApp Backup and Recovery를 사용하여 NetApp MetroCluster로 미러링된 Hyper-V VM을 보호할 수 있습니다.</block>
   <block id="7ed9eebaad97e0f936b753873e6ff586" category="list-text">*SAN VM용 스패닝 디스크 보호*: CIFS 및 SAN 구성의 경우, 이제 보호 그룹의 각 VM에 연결된 모든 디스크를 보호할 수 있습니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템에 분산된 파일(스패닝 디스크)과 단일 위치로 제한된 파일이 포함됩니다.</block>
   <block id="82dd01a289cf98e9d962781faec1018b" category="paragraph">*자동 아카이브 로그 관리*: 데이터베이스 복원 및 복제 작업 중에 NetApp Backup and Recovery는 필요한 아카이브 로그를 자동으로 검색하여 마운트하고, 작업이 완료되면 마운트를 해제합니다. 기본, 보조 및 오브젝트 스토리지 로그 소스가 지원됩니다.</block>
-  <block id="5f1a7ddd55d2a0b34003e08fe7cacdaf" category="section-title">Microsoft SQL Server 워크로드 향상</block>
-  <block id="32d770e78ed41453037389dce2e33d9c" category="paragraph">이번 릴리스에서 Microsoft SQL Server 워크로드는 다음과 같은 개선 사항을 도입했습니다:</block>
   <block id="92337d8e70dfe880909b2051333e2fe4" category="paragraph">*라이선스 변경 사항*: 디스크 간 또는 디스크 간 팬아웃 아키텍처를 사용하는 백업에는 더 이상 요금이 부과되지 않습니다. 요금은 3-2-1 또는 디스크-오브젝트 스토리지 아키텍처를 사용하는 백업을 포함하여 오브젝트 스토리지에 대한 백업에만 적용됩니다.</block>
-  <block id="2f75ea4c51ce88400f5201fdeb2ccb9d" category="inline-link">NetApp Backup and Recovery를 사용하여 Microsoft SQL Server 워크로드를 보호하는 방법에 대해 알아보십시오.</block>
-  <block id="a5e96f4320434690f042cf906acacdcd" category="paragraph">Microsoft SQL Server 워크로드 보호에 대한 자세한 내용은 <block ref="36e999a623e2068d9719d9ca1143b559" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
   <block id="7065e852c4b6888b4e74708a90ddb20d" category="list-text">Oracle Database 워크로드는 미리 보기 릴리스 상태이므로 라이선스가 필요하지 않습니다.</block>
   <block id="e28980c3ae4b3c703cc7a4f8d25ecda7" category="admonition">CIFS 및 SAN 구성의 경우 Backup and Recovery는 보호 그룹의 각 VM에 연결된 모든 디스크를 자동으로 보호합니다. 여기에는 여러 ONTAP 볼륨 또는 ONTAP 스토리지 시스템에 분산된 파일(스패닝 디스크)과 단일 위치에 제한된 파일(비 스패닝 디스크)이 포함됩니다.</block>
   <block id="c138f0fc5add74f3ad77a943271dcc42" category="section-title">사용 가능한 Oracle Database 복원 지점에 대한 정보를 확인하십시오</block>
@@ -6298,4 +6294,6 @@
   <block id="5af099efa04197b8148cd4c53d100646" category="list-text">*기본 시스템에만 백업합니다*</block>
   <block id="e2d9ce30ebfec7057c448e8a44f805e1" category="list-text">*대기 모드에서만 백업*</block>
   <block id="ec521975a51b13a00e3d392d7acdf5f5" category="paragraph">*Data Guard 설정*을 활성화하지 않으면 기본 데이터베이스와 대기 데이터베이스 모두 백업됩니다. 리소스에 정책을 할당한 후에는 *Data Guard 설정*을 비활성화할 수 없습니다.</block>
+  <block id="ce6934326bbfd4652849311e1ed89fe6" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 모든 워크로드에 대해 다음과 같은 라이선스 개선 사항을 도입했습니다:</block>
+  <block id="83b090108fa1e810d92771b23b7b0267" category="paragraph">라이선스에 대한 자세한 내용은 <block ref="aa1a103ec550203513cdef85cd5672c0" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
 </blocks>
