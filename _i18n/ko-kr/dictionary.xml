@@ -511,7 +511,6 @@
   <block id="500085ef4daa2d41e99c68f5d7ced622" category="list-text">백업 대상에 대한 새로운 자격 증명을 입력합니다.  정보는 선택한 백업 대상 유형에 따라 다릅니다.</block>
   <block id="65aa0e52587b5f59eb26af06ddeef28a" category="list-text">*완료*를 선택하세요.</block>
   <block id="6d655e5ab4c22c9a5dd1c7b3cc53bcd4" category="summary">NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에 먼저 검색해야 합니다.</block>
-  <block id="ebe1fa7e8a9f4c3139f8657f10a169ee" category="doc">NetApp Backup and Recovery 에서 Hyper-V 워크로드를 알아보세요</block>
   <block id="ccb99cc37b628cd3d05ccf85f8c0c579" category="section-title">Hyper-V 호스트를 추가하고 리소스를 검색합니다.</block>
   <block id="6512c2901e9f9eae6ce40754ef6845cb" category="admonition">Hyper-V 호스트를 추가하고 리소스를 검색하면 NetApp Backup and Recovery 가 NetApp Hyper-V 플러그인과 NetApp SnapCenter Windows FileSystem 플러그인을 Hyper-V 호스트에 설치하여 가상 머신을 관리하고 보호하는 데 도움을 줍니다.</block>
   <block id="dd38712b98e7db15ffc7ca4ac996020c" category="list-text">NetApp Console 메뉴에서 *보호* &gt; *백업 및 복구*를 선택합니다.</block>
@@ -6296,4 +6295,17 @@
   <block id="ec521975a51b13a00e3d392d7acdf5f5" category="paragraph">*Data Guard 설정*을 활성화하지 않으면 기본 데이터베이스와 대기 데이터베이스 모두 백업됩니다. 리소스에 정책을 할당한 후에는 *Data Guard 설정*을 비활성화할 수 없습니다.</block>
   <block id="ce6934326bbfd4652849311e1ed89fe6" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 모든 워크로드에 대해 다음과 같은 라이선스 개선 사항을 도입했습니다:</block>
   <block id="83b090108fa1e810d92771b23b7b0267" category="paragraph">라이선스에 대한 자세한 내용은 <block ref="aa1a103ec550203513cdef85cd5672c0" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
+  <block id="78ba94be34b62da6b3c55ab6428c64de" category="paragraph">이번 릴리스에서 NetApp Backup and Recovery는 Hyper-V 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="5a17a39de31b7b5832a689a22a0960d3" category="paragraph">*NetApp MetroCluster 지원 향상*: NetApp Backup and Recovery는 이제 스위치오버 또는 스위치백 작업 전후에 NetApp MetroCluster 구성의 Hyper-V 호스트를 보호하는 기능을 지원합니다.</block>
+  <block id="3df1770bd78ab7f279534a4bc01e8279" category="inline-link">Hyper-V 워크로드를 검색하고 관리하십시오</block>
+  <block id="3cb8f9712223b09ad73c450e0af0ea64" category="paragraph">NetApp MetroCluster 구성에서 Hyper-V 호스트를 보호하는 방법에 대한 자세한 내용은 <block ref="665a91254fa4402bbc204875b0e6bd92" category="inline-link-rx"></block>을(를) 참조하십시오.</block>
+  <block id="844ae54d758df29e7d829704e13ec279" category="paragraph">Hyper-V 워크로드 보호에 대한 자세한 내용은<block ref="ae9a446e0ed2e2ae49be41b424784f6c" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="cf675c654413dcc854cb4be52cd83dc3" category="doc">NetApp Backup and Recovery에서 Hyper-V 워크로드를 검색하고 관리하십시오</block>
+  <block id="d69713a2a3c453e5fbf0ea6d3400e8d8" category="section-title">Hyper-V 호스트 새로 고침</block>
+  <block id="41d2c48fc5de199e2d709875cf13b714" category="paragraph">Hyper-V 호스트를 새로 고쳐 호스트의 VM 목록을 업데이트하고 연결된 스토리지를 매핑합니다. MetroCluster 스위치오버 또는 스위치백 이후, 또는 최근에 호스트에서 VM을 추가하거나 제거한 경우에 이 작업을 수행할 수 있습니다.</block>
+  <block id="07a120107375b845b998da2fcc4ff1b5" category="admonition">Hyper-V 호스트가 NetApp MetroCluster 구성으로 보호되는 경우, 모든 MetroCluster 스위치오버 또는 스위치백 후, 그리고 다음 예약되거나 수동으로 실행되는 백업 또는 스냅샷 전에 호스트를 새로 고치십시오. 호스트가 새로 고쳐지기 전에 호스트에 대해 실행되는 모든 백업 또는 스냅샷은 실패합니다. 호스트를 수동으로 새로 고치지 않으면 Backup and Recovery가 12시간 이내에 자동으로 호스트를 새로 고칩니다.</block>
+  <block id="f801f8619ab78bc2c752d1ee8fd4f92c" category="list-text">Hyper-V 워크로드 유형에 대한 *보기* 링크를 선택합니다.</block>
+  <block id="09ccb7f44019b1b4d13b4944ec04a56f" category="list-text">새로 고칠 Hyper-V 호스트를 선택하고 작업 아이콘 <block ref="2137b8853c2ddb346939b7d46bf562c2" category="inline-image-macro-rx" type="image"></block> &gt; *새로 고침*을 선택합니다.</block>
+  <block id="2ed0cb11d89d0befd7096c8dfd797cf8" category="admonition">Hyper-V 호스트가 NetApp MetroCluster 구성으로 보호되는 경우, 모든 MetroCluster 스위치오버 또는 스위치백 후, 그리고 다음 예약된 백업 또는 수동 백업이나 스냅샷 전에 호스트를 새로 고치십시오. 지침은 <block ref="8cb2dd4b3d4a18fa676f8b0c073c9b7b" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026년 11월 9일</block>
 </blocks>

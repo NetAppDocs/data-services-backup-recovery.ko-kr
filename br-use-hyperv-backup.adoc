@@ -28,6 +28,9 @@ summary: NetApp 백업 및 복구를 통해 Hyper-V 워크로드를 보호하세
 
 시스템 변경을 수행하기 전에 온디맨드 백업을 사용하여 데이터를 보호하십시오.
 
+
+IMPORTANT: Hyper-V 호스트가 NetApp MetroCluster 구성으로 보호되는 경우, 모든 MetroCluster 스위치오버 또는 스위치백 후, 그리고 다음 예약된 백업 또는 수동 백업이나 스냅샷 전에 호스트를 새로 고치십시오. 지침은 link:br-start-discover-hyperv.html#refresh-a-hyper-v-host["Hyper-V 호스트 새로 고침"]을(를) 참조하십시오.
+
 *필수 NetApp Console 역할* 백업 및 복구 슈퍼 관리자 또는 백업 및 복구 백업 관리자 역할. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["모든 서비스에 대한 NetApp Console 액세스 역할에 대해 알아보세요."^].
 
 .단계

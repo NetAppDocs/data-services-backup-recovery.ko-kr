@@ -1,0 +1,16 @@
+= Hyper-V 워크로드 향상
+:allow-uri-read: 
+
+
+
+
+[[hyper-v-workloads-enhancement]]
+=== Hyper-V 워크로드 향상
+
+이번 릴리스에서 NetApp Backup and Recovery는 Hyper-V 워크로드에 대해 다음과 같은 향상된 기능을 제공합니다.
+
+*NetApp MetroCluster 지원 향상*: NetApp Backup and Recovery는 이제 스위치오버 또는 스위치백 작업 전후에 NetApp MetroCluster 구성의 Hyper-V 호스트를 보호하는 기능을 지원합니다.
+
+NetApp MetroCluster 구성에서 Hyper-V 호스트를 보호하는 방법에 대한 자세한 내용은  https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-discover-hyperv.html["Hyper-V 워크로드를 검색하고 관리하십시오"^]을(를) 참조하십시오.
+
+Hyper-V 워크로드 보호에 대한 자세한 내용은 https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-hyperv-protect-overview.html["NetApp Backup and Recovery를 사용하여 Hyper-V 워크로드를 보호하는 방법에 대해 알아보십시오."^]를 참조하십시오.
