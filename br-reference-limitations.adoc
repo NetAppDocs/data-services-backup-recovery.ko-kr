@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-reference-limitations.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Microsoft SQL Server database, SAP HANA database 
-summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않는 기능이나 이 릴리스와 올바르게 상호 운용되지 않는 기능을 나타냅니다. 이러한 제한 사항을 주의 깊게 검토하세요. 
+summary: ONTAP 볼륨을 사용하는 NetApp Backup and Recovery의 알려진 제한 사항을 검토하십시오. 
 ---
 = ONTAP 볼륨에 대한 NetApp Backup and Recovery 의 알려진 제한 사항
 :hardbreaks:
@@ -95,7 +95,7 @@ FlexVol 볼륨에는 이러한 제한이 없습니다. 시스템의 모든 FlexV
 [[restore-limitations-for-ontap-volumes]]
 == ONTAP 볼륨에 대한 복원 제한
 
-이러한 제한 사항은 파일과 폴더를 복원하는 검색 및 복원 방법과 찾아보기 및 복원 방법 모두에 적용됩니다(특별히 언급되지 않는 한).
+이러한 제한 사항은 특별히 명시된 경우를 제외하고 파일 및 폴더 복원 방법인 검색 및 복원과 찾아보기 및 복원 모두에 적용됩니다.
 
 * 로컬 스냅샷에서 폴더를 복원하는 것은 지원되지 않습니다.
 * 재해 복구(DR) 구성에서 파일 및 폴더 복원: 페일오버 후, DR용으로 구성된 스토리지 VM의 볼륨은 기존 SnapMirror 관계를 끊어진 상태로 유지합니다. 임시 SnapMirror RST 관계를 생성하는 파일 또는 폴더 복원 시도는 대상 볼륨에 이미 관계가 존재하기 때문에 ONTAP에서 차단됩니다.

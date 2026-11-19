@@ -43,7 +43,7 @@ NetApp Console에서 백업 및 복구 서비스를 활성화하십시오.
 NetApp Console 로컬 배포에서 백업 및 복구 서비스를 활성화하십시오.
 
 .시작하기 전에
-NetApp Backup and Recovery 라이선스를 취득했는지 확인하십시오. 자세한 내용은 https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html#obtain-a-license-file["라이센스 취득"^]을 참조하십시오.
+NetApp Backup and Recovery 라이선스가 있는지 확인하십시오. 자세한 내용은  https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html#obtain-a-license-file["라이센스 취득"^] 참조하십시오.
 
 .단계
 . NetApp Console 메뉴에서 *스토리지* > *플릿*을 선택합니다.

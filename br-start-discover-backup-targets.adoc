@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-discover-backup-targets.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Microsoft SQL Server database, 
-summary: 'NetApp Backup and Recovery 에서 오프사이트 백업 대상을 찾으려면 몇 가지 단계를 완료하세요.  이러한 대상에는 Amazon Web Services(AWS) S3, Microsoft Azure Blob Storage, Google Cloud Storage, StorageGRID 포함될 수 있습니다.' 
+summary: NetApp Backup and Recovery에서 오프사이트 백업 대상을 탐색하고, 버킷을 추가하고, 자격 증명을 변경합니다. 
 ---
 = NetApp Backup and Recovery 에서 오프사이트 백업 대상을 찾아보세요
 :hardbreaks:
@@ -108,7 +108,7 @@ NetApp Backup and Recovery에서 버킷을 자동으로 검색하도록 하는 �
 +
 ** AWS의 경우:
 +
-*** *버킷 이름*: S3 버킷의 이름을 입력하세요. "netapp-backup" 접두사는 필수 접두사이며, 제공하는 이름에 자동으로 추가됩니다.
+*** *버킷 이름*: S3 버킷 이름을 입력하세요. 필수 접두사 "netapp-backup"은 입력하신 이름에 자동으로 추가됩니다.
 *** *AWS 계정*: AWS 계정 이름을 입력하세요.
 *** *버킷 지역*: 버킷의 AWS 지역을 입력하세요.
 *** *S3 객체 잠금 활성화*: 버킷에 대한 S3 객체 잠금을 활성화하려면 이 옵션을 선택합니다.  S3 객체 잠금은 지정된 보존 기간 동안 객체가 삭제되거나 덮어쓰이는 것을 방지하여 데이터 보호 계층을 한층 더 강화합니다.  버킷을 생성할 때만 이 기능을 활성화할 수 있으며 나중에 끌 수 없습니다.

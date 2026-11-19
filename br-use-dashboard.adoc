@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-dashboard.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, backup, recovery, dashboard, view, health, status, alerts, notifications 
-summary: 워크로드 상태를 모니터링하면 워크로드 보호에 문제가 있는지 파악하고 이를 해결하기 위한 조치를 취할 수 있습니다.  NetApp Backup and Recovery 대시보드에 나타나는 백업 및 복원 상태를 보고 알림에 대응하세요.  보호 요약, 복원 요약, 시스템 요약 등을 검토할 수 있습니다. 
+summary: NetApp Backup and Recovery 대시보드에서 워크로드 상태를 모니터링하고, 백업 및 복원 상태를 검토하며, 알림에 대응하십시오. 
 ---
-= 백업 및 복구 대시보드에서 보호 상태 보기
+= NetApp Backup and Recovery 대시보드에서 보호 상태 보기
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

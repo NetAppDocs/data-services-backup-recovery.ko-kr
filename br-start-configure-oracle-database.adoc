@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-configure-oracle-database.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, workloads, protect, Oracle, configure 
-summary: NetApp Backup and Recovery에서 Oracle 데이터베이스를 구성하십시오. 
+summary: NetApp Backup and Recovery에서 독립형 또는 클러스터형 Oracle 데이터베이스에 대한 설정을 구성합니다. 
 ---
 = NetApp Backup and Recovery에서 Oracle 데이터베이스 구성
 :hardbreaks:

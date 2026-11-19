@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-vmware-restore.html 
 keywords: restore, vmware, vm, virtual machine, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: 로컬 스냅샷, 2차 스토리지 또는 오브젝트 스토리지 백업에서 VMware 가상 머신을 원래 위치 또는 다른 위치로 복원합니다. 
 ---
 = NetApp Backup and Recovery 사용하여 VMware 워크로드 복원
 :hardbreaks:
@@ -27,7 +27,7 @@ NetApp Backup and Recovery를 사용하여 스냅샷, 2차 스토리지의 복�
 .이 지점으로 복원
 다음 지점으로 데이터를 복원할 수 있습니다.
 
-* *원래 위치로 복원*: VM은 원래 위치의 동일한 vCenter 배포, ESXi 호스트 및 데이터 저장소로 복원됩니다. VM과 모든 데이터가 덮어씌워집니다.
+* *원래 위치로 복원*: 복원을 수행하면 VM이 동일한 vCenter 배포 환경, ESXi 호스트 및 데이터스토어로 복원되고 VM과 모든 데이터를 덮어씁니다.
 * *대체 위치로 복원*: VM의 복원 대상으로 다른 vCenter, ESXi 호스트 또는 데이터 저장소를 선택할 수 있습니다. 이 기능은 서로 다른 위치와 상태에 있는 동일한 VM의 여러 복사본을 관리하는 데 유용합니다.
 
 
@@ -42,7 +42,7 @@ TIP: 백업 파일에 접근하려면 클라우드 제공업체에 추가 요금
 [[how-vmware-workload-restore-works]]
 == VMware 워크로드 복원 작동 방식
 
-작업 부하를 복원하면 다음이 발생합니다.
+복원 동작은 복원 소스에 따라 다릅니다:
 
 * 로컬 스냅샷이나 원격 백업에서 워크로드를 복원할 때 NetApp Backup and Recovery 원래 위치로 복원하는 경우 원래 VM을 덮어쓰고, 대체 위치로 복원하는 경우 _새로운_ 리소스를 만듭니다.
 * 복제된 워크로드에서 복원하는 경우 워크로드를 원래 온프레미스 ONTAP 시스템이나 다른 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
@@ -66,9 +66,9 @@ VMware 워크로드를 복원하려면 복원 옵션을 사용하십시오. 스�
 . 이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *VMware*를 선택합니다.
 . 복원하려는 리소스의 이름을 입력하거나 복원하려는 리소스가 있는 vCenter, 데이터 센터 또는 데이터 저장소를 필터링합니다.
 +
-검색 기준과 일치하는 가상 머신 목록이 나타납니다.
+검색 조건과 일치하는 가상 머신 목록이 표시됩니다.
 
-. 목록에서 복원하려는 VM을 찾은 후 해당 VM의 옵션 메뉴 버튼을 선택합니다.
+. 목록에서 복원하려는 VM을 찾은 다음 해당 VM의 옵션 메뉴 버튼을 선택합니다.
 . 결과 메뉴에서 *가상 머신 복원*을 선택합니다.
 +
 해당 가상 머신에 생성된 스냅샷(복원 지점) 목록이 나타납니다. 기본적으로, *시간 프레임* 드롭다운에서 선택한 기간의 최신 스냅샷이 표시됩니다.
@@ -76,7 +76,7 @@ VMware 워크로드를 복원하려면 복원 옵션을 사용하십시오. 스�
 +
 각 스냅샷의 *위치* 열에 있는 켜진 아이콘은 스냅샷을 사용할 수 있는 저장 위치(기본, 보조 또는 개체 저장소)를 나타냅니다.
 
-. 복원하려는 스냅샷에 대한 라디오 버튼을 활성화합니다.
+. 복원하려는 스냅샷의 라디오 버튼을 선택하십시오.
 . *다음*을 선택하세요.
 +
 스냅샷 위치 옵션이 나타납니다.

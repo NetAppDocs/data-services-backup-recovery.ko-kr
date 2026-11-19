@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-kvm-restore.html 
 keywords: restore, vm, kvm, virtual machine, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery 통해 KVM 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery를 사용하여 로컬 스냅샷, 2차 스토리지 또는 오브젝트 스토리지에서 KVM 가상 머신을 원래 위치 또는 다른 위치로 복원할 수 있습니다. 
 ---
 = NetApp Backup and Recovery 사용하여 KVM 가상 머신 복원
 :hardbreaks:
@@ -42,7 +42,7 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 [[how-restoring-virtual-machines-works]]
 == 가상 머신 복원 작동 방식
 
-가상 머신을 복원할 때 다음 사항이 적용됩니다.
+복원 동작은 소스에 따라 다릅니다:
 
 * 로컬 백업 파일에서 워크로드를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
 * 복제된 VM에서 복원하는 경우 원본 시스템이나 온프레미스 ONTAP 시스템으로 복원할 수 있습니다.
@@ -66,7 +66,7 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 . 이름 검색 필드 오른쪽에 있는 드롭다운 목록에서 *KVM*을 선택합니다.
 . 복원할 VM의 이름을 입력하거나 VM이 위치한 VM 호스트 또는 스토리지 풀로 필터링하십시오.
 +
-검색 기준에 맞는 스냅샷 목록이 나타납니다.
+검색 조건과 일치하는 스냅샷 목록이 표시됩니다.
 
 . 복원하려는 스냅샷에 대해 *복원*을 선택하십시오.
 +
@@ -93,14 +93,14 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 .대체 위치로 복원
 --
 .. *대체 위치* 창을 선택하세요.
-.. *CloudStack settings* 섹션에서 다음 정보를 제공하십시오.
+.. *CloudStack 설정* 섹션에서 다음 정보를 제공하십시오:
 +
 *** *영역*: 목록에서 대상 CloudStack 영역을 선택하세요.
 *** *Pod*: 목록에서 선택한 영역 내의 대상 Pod를 선택합니다.
 *** *클러스터*: 목록에서 선택한 Pod 내의 타겟 클러스터를 선택합니다.
 *** *호스트*: 목록에서 클러스터의 대상 호스트를 선택합니다.
 *** *스토리지 풀*: 목록에서 타겟 스토리지 풀을 선택합니다(타겟 볼륨이 여기에 있어야 함).
-*** *네트워크*: 복원된 VM이 연결될 네트워크를 선택하십시오.
+*** *네트워크*: 복원된 가상 머신을 연결할 네트워크를 선택하십시오.
 *** *VM 이름*: 복원할 VM의 이름을 입력하십시오.
 *** *표시 이름*: NetApp Backup and Recovery에서 이 VM에 표시될 이름을 입력하십시오.
 *** *스토리지 풀 경로*: VM 볼륨이 저장될 스토리지 풀 경로를 입력하십시오.
@@ -108,7 +108,7 @@ TIP: 백업 파일의 내용에 액세스하려면 클라우드 제공업체로�
 
 .. *서비스 제공 유형 선택* 목록에서 원하는 리소스 할당 수준을 정의하는 서비스 제공 유형을 선택하십시오.
 .. VM의 NIC MAC 주소 중 하나 이상이 이미 있는 경우에도 복원된 VM을 가져오려면 *강제* 옵션을 활성화합니다. MAC 주소가 이미 있는 경우 해당 NIC에 대해 새 MAC 주소가 생성됩니다.
-.. *복원 후 옵션* 섹션에서 다음 옵션을 고려하십시오.
+.. *복원 후 옵션* 섹션에서 다음 옵션을 구성하십시오:
 +
 *** *가상 머신 재시작*: 복원 후 새 가상 머신을 부팅하려면 이 옵션을 활성화하십시오.
 

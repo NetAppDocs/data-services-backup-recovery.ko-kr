@@ -4,7 +4,7 @@ permalink: prev-ontap-protect-overview.html
 keywords: ontap volumes, protect volumes, back up volumes, restore volumes, snapshots, replication, backup to object storage, 3-2-1, FlexVol, FlexGroup, SnapLock, DataLock, ransomware protection, NetApp Backup and Recovery 
 summary: NetApp Backup and Recovery를 사용하여 스냅샷, 복제 볼륨 및 오브젝트 스토리지의 백업으로 ONTAP 볼륨을 보호하고 모든 복사본에서 볼륨, 폴더 또는 파일을 복원할 수 있습니다. 
 ---
-= NetApp Backup and Recovery를 사용하여 ONTAP 볼륨 워크로드를 보호하십시오
+= NetApp Backup and Recovery를 사용한 ONTAP 볼륨 보호에 대해 알아보십시오
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -28,7 +28,7 @@ image:diagram-321-overview-unified.png["백업 파일이 소스 시스템에 스
 3-2-1 접근법은 다음과 같은 이점을 제공합니다:
 
 * 여러 개의 데이터 사본을 보관하여 내부 및 외부 사이버 보안 위협으로부터 보호합니다.
-* 다양한 유형의 미디어를 사용하면 한 유형의 미디어가 실패하더라도 복구하는 데 도움이 됩니다.
+* 다양한 유형의 저장 매체를 사용하면 한 유형의 저장 매체가 고장 나더라도 복구할 수 있습니다.
 * 온사이트 사본에서 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.
 
 
@@ -55,7 +55,7 @@ image:diagram-backup-recovery-general.png["NetApp Backup and Recovery 복제된 
 
 
 
-CAUTION: 스토리지 시스템이나 클라우드 공급자 환경에서 백업 파일을 직접 관리하거나 변경하지 마십시오. 이렇게 하면 파일이 손상되고 지원되지 않는 구성이 될 수 있습니다.
+CAUTION: 스토리지 시스템이나 클라우드 공급자 환경에서 백업 파일을 직접 관리하거나 변경하지 마십시오. 이렇게 하면 파일이 손상되어 지원되지 않는 구성이 될 수 있습니다.
 
 어떤 복사본과 아키텍처를 사용할지 계획하려면 link:prev-ontap-protect-journey.html["ONTAP 볼륨 보호 계획"]을(를) 참조하십시오.
 
@@ -69,7 +69,7 @@ CAUTION: 스토리지 시스템이나 클라우드 공급자 환경에서 백업
 * 백업 및 재해 복구를 지원하기 위해 ONTAP 스토리지 시스템 간에 데이터를 복제합니다.
 * 한 번에 여러 개의 FlexVol 볼륨을 보조 시스템에 복제합니다.
 * 두 시스템 간에 사전 공유 키(PSK)를 사용하여 기본 ONTAP 전송 중 암호화를 사용하십시오.
-* 전송 실패 시 자체 복구 복제 기능을 활용하십시오.
+* 전송이 실패할 경우 자체 복구 복제 기능을 활용하십시오.
 * 복제된 볼륨을 소스 시스템 또는 다른 시스템으로 복원합니다.
 
 
@@ -104,7 +104,7 @@ Backup and Recovery를 사용하여 복제할 때 사용할 수 없는  https://
 
 NetApp Backup and Recovery 다음 유형의 볼륨을 지원합니다.
 
-* FlexVol 읽기-쓰기 볼륨
+* FlexVol 읽기/쓰기 볼륨
 * FlexGroup 볼륨( ONTAP 9.12.1 이상 필요)
 * SnapLock Enterprise 볼륨( ONTAP 9.11.1 이상 필요)
 * 온프레미스 볼륨용 SnapLock Compliance(ONTAP 9.14 이상 필요)

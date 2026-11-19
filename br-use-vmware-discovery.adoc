@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-vmware-discovery.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: ONTAP 시스템에서 VMware 데이터스토어 및 VM을 탐색하고, SnapCenter Plug-in for VMware vSphere 리소스를 가져와 NetApp Backup and Recovery에서 관리할 수 있습니다. 
 ---
 = NetApp Backup and Recovery 통해 VMware 워크로드를 알아보세요
 :hardbreaks:
@@ -25,7 +25,7 @@ ONTAP 시스템에서 실행되는 VMware 데이터스토어와 VM을 보호하�
 
 검색 중에 NetApp Backup and Recovery 조직 내의 VMware 워크로드를 분석하고 기존 보호 정책, 스냅샷, 백업 및 복원 옵션을 평가하고 가져옵니다.
 
-온프레미스 SnapCenter Plug-in for VMware vSphere를 사용하는 경우 VMware 데이터스토어 및 리소스 VM을 NetApp Backup and Recovery로 가져올 수 있습니다.
+온프레미스 SnapCenter Plug-in for VMware vSphere를 사용하는 경우, VMware 데이터스토어와 VM을 NetApp Backup and Recovery로 가져올 수 있습니다.
 
 
 NOTE: 스토리지 시스템을 NetApp Console에 추가한 후에는 리소스를 검색하기 전에 몇 분 정도 기다리십시오. 스토리지 시스템을 추가한 직후에 리소스를 검색하면 검색이 실패할 수 있습니다.
@@ -49,7 +49,7 @@ NOTE: NetApp Backup and Recovery는 VMware vCenter만 지원하며 vVols 또는 
 * 이미 SnapCenter 또는 SnapCenter Plug-in for VMware vSphere를 보유하고 있는 경우, NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and Recovery로 가져오십시오.
 +
 
-NOTE: 이미 SnapCenter Plug-in이 있는 경우, SnapCenter에서 가져오기 전에 사전 요구사항을 충족했는지 확인하십시오. 예를 들어, SnapCenter에서 가져오기 전에 먼저 모든 온프레미스 SnapCenter 클러스터 스토리지에 대한 시스템을 NetApp Console에 생성해야 합니다. link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"]을 참조하십시오. SnapCenter 호스트에서 직접 데이터를 가져오려면 link:br-start-configure.html#import-and-manage-snapcenter-host-resources["SnapCenter 호스트 리소스 가져오기 및 관리"]을 참조하십시오.
+NOTE: 이미 SnapCenter Plug-in이 있는 경우 SnapCenter에서 가져오기 전에 사전 요구 사항을 충족했는지 확인하십시오. 예를 들어, SnapCenter에서 가져오기 전에 먼저 모든 온프레미스 SnapCenter 클러스터 스토리지에 대해 NetApp Console에 시스템을 생성해야 합니다. link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"]을 참조하십시오. SnapCenter 호스트에서 직접 데이터를 가져오려면 link:br-start-configure.html#import-and-manage-snapcenter-host-resources["SnapCenter 호스트 리소스 가져오기 및 관리"]을 참조하십시오.
 
 * SnapCenter 플러그인이 없는 경우에도 vCenter를 수동으로 추가하고 검색을 수행하여 시스템 내에서 워크로드를 검색할 수 있습니다.
 

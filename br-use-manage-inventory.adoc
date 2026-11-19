@@ -16,7 +16,7 @@ summary: NetApp Backup and Recovery에서 Microsoft SQL Server 호스트, 인스
 [role="lead"]
 Microsoft SQL Server 호스트, 인스턴스 및 데이터베이스를 보고 관리하고 보호 설정을 변경하거나 제거할 수 있습니다.
 
-다음과 같은 방법으로 재고를 관리할 수 있습니다.
+다음 작업으로 인벤토리를 관리하십시오:
 
 * 호스트 정보 관리
 +
@@ -278,7 +278,7 @@ vCenter 서버 정보, 호스트 등록 자격 증명 및 고급 설정을 변�
 [[manage-database-information]]
 == 데이터베이스 정보 관리
 
-다음과 같은 방법으로 데이터베이스 정보를 관리할 수 있습니다.
+다음 작업을 통해 데이터베이스 정보를 관리하십시오:
 
 * 데이터베이스 보호
 * 데이터베이스 복원

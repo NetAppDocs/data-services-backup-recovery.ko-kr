@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-start-prereq.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, backup and recovery 
-summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 확인하여 NetApp Backup and Recovery 시작하세요.  NetApp Backup and Recovery 사용하려면 다음과 같은 필수 구성 요소가 필요합니다. 
+summary: NetApp Backup and Recovery를 사용하여 ONTAP 볼륨, SQL Server, VMware, KVM, Oracle, Kubernetes 및 Hyper-V를 보호하기 위한 NetApp Console, 오브젝트 스토리지 및 워크로드 요구 사항을 확인하십시오. 
 ---
 = NetApp Backup and Recovery 요구 사항
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 운영 환경, 콘솔 에이전트, 콘솔 계정의 준비 상태를 �
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하기 전에 NetApp Console과 운영 환경이 다음 요구 사항을 충족하는지 확인하십시오.
+NetApp Console 및 운영 환경이 NetApp Backup and Recovery를 사용하여 ONTAP 볼륨, 데이터베이스, 가상 머신 및 Kubernetes 워크로드를 보호하기 위한 요구 사항을 충족하는지 확인하십시오.
 
 
 
@@ -212,7 +212,7 @@ NFS에서 VMware Virtual Machine File System(VMFS) 및 VMware Virtual Machine Di
 
 
 | SnapCenter 서버 버전  a| 
-SnapCenter 에서 NetApp Backup and Recovery 로 기존 데이터를 가져오려면 SnapCenter Server 버전 5.0 이상이 필요합니다.
+SnapCenter Server 버전 5.0 이상이 있어야 SnapCenter에서 NetApp Backup and Recovery로 기존 데이터를 가져올 수 있습니다.
 
 
 NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 필수 구성 요소를 충족했는지 먼저 확인하세요.  보다link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"] .
@@ -227,7 +227,7 @@ NOTE: 이미 SnapCenter 가 있는 경우 SnapCenter 에서 가져오기 전에 
 | SQL Server 호스트의 플러그인에 대한 최소 설치 및 로그 공간  a| 
 5GB
 
-충분한 디스크 공간을 할당하고 로그 폴더의 저장 공간 소비량을 모니터링합니다.  필요한 로그 공간은 수행된 백업 횟수와 데이터 보호 작업 빈도에 따라 달라집니다.  충분한 공간이 없으면 작업에 대한 로그가 생성되지 않습니다.
+충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 사용량을 모니터링하십시오. 필요한 로그 공간은 수행되는 백업 횟수와 데이터 보호 작업 빈도에 따라 달라집니다. 공간이 부족하면 해당 작업에 대한 로그가 생성되지 않습니다.
 
 
 
@@ -308,7 +308,7 @@ VMware 워크로드를 검색하고 보호하려면 특정 요구 사항이 필�
 
 
 | 연결된 스토리지  a| 
-* ONTAP 9.13.1 이상 (서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요합니다. 최대 100개 버킷까지 지원 가능)
+* ONTAP 9.13.1 이상 (서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요합니다. 최대 100개 버킷)
 * ASA r2 SAN 전용 시스템(ONTAP 9.17.1 이상 필요)
 * 버전 9.13.1 이상을 실행하는 Amazon FSx for NetApp ONTAP 스토리지 시스템
 * Google Cloud NetApp Volumes(ONTAP 모드 및 Flex Unified 서비스 수준)
@@ -486,7 +486,7 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 | 요구 사항 | 지원됨 
 
 
-| Microsoft Hyper-V | 2019, 2022 및 2025 에디션 
+| Microsoft Hyper-V | 2019년, 2022년, 2025년판 
 
 
 | ASP.NET Core 런타임 | 10.0.10 호스팅 번들 
@@ -522,11 +522,11 @@ Hyper-V 인스턴스가 가상 머신을 검색하고 보호하기 위한 특정
 * Hyper-V 호스트의 플러그인을 위한 최소 5GB 설치 및 로그 공간
 +
 
-NOTE: Hyper-V 호스트에 로그 폴더에 충분한 디스크 공간을 할당하고 사용량을 정기적으로 모니터링하세요.  필요한 공간은 백업 및 데이터 보호 작업이 얼마나 자주 발생하는지에 따라 달라집니다.  공간이 충분하지 않으면 로그가 생성되지 않습니다.
+NOTE: Hyper-V 호스트의 로그 폴더에 충분한 디스크 공간을 할당하고 사용량을 정기적으로 모니터링하십시오. 필요한 공간은 백업 및 데이터 보호 작업이 수행되는 빈도에 따라 달라집니다. 공간이 부족하면 로그가 생성되지 않습니다.
 
 
 
 .NetApp ONTAP 구성 요구 사항
-* 기본 ONTAP 시스템(ONTAP 9.14.1 이상 - 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요하며, 최대 100개의 버킷까지 지원 가능)
+* 기본 ONTAP 시스템(ONTAP 9.14.1 이상 - 서로 다른 클라우드 제공업체에 걸쳐 시스템당 6개 이상의 버킷을 지원하려면 ONTAP 9.19.1 이상이 필요하며, 최대 100개 버킷까지 지원 가능)
 * SMB 공유를 사용하여 가상 머신 데이터를 저장하는 Hyper-V 배포의 경우 ONTAP 시스템에서 지속적인 가용성 공유 속성이 활성화되어 있는지 확인하십시오. 지침은  https://docs.netapp.com/us-en/ontap/smb-hyper-v-sql/configure-shares-continuous-availability-task.html["ONTAP 문서"^]을 참조하십시오.
 

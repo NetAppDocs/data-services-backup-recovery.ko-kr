@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-onprem-azure.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery를 사용하여 환경을 준비하고 온프레미스 ONTAP 볼륨의 백업을 Azure Blob Storage로 활성화하십시오. 
 ---
-= NetApp Backup and Recovery 사용하여 온-프레미스 ONTAP 데이터를 Azure Blob 스토리지에 백업
+= NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 데이터를 Azure Blob Storage에 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하면 온프레미스 ONTAP 시스템의 볼륨 데이터를 2차 스토리지 시스템과 Azure Blob에 백업할 수 있습니다. 이 페이지를 참조하여 환경을 준비하고 백업을 활성화하십시오.
+NetApp Backup and Recovery에서 온프레미스 ONTAP 시스템의 볼륨 데이터를 2차 스토리지 시스템과 Azure Blob Storage에 백업할 수 있습니다. 환경을 준비한 다음 백업을 활성화하여 볼륨을 보호하십시오.
 
 
 NOTE: "온프레미스 ONTAP 시스템"에는 FAS, AFF 및 ONTAP Select 시스템이 포함됩니다.
@@ -80,7 +80,7 @@ NetApp Backup and Recovery는 콘솔 에이전트가 클라우드에 배포된 �
 +
 ** NetApp Backup and Recovery 와 Blob 개체 스토리지에 대한 포트 443을 통한 HTTPS 연결(https://docs.netapp.com/us-en/console-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["엔드포인트 목록을 확인하세요"^] )
 ** ONTAP 클러스터 관리 LIF에 대한 포트 443을 통한 HTTPS 연결
-** NetApp Backup and Recovery 검색 및 복원 기능이 작동하려면 콘솔 에이전트와 Azure Synapse SQL 서비스 간 통신을 위해 포트 1433이 열려 있어야 합니다.
+** NetApp Backup and Recovery Search & Restore가 제대로 작동하려면 콘솔 에이전트와 Azure Synapse SQL 서비스 간의 통신을 위해 포트 1433이 열려 있어야 합니다.
 ** Azure 및 Azure Government 배포에는 추가 인바운드 보안 그룹 규칙이 필요합니다. 보다 https://docs.netapp.com/us-en/console-setup-admin/reference-ports-azure.html["Azure의 콘솔 에이전트에 대한 규칙"^] 자세한 내용은.
 
 
@@ -272,7 +272,7 @@ NetApp Backup and Recovery 사용하여 보조 ONTAP 시스템에 복제된 볼�
 * 클러스터가 온프레미스에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다. 이는 일반적으로 VPN 연결입니다.
 * ONTAP 클러스터는 추가적인 서브넷, 포트, 방화벽 및 클러스터 요구 사항을 충족해야 합니다.
 +
-Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하세요. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^] .
+Cloud Volumes ONTAP 또는 온프레미스 시스템으로 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하십시오. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^].
 
 
 
@@ -292,7 +292,7 @@ Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므�
 +
 NetApp Backup and Recovery는 권한 모델로 _Azure 액세스 정책_을 지원합니다. _Azure 역할 기반 액세스 제어_(Azure RBAC) 권한 모델은 현재 지원되지 않습니다.
 
-. 온프레미스 데이터 센터에서 VNet으로 공용 인터넷을 통해 보다 안전하게 연결하려면 활성화 마법사에서 Azure 개인 엔드포인트를 구성하는 옵션이 있습니다.  이 경우 해당 연결에 대한 VNet과 서브넷을 알아야 합니다. https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview["개인 엔드포인트 사용에 대한 세부 정보를 참조하세요."^] .
+. 온프레미스 데이터 센터에서 VNet으로 공용 인터넷을 통해 보다 안전한 연결을 구축하려면 활성화 마법사에서 Azure 프라이빗 엔드포인트를 구성하는 옵션이 있습니다. 이 경우 이 연결을 위한 VNet과 서브넷을 알아야 합니다. https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview["개인 엔드포인트 사용에 대한 세부 정보를 참조하세요."^].
 
 
 

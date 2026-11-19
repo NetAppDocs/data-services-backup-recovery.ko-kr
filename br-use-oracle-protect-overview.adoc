@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-oracle-protect-overview.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
-summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Azure, Google Cloud Platform, StorageGRID 까지 Oracle 가상 머신을 보호하여 데이터가 안전하게 보호되도록 할 수 있습니다. 
+summary: AWS S3, StorageGRID, Azure Blob 또는 ONTAP S3에 데이터베이스 일관성 백업을 생성하고 온프레미스 Oracle 호스트로 복원하여 Oracle Database 워크로드 및 로그를 보호하십시오. 
 ---
 = NetApp Backup and Recovery로 Oracle 데이터베이스 워크로드를 보호합니다.
 :hardbreaks:
@@ -16,10 +16,10 @@ summary: 온프레미스 ONTAP 시스템부터 Amazon Web Services, Microsoft Az
 [role="lead"]
 NetApp Backup and Recovery를 사용하여 빠르고 공간 효율적이며, 충돌 시에도 정합성 보장 및 데이터베이스 정합성 보장 백업 및 복원을 통해 Oracle 데이터베이스 워크로드와 로그를 보호하십시오. 워크로드를 AWS S3, StorageGRID, Azure Blob 또는 ONTAP S3에 백업하고 온프레미스 Oracle 호스트에 복원할 수 있습니다.
 
-NetApp Backup and Recovery 사용하여 3-2-1 보호 전략을 구현합니다. 즉, 소스 데이터의 사본 3개를 2개의 서로 다른 스토리지 시스템에 두고, 나머지 사본 1개를 클라우드에 둡니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
+NetApp Backup and Recovery를 사용하여 3-2-1 보호 전략을 구현하십시오. 이 전략에서는 원본 데이터의 복사본을 두 개의 서로 다른 스토리지 시스템에 3개 저장하고, 클라우드에도 1개를 저장합니다. 3-2-1 접근 방식의 이점은 다음과 같습니다.
 
 * 여러 개의 데이터 사본을 보관하여 내부 및 외부 사이버 보안 위협으로부터 보호합니다.
-* 다양한 유형의 미디어를 사용하면 한 유형의 미디어가 실패하더라도 복구하는 데 도움이 됩니다.
+* 다양한 유형의 저장 매체를 사용하면 한 유형의 저장 매체가 고장 나더라도 복구할 수 있습니다.
 * 온사이트 사본에서 빠르게 복원할 수 있으며, 온사이트 사본이 손상된 경우 오프사이트 사본을 사용할 수 있습니다.
 
 

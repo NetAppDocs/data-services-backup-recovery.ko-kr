@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: prev-ontap-restore-cli.html 
 keywords: CLI, ONTAP, restore, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery 
-summary: 경우에 따라 ONTAP 데이터를 복원하기 위해 ONTAP CLI를 사용해야 할 수도 있습니다. 
+summary: 백업 및 복구 웹 UI를 통해 복원할 수 없는 경우 ONTAP CLI를 사용하여 오브젝트 스토리지 백업에서 ONTAP 데이터를 복원하십시오. 
 ---
 = ONTAP CLI를 사용하여 ONTAP 데이터를 복원합니다.
 :hardbreaks:

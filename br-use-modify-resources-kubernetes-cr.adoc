@@ -103,7 +103,7 @@ transformations:
           "topology.kubernetes.io/zone": "us-east-1a"
           disktype: "ssd"
 ----
-명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+다음 명령을 사용하여 명령줄에서 이 변환을 실행하십시오:
 
 [source, bash]
 ----
@@ -126,7 +126,7 @@ transformations:
         from: "/data/source-key"
         path: "/data/backup-key"
 ----
-명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+다음 명령을 사용하여 명령줄에서 이 변환을 실행하십시오:
 
 [source, bash]
 ----
@@ -149,7 +149,7 @@ transformations:
         from: "/data/OLD_KEY"
         path: "/data/NEW_KEY"
 ----
-명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+다음 명령을 사용하여 명령줄에서 이 변환을 실행하십시오:
 
 [source, bash]
 ----
@@ -174,7 +174,7 @@ transformations:
 
 NOTE: 위 예시의 경로에서  `~1`는  `/`에 대한 JSON 포인터 이스케이프 시퀀스입니다.
 
-명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+다음 명령을 사용하여 명령줄에서 이 변환을 실행하십시오:
 
 [source, bash]
 ----
@@ -198,7 +198,7 @@ transformations:
         path: "/spec/host"
         value: "prod.example.com"
 ----
-명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+다음 명령을 사용하여 명령줄에서 이 변환을 실행하십시오:
 
 [source, bash]
 ----
@@ -224,7 +224,7 @@ transformations:
         path: "/data/database-host"
         value: "prod-db.example.com"
 ----
-명령줄을 사용하여 이 변환을 실행하려면 다음 명령을 사용하십시오.
+다음 명령을 사용하여 명령줄에서 이 변환을 실행하십시오:
 
 [source, bash]
 ----

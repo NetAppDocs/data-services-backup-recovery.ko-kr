@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-oracle-clone.html 
 keywords: clone, clone application data, Amazon Web Services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database, protection group 
-summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 복제하세요. 
+summary: NetApp Backup and Recovery를 사용하여 Oracle Database 워크로드의 복제본을 생성, 예약, 분할 및 삭제할 수 있습니다. 
 ---
 = NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드 복제
 :hardbreaks:

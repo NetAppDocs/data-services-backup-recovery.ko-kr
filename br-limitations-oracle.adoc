@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-limitations-oracle.html 
 keywords: NetApp Backup and Recovery, Oracle Database 
-summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetApp Backup and Recovery 제한 사항을 검토하십시오. 
+summary: NetApp Backup and Recovery를 사용하기 전에 Oracle 데이터베이스 워크로드에 대한 제한 사항 및 지원되지 않는 작업을 검토하십시오. 
 ---
 = NetApp Backup and Recovery for Oracle Database 워크로드의 알려진 제한 사항
 :hardbreaks:

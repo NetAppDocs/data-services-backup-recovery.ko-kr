@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-vmware-restore-vmdks-from-backups.html 
 keywords:  
-summary: 기존 VMDK를 복원하거나, 삭제되거나 분리된 VMDK를 기존 VM 또는 vVol VM의 기본 또는 보조 백업에서 복원할 수 있습니다. 
+summary: 기존 VM 또는 vVol VM의 기본 또는 보조 백업에서 기존, 삭제 또는 분리된 VMDK를 복원합니다. 
 ---
 = NetApp Backup and Recovery에서 백업을 사용하여 VMware 가상 디스크를 복원합니다.
 :hardbreaks:
@@ -50,7 +50,7 @@ TIP: NFS 환경에서 복원 작업의 성능을 향상시키려면 VMware 애�
 +
 각 스냅샷의 *위치* 열에 있는 켜진 아이콘은 스냅샷을 사용할 수 있는 저장 위치(기본, 보조 또는 개체 저장소)를 나타냅니다.
 
-. 복원하려는 스냅샷에 대한 라디오 버튼을 활성화합니다.
+. 복원하려는 스냅샷에 해당하는 라디오 버튼을 선택하세요.
 . *다음*을 선택하세요.
 +
 스냅샷 위치 옵션이 나타납니다.

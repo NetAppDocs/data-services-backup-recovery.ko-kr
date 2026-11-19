@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-Trident Protect는 데이터 보호 작업 중 KubeVirt 가상 머신에 대한 파일 시스템 동결 및 동결 해제 기능을 제공하여 데이터 일관성을 보장합니다. VM 동결 작업에 대한 구성 방법과 기본 동작은 Trident Protect 버전에 따라 다르며, 최신 릴리스에서는 Helm 차트 매개변수를 통해 간소화된 구성을 제공합니다.
+Trident Protect는 데이터 일관성을 보장하기 위해 데이터 보호 작업 중 KubeVirt 가상 머신에 대한 파일 시스템 동결 및 동결 해제 기능을 제공합니다. VM 동결 작업에 대한 구성 방법과 기본 동작은 Trident Protect 버전에 따라 다르며, 최신 릴리스에서는 Helm 차트 매개변수를 통해 간소화된 구성을 제공합니다.
 
 
 NOTE: 복원 작업 중에는 가상 머신(VM)에 대해 생성된 `VirtualMachineSnapshots`는 복원되지 않습니다.

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-limitations-vmware.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, vmware, vcenter 
-summary: 환경에서 Backup and Recovery를 사용하기 전에 이러한 NetApp Backup and Recovery 제한 사항을 검토하십시오. 
+summary: 가상 머신을 보호하기 전에 NetApp Backup and Recovery에서 VMware 워크로드에 대한 알려진 제한 사항을 검토하십시오. 
 ---
 = NetApp Backup and Recovery에서 VMware 워크로드에 대한 알려진 제한 사항
 :hardbreaks:

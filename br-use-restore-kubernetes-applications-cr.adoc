@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: br-use-restore-kubernetes-applications-cr.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
-summary: NetApp Backup and Recovery 사용하면 보호 정책으로 보호한 애플리케이션을 복원할 수 있습니다. 
+summary: 다른 네임스페이스, 원래 네임스페이스 또는 다른 클러스터로의 복원 등 사용자 지정 리소스를 사용하여 스냅샷 또는 백업에서 Kubernetes 애플리케이션을 복원합니다. 
 ---
-= 사용자 지정 리소스를 사용하여 Kubernetes 애플리케이션 복원
+= NetApp Backup and Recovery에서 사용자 지정 리소스가 포함된 Kubernetes 앱을 복원합니다.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -39,7 +39,7 @@ BackupRestore CR을 사용하여 다른 네임스페이스로 백업을 복원�
 
 ====
 .시작하기 전에
-장시간 소요되는 s3 복원 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
+장시간 소요되는 S3 복원 작업에 대해 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
 
 * 현재 세션 토큰 만료 확인에 대한 자세한 내용은 https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html["AWS API 문서"^]을 참조하십시오.
 * AWS 리소스에 대한 자격 증명 관련 자세한 내용은  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html["AWS IAM 문서"^]를 참조하십시오.
@@ -137,7 +137,7 @@ kubectl apply -f trident-protect-backup-restore-cr.yaml
 언제든지 백업을 원래 네임스페이스로 복원할 수 있습니다.
 
 .시작하기 전에
-장시간 소요되는 s3 복원 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
+장시간 소요되는 S3 복원 작업에 대해 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
 
 * 현재 세션 토큰 만료 확인에 대한 자세한 내용은 https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html["AWS API 문서"^]을 참조하십시오.
 * AWS 리소스에 대한 자격 증명 관련 자세한 내용은  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html["AWS IAM 문서"^]를 참조하십시오.
@@ -243,7 +243,7 @@ kubectl apply -f trident-protect-backup-ipr-cr.yaml
 
 ====
 .시작하기 전에
-다음 사전 요구 사항이 충족되는지 확인하십시오.
+다음 필수 조건을 충족하는지 확인하십시오:
 
 * 타겟 클러스터에 Trident Protect가 설치되어 있습니다.
 * 타겟 클러스터는 백업이 저장된 소스 클러스터와 동일한 AppVault의 버킷 경로에 액세스할 수 있습니다.
@@ -341,7 +341,7 @@ kubectl apply -f trident-protect-backup-restore-cr.yaml
 [[restore-a-snapshot-to-a-different-namespace]]
 == 스냅샷을 다른 네임스페이스로 복원합니다
 
-스냅샷에서 사용자 지정 리소스(CR) 파일을 사용하여 다른 네임스페이스 또는 원래 소스 네임스페이스로 데이터를 복원할 수 있습니다. SnapshotRestore CR을 사용하여 스냅샷을 다른 네임스페이스로 복원하면 Backup and Recovery가 새 네임스페이스에 애플리케이션을 복원하고 복원된 애플리케이션에 대한 애플리케이션 CR을 생성합니다. 복원된 애플리케이션을 보호하려면 필요에 따라 백업 또는 스냅샷을 생성하거나 보호 일정을 설정하십시오.
+사용자 지정 리소스(CR) 파일을 사용하여 스냅샷에서 다른 네임스페이스 또는 원래 소스 네임스페이스로 데이터를 복원할 수 있습니다. SnapshotRestore CR을 사용하여 스냅샷을 다른 네임스페이스로 복원하면 Backup and Recovery가 새 네임스페이스에 애플리케이션을 복원하고 복원된 애플리케이션에 대한 애플리케이션 CR을 생성합니다. 복원된 애플리케이션을 보호하려면 온디맨드 백업 또는 스냅샷을 생성하거나 보호 일정을 설정하십시오.
 
 [NOTE]
 ====
@@ -351,7 +351,7 @@ kubectl apply -f trident-protect-backup-restore-cr.yaml
 
 ====
 .시작하기 전에
-장시간 소요되는 s3 복원 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
+장시간 소요되는 S3 복원 작업에 대해 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
 
 * 현재 세션 토큰 만료 확인에 대한 자세한 내용은 https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html["AWS API 문서"^]을 참조하십시오.
 * AWS 리소스에 대한 자격 증명 관련 자세한 내용은  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html["AWS IAM 문서"^]를 참조하십시오.
@@ -449,7 +449,7 @@ kubectl apply -f trident-protect-snapshot-restore-cr.yaml
 NOTE: 현재 로컬 스냅샷에서 VM 기반 앱을 제자리 복원(원래 네임스페이스 및 원래 클러스터로 복원)하는 기능은 지원되지 않습니다.
 
 .시작하기 전에
-장시간 소요되는 s3 복원 작업의 경우 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
+장시간 소요되는 S3 복원 작업에 대해 AWS 세션 토큰 만료 기간이 충분한지 확인하십시오. 복원 작업 중에 토큰이 만료되면 작업이 실패할 수 있습니다.
 
 * 현재 세션 토큰 만료 확인에 대한 자세한 내용은 https://docs.aws.amazon.com/STS/latest/APIReference/API_GetSessionToken.html["AWS API 문서"^]을 참조하십시오.
 * AWS 리소스에 대한 자격 증명 관련 자세한 내용은  https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html["AWS IAM 문서"^]를 참조하십시오.

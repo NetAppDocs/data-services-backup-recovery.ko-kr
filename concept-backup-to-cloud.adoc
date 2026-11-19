@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-backup-to-cloud.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery 
-summary: NetApp Backup and Recovery 볼륨, 데이터베이스, 가상 머신, Kubernetes 워크로드를 포함한 모든 ONTAP 워크로드에 대해 효율적이고 안전하며 비용 효율적인 데이터 보호를 제공하는 데이터 서비스입니다. 
+summary: NetApp Backup and Recovery가 볼륨, 데이터베이스, 가상 머신 및 Kubernetes 애플리케이션을 포함한 ONTAP 워크로드를 보호하는 방법과 지원되는 대상, 라이선스 및 비용에 대해 알아보십시오. 
 ---
 = NetApp Backup and Recovery 에 대해 알아보세요
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 볼륨, 데이터베이스, 가상 머신, K
 
 
 [role="lead"]
-이 개요를 통해 NetApp Backup and Recovery가 ONTAP 워크로드를 보호하는 방법, 지원하는 워크로드 및 백업 대상, 라이선스 및 비용에 대해 알아보십시오.
+NetApp Backup and Recovery는 로컬 스냅샷, 복제 및 오브젝트 스토리지 백업을 통해 ONTAP 워크로드를 보호합니다. 지원되는 워크로드 및 백업 대상, 라이선스 및 비용에 대해 알아보십시오.
 
 워크로드는 보호, 거버넌스, 탐지 및 복구를 위해 단일 단위로 관리되는 시스템 내 리소스의 논리적 그룹입니다. Backup and Recovery에서 워크로드는 보호하는 단위입니다. 워크로드의 의미는 데이터 소스에 따라 다릅니다. Kubernetes의 경우 워크로드는 애플리케이션이고, VM 환경의 경우 가상 머신이며, 데이터베이스 환경의 경우 데이터베이스입니다.
 
@@ -74,7 +74,7 @@ NetApp Backup and Recovery 사용하면 다음 목표를 달성할 수 있습니
 ** 데이터베이스와 로그 백업 및 복원
 ** 보호 그룹을 사용하여 백업 작업 관리
 ** 데이터베이스 및 로그 백업을 관리하기 위한 정책 생성
-** 3-2-1 백업 아키텍처로 데이터베이스 보호
+** 3-2-1 백업 아키텍처로 데이터베이스를 보호하십시오
 ** 백업 보존 구성
 ** ARCHIVELOG 백업 마운트 및 마운트 해제
 ** link:br-use-oracle-protect-overview.html["Oracle Database 워크로드를 보호합니다"]을(를) 참조하세요.
@@ -217,7 +217,7 @@ NetApp Backup and Recovery 다음과 같은 유형의 워크로드를 보호합�
 
 NetApp Backup and Recovery 활성화하면 해당 서비스가 데이터의 전체 백업을 수행합니다.  최초 백업 이후의 모든 추가 백업은 증분식입니다.  이렇게 하면 네트워크 트래픽이 최소화됩니다.
 
-다음 이미지는 구성 요소 간의 관계를 보여줍니다.
+이 이미지는 구성 요소 간의 관계를 보여줍니다.
 
 image:diagram-br-321-aff-a.png["NetApp Backup and Recovery 3-2-1 보호 전략을 사용하는 방식을 보여주는 다이어그램"]
 
@@ -229,7 +229,7 @@ NOTE: 보조 스토리지에서 객체 스토리지로의 변환뿐 아니라 �
 [[where-backups-reside-in-object-store-locations]]
 === 백업이 개체 저장소 위치에 있는 위치
 
-백업 사본은 NetApp Console 클라우드 계정에 만드는 개체 저장소에 저장됩니다.  클러스터 또는 시스템당 하나의 개체 저장소가 있으며 콘솔은 다음과 같이 개체 저장소의 이름을 지정합니다. `netapp-backup-clusteruuid` .  이 개체 저장소를 삭제하지 마십시오.
+백업 복사본은 NetApp Console이 클라우드 계정에 생성하는 오브젝트 스토어에 저장됩니다. 클러스터 또는 시스템당 하나의 오브젝트 스토어가 있으며, Console은 오브젝트 스토어의 이름을 다음과 같이 지정합니다: `netapp-backup-clusteruuid`. 이 오브젝트 스토어를 삭제하지 마십시오.
 
 * AWS에서는 NetApp Console 사용하여 다음을 수행할 수 있습니다. https://docs.aws.amazon.com/AmazonS3/latest/dev/access-control-block-public-access.html["Amazon S3 블록 퍼블릭 액세스 기능"^] S3 버킷에.
 * Azure에서 NetApp Console은 Blob 컨테이너에 대한 스토리지 계정이 있는 새 리소스 그룹 또는 기존 리소스 그룹을 사용합니다. Console은  https://docs.microsoft.com/en-us/azure/storage/blobs/anonymous-read-access-prevent["Blob 데이터에 대한 공개 액세스를 차단합니다."]기본적으로 이 리소스를 사용합니다.

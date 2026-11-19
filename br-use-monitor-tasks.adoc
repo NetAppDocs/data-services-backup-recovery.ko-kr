@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-monitor-tasks.html 
 keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, jobs 
-summary: NetApp Backup and Recovery 사용하면 로컬 스냅샷, 복제 및 백업 작업을 모니터링할 수 있습니다. 
+summary: 스냅샷, 복제, 백업 및 복원 작업을 모니터링하고, Notification Center에서 경고를 검토하고, Console Timeline에서 활동을 조사하고, 진행 중인 작업을 취소할 수 있습니다. 
 ---
 = NetApp Backup and Recovery 에서 작업 모니터링
 :hardbreaks:
@@ -271,7 +271,7 @@ https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.htm
 [[cancel-an-ongoing-job]]
 == 진행 중인 작업 취소
 
-일부 백업 및 복구 워크로드는 작업 완료 시간이 너무 오래 걸리고 실패하지 않은 경우 진행 중인 작업을 취소할 수 있도록 지원합니다.
+일부 Backup and Recovery 워크로드는 작업 완료에 너무 오랜 시간이 걸리고 실패하지 않은 경우 진행 중인 작업을 취소할 수 있도록 지원합니다.
 
 
 NOTE: ONTAP Volumes 복원 작업을 취소하려면 <<ONTAP Volumes 복원 작업 취소>>을 참조하십시오.
@@ -289,7 +289,7 @@ NOTE: ONTAP Volumes 복원 작업을 취소하려면 <<ONTAP Volumes 복원 작�
 [[cancel-an-ontap-volumes-restore-job]]
 == ONTAP Volumes 복원 작업 취소
 
-ONTAP Volumes 복원 작업이 완료하는 데 너무 오래 걸리고 실패하지 않은 경우 작업을 취소하십시오.
+ONTAP Volumes 복원 작업이 완료되는 데 너무 오래 걸리고 실패하지 않은 경우 작업을 취소하십시오.
 
 볼륨 복원을 취소하면 전체 복원 작업이 롤백되어 볼륨의 어떤 부분도 복원되지 않습니다.
 

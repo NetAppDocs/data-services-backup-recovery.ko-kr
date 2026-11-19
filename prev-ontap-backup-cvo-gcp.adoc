@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-cvo-gcp.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: 콘솔 에이전트, 권한 및 암호화 키 준비를 포함하여 NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP 볼륨을 Google Cloud Storage에 백업합니다. 
 ---
-= NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP를 Google Cloud Storage에 백업
+= NetApp Backup and Recovery를 사용하여 Cloud Volumes ONTAP을 Google Cloud에 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,7 +24,7 @@ NOTE: NetApp Backup and Recovery 워크로드로 전환하려면 다음을 참�
 [[verify-support-for-your-configuration]]
 == 구성에 대한 지원을 확인하세요
 
-Google Cloud Storage에 볼륨을 백업하기 전에 지원되는 구성이 있는지 확인하려면 다음 요구 사항을 읽어보세요.
+Google Cloud Storage에 볼륨 백업을 시작하기 전에 지원되는 구성인지 확인하십시오.
 
 다음 이미지는 각 구성 요소와 구성 요소 간에 준비해야 할 연결을 보여줍니다.
 
@@ -34,7 +34,7 @@ image:diagram_cloud_backup_cvo_google.png["NetApp Backup and Recovery 백업 파
 
 지원되는 ONTAP 버전:: 최소 ONTAP 9.8; ONTAP 9.8P13 이상을 권장합니다.
 지원되는 GCP 지역:: NetApp Backup and Recovery 모든 GCP 지역에서 지원됩니다.
-GCP 서비스 계정:: Google Cloud 프로젝트에 사용자 지정 역할이 있는 서비스 계정이 있어야 합니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-creating-gcp-service-account.html["서비스 계정을 만드는 방법을 알아보세요"^] .
+GCP 서비스 계정:: Google Cloud 프로젝트에 사용자 지정 역할을 가진 서비스 계정이 필요합니다. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-creating-gcp-service-account.html["서비스 계정을 만드는 방법을 알아보세요"^].
 
 
 
@@ -146,7 +146,7 @@ NetApp Backup and Recovery 사용하여 보조 ONTAP 시스템에 복제된 볼�
 * 클러스터가 온프레미스에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다. 이는 일반적으로 VPN 연결입니다.
 * ONTAP 클러스터는 추가적인 서브넷, 포트, 방화벽 및 클러스터 요구 사항을 충족해야 합니다.
 +
-Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하세요. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^] .
+Cloud Volumes ONTAP 또는 온프레미스 시스템으로 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하십시오. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^].
 
 
 
@@ -305,7 +305,7 @@ cloudkms.keyRings.setIamPolicy
 
 * HSM(하드웨어 지원)과 소프트웨어 생성 키가 모두 지원됩니다.
 * 새로 생성한 Cloud KMS 키나 가져온 Cloud KMS 키가 모두 지원됩니다.
-* 지역 키만 지원되고 글로벌 키는 지원되지 않습니다.
+* 지역 키만 지원됩니다. 글로벌 키는 지원되지 않습니다.
 * 현재는 "대칭 암호화/복호화" 목적만 지원됩니다.
 * 스토리지 계정과 연결된 서비스 에이전트에는 NetApp Backup and Recovery 에서 "CryptoKey 암호화/복호화(roles/cloudkms.cryptoKeyEncrypterDecrypter)" IAM 역할이 할당됩니다.
 
@@ -369,7 +369,7 @@ FlexVol 또는 FlexGroup 볼륨을 보호하도록 선택할 수 있습니다. �
 
 ====
 .단계
-선택한 볼륨에 이미 스냅샷 또는 복제 정책이 적용된 경우, 나중에 선택하는 정책이 기존 정책을 덮어쓴다는 점에 유의하십시오.
+선택한 볼륨에 이미 스냅샷 또는 복제 정책이 적용된 경우, 나중에 선택하는 정책이 기존 정책을 덮어씁니다.
 
 . 볼륨 선택 페이지에서 보호하려는 볼륨을 선택합니다.
 +

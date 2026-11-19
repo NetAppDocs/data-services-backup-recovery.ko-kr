@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-limitations.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 데이터를 검색해야 합니다.  검색 중에 NetApp Backup and Recovery 조직 내 시스템의 모든 볼륨과 파일을 분석합니다. 
+summary: SQL Server 워크로드에서 NetApp Backup and Recovery의 알려진 제한 사항을 검토하십시오. 
 ---
 = NetApp Backup and Recovery for SQL Server 워크로드의 알려진 제한 사항
 :hardbreaks:
@@ -53,7 +53,7 @@ Windows 클러스터 이름에는 밑줄(_) 문자를 포함할 수 없습니다
 [[snapcenter-migration-issues]]
 == SnapCenter 마이그레이션 문제
 
-SnapCenter 에서 NetApp Backup and Recovery 로 리소스를 마이그레이션하는 데는 다음과 같은 제한이 있습니다.
+SnapCenter에서 NetApp Backup and Recovery로 리소스를 마이그레이션할 때 제한 사항이 적용됩니다.
 
 SnapCenter 정책이 NetApp Backup and Recovery 정책으로 마이그레이션되는 방식에 대한 자세한 내용은 다음을 참조하세요.link:reference-policy-differences-snapcenter.html["SnapCenter 의 정책과 NetApp Backup and Recovery 정책 비교"] .
 

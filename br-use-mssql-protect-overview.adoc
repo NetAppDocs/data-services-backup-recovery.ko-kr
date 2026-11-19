@@ -18,7 +18,7 @@ summary: NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 시스
 
 NetApp Backup and Recovery NetApp SnapMirror 사용하여 스냅샷을 생성하고 이를 백업 위치로 전송함으로써 백업을 동기화합니다.
 
-데이터를 보호하려면 다음 워크플로를 사용하십시오.
+데이터를 보호하려면 다음 워크플로를 사용하십시오:
 
 * link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 가져오는 경우 추가 항목 구성"]
 * link:br-start-discover.html["Microsoft SQL Server 워크로드를 검색하고 선택적으로 SnapCenter 리소스를 가져옵니다."]

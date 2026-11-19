@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-oracle-restore.html 
 keywords: restore, vm, oracle, databases, snapshots, object storage, cloud storage, backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 보호하십시오. 
+summary: NetApp Backup and Recovery를 사용하여 로컬 스냅샷, 복제된 백업 또는 오브젝트 스토리지에서 Oracle Database 워크로드를 원래 호스트 또는 대체 호스트로 복원할 수 있습니다. 
 ---
 = NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 워크로드를 복원합니다.
 :hardbreaks:
@@ -36,7 +36,7 @@ summary: NetApp Backup and Recovery를 사용하여 Oracle 데이터베이스 �
 [[how-oracle-database-restore-works]]
 == Oracle 데이터베이스 복원 작동 방식
 
-Oracle 데이터베이스 워크로드를 복원할 때 다음과 같은 현상이 발생합니다.
+Oracle Database 복원 동작은 다음과 같습니다:
 
 * 로컬 스냅샷에서 데이터베이스를 복원하면 NetApp Backup and Recovery 백업의 데이터를 사용하여 _새로운_ 리소스를 만듭니다.
 * 복제된 저장소에서 복원하면 원래 위치로 복원할 수 있습니다.

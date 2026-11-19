@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-discover-hyperv.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Hyper-V, workloads, protect 
-summary: NetApp Backup and Recovery Hyper-V 가상 머신을 보호하기 전에 먼저 검색해야 합니다. 
+summary: NetApp Backup and Recovery가 가상 머신을 탐색하고, 변경 후 호스트를 새로 고치며, 대시보드에서 보호 상태를 검토할 수 있도록 Hyper-V 호스트를 추가합니다. 
 ---
 = NetApp Backup and Recovery에서 Hyper-V 워크로드를 검색하고 관리하십시오
 :hardbreaks:
@@ -90,5 +90,5 @@ IMPORTANT: Hyper-V 호스트가 NetApp MetroCluster 구성으로 보호되는 �
 . NetApp 콘솔 메뉴에서 *보호* > *백업 및 복구*를 선택합니다.
 . Hyper-V 워크로드 타일을 선택합니다.
 . 백업 및 복구 메뉴에서 *대시보드*를 선택합니다.
-. 데이터 보호 상태를 검토하세요.  위험에 처한 작업이나 보호된 작업의 수는 새로 발견, 보호 및 백업된 작업 부하에 따라 증가합니다.
+. 데이터 보호 상태를 검토하십시오. 위험에 처한 워크로드 또는 보호된 워크로드의 수는 새로 발견, 보호 및 백업된 워크로드 수에 따라 증가합니다.
 

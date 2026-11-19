@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-onprem-s3-compatible.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, S3, compatible, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보호하세요. 
+summary: NetApp Backup and Recovery를 사용하여 지원되는 구성을 확인하고 온프레미스 ONTAP 시스템에서 S3 호환 오브젝트 스토리지로 볼륨 데이터를 백업하십시오. 
 ---
-= NetApp Backup and Recovery를 사용하여 온프레미스 ONTAP 데이터를 S3 호환 스토리지로 백업
+= NetApp Backup and Recovery를 사용하여 ONTAP 데이터를 S3 호환 스토리지에 백업
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: NetApp Backup and Recovery를 사용하여 VMware 워크로드를 보�
 
 
 [role="lead"]
-이 페이지를 사용하여 구성이 지원되는지 확인하고 NetApp Backup and Recovery에서 기본 온프레미스 ONTAP 시스템의 백업을 S3 호환 오브젝트 스토리지로 구성하십시오.
+구성이 지원되는지 확인한 다음, NetApp Backup and Recovery에서 기본 온프레미스 ONTAP 시스템의 백업을 S3 호환 오브젝트 스토리지로 구성하십시오.
 
 
 
 [[verify-support-for-your-configuration]]
 == 구성에 대한 지원을 확인하세요
 
-S3 호환 스토리지에 볼륨 백업을 시작하기 전에 지원되는 구성인지 확인하려면 다음 요구 사항을 읽어보세요.
+S3 호환 스토리지에 볼륨 백업을 시작하기 전에 지원되는 구성인지 확인하십시오.
 
 지원되는 ONTAP 버전:: 최소 ONTAP 버전 9.17.1이 필요합니다.
 
@@ -92,7 +92,7 @@ S3 호환 스토리지에 데이터를 백업할 때는 Console 에이전트가 
 [[prepare-console-agent-networking-requirements]]
 === 콘솔 에이전트 네트워킹 요구 사항 준비
 
-콘솔 에이전트가 설치된 네트워크에서 다음 연결이 허용되는지 확인하세요.
+콘솔 에이전트가 설치된 네트워크에서 다음 연결이 활성화되어 있는지 확인하십시오.
 
 * S3 호환 서버와의 HTTPS 연결(포트 443 사용)
 * 포트 443을 통한 소스 ONTAP 클러스터 관리 LIF에 대한 HTTPS 연결
@@ -170,7 +170,7 @@ https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-sn
 [[verify-ontap-networking-requirements-for-backing-up-data-to-object-storage]]
 === 개체 스토리지에 데이터를 백업하기 위한 ONTAP 네트워킹 요구 사항 확인
 
-개체 스토리지에 연결하는 시스템에서 다음 요구 사항이 충족되는지 확인해야 합니다.
+오브젝트 스토리지에 연결되는 시스템이 다음 요구 사항을 충족하는지 확인하십시오.
 
 [NOTE]
 ====
@@ -266,7 +266,7 @@ FlexVol 또는 FlexGroup 볼륨을 보호하도록 선택할 수 있습니다. �
 
 ====
 .단계
-선택한 볼륨에 이미 스냅샷 또는 복제 정책이 적용된 경우, 나중에 선택하는 정책이 기존 정책을 덮어쓴다는 점에 유의하십시오.
+선택한 볼륨에 이미 스냅샷 또는 복제 정책이 적용된 경우, 나중에 선택하는 정책이 기존 정책을 덮어씁니다.
 
 . 볼륨 선택 페이지에서 보호하려는 볼륨을 선택합니다.
 +
@@ -384,7 +384,7 @@ TIP: 백업 및 복구를 사용하여 사용자 지정 정책을 만들려면 �
 [[review-your-selections]]
 === 선택 사항을 검토하세요
 
-이는 귀하의 선택 사항을 검토하고 필요한 경우 조정할 수 있는 기회입니다.
+선택 사항을 검토하고 필요한 경우 조정하십시오.
 
 .단계
 . 검토 페이지에서 선택 사항을 검토하세요.

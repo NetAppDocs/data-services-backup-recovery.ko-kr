@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-discover.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
+summary: NetApp Backup and Recovery에서 Microsoft SQL Server 워크로드를 탐색하고, 선택적으로 SnapCenter 리소스, 호스트, 자격 증명 및 일정을 가져올 수 있습니다. 
 ---
 = NetApp Backup and Recovery에서 Microsoft SQL Server 워크로드 검색
 :hardbreaks:
@@ -35,7 +35,7 @@ IMPORTANT: 변경하기 전에, 기존의 사용자 지정을 덮어쓰지 않�
 
 
 .단계
-. 기존 CoreDNS 구성을 확인하여 기존 변경 사항을 덮어쓰지 않도록 하십시오.
+. 기존 CoreDNS 구성을 확인하여 기존 변경 사항을 덮어쓰지 않는지 확인하십시오:
 +
 [source, shell]
 ----
@@ -250,9 +250,9 @@ kubectl -n kube-system rollout restart deploy/rke2-coredns-rke2-coredns
 * 이미 SnapCenter 가 있는 경우 NetApp Backup and NetApp Backup and Recovery UI를 사용하여 SnapCenter 리소스를 NetApp Backup and NetApp Backup and Recovery 로 가져옵니다.
 +
 
-NOTE: 이미 SnapCenter가 있는 경우, SnapCenter에서 가져오기 전에 먼저 필수 요구사항을 충족했는지 확인하십시오. 예를 들어, SnapCenter에서 가져오기 전에 온프레미스 SnapCenter 클러스터 스토리지 시스템을 NetApp Console에 추가해야 합니다. link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"]을(를) 참조하십시오.
+NOTE: 이미 SnapCenter가 있는 경우, SnapCenter에서 가져오기 전에 사전 요구 사항을 충족했는지 확인하십시오. 예를 들어, SnapCenter에서 가져오기 전에 온프레미스 SnapCenter 클러스터 스토리지 시스템을 NetApp Console에 추가하십시오. link:concept-start-prereq-snapcenter-import.html["SnapCenter 에서 리소스를 가져오기 위한 전제 조건"]을 참조하십시오.
 
-* SnapCenter가 없는 경우에도 vCenter를 수동으로 추가하고 검색을 수행하여 워크로드를 검색할 수 있습니다.
+* 아직 SnapCenter가 없는 경우에도 수동으로 vCenter를 추가하고 탐색을 수행하여 워크로드를 탐색할 수 있습니다.
 
 
 
@@ -327,7 +327,7 @@ SnapCenter 리소스를 가져온 후에는 NetApp Backup and Recovery에서 호
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *세부정보 보기*를 클릭하면 작업 부하 세부 정보가 표시됩니다.
 . 인벤토리 > 작업량 페이지에서 작업 아이콘을 선택하세요.image:../media/icon-action.png["작업 옵션"] > *관리*를 클릭하면 호스트 관리 페이지가 표시됩니다.
 . *관리*를 선택하세요.
-. 호스트 관리 페이지에서 기존 vCenter를 사용할지 아니면 새 vCenter를 추가할지 선택합니다.
+. 호스트 관리 페이지에서 기존 vCenter를 선택하거나 새 vCenter를 추가합니다.
 . *관리*를 선택하세요.
 +
 인벤토리 페이지에는 새로 관리되는 SnapCenter 리소스가 표시됩니다.

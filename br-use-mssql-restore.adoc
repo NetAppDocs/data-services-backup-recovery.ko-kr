@@ -126,7 +126,7 @@ image:diagram_browse_restore_volume-unified.png["리소스를 복원하는 흐�
 
 
 
-[[restore-to-specific-point-in-time]]
+[[restore-to-a-specific-point-in-time]]
 === 특정 시점으로 복원
 
 NetApp Backup and Recovery 로그와 최신 스냅샷을 사용하여 데이터의 특정 시점 복원을 생성합니다.

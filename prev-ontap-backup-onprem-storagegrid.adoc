@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: prev-ontap-backup-onprem-storagegrid.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 온프레미스 기본 ONTAP 시스템의 볼륨 데이터를 보조 스토리지 시스템과 NetApp StorageGRID 시스템의 개체 스토리지로 백업을 시작하세요. 
+summary: 환경을 준비하고 백업을 활성화하여 온프레미스 ONTAP 시스템의 볼륨 데이터를 2차 스토리지 시스템 및 StorageGRID 오브젝트 스토리지로 백업하십시오. 
 ---
 = NetApp Backup and Recovery 사용하여 온프레미스 ONTAP 데이터를 StorageGRID 에 백업합니다.
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: NetApp Backup and Recovery 에서 몇 가지 단계를 완료하여 온
 
 
 [role="lead"]
-NetApp Backup and Recovery를 사용하면 기본 온프레미스 ONTAP 시스템의 볼륨 데이터를 2차 스토리지 시스템 및 StorageGRID 오브젝트 스토리지로 백업할 수 있습니다. 이 페이지를 사용하여 환경을 준비하고 백업을 활성화하십시오.
+NetApp Backup and Recovery를 사용하여 기본 온프레미스 ONTAP 시스템의 볼륨 데이터를 2차 스토리지 시스템과 StorageGRID 오브젝트 스토리지에 백업하십시오. 환경을 준비한 다음 백업을 활성화하여 볼륨을 보호하십시오.
 
 
 NOTE: "온프레미스 ONTAP 시스템"에는 FAS, AFF 및 ONTAP Select 시스템이 포함됩니다.
@@ -151,12 +151,12 @@ https://docs.netapp.com/us-en/ontap/data-protection/compatible-ontap-versions-sn
 
 * ONTAP 클러스터는 백업 및 복원 작업을 위해 클러스터 간 LIF에서 StorageGRID 게이트웨이 노드로 사용자가 지정한 포트를 통해 HTTPS 연결을 시작합니다.  포트는 백업 설정 중에 구성할 수 있습니다.
 +
-ONTAP 객체 스토리지에서 데이터를 읽고 씁니다. 객체 스토리지는 결코 시작되지 않고, 단지 응답만 합니다.
+ONTAP은 오브젝트 스토리지에서 데이터를 읽고 씁니다. 오브젝트 스토리지는 연결을 시작하지 않습니다. 응답만 합니다.
 
 * ONTAP 콘솔 에이전트에서 클러스터 관리 LIF로의 인바운드 연결이 필요합니다.  콘솔 에이전트는 귀하의 구내에 상주해야 합니다.
 * 백업하려는 볼륨을 호스팅하는 각 ONTAP 노드에는 클러스터 간 LIF가 필요합니다.  LIF는 ONTAP 개체 스토리지에 연결하는 데 사용해야 하는 _IPspace_와 연결되어야 합니다. https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspaces에 대해 자세히 알아보세요"^] .
 +
-NetApp Backup and Recovery 설정하면 사용할 IP 공간을 입력하라는 메시지가 표시됩니다. 각 LIF가 연결된 IP 공간을 선택해야 합니다. 이는 "기본" IP 공간일 수도 있고 사용자가 만든 사용자 지정 IP 공간일 수도 있습니다.
+NetApp Backup and Recovery를 설정할 때 사용할 IPspace를 선택하라는 메시지가 표시됩니다. 각 LIF가 연결된 IPspace를 선택하십시오. "Default" IPspace이거나 사용자가 생성한 사용자 지정 IPspace일 수 있습니다.
 
 * 노드의 클러스터 간 LIF는 개체 저장소에 액세스할 수 있습니다(콘솔 에이전트가 "다크" 사이트에 설치된 경우에는 필요하지 않음).
 * 볼륨이 위치한 스토리지 VM에 대한 DNS 서버가 구성되었습니다.  방법을 확인하세요 https://docs.netapp.com/us-en/ontap/networking/configure_dns_services_auto.html["SVM에 대한 DNS 서비스 구성"^] .
@@ -178,7 +178,7 @@ NetApp Backup and Recovery 사용하여 보조 ONTAP 시스템에 복제된 볼�
 * 클러스터가 온프레미스에 있는 경우 회사 네트워크에서 클라우드 공급자의 가상 네트워크로 연결되어야 합니다. 이는 일반적으로 VPN 연결입니다.
 * ONTAP 클러스터는 추가적인 서브넷, 포트, 방화벽 및 클러스터 요구 사항을 충족해야 합니다.
 +
-Cloud Volumes ONTAP 또는 온프레미스 시스템에 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하세요. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^] .
+Cloud Volumes ONTAP 또는 온프레미스 시스템으로 복제할 수 있으므로 온프레미스 ONTAP 시스템에 대한 피어링 요구 사항을 검토하십시오. https://docs.netapp.com/us-en/ontap-sm-classic/peering/reference_prerequisites_for_cluster_peering.html["ONTAP 설명서에서 클러스터 피어링에 대한 필수 구성 요소 보기"^].
 
 
 
@@ -235,7 +235,7 @@ StorageGRID 에 대한 백업을 설정하면 백업 마법사가 테넌트 계�
 [[prepare-to-archive-older-backup-files-to-public-cloud-storage]]
 === 이전 백업 파일을 퍼블릭 클라우드 스토리지에 보관할 준비를 하세요.
 
-오래된 백업 파일을 보관 저장소에 계층화하면 필요하지 않은 백업에 저렴한 스토리지 클래스를 사용하여 비용을 절감할 수 있습니다.  StorageGRID 는 보관 저장소를 제공하지 않는 온프레미스(프라이빗 클라우드) 솔루션이지만, 오래된 백업 파일을 퍼블릭 클라우드 보관 저장소로 옮길 수 있습니다.  이런 방식으로 사용하면 클라우드 스토리지에 계층화된 데이터나 클라우드 스토리지에서 복원된 데이터는 StorageGRID 와 클라우드 스토리지 사이를 이동합니다. 콘솔은 이 데이터 전송에 관여하지 않습니다.
+오래된 백업 파일을 아카이빙 스토리지로 계층화하면 더 이상 필요하지 않을 수 있는 백업에 대해 비용이 저렴한 스토리지 클래스를 사용하므로 비용을 절감할 수 있습니다. StorageGRID는 온프레미스(프라이빗 클라우드) 솔루션으로 아카이빙 스토리지를 제공하지는 않지만, 오래된 백업 파일을 퍼블릭 클라우드 아카이빙 스토리지로 이동할 수 있습니다. 이 설정을 사용하면 클라우드 스토리지로 계층화하거나 클라우드 스토리지에서 복원하는 데이터가 StorageGRID와 클라우드 스토리지 간에 전송됩니다. 콘솔은 이 데이터 전송에 관여하지 않습니다.
 
 현재 지원을 통해 AWS _S3 Glacier_/_S3 Glacier Deep Archive_ 또는 _Azure Archive_ 스토리지에 백업을 보관할 수 있습니다.
 

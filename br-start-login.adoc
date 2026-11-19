@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-login.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Console 사용하여 NetApp Backup and Recovery 서비스에 로그인합니다. 
+summary: NetApp Console 또는 Console 로컬 배포를 통해 NetApp Backup and Recovery에 로그인한 다음 VMware, KVM, Oracle, Kubernetes 등 워크로드를 탐색하고 관리하십시오. 
 ---
 = NetApp Backup and Recovery 에 로그인하세요
 :hardbreaks:

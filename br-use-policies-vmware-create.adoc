@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-use-policies-vmware-create.html 
 keywords: backing up, back up, backup, backup on-premises ontap, policy, policies, backup policies, cloud backup, aws, aws s3, azure, google cloud 
-summary: NetApp Backup and Recovery 에서 백업 빈도, 백업 시간, 보관되는 백업 파일 수를 제어하는 ​​고유한 정책을 만듭니다. 
+summary: NetApp Backup and Recovery에서 VMware 백업 정책을 생성 및 삭제하여 백업 빈도, 일정, 보존, 복제 및 오브젝트 스토리지 설정을 제어할 수 있습니다. 
 ---
 = NetApp Backup and Recovery에서 VMware 백업 정책을 생성하고 관리합니다
 :hardbreaks:
@@ -16,7 +16,7 @@ NetApp Backup and Recovery를 사용하여 백업 빈도, 일정 및 보존 기�
 
 SnapCenter 에서 리소스를 가져오는 경우 SnapCenter 에서 사용되는 정책과 NetApp Backup and Recovery 에서 사용되는 정책 사이에 약간의 차이가 발생할 수 있습니다.  보다link:reference-policy-differences-snapcenter.html["SnapCenter 와 NetApp Backup and Recovery 간의 정책 차이점"] .
 
-정책과 관련하여 다음과 같은 목표를 달성할 수 있습니다.
+다음과 같은 정책 작업을 수행할 수 있습니다:
 
 * 로컬 스냅샷 정책 생성
 * 보조 저장소에 대한 복제 정책 생성

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-configure.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Oracle database, Microsoft SQL Server database, SAP HANA database 
-summary: NetApp Backup and Recovery 구성하려면 몇 가지 단계를 완료하세요. 
+summary: 호스트 자격 증명을 추가하고, VMware vCenter 설정을 유지 관리하고, SnapCenter 리소스를 가져오고, KVM 관리 플랫폼을 추가하고, NetApp Backup and Recovery에서 템플릿을 생성합니다. 
 ---
 = NetApp Backup and Recovery 설정 구성
 :hardbreaks:
@@ -55,7 +55,7 @@ summary: NetApp Backup and Recovery 구성하려면 몇 가지 단계를 완료�
 ** *인증 모드*: *Windows*, *Microsoft SQL*, *Oracle Database*, 또는 *Linux* 중에서 선택하십시오.
 +
 
-TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Server 모두에 대한 자격 증명을 입력해야 하므로 두 세트의 자격 증명이 필요합니다.
+TIP: Microsoft SQL Server 워크로드의 경우 Windows용 자격 증명과 Microsoft SQL Server용 자격 증명, 이렇게 두 가지 자격 증명 세트를 입력해야 합니다.
 
 +
 [role="tabbed-block"]
@@ -182,7 +182,7 @@ TIP: Microsoft SQL Server 워크로드의 경우 Windows 및 Microsoft SQL Serve
 첫 번째 단계에서는 SnapCenter 에서 호스트 리소스를 가져와 NetApp Backup and Recovery 인벤토리 페이지에 해당 리소스를 표시합니다.  그 시점에서는 리소스가 아직 NetApp Backup and Recovery 에서 관리되지 않습니다.
 
 
-TIP: SnapCenter 호스트 리소스를 가져온 후에는 NetApp Backup and Recovery 보호 관리를 수행하지 않습니다.  그렇게 하려면 NetApp Backup and Recovery 에서 이러한 리소스를 관리하도록 명시적으로 선택해야 합니다.
+TIP: SnapCenter 호스트 리소스를 가져온 후에는 NetApp Backup and Recovery가 보호 관리를 인계받지 않습니다. 관리 권한을 이전하려면 NetApp Backup and Recovery에서 관리할 리소스를 명시적으로 선택해야 합니다.
 
 .단계
 . NetApp Backup and Recovery 메뉴에서 *설정*을 선택합니다.
@@ -217,10 +217,10 @@ NOTE: SnapCenter Server가 이미 등록되어 있는 경우 기존 등록 정�
 [[manage-snapcenter-host-resources]]
 === SnapCenter 호스트 리소스 관리
 
-SnapCenter 리소스를 가져온 후 NetApp Backup and Recovery 에서 해당 호스트 리소스를 관리합니다.  가져온 리소스를 관리하도록 선택하면 NetApp Backup and Recovery SnapCenter 에서 가져온 리소스를 백업하고 복구할 수 있습니다.  더 이상 SnapCenter Server에서 해당 리소스를 관리할 필요가 없습니다.
+SnapCenter 리소스를 가져온 후에는 NetApp Backup and Recovery에서 해당 호스트 리소스를 관리하십시오. 가져온 리소스를 관리한 후에는 NetApp Backup and Recovery에서 해당 리소스를 백업하고 복구할 수 있습니다. 더 이상 SnapCenter Server에서 해당 리소스를 관리할 필요가 없습니다.
 
 .단계
-. SnapCenter 리소스를 가져온 후 나타나는 인벤토리 페이지에서 NetApp Backup and Recovery 에서 관리하려는 가져온 SnapCenter 리소스를 선택합니다.
+. SnapCenter 리소스를 가져온 후 인벤토리 페이지에서 가져온 SnapCenter 리소스 중 NetApp Backup and Recovery에서 관리할 리소스를 선택합니다.
 . 작업 아이콘을 선택하세요image:../media/icon-action.png["작업 옵션"] > *관리*: 리소스를 관리합니다.
 . * NetApp Console 에서 관리*를 선택합니다.
 +
@@ -307,7 +307,7 @@ NOTE: 여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호�
 . *실행 후크 템플릿* 섹션을 확장합니다.
 . *실행 후크 템플릿 만들기*를 선택합니다.
 . 실행 후크의 이름을 입력하세요.
-. 원하는 후크 유형을 선택하세요. 예를 들어, 복원 후 후크는 복원 작업이 완료된 후 실행됩니다.
+. 선택적으로 후크 유형을 선택합니다. 예를 들어, 복원 후 후크는 복원 작업이 완료된 후에 실행됩니다.
 . *스크립트* 텍스트 상자에 실행 후크 템플릿의 일부로 실행하려는 실행 가능한 셸 스크립트를 입력합니다.  선택적으로 *스크립트 업로드*를 선택하여 스크립트 파일을 업로드할 수 있습니다.
 . *만들기*를 선택하세요.
 +
@@ -342,7 +342,7 @@ NOTE: 여기에서 생성하는 템플릿은 Kubernetes 워크로드를 보호�
 .. 작업이 적용되는 JSON 경로를 입력합니다.
 .. 해당하는 경우 추가 또는 업데이트할 값이나 이동할 JSON 경로를 입력합니다.
 +
-이러한 필드는 필드가 필요한 작업에만 나타납니다.
+이 필드들은 해당 필드가 필요한 작업에만 나타납니다.
 
 .. 이 템플릿에 다른 작업을 추가하려면 *작업 추가*를 선택하세요.
 

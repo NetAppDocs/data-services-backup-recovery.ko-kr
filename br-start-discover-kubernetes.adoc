@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: br-start-discover-kubernetes.html 
 keywords: backing up, back up, backup, backup application data, Amazon Web services, AWS, NetApp Backup and Recovery, Kubernetes 
-summary: NetApp Backup and Recovery 서비스를 사용하려면 먼저 워크로드를 검색해야 합니다. 
+summary: NetApp Backup and Recovery에서 에어갭 클러스터를 포함한 Kubernetes 클러스터 및 워크로드를 탐색하여 정책을 통해 애플리케이션을 보호할 수 있습니다. 
 ---
 = NetApp Backup and Recovery 에서 Kubernetes 워크로드를 알아보세요
 :hardbreaks:
@@ -27,7 +27,7 @@ Backup and Recovery 인벤토리에서 환경 내 Kubernetes 클러스터 및 �
 
 [NOTE]
 ====
-Trident Protect로 보호되는 클러스터를 검색하면 Trident Protect에서 사용하는 모든 백업 일정이 검색 프로세스 중에 비활성화됩니다. Trident Protect 백업 일정은 Backup and Recovery와 호환되지 않기 때문입니다. 클러스터의 애플리케이션을 보호하려면 link:br-use-policies-create.html["새 보호 정책을 생성합니다"] 하거나 기존 정책에 애플리케이션을 연결하십시오. 필요에 따라 Trident Protect 백업 일정을 제거할 수 있습니다.
+현재 Trident Protect로 보호되는 클러스터를 탐색할 때, Trident Protect 백업 일정은 Backup and Recovery와 호환되지 않으므로 탐색 과정 중에 Trident Protect에서 사용되는 모든 백업 일정이 비활성화됩니다. 클러스터의 애플리케이션을 보호하려면 link:br-use-policies-create.html["새 보호 정책을 생성합니다"]하거나 애플리케이션을 기존 정책과 연결하십시오. 그런 다음 필요한 경우 Trident Protect 백업 일정을 제거할 수 있습니다.
 
 ====
 .단계
@@ -74,7 +74,7 @@ Backup and Recovery는 선택한 설치 유형에 따라 변경되는 지침을 
 ... 개인 Docker 컨테이너 레지스트리의 URL을 입력하십시오. 이 레지스트리는 설치 중에 Trident Protect 및 Trident Protect Connector 이미지를 다운로드하는 데 사용됩니다.
 ... 개인 컨테이너 레지스트리에 인증이 필요한 경우 다음 방법 중 하나를 사용하여 레지스트리 자격 증명을 구성하십시오.
 +
-**** *노드 수준 인증*: 각 노드의 컨테이너 런타임에 레지스트리 자격 증명을 구성합니다. 구성이 완료되면 모든 파드는 추가적인 Helm 설정 없이 이미지를 가져올 수 있습니다.
+**** *노드 수준 인증*: 각 노드의 컨테이너 런타임에 레지스트리 자격 증명을 구성하십시오. 구성 후에는 모든 Pod에서 추가 Helm 설정 없이 이미지를 가져올 수 있습니다.
 **** *Kubernetes image pull secret*:  `trident-protect` 네임스페이스에 Kubernetes 이미지 풀 시크릿을 생성한 다음, Trident Protect 설치 지침의 Helm 업그레이드 단계에서 해당 시크릿을 참조하십시오.
 +
 [source, console]
